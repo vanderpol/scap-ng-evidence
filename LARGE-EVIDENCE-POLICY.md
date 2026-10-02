@@ -1,6 +1,6 @@
 # Large evidence storage policy
 
-Large generated evidence should not be committed to ordinary Git merely because it can fit under GitHub's single-file limit.
+Large generated evidence should not be committed to ordinary Git merely because it can fit under GitHub's single-file limit. The default is to analyze it, retain durable conclusions and provenance, and keep the raw payload only when it has unique long-term value that cannot be reproduced.
 
 ## Default rule
 
@@ -25,9 +25,11 @@ Even when raw payloads are stored outside Git, retain in this repository:
 - validation status and limitations;
 - durable locator for retained raw payload, if one exists.
 
-## Reproducible-only evidence
+## Analyze-before-retain rule
 
-If a large payload is deterministic, inexpensive enough to regenerate, and has no unique information beyond its manifest/summary, it MAY be retained as reproducible-only evidence rather than stored permanently. This decision must be explicit in its manifest.
+Before deciding to retain a large raw payload, extract and save all decision-relevant findings, unusual cases, aggregate metrics, limitations, and implications in a compact summary. The summary SHALL include enough provenance to reproduce or recover the raw evidence.
+
+If a large payload is deterministic, reasonably reproducible, and has no unique information beyond its manifest/analysis, it SHOULD be retained as reproducible-only evidence rather than stored permanently. This decision must be explicit in its manifest.
 
 ## Current oversized candidate
 
