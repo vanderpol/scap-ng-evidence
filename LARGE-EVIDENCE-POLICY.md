@@ -37,3 +37,35 @@ The migrated-source set `research/iterations/003/evidence/full-current-native-no
 - `native-schema-census.json` — ~29 MB.
 
 Do not copy those raw files into ordinary Git until a non-history storage/reproducibility decision is made. Compact summaries may be migrated separately.
+
+
+## Preferred disposition after analysis
+
+For oversized deterministic generated reports, the preferred lifecycle is:
+
+1. Generate the raw report from pinned inputs and a pinned SCAP-NG/tool revision.
+2. Analyze the complete report before disposal.
+3. Commit a compact durable summary containing:
+   - the questions answered;
+   - key counts/findings;
+   - anomalies and unresolved blockers;
+   - conclusions that affected design or implementation;
+   - enough representative examples to understand the finding;
+   - exact source/tool revisions and reproduction command;
+   - raw output file names, byte sizes, and Git/SHA-256 identities when available.
+4. Add regressions or conformance tests for every finding that should remain enforceable.
+5. Treat the raw generated payload as disposable/reproducible unless it contains unique evidence that cannot be regenerated.
+6. Do not retain a raw payload in ordinary Git solely for historical completeness.
+
+A compact summary plus executable regression is generally stronger long-term evidence than a very large unreviewed JSON dump.
+
+### Exceptions
+
+Retain raw payload outside ordinary Git only when at least one of these applies:
+
+- the generating source is expected to disappear or cannot be legally redistributed later;
+- the run is non-deterministic or depends on an environment that cannot be reconstructed;
+- the raw output contains unique third-party observations not captured by the summary;
+- an external review/audit requirement specifically requires the original output.
+
+If none applies, reproducibility metadata plus the analyzed summary is sufficient.
