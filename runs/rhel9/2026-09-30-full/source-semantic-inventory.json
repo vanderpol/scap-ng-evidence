@@ -1,0 +1,25 @@
+{
+  "construct_counts": {
+    "arithmetic": 1,
+    "behaviors": 83,
+    "concat": 13,
+    "count": 5,
+    "filter": 79,
+    "literal_component": 16,
+    "object_component": 31,
+    "set": 58,
+    "split": 5,
+    "unique": 3,
+    "variable_component": 64
+  },
+  "definition_deprecation_default": {
+    "native_semantics": "none; deprecated OVAL source definitions are conversion blockers",
+    "provenance": "OVAL 5.12.3 DefinitionType XSD default",
+    "value": "false"
+  },
+  "source_definition_deprecation_flags": [],
+  "variable_kinds": {
+    "constant_variable": 26,
+    "local_variable": 37
+  }
+}
