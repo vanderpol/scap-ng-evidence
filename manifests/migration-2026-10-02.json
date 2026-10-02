@@ -36,10 +36,21 @@
       "byte_count": 40929,
       "verified": true,
       "source_retained": true
+    },
+    {
+      "evidence_id": "xccdf-valid-gap-inventory-2026-10-01",
+      "source_path": "research/iterations/003/evidence/xccdf-valid-gap-inventory",
+      "source_tree_sha": "42ac6205c4fbdf0217e265004265f1e16ce88861",
+      "destination_path": "runs/xccdf-gap/2026-10-01-valid-gap-inventory",
+      "file_count": 2,
+      "byte_count": 989353,
+      "verified": true,
+      "source_retained": true
     }
   ],
   "notes": [
     "This manifest records copied-and-verified evidence only; no source deletion is implied.",
-    "The approximately 115 MB full-current-native-normalize-compile set requires a separate oversized-evidence policy before migration."
+    "The approximately 115 MB full-current-native-normalize-compile set requires a separate oversized-evidence policy before migration.",
+    "Large raw evidence follows LARGE-EVIDENCE-POLICY.md rather than being copied into ordinary Git by default."
   ]
 }
