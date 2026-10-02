@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "created_at": "2026-10-02",
+  "source_repository": "vanderpol/scap-ng",
+  "source_snapshot_commit": "e91b9e9a72ed9bf26579f55db507f39026859ec4",
+  "destination_repository": "vanderpol/scap-ng-evidence",
+  "destination_snapshot_commit": "4bf25dfa9941f4b7e06007681d54b48cbb49c56d",
+  "verification": "Git blob SHA equality for every copied file",
+  "migrations": [
+    {
+      "evidence_id": "niwc-current-2026-09-30-full-roundtrip",
+      "source_path": "research/iterations/003/evidence/full-current-roundtrip-2026-09-30",
+      "source_tree_sha": "29cce1c2184f17db57500feb329958d8c114b386",
+      "destination_path": "runs/niwc-current/2026-09-30-full-roundtrip",
+      "file_count": 4,
+      "byte_count": 61255,
+      "verified": true,
+      "source_retained": true
+    },
+    {
+      "evidence_id": "rhel9-2026-09-30-review-slice",
+      "source_path": "research/iterations/003/evidence/rhel9-review-slice",
+      "source_tree_sha": "741fa5fa47ad31cad7b5cf9e363d0d4db85ced9e",
+      "destination_path": "runs/rhel9/2026-09-30-review-slice",
+      "file_count": 13,
+      "byte_count": 55412,
+      "verified": true,
+      "source_retained": true
+    },
+    {
+      "evidence_id": "oval-roundtrip-2026-09-30-source-oval",
+      "source_path": "research/iterations/003/evidence/roundtrip-source-oval",
+      "source_tree_sha": "057138da5396de0223e44596a3f1d3642cfdbd8a",
+      "destination_path": "runs/oval-roundtrip/2026-09-30-source-oval",
+      "file_count": 7,
+      "byte_count": 40929,
+      "verified": true,
+      "source_retained": true
+    }
+  ],
+  "notes": [
+    "This manifest records copied-and-verified evidence only; no source deletion is implied.",
+    "The approximately 115 MB full-current-native-normalize-compile set requires a separate oversized-evidence policy before migration."
+  ]
+}
