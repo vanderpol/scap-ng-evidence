@@ -1,0 +1,171 @@
+{
+  "converted_compiled_unproved": 1055,
+  "created_at": "2026-10-28T20:01:41.896173+00:00",
+  "evidence_id": "v04-six-source-draft-20261028-c65a134b5",
+  "generator": "tools/v04_direct_converter.py --all-rules",
+  "independent_source_proof": "NOT_REEXECUTED_FOR_DRAFT",
+  "input_pin": {
+    "repository": "niwc-atlantic/scap-content-library",
+    "revision": "8c8e5dff860af6b1290ee9273a282db24278f8d5",
+    "sources": {
+      "apache_server_2-4_unix_server": {
+        "file": "U_Apache_Server_2-4_UNIX_Server_V3R2_STIG_SCAP_1-4_Benchmark-enhancedV2-signed.zip",
+        "sha256": "8894123788ba415373625eaecdbbd834f190668697803c3319393c11889f1b80"
+      },
+      "ms_windows_11": {
+        "file": "U_MS_Windows_11_V2R10_STIG_SCAP_1-4_Benchmark-enhancedV18-signed.zip",
+        "sha256": "e4b8d55b58aa80124bd0974977af4c7f7bde35c748e2940e02857419292d8c3d"
+      },
+      "ms_windows_server_2025": {
+        "file": "U_MS_Windows_Server_2025_V1R1_STIG_SCAP_1-4_Benchmark-enhancedV1-signed.zip",
+        "sha256": "2f46264b5fa21c8a033236121794ebe372314bf7458dac0aca4f81179fe7ece0"
+      },
+      "ms_windows_server_dns": {
+        "file": "U_MS_Windows_Server_DNS_V2R3_STIG_SCAP_1-4_Benchmark-enhancedV8-signed.zip",
+        "sha256": "f674b67e74acbd3037093d50e33dc20765bd9d45a6c9ed2be5d463d009a6c6b8"
+      },
+      "oracle_linux_9": {
+        "file": "U_Oracle_Linux_9_V1R4_STIG_SCAP_1-4_Benchmark-enhancedV5-signed.zip",
+        "sha256": "6733abd693380b43b2350c2692775e4ff902f895f16899db97b34fecf7fba74d"
+      },
+      "rhel_9": {
+        "file": "U_RHEL_9_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-signed.zip",
+        "sha256": "70aa6a16221df2c53b094b11b48b16aca1f6d7147c11123b655659ca7711dbb5"
+      }
+    }
+  },
+  "kind": "production-migration-engineering-draft",
+  "known_original_invalid_candidates": 2,
+  "known_source_invalid_rules": 12,
+  "limitations": [
+    "Not an all-Rules lossless migration or verified release",
+    "Compiled programs are not scanner-executed",
+    "Original manual/OCIL execution is unconverted",
+    "Applicability/CPE, full policy/remediation/scoring remain unconverted",
+    "Fresh exact-SHA source-proof/six-benchmark verification deferred until after draft publication",
+    "Secondary blockers are currently discoverable probes, not an exhaustive proof of absence of further blockers"
+  ],
+  "maintained_suite": {
+    "commit": "c65a134b539558609ccf3bdc0600f38e411bbb2e",
+    "errors": 0,
+    "failures": 0,
+    "run": 40733597054,
+    "skips": 1,
+    "status": "PASS",
+    "tests": 3264
+  },
+  "native_compiled_diagnostic_candidates": 1057,
+  "ocil_only_manual": 171,
+  "original_source_validation": "Two known rejections retained from pinned original-source report; no fresh full-source validation for draft",
+  "oval_bearing_rules": 1396,
+  "packaging_finalizer": "finalize-six-draft.py; adjusts evidence labels only, never authored/native operands",
+  "previously_proved_program_hashes_retained": 1055,
+  "raw_storage_decision": "Owner specifically requested inspectable generated YAML/JSON and complete ledgers. Raw payload retained as evidence-repository prerelease asset, not ordinary Git history.",
+  "source_rejection_evidence": "retained-source-rejections.json",
+  "source_scap_ng_repository": "vanderpol/scap-ng",
+  "status": "DRAFT_NOT_VERIFIED_RELEASE",
+  "summaries": {
+    "apache_server_2-4_unix_server": {
+      "compiled_programs": 0,
+      "eligible_compiled_unproved": 0,
+      "oval_bearing": 22,
+      "primary_blocker_categories": {
+        "source-invalid": 22
+      },
+      "statuses": {
+        "BLOCKED": 22,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 23
+      },
+      "total_rules": 45
+    },
+    "ms_windows_11": {
+      "compiled_programs": 228,
+      "eligible_compiled_unproved": 228,
+      "oval_bearing": 246,
+      "primary_blocker_categories": {
+        "source-invalid": 4,
+        "unsupported-construct": 14
+      },
+      "statuses": {
+        "BLOCKED": 14,
+        "BLOCKED_INVALID_ORIGINAL_SOURCE": 4,
+        "CONVERTED_COMPILED_UNPROVED": 228,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 11
+      },
+      "total_rules": 257
+    },
+    "ms_windows_server_2025": {
+      "compiled_programs": 249,
+      "eligible_compiled_unproved": 249,
+      "oval_bearing": 261,
+      "primary_blocker_categories": {
+        "source-invalid": 4,
+        "unsupported-construct": 8
+      },
+      "statuses": {
+        "BLOCKED": 8,
+        "BLOCKED_INVALID_ORIGINAL_SOURCE": 4,
+        "CONVERTED_COMPILED_UNPROVED": 249,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 30
+      },
+      "total_rules": 291
+    },
+    "ms_windows_server_dns": {
+      "compiled_programs": 0,
+      "eligible_compiled_unproved": 0,
+      "oval_bearing": 41,
+      "primary_blocker_categories": {
+        "source-invalid": 41
+      },
+      "statuses": {
+        "BLOCKED": 41,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 40
+      },
+      "total_rules": 81
+    },
+    "oracle_linux_9": {
+      "compiled_programs": 287,
+      "eligible_compiled_unproved": 286,
+      "oval_bearing": 408,
+      "primary_blocker_categories": {
+        "source-invalid": 2,
+        "unsupported-construct": 120
+      },
+      "statuses": {
+        "BLOCKED": 120,
+        "BLOCKED_INVALID_ORIGINAL_SOURCE": 2,
+        "CONVERTED_COMPILED_UNPROVED": 286,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 40
+      },
+      "total_rules": 448
+    },
+    "rhel_9": {
+      "compiled_programs": 293,
+      "eligible_compiled_unproved": 292,
+      "oval_bearing": 418,
+      "primary_blocker_categories": {
+        "source-invalid": 2,
+        "unsupported-construct": 124
+      },
+      "statuses": {
+        "BLOCKED": 124,
+        "BLOCKED_INVALID_ORIGINAL_SOURCE": 2,
+        "CONVERTED_COMPILED_UNPROVED": 292,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 27
+      },
+      "total_rules": 445
+    }
+  },
+  "toolchain_sha": "c65a134b539558609ccf3bdc0600f38e411bbb2e",
+  "total_blocked_automated": 341,
+  "total_rules": 1567,
+  "raw_payload": {
+    "url": "https://github.com/vanderpol/scap-ng-evidence/releases/download/v04-six-source-draft-20261028-c65a134b5/six-source-draft-c65.zip",
+    "bytes": 12276247,
+    "sha256": "07f7b24f4d0522630159fbddf9f6d643ffcac3d49d3c482dc7fb263de9793317",
+    "file_count": 4301,
+    "storage": "Prerelease asset; labeled DRAFT engineering evidence, not a product release"
+  },
+  "generating_commands": "Raw artifact invocations.json plus README and included packaging scripts",
+  "output_root": "six-source-draft-c65.zip"
+}
