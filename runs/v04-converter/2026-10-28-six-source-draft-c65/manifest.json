@@ -63,7 +63,7 @@
   "raw_storage_decision": "Owner specifically requested inspectable generated YAML/JSON and complete ledgers. Raw payload retained as evidence-repository prerelease asset, not ordinary Git history.",
   "source_rejection_evidence": "retained-source-rejections.json",
   "source_scap_ng_repository": "vanderpol/scap-ng",
-  "status": "DRAFT_NOT_VERIFIED_RELEASE",
+  "status": "DRAFT \u2014 NOT RUNTIME VERIFIED",
   "summaries": {
     "apache_server_2-4_unix_server": {
       "compiled_programs": 0,
@@ -160,12 +160,18 @@
   "total_blocked_automated": 341,
   "total_rules": 1567,
   "raw_payload": {
-    "url": "https://github.com/vanderpol/scap-ng-evidence/releases/download/v04-six-source-draft-20261028-c65a134b5/six-source-draft-c65.zip",
+    "url": "https://github.com/vanderpol/scap-ng-evidence/raw/refs/tags/v04-six-source-draft-20261028-c65a134b5/runs/v04-converter/2026-10-28-six-source-draft-c65/six-source-draft-c65.zip",
     "bytes": 12276247,
     "sha256": "07f7b24f4d0522630159fbddf9f6d643ffcac3d49d3c482dc7fb263de9793317",
     "file_count": 4301,
-    "storage": "Prerelease asset; labeled DRAFT engineering evidence, not a product release"
+    "storage": "Existing unchanged ZIP retained in evidence Git under immutable DRAFT tag; bounded storage decision in STORAGE-DECISION.md"
   },
   "generating_commands": "Raw artifact invocations.json plus README and included packaging scripts",
-  "output_root": "six-source-draft-c65.zip"
+  "output_root": "six-source-draft-c65.zip",
+  "publication_addendum": {
+    "failed_method": "GitHub release-asset upload returned HTTP 401 at uploads.github.com; no release or asset remains published",
+    "chosen_method": "Authenticated Git push of exact existing archive to evidence repository, with immutable DRAFT tag",
+    "archive_bytes_unchanged": true,
+    "supersedes_archive_internal_storage_intent_only": true
+  }
 }

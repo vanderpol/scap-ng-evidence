@@ -1,10 +1,12 @@
-# DRAFT: Six-benchmark 0.4 converter preview
+# DRAFT — NOT RUNTIME VERIFIED: Six-benchmark converter preview
 
-[Download generated JSON/YAML and full ledgers](https://github.com/vanderpol/scap-ng-evidence/releases/download/v04-six-source-draft-20261028-c65a134b5/six-source-draft-c65.zip) · [DRAFT evidence release](https://github.com/vanderpol/scap-ng-evidence/releases/tag/v04-six-source-draft-20261028-c65a134b5)
+[Download generated JSON/YAML and full ledgers](https://github.com/vanderpol/scap-ng-evidence/raw/refs/tags/v04-six-source-draft-20261028-c65a134b5/runs/v04-converter/2026-10-28-six-source-draft-c65/six-source-draft-c65.zip) · [Immutable DRAFT checkpoint](https://github.com/vanderpol/scap-ng-evidence/tree/v04-six-source-draft-20261028-c65a134b5/runs/v04-converter/2026-10-28-six-source-draft-c65)
 
 [Browse every Rule in CSV](ledger.csv). The complete ledger JSON and all native files are in the ZIP.
 
 SHA-256: `07f7b24f4d0522630159fbddf9f6d643ffcac3d49d3c482dc7fb263de9793317`; 12276247 bytes; 4301 files.
+
+[Storage decision and publication addendum](STORAGE-DECISION.md). The archive is unchanged; its internal manifest records the originally intended release-asset route.
 
 The following README describes paths **inside that ZIP**.
 
