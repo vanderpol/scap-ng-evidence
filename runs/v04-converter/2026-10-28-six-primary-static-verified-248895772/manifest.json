@@ -1,0 +1,62 @@
+{
+  "evidence_id": "v04-six-primary-static-verified-20261028-248895772",
+  "kind": "production-migration-static-primary-proof",
+  "status": "VERIFIED STATIC PRIMARY OVAL \u2014 NOT RUNTIME VERIFIED",
+  "created_at": "2026-10-28T23:58:25.839013+00:00",
+  "source_scap_ng_repository": "vanderpol/scap-ng",
+  "toolchain_sha": "24889577233c6a75e739676adffe8f676a0f9f3b",
+  "generating_tool": "tools/verify_v04_direct_scope.py",
+  "command": "PYTHONPATH=tools python tools/verify_v04_direct_scope.py --inputs ORIGINAL_SIX_ZIP_DIRECTORY --output NEW_EVIDENCE_DIRECTORY",
+  "input_pins": "source-pins.json",
+  "results": {
+    "proved_primary_rules": 1072,
+    "blocked_automated_rules": 324,
+    "manual_ocil_only": 171,
+    "total_rules": 1567,
+    "previous_program_hashes_retained": 1055,
+    "new_primary_proofs": 17
+  },
+  "maintained_suite": {
+    "commit": "24889577233c6a75e739676adffe8f676a0f9f3b",
+    "run": 40788102371,
+    "job": 123166258986,
+    "tests_run": 3268,
+    "passed": 3267,
+    "failures": 0,
+    "errors": 0,
+    "skips": 1,
+    "seconds": 1167.519,
+    "artifact": 12861341772,
+    "artifact_zip_sha256": "d621f22c3f9ca9e6318a7cddff298552e5896f02ab6cfea3d95ebb6c47a19f4b"
+  },
+  "hosted_six_source_gate": {
+    "run": 40788102434,
+    "job": 123166258359,
+    "status": "PASS",
+    "artifact": 12860901212,
+    "artifact_zip_sha256": "fb3872bfe8c062ecb7a12eced5f1c72c4a50e842bc0a88eed88c6235b40c7194"
+  },
+  "checks": [
+    "pinned source ZIP SHA-256/CRC",
+    "unchanged original XSD/Schematron and nondeprecation per accepted closure",
+    "native schema",
+    "independent original/native typed-term comparison",
+    "compiled operands",
+    "every prior primary program hash",
+    "package graph/integrity/independent consumer",
+    "exact-commit hosted maintained suite and six-source gate"
+  ],
+  "limitations": [
+    "Static primary automated subset only",
+    "No scanner execution or runtime-equivalence claim",
+    "Not complete policy/applicability/manual conversion or a verified toolchain release"
+  ],
+  "raw_payload": {
+    "file": "six-primary-static-verified-248895772.zip",
+    "url": "https://github.com/vanderpol/scap-ng-evidence/raw/refs/tags/v04-six-primary-static-verified-20261028-248895772/runs/v04-converter/2026-10-28-six-primary-static-verified-248895772/six-primary-static-verified-248895772.zip",
+    "bytes": 8654136,
+    "sha256": "809e6da4c4139bf8a671ed0d81ae464feb41f82c28ebadbdfb4edc05a253f4bd",
+    "file_count": 4327
+  },
+  "raw_storage_decision": "Owner-authorized separate verified primary-evidence checkpoint. ZIP is below 10 MiB; raw content contains only accepted static primary subsets plus all-Rule rejection ledgers. Existing DRAFT archive is not changed."
+}

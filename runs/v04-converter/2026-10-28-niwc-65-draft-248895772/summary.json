@@ -1,0 +1,1375 @@
+{
+  "benchmarks": 65,
+  "source_package_exceptions": 4,
+  "total_rules": 8892,
+  "oval_bearing_rules": 7239,
+  "statuses_disjoint": {
+    "BLOCKED": 2880,
+    "OCIL_ONLY_MANUAL_UNCONVERTED": 1653,
+    "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 3138,
+    "BLOCKED_SOURCE_PACKAGE_SQLEXT": 137,
+    "SOURCE_PROVED_COMPILED_PRIMARY_ONLY": 1072,
+    "BLOCKED_INVALID_ORIGINAL_SOURCE": 12
+  },
+  "primary_blocker_messages_disjoint": {
+    "unsupported Test existence: all_exist": 1184,
+    "OVAL check imports/exports unsupported": 382,
+    "unresolved checklist catalog href: U_Apple_macOS_15_V1R4_STIG_SCAP_1-4_Benchmark-enhancedV8-oval2.xml": 157,
+    "unresolved checklist catalog href: U_Apple_macOS_26_V1R1_STIG_SCAP_1-4_Benchmark-enhancedV5-oval2.xml": 157,
+    "unresolved checklist catalog href: U_Apple_macOS_14_V2R3_STIG_SCAP_1-4_Benchmark-enhancedV7-oval2.xml": 152,
+    "nonstandard source capability independent.sqlext; package held fail-closed": 137,
+    "unsupported test capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#windows}accesstoken_test": 125,
+    "unresolved checklist catalog href: U_Apple_macOS_13_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval2.xml": 102,
+    "unresolved checklist catalog href: U_MS_Exchange_2019_Edge_Server_V2R2_STIG_SCAP_1-4_Benchmark-enhancedV1-oval2.xml": 55,
+    "unresolved checklist catalog href: U_MS_Exchange_2019_Mailbox_Server_V2R3_STIG_SCAP_1-4_Benchmark-enhancedV1-oval2.xml": 51,
+    "unresolved checklist catalog href: U_MS_Windows_Server_DNS_V2R3_STIG_SCAP_1-4_Benchmark-enhancedV8-oval2.xml": 41,
+    "unresolved checklist catalog href: U_Cisco_IOS-XE_Switch_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV6-oval2.xml": 37,
+    "unresolved checklist catalog href: U_MS_IIS_10-0_Site_V2R14_STIG_SCAP_1-4_Benchmark-enhancedV19-oval2.xml": 33,
+    "unsupported test capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe}line_test": 31,
+    "multiple aggregation components need an approved collection expression": 30,
+    "unresolved checklist catalog href: U_Cisco_IOS_Router_NDM_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV6-oval2.xml": 29,
+    "unresolved checklist catalog href: U_Cisco_IOS_Switch_NDM_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV6-oval2.xml": 29,
+    "unresolved checklist catalog href: U_MS_IIS_10-0_Server_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV18-oval2.xml": 25,
+    "unresolved checklist catalog href: U_Apache_Server_2-4_Windows_Server_V3R3_STIG_SCAP_1-4_Benchmark-enhancedV2-oval2.xml": 23,
+    "unresolved checklist catalog href: U_Apache_Server_2-4_UNIX_Server_V3R2_STIG_SCAP_1-4_Benchmark-enhancedV2-oval2.xml": 22,
+    "unresolved checklist catalog href: U_F5_NGINX_V1R1_STIG_SCAP_1-4_Benchmark-enhancedV1-oval2.xml": 22,
+    "unsupported test capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#windows}wmi_test": 20,
+    "unresolved checklist catalog href: U_Active_Directory_Domain_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV2-oval2.xml": 17,
+    "unsupported function: split": 15,
+    "unsupported function: count": 14,
+    "unsupported test capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris}smf_test": 14,
+    "unresolved checklist catalog href: U_MS_Windows_2012_and_2012_R2_DC_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-oval2.xml": 13,
+    "unresolved checklist catalog href: U_MS_OneDrive_V2R4_STIG_SCAP_1-4_Benchmark-enhancedV12-oval2.xml": 12,
+    "Original OVAL closure invalid/deprecated": 12,
+    "ordered comparison expansion requires integer source datatype": 10,
+    "unsupported test capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe}global_test": 10,
+    "comparator-bearing absence blocked": 9,
+    "invalid nil input datatype": 8,
+    "unresolved checklist catalog href: U_Apache_Server_2-4_UNIX_Site_V2R6_STIG_SCAP_1-4_Benchmark-enhancedV2-oval2.xml": 6,
+    "unsupported object capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#windows}wmi_object": 6,
+    "unresolved checklist catalog href: U_Apache_Server_2-4_Windows_Site_V2R2_STIG_SCAP_1-4_Benchmark-enhancedV2-oval2.xml": 5,
+    "invalid original pattern-path recursion attributes": 5,
+    "unsupported test capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#windows}user_test": 5,
+    "unresolved checklist catalog href: U_Active_Directory_Forest_V3R2_STIG_SCAP_1-4_Benchmark-enhancedV2-oval2.xml": 4,
+    "unsupported function: substring": 3,
+    "unsupported object capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe}global_object": 2,
+    "unsupported acquisition parameter comparison/type": 2,
+    "unsupported Test matching/absence combination": 2,
+    "unsupported enum comparison/value": 2,
+    "unsupported State field/namespace": 2,
+    "var_ref: unsupported attributes ['datatype', 'operation']": 2,
+    "filename: unsupported attributes ['operation']": 2,
+    "state capability mismatch: oval:navy.navwar.niwcatlantic.scc.ms.iis.8.5.site:ste:80": 1,
+    "state capability mismatch: oval:navy.navwar.niwcatlantic.scc.ms.iis.8.5.site:ste:93": 1,
+    "state capability mismatch: oval:navy.navwar.niwcatlantic.scc.ms.iis.8.5.site:ste:180": 1
+  },
+  "secondary_diagnostic_rule_presence_overlapping": {
+    "unsupported Test existence: all_exist": 1202,
+    "unresolved checklist catalog href": 992,
+    "OVAL check imports/exports unsupported": 382,
+    "external/malformed Variable unsupported": 370,
+    "unresolved checklist catalog href: U_Apple_macOS_15_V1R4_STIG_SCAP_1-4_Benchmark-enhancedV8-oval2.xml": 157,
+    "unresolved checklist catalog href: U_Apple_macOS_26_V1R1_STIG_SCAP_1-4_Benchmark-enhancedV5-oval2.xml": 157,
+    "unresolved checklist catalog href: U_Apple_macOS_14_V2R3_STIG_SCAP_1-4_Benchmark-enhancedV7-oval2.xml": 152,
+    "unsupported state capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#windows}accesstoken_state": 127,
+    "unsupported test capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#windows}accesstoken_test": 127,
+    "unsupported object capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#windows}accesstoken_object": 127,
+    "unresolved checklist catalog href: U_Apple_macOS_13_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval2.xml": 102,
+    "unresolved checklist catalog href: U_MS_Exchange_2019_Edge_Server_V2R2_STIG_SCAP_1-4_Benchmark-enhancedV1-oval2.xml": 55,
+    "unresolved checklist catalog href: U_MS_Exchange_2019_Mailbox_Server_V2R3_STIG_SCAP_1-4_Benchmark-enhancedV1-oval2.xml": 51,
+    "unresolved checklist catalog href: U_MS_Windows_Server_DNS_V2R3_STIG_SCAP_1-4_Benchmark-enhancedV8-oval2.xml": 41,
+    "unsupported test capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris}smf_test": 40,
+    "unsupported object capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris}smf_object": 40,
+    "unresolved checklist catalog href: U_Cisco_IOS-XE_Switch_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV6-oval2.xml": 37,
+    "unsupported state capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris}smf_state": 36,
+    "unsupported object capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe}line_object": 33,
+    "unsupported object capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#windows}wmi_object": 33,
+    "unresolved checklist catalog href: U_MS_IIS_10-0_Site_V2R14_STIG_SCAP_1-4_Benchmark-enhancedV19-oval2.xml": 33,
+    "unsupported test capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe}line_test": 32,
+    "unsupported state capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe}line_state": 32,
+    "unsupported acquisition parameter comparison/type": 31,
+    "multiple aggregation components need an approved collection expression": 30,
+    "unresolved checklist catalog href: U_Cisco_IOS_Router_NDM_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV6-oval2.xml": 29,
+    "unresolved checklist catalog href: U_Cisco_IOS_Switch_NDM_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV6-oval2.xml": 29,
+    "unresolved checklist catalog href: U_MS_IIS_10-0_Server_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV18-oval2.xml": 25,
+    "unresolved checklist catalog href: U_Apache_Server_2-4_Windows_Server_V3R3_STIG_SCAP_1-4_Benchmark-enhancedV2-oval2.xml": 23,
+    "unsupported test capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#windows}wmi_test": 23,
+    "unsupported state capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#windows}wmi_state": 23,
+    "unresolved checklist catalog href: U_Apache_Server_2-4_UNIX_Server_V3R2_STIG_SCAP_1-4_Benchmark-enhancedV2-oval2.xml": 22,
+    "unresolved checklist catalog href: U_F5_NGINX_V1R1_STIG_SCAP_1-4_Benchmark-enhancedV1-oval2.xml": 22,
+    "unsupported function: split": 20,
+    "unsupported function: count": 19,
+    "unresolved checklist catalog href: U_Active_Directory_Domain_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV2-oval2.xml": 17,
+    "unsupported object capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe}global_object": 15,
+    "unsupported test capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe}global_test": 13,
+    "module_id: unsupported attributes ['{http://www.w3.org/2001/XMLSchema-instance}nil']": 13,
+    "unresolved checklist catalog href: U_MS_Windows_2012_and_2012_R2_DC_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-oval2.xml": 13,
+    "module_version: unsupported attributes ['{http://www.w3.org/2001/XMLSchema-instance}nil']": 12,
+    "unresolved checklist catalog href: U_MS_OneDrive_V2R4_STIG_SCAP_1-4_Benchmark-enhancedV12-oval2.xml": 12,
+    "invalid nil input datatype": 11,
+    "parameters: unsupported attributes ['{http://www.w3.org/2001/XMLSchema-instance}nil']": 11,
+    "ordered comparison expansion requires integer source datatype": 10,
+    "comparator-bearing absence blocked": 9,
+    "unsupported object capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#windows}user_object": 8,
+    "unsupported state capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#windows}user_state": 8,
+    "unsupported test capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#windows}user_test": 8,
+    "invalid original pattern-path recursion attributes": 7,
+    "unresolved checklist catalog href: U_Apache_Server_2-4_UNIX_Site_V2R6_STIG_SCAP_1-4_Benchmark-enhancedV2-oval2.xml": 6,
+    "unresolved checklist catalog href: U_Apache_Server_2-4_Windows_Site_V2R2_STIG_SCAP_1-4_Benchmark-enhancedV2-oval2.xml": 5,
+    "unsupported function: substring": 5,
+    "unresolved checklist catalog href: U_Active_Directory_Forest_V3R2_STIG_SCAP_1-4_Benchmark-enhancedV2-oval2.xml": 4,
+    "unsupported function: arithmetic": 4,
+    "unsupported Test matching/absence combination": 4,
+    "unsupported state capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe}global_state": 3,
+    "unsupported function: end": 2,
+    "state capability mismatch: oval:navy.navwar.niwcatlantic.scc.ms.iis.8.5.site:ste:181": 2,
+    "state capability mismatch: oval:navy.navwar.niwcatlantic.scc.ms.iis.8.5.site:ste:180": 2,
+    "unsupported enum comparison/value": 2,
+    "unsupported State field/namespace": 2,
+    "var_ref: unsupported attributes ['datatype', 'operation']": 2,
+    "filename: unsupported attributes ['operation']": 2,
+    "state capability mismatch: oval:navy.navwar.niwcatlantic.scc.ms.iis.8.5.site:ste:80": 1,
+    "state capability mismatch: oval:navy.navwar.niwcatlantic.scc.ms.iis.8.5.site:ste:81": 1,
+    "state capability mismatch: oval:navy.navwar.niwcatlantic.scc.ms.iis.8.5.site:ste:94": 1,
+    "state capability mismatch: oval:navy.navwar.niwcatlantic.scc.ms.iis.8.5.site:ste:93": 1,
+    "Variable source requires one var_ref; Sets/Filters unsupported": 1
+  },
+  "representatives": {
+    "unresolved checklist catalog href: U_Active_Directory_Domain_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV2-oval2.xml": [
+      {
+        "benchmark": "U_Active_Directory_Domain_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV2-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms_rule_SV-243466r959010_rule"
+      },
+      {
+        "benchmark": "U_Active_Directory_Domain_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV2-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms_rule_SV-243467r959010_rule"
+      }
+    ],
+    "unresolved checklist catalog href: U_Active_Directory_Forest_V3R2_STIG_SCAP_1-4_Benchmark-enhancedV2-oval2.xml": [
+      {
+        "benchmark": "U_Active_Directory_Forest_V3R2_STIG_SCAP_1-4_Benchmark-enhancedV2-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms_rule_SV-243502r1026198_rule"
+      },
+      {
+        "benchmark": "U_Active_Directory_Forest_V3R2_STIG_SCAP_1-4_Benchmark-enhancedV2-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms_rule_SV-243503r1026201_rule"
+      }
+    ],
+    "unsupported Test existence: all_exist": [
+      {
+        "benchmark": "U_Adobe_Acrobat_Pro_DC_Continuous_V2R2_STIG_SCAP_1-4_Benchmark-enhancedV2-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-213126r766535_rule"
+      },
+      {
+        "benchmark": "U_Adobe_Acrobat_Pro_DC_Continuous_V2R2_STIG_SCAP_1-4_Benchmark-enhancedV2-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-213138r766568_rule"
+      }
+    ],
+    "unsupported function: count": [
+      {
+        "benchmark": "U_Amazon_Linux_2023_V1R2_STIG_SCAP_1-4_Benchmark-enhancedV1-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-274160r1120663_rule"
+      },
+      {
+        "benchmark": "U_CAN_Ubuntu_22-04_LTS_V2R7_STIG_SCAP_1-4_Benchmark-enhancedV10-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-260543r958482_rule"
+      }
+    ],
+    "unresolved checklist catalog href: U_Apache_Server_2-4_UNIX_Server_V3R2_STIG_SCAP_1-4_Benchmark-enhancedV2-oval2.xml": [
+      {
+        "benchmark": "U_Apache_Server_2-4_UNIX_Server_V3R2_STIG_SCAP_1-4_Benchmark-enhancedV2-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms_rule_SV-214228r960735_rule"
+      },
+      {
+        "benchmark": "U_Apache_Server_2-4_UNIX_Server_V3R2_STIG_SCAP_1-4_Benchmark-enhancedV2-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms_rule_SV-214229r960735_rule"
+      }
+    ],
+    "unresolved checklist catalog href: U_Apache_Server_2-4_UNIX_Site_V2R6_STIG_SCAP_1-4_Benchmark-enhancedV2-oval2.xml": [
+      {
+        "benchmark": "U_Apache_Server_2-4_UNIX_Site_V2R6_STIG_SCAP_1-4_Benchmark-enhancedV2-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms_rule_SV-214292r961167_rule"
+      },
+      {
+        "benchmark": "U_Apache_Server_2-4_UNIX_Site_V2R6_STIG_SCAP_1-4_Benchmark-enhancedV2-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms_rule_SV-214296r1043182_rule"
+      }
+    ],
+    "unresolved checklist catalog href: U_Apache_Server_2-4_Windows_Server_V3R3_STIG_SCAP_1-4_Benchmark-enhancedV2-oval2.xml": [
+      {
+        "benchmark": "U_Apache_Server_2-4_Windows_Server_V3R3_STIG_SCAP_1-4_Benchmark-enhancedV2-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms_rule_SV-214306r960735_rule"
+      },
+      {
+        "benchmark": "U_Apache_Server_2-4_Windows_Server_V3R3_STIG_SCAP_1-4_Benchmark-enhancedV2-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms_rule_SV-214307r960735_rule"
+      }
+    ],
+    "unresolved checklist catalog href: U_Apache_Server_2-4_Windows_Site_V2R2_STIG_SCAP_1-4_Benchmark-enhancedV2-oval2.xml": [
+      {
+        "benchmark": "U_Apache_Server_2-4_Windows_Site_V2R2_STIG_SCAP_1-4_Benchmark-enhancedV2-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms_rule_SV-214368r960963_rule"
+      },
+      {
+        "benchmark": "U_Apache_Server_2-4_Windows_Site_V2R2_STIG_SCAP_1-4_Benchmark-enhancedV2-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms_rule_SV-214383r961167_rule"
+      }
+    ],
+    "unresolved checklist catalog href: U_Apple_macOS_13_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval2.xml": [
+      {
+        "benchmark": "U_Apple_macOS_13_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-signed",
+        "source_rule": "xccdf_gov.nist_rule_SV-257142r958400_rule"
+      },
+      {
+        "benchmark": "U_Apple_macOS_13_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-signed",
+        "source_rule": "xccdf_gov.nist_rule_SV-257143r958400_rule"
+      }
+    ],
+    "unresolved checklist catalog href: U_Apple_macOS_14_V2R3_STIG_SCAP_1-4_Benchmark-enhancedV7-oval2.xml": [
+      {
+        "benchmark": "U_Apple_macOS_14_V2R3_STIG_SCAP_1-4_Benchmark-enhancedV7-signed",
+        "source_rule": "xccdf_gov.nist_rule_SV-259418r958400_rule"
+      },
+      {
+        "benchmark": "U_Apple_macOS_14_V2R3_STIG_SCAP_1-4_Benchmark-enhancedV7-signed",
+        "source_rule": "xccdf_gov.nist_rule_SV-259419r958400_rule"
+      }
+    ],
+    "unresolved checklist catalog href: U_Apple_macOS_15_V1R4_STIG_SCAP_1-4_Benchmark-enhancedV8-oval2.xml": [
+      {
+        "benchmark": "U_Apple_macOS_15_V1R4_STIG_SCAP_1-4_Benchmark-enhancedV8-signed",
+        "source_rule": "xccdf_gov.nist_rule_SV-268420r1034200_rule"
+      },
+      {
+        "benchmark": "U_Apple_macOS_15_V1R4_STIG_SCAP_1-4_Benchmark-enhancedV8-signed",
+        "source_rule": "xccdf_gov.nist_rule_SV-268421r1034203_rule"
+      }
+    ],
+    "unresolved checklist catalog href: U_Apple_macOS_26_V1R1_STIG_SCAP_1-4_Benchmark-enhancedV5-oval2.xml": [
+      {
+        "benchmark": "U_Apple_macOS_26_V1R1_STIG_SCAP_1-4_Benchmark-enhancedV5-signed",
+        "source_rule": "xccdf_gov.nist_rule_SV-277028r1148536_rule"
+      },
+      {
+        "benchmark": "U_Apple_macOS_26_V1R1_STIG_SCAP_1-4_Benchmark-enhancedV5-signed",
+        "source_rule": "xccdf_gov.nist_rule_SV-277029r1148539_rule"
+      }
+    ],
+    "ordered comparison expansion requires integer source datatype": [
+      {
+        "benchmark": "U_CAN_Ubuntu_18-04_LTS_V2R12_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-219237r958752_rule"
+      },
+      {
+        "benchmark": "U_CAN_Ubuntu_20-04_LTS_V2R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-238305r958752_rule"
+      }
+    ],
+    "comparator-bearing absence blocked": [
+      {
+        "benchmark": "U_CAN_Ubuntu_18-04_LTS_V2R12_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-237770r991589_rule"
+      },
+      {
+        "benchmark": "U_MS_Windows_Server_2016_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-224994r958484_rule"
+      }
+    ],
+    "unsupported test capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe}global_test": [
+      {
+        "benchmark": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed",
+        "source_rule": "xccdf_mil.disa.stig.cisco_rule_SV-215807r1186318_rule"
+      },
+      {
+        "benchmark": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed",
+        "source_rule": "xccdf_mil.disa.stig.cisco_rule_SV-215813r960840_rule"
+      }
+    ],
+    "unsupported test capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe}line_test": [
+      {
+        "benchmark": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed",
+        "source_rule": "xccdf_mil.disa.stig.cisco_rule_SV-215808r1186320_rule"
+      },
+      {
+        "benchmark": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed",
+        "source_rule": "xccdf_mil.disa.stig.cisco_rule_SV-215809r1186322_rule"
+      }
+    ],
+    "unsupported object capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe}global_object": [
+      {
+        "benchmark": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed",
+        "source_rule": "xccdf_mil.disa.stig.cisco_rule_SV-215833r961068_rule"
+      },
+      {
+        "benchmark": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed",
+        "source_rule": "xccdf_mil.disa.stig.cisco_rule_SV-215838r1015295_rule"
+      }
+    ],
+    "unresolved checklist catalog href: U_Cisco_IOS-XE_Switch_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV6-oval2.xml": [
+      {
+        "benchmark": "U_Cisco_IOS-XE_Switch_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV6-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms.dns_rule_SV-220518r960735_rule"
+      },
+      {
+        "benchmark": "U_Cisco_IOS-XE_Switch_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV6-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms.dns_rule_SV-220519r1186338_rule"
+      }
+    ],
+    "unresolved checklist catalog href: U_Cisco_IOS_Router_NDM_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV6-oval2.xml": [
+      {
+        "benchmark": "U_Cisco_IOS_Router_NDM_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV6-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms.dns_rule_SV-215662r1192908_rule"
+      },
+      {
+        "benchmark": "U_Cisco_IOS_Router_NDM_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV6-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms.dns_rule_SV-215667r1137875_rule"
+      }
+    ],
+    "unresolved checklist catalog href: U_Cisco_IOS_Switch_NDM_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV6-oval2.xml": [
+      {
+        "benchmark": "U_Cisco_IOS_Switch_NDM_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV6-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms.dns_rule_SV-220570r960735_rule"
+      },
+      {
+        "benchmark": "U_Cisco_IOS_Switch_NDM_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV6-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms.dns_rule_SV-220575r1137875_rule"
+      }
+    ],
+    "unresolved checklist catalog href: U_F5_NGINX_V1R1_STIG_SCAP_1-4_Benchmark-enhancedV1-oval2.xml": [
+      {
+        "benchmark": "U_F5_NGINX_V1R1_STIG_SCAP_1-4_Benchmark-enhancedV1-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms_rule_SV-278380r1172745_rule"
+      },
+      {
+        "benchmark": "U_F5_NGINX_V1R1_STIG_SCAP_1-4_Benchmark-enhancedV1-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms_rule_SV-278381r1171895_rule"
+      }
+    ],
+    "multiple aggregation components need an approved collection expression": [
+      {
+        "benchmark": "U_MOZ_Firefox_Linux_V6R7_STIG_SCAP_1-4_Benchmark-enhancedV12-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-251546r1201983_rule"
+      },
+      {
+        "benchmark": "U_MOZ_Firefox_Linux_V6R7_STIG_SCAP_1-4_Benchmark-enhancedV12-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-251547r1067550_rule"
+      }
+    ],
+    "unsupported acquisition parameter comparison/type": [
+      {
+        "benchmark": "U_MS_DotNet_Framework_4-0_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV15-signed",
+        "source_rule": "xccdf_mil.disa.fso_rule_SV-225226r961041_rule"
+      },
+      {
+        "benchmark": "U_MS_Windows_10_V3R7_STIG_SCAP_1-4_Benchmark-enhancedV17-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-220812r991589_rule"
+      }
+    ],
+    "invalid original pattern-path recursion attributes": [
+      {
+        "benchmark": "U_MS_DotNet_Framework_4-0_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV15-signed",
+        "source_rule": "xccdf_mil.disa.fso_rule_SV-225229r1188309_rule"
+      },
+      {
+        "benchmark": "U_MS_Windows_10_V3R7_STIG_SCAP_1-4_Benchmark-enhancedV17-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-220723r991589_rule"
+      }
+    ],
+    "unsupported object capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#windows}wmi_object": [
+      {
+        "benchmark": "U_MS_DotNet_Framework_4-0_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV15-signed",
+        "source_rule": "xccdf_mil.disa.fso_rule_SV-225230r1117185_rule"
+      },
+      {
+        "benchmark": "U_MS_DotNet_Framework_4-0_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV15-signed",
+        "source_rule": "xccdf_mil.disa.fso_rule_SV-225232r1050651_rule"
+      }
+    ],
+    "unresolved checklist catalog href: U_MS_Exchange_2019_Edge_Server_V2R2_STIG_SCAP_1-4_Benchmark-enhancedV1-oval2.xml": [
+      {
+        "benchmark": "U_MS_Exchange_2019_Edge_Server_V2R2_STIG_SCAP_1-4_Benchmark-enhancedV1-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms_rule_SV-259577r960759_rule"
+      },
+      {
+        "benchmark": "U_MS_Exchange_2019_Edge_Server_V2R2_STIG_SCAP_1-4_Benchmark-enhancedV1-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms_rule_SV-259578r960792_rule"
+      }
+    ],
+    "unresolved checklist catalog href: U_MS_Exchange_2019_Mailbox_Server_V2R3_STIG_SCAP_1-4_Benchmark-enhancedV1-oval2.xml": [
+      {
+        "benchmark": "U_MS_Exchange_2019_Mailbox_Server_V2R3_STIG_SCAP_1-4_Benchmark-enhancedV1-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms_rule_SV-259645r960759_rule"
+      },
+      {
+        "benchmark": "U_MS_Exchange_2019_Mailbox_Server_V2R3_STIG_SCAP_1-4_Benchmark-enhancedV1-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms_rule_SV-259646r960759_rule"
+      }
+    ],
+    "OVAL check imports/exports unsupported": [
+      {
+        "benchmark": "U_MS_IE11_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV17-signed",
+        "source_rule": "xccdf_mil.disa.fso_rule_SV-223017r961089_rule"
+      },
+      {
+        "benchmark": "U_MS_IE11_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV17-signed",
+        "source_rule": "xccdf_mil.disa.fso_rule_SV-223018r961089_rule"
+      }
+    ],
+    "unresolved checklist catalog href: U_MS_IIS_10-0_Server_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV18-oval2.xml": [
+      {
+        "benchmark": "U_MS_IIS_10-0_Server_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV18-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms.iis_rule_SV-218786r1022652_rule"
+      },
+      {
+        "benchmark": "U_MS_IIS_10-0_Server_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV18-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms.iis_rule_SV-218788r1156543_rule"
+      }
+    ],
+    "unresolved checklist catalog href: U_MS_IIS_10-0_Site_V2R14_STIG_SCAP_1-4_Benchmark-enhancedV19-oval2.xml": [
+      {
+        "benchmark": "U_MS_IIS_10-0_Site_V2R14_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms.iis_rule_SV-218736r1022669_rule"
+      },
+      {
+        "benchmark": "U_MS_IIS_10-0_Site_V2R14_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms.iis_rule_SV-218737r1022671_rule"
+      }
+    ],
+    "unsupported Test matching/absence combination": [
+      {
+        "benchmark": "U_MS_IIS_8-5_Server_V2R7_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms.iis_rule_SV-258446r928857_rule"
+      },
+      {
+        "benchmark": "U_MS_IIS_8-5_Site_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms.iis_rule_SV-258445r928856_rule"
+      }
+    ],
+    "state capability mismatch: oval:navy.navwar.niwcatlantic.scc.ms.iis.8.5.site:ste:80": [
+      {
+        "benchmark": "U_MS_IIS_8-5_Site_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms.iis_rule_SV-214451r879567_rule"
+      }
+    ],
+    "state capability mismatch: oval:navy.navwar.niwcatlantic.scc.ms.iis.8.5.site:ste:93": [
+      {
+        "benchmark": "U_MS_IIS_8-5_Site_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms.iis_rule_SV-214452r879568_rule"
+      }
+    ],
+    "state capability mismatch: oval:navy.navwar.niwcatlantic.scc.ms.iis.8.5.site:ste:180": [
+      {
+        "benchmark": "U_MS_IIS_8-5_Site_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms.iis_rule_SV-214495r879587_rule"
+      }
+    ],
+    "unresolved checklist catalog href: U_MS_OneDrive_V2R4_STIG_SCAP_1-4_Benchmark-enhancedV12-oval2.xml": [
+      {
+        "benchmark": "U_MS_OneDrive_V2R4_STIG_SCAP_1-4_Benchmark-enhancedV12-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms_rule_SV-215529r961092_rule"
+      },
+      {
+        "benchmark": "U_MS_OneDrive_V2R4_STIG_SCAP_1-4_Benchmark-enhancedV12-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms_rule_SV-215531r961092_rule"
+      }
+    ],
+    "nonstandard source capability independent.sqlext; package held fail-closed": [
+      {
+        "benchmark": "U_MS_SQL_Server_2016_Database_V3R4_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms_rule_SV-213900r1043176_rule"
+      },
+      {
+        "benchmark": "U_MS_SQL_Server_2016_Database_V3R4_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms_rule_SV-213902r960864_rule"
+      }
+    ],
+    "invalid nil input datatype": [
+      {
+        "benchmark": "U_MS_Windows_10_V3R7_STIG_SCAP_1-4_Benchmark-enhancedV17-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-220698r991589_rule"
+      },
+      {
+        "benchmark": "U_MS_Windows_10_V3R7_STIG_SCAP_1-4_Benchmark-enhancedV17-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-220699r991589_rule"
+      }
+    ],
+    "unsupported test capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#windows}user_test": [
+      {
+        "benchmark": "U_MS_Windows_10_V3R7_STIG_SCAP_1-4_Benchmark-enhancedV17-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-220952r1051038_rule"
+      },
+      {
+        "benchmark": "U_MS_Windows_2012_and_2012_R2_MS_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+        "source_rule": "xccdf_mil.disa.fso_rule_SV-225450r569185_rule"
+      }
+    ],
+    "unsupported enum comparison/value": [
+      {
+        "benchmark": "U_MS_Windows_10_V3R7_STIG_SCAP_1-4_Benchmark-enhancedV17-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-220955r991589_rule"
+      },
+      {
+        "benchmark": "U_MS_Windows_Server_2016_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-225069r991589_rule"
+      }
+    ],
+    "unsupported test capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#windows}accesstoken_test": [
+      {
+        "benchmark": "U_MS_Windows_10_V3R7_STIG_SCAP_1-4_Benchmark-enhancedV17-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-220956r958726_rule"
+      },
+      {
+        "benchmark": "U_MS_Windows_10_V3R7_STIG_SCAP_1-4_Benchmark-enhancedV17-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-220957r1137691_rule"
+      }
+    ],
+    "Original OVAL closure invalid/deprecated": [
+      {
+        "benchmark": "U_MS_Windows_11_V2R10_STIG_SCAP_1-4_Benchmark-enhancedV18-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-253255r1210279_rule"
+      },
+      {
+        "benchmark": "U_MS_Windows_11_V2R10_STIG_SCAP_1-4_Benchmark-enhancedV18-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-253256r1210280_rule"
+      }
+    ],
+    "unsupported test capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#windows}wmi_test": [
+      {
+        "benchmark": "U_MS_Windows_2012_and_2012_R2_DC_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+        "source_rule": "xccdf_mil.disa.fso_rule_SV-226065r794383_rule"
+      },
+      {
+        "benchmark": "U_MS_Windows_2012_and_2012_R2_DC_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+        "source_rule": "xccdf_mil.disa.fso_rule_SV-226066r794792_rule"
+      }
+    ],
+    "unresolved checklist catalog href: U_MS_Windows_2012_and_2012_R2_DC_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-oval2.xml": [
+      {
+        "benchmark": "U_MS_Windows_2012_and_2012_R2_DC_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+        "source_rule": "xccdf_mil.disa.fso_rule_SV-226072r877392_rule"
+      },
+      {
+        "benchmark": "U_MS_Windows_2012_and_2012_R2_DC_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+        "source_rule": "xccdf_mil.disa.fso_rule_SV-226073r877392_rule"
+      }
+    ],
+    "unsupported function: substring": [
+      {
+        "benchmark": "U_MS_Windows_Server_2016_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-224975r958524_rule"
+      },
+      {
+        "benchmark": "U_MS_Windows_Server_2019_V3R9_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-205723r1137695_rule"
+      }
+    ],
+    "unresolved checklist catalog href: U_MS_Windows_Server_DNS_V2R3_STIG_SCAP_1-4_Benchmark-enhancedV8-oval2.xml": [
+      {
+        "benchmark": "U_MS_Windows_Server_DNS_V2R3_STIG_SCAP_1-4_Benchmark-enhancedV8-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms.dns_rule_SV-259334r960735_rule"
+      },
+      {
+        "benchmark": "U_MS_Windows_Server_DNS_V2R3_STIG_SCAP_1-4_Benchmark-enhancedV8-signed",
+        "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms.dns_rule_SV-259335r1156947_rule"
+      }
+    ],
+    "unsupported State field/namespace": [
+      {
+        "benchmark": "U_Oracle_Linux_7_V3R3_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-221653r1015161_rule"
+      },
+      {
+        "benchmark": "U_RHEL_7_V3R15_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-214799r991589_rule"
+      }
+    ],
+    "unsupported function: split": [
+      {
+        "benchmark": "U_Oracle_Linux_9_V1R4_STIG_SCAP_1-4_Benchmark-enhancedV5-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-271653r1091671_rule"
+      },
+      {
+        "benchmark": "U_Oracle_Linux_9_V1R4_STIG_SCAP_1-4_Benchmark-enhancedV5-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-271657r1091683_rule"
+      }
+    ],
+    "var_ref: unsupported attributes ['datatype', 'operation']": [
+      {
+        "benchmark": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-216301r959010_rule"
+      },
+      {
+        "benchmark": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-216066r959010_rule"
+      }
+    ],
+    "unsupported test capability: {http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris}smf_test": [
+      {
+        "benchmark": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-216309r959010_rule"
+      },
+      {
+        "benchmark": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-216336r958400_rule"
+      }
+    ],
+    "filename: unsupported attributes ['operation']": [
+      {
+        "benchmark": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-216418r959010_rule"
+      },
+      {
+        "benchmark": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-216181r959010_rule"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "file": "U_Active_Directory_Domain_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV2-signed.zip",
+      "source_sha256": "94740b7929dd868043ab1b476c3b568712fc26d045a4d450359cea90effbfa1c",
+      "source_package_exception": false,
+      "total_rules": 36,
+      "statuses": {
+        "BLOCKED": 17,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 19
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_Active_Directory_Forest_V3R2_STIG_SCAP_1-4_Benchmark-enhancedV2-signed.zip",
+      "source_sha256": "0d7ac019b7133db86f30b83e4922ecfb8f07e364c09d789c3bbd7262bb57fda0",
+      "source_package_exception": false,
+      "total_rules": 7,
+      "statuses": {
+        "BLOCKED": 4,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 3
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_Adobe_Acrobat_Pro_DC_Continuous_V2R2_STIG_SCAP_1-4_Benchmark-enhancedV2-signed.zip",
+      "source_sha256": "01bdb16fcfee60d27f475cedbf25263919df52cb78aa58bb2242b259d409694b",
+      "source_package_exception": false,
+      "total_rules": 23,
+      "statuses": {
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 19,
+        "BLOCKED": 3,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 1
+      },
+      "compiled_diagnostic_programs": 19
+    },
+    {
+      "file": "U_Adobe_Acrobat_Reader_DC_Continuous_V2R5_STIG_SCAP_1-4_Benchmark-enhancedV12-signed.zip",
+      "source_sha256": "e1611d05432ed262238755cfee8fad770c4a76e064c915a10272c79448d5eb21",
+      "source_package_exception": false,
+      "total_rules": 26,
+      "statuses": {
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 25,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 1
+      },
+      "compiled_diagnostic_programs": 25
+    },
+    {
+      "file": "U_Amazon_Linux_2023_V1R2_STIG_SCAP_1-4_Benchmark-enhancedV1-signed.zip",
+      "source_sha256": "88cc35f98c9ff96c567110c284c06e6adfc556fd59967019bdec6fd1cc5a204f",
+      "source_package_exception": false,
+      "total_rules": 187,
+      "statuses": {
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 17,
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 120,
+        "BLOCKED": 50
+      },
+      "compiled_diagnostic_programs": 120
+    },
+    {
+      "file": "U_Apache_Server_2-4_UNIX_Server_V3R2_STIG_SCAP_1-4_Benchmark-enhancedV2-signed.zip",
+      "source_sha256": "8894123788ba415373625eaecdbbd834f190668697803c3319393c11889f1b80",
+      "source_package_exception": false,
+      "total_rules": 45,
+      "statuses": {
+        "BLOCKED": 22,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 23
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_Apache_Server_2-4_UNIX_Site_V2R6_STIG_SCAP_1-4_Benchmark-enhancedV2-signed.zip",
+      "source_sha256": "9c93cbe5d8283bb8ab3ceb2221ef63cd6be16352e2bcf94939a1b2b576afb88c",
+      "source_package_exception": false,
+      "total_rules": 16,
+      "statuses": {
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 10,
+        "BLOCKED": 6
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_Apache_Server_2-4_Windows_Server_V3R3_STIG_SCAP_1-4_Benchmark-enhancedV2-signed.zip",
+      "source_sha256": "d83045885c4e7eebe197d11b02f898ec41ecfac8da7949bc9a5b7538c8220408",
+      "source_package_exception": false,
+      "total_rules": 49,
+      "statuses": {
+        "BLOCKED": 23,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 26
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_Apache_Server_2-4_Windows_Site_V2R2_STIG_SCAP_1-4_Benchmark-enhancedV2-signed.zip",
+      "source_sha256": "9efd70c07316fce84255d1b092a4824b7cd4d47961598511f480783c3020f2ed",
+      "source_package_exception": false,
+      "total_rules": 16,
+      "statuses": {
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 11,
+        "BLOCKED": 5
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_Apache_Tomcat_Application_Server_9_V3R4_STIG_SCAP_1-4_Benchmark-enhancedV1-signed.zip",
+      "source_sha256": "ac4160a0f0f9541507836ba44272ba479fe6f1f8e8da3aff9793700ee482288d",
+      "source_package_exception": false,
+      "total_rules": 79,
+      "statuses": {
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 79
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_Apple_macOS_13_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-signed.zip",
+      "source_sha256": "0fbdff446bba6b8e0efc320d599b1a38c02bc018f99f0127fc258bde583249de",
+      "source_package_exception": false,
+      "total_rules": 113,
+      "statuses": {
+        "BLOCKED": 102,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 11
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_Apple_macOS_14_V2R3_STIG_SCAP_1-4_Benchmark-enhancedV7-signed.zip",
+      "source_sha256": "5f3cd35984615828ce36b94ac2a2d7c81d49fb656c03b4b7ce522c71435a1efe",
+      "source_package_exception": false,
+      "total_rules": 156,
+      "statuses": {
+        "BLOCKED": 152,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 4
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_Apple_macOS_15_V1R4_STIG_SCAP_1-4_Benchmark-enhancedV8-signed.zip",
+      "source_sha256": "da8ff53600d31adf8917b49a3bf3a7b4eb6188edde6d21fbdcf7b54eed9d3c19",
+      "source_package_exception": false,
+      "total_rules": 160,
+      "statuses": {
+        "BLOCKED": 157,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 3
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_Apple_macOS_26_V1R1_STIG_SCAP_1-4_Benchmark-enhancedV5-signed.zip",
+      "source_sha256": "f4ad086a9d017dda38fdaf76590c4f4081d3927f54cd0c8a0953e85541561955",
+      "source_package_exception": false,
+      "total_rules": 160,
+      "statuses": {
+        "BLOCKED": 157,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 3
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_CAN_Ubuntu_18-04_LTS_V2R12_STIG_SCAP_1-4_Benchmark-enhancedV16-signed.zip",
+      "source_sha256": "1a9f72cf7a050359f0bc4ea73a12d5a9c5675c93fa594c8305a1e238cf3bbd49",
+      "source_package_exception": false,
+      "total_rules": 176,
+      "statuses": {
+        "BLOCKED": 62,
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 67,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 47
+      },
+      "compiled_diagnostic_programs": 67
+    },
+    {
+      "file": "U_CAN_Ubuntu_20-04_LTS_V2R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed.zip",
+      "source_sha256": "85cc4348a0bd85becf757f50e6f0d3ef67169c87e26f12f045c94914d7099ef5",
+      "source_package_exception": false,
+      "total_rules": 173,
+      "statuses": {
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 34,
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 121,
+        "BLOCKED": 18
+      },
+      "compiled_diagnostic_programs": 121
+    },
+    {
+      "file": "U_CAN_Ubuntu_22-04_LTS_V2R7_STIG_SCAP_1-4_Benchmark-enhancedV10-signed.zip",
+      "source_sha256": "dbbc87ffe6d0c84688993d96cd7007e76bf83b9206508109b586ccc5bf88b6b2",
+      "source_package_exception": false,
+      "total_rules": 188,
+      "statuses": {
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 124,
+        "BLOCKED": 51,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 13
+      },
+      "compiled_diagnostic_programs": 124
+    },
+    {
+      "file": "U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-signed.zip",
+      "source_sha256": "40229cd7a41e6ff4a8cfb675523f767292d1460edbc68fe9ba5258c530c8b4a7",
+      "source_package_exception": false,
+      "total_rules": 194,
+      "statuses": {
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 125,
+        "BLOCKED": 53,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 16
+      },
+      "compiled_diagnostic_programs": 125
+    },
+    {
+      "file": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed.zip",
+      "source_sha256": "82e2d4bf65abc53bb6da01874944c555efae51dbc98d80e6e42423d1025e7efa",
+      "source_package_exception": false,
+      "total_rules": 42,
+      "statuses": {
+        "BLOCKED": 37,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 5
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed.zip",
+      "source_sha256": "e2a2e23823d0610ca91c5ba2d73a952a4dbbb1afab7daf5874f6e416df50a095",
+      "source_package_exception": false,
+      "total_rules": 97,
+      "statuses": {
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 91,
+        "BLOCKED": 6
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_Cisco_IOS-XE_Switch_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV6-signed.zip",
+      "source_sha256": "0bd07f9acdf6cae7e6b2f0549c7bf42ce368114953b18f37f460fa66563aa600",
+      "source_package_exception": false,
+      "total_rules": 42,
+      "statuses": {
+        "BLOCKED": 37,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 5
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_Cisco_IOS_Router_NDM_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV6-signed.zip",
+      "source_sha256": "cc90109437f9e26ab5ec6cbd43b6e83b1c60717b4da02ce0d5580a07bcdb147d",
+      "source_package_exception": false,
+      "total_rules": 35,
+      "statuses": {
+        "BLOCKED": 29,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 6
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_Cisco_IOS_Switch_NDM_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV6-signed.zip",
+      "source_sha256": "1d33596c80208a4b3d77004397b209b5038badfefe97e5e5d27ec536b1211b70",
+      "source_package_exception": false,
+      "total_rules": 35,
+      "statuses": {
+        "BLOCKED": 29,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 6
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_F5_NGINX_V1R1_STIG_SCAP_1-4_Benchmark-enhancedV1-signed.zip",
+      "source_sha256": "1e8e828b22f0c73673cbac1900dd56fd68537baf0dd2afd0a2379df9a2b0664f",
+      "source_package_exception": false,
+      "total_rules": 32,
+      "statuses": {
+        "BLOCKED": 22,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 10
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed.zip",
+      "source_sha256": "78e58d9ce76f458e8c436de80cb2b30e15ebce35d1527bf6e38aca5069e6bfd1",
+      "source_package_exception": false,
+      "total_rules": 46,
+      "statuses": {
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 44,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 2
+      },
+      "compiled_diagnostic_programs": 44
+    },
+    {
+      "file": "U_Kubernetes_V2R5_STIG_SCAP_1-4_Benchmark-enhancedV8-signed.zip",
+      "source_sha256": "3772f25da835952e83bdd3b230dbf2d73b42e9849e129982ce1efe6497e71ae0",
+      "source_package_exception": false,
+      "total_rules": 92,
+      "statuses": {
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 61,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 31
+      },
+      "compiled_diagnostic_programs": 61
+    },
+    {
+      "file": "U_MOZ_Firefox_Linux_V6R7_STIG_SCAP_1-4_Benchmark-enhancedV12-signed.zip",
+      "source_sha256": "c8afb0321ec0db0c831ddbc617ae734b2af3369d914d5034a4595e1d4be9f3b7",
+      "source_package_exception": false,
+      "total_rules": 33,
+      "statuses": {
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 3,
+        "BLOCKED": 30
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_MOZ_Firefox_Windows_V6R8_STIG_SCAP_1-4_Benchmark-enhancedV13-signed.zip",
+      "source_sha256": "ad37668f0f43cd0b973e7544ad1d44e21dac9388f750fa2dab2c43893e781f41",
+      "source_package_exception": false,
+      "total_rules": 33,
+      "statuses": {
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 1,
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 32
+      },
+      "compiled_diagnostic_programs": 32
+    },
+    {
+      "file": "U_MS_Defender_Antivirus_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV15-signed.zip",
+      "source_sha256": "8f0b317cd9c17bc27f3285a5e8810a6560c0ac8ffe475a6d6e7bd72dae5fefd6",
+      "source_package_exception": false,
+      "total_rules": 67,
+      "statuses": {
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 59,
+        "BLOCKED": 8
+      },
+      "compiled_diagnostic_programs": 59
+    },
+    {
+      "file": "U_MS_DotNet_Framework_4-0_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV15-signed.zip",
+      "source_sha256": "9578b414bc8e406e15226b91d663d31f227f1164f8bca7c4d5ea3507d8f520c9",
+      "source_package_exception": false,
+      "total_rules": 17,
+      "statuses": {
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 8,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 3,
+        "BLOCKED": 6
+      },
+      "compiled_diagnostic_programs": 8
+    },
+    {
+      "file": "U_MS_Edge_V2R5_STIG_SCAP_1-4_Benchmark-enhancedV16-signed.zip",
+      "source_sha256": "612a1ee2696ca6453cdc363f236c364549981b5ef84a4cc9144afb9dafc77339",
+      "source_package_exception": false,
+      "total_rules": 61,
+      "statuses": {
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 56,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 5
+      },
+      "compiled_diagnostic_programs": 56
+    },
+    {
+      "file": "U_MS_Exchange_2019_Edge_Server_V2R2_STIG_SCAP_1-4_Benchmark-enhancedV1-signed.zip",
+      "source_sha256": "b6bd7ad2a458f464eca99deb9eac50aaeafa74d435cf0bb2ca76d0424d916692",
+      "source_package_exception": false,
+      "total_rules": 68,
+      "statuses": {
+        "BLOCKED": 55,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 13
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_MS_Exchange_2019_Mailbox_Server_V2R3_STIG_SCAP_1-4_Benchmark-enhancedV1-signed.zip",
+      "source_sha256": "46497542771fd7841cd96745d61dbdeb8ccf0d082415dcfa64a6694bf365f8f9",
+      "source_package_exception": false,
+      "total_rules": 66,
+      "statuses": {
+        "BLOCKED": 51,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 15
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_MS_IE11_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV17-signed.zip",
+      "source_sha256": "c0d20d64249769c052f8ff9ecef3ddffb2944064b6211a9c8afb3f6dfb962f81",
+      "source_package_exception": false,
+      "total_rules": 137,
+      "statuses": {
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 63,
+        "BLOCKED": 74
+      },
+      "compiled_diagnostic_programs": 63
+    },
+    {
+      "file": "U_MS_IIS_10-0_Server_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV18-signed.zip",
+      "source_sha256": "8bfa016748ea4c6478655a6777dc2aab9d601581b0429388e4d1ba0e3696ca1b",
+      "source_package_exception": false,
+      "total_rules": 40,
+      "statuses": {
+        "BLOCKED": 25,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 15
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_MS_IIS_10-0_Site_V2R14_STIG_SCAP_1-4_Benchmark-enhancedV19-signed.zip",
+      "source_sha256": "0b97a739e3b9414fdc93d0bee9f2b71e9f0064ee716acb6bf64cef1cc39f29ae",
+      "source_package_exception": false,
+      "total_rules": 44,
+      "statuses": {
+        "BLOCKED": 33,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 11
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_MS_IIS_8-5_Server_V2R7_STIG_SCAP_1-4_Benchmark-enhancedV13-signed.zip",
+      "source_sha256": "3b2f7aa396dbfc647b73de8f7506a5bca1578ff5b79f96d40d13859da57613e4",
+      "source_package_exception": false,
+      "total_rules": 43,
+      "statuses": {
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 17,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 24,
+        "BLOCKED": 2
+      },
+      "compiled_diagnostic_programs": 17
+    },
+    {
+      "file": "U_MS_IIS_8-5_Site_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-signed.zip",
+      "source_sha256": "21f5e5e7809b14e8bfb21b4571f156bb150a3db0afe449d2fdb0da9d06add27f",
+      "source_package_exception": false,
+      "total_rules": 49,
+      "statuses": {
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 29,
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 15,
+        "BLOCKED": 5
+      },
+      "compiled_diagnostic_programs": 15
+    },
+    {
+      "file": "U_MS_Office_365_ProPlus_V3R8_STIG_SCAP_1-4_Benchmark-enhancedV11-signed.zip",
+      "source_sha256": "1129b2253c25cc52ff59a9c0a9a3213cf011cbccea801046514ec0ed8bb3c2eb",
+      "source_package_exception": false,
+      "total_rules": 139,
+      "statuses": {
+        "BLOCKED": 116,
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 22,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 1
+      },
+      "compiled_diagnostic_programs": 22
+    },
+    {
+      "file": "U_MS_OneDrive_V2R4_STIG_SCAP_1-4_Benchmark-enhancedV12-signed.zip",
+      "source_sha256": "144d5d76eefb0707d5afe95ad804f0ee7ca696b061c77093d33892a193f1e592",
+      "source_package_exception": false,
+      "total_rules": 12,
+      "statuses": {
+        "BLOCKED": 12
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_MS_SQL_Server_2016_Database_V3R4_STIG_SCAP_1-4_Benchmark-enhancedV13-signed.zip",
+      "source_sha256": "b4ec35e6175b37f1e1ac798612092afe54066b8878f9b0ff9126e5b7e787c6ae",
+      "source_package_exception": true,
+      "total_rules": 23,
+      "statuses": {
+        "BLOCKED_SOURCE_PACKAGE_SQLEXT": 16,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 7
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_MS_SQL_Server_2016_Instance_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV14-signed.zip",
+      "source_sha256": "15ac7e34b3fbc687092f71cb62d3043664e34061ddaed81988ce4a7d2cc1a45c",
+      "source_package_exception": true,
+      "total_rules": 84,
+      "statuses": {
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 27,
+        "BLOCKED_SOURCE_PACKAGE_SQLEXT": 57
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_MS_SQL_Server_2022_Database_V1R2_STIG_SCAP_1-4_Benchmark-enhancedV8-signed.zip",
+      "source_sha256": "f278c41721a40c7a80e04e48353e42169747f215377eb63795058166a0b7ce48",
+      "source_package_exception": true,
+      "total_rules": 23,
+      "statuses": {
+        "BLOCKED_SOURCE_PACKAGE_SQLEXT": 16,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 7
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_MS_SQL_Server_2022_Instance_V1R3_STIG_SCAP_1-4_Benchmark-enhancedV8-signed.zip",
+      "source_sha256": "5a05495768b1076a53ee6089949ba0209a0121d8728e766fd91b4b2442ad0f33",
+      "source_package_exception": true,
+      "total_rules": 79,
+      "statuses": {
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 31,
+        "BLOCKED_SOURCE_PACKAGE_SQLEXT": 48
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_MS_Windows_10_V3R7_STIG_SCAP_1-4_Benchmark-enhancedV17-signed.zip",
+      "source_sha256": "8562a9de2792fd97a3d2bc0a4950012a7b51a05d1514bfaf180db7b99bf3baee",
+      "source_package_exception": false,
+      "total_rules": 267,
+      "statuses": {
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 208,
+        "BLOCKED": 47,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 12
+      },
+      "compiled_diagnostic_programs": 208
+    },
+    {
+      "file": "U_MS_Windows_11_V2R10_STIG_SCAP_1-4_Benchmark-enhancedV18-signed.zip",
+      "source_sha256": "e4b8d55b58aa80124bd0974977af4c7f7bde35c748e2940e02857419292d8c3d",
+      "source_package_exception": false,
+      "total_rules": 257,
+      "statuses": {
+        "SOURCE_PROVED_COMPILED_PRIMARY_ONLY": 228,
+        "BLOCKED_INVALID_ORIGINAL_SOURCE": 4,
+        "BLOCKED": 14,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 11
+      },
+      "compiled_diagnostic_programs": 228
+    },
+    {
+      "file": "U_MS_Windows_2012_and_2012_R2_DC_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed.zip",
+      "source_sha256": "ecba937d43efc0a72037eefb501b46a2e417158088b2f2699f2c86b68bd1de9c",
+      "source_package_exception": false,
+      "total_rules": 364,
+      "statuses": {
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 96,
+        "BLOCKED": 175,
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 93
+      },
+      "compiled_diagnostic_programs": 93
+    },
+    {
+      "file": "U_MS_Windows_2012_and_2012_R2_MS_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed.zip",
+      "source_sha256": "3ad256b29d6f85fe69ba9a14b18502a6f50e923faea2880d9ce10246f780a50a",
+      "source_package_exception": false,
+      "total_rules": 329,
+      "statuses": {
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 82,
+        "BLOCKED": 159,
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 88
+      },
+      "compiled_diagnostic_programs": 88
+    },
+    {
+      "file": "U_MS_Windows_Defender_Firewall_V2R3_STIG_SCAP_1-4_Benchmark-enhancedV14-signed.zip",
+      "source_sha256": "d16c868152e14bab0a1e2ecdfa6ec889972e068625d4d20d4ac3f861ff2009ca",
+      "source_package_exception": false,
+      "total_rules": 21,
+      "statuses": {
+        "BLOCKED": 20,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 1
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_MS_Windows_Server_2016_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV19-signed.zip",
+      "source_sha256": "76cf6a14fefd077136d9a23a6ba4a30c82a0b254adc8cf2abd88592dc30776a8",
+      "source_package_exception": false,
+      "total_rules": 272,
+      "statuses": {
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 28,
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 155,
+        "BLOCKED": 89
+      },
+      "compiled_diagnostic_programs": 155
+    },
+    {
+      "file": "U_MS_Windows_Server_2019_V3R9_STIG_SCAP_1-4_Benchmark-enhancedV19-signed.zip",
+      "source_sha256": "54113f747a0a256f66b8c8db34763daebee3dc2c769041ec5f043ec7ed5948a1",
+      "source_package_exception": false,
+      "total_rules": 282,
+      "statuses": {
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 27,
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 243,
+        "BLOCKED": 12
+      },
+      "compiled_diagnostic_programs": 243
+    },
+    {
+      "file": "U_MS_Windows_Server_2022_V2R10_STIG_SCAP_1-4_Benchmark-enhancedV19-signed.zip",
+      "source_sha256": "5ba5577961a13ded0d4e9a0c6603f93b8201b4fc74d23ef679eba7726e0182f4",
+      "source_package_exception": false,
+      "total_rules": 278,
+      "statuses": {
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 27,
+        "BLOCKED": 12,
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 239
+      },
+      "compiled_diagnostic_programs": 239
+    },
+    {
+      "file": "U_MS_Windows_Server_2025_V1R1_STIG_SCAP_1-4_Benchmark-enhancedV1-signed.zip",
+      "source_sha256": "2f46264b5fa21c8a033236121794ebe372314bf7458dac0aca4f81179fe7ece0",
+      "source_package_exception": false,
+      "total_rules": 291,
+      "statuses": {
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 30,
+        "BLOCKED_INVALID_ORIGINAL_SOURCE": 4,
+        "SOURCE_PROVED_COMPILED_PRIMARY_ONLY": 249,
+        "BLOCKED": 8
+      },
+      "compiled_diagnostic_programs": 249
+    },
+    {
+      "file": "U_MS_Windows_Server_DNS_V2R3_STIG_SCAP_1-4_Benchmark-enhancedV8-signed.zip",
+      "source_sha256": "f674b67e74acbd3037093d50e33dc20765bd9d45a6c9ed2be5d463d009a6c6b8",
+      "source_package_exception": false,
+      "total_rules": 81,
+      "statuses": {
+        "BLOCKED": 41,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 40
+      },
+      "compiled_diagnostic_programs": 0
+    },
+    {
+      "file": "U_Oracle_Linux_7_V3R3_STIG_SCAP_1-4_Benchmark-enhancedV16-signed.zip",
+      "source_sha256": "0235429534dfc1149824f1a6b5144f73e16dc28d84d899c638cc5ede31da8c1a",
+      "source_package_exception": false,
+      "total_rules": 243,
+      "statuses": {
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 72,
+        "BLOCKED": 75,
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 96
+      },
+      "compiled_diagnostic_programs": 96
+    },
+    {
+      "file": "U_Oracle_Linux_8_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV19-signed.zip",
+      "source_sha256": "e811aadd425862d0483cb314b8f8f3efe31547dbf287d89da8c3b64efcb09a29",
+      "source_package_exception": false,
+      "total_rules": 376,
+      "statuses": {
+        "BLOCKED": 103,
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 221,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 52
+      },
+      "compiled_diagnostic_programs": 221
+    },
+    {
+      "file": "U_Oracle_Linux_9_V1R4_STIG_SCAP_1-4_Benchmark-enhancedV5-signed.zip",
+      "source_sha256": "6733abd693380b43b2350c2692775e4ff902f895f16899db97b34fecf7fba74d",
+      "source_package_exception": false,
+      "total_rules": 448,
+      "statuses": {
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 40,
+        "BLOCKED": 115,
+        "SOURCE_PROVED_COMPILED_PRIMARY_ONLY": 291,
+        "BLOCKED_INVALID_ORIGINAL_SOURCE": 2
+      },
+      "compiled_diagnostic_programs": 292
+    },
+    {
+      "file": "U_RHEL_7_V3R15_STIG_SCAP_1-4_Benchmark-enhancedV19-signed.zip",
+      "source_sha256": "17c3ddd4d4ae40bd7ca3443dae0a0c9ed921444a57c34bff357f9f885e0d9ab8",
+      "source_package_exception": false,
+      "total_rules": 244,
+      "statuses": {
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 58,
+        "BLOCKED": 76,
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 110
+      },
+      "compiled_diagnostic_programs": 110
+    },
+    {
+      "file": "U_RHEL_8_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV22-signed.zip",
+      "source_sha256": "7c3e8df208dd49ea0b9bbb4435e665b814bb69e9ad18853ac91b7f65b0be94b5",
+      "source_package_exception": false,
+      "total_rules": 369,
+      "statuses": {
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 227,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 32,
+        "BLOCKED": 110
+      },
+      "compiled_diagnostic_programs": 227
+    },
+    {
+      "file": "U_RHEL_9_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-signed.zip",
+      "source_sha256": "70aa6a16221df2c53b094b11b48b16aca1f6d7147c11123b655659ca7711dbb5",
+      "source_package_exception": false,
+      "total_rules": 445,
+      "statuses": {
+        "SOURCE_PROVED_COMPILED_PRIMARY_ONLY": 304,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 27,
+        "BLOCKED": 112,
+        "BLOCKED_INVALID_ORIGINAL_SOURCE": 2
+      },
+      "compiled_diagnostic_programs": 305
+    },
+    {
+      "file": "U_SLES_12_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV17-signed.zip",
+      "source_sha256": "c19224227a7719b2b83499495349ca1050bcc9ab534410e69b44c2aed14dcaf5",
+      "source_package_exception": false,
+      "total_rules": 210,
+      "statuses": {
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 46,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 89,
+        "BLOCKED": 75
+      },
+      "compiled_diagnostic_programs": 46
+    },
+    {
+      "file": "U_SLES_15_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV19-signed.zip",
+      "source_sha256": "9f3905efe7cc8e7e15a3713db86abcec65367d36b771fb32d1f7755213436f9c",
+      "source_package_exception": false,
+      "total_rules": 218,
+      "statuses": {
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 111,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 83,
+        "BLOCKED": 24
+      },
+      "compiled_diagnostic_programs": 111
+    },
+    {
+      "file": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed.zip",
+      "source_sha256": "b8ae7486d503b46e25ca885cfd53b9b47c40f313b9b4117683f88102c7222b1d",
+      "source_package_exception": false,
+      "total_rules": 215,
+      "statuses": {
+        "BLOCKED": 33,
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 108,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 74
+      },
+      "compiled_diagnostic_programs": 108
+    },
+    {
+      "file": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed.zip",
+      "source_sha256": "f988154cba7cf0ab39fa3063e510398c716e5d7d5865ae5cc187dc10d2071f2a",
+      "source_package_exception": false,
+      "total_rules": 214,
+      "statuses": {
+        "BLOCKED": 34,
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 107,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 73
+      },
+      "compiled_diagnostic_programs": 107
+    },
+    {
+      "file": "U_TOSS_4_V2R7_STIG_SCAP_1-4_Benchmark-enhancedV8-signed.zip",
+      "source_sha256": "fbeda733bc200206f525d5667a8ec30be44a3865b0b48f58d837ad9f74a88b7d",
+      "source_package_exception": false,
+      "total_rules": 225,
+      "statuses": {
+        "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 108,
+        "OCIL_ONLY_MANUAL_UNCONVERTED": 30,
+        "BLOCKED": 87
+      },
+      "compiled_diagnostic_programs": 108
+    }
+  ]
+}

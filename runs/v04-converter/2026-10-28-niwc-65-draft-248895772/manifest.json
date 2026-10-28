@@ -1,0 +1,75 @@
+{
+  "evidence_id": "v04-niwc-65-draft-20261028-248895772",
+  "kind": "production-migration-engineering-draft",
+  "status": "DRAFT \u2014 NOT RUNTIME VERIFIED",
+  "created_at": "2026-10-28T23:46:13.492084+00:00",
+  "source_scap_ng_repository": "vanderpol/scap-ng",
+  "toolchain_sha": "24889577233c6a75e739676adffe8f676a0f9f3b",
+  "generating_tool": "tools/v04_direct_converter.py:convert_benchmark plus included build_65_draft.py",
+  "inputs": "source-pins.json; NIWC 8c8e5dff860af6b1290ee9273a282db24278f8d5, 65 Git-blob-verified individual ZIPs; consolidated ZIP excluded",
+  "checks": [
+    "source ZIP Git-blob SHA, SHA-256 and CRC",
+    "current native schemas per emitted document",
+    "native compilation and independent compiled-operand verification",
+    "1072 retained six-source primary source proofs matched by Assessment and full program hashes",
+    "all 1055 preceding six-source program hashes retained by six-source acceptance gate"
+  ],
+  "original_source_validation": "Six anchor sources only via retained six-source gate; NOT RUN for other sources",
+  "independent_source_proof": "1072 six-source primary Rules only; NOT RUN for other sources",
+  "scanner_execution": "NOT RUN",
+  "counts": {
+    "BLOCKED": 2880,
+    "OCIL_ONLY_MANUAL_UNCONVERTED": 1653,
+    "CONVERTED_COMPILED_UNPROVED_ORIGINAL_VALIDITY_NOT_RUN": 3138,
+    "BLOCKED_SOURCE_PACKAGE_SQLEXT": 137,
+    "SOURCE_PROVED_COMPILED_PRIMARY_ONLY": 1072,
+    "BLOCKED_INVALID_ORIGINAL_SOURCE": 12
+  },
+  "total_rules": 8892,
+  "summary": "summaries.json",
+  "ledger": "ledger.json / ledger.csv",
+  "reproduction": "Included scripts, source-pins.json and README.md",
+  "limitations": [
+    "Diagnostic candidate bundles are not accepted assessment packages",
+    "Compiled unproved candidates may include invalid/deprecated original closures; other 59 sources have not had original-source semantic validation",
+    "Four independent.sqlext source packages are held fail-closed; manual Rules remain separately counted",
+    "Only primary automated Assessment subsets; full policy, applicability and manual execution remain outside proof",
+    "Further secondary blockers may emerge after primary dependencies are resolved",
+    "Not a verified release or a complete lossless migration"
+  ],
+  "raw_payload": {
+    "file": "niwc-65-draft-248895772.zip",
+    "bytes": 47484177,
+    "sha256": "5f86d016c1bce82018eec82c6468ab583816ff0b38c8d3ea5e9210a931cc1a08",
+    "file_count": 17298,
+    "url": "https://github.com/vanderpol/scap-ng-evidence/raw/refs/tags/v04-niwc-65-draft-20261028-248895772/runs/v04-converter/2026-10-28-niwc-65-draft-248895772/niwc-65-draft-248895772.zip",
+    "storage": "Evidence Git under unique immutable DRAFT tag; explicit owner-review exception in STORAGE-DECISION.md"
+  },
+  "publication_addendum": {
+    "failed_method": "Configured GitHub CLI release-asset upload returned HTTP 401 at uploads.github.com; subsequent release lookup returned 404",
+    "chosen_method": "Authenticated Git push of unchanged archive with unique DRAFT tag",
+    "archive_bytes_unchanged": true
+  },
+  "raw_storage_decision": "Owner-approved inspectable all-65 DRAFT deliverable under #251 comment 6477986104. Complete generated output is retained for review under an explicit bounded exception after compact analysis; large expanded JSON is not committed.",
+  "maintained_suite": {
+    "commit": "24889577233c6a75e739676adffe8f676a0f9f3b",
+    "run": 40788102371,
+    "job": 123166258986,
+    "tests_run": 3268,
+    "passed": 3267,
+    "failures": 0,
+    "errors": 0,
+    "skips": 1,
+    "seconds": 1167.519,
+    "artifact": 12861341772,
+    "artifact_zip_sha256": "d621f22c3f9ca9e6318a7cddff298552e5896f02ab6cfea3d95ebb6c47a19f4b"
+  },
+  "hosted_six_source_gate": {
+    "run": 40788102434,
+    "job": 123166258359,
+    "status": "PASS",
+    "artifact": 12860901212,
+    "artifact_zip_sha256": "fb3872bfe8c062ecb7a12eced5f1c72c4a50e842bc0a88eed88c6235b40c7194"
+  },
+  "verification_scope_note": "Exact toolchain integration is green; independent original-source proof remains limited to six anchors, not all 65."
+}
