@@ -1,0 +1,1232 @@
+[
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/acceptance.json",
+    "bytes": 364328,
+    "sha256": "504d7d18bc3439cd1f2628cd732f538fb3a5932e2bec126bf13662e414c1ac71"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/applicability.json",
+    "bytes": 85,
+    "sha256": "73e46e4538a1b7a0ec9632341887934f38bd7a374f0e49ed959590770f9abcc6"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/applicability.yaml",
+    "bytes": 60,
+    "sha256": "cfe4e4274edf47b4b7725bb6e5a1a05217bf4f5c2f5f0bebe95217fffd384b8d"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-device-must-be-configured-to-audit-all-administrator-activit-5fa3b2c9-assessment.json",
+    "bytes": 1731,
+    "sha256": "b690c179a407e3d75c1bf8648a9626b8bd5e812ff2712544036e230c9aaba8cf"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-device-must-be-configured-to-audit-all-administrator-activit-5fa3b2c9-assessment.yaml",
+    "bytes": 1239,
+    "sha256": "4dd084509c072f8d6523267c73383a0d6f7f14156d33439a5dd993f7087a699a"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-allocate-audit-record-storage-c-a8398981-assessment.json",
+    "bytes": 1660,
+    "sha256": "a33a51dd290475c16a67dabde800e0a7b7d86c82371d19bf5c219895b7d8a9f7"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-allocate-audit-record-storage-c-a8398981-assessment.yaml",
+    "bytes": 1132,
+    "sha256": "d0ef9db62f24b84fed064f0b666530061da649efed391a8b1023ee9ed82a76e2"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-authenticate-network-time-proto-42633300-assessment.json",
+    "bytes": 5105,
+    "sha256": "4110f2563832233d2e390e8d12621e12808605bfd3ae4016ed044714596d47a3"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-authenticate-network-time-proto-42633300-assessment.yaml",
+    "bytes": 3307,
+    "sha256": "9e4c25dcae3d29373f7c77e243ed602db9cbbe2069a76f36f9754650ec993fbb"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-automatically-audit-account-cre-85c36448-assessment.json",
+    "bytes": 1265,
+    "sha256": "6b94adb8f58a5e6a7a72eaccb13374bfd56f42524f811e1277694523e5114c76"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-automatically-audit-account-cre-85c36448-assessment.yaml",
+    "bytes": 945,
+    "sha256": "112eb135f0fed976f9601bcced34a857581de34db8764f6f03ea5553aadc318c"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-automatically-audit-account-dis-c92131a8-assessment.json",
+    "bytes": 1274,
+    "sha256": "7ab8962f98237d8596165bc2978cba395e240ef133276517ecf282e325fc308e"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-automatically-audit-account-dis-c92131a8-assessment.yaml",
+    "bytes": 954,
+    "sha256": "3affb30157d4797a7b7d703849f398a0e5493e78384f8f0ed5bf049e30cac0a1"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-automatically-audit-account-ena-ff22038a-assessment.json",
+    "bytes": 1273,
+    "sha256": "578ffae107bcacd6db3061a9f44a596813780b01babfcf1cc3449b61241c4633"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-automatically-audit-account-ena-ff22038a-assessment.yaml",
+    "bytes": 953,
+    "sha256": "06e3d531b8024d64a4ee6b6b10fbc33ce9c9ab119d9271fa08421a000771b040"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-automatically-audit-account-mod-8871844f-assessment.json",
+    "bytes": 1269,
+    "sha256": "70810bc85d70510381db8ddd32bc687be65263eb1c412258bda61712c00ee18c"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-automatically-audit-account-mod-8871844f-assessment.yaml",
+    "bytes": 949,
+    "sha256": "60e7d041f3605de9646c9ba043d509e3f06aa57673a3f41f0b1d2a14ca5a9e44"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-automatically-audit-account-rem-86486a2a-assessment.json",
+    "bytes": 1272,
+    "sha256": "d70a9fa24d8bc6cfa5ee0b88ac09e3bb3aef85ab1980e5b6b4dd2d4a195e25a5"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-automatically-audit-account-rem-86486a2a-assessment.yaml",
+    "bytes": 952,
+    "sha256": "d632a4f7c5b77a9fdcf85a63e45689e43b819506a75df5aa066c16ce82adb6a5"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-back-up-the-configuration-when-3b2e48fa-assessment.json",
+    "bytes": 6545,
+    "sha256": "869bad4f3afa1a7d84b36d8fc847a69764cd1a11bbb73509117611ceeb855a2e"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-back-up-the-configuration-when-3b2e48fa-assessment.yaml",
+    "bytes": 4335,
+    "sha256": "aac5b712a6d106e115e24487d914dd212c8f629f4ccd7d626fdb6049962bf8de"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-display-the-standard-mandatory-1b711df2-assessment.json",
+    "bytes": 3706,
+    "sha256": "a5915661e845eabadd5d25e79528c25f1ded5231a6069294134fbf523e56ea09"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-display-the-standard-mandatory-1b711df2-assessment.yaml",
+    "bytes": 2959,
+    "sha256": "3380f5805537aa395e4a777a71274151820cdd37a8f6e344019eca08b3da8d9d"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-enforce-a-minimum-15-character-6883154a-assessment.json",
+    "bytes": 3066,
+    "sha256": "f0bdeee1a4ca07da3e17615bf7ea32678878e2f8c81b8f65470420c6ffe0f08f"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-enforce-a-minimum-15-character-6883154a-assessment.yaml",
+    "bytes": 2076,
+    "sha256": "b9244282af84c8606bfd820d92e0c711eff6dd937be666dc59764faa4570fe50"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-enforce-password-complexity-by-06e8fdcb-assessment.json",
+    "bytes": 3101,
+    "sha256": "95968fe7f4a2e0c3ebbb45bd37b91eaf087301d852196fdc2c8b286c47856ebd"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-enforce-password-complexity-by-06e8fdcb-assessment.yaml",
+    "bytes": 2111,
+    "sha256": "cbbd6d31136a6b70b4fa29b2fc6118399392239193fcac6df41f947e8905a5e6"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-enforce-password-complexity-by-3a70b90c-assessment.json",
+    "bytes": 3101,
+    "sha256": "0554ea36fee2b2ea0ecbee5aee3b10c7ba5a778ba9de2416ac431c4a4a960bd9"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-enforce-password-complexity-by-3a70b90c-assessment.yaml",
+    "bytes": 2111,
+    "sha256": "5c5dd25ebb05d81e46ddc02765488a90c1f8b03642c04832a7c4f9d186c50db0"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-enforce-password-complexity-by-69bc0a4d-assessment.json",
+    "bytes": 3107,
+    "sha256": "352aca9ad56907820be34284d19d157a08660a30ad6b368da188239b2488c260"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-enforce-password-complexity-by-69bc0a4d-assessment.yaml",
+    "bytes": 2117,
+    "sha256": "97e6c77b4d339c4eb650c0538bddb422d6e18599044cb220c83f878ff24e43ea"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-enforce-password-complexity-by-9f3c861c-assessment.json",
+    "bytes": 3111,
+    "sha256": "3a358a9ecb4f5af98fa08a71ef20d723bb1c988caee42f705e4a256b94ecf140"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-enforce-password-complexity-by-9f3c861c-assessment.yaml",
+    "bytes": 2121,
+    "sha256": "dc1d1c77effbb6bb5e9530a7b91cdb92ce59e45a79a226ed442b09fb7fa97f49"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-enforce-the-limit-of-three-cons-6801bb51-assessment.json",
+    "bytes": 1179,
+    "sha256": "2b9505cb868f240f2947704fa1cd5b57aae8808b94120d76f5326255042d51a0"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-enforce-the-limit-of-three-cons-6801bb51-assessment.yaml",
+    "bytes": 955,
+    "sha256": "0fc08e0cde5e2331ddf7241d62fc7fe5ef6863c5c01059243ddc3cb8d30e405f"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-generate-an-alert-for-all-audit-3ce22aba-assessment.json",
+    "bytes": 1574,
+    "sha256": "16ea8b1fec06fc4796e5c75be408e20faf8682cb8d04001885a8f546327b7e50"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-generate-an-alert-for-all-audit-3ce22aba-assessment.yaml",
+    "bytes": 1047,
+    "sha256": "8ddd34570647b61571d13c472b04525f2a83181518b7fa18475da80963c916e3"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-generate-audit-records-containi-34e27c52-assessment.json",
+    "bytes": 1309,
+    "sha256": "cc2f76814728be4ebc7b5bf82c7aa30a1ab5d8f6431f020830035f98a47ff5aa"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-generate-audit-records-containi-34e27c52-assessment.yaml",
+    "bytes": 989,
+    "sha256": "5e16e83ccac64a4bcae46b164e6a6276df78b66b6145bf0e3b84654b50b63494"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-generate-audit-records-when-suc-8bb036c2-assessment.json",
+    "bytes": 1653,
+    "sha256": "d49f25c90f3cd2f59bc39c425690a7553724239de4e933b2f2a8bb604c2c0d8f"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-generate-audit-records-when-suc-8bb036c2-assessment.yaml",
+    "bytes": 1264,
+    "sha256": "07b43fc61c5a0f58c47fac959f16497919f6ebeb3f5c97ebeb6a306169718b49"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-generate-log-records-for-privil-f50f98e8-assessment.json",
+    "bytes": 1275,
+    "sha256": "51a1fa591534ef5b49f5876f4b9f7738d70be21826797509585bcadcfbfb28b2"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-generate-log-records-for-privil-f50f98e8-assessment.yaml",
+    "bytes": 955,
+    "sha256": "b21cf16684e3fe3ef94442d4caeb6d7efb52cc9f042f4ba055d6305aa1ae705e"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-generate-log-records-when-admin-f47a4f7d-assessment.json",
+    "bytes": 1291,
+    "sha256": "f5fbd1f08068875f853b3bce0139bf40746c97a87d581384604693ef8830f617"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-generate-log-records-when-admin-f47a4f7d-assessment.yaml",
+    "bytes": 971,
+    "sha256": "ce28041d43d81676ff17432e1bf085f2daa08f462d5d5f1dc6acbea9fec5f4c7"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-implement-cryptographic-mechani-ea4f950e-assessment.json",
+    "bytes": 3137,
+    "sha256": "68e3669d71aa746fd0c20655d8143f43d29aa6d2ac0d53839a2dc54902552c58"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-implement-cryptographic-mechani-ea4f950e-assessment.yaml",
+    "bytes": 2304,
+    "sha256": "ec281ad4fad80b5ccb5dca0701d6dc7aaa5251f93d709099b6ddf3f23b7e9f84"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-limit-privileges-to-change-the-d58c299b-assessment.json",
+    "bytes": 1512,
+    "sha256": "d2b8c9e99212a986a3b77ac40c77c6a3cc42f1362fa9abe874b2e386756bd8b5"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-limit-privileges-to-change-the-d58c299b-assessment.yaml",
+    "bytes": 1103,
+    "sha256": "3ccaacb06a5f03820eec8ca67bc6dad1f411617892bb8d0eb25939dadff34780"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-prohibit-the-use-of-all-unneces-2bee74f3-assessment.json",
+    "bytes": 11807,
+    "sha256": "53349073f38b1ec26ce7dc60e3f000ce3bcd53a7a00afae732628ab7299af65a"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-prohibit-the-use-of-all-unneces-2bee74f3-assessment.yaml",
+    "bytes": 8194,
+    "sha256": "480efea86808a11141e392a7a0fab506db9c7b192e45dcc3c058fd05bec8211b"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-protect-audit-information-from-4dda2c2d-assessment.json",
+    "bytes": 2087,
+    "sha256": "a57bcdc72f3b17997ff6610a539863fbdf958ed7c45387d5c3f91b4d9383026f"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-protect-audit-information-from-4dda2c2d-assessment.yaml",
+    "bytes": 1456,
+    "sha256": "58ac193e81c991769af620cb2f4f43d090236bf69490d38cc39237b8cfe8c86f"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-protect-audit-information-from-6f4d4378-assessment.json",
+    "bytes": 2083,
+    "sha256": "7d58c826d50108093b128c67b574e0e22c666c577b8c7ad4db8c0cfc1de4d8f1"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-protect-audit-information-from-6f4d4378-assessment.yaml",
+    "bytes": 1452,
+    "sha256": "7b563dedce6ba56380109199b21fb429da6cf2e4c1ae46733dd0c56d8e1ea44a"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-require-that-when-a-password-is-38664254-assessment.json",
+    "bytes": 3122,
+    "sha256": "9121ec18aebdef18eb35d4d6b902032654632f05a1118249ad887d0c2b484965"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-require-that-when-a-password-is-38664254-assessment.yaml",
+    "bytes": 2132,
+    "sha256": "3a221f1be241df9dad23919f59483ec1d5703d5dbc724c139bf281b066815865"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-send-log-data-to-at-least-two-s-9b512a87-assessment.json",
+    "bytes": 1662,
+    "sha256": "b1bf7e124842ac4499aea250040408ca2ef173e700adff3f8c96b03fe3652b03"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-send-log-data-to-at-least-two-s-9b512a87-assessment.yaml",
+    "bytes": 1134,
+    "sha256": "27f5c6cd77ad55cdf9581c58134709600aba2d853663f6cef96cdcb9e9f80b47"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-use-fips-validated-keyed-hash-m-f3899734-assessment.json",
+    "bytes": 2391,
+    "sha256": "e406f8c9b73fdac27471d7e6687e2c41a103dd30d45332186e66e48247abb250"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-use-fips-validated-keyed-hash-m-f3899734-assessment.yaml",
+    "bytes": 1813,
+    "sha256": "f5344faf917b36a147d48c0baecd8a39a8cff70116017c8ac31dd74d7f4d70ab"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-with-only-one-local-account-to-be-8805808e-assessment.json",
+    "bytes": 2362,
+    "sha256": "d7507ca9bc2802751a1b0e02aaf3aad68eeb647a685c91a06edaf28152d7566e"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-with-only-one-local-account-to-be-8805808e-assessment.yaml",
+    "bytes": 1779,
+    "sha256": "75f49a4cee5eecbaa1d6401dd7b494c0e600921cbdec29f8f18fb2a89fab3040"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-only-store-cryptographic-representations-of-pass-fd71d483-assessment.json",
+    "bytes": 988,
+    "sha256": "75ccac6ba7e674f7470d150d547cbf6a28d9a5fd6e4177320bbcfccb2b19f45d"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-only-store-cryptographic-representations-of-pass-fd71d483-assessment.yaml",
+    "bytes": 771,
+    "sha256": "f25d58eb46e7469e91b550804c2da88281ba16b0b5a023c181fb205057cd105b"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-produce-audit-records-containing-information-to-661eaa7b-assessment.json",
+    "bytes": 1191,
+    "sha256": "76f97baf1e43e2f2d87958a0858a81edbd7b8a406b13f7d716d680e76a8930d1"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-produce-audit-records-containing-information-to-661eaa7b-assessment.yaml",
+    "bytes": 969,
+    "sha256": "5d08c323dbf9725ac3fdc0e2f77550c1d8adc6d1b5455dd0b78f5fb9e31ed28e"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/benchmark.json",
+    "bytes": 8813,
+    "sha256": "49b4858b753f1cfd7b201c9178520b716ccd501b2675992f5744367cb855ba78"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/benchmark.yaml",
+    "bytes": 7676,
+    "sha256": "c8d1c4b36f1250483e9a58988ffb2540f312f9f554db9e5af0393a390e6f470c"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-device-must-be-configured-to-audit-all-administrator-activit-5fa3b2c9-rule.json",
+    "bytes": 1750,
+    "sha256": "07b4a87280a5e34132d1f1ff9c2394e86eb6c49f99b93dffc79b64b1b730faca"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-device-must-be-configured-to-audit-all-administrator-activit-5fa3b2c9-rule.yaml",
+    "bytes": 1600,
+    "sha256": "48c48525e29bb75fbe1df25b4c86b7be112c5054b319fafab4fc652f4550b084"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-allocate-audit-record-storage-c-a8398981-rule.json",
+    "bytes": 1845,
+    "sha256": "c9a19f158086f7709a6aec742df7ba1a475aef481b6fd5407d64789ac5dd86b7"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-allocate-audit-record-storage-c-a8398981-rule.yaml",
+    "bytes": 1692,
+    "sha256": "c24a45c254eae4a4f2637288d415cb5e4d93b9b700e5d0106a2db350694c4ac8"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-authenticate-network-time-proto-42633300-rule.json",
+    "bytes": 1611,
+    "sha256": "6108989974c33f6a1863b4eb5dde43709fdd033ec85529dc7343e1f66d16ffd1"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-authenticate-network-time-proto-42633300-rule.yaml",
+    "bytes": 1456,
+    "sha256": "6e873eb3f63a1990159a9f23d26b252e5cd4b220858097fa467cd9646931bade"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-automatically-audit-account-cre-85c36448-rule.json",
+    "bytes": 1685,
+    "sha256": "a9736f93bec36f47d93fe760e37dcf55569bfbbd135d1c7a4971d00ed9fb76d7"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-automatically-audit-account-cre-85c36448-rule.yaml",
+    "bytes": 1530,
+    "sha256": "84f04704f4369b1f62ef8ea39cfea8a773522a4dc3f6732c9e5fd02360d08e3a"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-automatically-audit-account-dis-c92131a8-rule.json",
+    "bytes": 1642,
+    "sha256": "2cf7654bc0a3208098ea7c725ae11d63e92f29fd8a8a114f25650b9ab2abde77"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-automatically-audit-account-dis-c92131a8-rule.yaml",
+    "bytes": 1487,
+    "sha256": "a1cf973b094b0932735c382091cf8bb457cd60cf5e34e47e55d6696ca68952c5"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-automatically-audit-account-ena-ff22038a-rule.json",
+    "bytes": 1868,
+    "sha256": "b90323e64bef568c46ea432606e91761a1a48c598ab383d9acf2255340b45df0"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-automatically-audit-account-ena-ff22038a-rule.yaml",
+    "bytes": 1713,
+    "sha256": "61755556954af7d6eb0f040a1010d34cd7468b01522890949ce776f86cde2257"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-automatically-audit-account-mod-8871844f-rule.json",
+    "bytes": 1887,
+    "sha256": "04d76555a09b36ad147f447e7a9c301d5e9a7b3a63765534dd6f14eb7cfad986"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-automatically-audit-account-mod-8871844f-rule.yaml",
+    "bytes": 1732,
+    "sha256": "eecd0c18f9edfbb8d599b9cfbb0e7bb39412e50ef2cf5b9838c082d09453cc33"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-automatically-audit-account-rem-86486a2a-rule.json",
+    "bytes": 1640,
+    "sha256": "003eff73a1109a722aeb718271b89a5e998890106fc6fb7057886733c62f896e"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-automatically-audit-account-rem-86486a2a-rule.yaml",
+    "bytes": 1485,
+    "sha256": "fd8934503e4d5c867fc19a923119e60ae409cd080998f1362feab9249fa77f3a"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-back-up-the-configuration-when-3b2e48fa-rule.json",
+    "bytes": 2047,
+    "sha256": "57f8dbd147d0b4d82dce2e8a32b8d6651723f1f3e74ab86d935bf8831f717216"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-back-up-the-configuration-when-3b2e48fa-rule.yaml",
+    "bytes": 1897,
+    "sha256": "896ed01bb6a1cbb2fe36b468020ab8427f9e4c4cdfb9e47bc843dbfd7d3a1b0a"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-display-the-standard-mandatory-1b711df2-rule.json",
+    "bytes": 1626,
+    "sha256": "78043f73b5f1198b6bdc3d1e662f102388eabe6650980394f8d1825e8e83444a"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-display-the-standard-mandatory-1b711df2-rule.yaml",
+    "bytes": 1476,
+    "sha256": "7070a96a261c0239f3ab338b291b5269867c6f119e13ede0dc3c7b9417912898"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-enforce-a-minimum-15-character-6883154a-rule.json",
+    "bytes": 1735,
+    "sha256": "cad5c640380b2f2b33be6055562dc44ae49d6c6abb006566bb1e114561fa0617"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-enforce-a-minimum-15-character-6883154a-rule.yaml",
+    "bytes": 1585,
+    "sha256": "587e3146afe4539b14e6d62946e01be98494dcb42fd0ed624a33c2de6de9f93a"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-enforce-password-complexity-by-06e8fdcb-rule.json",
+    "bytes": 2045,
+    "sha256": "06f588903840cc24cc113bc80dd72b64ac69554b3b96cad7cff2bf4708f61920"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-enforce-password-complexity-by-06e8fdcb-rule.yaml",
+    "bytes": 1898,
+    "sha256": "5171798eb52b4fe5e37dfaa0b08c3c6f66726d755d35ced475b983f62b64da46"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-enforce-password-complexity-by-3a70b90c-rule.json",
+    "bytes": 2041,
+    "sha256": "31db76ed92b16abaae2ea0ce50cb8567819196d0a3c35b6d0aab20f44655d900"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-enforce-password-complexity-by-3a70b90c-rule.yaml",
+    "bytes": 1894,
+    "sha256": "21be6995e5132556d839e3687d5d123e5beec093c865741aa54eff45be98613c"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-enforce-password-complexity-by-69bc0a4d-rule.json",
+    "bytes": 2039,
+    "sha256": "948ecf44c36cafaa90e466e92398d8291af0b195b7e5be31f7b08ff261716b8d"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-enforce-password-complexity-by-69bc0a4d-rule.yaml",
+    "bytes": 1892,
+    "sha256": "f039a6dd54685f20cf3f7a6004aff872bb69d5f2174396045d15277e477f9b52"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-enforce-password-complexity-by-9f3c861c-rule.json",
+    "bytes": 2039,
+    "sha256": "326474ada91b6fe5b0b7e80a3eb9eed5cbe65dcda0cc4567405c87a0559f0a19"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-enforce-password-complexity-by-9f3c861c-rule.yaml",
+    "bytes": 1892,
+    "sha256": "928c7bf2bd35377e6a3c4e01faec0481f25737843badc920fbc37d629dbb39bf"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-enforce-the-limit-of-three-cons-6801bb51-rule.json",
+    "bytes": 1483,
+    "sha256": "fa97a39a1dbd3ad055a2020b7e5aba9fcd4013d77ed3aa0a31567f1b4299009c"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-enforce-the-limit-of-three-cons-6801bb51-rule.yaml",
+    "bytes": 1328,
+    "sha256": "194f7394bda4e1fe1e90ee0445cf23705734c1b9598c9d06da4a97cb7d1b6908"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-generate-an-alert-for-all-audit-3ce22aba-rule.json",
+    "bytes": 1677,
+    "sha256": "7dd9a6a6ebf0b6fd979d0c9cd36a8719fc88018093cc0b41c5086e18b33c1645"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-generate-an-alert-for-all-audit-3ce22aba-rule.yaml",
+    "bytes": 1524,
+    "sha256": "bac655382b5f08a3afb62a0ead6be798d1a16131afa4e65428a94382b9487ec8"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-generate-audit-records-containi-34e27c52-rule.json",
+    "bytes": 1889,
+    "sha256": "1a3af4880a9b3f293b7aebd043a5988eedc87fa3ed837c103fab6b51197bf092"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-generate-audit-records-containi-34e27c52-rule.yaml",
+    "bytes": 1736,
+    "sha256": "b51ea61b457710263a9a85a378a68db085e493396e9015fbf739a0e6977675b6"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-generate-audit-records-when-suc-8bb036c2-rule.json",
+    "bytes": 1599,
+    "sha256": "84cd8c12eaeba5e5b1e95f1bb0f9462bf7563dd93afdbfdb24647b01525bb9df"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-generate-audit-records-when-suc-8bb036c2-rule.yaml",
+    "bytes": 1449,
+    "sha256": "6c86039939fc8b48a94f7934dda149fe4e824a65ed40fa85aa8f54fd5be19b88"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-generate-log-records-for-privil-f50f98e8-rule.json",
+    "bytes": 1573,
+    "sha256": "4c32b82a8ccffdbbcbdad91cbad4bdaa64b2269ae128a6da35f100799017c392"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-generate-log-records-for-privil-f50f98e8-rule.yaml",
+    "bytes": 1423,
+    "sha256": "bc11dde03418547b0f6de86edec7c157345af31e05804e36e72f9e0ec7593556"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-generate-log-records-when-admin-f47a4f7d-rule.json",
+    "bytes": 1589,
+    "sha256": "932dbdb96fc86241319c05d598fd9aacedfdd31a0c066564bc1920e0338e2032"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-generate-log-records-when-admin-f47a4f7d-rule.yaml",
+    "bytes": 1439,
+    "sha256": "5955852b7059d0db57e96173f4a0990ccf656af95b73de0936e5d8b86dd1b596"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-implement-cryptographic-mechani-ea4f950e-rule.json",
+    "bytes": 1725,
+    "sha256": "c245b9ef06e32f5c441195c848b5a37b3f5c9f918c59bacfa6c8bdd44f20891d"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-implement-cryptographic-mechani-ea4f950e-rule.yaml",
+    "bytes": 1570,
+    "sha256": "dcdf01c0375a6e99a2cfab8eb4ec36cd870929f30521fc16df6886dead40d6c3"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-limit-privileges-to-change-the-d58c299b-rule.json",
+    "bytes": 1708,
+    "sha256": "a9478919d6d07ae7e16f141a1205d2b8d9646857fe00e46fc6981d82b0238c3a"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-limit-privileges-to-change-the-d58c299b-rule.yaml",
+    "bytes": 1553,
+    "sha256": "9a327e538ce13331bc2d3bb59e3dcd1cc72a9269510bad48ea7e52496b5417f2"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-prohibit-the-use-of-all-unneces-2bee74f3-rule.json",
+    "bytes": 2142,
+    "sha256": "45f0fa183f329c36a153ef3b8ca8c10a08414c357b3342b8b3380ea3c7115887"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-prohibit-the-use-of-all-unneces-2bee74f3-rule.yaml",
+    "bytes": 1989,
+    "sha256": "180456bf8e1ba3055bf684cfda89d0421155d4d66e8576774818adfa1b881052"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-protect-audit-information-from-4dda2c2d-rule.json",
+    "bytes": 2187,
+    "sha256": "a69c4d779b3cdb73a3836158b84a5531dbec231e8dbb547a763f09da4414523e"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-protect-audit-information-from-4dda2c2d-rule.yaml",
+    "bytes": 2034,
+    "sha256": "f04f8448d38b598379de8313695a624a424d01c38163ab6edf1a5810ead3acd9"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-protect-audit-information-from-6f4d4378-rule.json",
+    "bytes": 2249,
+    "sha256": "17296c5946d7e5193ddea93b051fd1c66caf50a07e9c014f16531d37b3361ef3"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-protect-audit-information-from-6f4d4378-rule.yaml",
+    "bytes": 2096,
+    "sha256": "cc5a16bbca379900d0acc210a785da2e494d1751f42b73fdfa71638001293551"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-require-that-when-a-password-is-38664254-rule.json",
+    "bytes": 2107,
+    "sha256": "062f0f78bcc116b5e56ef5c09d56fa65616573e1a37e33734bde7bbf3b5ec8dd"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-require-that-when-a-password-is-38664254-rule.yaml",
+    "bytes": 1960,
+    "sha256": "5d62824e6c6d859fe18b3c510c9eb7720d3ffd8fd2dd597084e07e8208afa83d"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-send-log-data-to-at-least-two-s-9b512a87-rule.json",
+    "bytes": 1771,
+    "sha256": "ae4f71667a1ce44ebcf97eee479092eb15e78b6d8ca02ae97c59968a2b724c4f"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-send-log-data-to-at-least-two-s-9b512a87-rule.yaml",
+    "bytes": 1616,
+    "sha256": "5c222be83a84a59131f951fb0f52599a7436a5f63b6b726ef59fb8fece575ec1"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-use-fips-validated-keyed-hash-m-f3899734-rule.json",
+    "bytes": 2066,
+    "sha256": "a71c54e369d882fbf4501e651909153e0c47d063f968dd6666289f98e9b0f196"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-use-fips-validated-keyed-hash-m-f3899734-rule.yaml",
+    "bytes": 1913,
+    "sha256": "03ed7154d6ee017fb949ec597f1896983d292c6bf425fa3e4507cc45b3425d67"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-with-only-one-local-account-to-be-8805808e-rule.json",
+    "bytes": 2485,
+    "sha256": "9a23c786dc6631e0429a23915559a9dc68dc468bad9973ac6a6c3e78301b1e98"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-with-only-one-local-account-to-be-8805808e-rule.yaml",
+    "bytes": 2332,
+    "sha256": "efabde91526c6fd2562906c57951ece676472dba63cbddfdc9dd82399ace6410"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-only-store-cryptographic-representations-of-pass-fd71d483-rule.json",
+    "bytes": 2368,
+    "sha256": "0f0cda7d9e13f8ad3ced726455b86000a388d7ca05c4a92270d3a2c1108fe920"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-only-store-cryptographic-representations-of-pass-fd71d483-rule.yaml",
+    "bytes": 2224,
+    "sha256": "c999b01fea67d1cc95197e72dd55d209f5c118a0449028affe7b9b2d01bde2f9"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-produce-audit-records-containing-information-to-661eaa7b-rule.json",
+    "bytes": 1810,
+    "sha256": "770e7c697c14801637bb50b5975bc1cb371e25eb7b78f6b16dd7b900e8d29919"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-produce-audit-records-containing-information-to-661eaa7b-rule.yaml",
+    "bytes": 1655,
+    "sha256": "c21823e87a28f2737f39925461c8de15efa00a78f3ceb08e4ff29db909f3fd6f"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/coverage.md",
+    "bytes": 3452,
+    "sha256": "7975fda0e8b09826f63b893dec72f268e54cf550f53f397a38cd3e9ded85f324"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/independent-proofs.json",
+    "bytes": 206856,
+    "sha256": "5bad9bc80372c4e06afcc8cf90868a065b6caec01b812cabee76c7dbb4ec21e1"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/primary-subset.scapng",
+    "bytes": 107325,
+    "sha256": "c24c90d45a157f4d736b2396e81a08bf5910c234ae5004e76b6e3da6c2ff1f3b"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_NDM_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/source-trace.json",
+    "bytes": 104878,
+    "sha256": "080acaf6879bc34f486c2398c6b196240afece8f4e5a8f36347a69e5ec64b484"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/acceptance.json",
+    "bytes": 222920,
+    "sha256": "17ae4f6ffba9a7cb3a24befce616670e37eb53cf96474ab741fc27981b9f43df"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/applicability.json",
+    "bytes": 85,
+    "sha256": "73e46e4538a1b7a0ec9632341887934f38bd7a374f0e49ed959590770f9abcc6"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/applicability.yaml",
+    "bytes": 60,
+    "sha256": "cfe4e4274edf47b4b7725bb6e5a1a05217bf4f5c2f5f0bebe95217fffd384b8d"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-mpls-router-must-be-configured-to-have-ttl-propagation-disab-19f79905-assessment.json",
+    "bytes": 1196,
+    "sha256": "d99317c36938043e7050934a2b59fafc4a5608d4b97c4901a9d5d1fdb154c001"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-mpls-router-must-be-configured-to-have-ttl-propagation-disab-19f79905-assessment.yaml",
+    "bytes": 873,
+    "sha256": "d74674c1cd34ea4d6c88beaa349dd5c36cc1a3fb6500a4c66e706fc7d2d95fb8"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-multicast-designated-router-dr-must-be-configured-to-set-the-2f0d068b-assessment.json",
+    "bytes": 1840,
+    "sha256": "07978f312aaba60667a1baccc9dbc75279d9ba60edc3fe3ea121c8aa73a0f2b5"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-multicast-designated-router-dr-must-be-configured-to-set-the-2f0d068b-assessment.yaml",
+    "bytes": 1305,
+    "sha256": "f477def405b54279196ddcf36aa051561e6c3f87fd536cfa7ec3ff9ae21d5aaa"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-multicast-source-discovery-protocol-msdp-router-must-be-conf-29ed61a2-assessment.json",
+    "bytes": 2077,
+    "sha256": "9490cbf36e90713a7d55fb7b1ecd97487bf45e51d13cfbc21be7a0d69176a3f2"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-multicast-source-discovery-protocol-msdp-router-must-be-conf-29ed61a2-assessment.yaml",
+    "bytes": 1587,
+    "sha256": "f3ff986cda937c50ccad6e91c94d8ae6abf0486eb1aed767e0eff795edef806c"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-pe-router-must-be-configured-to-ignore-or-drop-all-packets-w-b9c4f8f6-assessment.json",
+    "bytes": 2099,
+    "sha256": "57b45fab8f97558f8a83542f6387093f25d02c22822a681faef4a2ddb11f34b6"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-pe-router-must-be-configured-to-ignore-or-drop-all-packets-w-b9c4f8f6-assessment.yaml",
+    "bytes": 1523,
+    "sha256": "6fe0184b577fcd16777e3c7bde295a0fee3c4910f7bd4159b7e1251b65abe166"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-advertise-a-hop-limit-of-at-lea-add20c2c-assessment.json",
+    "bytes": 1294,
+    "sha256": "2686e172305701b774d727ebaadc332ba8727cc300755c14dd29f7049971471a"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-be-configured-to-advertise-a-hop-limit-of-at-lea-add20c2c-assessment.yaml",
+    "bytes": 972,
+    "sha256": "188dde694b4d89808174de7e8d3a3c3e6e5fa438897c8759d172f7a850c3a025"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-not-be-configured-to-use-ipv6-site-local-unicast-1bddea0a-assessment.json",
+    "bytes": 1322,
+    "sha256": "3d6ff400e4562dcedaca81ee321ff22baaa46fb9133eed6d2229fc26d84b2145"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-cisco-router-must-not-be-configured-to-use-ipv6-site-local-unicast-1bddea0a-assessment.yaml",
+    "bytes": 981,
+    "sha256": "755360903313d011887cbd66cd4f6173805b464ae568fe43c26e5f3e09696db4"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/benchmark.json",
+    "bytes": 4335,
+    "sha256": "4739fdf096a05e6c1f1c06d7ffed1505886be4205bac98295d1e50ac9bce7b91"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/benchmark.yaml",
+    "bytes": 3475,
+    "sha256": "435e72e7c68e71e45f8df776514ed0b5fb7f899c4e5fa725f5604837c74f0e6f"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-mpls-router-must-be-configured-to-have-ttl-propagation-disab-19f79905-rule.json",
+    "bytes": 2310,
+    "sha256": "c5931486b92af321cdb6735f39f4d92900773477ba5f5d7183e7b8cb75ccdaed"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-mpls-router-must-be-configured-to-have-ttl-propagation-disab-19f79905-rule.yaml",
+    "bytes": 2164,
+    "sha256": "8044ce53b93616400a2044f11c381782c806fdfc1434731fbeda977ce6ad5652"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-multicast-designated-router-dr-must-be-configured-to-set-the-2f0d068b-rule.json",
+    "bytes": 2358,
+    "sha256": "1d9549d17a298d030c528c4845e82fa911f47363dcbd2903ee5ee7cb1abc90c4"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-multicast-designated-router-dr-must-be-configured-to-set-the-2f0d068b-rule.yaml",
+    "bytes": 2208,
+    "sha256": "a3bc4e47c1f8d24d006849c84db42963f474f1a706531864712aaa2b971c7b0b"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-multicast-source-discovery-protocol-msdp-router-must-be-conf-29ed61a2-rule.json",
+    "bytes": 1865,
+    "sha256": "426c245a1434e5182159254ca3919d11dd6612dd429fe78f51f197aeef8884dc"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-multicast-source-discovery-protocol-msdp-router-must-be-conf-29ed61a2-rule.yaml",
+    "bytes": 1707,
+    "sha256": "539439e437a953fcfbfc047040c8c375e2c7ce0ce43e31a070c295d534e9cc11"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-pe-router-must-be-configured-to-ignore-or-drop-all-packets-w-b9c4f8f6-rule.json",
+    "bytes": 1631,
+    "sha256": "dcf7f0235e9b30fb38274b769b2b37e1aed308d02d6d2774fd8aff5af50e55ec"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-pe-router-must-be-configured-to-ignore-or-drop-all-packets-w-b9c4f8f6-rule.yaml",
+    "bytes": 1476,
+    "sha256": "7af7d47ed42769faa41c74569d2ceff3e00c4336bdc79dc51913f0d2d58fb980"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-advertise-a-hop-limit-of-at-lea-add20c2c-rule.json",
+    "bytes": 1666,
+    "sha256": "b83bab5794d057c9304575f081e7d262a04d5c05a80d261251dfa256f84f61ef"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-be-configured-to-advertise-a-hop-limit-of-at-lea-add20c2c-rule.yaml",
+    "bytes": 1511,
+    "sha256": "78e904f2b82cda3185fac58ce3c4c656ef6e206768bcfc9881fb7ed790eb1c24"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-not-be-configured-to-use-ipv6-site-local-unicast-1bddea0a-rule.json",
+    "bytes": 1660,
+    "sha256": "60fa30e97a0b49a408d9bf68d3ccf4ac7c2655252dec54903bad9406047f30b6"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-cisco-router-must-not-be-configured-to-use-ipv6-site-local-unicast-1bddea0a-rule.yaml",
+    "bytes": 1505,
+    "sha256": "4b8a8d88744121b2ccea15c9dcb770890b86030c7a4c066f0d50d55eb8364056"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/coverage.md",
+    "bytes": 7848,
+    "sha256": "4c68dfaa22233bc57a0b39c672a8ddf35fee0ee8f50bf082c553fa9c216ae4ad"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/independent-proofs.json",
+    "bytes": 22271,
+    "sha256": "6093820f9f6f2e614f25d8726069bf13de006dade784220d67c4f00ccbd6dbfd"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/primary-subset.scapng",
+    "bytes": 21141,
+    "sha256": "ee8d9c30f2883ce96d63f1fc987fb91c44b6727198fd7395a761a5fa6f413f01"
+  },
+  {
+    "path": "U_Cisco_IOS-XE_Router_RTR_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/source-trace.json",
+    "bytes": 35579,
+    "sha256": "9369f39df5dbaacad614f5efa7ef6041534ef2b10c10561939275faa467b225c"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/acceptance.json",
+    "bytes": 1521962,
+    "sha256": "79c76b04fecf7ea85992f3cbb57b79113b76c7b0edc4fc535ff86f5d17d496c3"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/applicability.json",
+    "bytes": 85,
+    "sha256": "73e46e4538a1b7a0ec9632341887934f38bd7a374f0e49ed959590770f9abcc6"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/applicability.yaml",
+    "bytes": 60,
+    "sha256": "cfe4e4274edf47b4b7725bb6e5a1a05217bf4f5c2f5f0bebe95217fffd384b8d"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/all-xauthority-files-must-have-mode-0600-or-less-permissive-7db54fde-assessment.json",
+    "bytes": 6121,
+    "sha256": "2197f4792821929f1fd779b09d8d951885bc43bd11d852f97639a998ea15decd"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/all-xauthority-files-must-have-mode-0600-or-less-permissive-7db54fde-assessment.yaml",
+    "bytes": 3607,
+    "sha256": "39300504c2d4802d87c1401e07e77a315967f16061a821a7b951f18ccfd40268"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/graphical-desktop-environments-provided-by-the-system-must-automatical-528861ec-assessment.json",
+    "bytes": 12653,
+    "sha256": "cb2b0c4b208d0fdd5b38e12bf5da3a2b748a58293e269736a5f97c2d905d183a"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/graphical-desktop-environments-provided-by-the-system-must-automatical-528861ec-assessment.yaml",
+    "bytes": 8338,
+    "sha256": "43768361f527426d7c1386252f2c5960a71f92a8d2dcd18e3bd6461425c27619"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/login-services-for-serial-ports-must-be-disabled-a388039c-assessment.json",
+    "bytes": 1966,
+    "sha256": "19e074261cd3b3692b5e1610155190639becf9a2f2d9f1f90ea6a33c90917ae0"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/login-services-for-serial-ports-must-be-disabled-a388039c-assessment.yaml",
+    "bytes": 1385,
+    "sha256": "8d967452e944a3a1f2db617a05f0d3f457fd17a53cc05b400e526b7d273c2628"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-default-umask-for-ftp-users-must-be-077-1d586980-assessment.json",
+    "bytes": 2096,
+    "sha256": "d7175d0bf3114dc7c07ba00385c5850a7f17a24da03b9845d38c38ad6b94f509"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-default-umask-for-ftp-users-must-be-077-1d586980-assessment.yaml",
+    "bytes": 1502,
+    "sha256": "4f1121a45e42b5ea60f1b85c42ed7d0c3b28716270e80f8db6ba92cbf16bc6e6"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-operating-system-session-lock-mechanism-when-activated-on-a-device-ec0662bf-assessment.json",
+    "bytes": 7373,
+    "sha256": "2c6e7aa2684b5708775ffd385e76994984e41e5016aa63e97a4899d068225fca"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-operating-system-session-lock-mechanism-when-activated-on-a-device-ec0662bf-assessment.yaml",
+    "bytes": 4586,
+    "sha256": "1fdbb346f42f99c02a8708cbe1779a4668910c471bd12257b05e50b593d2b779"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-system-must-require-users-to-re-authenticate-to-unlock-a-graphical-a54d579a-assessment.json",
+    "bytes": 12635,
+    "sha256": "b762c8f94d81b43a34e69d0e7c2a041fbde2bfe8d3a16372625aae313805e874"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-system-must-require-users-to-re-authenticate-to-unlock-a-graphical-a54d579a-assessment.yaml",
+    "bytes": 8320,
+    "sha256": "073c691d106e98909003d801b854e2ab006facdd87e1b3cb9563c4e7e9f679c0"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-use-of-ftp-must-be-restricted-8fb4aaec-assessment.json",
+    "bytes": 6650,
+    "sha256": "b0a27126bc2f083fc0609ab07245d87f58ac5686157f697dde72b2dfde147a0c"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-use-of-ftp-must-be-restricted-8fb4aaec-assessment.yaml",
+    "bytes": 4319,
+    "sha256": "e67ca69a8ce9198ade520ba766bac1aa6d1960e9aa8c11fbe1c4a794c76f31f9"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/benchmark.json",
+    "bytes": 4327,
+    "sha256": "22880e0a45d8dc2d196e9b74b381b552a7f3ec8cdf4182bc1d29b1f3b380e81e"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/benchmark.yaml",
+    "bytes": 3455,
+    "sha256": "e067004ea143d5379242d94f95aa8fdd788ebed750efa84af6f5d40d806d0dbf"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/all-xauthority-files-must-have-mode-0600-or-less-permissive-7db54fde-rule.json",
+    "bytes": 1433,
+    "sha256": "2c124053c6bc9b06852d3f5b398a3528a3b2c7e25c4d06dd7ddcdd48499c8c8a"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/all-xauthority-files-must-have-mode-0600-or-less-permissive-7db54fde-rule.yaml",
+    "bytes": 1278,
+    "sha256": "29177870c8c6a28b4dfc674bc3adcda7dd960085e691d8bf1a013f330c548b6c"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/graphical-desktop-environments-provided-by-the-system-must-automatical-528861ec-rule.json",
+    "bytes": 1373,
+    "sha256": "8f0d28c8ed789205d4db256f2d48b61f19dbd42181681eae522825a3297526c0"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/graphical-desktop-environments-provided-by-the-system-must-automatical-528861ec-rule.yaml",
+    "bytes": 1218,
+    "sha256": "e78c9d48b2d140342ac0e363bd2ad0a6a3d9ac047e7e798442eee1b21de812c5"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/login-services-for-serial-ports-must-be-disabled-a388039c-rule.json",
+    "bytes": 1353,
+    "sha256": "bba19699f185fe69268f2bc34a19bf2260b1cfef29f2e6203a30ccd41c0b7555"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/login-services-for-serial-ports-must-be-disabled-a388039c-rule.yaml",
+    "bytes": 1198,
+    "sha256": "8833725c55e8116d4dc4420a45cde062d71fdee6583b8a263743ed25e2ea2cc4"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-default-umask-for-ftp-users-must-be-077-1d586980-rule.json",
+    "bytes": 1234,
+    "sha256": "5d9aa1c46d1809df2b9cb8025717980b12d14c316e194978d0ad2ce9a8fd812d"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-default-umask-for-ftp-users-must-be-077-1d586980-rule.yaml",
+    "bytes": 1079,
+    "sha256": "b3dc1a254355b36fec0f210be62c3f4b696b5f0ea0a25ee8847fcdc679ce230f"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-operating-system-session-lock-mechanism-when-activated-on-a-device-ec0662bf-rule.json",
+    "bytes": 1693,
+    "sha256": "12703b0ea477dca3f3d5b023af4bfe2c74a52b39b4cc96790da109f9653d0afa"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-operating-system-session-lock-mechanism-when-activated-on-a-device-ec0662bf-rule.yaml",
+    "bytes": 1540,
+    "sha256": "2d6e7a23d99fa7380ab60d9a623e84894f3464042d62acc4e893117df218a592"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-system-must-require-users-to-re-authenticate-to-unlock-a-graphical-a54d579a-rule.json",
+    "bytes": 1355,
+    "sha256": "3e1042baecaa6dab54c455906bf32e40590d6e86d744af060b1da887db4f7569"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-system-must-require-users-to-re-authenticate-to-unlock-a-graphical-a54d579a-rule.yaml",
+    "bytes": 1200,
+    "sha256": "30a0367e1dc747390354f1eab2d6cef7f858754e6654fea9889688e2d1c7307d"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-use-of-ftp-must-be-restricted-8fb4aaec-rule.json",
+    "bytes": 1574,
+    "sha256": "5143772dddd2d56afa30f805e9c6549db987b97b66c97b0dc69bbe2108bd86c4"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-use-of-ftp-must-be-restricted-8fb4aaec-rule.yaml",
+    "bytes": 1415,
+    "sha256": "b4c9f76a450ec3df4cc719248001450d04dc961c6d60e63d87638ac00297b706"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/coverage.md",
+    "bytes": 15633,
+    "sha256": "76f3a340679711a134ea79ba4c3c8f779c0542653a4a87f7ad0b7c13925051f6"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/independent-proofs.json",
+    "bytes": 198190,
+    "sha256": "d008b588dd5fa07fdfe95f432ce8abcf57227cf5fbf2d2bdfe25dccea9e1732e"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/primary-subset.scapng",
+    "bytes": 29519,
+    "sha256": "d7852048c776d25f79cc13426b07d3357e3e48d38e70e8fe64bf6986bcd118a1"
+  },
+  {
+    "path": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/source-trace.json",
+    "bytes": 61183,
+    "sha256": "2ecd7609d8b3f33a75b3d6c6153c65aa545086295a24d2384655c727f3ec2b1e"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/acceptance.json",
+    "bytes": 1530154,
+    "sha256": "c9aeb4c5730e28dfc77db63e80486b19ad02172c487c9c5e65e89a8d752702fb"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/applicability.json",
+    "bytes": 85,
+    "sha256": "73e46e4538a1b7a0ec9632341887934f38bd7a374f0e49ed959590770f9abcc6"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/applicability.yaml",
+    "bytes": 60,
+    "sha256": "cfe4e4274edf47b4b7725bb6e5a1a05217bf4f5c2f5f0bebe95217fffd384b8d"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/all-xauthority-files-must-have-mode-0600-or-less-permissive-a2b5338b-assessment.json",
+    "bytes": 6121,
+    "sha256": "4d9b4ef59181b1b7c4ccd72ae35f636ba94bdbd429bd931be5e4d83cce1a77eb"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/all-xauthority-files-must-have-mode-0600-or-less-permissive-a2b5338b-assessment.yaml",
+    "bytes": 3607,
+    "sha256": "85a70266638516babfe5b5fd8c4f9b7d28e44c3d9e53f501929cb781dd002b08"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/graphical-desktop-environments-provided-by-the-system-must-automatical-d8193539-assessment.json",
+    "bytes": 12653,
+    "sha256": "275cf7651afcffdf14a237ec2dc5a2c310c26256a69f28df0d629dfb2f7642a6"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/graphical-desktop-environments-provided-by-the-system-must-automatical-d8193539-assessment.yaml",
+    "bytes": 8338,
+    "sha256": "17239ecadb26f96890b5ab85f448687fb8f34dd61d01fcd5cde3858cd00e9716"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/login-services-for-serial-ports-must-be-disabled-d8051318-assessment.json",
+    "bytes": 1966,
+    "sha256": "fcb05315a113cc5478705dd3b9622f0054c4d319487d9d6ac96cdb3b47d99ffc"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/login-services-for-serial-ports-must-be-disabled-d8051318-assessment.yaml",
+    "bytes": 1385,
+    "sha256": "cdc80bf3692e4c9dba51bde2aa6000ef49df6d8f0a231574a6b8c9cd898aaf6a"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-default-umask-for-ftp-users-must-be-077-ac4bd42d-assessment.json",
+    "bytes": 2096,
+    "sha256": "d94d603951d9239af346e5d1ee52ecdfd7a4bd6b823b3f5ca514745eedef5826"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-default-umask-for-ftp-users-must-be-077-ac4bd42d-assessment.yaml",
+    "bytes": 1502,
+    "sha256": "ef9227b5d32d8c77708204a985d5148de54edbe960ad68fc035992adc17844b1"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-operating-system-session-lock-mechanism-when-activated-on-a-device-77abdd54-assessment.json",
+    "bytes": 7373,
+    "sha256": "f4adc7392ea7b93463c6ac2908910ac123ad510697e94507f3756e897d10a968"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-operating-system-session-lock-mechanism-when-activated-on-a-device-77abdd54-assessment.yaml",
+    "bytes": 4586,
+    "sha256": "7406d2d408041382f37c303124b84b09a359e15b0d4099fbca598d32c9efa10e"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-system-must-require-users-to-re-authenticate-to-unlock-a-graphical-b7d94826-assessment.json",
+    "bytes": 12635,
+    "sha256": "2cd7e79f2a4cda560be151cfc0784aad28a15db1ca07ce10f06fd454d88b65db"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-system-must-require-users-to-re-authenticate-to-unlock-a-graphical-b7d94826-assessment.yaml",
+    "bytes": 8320,
+    "sha256": "cadb1cce658e5fb7de6ae2d44315cfd2696fbdcaf732a3c066ebebcbad63979f"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-use-of-ftp-must-be-restricted-2a70f389-assessment.json",
+    "bytes": 6650,
+    "sha256": "f8090cd233bcd176765c5e830e87fcb5b18a18a4ba7572daa61c2628d5567557"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/assessments/the-use-of-ftp-must-be-restricted-2a70f389-assessment.yaml",
+    "bytes": 4319,
+    "sha256": "69daafc2087877fe0fbd698b779d69ef77da35e45aff2d2935a06d53fcd2a690"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/benchmark.json",
+    "bytes": 4325,
+    "sha256": "886c280f1fc91686b0608cb84f210087ef3fe363b7d8a0b9bae030e3c400a9fb"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/benchmark.yaml",
+    "bytes": 3453,
+    "sha256": "bafb36eef66e636fc0156f90be34fcec7ddf923e279cdbe4cf1fc98fde805705"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/all-xauthority-files-must-have-mode-0600-or-less-permissive-a2b5338b-rule.json",
+    "bytes": 1433,
+    "sha256": "f5c76712e0946b1e22c952ada607be49ac957fc3c04b0396050ddf594310378c"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/all-xauthority-files-must-have-mode-0600-or-less-permissive-a2b5338b-rule.yaml",
+    "bytes": 1278,
+    "sha256": "53db9449227df496233f9c5c1dbb10ab5037d0a498c598a500c438943d13f72a"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/graphical-desktop-environments-provided-by-the-system-must-automatical-d8193539-rule.json",
+    "bytes": 1373,
+    "sha256": "1e58baa9e0da6711a5c805c530ddbdd9671c096d0fce16c52180e3be8602ed59"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/graphical-desktop-environments-provided-by-the-system-must-automatical-d8193539-rule.yaml",
+    "bytes": 1218,
+    "sha256": "3ae5f454f2bf5dc7bc84ad2c4a09281121c9061aa7677b6831da1ad2a9ff9510"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/login-services-for-serial-ports-must-be-disabled-d8051318-rule.json",
+    "bytes": 1353,
+    "sha256": "577362e24a41e4b93228c54db354e5ffe9dda35b30f2f1ad5a2ded8aa12f5cf6"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/login-services-for-serial-ports-must-be-disabled-d8051318-rule.yaml",
+    "bytes": 1198,
+    "sha256": "fd713c970bcef6efe6eed0fd03d378a4a81c77f9860971d6f4b139686d8d1315"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-default-umask-for-ftp-users-must-be-077-ac4bd42d-rule.json",
+    "bytes": 1234,
+    "sha256": "a9c725163753acdbd48dda5a2023c313bc5984ccb62ffa2b3e768211fa8f66b2"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-default-umask-for-ftp-users-must-be-077-ac4bd42d-rule.yaml",
+    "bytes": 1079,
+    "sha256": "6fd3d095fe5a94b15fe2264fb6520740e28c9209d45bfbfc026a49751398edb8"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-operating-system-session-lock-mechanism-when-activated-on-a-device-77abdd54-rule.json",
+    "bytes": 1693,
+    "sha256": "a69a77d3ca9f06b0280590985a764f5fccb330499aa7b0365e5c35db5a7c9d89"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-operating-system-session-lock-mechanism-when-activated-on-a-device-77abdd54-rule.yaml",
+    "bytes": 1540,
+    "sha256": "5b9d3545fa84a4e413fa7c50b23eb66189ce81b910204637991e7395f8c12875"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-system-must-require-users-to-re-authenticate-to-unlock-a-graphical-b7d94826-rule.json",
+    "bytes": 1355,
+    "sha256": "464bcbd5646380bf2b01b278096802f07299eb722c6cf43331972edffcbe1374"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-system-must-require-users-to-re-authenticate-to-unlock-a-graphical-b7d94826-rule.yaml",
+    "bytes": 1200,
+    "sha256": "0284330bf57d67d71b36b187c05f09690cd6c43ae7a8534aa5b3cddcbf146d44"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-use-of-ftp-must-be-restricted-2a70f389-rule.json",
+    "bytes": 1574,
+    "sha256": "bd2262e0a5d41cecd5b46f2832da03dce1be160944c29a1500bc57b0b4c5cb79"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/authoring/direct-slice/rules/the-use-of-ftp-must-be-restricted-2a70f389-rule.yaml",
+    "bytes": 1415,
+    "sha256": "5164e5f1acfe2180bd56555514aba11d66324696d61f93b731eb39b58ad626cb"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/coverage.md",
+    "bytes": 15563,
+    "sha256": "99a8aee8dee6e81ee69195868c6b1d2bf19fc2c21e004adbd8e1d16e96894843"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/independent-proofs.json",
+    "bytes": 198190,
+    "sha256": "c0a5b5d3debbeac7879205aebb0441a8d3ddd05f83984e31217e289b54cc4e6e"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/primary-subset.scapng",
+    "bytes": 29525,
+    "sha256": "9c40ee0b75b704fb1efc438f86c919475e1c8bc69bfb02b61fb11403c19d19e5"
+  },
+  {
+    "path": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed/source-trace.json",
+    "bytes": 61088,
+    "sha256": "9298511fdc389e37bc2edd77fe22512fcdcd64aa415b20b2ed7936ce1e34258c"
+  },
+  {
+    "path": "smf-summary.json",
+    "bytes": 321,
+    "sha256": "8795ecd4e11eb14fabd79696d2c25d249b1aee8b57268fc36322d76cdc8a4237"
+  },
+  {
+    "path": "summary.json",
+    "bytes": 348,
+    "sha256": "f6c246f598aa2b64f4fe80f8035909af4f47a8afd825c3ea489aba141668a61b"
+  }
+]

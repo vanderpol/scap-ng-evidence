@@ -1,0 +1,45 @@
+{
+  "evidence_id": "2026-10-29-stage-two-52-static-proofs-b70802028",
+  "evidence_kind": "production-migration-static-proof",
+  "created_at": "2026-10-29T20:51:08.391876+00:00",
+  "source_repository": "vanderpol/scap-ng",
+  "source_commit": "b70802028075850cf5f4397c50249813f86a7b14",
+  "generating_tool": "tools/verify_v04_direct_scope.py:accept_source + v04_expanded_source_proof.expanded_compare",
+  "generating_tool_commit": "b70802028075850cf5f4397c50249813f86a7b14",
+  "inputs": "Four original NIWC ZIPs; pins and all selected Rule identities in summary.json; NIWC 8c8e5dff860af6b1290ee9273a282db24278f8d5",
+  "exact_command": "PYTHONPATH=tools python reproduce.py --inputs ORIGINAL_ZIPS --output NEW_DIRECTORY",
+  "output_root": "stage-two-proofs.zip",
+  "output_file_count": 246,
+  "archive_sha256": "910076ce0e40046f7adff78e9c188d084de86c869d8a12c51f2786f19bd4d70c",
+  "validation_status": "52 independently source-proved primary Rule closures; source/native/program/package checks PASS; exact implementation hosted CI PASS",
+  "checks": [
+    "Original closure XSD/Schematron/nondeprecation",
+    "Independent source/native typed-term comparisons",
+    "Authoring schema and compiled operands",
+    "Independent package consumer",
+    "All 52 stage-one DRAFT authoring/program hash pairs unchanged",
+    "All 4206 prior published proof hashes retained by stage-one deliverable; all 1072 six-source anchor programs retained by new exact-code gate"
+  ],
+  "integration_ci": {
+    "status": "PASS",
+    "all_nine_workflows": "success",
+    "maintained_run": 40947935428,
+    "maintained_job": 123708112106,
+    "tests_run": 3314,
+    "passed": 3313,
+    "failures": 0,
+    "errors": 0,
+    "skips": 1,
+    "seconds": 1188.663,
+    "maintained_artifact": 12931846286,
+    "six_source_run": 40947935273,
+    "six_source_job": 123708111193,
+    "six_source_artifact": 12931430305
+  },
+  "limitations": [
+    "Static primary OVAL only; scanner execution NOT RUN",
+    "Complete policy/applicability/manual migration NOT established",
+    "No source repair, normative changes, final release or runtime claim",
+    "Frozen stage-one DRAFT remains unchanged and explicitly UNVERIFIED"
+  ]
+}

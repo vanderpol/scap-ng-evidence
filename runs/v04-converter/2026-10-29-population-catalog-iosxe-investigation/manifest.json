@@ -1,0 +1,46 @@
+{
+  "evidence_id": "2026-10-29-population-catalog-iosxe-investigation",
+  "evidence_kind": "repository-source-and-semantic-contract-investigation",
+  "created_at": "2026-10-29T20:51:08.449200+00:00",
+  "source_repository": "vanderpol/scap-ng",
+  "source_commit": "b70802028075850cf5f4397c50249813f86a7b14",
+  "generating_tool": "Embedded audit_blockers.py, population_cases.py and audit_remaining_sources.py; driver hashes in files.json",
+  "generating_tool_commit": "Drivers preserved in this evidence commit; interpreter source b70802028075850cf5f4397c50249813f86a7b14",
+  "exact_commands": [
+    "PYTHONPATH=tools python audit_blockers.py",
+    "PYTHONPATH=tools python population_cases.py",
+    "PYTHONPATH=tools python audit_remaining_sources.py"
+  ],
+  "inputs": "65 ZIP source-pins.json, NIWC 8c8e5dff860af6b1290ee9273a282db24278f8d5; frozen original DRAFT ledger SHA in source checkpoint",
+  "output_root": "investigation.zip",
+  "output_file_count": 12,
+  "archive_sha256": "c1e295b6e8338bb746ffd3f31e72a32ef798e66a3265428bfdc657b31220aa59",
+  "validation_status": "Read-only original identities and eleven OVAL reference boundary cases checked; normative owner decisions pending #255",
+  "findings": {
+    "catalog_rules": 992,
+    "catalog_sources": 21,
+    "catalog_reference_counts": {
+      "embedded_definition_available_but_unbound": 992
+    },
+    "catalog_wrong_namespace_with_complete_chain": 992,
+    "all_exist_primary_rules": 1184,
+    "all_exist_rules_with_state": 589,
+    "all_exist_rules_with_variable_closure": 115,
+    "all_exist_rules_with_set_or_filter": 136,
+    "runtime_evidence": false,
+    "source_repair": false,
+    "native_admission_changed": false,
+    "schema_note": "Catalog XSD allows foreign elements via xs:any namespace=##other processContents=skip. Structural validity does not confer catalog binding semantics on ds:uri."
+  },
+  "remaining_39": {
+    "VALID": 26,
+    "INVALID": 13
+  },
+  "limitations": [
+    "No source repair, native admission, validator relaxation or scanner execution",
+    "Foreign catalog elements are XSD-permitted extensions without standard URI semantics",
+    "Integer concat Schematron failures conflict with function-casting prose; do not label every failure an established content bug",
+    "SV-215833 text-as-int and literal-backslash delimiter require source-owner review",
+    "Embedded drivers retain original recovery paths; adjust workspace paths to replay without changing pinned inputs"
+  ]
+}
