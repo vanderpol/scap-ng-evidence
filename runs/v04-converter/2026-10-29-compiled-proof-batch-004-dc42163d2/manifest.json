@@ -1,0 +1,269 @@
+{
+  "evidence_id": "2026-10-29-compiled-proof-batch-004-dc42163d2",
+  "evidence_kind": "production migration evidence; independently verified static primary OVAL subset",
+  "created_at": "2026-10-29T14:29:51.210069+00:00",
+  "source_repository": "vanderpol/scap-ng",
+  "source_commits": [
+    "79cb8118dec923e40100d015fd27256480f48ec9"
+  ],
+  "generating_tool": "tools/v04_direct_converter.py --verify / verify_v04_direct_scope.accept_source",
+  "generating_tool_commit": "10f4e35b331c622c14f6e3aa2bd4aa8981c810c1",
+  "reproduction_driver": "reproduce.py (snapshot, not a competing converter)",
+  "source_revision": "niwc-atlantic/scap-content-library@8c8e5dff860af6b1290ee9273a282db24278f8d5",
+  "frozen_draft_sha256": "5f86d016c1bce82018eec82c6468ab583816ff0b38c8d3ea5e9210a931cc1a08",
+  "cohort_size": 3138,
+  "selected": 1845,
+  "new_primary_proofs": 1804,
+  "unchanged_frozen_authoring_program_pairs": 1804,
+  "negative_mutations_rejected": 268,
+  "source_pins": [
+    {
+      "file": "U_Adobe_Acrobat_Pro_DC_Continuous_V2R2_STIG_SCAP_1-4_Benchmark-enhancedV2-signed.zip",
+      "repository_path": "Current/U_Adobe_Acrobat_Pro_DC_Continuous_V2R2_STIG_SCAP_1-4_Benchmark-enhancedV2-signed.zip",
+      "git_blob_sha": "0130ea019bbe93cc810bb88ded6801195a69d8c1",
+      "sha256": "01bdb16fcfee60d27f475cedbf25263919df52cb78aa58bb2242b259d409694b",
+      "bytes": 26764
+    },
+    {
+      "file": "U_Adobe_Acrobat_Reader_DC_Continuous_V2R5_STIG_SCAP_1-4_Benchmark-enhancedV12-signed.zip",
+      "repository_path": "Current/U_Adobe_Acrobat_Reader_DC_Continuous_V2R5_STIG_SCAP_1-4_Benchmark-enhancedV12-signed.zip",
+      "git_blob_sha": "e8b7a3dd84ef6f2c2c3c4cec7523a178e50462d2",
+      "sha256": "e1611d05432ed262238755cfee8fad770c4a76e064c915a10272c79448d5eb21",
+      "bytes": 25573
+    },
+    {
+      "file": "U_Amazon_Linux_2023_V1R2_STIG_SCAP_1-4_Benchmark-enhancedV1-signed.zip",
+      "repository_path": "Current/U_Amazon_Linux_2023_V1R2_STIG_SCAP_1-4_Benchmark-enhancedV1-signed.zip",
+      "git_blob_sha": "60c5fe6e02dd5defa0f2ce64fcbb0abe7e0c809c",
+      "sha256": "88cc35f98c9ff96c567110c284c06e6adfc556fd59967019bdec6fd1cc5a204f",
+      "bytes": 189211
+    },
+    {
+      "file": "U_CAN_Ubuntu_18-04_LTS_V2R12_STIG_SCAP_1-4_Benchmark-enhancedV16-signed.zip",
+      "repository_path": "Current/U_CAN_Ubuntu_18-04_LTS_V2R12_STIG_SCAP_1-4_Benchmark-enhancedV16-signed.zip",
+      "git_blob_sha": "b0b09032dfaf893b165d37f3ccddf14168990ecc",
+      "sha256": "1a9f72cf7a050359f0bc4ea73a12d5a9c5675c93fa594c8305a1e238cf3bbd49",
+      "bytes": 175084
+    },
+    {
+      "file": "U_CAN_Ubuntu_20-04_LTS_V2R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed.zip",
+      "repository_path": "Current/U_CAN_Ubuntu_20-04_LTS_V2R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed.zip",
+      "git_blob_sha": "5a5a09811e1bd1b489fc1a1ca44a7e3e793e46ad",
+      "sha256": "85cc4348a0bd85becf757f50e6f0d3ef67169c87e26f12f045c94914d7099ef5",
+      "bytes": 177959
+    },
+    {
+      "file": "U_CAN_Ubuntu_22-04_LTS_V2R7_STIG_SCAP_1-4_Benchmark-enhancedV10-signed.zip",
+      "repository_path": "Current/U_CAN_Ubuntu_22-04_LTS_V2R7_STIG_SCAP_1-4_Benchmark-enhancedV10-signed.zip",
+      "git_blob_sha": "4eef4647eeeaeeead4a32be762376383e59571f3",
+      "sha256": "dbbc87ffe6d0c84688993d96cd7007e76bf83b9206508109b586ccc5bf88b6b2",
+      "bytes": 197387
+    },
+    {
+      "file": "U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-signed.zip",
+      "repository_path": "Current/U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-signed.zip",
+      "git_blob_sha": "4823f583df6e526680553ff36ed565d467bd35d2",
+      "sha256": "40229cd7a41e6ff4a8cfb675523f767292d1460edbc68fe9ba5258c530c8b4a7",
+      "bytes": 202319
+    },
+    {
+      "file": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed.zip",
+      "repository_path": "Current/U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed.zip",
+      "git_blob_sha": "cf448b06e82fbaf5b86ee2c664b987752efa4732",
+      "sha256": "78e58d9ce76f458e8c436de80cb2b30e15ebce35d1527bf6e38aca5069e6bfd1",
+      "bytes": 46737
+    },
+    {
+      "file": "U_Kubernetes_V2R5_STIG_SCAP_1-4_Benchmark-enhancedV8-signed.zip",
+      "repository_path": "Current/U_Kubernetes_V2R5_STIG_SCAP_1-4_Benchmark-enhancedV8-signed.zip",
+      "git_blob_sha": "c72feed69e44c8f830288cebaf219497e1bb5c82",
+      "sha256": "3772f25da835952e83bdd3b230dbf2d73b42e9849e129982ce1efe6497e71ae0",
+      "bytes": 74056
+    },
+    {
+      "file": "U_MOZ_Firefox_Windows_V6R8_STIG_SCAP_1-4_Benchmark-enhancedV13-signed.zip",
+      "repository_path": "Current/U_MOZ_Firefox_Windows_V6R8_STIG_SCAP_1-4_Benchmark-enhancedV13-signed.zip",
+      "git_blob_sha": "00f63c1bdd2c5cf2f65a753b84bf251d086148bf",
+      "sha256": "ad37668f0f43cd0b973e7544ad1d44e21dac9388f750fa2dab2c43893e781f41",
+      "bytes": 33731
+    },
+    {
+      "file": "U_MS_Defender_Antivirus_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV15-signed.zip",
+      "repository_path": "Current/U_MS_Defender_Antivirus_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV15-signed.zip",
+      "git_blob_sha": "2d2d0c54113c07cc12b1248cded5e60e15a813cd",
+      "sha256": "8f0b317cd9c17bc27f3285a5e8810a6560c0ac8ffe475a6d6e7bd72dae5fefd6",
+      "bytes": 58983
+    },
+    {
+      "file": "U_MS_DotNet_Framework_4-0_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV15-signed.zip",
+      "repository_path": "Current/U_MS_DotNet_Framework_4-0_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV15-signed.zip",
+      "git_blob_sha": "a818bebfa73d5f4ca63d5d8f5d90a6eb1921bbf9",
+      "sha256": "9578b414bc8e406e15226b91d663d31f227f1164f8bca7c4d5ea3507d8f520c9",
+      "bytes": 45955
+    },
+    {
+      "file": "U_MS_Edge_V2R5_STIG_SCAP_1-4_Benchmark-enhancedV16-signed.zip",
+      "repository_path": "Current/U_MS_Edge_V2R5_STIG_SCAP_1-4_Benchmark-enhancedV16-signed.zip",
+      "git_blob_sha": "5c06d163fe8283499f4d68879df25eda6c981e41",
+      "sha256": "612a1ee2696ca6453cdc363f236c364549981b5ef84a4cc9144afb9dafc77339",
+      "bytes": 53236
+    },
+    {
+      "file": "U_MS_IE11_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV17-signed.zip",
+      "repository_path": "Current/U_MS_IE11_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV17-signed.zip",
+      "git_blob_sha": "b023f53b2b50f82a732e57ba031da9fdf10a823b",
+      "sha256": "c0d20d64249769c052f8ff9ecef3ddffb2944064b6211a9c8afb3f6dfb962f81",
+      "bytes": 108850
+    },
+    {
+      "file": "U_MS_IIS_8-5_Server_V2R7_STIG_SCAP_1-4_Benchmark-enhancedV13-signed.zip",
+      "repository_path": "Current/U_MS_IIS_8-5_Server_V2R7_STIG_SCAP_1-4_Benchmark-enhancedV13-signed.zip",
+      "git_blob_sha": "6f10d2006c517b52885c6868bedeb75ccbf0dd13",
+      "sha256": "3b2f7aa396dbfc647b73de8f7506a5bca1578ff5b79f96d40d13859da57613e4",
+      "bytes": 58980
+    },
+    {
+      "file": "U_MS_IIS_8-5_Site_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-signed.zip",
+      "repository_path": "Current/U_MS_IIS_8-5_Site_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-signed.zip",
+      "git_blob_sha": "ed3ed7db1f709ec36360f34548cb7ccc87c2c034",
+      "sha256": "21f5e5e7809b14e8bfb21b4571f156bb150a3db0afe449d2fdb0da9d06add27f",
+      "bytes": 60217
+    },
+    {
+      "file": "U_MS_Office_365_ProPlus_V3R8_STIG_SCAP_1-4_Benchmark-enhancedV11-signed.zip",
+      "repository_path": "Current/U_MS_Office_365_ProPlus_V3R8_STIG_SCAP_1-4_Benchmark-enhancedV11-signed.zip",
+      "git_blob_sha": "e6196def3e17290c608f28f1edb914ae788a8609",
+      "sha256": "1129b2253c25cc52ff59a9c0a9a3213cf011cbccea801046514ec0ed8bb3c2eb",
+      "bytes": 138597
+    },
+    {
+      "file": "U_MS_Windows_2012_and_2012_R2_DC_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed.zip",
+      "repository_path": "Current/U_MS_Windows_2012_and_2012_R2_DC_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed.zip",
+      "git_blob_sha": "753e5bce3d6b5e25df61734e76b281e6e8b9d0b6",
+      "sha256": "ecba937d43efc0a72037eefb501b46a2e417158088b2f2699f2c86b68bd1de9c",
+      "bytes": 277994
+    },
+    {
+      "file": "U_MS_Windows_2012_and_2012_R2_MS_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed.zip",
+      "repository_path": "Current/U_MS_Windows_2012_and_2012_R2_MS_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed.zip",
+      "git_blob_sha": "79738d50d236dbcb35cbc6cc4c1d3660624d02f4",
+      "sha256": "3ad256b29d6f85fe69ba9a14b18502a6f50e923faea2880d9ce10246f780a50a",
+      "bytes": 239788
+    },
+    {
+      "file": "U_Oracle_Linux_7_V3R3_STIG_SCAP_1-4_Benchmark-enhancedV16-signed.zip",
+      "repository_path": "Current/U_Oracle_Linux_7_V3R3_STIG_SCAP_1-4_Benchmark-enhancedV16-signed.zip",
+      "git_blob_sha": "4fb0d80aeaf1ca2a30060e90364fd44c28349e21",
+      "sha256": "0235429534dfc1149824f1a6b5144f73e16dc28d84d899c638cc5ede31da8c1a",
+      "bytes": 230408
+    },
+    {
+      "file": "U_RHEL_7_V3R15_STIG_SCAP_1-4_Benchmark-enhancedV19-signed.zip",
+      "repository_path": "Current/U_RHEL_7_V3R15_STIG_SCAP_1-4_Benchmark-enhancedV19-signed.zip",
+      "git_blob_sha": "9079bea74caf7d1ce6c8f71e5d5aa9709225aaa5",
+      "sha256": "17c3ddd4d4ae40bd7ca3443dae0a0c9ed921444a57c34bff357f9f885e0d9ab8",
+      "bytes": 238091
+    },
+    {
+      "file": "U_SLES_12_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV17-signed.zip",
+      "repository_path": "Current/U_SLES_12_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV17-signed.zip",
+      "git_blob_sha": "7336a25888e977879ab986d320bdf610f557bca2",
+      "sha256": "c19224227a7719b2b83499495349ca1050bcc9ab534410e69b44c2aed14dcaf5",
+      "bytes": 190971
+    },
+    {
+      "file": "U_SLES_15_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV19-signed.zip",
+      "repository_path": "Current/U_SLES_15_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV19-signed.zip",
+      "git_blob_sha": "ed4da0a1930ba7b92a1523471f9de212e4a17d2a",
+      "sha256": "9f3905efe7cc8e7e15a3713db86abcec65367d36b771fb32d1f7755213436f9c",
+      "bytes": 193619
+    },
+    {
+      "file": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed.zip",
+      "repository_path": "Current/U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed.zip",
+      "git_blob_sha": "52780b5e2d8a67c95c8d5aa218f353dee5201c0d",
+      "sha256": "b8ae7486d503b46e25ca885cfd53b9b47c40f313b9b4117683f88102c7222b1d",
+      "bytes": 170313
+    },
+    {
+      "file": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed.zip",
+      "repository_path": "Current/U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed.zip",
+      "git_blob_sha": "b72410fd94e36748c692d6130e51174dc6db6df2",
+      "sha256": "f988154cba7cf0ab39fa3063e510398c716e5d7d5865ae5cc187dc10d2071f2a",
+      "bytes": 170325
+    },
+    {
+      "file": "U_TOSS_4_V2R7_STIG_SCAP_1-4_Benchmark-enhancedV8-signed.zip",
+      "repository_path": "Current/U_TOSS_4_V2R7_STIG_SCAP_1-4_Benchmark-enhancedV8-signed.zip",
+      "git_blob_sha": "7c3d0cb188b83d3e7eeff39d255baadba6bd5cbc",
+      "sha256": "fbeda733bc200206f525d5667a8ec30be44a3865b0b48f58d837ad9f74a88b7d",
+      "bytes": 227804
+    }
+  ],
+  "exact_commands": [
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_Adobe_Acrobat_Pro_DC_Continuous_V2R2_STIG_SCAP_1-4_Benchmark-enhancedV2-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_Adobe_Acrobat_Reader_DC_Continuous_V2R5_STIG_SCAP_1-4_Benchmark-enhancedV12-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_Amazon_Linux_2023_V1R2_STIG_SCAP_1-4_Benchmark-enhancedV1-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_CAN_Ubuntu_18-04_LTS_V2R12_STIG_SCAP_1-4_Benchmark-enhancedV16-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_CAN_Ubuntu_20-04_LTS_V2R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_CAN_Ubuntu_22-04_LTS_V2R7_STIG_SCAP_1-4_Benchmark-enhancedV10-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_Kubernetes_V2R5_STIG_SCAP_1-4_Benchmark-enhancedV8-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_MOZ_Firefox_Windows_V6R8_STIG_SCAP_1-4_Benchmark-enhancedV13-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_MS_Defender_Antivirus_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV15-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_MS_DotNet_Framework_4-0_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV15-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_MS_Edge_V2R5_STIG_SCAP_1-4_Benchmark-enhancedV16-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_MS_IE11_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV17-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_MS_IIS_8-5_Server_V2R7_STIG_SCAP_1-4_Benchmark-enhancedV13-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_MS_IIS_8-5_Site_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_MS_Office_365_ProPlus_V3R8_STIG_SCAP_1-4_Benchmark-enhancedV11-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_MS_Windows_2012_and_2012_R2_DC_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_MS_Windows_2012_and_2012_R2_MS_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_Oracle_Linux_7_V3R3_STIG_SCAP_1-4_Benchmark-enhancedV16-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_RHEL_7_V3R15_STIG_SCAP_1-4_Benchmark-enhancedV19-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_SLES_12_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV17-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_SLES_15_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV19-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_TOSS_4_V2R7_STIG_SCAP_1-4_Benchmark-enhancedV8-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY"
+  ],
+  "validation_status": "VERIFIED_STATIC_PRIMARY_SUBSET",
+  "checks": [
+    "Original ZIP SHA-256 and Git blob identity",
+    "Original OVAL XSD/Schematron/semantic validity and deprecation guard",
+    "Original Rule and dependency identities match frozen ledger",
+    "Native schemas and independent source/native typed terms",
+    "Frozen authoring identity and exact compiled program hash retention",
+    "Independent compiled operand and package consumers",
+    "Representative source/native cardinality mutants rejected"
+  ],
+  "unchanged_implementation_ci": "https://github.com/vanderpol/scap-ng/actions/runs/40867417638",
+  "implementation_ci_result": "3284 run, 3283 passed, zero failures/errors, one existing skip; all nine exact-code workflows pass",
+  "limitations": [
+    "Primary OVAL only; original policy/CPE/manual execution not proved",
+    "Static verification, not scanner runtime or complete toolchain release",
+    "Frozen DRAFT archive remains unchanged",
+    "Failed or unsupported closures remain explicit and do not enter accepted packages",
+    "Existing 1072 anchor + 4 guard proofs and 523 conformance proof records remain separate and unchanged"
+  ],
+  "output_file_count": 7502,
+  "files": {
+    "proof-hashes.json": {
+      "bytes": 2472377,
+      "sha256": "9a269746984dd7e124843b953eb9a63eb3b6f304084898f83e403c057abad925"
+    },
+    "representatives.json": {
+      "bytes": 1249206,
+      "sha256": "2b88dc865bd53b707d334db6fd87e6249c2e53f7d4078ea7e6d3a66a4fddb3d6"
+    },
+    "reproduce.py": {
+      "bytes": 8081,
+      "sha256": "7367b47b75bab615dd50e7dcc73126e4f68ca15d893fe205a08b3a50a016d38d"
+    },
+    "batch-evidence.zip": {
+      "bytes": 17926832,
+      "sha256": "1895e7d70e619da340e8cdac85748217728e930475d60d1c73a8fd6bb1f83860"
+    }
+  }
+}

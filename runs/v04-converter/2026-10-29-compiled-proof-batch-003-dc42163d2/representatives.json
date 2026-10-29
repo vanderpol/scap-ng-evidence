@@ -1,0 +1,1307 @@
+[
+  {
+    "benchmark": "U_Oracle_Linux_8_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+    "source_rule": "xccdf_mil.disa.stig_rule_SV-248520r1015025_rule",
+    "assessment": {
+      "assessment": {
+        "id": "ol-8-audit-records-must-contain-information-to-establish-what-type-of-b38c465f-assessment",
+        "version": 1,
+        "assessment_title": "OL 8 audit records must contain information to establish what type of events occurred, the source of events, where events occurred, and the outcome of events.",
+        "mode": "automated",
+        "class": "compliance",
+        "purpose": "assessment",
+        "specification": {
+          "id": "scap-ng.pre-alpha.assessment",
+          "version": "0.4.0"
+        },
+        "tests": {
+          "auditd-service-is-active-6c6b5878-test": {
+            "test_title": "auditd.service is active",
+            "capability": "linux.systemdunitproperty",
+            "object": {
+              "unit": {
+                "equals": "auditd.service"
+              },
+              "property": {
+                "equals": "ActiveState"
+              }
+            },
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "fields": {
+                "value": {
+                  "equals": "active",
+                  "values_found": "one_or_more",
+                  "values_matching": "every"
+                }
+              }
+            },
+            "reported_elements": "all"
+          },
+          "auditd-service-is-running-ff834ca3-test": {
+            "test_title": "auditd.service is running",
+            "capability": "linux.systemdunitproperty",
+            "object": {
+              "unit": {
+                "equals": "auditd.service"
+              },
+              "property": {
+                "equals": "SubState"
+              }
+            },
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "fields": {
+                "value": {
+                  "equals": "running",
+                  "values_found": "one_or_more",
+                  "values_matching": "every"
+                }
+              }
+            },
+            "reported_elements": "all"
+          }
+        },
+        "evaluate": {
+          "and": [
+            {
+              "test": "auditd-service-is-active-6c6b5878-test"
+            },
+            {
+              "test": "auditd-service-is-running-ff834ca3-test"
+            }
+          ]
+        }
+      }
+    },
+    "independent_proof": {
+      "rule": "xccdf_mil.disa.stig_rule_SV-248520r1015025_rule",
+      "outcome": "PROVED",
+      "test_bindings": {
+        "oval:mil.disa.stig.linux:tst:25815200": "auditd-service-is-active-6c6b5878-test",
+        "oval:mil.disa.stig.linux:tst:25815201": "auditd-service-is-running-ff834ca3-test"
+      },
+      "comparisons": [
+        {
+          "source_test": "oval:mil.disa.stig.linux:tst:25815200",
+          "native_test": "auditd-service-is-active-6c6b5878-test",
+          "source_term": {
+            "capability": "linux.systemdunitproperty",
+            "object": {
+              "capability": "linux.systemdunitproperty",
+              "selectors": {
+                "unit": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "auditd.service"
+                  }
+                },
+                "property": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "ActiveState"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "value",
+              "predicate": {
+                "operation": "equals",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "active"
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "native_term": {
+            "capability": "linux.systemdunitproperty",
+            "object": {
+              "capability": "linux.systemdunitproperty",
+              "selectors": {
+                "unit": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "auditd.service"
+                  }
+                },
+                "property": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "ActiveState"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "value",
+              "predicate": {
+                "operation": "equals",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "active"
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "term_sha256": "17cc8d4447423bea24d9dcebb9aa390d73b8a0345cba300ad02ebec26e329349"
+        },
+        {
+          "source_test": "oval:mil.disa.stig.linux:tst:25815201",
+          "native_test": "auditd-service-is-running-ff834ca3-test",
+          "source_term": {
+            "capability": "linux.systemdunitproperty",
+            "object": {
+              "capability": "linux.systemdunitproperty",
+              "selectors": {
+                "unit": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "auditd.service"
+                  }
+                },
+                "property": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SubState"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "value",
+              "predicate": {
+                "operation": "equals",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "running"
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "native_term": {
+            "capability": "linux.systemdunitproperty",
+            "object": {
+              "capability": "linux.systemdunitproperty",
+              "selectors": {
+                "unit": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "auditd.service"
+                  }
+                },
+                "property": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SubState"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "value",
+              "predicate": {
+                "operation": "equals",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "running"
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "term_sha256": "b780ab57b88fa22596068fa6c3ecf367f1505e978e862cce8caa0d1dbda38e00"
+        }
+      ],
+      "unsupported_obligations": [],
+      "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+      "normalizations_applied": []
+    }
+  },
+  {
+    "benchmark": "U_Oracle_Linux_8_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+    "source_rule": "xccdf_mil.disa.stig_rule_SV-248521r1156679_rule",
+    "assessment": {
+      "assessment": {
+        "id": "ol-8-must-be-a-vendor-supported-release-b3f42a5e-assessment",
+        "version": 1,
+        "assessment_title": "OL 8 must be a vendor-supported release.",
+        "mode": "automated",
+        "class": "compliance",
+        "purpose": "assessment",
+        "specification": {
+          "id": "scap-ng.pre-alpha.assessment",
+          "version": "0.4.0"
+        },
+        "tests": {
+          "the-ol-8-minor-version-is-supported-e6144eea-test": {
+            "test_title": "The OL 8 minor version is supported.",
+            "capability": "independent.textfilecontent54",
+            "object": {
+              "directory": {
+                "equals": "/etc"
+              },
+              "name": {
+                "equals": "oracle-release"
+              },
+              "pattern": {
+                "matches_regex": "^\\s*Oracle Linux Server release 8\\.(\\d+)\\b"
+              },
+              "instance": {
+                "greater_than_or_equal": 1,
+                "datatype": "integer"
+              },
+              "ignore_case": false,
+              "multiline": true,
+              "singleline": false,
+              "item_creation": "all_object_elements_fullfilled",
+              "filesystem": "all"
+            },
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "fields": {
+                "subexpression": {
+                  "greater_than_or_equal": 0,
+                  "datatype": "integer",
+                  "values_found": "one_or_more",
+                  "values_matching": "every"
+                }
+              }
+            },
+            "reported_elements": "all"
+          }
+        },
+        "evaluate": {
+          "test": "the-ol-8-minor-version-is-supported-e6144eea-test"
+        }
+      }
+    },
+    "independent_proof": {
+      "rule": "xccdf_mil.disa.stig_rule_SV-248521r1156679_rule",
+      "outcome": "PROVED",
+      "test_bindings": {
+        "oval:mil.disa.stig.ind:tst:24852100": "the-ol-8-minor-version-is-supported-e6144eea-test"
+      },
+      "comparisons": [
+        {
+          "source_test": "oval:mil.disa.stig.ind:tst:24852100",
+          "native_test": "the-ol-8-minor-version-is-supported-e6144eea-test",
+          "source_term": {
+            "capability": "independent.textfilecontent54",
+            "object": {
+              "capability": "independent.textfilecontent54",
+              "selectors": {
+                "directory": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "/etc"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "oracle-release"
+                  }
+                },
+                "pattern": {
+                  "operation": "matches_regex",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "^\\s*Oracle Linux Server release 8\\.(\\d+)\\b"
+                  }
+                },
+                "instance": {
+                  "operation": "greater_than_or_equal",
+                  "comparison_datatype": "integer",
+                  "operand": {
+                    "datatype": "integer",
+                    "value": 1
+                  }
+                },
+                "filesystem": "all",
+                "ignore_case": false,
+                "multiline": true,
+                "singleline": false,
+                "item_creation": "all_object_elements_fullfilled"
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "subexpression",
+              "predicate": {
+                "operation": "greater_than_or_equal",
+                "comparison_datatype": "integer",
+                "operand": {
+                  "datatype": "integer",
+                  "value": 0
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "native_term": {
+            "capability": "independent.textfilecontent54",
+            "object": {
+              "capability": "independent.textfilecontent54",
+              "selectors": {
+                "directory": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "/etc"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "oracle-release"
+                  }
+                },
+                "pattern": {
+                  "operation": "matches_regex",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "^\\s*Oracle Linux Server release 8\\.(\\d+)\\b"
+                  }
+                },
+                "instance": {
+                  "operation": "greater_than_or_equal",
+                  "comparison_datatype": "integer",
+                  "operand": {
+                    "datatype": "integer",
+                    "value": 1
+                  }
+                },
+                "ignore_case": false,
+                "multiline": true,
+                "singleline": false,
+                "item_creation": "all_object_elements_fullfilled",
+                "filesystem": "all"
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "subexpression",
+              "predicate": {
+                "operation": "greater_than_or_equal",
+                "comparison_datatype": "integer",
+                "operand": {
+                  "datatype": "integer",
+                  "value": 0
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "term_sha256": "35f580462d3cfa7e514019dc012a1a3cf6ec90febad7f1dd63daecdb5c0bb3d7"
+        }
+      ],
+      "unsupported_obligations": [],
+      "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+      "normalizations_applied": []
+    }
+  },
+  {
+    "benchmark": "U_Oracle_Linux_8_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+    "source_rule": "xccdf_mil.disa.stig_rule_SV-248526r958390_rule",
+    "assessment": {
+      "assessment": {
+        "id": "ol-8-must-display-the-standard-mandatory-dod-notice-and-consent-banner-12f8d02f-assessment",
+        "version": 1,
+        "assessment_title": "OL 8 must display the Standard Mandatory DOD Notice and Consent Banner before granting local or remote access to the system via an SSH logon.",
+        "mode": "automated",
+        "class": "compliance",
+        "purpose": "assessment",
+        "specification": {
+          "id": "scap-ng.pre-alpha.assessment",
+          "version": "0.4.0"
+        },
+        "shared_objects": {
+          "retrieve-the-location-of-the-sshd-banner-text-009bb6a6-object": {
+            "capability": "independent.shellcommand",
+            "shell": "bash",
+            "command": "/usr/sbin/sshd -dd 2>&1 | awk '/filename/ {print $4}' | tr -d '\\r' | tr '\\n' ' ' | xargs grep -iH '^\\s*banner'",
+            "pattern": ".*:[Bb]anner\\s+(.+)",
+            "error_if_exit_status_not_0": false,
+            "error_if_stderr_exists": false,
+            "object_title": "Retrieve the location of the sshd banner text."
+          }
+        },
+        "variables": {
+          "retreive-location-of-banner-file-08cd6e4a-variable": {
+            "kind": "local",
+            "datatype": "string",
+            "expression": {
+              "values": {
+                "object": "retrieve-the-location-of-the-sshd-banner-text-009bb6a6-object",
+                "field": "subexpression"
+              }
+            }
+          }
+        },
+        "tests": {
+          "find-and-check-the-configured-location-of-the-sshd-banner-file-ce289195-test": {
+            "test_title": "Find and check the configured location of the sshd banner file.",
+            "capability": "independent.shellcommand",
+            "object": "retrieve-the-location-of-the-sshd-banner-text-009bb6a6-object",
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "fields": {
+                "stdout_line": {
+                  "matches_regex": "^[^#]+[Bb]anner\\s+\\S+",
+                  "values_found": "exactly_one",
+                  "values_matching": "every"
+                }
+              }
+            },
+            "reported_elements": "all"
+          },
+          "confirm-the-sshd-banner-text-is-correct-6044b26d-test": {
+            "test_title": "Confirm the sshd banner text is correct.",
+            "capability": "independent.textfilecontent54",
+            "object": {
+              "full_path": {
+                "equals": {
+                  "variable": "retreive-location-of-banner-file-08cd6e4a-variable"
+                },
+                "datatype": "string",
+                "value_match": "every"
+              },
+              "pattern": {
+                "matches_regex": ".*"
+              },
+              "instance": {
+                "equals": 1,
+                "datatype": "integer"
+              },
+              "ignore_case": false,
+              "multiline": true,
+              "singleline": true,
+              "item_creation": "all_object_elements_fullfilled",
+              "filesystem": "all"
+            },
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "fields": {
+                "text": {
+                  "matches_regex": "You\\s+are\\s+accessing\\s+a\\s+U.S.\\s+Government\\s+\\(USG\\)\\s+Information\\s+System\\s+\\(IS\\)\\s+that\\s+is\\s+provided\\s+for\\s+USG-authorized\\s+use\\s+only.\\s+By\\s+using\\s+this\\s+IS\\s+\\(which\\s+includes\\s+any\\s+device\\s+attached\\s+to\\s+this\\s+IS\\),\\s+you\\s+consent\\s+to\\s+the\\s+following\\s+conditions:[\\n\\r \\t]+-The\\s+USG\\s+routinely\\s+intercepts\\s+and\\s+monitors\\s+communications\\s+on\\s+this\\s+IS\\s+for\\s+purposes\\s+including,\\s+but\\s+not\\s+limited\\s+to,\\s+penetration\\s+testing,\\s+COMSEC\\s+monitoring,\\s+network\\s+operations\\s+and\\s+defense,\\s+personnel\\s+misconduct\\s+\\(PM\\),\\s+law\\s+enforcement\\s+\\(LE\\),\\s+and\\s+counterintelligence\\s+\\(CI\\)\\s+investigations.[\\n\\r \\t]+-At\\s+any\\s+time,\\s+the\\s+USG\\s+may\\s+inspect\\s+and\\s+seize\\s+data\\s+stored\\s+on\\s+this\\s+IS.[\\n\\r \\t]+-Communications\\s+using,\\s+or\\s+data\\s+stored\\s+on,\\s+this\\s+IS\\s+are\\s+not\\s+private,\\s+are\\s+subject\\s+to\\s+routine\\s+monitoring,\\s+interception,\\s+and\\s+search,\\s+and\\s+may\\s+be\\s+disclosed\\s+or\\s+used\\s+for\\s+any\\s+USG-authorized\\s+purpose.[\\n\\r \\t]+-This\\s+IS\\s+includes\\s+security\\s+measures\\s+\\(e.g.,\\s+authentication\\s+and\\s+access\\s+controls\\)\\s+to\\s+protect\\s+USG\\s+interests[-][-]not\\s+for\\s+your\\s+personal\\s+benefit\\s+or\\s+privacy.[\\n\\r \\t]+-Notwithstanding\\s+the\\s+above,\\s+using\\s+this\\s+IS\\s+does\\s+not\\s+constitute\\s+consent\\s+to\\s+PM,\\s+LE\\s+or\\s+CI\\s+investigative\\s+searching\\s+or\\s+monitoring\\s+of\\s+the\\s+content\\s+of\\s+privileged\\s+communications,\\s+or\\s+work\\s+product,\\s+related\\s+to\\s+personal\\s+representation\\s+or\\s+services\\s+by\\s+attorneys,\\s+psychotherapists,\\s+or\\s+clergy,\\s+and\\s+their\\s+assistants.\\s+Such\\s+communications\\s+and\\s+work\\s+product\\s+are\\s+private\\s+and\\s+confidential.\\s+See\\s+User\\s+Agreement\\s+for\\s+details.[\\n\\r]*",
+                  "values_found": "one_or_more",
+                  "values_matching": "every"
+                }
+              }
+            },
+            "reported_elements": "all"
+          }
+        },
+        "evaluate": {
+          "and": [
+            {
+              "test": "find-and-check-the-configured-location-of-the-sshd-banner-file-ce289195-test"
+            },
+            {
+              "test": "confirm-the-sshd-banner-text-is-correct-6044b26d-test"
+            }
+          ]
+        }
+      }
+    },
+    "independent_proof": {
+      "rule": "xccdf_mil.disa.stig_rule_SV-248526r958390_rule",
+      "outcome": "PROVED",
+      "test_bindings": {
+        "oval:navy.navwar.niwcatlantic.scc.linux:tst:24852601": "find-and-check-the-configured-location-of-the-sshd-banner-file-ce289195-test",
+        "oval:navy.navwar.niwcatlantic.scc.linux:tst:24852602": "confirm-the-sshd-banner-text-is-correct-6044b26d-test"
+      },
+      "comparisons": [
+        {
+          "source_test": "oval:navy.navwar.niwcatlantic.scc.linux:tst:24852601",
+          "native_test": "find-and-check-the-configured-location-of-the-sshd-banner-file-ce289195-test",
+          "source_term": {
+            "capability": "independent.shellcommand",
+            "object": {
+              "capability": "independent.shellcommand",
+              "selectors": {
+                "shell": {
+                  "datatype": "string",
+                  "value": "bash"
+                },
+                "command": {
+                  "datatype": "string",
+                  "value": "/usr/sbin/sshd -dd 2>&1 | awk '/filename/ {print $4}' | tr -d '\\r' | tr '\\n' ' ' | xargs grep -iH '^\\s*banner'"
+                },
+                "pattern": {
+                  "datatype": "string",
+                  "value": ".*:[Bb]anner\\s+(.+)"
+                },
+                "error_if_exit_status_not_0": false,
+                "error_if_stderr_exists": false
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "stdout_line",
+              "predicate": {
+                "operation": "matches_regex",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "^[^#]+[Bb]anner\\s+\\S+"
+                },
+                "found": "exactly_one",
+                "matching": "every"
+              }
+            }
+          },
+          "native_term": {
+            "capability": "independent.shellcommand",
+            "object": {
+              "capability": "independent.shellcommand",
+              "selectors": {
+                "shell": {
+                  "datatype": "string",
+                  "value": "bash"
+                },
+                "command": {
+                  "datatype": "string",
+                  "value": "/usr/sbin/sshd -dd 2>&1 | awk '/filename/ {print $4}' | tr -d '\\r' | tr '\\n' ' ' | xargs grep -iH '^\\s*banner'"
+                },
+                "pattern": {
+                  "datatype": "string",
+                  "value": ".*:[Bb]anner\\s+(.+)"
+                },
+                "error_if_exit_status_not_0": false,
+                "error_if_stderr_exists": false
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "stdout_line",
+              "predicate": {
+                "operation": "matches_regex",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "^[^#]+[Bb]anner\\s+\\S+"
+                },
+                "found": "exactly_one",
+                "matching": "every"
+              }
+            }
+          },
+          "term_sha256": "681e9b6f0abd4c4cf1c43b8db7c9417fe778146ea2424da314f71650ae4ed7f6"
+        },
+        {
+          "source_test": "oval:navy.navwar.niwcatlantic.scc.linux:tst:24852602",
+          "native_test": "confirm-the-sshd-banner-text-is-correct-6044b26d-test",
+          "source_term": {
+            "capability": "independent.textfilecontent54",
+            "object": {
+              "capability": "independent.textfilecontent54",
+              "selectors": {
+                "full_path": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "local": {
+                      "datatype": "string",
+                      "expression": {
+                        "values": {
+                          "object": {
+                            "capability": "independent.shellcommand",
+                            "selectors": {
+                              "shell": {
+                                "datatype": "string",
+                                "value": "bash"
+                              },
+                              "command": {
+                                "datatype": "string",
+                                "value": "/usr/sbin/sshd -dd 2>&1 | awk '/filename/ {print $4}' | tr -d '\\r' | tr '\\n' ' ' | xargs grep -iH '^\\s*banner'"
+                              },
+                              "pattern": {
+                                "datatype": "string",
+                                "value": ".*:[Bb]anner\\s+(.+)"
+                              },
+                              "error_if_exit_status_not_0": false,
+                              "error_if_stderr_exists": false
+                            }
+                          },
+                          "field": "subexpression"
+                        }
+                      }
+                    }
+                  },
+                  "expected_matching": "every"
+                },
+                "pattern": {
+                  "operation": "matches_regex",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": ".*"
+                  }
+                },
+                "instance": {
+                  "operation": "equals",
+                  "comparison_datatype": "integer",
+                  "operand": {
+                    "datatype": "integer",
+                    "value": 1
+                  }
+                },
+                "filesystem": "all",
+                "ignore_case": false,
+                "multiline": true,
+                "singleline": true,
+                "item_creation": "all_object_elements_fullfilled"
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "text",
+              "predicate": {
+                "operation": "matches_regex",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "You\\s+are\\s+accessing\\s+a\\s+U.S.\\s+Government\\s+\\(USG\\)\\s+Information\\s+System\\s+\\(IS\\)\\s+that\\s+is\\s+provided\\s+for\\s+USG-authorized\\s+use\\s+only.\\s+By\\s+using\\s+this\\s+IS\\s+\\(which\\s+includes\\s+any\\s+device\\s+attached\\s+to\\s+this\\s+IS\\),\\s+you\\s+consent\\s+to\\s+the\\s+following\\s+conditions:[\\n\\r \\t]+-The\\s+USG\\s+routinely\\s+intercepts\\s+and\\s+monitors\\s+communications\\s+on\\s+this\\s+IS\\s+for\\s+purposes\\s+including,\\s+but\\s+not\\s+limited\\s+to,\\s+penetration\\s+testing,\\s+COMSEC\\s+monitoring,\\s+network\\s+operations\\s+and\\s+defense,\\s+personnel\\s+misconduct\\s+\\(PM\\),\\s+law\\s+enforcement\\s+\\(LE\\),\\s+and\\s+counterintelligence\\s+\\(CI\\)\\s+investigations.[\\n\\r \\t]+-At\\s+any\\s+time,\\s+the\\s+USG\\s+may\\s+inspect\\s+and\\s+seize\\s+data\\s+stored\\s+on\\s+this\\s+IS.[\\n\\r \\t]+-Communications\\s+using,\\s+or\\s+data\\s+stored\\s+on,\\s+this\\s+IS\\s+are\\s+not\\s+private,\\s+are\\s+subject\\s+to\\s+routine\\s+monitoring,\\s+interception,\\s+and\\s+search,\\s+and\\s+may\\s+be\\s+disclosed\\s+or\\s+used\\s+for\\s+any\\s+USG-authorized\\s+purpose.[\\n\\r \\t]+-This\\s+IS\\s+includes\\s+security\\s+measures\\s+\\(e.g.,\\s+authentication\\s+and\\s+access\\s+controls\\)\\s+to\\s+protect\\s+USG\\s+interests[-][-]not\\s+for\\s+your\\s+personal\\s+benefit\\s+or\\s+privacy.[\\n\\r \\t]+-Notwithstanding\\s+the\\s+above,\\s+using\\s+this\\s+IS\\s+does\\s+not\\s+constitute\\s+consent\\s+to\\s+PM,\\s+LE\\s+or\\s+CI\\s+investigative\\s+searching\\s+or\\s+monitoring\\s+of\\s+the\\s+content\\s+of\\s+privileged\\s+communications,\\s+or\\s+work\\s+product,\\s+related\\s+to\\s+personal\\s+representation\\s+or\\s+services\\s+by\\s+attorneys,\\s+psychotherapists,\\s+or\\s+clergy,\\s+and\\s+their\\s+assistants.\\s+Such\\s+communications\\s+and\\s+work\\s+product\\s+are\\s+private\\s+and\\s+confidential.\\s+See\\s+User\\s+Agreement\\s+for\\s+details.[\\n\\r]*"
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "native_term": {
+            "capability": "independent.textfilecontent54",
+            "object": {
+              "capability": "independent.textfilecontent54",
+              "selectors": {
+                "full_path": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "local": {
+                      "datatype": "string",
+                      "expression": {
+                        "values": {
+                          "object": {
+                            "capability": "independent.shellcommand",
+                            "selectors": {
+                              "shell": {
+                                "datatype": "string",
+                                "value": "bash"
+                              },
+                              "command": {
+                                "datatype": "string",
+                                "value": "/usr/sbin/sshd -dd 2>&1 | awk '/filename/ {print $4}' | tr -d '\\r' | tr '\\n' ' ' | xargs grep -iH '^\\s*banner'"
+                              },
+                              "pattern": {
+                                "datatype": "string",
+                                "value": ".*:[Bb]anner\\s+(.+)"
+                              },
+                              "error_if_exit_status_not_0": false,
+                              "error_if_stderr_exists": false
+                            }
+                          },
+                          "field": "subexpression"
+                        }
+                      }
+                    }
+                  },
+                  "expected_matching": "every"
+                },
+                "pattern": {
+                  "operation": "matches_regex",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": ".*"
+                  }
+                },
+                "instance": {
+                  "operation": "equals",
+                  "comparison_datatype": "integer",
+                  "operand": {
+                    "datatype": "integer",
+                    "value": 1
+                  }
+                },
+                "ignore_case": false,
+                "multiline": true,
+                "singleline": true,
+                "item_creation": "all_object_elements_fullfilled",
+                "filesystem": "all"
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "text",
+              "predicate": {
+                "operation": "matches_regex",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "You\\s+are\\s+accessing\\s+a\\s+U.S.\\s+Government\\s+\\(USG\\)\\s+Information\\s+System\\s+\\(IS\\)\\s+that\\s+is\\s+provided\\s+for\\s+USG-authorized\\s+use\\s+only.\\s+By\\s+using\\s+this\\s+IS\\s+\\(which\\s+includes\\s+any\\s+device\\s+attached\\s+to\\s+this\\s+IS\\),\\s+you\\s+consent\\s+to\\s+the\\s+following\\s+conditions:[\\n\\r \\t]+-The\\s+USG\\s+routinely\\s+intercepts\\s+and\\s+monitors\\s+communications\\s+on\\s+this\\s+IS\\s+for\\s+purposes\\s+including,\\s+but\\s+not\\s+limited\\s+to,\\s+penetration\\s+testing,\\s+COMSEC\\s+monitoring,\\s+network\\s+operations\\s+and\\s+defense,\\s+personnel\\s+misconduct\\s+\\(PM\\),\\s+law\\s+enforcement\\s+\\(LE\\),\\s+and\\s+counterintelligence\\s+\\(CI\\)\\s+investigations.[\\n\\r \\t]+-At\\s+any\\s+time,\\s+the\\s+USG\\s+may\\s+inspect\\s+and\\s+seize\\s+data\\s+stored\\s+on\\s+this\\s+IS.[\\n\\r \\t]+-Communications\\s+using,\\s+or\\s+data\\s+stored\\s+on,\\s+this\\s+IS\\s+are\\s+not\\s+private,\\s+are\\s+subject\\s+to\\s+routine\\s+monitoring,\\s+interception,\\s+and\\s+search,\\s+and\\s+may\\s+be\\s+disclosed\\s+or\\s+used\\s+for\\s+any\\s+USG-authorized\\s+purpose.[\\n\\r \\t]+-This\\s+IS\\s+includes\\s+security\\s+measures\\s+\\(e.g.,\\s+authentication\\s+and\\s+access\\s+controls\\)\\s+to\\s+protect\\s+USG\\s+interests[-][-]not\\s+for\\s+your\\s+personal\\s+benefit\\s+or\\s+privacy.[\\n\\r \\t]+-Notwithstanding\\s+the\\s+above,\\s+using\\s+this\\s+IS\\s+does\\s+not\\s+constitute\\s+consent\\s+to\\s+PM,\\s+LE\\s+or\\s+CI\\s+investigative\\s+searching\\s+or\\s+monitoring\\s+of\\s+the\\s+content\\s+of\\s+privileged\\s+communications,\\s+or\\s+work\\s+product,\\s+related\\s+to\\s+personal\\s+representation\\s+or\\s+services\\s+by\\s+attorneys,\\s+psychotherapists,\\s+or\\s+clergy,\\s+and\\s+their\\s+assistants.\\s+Such\\s+communications\\s+and\\s+work\\s+product\\s+are\\s+private\\s+and\\s+confidential.\\s+See\\s+User\\s+Agreement\\s+for\\s+details.[\\n\\r]*"
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "term_sha256": "d40074bcaf44d0c2abb41dd380e2ee3b1009f0ccb65be0ebdf6f9551af2952ee"
+        }
+      ],
+      "unsupported_obligations": [],
+      "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+      "normalizations_applied": []
+    }
+  },
+  {
+    "benchmark": "U_RHEL_8_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV22-signed",
+    "source_rule": "xccdf_mil.disa.stig_rule_SV-230221r1017040_rule",
+    "assessment": {
+      "assessment": {
+        "id": "rhel-8-must-be-a-vendor-supported-release-0b4bbe22-assessment",
+        "version": 1,
+        "assessment_title": "RHEL 8 must be a vendor-supported release.",
+        "mode": "automated",
+        "class": "compliance",
+        "purpose": "assessment",
+        "specification": {
+          "id": "scap-ng.pre-alpha.assessment",
+          "version": "0.4.0"
+        },
+        "tests": {
+          "the-rhel-8-minor-version-is-supported-348ad481-test": {
+            "test_title": "The RHEL 8 minor version is supported.",
+            "capability": "independent.textfilecontent54",
+            "object": {
+              "directory": {
+                "equals": "/etc"
+              },
+              "name": {
+                "equals": "os-release"
+              },
+              "pattern": {
+                "matches_regex": "^\\s*PRETTY_NAME=\"Red Hat Enterprise Linux 8\\.(\\d+)\\b"
+              },
+              "instance": {
+                "greater_than_or_equal": 1,
+                "datatype": "integer"
+              },
+              "ignore_case": false,
+              "multiline": true,
+              "singleline": false,
+              "item_creation": "all_object_elements_fullfilled",
+              "filesystem": "all"
+            },
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "or": [
+                {
+                  "fields": {
+                    "subexpression": {
+                      "equals": 8,
+                      "datatype": "integer",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "subexpression": {
+                      "equals": 10,
+                      "datatype": "integer",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                }
+              ]
+            },
+            "reported_elements": "all"
+          }
+        },
+        "evaluate": {
+          "test": "the-rhel-8-minor-version-is-supported-348ad481-test"
+        }
+      }
+    },
+    "independent_proof": {
+      "rule": "xccdf_mil.disa.stig_rule_SV-230221r1017040_rule",
+      "outcome": "PROVED",
+      "test_bindings": {
+        "oval:mil.disa.stig.ind:tst:23022100": "the-rhel-8-minor-version-is-supported-348ad481-test"
+      },
+      "comparisons": [
+        {
+          "source_test": "oval:mil.disa.stig.ind:tst:23022100",
+          "native_test": "the-rhel-8-minor-version-is-supported-348ad481-test",
+          "source_term": {
+            "capability": "independent.textfilecontent54",
+            "object": {
+              "capability": "independent.textfilecontent54",
+              "selectors": {
+                "directory": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "/etc"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "os-release"
+                  }
+                },
+                "pattern": {
+                  "operation": "matches_regex",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "^\\s*PRETTY_NAME=\"Red Hat Enterprise Linux 8\\.(\\d+)\\b"
+                  }
+                },
+                "instance": {
+                  "operation": "greater_than_or_equal",
+                  "comparison_datatype": "integer",
+                  "operand": {
+                    "datatype": "integer",
+                    "value": 1
+                  }
+                },
+                "filesystem": "all",
+                "ignore_case": false,
+                "multiline": true,
+                "singleline": false,
+                "item_creation": "all_object_elements_fullfilled"
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "or": [
+                {
+                  "field": "subexpression",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "integer",
+                    "operand": {
+                      "datatype": "integer",
+                      "value": 10
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "subexpression",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "integer",
+                    "operand": {
+                      "datatype": "integer",
+                      "value": 8
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "native_term": {
+            "capability": "independent.textfilecontent54",
+            "object": {
+              "capability": "independent.textfilecontent54",
+              "selectors": {
+                "directory": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "/etc"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "os-release"
+                  }
+                },
+                "pattern": {
+                  "operation": "matches_regex",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "^\\s*PRETTY_NAME=\"Red Hat Enterprise Linux 8\\.(\\d+)\\b"
+                  }
+                },
+                "instance": {
+                  "operation": "greater_than_or_equal",
+                  "comparison_datatype": "integer",
+                  "operand": {
+                    "datatype": "integer",
+                    "value": 1
+                  }
+                },
+                "ignore_case": false,
+                "multiline": true,
+                "singleline": false,
+                "item_creation": "all_object_elements_fullfilled",
+                "filesystem": "all"
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "or": [
+                {
+                  "field": "subexpression",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "integer",
+                    "operand": {
+                      "datatype": "integer",
+                      "value": 10
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "subexpression",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "integer",
+                    "operand": {
+                      "datatype": "integer",
+                      "value": 8
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "term_sha256": "7abe7268a89e386737357910f1c43766cf94fdc21d95ecb9a890e2647c4041ac"
+        }
+      ],
+      "unsupported_obligations": [],
+      "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+      "normalizations_applied": []
+    }
+  },
+  {
+    "benchmark": "U_RHEL_8_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV22-signed",
+    "source_rule": "xccdf_mil.disa.stig_rule_SV-230223r1155356_rule",
+    "assessment": {
+      "assessment": {
+        "id": "rhel-8-must-implement-a-fips-140-3-compliant-systemwide-cryptographic-4d4298c4-assessment",
+        "version": 1,
+        "assessment_title": "RHEL 8 must implement a FIPS 140-3-compliant systemwide cryptographic policy.",
+        "mode": "automated",
+        "class": "compliance",
+        "purpose": "assessment",
+        "specification": {
+          "id": "scap-ng.pre-alpha.assessment",
+          "version": "0.4.0"
+        },
+        "tests": {
+          "check-configuration-of-appropriate-systemwide-cryptographic-policy-020f26b5-test": {
+            "test_title": "Check configuration of appropriate systemwide cryptographic policy.",
+            "capability": "independent.shellcommand",
+            "object": {
+              "shell": "bash",
+              "command": "update-crypto-policies --show",
+              "pattern": "FIPS",
+              "error_if_exit_status_not_0": false,
+              "error_if_stderr_exists": false
+            },
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "fields": {
+                "stdout_line": {
+                  "matches_regex": "^FIPS",
+                  "values_found": "one_or_more",
+                  "values_matching": "every"
+                }
+              }
+            },
+            "reported_elements": "all"
+          }
+        },
+        "evaluate": {
+          "test": "check-configuration-of-appropriate-systemwide-cryptographic-policy-020f26b5-test"
+        }
+      }
+    },
+    "independent_proof": {
+      "rule": "xccdf_mil.disa.stig_rule_SV-230223r1155356_rule",
+      "outcome": "PROVED",
+      "test_bindings": {
+        "oval:navy.navwar.niwcatlantic.scc.rhel8:tst:23022301": "check-configuration-of-appropriate-systemwide-cryptographic-policy-020f26b5-test"
+      },
+      "comparisons": [
+        {
+          "source_test": "oval:navy.navwar.niwcatlantic.scc.rhel8:tst:23022301",
+          "native_test": "check-configuration-of-appropriate-systemwide-cryptographic-policy-020f26b5-test",
+          "source_term": {
+            "capability": "independent.shellcommand",
+            "object": {
+              "capability": "independent.shellcommand",
+              "selectors": {
+                "shell": {
+                  "datatype": "string",
+                  "value": "bash"
+                },
+                "command": {
+                  "datatype": "string",
+                  "value": "update-crypto-policies --show"
+                },
+                "pattern": {
+                  "datatype": "string",
+                  "value": "FIPS"
+                },
+                "error_if_exit_status_not_0": false,
+                "error_if_stderr_exists": false
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "stdout_line",
+              "predicate": {
+                "operation": "matches_regex",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "^FIPS"
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "native_term": {
+            "capability": "independent.shellcommand",
+            "object": {
+              "capability": "independent.shellcommand",
+              "selectors": {
+                "shell": {
+                  "datatype": "string",
+                  "value": "bash"
+                },
+                "command": {
+                  "datatype": "string",
+                  "value": "update-crypto-policies --show"
+                },
+                "pattern": {
+                  "datatype": "string",
+                  "value": "FIPS"
+                },
+                "error_if_exit_status_not_0": false,
+                "error_if_stderr_exists": false
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "stdout_line",
+              "predicate": {
+                "operation": "matches_regex",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "^FIPS"
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "term_sha256": "258ebf4b63e5af007a20767d87fbd97818729fe1cfcbbab7b0bcd88cbd3c6434"
+        }
+      ],
+      "unsupported_obligations": [],
+      "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+      "normalizations_applied": []
+    }
+  },
+  {
+    "benchmark": "U_RHEL_8_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV22-signed",
+    "source_rule": "xccdf_mil.disa.stig_rule_SV-230238r1017057_rule",
+    "assessment": {
+      "assessment": {
+        "id": "rhel-8-must-prevent-system-daemons-from-using-kerberos-for-authenticat-8d6731de-assessment",
+        "version": 1,
+        "assessment_title": "RHEL 8 must prevent system daemons from using Kerberos for authentication.",
+        "mode": "automated",
+        "class": "compliance",
+        "purpose": "assessment",
+        "specification": {
+          "id": "scap-ng.pre-alpha.assessment",
+          "version": "0.4.0"
+        },
+        "tests": {
+          "etc-keytab-does-not-exist-24057533-test": {
+            "test_title": "/etc/*.keytab does not exist.",
+            "capability": "unix.file",
+            "object": {
+              "directory": {
+                "equals": "/etc"
+              },
+              "name": {
+                "matches_regex": "\\.keytab$"
+              },
+              "filesystem": "all"
+            },
+            "require": {
+              "items_found": "none"
+            },
+            "reported_elements": "all"
+          }
+        },
+        "evaluate": {
+          "test": "etc-keytab-does-not-exist-24057533-test"
+        }
+      }
+    },
+    "independent_proof": {
+      "rule": "xccdf_mil.disa.stig_rule_SV-230238r1017057_rule",
+      "outcome": "PROVED",
+      "test_bindings": {
+        "oval:mil.disa.stig.unix:tst:23023800": "etc-keytab-does-not-exist-24057533-test"
+      },
+      "comparisons": [
+        {
+          "source_test": "oval:mil.disa.stig.unix:tst:23023800",
+          "native_test": "etc-keytab-does-not-exist-24057533-test",
+          "source_term": {
+            "capability": "unix.file",
+            "object": {
+              "capability": "unix.file",
+              "selectors": {
+                "directory": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "/etc"
+                  }
+                },
+                "name": {
+                  "operation": "matches_regex",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "\\.keytab$"
+                  }
+                },
+                "filesystem": "all"
+              }
+            },
+            "found": "none"
+          },
+          "native_term": {
+            "capability": "unix.file",
+            "object": {
+              "capability": "unix.file",
+              "selectors": {
+                "directory": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "/etc"
+                  }
+                },
+                "name": {
+                  "operation": "matches_regex",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "\\.keytab$"
+                  }
+                },
+                "filesystem": "all"
+              }
+            },
+            "found": "none"
+          },
+          "term_sha256": "a656ea02a30094d5d405bf8cf47c3e3cce5fcaf42dc37ce5d674edbaaf0f982f"
+        }
+      ],
+      "unsupported_obligations": [],
+      "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+      "normalizations_applied": []
+    }
+  }
+]

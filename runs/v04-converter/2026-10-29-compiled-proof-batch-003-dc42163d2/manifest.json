@@ -1,0 +1,77 @@
+{
+  "evidence_id": "2026-10-29-compiled-proof-batch-003-dc42163d2",
+  "evidence_kind": "production migration evidence; independently verified static primary OVAL subset",
+  "created_at": "2026-10-29T13:51:45.460721+00:00",
+  "source_repository": "vanderpol/scap-ng",
+  "source_commits": [
+    "dc42163d20c23874efa3888a53f9701095dc5316"
+  ],
+  "generating_tool": "tools/v04_direct_converter.py --verify / verify_v04_direct_scope.accept_source",
+  "generating_tool_commit": "10f4e35b331c622c14f6e3aa2bd4aa8981c810c1",
+  "reproduction_driver": "reproduce.py (snapshot, not a competing converter)",
+  "source_revision": "niwc-atlantic/scap-content-library@8c8e5dff860af6b1290ee9273a282db24278f8d5",
+  "frozen_draft_sha256": "5f86d016c1bce82018eec82c6468ab583816ff0b38c8d3ea5e9210a931cc1a08",
+  "cohort_size": 3138,
+  "selected": 448,
+  "new_primary_proofs": 446,
+  "unchanged_frozen_authoring_program_pairs": 446,
+  "negative_mutations_rejected": 44,
+  "source_pins": [
+    {
+      "file": "U_Oracle_Linux_8_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV19-signed.zip",
+      "repository_path": "Current/U_Oracle_Linux_8_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV19-signed.zip",
+      "git_blob_sha": "8597954cbadb10a97a2eb4370e6d03270612311a",
+      "sha256": "e811aadd425862d0483cb314b8f8f3efe31547dbf287d89da8c3b64efcb09a29",
+      "bytes": 355022
+    },
+    {
+      "file": "U_RHEL_8_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV22-signed.zip",
+      "repository_path": "Current/U_RHEL_8_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV22-signed.zip",
+      "git_blob_sha": "332894a71e1cebe072b482eae11dbd06d4cf7f1e",
+      "sha256": "7c3e8df208dd49ea0b9bbb4435e665b814bb69e9ad18853ac91b7f65b0be94b5",
+      "bytes": 379646
+    }
+  ],
+  "exact_commands": [
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_Oracle_Linux_8_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV19-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_RHEL_8_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV22-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY"
+  ],
+  "validation_status": "VERIFIED_STATIC_PRIMARY_SUBSET",
+  "checks": [
+    "Original ZIP SHA-256 and Git blob identity",
+    "Original OVAL XSD/Schematron/semantic validity and deprecation guard",
+    "Original Rule and dependency identities match frozen ledger",
+    "Native schemas and independent source/native typed terms",
+    "Frozen authoring identity and exact compiled program hash retention",
+    "Independent compiled operand and package consumers",
+    "Representative source/native cardinality mutants rejected"
+  ],
+  "unchanged_implementation_ci": "https://github.com/vanderpol/scap-ng/actions/runs/40867417638",
+  "implementation_ci_result": "3284 run, 3283 passed, zero failures/errors, one existing skip; all nine exact-code workflows pass",
+  "limitations": [
+    "Primary OVAL only; original policy/CPE/manual execution not proved",
+    "Static verification, not scanner runtime or complete toolchain release",
+    "Frozen DRAFT archive remains unchanged",
+    "Failed or unsupported closures remain explicit and do not enter accepted packages",
+    "Existing 1072 anchor + 4 guard proofs and 523 conformance proof records remain separate and unchanged"
+  ],
+  "output_file_count": 1806,
+  "files": {
+    "proof-hashes.json": {
+      "bytes": 592811,
+      "sha256": "51c10d991c8586abeea219062046c09043f112dbd3b75a67f09cb244f9e431a2"
+    },
+    "representatives.json": {
+      "bytes": 52480,
+      "sha256": "0e585c0346f4303aacd06377fd8dd9a64a6acf200cb440e92829023d220786e4"
+    },
+    "reproduce.py": {
+      "bytes": 8081,
+      "sha256": "7367b47b75bab615dd50e7dcc73126e4f68ca15d893fe205a08b3a50a016d38d"
+    },
+    "batch-evidence.zip": {
+      "bytes": 4372264,
+      "sha256": "4e23bda8b45bd032c10dd97426db8205f844cdd094ffe1f8770236b728f65ac6"
+    }
+  }
+}

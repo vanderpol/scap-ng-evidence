@@ -26,3 +26,6 @@ runs/
 
 - [2026-10-29 compiled-cohort proof batch 001](v04-converter/2026-10-29-compiled-proof-batch-001-dc42163d2/README.md): 243 original Windows Server 2019 primary Rules independently proved; frozen authoring/program hashes retained.
 - [2026-10-29 compiled-cohort proof batch 002](v04-converter/2026-10-29-compiled-proof-batch-002-dc42163d2/README.md): 602 original Server 2022, Windows 10 and Server 2016 primary Rules independently proved; original source validation and frozen hash retention.
+
+- [2026-10-29 compiled-cohort proof batch 003](v04-converter/2026-10-29-compiled-proof-batch-003-dc42163d2/README.md): 446 valid RHEL/Oracle Linux 8 primary Rules proved; two invalid originals excluded.
+- [2026-10-29 compiled-cohort proof batch 004](v04-converter/2026-10-29-compiled-proof-batch-004-dc42163d2/README.md): remaining benchmark cohorts independently assessed; failed original validation and reader limitations remain explicit.
