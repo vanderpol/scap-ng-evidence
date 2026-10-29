@@ -1,0 +1,2104 @@
+{
+  "records_retained": 523,
+  "baseline": "vanderpol/scap-ng-evidence/runs/v04-converter/2026-10-29-identity-enum-static-verified-66a166bf2/proof-hashes.json",
+  "full_audit_sha256": "b67b4904bb42fd253a6203f258f7183793319b63be5fc29d772ed95056de2a2f",
+  "summary": {
+    "aix.fileset": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#aix}fileset_test",
+          "occurrences": 1,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 1
+      },
+      "tests": 1
+    },
+    "aix.fix": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#aix}fix_test",
+          "occurrences": 1,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 1
+      },
+      "tests": 1
+    },
+    "asa.line": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#asa}line_test",
+          "occurrences": 1,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 1
+      },
+      "tests": 1
+    },
+    "asa.version": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#asa}version_test",
+          "occurrences": 1,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 1
+      },
+      "tests": 1
+    },
+    "file.hash": {
+      "closure_blockers": [],
+      "compiled": 6,
+      "converted": 6,
+      "diagnostics": [],
+      "schema_valid": 6,
+      "scope": {
+        "mapped_probe": 6
+      },
+      "source_proof": {
+        "PROVED": 6
+      },
+      "tests": 6
+    },
+    "independent.environmentvariable58": {
+      "closure_blockers": [
+        {
+          "message": "Variable cast outside bounded proof",
+          "tests": 1
+        },
+        {
+          "message": "unsupported Object field: notes",
+          "tests": 2
+        }
+      ],
+      "compiled": 11,
+      "converted": 11,
+      "diagnostics": [
+        {
+          "message": "Variable cast outside bounded proof",
+          "occurrences": 1,
+          "stage": "conversion"
+        },
+        {
+          "message": "unsupported Object field: notes",
+          "occurrences": 2,
+          "stage": "conversion"
+        }
+      ],
+      "schema_valid": 11,
+      "scope": {
+        "mapped_probe": 14
+      },
+      "source_proof": {
+        "NOT_RUN": 3,
+        "PROVED": 11
+      },
+      "tests": 14
+    },
+    "independent.family": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "PROVED": 1
+      },
+      "tests": 1
+    },
+    "independent.shellcommand": {
+      "closure_blockers": [],
+      "compiled": 11,
+      "converted": 11,
+      "diagnostics": [],
+      "schema_valid": 11,
+      "scope": {
+        "mapped_probe": 11
+      },
+      "source_proof": {
+        "PROVED": 11
+      },
+      "tests": 11
+    },
+    "independent.textfilecontent54": {
+      "closure_blockers": [
+        {
+          "message": "unsupported Test existence: all_exist",
+          "tests": 17
+        },
+        {
+          "message": "unsupported Test matching/absence combination",
+          "tests": 2
+        },
+        {
+          "message": "unsupported/deprecated recursion direction",
+          "tests": 1
+        }
+      ],
+      "compiled": 2,
+      "converted": 2,
+      "diagnostics": [
+        {
+          "message": "unsupported Test existence: all_exist",
+          "occurrences": 17,
+          "stage": "conversion"
+        },
+        {
+          "message": "unsupported Test matching/absence combination",
+          "occurrences": 2,
+          "stage": "conversion"
+        }
+      ],
+      "schema_valid": 2,
+      "scope": {
+        "mapped_probe": 21
+      },
+      "source_proof": {
+        "NOT_RUN": 19,
+        "PROVED": 2
+      },
+      "tests": 21
+    },
+    "independent.unknown": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "PROVED": 1
+      },
+      "tests": 1
+    },
+    "independent.xmlfilecontent": {
+      "closure_blockers": [],
+      "compiled": 14,
+      "converted": 14,
+      "diagnostics": [],
+      "schema_valid": 14,
+      "scope": {
+        "mapped_probe": 14
+      },
+      "source_proof": {
+        "PROVED": 14
+      },
+      "tests": 14
+    },
+    "ios.bgpneighbor": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#ios}bgpneighbor_test",
+          "occurrences": 1,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 1
+      },
+      "tests": 1
+    },
+    "ios.global": {
+      "closure_blockers": [],
+      "compiled": 2,
+      "converted": 2,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#ios}global_test",
+          "occurrences": 2,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 2,
+      "scope": {
+        "mapped_probe": 2
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 2
+      },
+      "tests": 2
+    },
+    "ios.interface": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#ios}interface_test",
+          "occurrences": 1,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 1
+      },
+      "tests": 1
+    },
+    "ios.line": {
+      "closure_blockers": [],
+      "compiled": 2,
+      "converted": 2,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#ios}line_test",
+          "occurrences": 2,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 2,
+      "scope": {
+        "mapped_probe": 2
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 2
+      },
+      "tests": 2
+    },
+    "ios.routingprotocolauthintf": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#ios}routingprotocolauthintf_test",
+          "occurrences": 1,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 1
+      },
+      "tests": 1
+    },
+    "ios.section": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#ios}section_test",
+          "occurrences": 1,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 1
+      },
+      "tests": 1
+    },
+    "ios.snmpcommunity": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#ios}snmpcommunity_test",
+          "occurrences": 1,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 1
+      },
+      "tests": 1
+    },
+    "ios.snmpgroup": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#ios}snmpgroup_test",
+          "occurrences": 1,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 1
+      },
+      "tests": 1
+    },
+    "ios.snmphost": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#ios}snmphost_test",
+          "occurrences": 1,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 1
+      },
+      "tests": 1
+    },
+    "ios.snmpuser": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#ios}snmpuser_test",
+          "occurrences": 1,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 1
+      },
+      "tests": 1
+    },
+    "iosxe.bgpneighbor": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe}bgpneighbor_test",
+          "occurrences": 1,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 1
+      },
+      "tests": 1
+    },
+    "iosxe.global": {
+      "closure_blockers": [],
+      "compiled": 2,
+      "converted": 2,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe}global_test",
+          "occurrences": 2,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 2,
+      "scope": {
+        "mapped_probe": 2
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 2
+      },
+      "tests": 2
+    },
+    "iosxe.interface": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe}interface_test",
+          "occurrences": 1,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 1
+      },
+      "tests": 1
+    },
+    "iosxe.line": {
+      "closure_blockers": [],
+      "compiled": 2,
+      "converted": 2,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe}line_test",
+          "occurrences": 2,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 2,
+      "scope": {
+        "mapped_probe": 2
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 2
+      },
+      "tests": 2
+    },
+    "iosxe.routingprotocolauthintf": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe}routingprotocolauthintf_test",
+          "occurrences": 1,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 1
+      },
+      "tests": 1
+    },
+    "iosxe.section": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe}section_test",
+          "occurrences": 1,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 1
+      },
+      "tests": 1
+    },
+    "iosxe.snmpcommunity": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe}snmpcommunity_test",
+          "occurrences": 1,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 1
+      },
+      "tests": 1
+    },
+    "iosxe.snmpgroup": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe}snmpgroup_test",
+          "occurrences": 1,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 1
+      },
+      "tests": 1
+    },
+    "iosxe.snmphost": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe}snmphost_test",
+          "occurrences": 1,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 1
+      },
+      "tests": 1
+    },
+    "iosxe.snmpuser": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe}snmpuser_test",
+          "occurrences": 1,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 1
+      },
+      "tests": 1
+    },
+    "iosxe.version": {
+      "closure_blockers": [],
+      "compiled": 5,
+      "converted": 5,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe}version_test",
+          "occurrences": 5,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 5,
+      "scope": {
+        "mapped_probe": 5
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 5
+      },
+      "tests": 5
+    },
+    "junos.show": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#junos}show_test",
+          "occurrences": 1,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 1
+      },
+      "tests": 1
+    },
+    "linux.apparmorstatus": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "PROVED": 1
+      },
+      "tests": 1
+    },
+    "linux.dpkginfo": {
+      "closure_blockers": [],
+      "compiled": 3,
+      "converted": 3,
+      "diagnostics": [],
+      "schema_valid": 3,
+      "scope": {
+        "mapped_probe": 3
+      },
+      "source_proof": {
+        "PROVED": 3
+      },
+      "tests": 3
+    },
+    "linux.inetlisteningservers": {
+      "closure_blockers": [],
+      "compiled": 3,
+      "converted": 3,
+      "diagnostics": [],
+      "schema_valid": 3,
+      "scope": {
+        "mapped_probe": 3
+      },
+      "source_proof": {
+        "PROVED": 3
+      },
+      "tests": 3
+    },
+    "linux.kernelmodule": {
+      "closure_blockers": [
+        {
+          "message": "unsupported Test existence: all_exist",
+          "tests": 1
+        }
+      ],
+      "compiled": 2,
+      "converted": 2,
+      "diagnostics": [
+        {
+          "message": "unsupported Test existence: all_exist",
+          "occurrences": 1,
+          "stage": "conversion"
+        }
+      ],
+      "schema_valid": 2,
+      "scope": {
+        "mapped_probe": 3
+      },
+      "source_proof": {
+        "NOT_RUN": 1,
+        "PROVED": 2
+      },
+      "tests": 3
+    },
+    "linux.partition": {
+      "closure_blockers": [],
+      "compiled": 3,
+      "converted": 3,
+      "diagnostics": [],
+      "schema_valid": 3,
+      "scope": {
+        "mapped_probe": 3
+      },
+      "source_proof": {
+        "PROVED": 3
+      },
+      "tests": 3
+    },
+    "linux.rpminfo": {
+      "closure_blockers": [],
+      "compiled": 3,
+      "converted": 3,
+      "diagnostics": [],
+      "schema_valid": 3,
+      "scope": {
+        "mapped_probe": 3
+      },
+      "source_proof": {
+        "PROVED": 3
+      },
+      "tests": 3
+    },
+    "linux.rpmverifyfile": {
+      "closure_blockers": [
+        {
+          "message": "unsupported State field/namespace",
+          "tests": 3
+        }
+      ],
+      "compiled": 0,
+      "converted": 0,
+      "diagnostics": [
+        {
+          "message": "unsupported State field/namespace",
+          "occurrences": 3,
+          "stage": "conversion"
+        }
+      ],
+      "schema_valid": 0,
+      "scope": {
+        "mapped_probe": 3
+      },
+      "source_proof": {
+        "NOT_RUN": 3
+      },
+      "tests": 3
+    },
+    "linux.rpmverifypackage": {
+      "closure_blockers": [],
+      "compiled": 4,
+      "converted": 4,
+      "diagnostics": [],
+      "schema_valid": 4,
+      "scope": {
+        "mapped_probe": 4
+      },
+      "source_proof": {
+        "PROVED": 4
+      },
+      "tests": 4
+    },
+    "linux.selinuxboolean": {
+      "closure_blockers": [],
+      "compiled": 3,
+      "converted": 3,
+      "diagnostics": [],
+      "schema_valid": 3,
+      "scope": {
+        "mapped_probe": 3
+      },
+      "source_proof": {
+        "PROVED": 3
+      },
+      "tests": 3
+    },
+    "linux.selinuxsecuritycontext": {
+      "closure_blockers": [
+        {
+          "message": "Test child namespace/shape",
+          "tests": 2
+        }
+      ],
+      "compiled": 5,
+      "converted": 5,
+      "diagnostics": [
+        {
+          "message": "Test child namespace/shape",
+          "occurrences": 2,
+          "stage": "conversion"
+        }
+      ],
+      "schema_valid": 5,
+      "scope": {
+        "mapped_probe": 7
+      },
+      "source_proof": {
+        "NOT_RUN": 2,
+        "PROVED": 5
+      },
+      "tests": 7
+    },
+    "linux.sestatus": {
+      "closure_blockers": [],
+      "compiled": 3,
+      "converted": 3,
+      "diagnostics": [],
+      "schema_valid": 3,
+      "scope": {
+        "mapped_probe": 3
+      },
+      "source_proof": {
+        "PROVED": 3
+      },
+      "tests": 3
+    },
+    "linux.systemdunitdependency": {
+      "closure_blockers": [],
+      "compiled": 3,
+      "converted": 3,
+      "diagnostics": [],
+      "schema_valid": 3,
+      "scope": {
+        "mapped_probe": 3
+      },
+      "source_proof": {
+        "PROVED": 3
+      },
+      "tests": 3
+    },
+    "linux.systemdunitproperty": {
+      "closure_blockers": [
+        {
+          "message": "unsupported Test existence: all_exist",
+          "tests": 1
+        }
+      ],
+      "compiled": 9,
+      "converted": 9,
+      "diagnostics": [
+        {
+          "message": "unsupported Test existence: all_exist",
+          "occurrences": 1,
+          "stage": "conversion"
+        }
+      ],
+      "schema_valid": 9,
+      "scope": {
+        "mapped_probe": 10
+      },
+      "source_proof": {
+        "NOT_RUN": 1,
+        "PROVED": 9
+      },
+      "tests": 10
+    },
+    "macos.accountinfo": {
+      "closure_blockers": [],
+      "compiled": 0,
+      "converted": 0,
+      "diagnostics": [
+        {
+          "message": "reference-only capability (not probed): {http://oval.mitre.org/XMLSchema/oval-definitions-5#macos}accountinfo_test",
+          "occurrences": 3,
+          "stage": "scope"
+        }
+      ],
+      "schema_valid": 0,
+      "scope": {
+        "reference_only": 3
+      },
+      "source_proof": {
+        "NOT_RUN": 3
+      },
+      "tests": 3
+    },
+    "macos.authorizationdb": {
+      "closure_blockers": [],
+      "compiled": 0,
+      "converted": 0,
+      "diagnostics": [
+        {
+          "message": "reference-only capability (not probed): {http://oval.mitre.org/XMLSchema/oval-definitions-5#macos}authorizationdb_test",
+          "occurrences": 3,
+          "stage": "scope"
+        }
+      ],
+      "schema_valid": 0,
+      "scope": {
+        "reference_only": 3
+      },
+      "source_proof": {
+        "NOT_RUN": 3
+      },
+      "tests": 3
+    },
+    "macos.disabledservice": {
+      "closure_blockers": [],
+      "compiled": 0,
+      "converted": 0,
+      "diagnostics": [
+        {
+          "message": "reference-only capability (not probed): {http://oval.mitre.org/XMLSchema/oval-definitions-5#macos}disabledservice_test",
+          "occurrences": 1,
+          "stage": "scope"
+        }
+      ],
+      "schema_valid": 0,
+      "scope": {
+        "reference_only": 1
+      },
+      "source_proof": {
+        "NOT_RUN": 1
+      },
+      "tests": 1
+    },
+    "macos.diskinfo": {
+      "closure_blockers": [],
+      "compiled": 0,
+      "converted": 0,
+      "diagnostics": [
+        {
+          "message": "reference-only capability (not probed): {http://oval.mitre.org/XMLSchema/oval-definitions-5#macos}diskinfo_test",
+          "occurrences": 1,
+          "stage": "scope"
+        }
+      ],
+      "schema_valid": 0,
+      "scope": {
+        "reference_only": 1
+      },
+      "source_proof": {
+        "NOT_RUN": 1
+      },
+      "tests": 1
+    },
+    "macos.filevault": {
+      "closure_blockers": [],
+      "compiled": 0,
+      "converted": 0,
+      "diagnostics": [
+        {
+          "message": "reference-only capability (not probed): {http://oval.mitre.org/XMLSchema/oval-definitions-5#macos}filevault_test",
+          "occurrences": 1,
+          "stage": "scope"
+        }
+      ],
+      "schema_valid": 0,
+      "scope": {
+        "reference_only": 1
+      },
+      "source_proof": {
+        "NOT_RUN": 1
+      },
+      "tests": 1
+    },
+    "macos.firmwarepassword": {
+      "closure_blockers": [],
+      "compiled": 0,
+      "converted": 0,
+      "diagnostics": [
+        {
+          "message": "reference-only capability (not probed): {http://oval.mitre.org/XMLSchema/oval-definitions-5#macos}firmwarepassword_test",
+          "occurrences": 1,
+          "stage": "scope"
+        }
+      ],
+      "schema_valid": 0,
+      "scope": {
+        "reference_only": 1
+      },
+      "source_proof": {
+        "NOT_RUN": 1
+      },
+      "tests": 1
+    },
+    "macos.gatekeeper": {
+      "closure_blockers": [],
+      "compiled": 0,
+      "converted": 0,
+      "diagnostics": [
+        {
+          "message": "reference-only capability (not probed): {http://oval.mitre.org/XMLSchema/oval-definitions-5#macos}gatekeeper_test",
+          "occurrences": 1,
+          "stage": "scope"
+        }
+      ],
+      "schema_valid": 0,
+      "scope": {
+        "reference_only": 1
+      },
+      "source_proof": {
+        "NOT_RUN": 1
+      },
+      "tests": 1
+    },
+    "macos.installhistory": {
+      "closure_blockers": [],
+      "compiled": 0,
+      "converted": 0,
+      "diagnostics": [
+        {
+          "message": "reference-only capability (not probed): {http://oval.mitre.org/XMLSchema/oval-definitions-5#macos}installhistory_test",
+          "occurrences": 1,
+          "stage": "scope"
+        }
+      ],
+      "schema_valid": 0,
+      "scope": {
+        "reference_only": 1
+      },
+      "source_proof": {
+        "NOT_RUN": 1
+      },
+      "tests": 1
+    },
+    "macos.keychain": {
+      "closure_blockers": [],
+      "compiled": 0,
+      "converted": 0,
+      "diagnostics": [
+        {
+          "message": "reference-only capability (not probed): {http://oval.mitre.org/XMLSchema/oval-definitions-5#macos}keychain_test",
+          "occurrences": 1,
+          "stage": "scope"
+        }
+      ],
+      "schema_valid": 0,
+      "scope": {
+        "reference_only": 1
+      },
+      "source_proof": {
+        "NOT_RUN": 1
+      },
+      "tests": 1
+    },
+    "macos.launchd": {
+      "closure_blockers": [],
+      "compiled": 0,
+      "converted": 0,
+      "diagnostics": [
+        {
+          "message": "reference-only capability (not probed): {http://oval.mitre.org/XMLSchema/oval-definitions-5#macos}launchd_test",
+          "occurrences": 3,
+          "stage": "scope"
+        }
+      ],
+      "schema_valid": 0,
+      "scope": {
+        "reference_only": 3
+      },
+      "source_proof": {
+        "NOT_RUN": 3
+      },
+      "tests": 3
+    },
+    "macos.nvram512": {
+      "closure_blockers": [],
+      "compiled": 0,
+      "converted": 0,
+      "diagnostics": [
+        {
+          "message": "reference-only capability (not probed): {http://oval.mitre.org/XMLSchema/oval-definitions-5#macos}nvram512_test",
+          "occurrences": 4,
+          "stage": "scope"
+        }
+      ],
+      "schema_valid": 0,
+      "scope": {
+        "reference_only": 4
+      },
+      "source_proof": {
+        "NOT_RUN": 4
+      },
+      "tests": 4
+    },
+    "macos.plist511": {
+      "closure_blockers": [],
+      "compiled": 0,
+      "converted": 0,
+      "diagnostics": [
+        {
+          "message": "reference-only capability (not probed): {http://oval.mitre.org/XMLSchema/oval-definitions-5#macos}plist511_test",
+          "occurrences": 2,
+          "stage": "scope"
+        }
+      ],
+      "schema_valid": 0,
+      "scope": {
+        "reference_only": 2
+      },
+      "source_proof": {
+        "NOT_RUN": 2
+      },
+      "tests": 2
+    },
+    "macos.profiles": {
+      "closure_blockers": [],
+      "compiled": 0,
+      "converted": 0,
+      "diagnostics": [
+        {
+          "message": "reference-only capability (not probed): {http://oval.mitre.org/XMLSchema/oval-definitions-5#macos}profiles_test",
+          "occurrences": 1,
+          "stage": "scope"
+        }
+      ],
+      "schema_valid": 0,
+      "scope": {
+        "reference_only": 1
+      },
+      "source_proof": {
+        "NOT_RUN": 1
+      },
+      "tests": 1
+    },
+    "macos.pwpolicy512": {
+      "closure_blockers": [],
+      "compiled": 0,
+      "converted": 0,
+      "diagnostics": [
+        {
+          "message": "reference-only capability (not probed): {http://oval.mitre.org/XMLSchema/oval-definitions-5#macos}pwpolicy512_test",
+          "occurrences": 2,
+          "stage": "scope"
+        }
+      ],
+      "schema_valid": 0,
+      "scope": {
+        "reference_only": 2
+      },
+      "source_proof": {
+        "NOT_RUN": 2
+      },
+      "tests": 2
+    },
+    "macos.softwareupdate": {
+      "closure_blockers": [],
+      "compiled": 0,
+      "converted": 0,
+      "diagnostics": [
+        {
+          "message": "reference-only capability (not probed): {http://oval.mitre.org/XMLSchema/oval-definitions-5#macos}softwareupdate_test",
+          "occurrences": 1,
+          "stage": "scope"
+        }
+      ],
+      "schema_valid": 0,
+      "scope": {
+        "reference_only": 1
+      },
+      "source_proof": {
+        "NOT_RUN": 1
+      },
+      "tests": 1
+    },
+    "macos.systemprofiler": {
+      "closure_blockers": [],
+      "compiled": 0,
+      "converted": 0,
+      "diagnostics": [
+        {
+          "message": "reference-only capability (not probed): {http://oval.mitre.org/XMLSchema/oval-definitions-5#macos}systemprofiler_test",
+          "occurrences": 3,
+          "stage": "scope"
+        }
+      ],
+      "schema_valid": 0,
+      "scope": {
+        "reference_only": 3
+      },
+      "source_proof": {
+        "NOT_RUN": 3
+      },
+      "tests": 3
+    },
+    "macos.systemsetup": {
+      "closure_blockers": [],
+      "compiled": 0,
+      "converted": 0,
+      "diagnostics": [
+        {
+          "message": "reference-only capability (not probed): {http://oval.mitre.org/XMLSchema/oval-definitions-5#macos}systemsetup_test",
+          "occurrences": 1,
+          "stage": "scope"
+        }
+      ],
+      "schema_valid": 0,
+      "scope": {
+        "reference_only": 1
+      },
+      "source_proof": {
+        "NOT_RUN": 1
+      },
+      "tests": 1
+    },
+    "panos.config": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#panos}config_test",
+          "occurrences": 1,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 1
+      },
+      "tests": 1
+    },
+    "panos.version": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#panos}version_test",
+          "occurrences": 1,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 1
+      },
+      "tests": 1
+    },
+    "solaris.package": {
+      "closure_blockers": [],
+      "compiled": 3,
+      "converted": 3,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris}package_test",
+          "occurrences": 3,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 3,
+      "scope": {
+        "mapped_probe": 3
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 3
+      },
+      "tests": 3
+    },
+    "solaris.package511": {
+      "closure_blockers": [
+        {
+          "message": "Variable cast outside bounded proof",
+          "tests": 5
+        }
+      ],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [
+        {
+          "message": "Variable cast outside bounded proof",
+          "occurrences": 5,
+          "stage": "conversion"
+        },
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris}package511_test",
+          "occurrences": 1,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 6
+      },
+      "source_proof": {
+        "NOT_RUN": 5,
+        "UNVERIFIABLE": 1
+      },
+      "tests": 6
+    },
+    "solaris.smf": {
+      "closure_blockers": [],
+      "compiled": 3,
+      "converted": 3,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris}smf_test",
+          "occurrences": 3,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 3,
+      "scope": {
+        "mapped_probe": 3
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 3
+      },
+      "tests": 3
+    },
+    "solaris.smfproperty": {
+      "closure_blockers": [],
+      "compiled": 3,
+      "converted": 3,
+      "diagnostics": [
+        {
+          "message": "source family proof unavailable: {http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris}smfproperty_test",
+          "occurrences": 3,
+          "stage": "source_proof"
+        }
+      ],
+      "schema_valid": 3,
+      "scope": {
+        "mapped_probe": 3
+      },
+      "source_proof": {
+        "UNVERIFIABLE": 3
+      },
+      "tests": 3
+    },
+    "unix.file": {
+      "closure_blockers": [
+        {
+          "message": "unsupported Test existence: all_exist",
+          "tests": 2
+        }
+      ],
+      "compiled": 16,
+      "converted": 16,
+      "diagnostics": [
+        {
+          "message": "unsupported Test existence: all_exist",
+          "occurrences": 2,
+          "stage": "conversion"
+        }
+      ],
+      "schema_valid": 16,
+      "scope": {
+        "mapped_probe": 18
+      },
+      "source_proof": {
+        "NOT_RUN": 2,
+        "PROVED": 16
+      },
+      "tests": 18
+    },
+    "unix.interface": {
+      "closure_blockers": [],
+      "compiled": 13,
+      "converted": 13,
+      "diagnostics": [],
+      "schema_valid": 13,
+      "scope": {
+        "mapped_probe": 13
+      },
+      "source_proof": {
+        "PROVED": 13
+      },
+      "tests": 13
+    },
+    "unix.password": {
+      "closure_blockers": [],
+      "compiled": 6,
+      "converted": 6,
+      "diagnostics": [],
+      "schema_valid": 6,
+      "scope": {
+        "mapped_probe": 6
+      },
+      "source_proof": {
+        "PROVED": 6
+      },
+      "tests": 6
+    },
+    "unix.process58": {
+      "closure_blockers": [],
+      "compiled": 8,
+      "converted": 8,
+      "diagnostics": [],
+      "schema_valid": 8,
+      "scope": {
+        "mapped_probe": 8
+      },
+      "source_proof": {
+        "PROVED": 8
+      },
+      "tests": 8
+    },
+    "unix.shadow": {
+      "closure_blockers": [],
+      "compiled": 3,
+      "converted": 3,
+      "diagnostics": [],
+      "schema_valid": 3,
+      "scope": {
+        "mapped_probe": 3
+      },
+      "source_proof": {
+        "PROVED": 3
+      },
+      "tests": 3
+    },
+    "unix.sshd": {
+      "closure_blockers": [
+        {
+          "message": "unsupported nil selector",
+          "tests": 3
+        },
+        {
+          "message": "unsupported var_check",
+          "tests": 1
+        }
+      ],
+      "compiled": 0,
+      "converted": 0,
+      "diagnostics": [
+        {
+          "message": "unsupported nil selector",
+          "occurrences": 3,
+          "stage": "conversion"
+        },
+        {
+          "message": "unsupported var_check",
+          "occurrences": 1,
+          "stage": "conversion"
+        }
+      ],
+      "schema_valid": 0,
+      "scope": {
+        "mapped_probe": 4
+      },
+      "source_proof": {
+        "NOT_RUN": 4
+      },
+      "tests": 4
+    },
+    "unix.symlink": {
+      "closure_blockers": [],
+      "compiled": 6,
+      "converted": 6,
+      "diagnostics": [],
+      "schema_valid": 6,
+      "scope": {
+        "mapped_probe": 6
+      },
+      "source_proof": {
+        "PROVED": 6
+      },
+      "tests": 6
+    },
+    "unix.sysctl": {
+      "closure_blockers": [],
+      "compiled": 10,
+      "converted": 10,
+      "diagnostics": [],
+      "schema_valid": 10,
+      "scope": {
+        "mapped_probe": 10
+      },
+      "source_proof": {
+        "PROVED": 10
+      },
+      "tests": 10
+    },
+    "unix.uname": {
+      "closure_blockers": [],
+      "compiled": 1,
+      "converted": 1,
+      "diagnostics": [],
+      "schema_valid": 1,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "PROVED": 1
+      },
+      "tests": 1
+    },
+    "variable.value": {
+      "closure_blockers": [
+        {
+          "message": "Variable source requires one var_ref; Sets/Filters unsupported",
+          "tests": 22
+        },
+        {
+          "message": "external/malformed Variable unsupported",
+          "tests": 16
+        },
+        {
+          "message": "invalid int literal: 'abc'",
+          "tests": 2
+        },
+        {
+          "message": "ordered comparison expansion requires integer source datatype",
+          "tests": 9
+        },
+        {
+          "message": "unsupported Test existence: all_exist",
+          "tests": 11
+        },
+        {
+          "message": "unsupported Variable datatype: float",
+          "tests": 27
+        },
+        {
+          "message": "unsupported function: arithmetic",
+          "tests": 2
+        },
+        {
+          "message": "unsupported function: begin",
+          "tests": 4
+        },
+        {
+          "message": "unsupported function: end",
+          "tests": 4
+        },
+        {
+          "message": "unsupported function: escape_regex",
+          "tests": 2
+        },
+        {
+          "message": "unsupported function: glob_to_regex",
+          "tests": 20
+        },
+        {
+          "message": "unsupported function: split",
+          "tests": 5
+        },
+        {
+          "message": "unsupported function: substring",
+          "tests": 5
+        },
+        {
+          "message": "unsupported function: time_difference",
+          "tests": 30
+        },
+        {
+          "message": "unsupported scalar datatype: float",
+          "tests": 15
+        }
+      ],
+      "compiled": 183,
+      "converted": 183,
+      "diagnostics": [
+        {
+          "message": "Variable source requires one var_ref; Sets/Filters unsupported",
+          "occurrences": 20,
+          "stage": "conversion"
+        },
+        {
+          "message": "external/malformed Variable unsupported",
+          "occurrences": 16,
+          "stage": "conversion"
+        },
+        {
+          "message": "invalid int literal: 'abc'",
+          "occurrences": 2,
+          "stage": "conversion"
+        },
+        {
+          "message": "ordered comparison expansion requires integer source datatype",
+          "occurrences": 9,
+          "stage": "conversion"
+        },
+        {
+          "message": "unsupported Test existence: all_exist",
+          "occurrences": 11,
+          "stage": "conversion"
+        },
+        {
+          "message": "unsupported Variable datatype: float",
+          "occurrences": 3,
+          "stage": "conversion"
+        },
+        {
+          "message": "unsupported function: arithmetic",
+          "occurrences": 2,
+          "stage": "conversion"
+        },
+        {
+          "message": "unsupported function: begin",
+          "occurrences": 4,
+          "stage": "conversion"
+        },
+        {
+          "message": "unsupported function: end",
+          "occurrences": 4,
+          "stage": "conversion"
+        },
+        {
+          "message": "unsupported function: escape_regex",
+          "occurrences": 2,
+          "stage": "conversion"
+        },
+        {
+          "message": "unsupported function: glob_to_regex",
+          "occurrences": 20,
+          "stage": "conversion"
+        },
+        {
+          "message": "unsupported function: substring",
+          "occurrences": 5,
+          "stage": "conversion"
+        },
+        {
+          "message": "unsupported function: time_difference",
+          "occurrences": 30,
+          "stage": "conversion"
+        },
+        {
+          "message": "unsupported scalar datatype: float",
+          "occurrences": 15,
+          "stage": "conversion"
+        }
+      ],
+      "schema_valid": 183,
+      "scope": {
+        "mapped_probe": 326
+      },
+      "source_proof": {
+        "NOT_RUN": 143,
+        "PROVED": 183
+      },
+      "tests": 326
+    },
+    "windows.appcmd": {
+      "closure_blockers": [
+        {
+          "message": "unsupported Test matching/absence combination",
+          "tests": 2
+        }
+      ],
+      "compiled": 12,
+      "converted": 12,
+      "diagnostics": [
+        {
+          "message": "unsupported Test matching/absence combination",
+          "occurrences": 2,
+          "stage": "conversion"
+        }
+      ],
+      "schema_valid": 12,
+      "scope": {
+        "mapped_probe": 14
+      },
+      "source_proof": {
+        "NOT_RUN": 2,
+        "PROVED": 12
+      },
+      "tests": 14
+    },
+    "windows.appcmdlistconfig": {
+      "closure_blockers": [],
+      "compiled": 16,
+      "converted": 16,
+      "diagnostics": [],
+      "schema_valid": 16,
+      "scope": {
+        "mapped_probe": 16
+      },
+      "source_proof": {
+        "PROVED": 16
+      },
+      "tests": 16
+    },
+    "windows.auditeventpolicysubcategories": {
+      "closure_blockers": [
+        {
+          "message": "unsupported State field/namespace",
+          "tests": 1
+        }
+      ],
+      "compiled": 0,
+      "converted": 0,
+      "diagnostics": [
+        {
+          "message": "unsupported State field/namespace",
+          "occurrences": 1,
+          "stage": "conversion"
+        }
+      ],
+      "schema_valid": 0,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "NOT_RUN": 1
+      },
+      "tests": 1
+    },
+    "windows.cmdlet": {
+      "closure_blockers": [
+        {
+          "message": "unsupported acquisition parameter comparison/type",
+          "tests": 3
+        }
+      ],
+      "compiled": 3,
+      "converted": 3,
+      "diagnostics": [
+        {
+          "message": "unsupported acquisition parameter comparison/type",
+          "occurrences": 3,
+          "stage": "conversion"
+        }
+      ],
+      "schema_valid": 3,
+      "scope": {
+        "mapped_probe": 6
+      },
+      "source_proof": {
+        "NOT_RUN": 3,
+        "PROVED": 3
+      },
+      "tests": 6
+    },
+    "windows.file": {
+      "closure_blockers": [
+        {
+          "message": "invalid original pattern-path recursion attributes",
+          "tests": 2
+        }
+      ],
+      "compiled": 12,
+      "converted": 12,
+      "diagnostics": [
+        {
+          "message": "invalid original pattern-path recursion attributes",
+          "occurrences": 2,
+          "stage": "conversion"
+        }
+      ],
+      "schema_valid": 12,
+      "scope": {
+        "mapped_probe": 14
+      },
+      "source_proof": {
+        "NOT_RUN": 2,
+        "PROVED": 12
+      },
+      "tests": 14
+    },
+    "windows.fileeffectiverights53": {
+      "closure_blockers": [
+        {
+          "message": "invalid original pattern-path recursion attributes",
+          "tests": 2
+        }
+      ],
+      "compiled": 5,
+      "converted": 5,
+      "diagnostics": [
+        {
+          "message": "invalid original pattern-path recursion attributes",
+          "occurrences": 2,
+          "stage": "conversion"
+        }
+      ],
+      "schema_valid": 5,
+      "scope": {
+        "mapped_probe": 7
+      },
+      "source_proof": {
+        "NOT_RUN": 2,
+        "PROVED": 5
+      },
+      "tests": 7
+    },
+    "windows.group_sid": {
+      "closure_blockers": [],
+      "compiled": 6,
+      "converted": 6,
+      "diagnostics": [],
+      "schema_valid": 6,
+      "scope": {
+        "mapped_probe": 6
+      },
+      "source_proof": {
+        "PROVED": 6
+      },
+      "tests": 6
+    },
+    "windows.lockoutpolicy": {
+      "closure_blockers": [
+        {
+          "message": "policy source literal must be nonnegative",
+          "tests": 1
+        }
+      ],
+      "compiled": 0,
+      "converted": 0,
+      "diagnostics": [
+        {
+          "message": "policy source literal must be nonnegative",
+          "occurrences": 1,
+          "stage": "conversion"
+        }
+      ],
+      "schema_valid": 0,
+      "scope": {
+        "mapped_probe": 1
+      },
+      "source_proof": {
+        "NOT_RUN": 1
+      },
+      "tests": 1
+    },
+    "windows.ntuser": {
+      "closure_blockers": [
+        {
+          "message": "unsupported Test existence: all_exist",
+          "tests": 1
+        }
+      ],
+      "compiled": 19,
+      "converted": 19,
+      "diagnostics": [
+        {
+          "message": "unsupported Test existence: all_exist",
+          "occurrences": 1,
+          "stage": "conversion"
+        }
+      ],
+      "schema_valid": 19,
+      "scope": {
+        "mapped_probe": 20
+      },
+      "source_proof": {
+        "NOT_RUN": 1,
+        "PROVED": 19
+      },
+      "tests": 20
+    },
+    "windows.passwordpolicy": {
+      "closure_blockers": [
+        {
+          "message": "policy source literal must be nonnegative",
+          "tests": 1
+        }
+      ],
+      "compiled": 6,
+      "converted": 6,
+      "diagnostics": [
+        {
+          "message": "policy source literal must be nonnegative",
+          "occurrences": 1,
+          "stage": "conversion"
+        }
+      ],
+      "schema_valid": 6,
+      "scope": {
+        "mapped_probe": 7
+      },
+      "source_proof": {
+        "NOT_RUN": 1,
+        "PROVED": 6
+      },
+      "tests": 7
+    },
+    "windows.registry": {
+      "closure_blockers": [],
+      "compiled": 15,
+      "converted": 15,
+      "diagnostics": [],
+      "schema_valid": 15,
+      "scope": {
+        "mapped_probe": 15
+      },
+      "source_proof": {
+        "PROVED": 15
+      },
+      "tests": 15
+    },
+    "windows.regkeyeffectiverights53": {
+      "closure_blockers": [
+        {
+          "message": "behaviors: unsupported attributes ['include_group', 'resolve_group']",
+          "tests": 2
+        }
+      ],
+      "compiled": 5,
+      "converted": 5,
+      "diagnostics": [
+        {
+          "message": "behaviors: unsupported attributes ['include_group', 'resolve_group']",
+          "occurrences": 2,
+          "stage": "conversion"
+        }
+      ],
+      "schema_valid": 5,
+      "scope": {
+        "mapped_probe": 7
+      },
+      "source_proof": {
+        "NOT_RUN": 2,
+        "PROVED": 5
+      },
+      "tests": 7
+    },
+    "windows.service": {
+      "closure_blockers": [],
+      "compiled": 5,
+      "converted": 5,
+      "diagnostics": [],
+      "schema_valid": 5,
+      "scope": {
+        "mapped_probe": 5
+      },
+      "source_proof": {
+        "PROVED": 5
+      },
+      "tests": 5
+    },
+    "windows.sid": {
+      "closure_blockers": [],
+      "compiled": 6,
+      "converted": 6,
+      "diagnostics": [],
+      "schema_valid": 6,
+      "scope": {
+        "mapped_probe": 6
+      },
+      "source_proof": {
+        "PROVED": 6
+      },
+      "tests": 6
+    },
+    "windows.sid_sid": {
+      "closure_blockers": [],
+      "compiled": 6,
+      "converted": 6,
+      "diagnostics": [],
+      "schema_valid": 6,
+      "scope": {
+        "mapped_probe": 6
+      },
+      "source_proof": {
+        "PROVED": 6
+      },
+      "tests": 6
+    },
+    "windows.user_sid55": {
+      "closure_blockers": [],
+      "compiled": 13,
+      "converted": 13,
+      "diagnostics": [],
+      "schema_valid": 13,
+      "scope": {
+        "mapped_probe": 13
+      },
+      "source_proof": {
+        "PROVED": 13
+      },
+      "tests": 13
+    },
+    "windows.userright": {
+      "closure_blockers": [],
+      "compiled": 47,
+      "converted": 47,
+      "diagnostics": [],
+      "schema_valid": 47,
+      "scope": {
+        "mapped_probe": 47
+      },
+      "source_proof": {
+        "PROVED": 47
+      },
+      "tests": 47
+    },
+    "windows.wmi.query": {
+      "closure_blockers": [],
+      "compiled": 5,
+      "converted": 5,
+      "diagnostics": [],
+      "schema_valid": 5,
+      "scope": {
+        "mapped_probe": 5
+      },
+      "source_proof": {
+        "PROVED": 5
+      },
+      "tests": 5
+    },
+    "windows.wuaupdatesearcher": {
+      "closure_blockers": [
+        {
+          "message": "Variable cast outside bounded proof",
+          "tests": 1
+        }
+      ],
+      "compiled": 8,
+      "converted": 8,
+      "diagnostics": [
+        {
+          "message": "Variable cast outside bounded proof",
+          "occurrences": 1,
+          "stage": "conversion"
+        }
+      ],
+      "schema_valid": 8,
+      "scope": {
+        "mapped_probe": 9
+      },
+      "source_proof": {
+        "NOT_RUN": 1,
+        "PROVED": 8
+      },
+      "tests": 9
+    },
+    "{http://oval.mitre.org/XMLSchema/oval-definitions-5#ios}version": {
+      "closure_blockers": [],
+      "compiled": 0,
+      "converted": 0,
+      "diagnostics": [
+        {
+          "message": "reference-only capability (not probed): {http://oval.mitre.org/XMLSchema/oval-definitions-5#ios}version_test",
+          "occurrences": 4,
+          "stage": "scope"
+        }
+      ],
+      "schema_valid": 0,
+      "scope": {
+        "unmapped_reference": 4
+      },
+      "source_proof": {
+        "NOT_RUN": 4
+      },
+      "tests": 4
+    },
+    "{http://oval.mitre.org/XMLSchema/oval-definitions-5#junos}xml_config": {
+      "closure_blockers": [],
+      "compiled": 0,
+      "converted": 0,
+      "diagnostics": [
+        {
+          "message": "reference-only capability (not probed): {http://oval.mitre.org/XMLSchema/oval-definitions-5#junos}xml_config_test",
+          "occurrences": 1,
+          "stage": "scope"
+        }
+      ],
+      "schema_valid": 0,
+      "scope": {
+        "unmapped_reference": 1
+      },
+      "source_proof": {
+        "NOT_RUN": 1
+      },
+      "tests": 1
+    }
+  },
+  "reader_files": {
+    "tools/v04_source_package_semantics.py": "cf91eea8b3ca0d896f24ff7b29a232e99778b77b728c25a3828983b71d2ad413",
+    "tools/v04_expanded_source_proof.py": "7e3a138bf7744ba5cd4ade5686533af37c74994c5e276ccaf59495c7db85c620"
+  }
+}

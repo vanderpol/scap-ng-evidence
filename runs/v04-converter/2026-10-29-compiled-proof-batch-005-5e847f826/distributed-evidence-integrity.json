@@ -1,0 +1,30 @@
+{
+  "evidence_kind": "read-only distribution integrity audit; no conversion rerun",
+  "prior_production_records_verified": 3095,
+  "batches": [
+    {
+      "run": "2026-10-29-compiled-proof-batch-001-dc42163d2",
+      "manifest_files_sha256": "PASS",
+      "zip_crc": "PASS",
+      "full_terms_and_authoring_bound_to_receipts": 243
+    },
+    {
+      "run": "2026-10-29-compiled-proof-batch-002-dc42163d2",
+      "manifest_files_sha256": "PASS",
+      "zip_crc": "PASS",
+      "full_terms_and_authoring_bound_to_receipts": 602
+    },
+    {
+      "run": "2026-10-29-compiled-proof-batch-003-dc42163d2",
+      "manifest_files_sha256": "PASS",
+      "zip_crc": "PASS",
+      "full_terms_and_authoring_bound_to_receipts": 446
+    },
+    {
+      "run": "2026-10-29-compiled-proof-batch-004-dc42163d2",
+      "manifest_files_sha256": "PASS",
+      "zip_crc": "PASS",
+      "full_terms_and_authoring_bound_to_receipts": 1804
+    }
+  ]
+}

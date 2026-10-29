@@ -29,3 +29,5 @@ runs/
 
 - [2026-10-29 compiled-cohort proof batch 003](v04-converter/2026-10-29-compiled-proof-batch-003-dc42163d2/README.md): 446 valid RHEL/Oracle Linux 8 primary Rules proved; two invalid originals excluded.
 - [2026-10-29 compiled-cohort proof batch 004](v04-converter/2026-10-29-compiled-proof-batch-004-dc42163d2/README.md): remaining benchmark cohorts independently assessed; failed original validation and reader limitations remain explicit.
+
+- [2026-10-29 compiled-cohort proof batch 005](v04-converter/2026-10-29-compiled-proof-batch-005-5e847f826/README.md): all 35 Registry-reader retries prove at exact green implementation; completed cohort 3,130 proved, seven invalid and one deprecated original excluded. Previous proof hashes retained.

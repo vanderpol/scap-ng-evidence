@@ -1,0 +1,3972 @@
+[
+  {
+    "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+    "source_rule": "xccdf_mil.disa.stig_rule_SV-221558r960804_rule",
+    "assessment": {
+      "assessment": {
+        "id": "firewall-traversal-from-remote-host-must-be-disabled-c6ce1bf6-assessment",
+        "version": 1,
+        "assessment_title": "Firewall traversal from remote host must be disabled.",
+        "mode": "automated",
+        "class": "compliance",
+        "purpose": "assessment",
+        "specification": {
+          "id": "scap-ng.pre-alpha.assessment",
+          "version": "0.4.0"
+        },
+        "tests": {
+          "disable-firewall-traversal-8ff62d5e-test": {
+            "test_title": "Disable firewall traversal",
+            "capability": "windows.registry",
+            "object": {
+              "hive": {
+                "equals": "local_machine"
+              },
+              "key": {
+                "equals": "SOFTWARE\\Policies\\Google\\Chrome"
+              },
+              "name": {
+                "equals": "RemoteAccessHostFirewallTraversal"
+              }
+            },
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "and": [
+                {
+                  "fields": {
+                    "type": {
+                      "equals": [
+                        "dword"
+                      ],
+                      "datatype": "string",
+                      "value_match": "one_or_more",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "value": {
+                      "equals": [
+                        "0"
+                      ],
+                      "datatype": "string",
+                      "value_match": "one_or_more",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                }
+              ]
+            },
+            "reported_elements": "all"
+          }
+        },
+        "evaluate": {
+          "test": "disable-firewall-traversal-8ff62d5e-test"
+        }
+      }
+    },
+    "independent_proof": {
+      "rule": "xccdf_mil.disa.stig_rule_SV-221558r960804_rule",
+      "outcome": "PROVED",
+      "test_bindings": {
+        "oval:mil.disa.stig.chrome:tst:240001": "disable-firewall-traversal-8ff62d5e-test"
+      },
+      "comparisons": [
+        {
+          "source_test": "oval:mil.disa.stig.chrome:tst:240001",
+          "native_test": "disable-firewall-traversal-8ff62d5e-test",
+          "source_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Policies\\Google\\Chrome"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "RemoteAccessHostFirewallTraversal"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "type",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "constant_values": [
+                        {
+                          "datatype": "string",
+                          "value": "dword"
+                        }
+                      ]
+                    },
+                    "expected_matching": "one_or_more",
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "value",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "constant_values": [
+                        {
+                          "datatype": "string",
+                          "value": "0"
+                        }
+                      ]
+                    },
+                    "expected_matching": "one_or_more",
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "native_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Policies\\Google\\Chrome"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "RemoteAccessHostFirewallTraversal"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "type",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "constant_values": [
+                        {
+                          "datatype": "string",
+                          "value": "dword"
+                        }
+                      ]
+                    },
+                    "expected_matching": "one_or_more",
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "value",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "constant_values": [
+                        {
+                          "datatype": "string",
+                          "value": "0"
+                        }
+                      ]
+                    },
+                    "expected_matching": "one_or_more",
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "term_sha256": "e819234b7930a7d93635512c9e14e2fe212d0200041b972381cf238c7726aec1"
+        }
+      ],
+      "unsupported_obligations": [],
+      "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+      "normalizations_applied": []
+    }
+  },
+  {
+    "benchmark": "U_MS_IIS_8-5_Server_V2R7_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+    "source_rule": "xccdf_navy.navwar.niwcatlantic.scc.ms.iis_rule_SV-214429r879717_rule",
+    "assessment": {
+      "assessment": {
+        "id": "iis-8-5-web-server-system-files-must-conform-to-minimum-file-permissio-1ef6a7b1-assessment",
+        "version": 1,
+        "assessment_title": "IIS 8.5 web server system files must conform to minimum file permission requirements.",
+        "mode": "automated",
+        "class": "compliance",
+        "purpose": "assessment",
+        "specification": {
+          "id": "scap-ng.pre-alpha.assessment",
+          "version": "0.4.0"
+        },
+        "variables": {
+          "iis-virtual-directory-physicalpaths-only-actual-paths-34a7b9d2-variable": {
+            "kind": "local",
+            "datatype": "string",
+            "expression": {
+              "values": {
+                "object": {
+                  "capability": "windows.registry",
+                  "hive": {
+                    "equals": "local_machine"
+                  },
+                  "key": {
+                    "equals": "SOFTWARE\\Microsoft\\inetStp"
+                  },
+                  "name": {
+                    "equals": "PathWWWRoot"
+                  },
+                  "filters": [
+                    {
+                      "include": {
+                        "value": {
+                          "matches_regex": "^[a-zA-Z]:",
+                          "values_found": "one_or_more",
+                          "values_matching": "every"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "field": "value"
+              }
+            }
+          },
+          "removing-wwwroot-from-end-of-the-path-7ffbeb99-variable": {
+            "kind": "local",
+            "datatype": "string",
+            "expression": {
+              "regex_capture": {
+                "pattern": "^(.*)\\\\wwwroot$",
+                "value": {
+                  "variable": "iis-virtual-directory-physicalpaths-only-actual-paths-34a7b9d2-variable"
+                }
+              }
+            }
+          },
+          "only-paths-with-envvars-d9d97782-variable": {
+            "kind": "local",
+            "datatype": "string",
+            "expression": {
+              "values": {
+                "object": {
+                  "capability": "windows.registry",
+                  "hive": {
+                    "equals": "local_machine"
+                  },
+                  "key": {
+                    "equals": "SOFTWARE\\Microsoft\\inetStp"
+                  },
+                  "name": {
+                    "equals": "PathWWWRoot"
+                  },
+                  "filters": [
+                    {
+                      "include": {
+                        "value": {
+                          "matches_regex": "^%",
+                          "values_found": "one_or_more",
+                          "values_matching": "every"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "field": "value"
+              }
+            }
+          },
+          "a-regex-capture-of-environment-variable-name-ef648f93-variable": {
+            "kind": "local",
+            "datatype": "string",
+            "expression": {
+              "regex_capture": {
+                "pattern": "%(.*)%",
+                "value": {
+                  "variable": "only-paths-with-envvars-d9d97782-variable"
+                }
+              }
+            }
+          },
+          "capture-of-text-after-environment-variable-f756a390-variable": {
+            "kind": "local",
+            "datatype": "string",
+            "expression": {
+              "regex_capture": {
+                "pattern": "%.*%(.*)\\\\wwwroot$",
+                "value": {
+                  "variable": "only-paths-with-envvars-d9d97782-variable"
+                }
+              }
+            }
+          },
+          "translated-envvarname-now-full-path-244cc019-variable": {
+            "kind": "local",
+            "datatype": "string",
+            "expression": {
+              "concat": [
+                {
+                  "values": {
+                    "object": {
+                      "capability": "independent.environmentvariable58",
+                      "pid": null,
+                      "name": {
+                        "equals": {
+                          "variable": "a-regex-capture-of-environment-variable-name-ef648f93-variable"
+                        },
+                        "datatype": "string",
+                        "value_match": "every"
+                      }
+                    },
+                    "field": "value"
+                  }
+                },
+                {
+                  "variable": "capture-of-text-after-environment-variable-f756a390-variable"
+                }
+              ]
+            }
+          }
+        },
+        "tests": {
+          "verify-unspecified-objects-are-not-assigned-to-acl-open-explorer-and-n-6a0c85d6-test": {
+            "test_title": "(Verify unspecified objects are not assigned to ACL) Open Explorer and navigate to the inetpub directory. Right-click inetpub and select \u201cProperties\u201d. Click the Security tab. Verify the permissions for the following users; if the permissions are less restrictive, this is a finding. System: Full control Administrators: Full control TrustedInstaller: Full control ALL APPLICATION PACKAGES (built-in security group): Read and execute Users: Read and execute, list folder contents Creator/Owner: Special permissions to subkeys. File Perm for Both Physical Paths and Paths with environment variable",
+            "capability": "windows.fileeffectiverights53",
+            "object": {
+              "set": {
+                "operator": "union",
+                "operands": [
+                  {
+                    "object": {
+                      "directory": {
+                        "equals": {
+                          "variable": "removing-wwwroot-from-end-of-the-path-7ffbeb99-variable"
+                        },
+                        "datatype": "string",
+                        "value_match": "one_or_more"
+                      },
+                      "name": null,
+                      "trustee_sid": {
+                        "matches_regex": ".*"
+                      },
+                      "filesystem": "all"
+                    },
+                    "filters": []
+                  },
+                  {
+                    "object": {
+                      "directory": {
+                        "equals": {
+                          "variable": "translated-envvarname-now-full-path-244cc019-variable"
+                        },
+                        "datatype": "string",
+                        "value_match": "one_or_more"
+                      },
+                      "name": null,
+                      "trustee_sid": {
+                        "matches_regex": ".*"
+                      },
+                      "filesystem": "all"
+                    },
+                    "filters": []
+                  }
+                ]
+              }
+            },
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "fields": {
+                "trustee_sid": {
+                  "matches_regex": "^(S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464|S-1-5-18|S-1-5-32-544|S-1-3-0|S-1-5-32-545|S-1-15-2-1)$",
+                  "values_found": "one_or_more",
+                  "values_matching": "every"
+                }
+              }
+            },
+            "reported_elements": "all"
+          },
+          "file-perm-assigned-to-users-group-for-inetpub-directory-open-explorer-bbde4ed0-test": {
+            "test_title": "(File Perm assigned to Users group for inetpub directory) Open Explorer and navigate to the inetpub directory. Right-click inetpub and select \u201cProperties\u201d. Click the Security tab. Verify the permissions for the following users; if the permissions are less restrictive, this is a finding. System: Full control Administrators: Full control TrustedInstaller: Full control ALL APPLICATION PACKAGES (built-in security group): Read and execute Users: Read and execute, list folder contents Creator/Owner: Special permissions to subkeys",
+            "capability": "windows.fileeffectiverights53",
+            "object": {
+              "set": {
+                "operator": "union",
+                "operands": [
+                  {
+                    "object": {
+                      "directory": {
+                        "equals": {
+                          "variable": "removing-wwwroot-from-end-of-the-path-7ffbeb99-variable"
+                        },
+                        "datatype": "string",
+                        "value_match": "one_or_more"
+                      },
+                      "name": null,
+                      "trustee_sid": {
+                        "matches_regex": ".*"
+                      },
+                      "filesystem": "all",
+                      "filters": [
+                        {
+                          "include": {
+                            "trustee_sid": {
+                              "equals": "S-1-5-32-545",
+                              "values_found": "one_or_more",
+                              "values_matching": "every"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "filters": []
+                  },
+                  {
+                    "object": {
+                      "directory": {
+                        "equals": {
+                          "variable": "translated-envvarname-now-full-path-244cc019-variable"
+                        },
+                        "datatype": "string",
+                        "value_match": "one_or_more"
+                      },
+                      "name": null,
+                      "trustee_sid": {
+                        "matches_regex": ".*"
+                      },
+                      "filesystem": "all",
+                      "filters": [
+                        {
+                          "include": {
+                            "trustee_sid": {
+                              "equals": "S-1-5-32-545",
+                              "values_found": "one_or_more",
+                              "values_matching": "every"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "filters": []
+                  }
+                ]
+              }
+            },
+            "require": {
+              "items_found": "may_be_absent",
+              "items_satisfying": "every",
+              "and": [
+                {
+                  "fields": {
+                    "standard_delete": {
+                      "equals": false,
+                      "datatype": "boolean",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "standard_write_dac": {
+                      "equals": false,
+                      "datatype": "boolean",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "standard_write_owner": {
+                      "equals": false,
+                      "datatype": "boolean",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "access_system_security": {
+                      "equals": false,
+                      "datatype": "boolean",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "generic_write": {
+                      "equals": false,
+                      "datatype": "boolean",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "generic_all": {
+                      "equals": false,
+                      "datatype": "boolean",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "file_write_data": {
+                      "equals": false,
+                      "datatype": "boolean",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "file_append_data": {
+                      "equals": false,
+                      "datatype": "boolean",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "file_write_ea": {
+                      "equals": false,
+                      "datatype": "boolean",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "file_delete_child": {
+                      "equals": false,
+                      "datatype": "boolean",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "file_write_attributes": {
+                      "equals": false,
+                      "datatype": "boolean",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                }
+              ]
+            },
+            "reported_elements": "all"
+          },
+          "file-perm-assigned-to-all-application-packages-for-inetpub-directory-o-4b65f96a-test": {
+            "test_title": "(File Perm assigned to ALL APPLICATION PACKAGES for inetpub directory) Open Explorer and navigate to the inetpub directory. Right-click inetpub and select \u201cProperties\u201d. Click the Security tab. Verify the permissions for the following users; if the permissions are less restrictive, this is a finding. System: Full control Administrators: Full control TrustedInstaller: Full control ALL APPLICATION PACKAGES (built-in security group): Read and execute Users: Read and execute, list folder contents Creator/Owner: Special permissions to subkeys",
+            "capability": "windows.fileeffectiverights53",
+            "object": {
+              "set": {
+                "operator": "union",
+                "operands": [
+                  {
+                    "object": {
+                      "directory": {
+                        "equals": {
+                          "variable": "removing-wwwroot-from-end-of-the-path-7ffbeb99-variable"
+                        },
+                        "datatype": "string",
+                        "value_match": "one_or_more"
+                      },
+                      "name": null,
+                      "trustee_sid": {
+                        "matches_regex": ".*"
+                      },
+                      "filesystem": "all",
+                      "filters": [
+                        {
+                          "include": {
+                            "trustee_sid": {
+                              "equals": "S-1-15-2-1",
+                              "values_found": "one_or_more",
+                              "values_matching": "every"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "filters": []
+                  },
+                  {
+                    "object": {
+                      "directory": {
+                        "equals": {
+                          "variable": "translated-envvarname-now-full-path-244cc019-variable"
+                        },
+                        "datatype": "string",
+                        "value_match": "one_or_more"
+                      },
+                      "name": null,
+                      "trustee_sid": {
+                        "matches_regex": ".*"
+                      },
+                      "filesystem": "all",
+                      "filters": [
+                        {
+                          "include": {
+                            "trustee_sid": {
+                              "equals": "S-1-15-2-1",
+                              "values_found": "one_or_more",
+                              "values_matching": "every"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "filters": []
+                  }
+                ]
+              }
+            },
+            "require": {
+              "items_found": "may_be_absent",
+              "items_satisfying": "every",
+              "and": [
+                {
+                  "fields": {
+                    "standard_delete": {
+                      "equals": false,
+                      "datatype": "boolean",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "standard_write_dac": {
+                      "equals": false,
+                      "datatype": "boolean",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "standard_write_owner": {
+                      "equals": false,
+                      "datatype": "boolean",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "access_system_security": {
+                      "equals": false,
+                      "datatype": "boolean",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "generic_write": {
+                      "equals": false,
+                      "datatype": "boolean",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "generic_all": {
+                      "equals": false,
+                      "datatype": "boolean",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "file_write_data": {
+                      "equals": false,
+                      "datatype": "boolean",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "file_append_data": {
+                      "equals": false,
+                      "datatype": "boolean",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "file_write_ea": {
+                      "equals": false,
+                      "datatype": "boolean",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "file_delete_child": {
+                      "equals": false,
+                      "datatype": "boolean",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "file_write_attributes": {
+                      "equals": false,
+                      "datatype": "boolean",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                }
+              ]
+            },
+            "reported_elements": "all"
+          }
+        },
+        "evaluate": {
+          "and": [
+            {
+              "test": "verify-unspecified-objects-are-not-assigned-to-acl-open-explorer-and-n-6a0c85d6-test"
+            },
+            {
+              "test": "file-perm-assigned-to-users-group-for-inetpub-directory-open-explorer-bbde4ed0-test"
+            },
+            {
+              "test": "file-perm-assigned-to-all-application-packages-for-inetpub-directory-o-4b65f96a-test"
+            }
+          ]
+        }
+      }
+    },
+    "independent_proof": {
+      "rule": "xccdf_navy.navwar.niwcatlantic.scc.ms.iis_rule_SV-214429r879717_rule",
+      "outcome": "PROVED",
+      "test_bindings": {
+        "oval:navy.navwar.niwcatlantic.scc.ms.iis.8.5.server:tst:310": "verify-unspecified-objects-are-not-assigned-to-acl-open-explorer-and-n-6a0c85d6-test",
+        "oval:navy.navwar.niwcatlantic.scc.ms.iis.8.5.server:tst:311": "file-perm-assigned-to-users-group-for-inetpub-directory-open-explorer-bbde4ed0-test",
+        "oval:navy.navwar.niwcatlantic.scc.ms.iis.8.5.server:tst:312": "file-perm-assigned-to-all-application-packages-for-inetpub-directory-o-4b65f96a-test"
+      },
+      "comparisons": [
+        {
+          "source_test": "oval:navy.navwar.niwcatlantic.scc.ms.iis.8.5.server:tst:310",
+          "native_test": "verify-unspecified-objects-are-not-assigned-to-acl-open-explorer-and-n-6a0c85d6-test",
+          "source_term": {
+            "capability": "windows.fileeffectiverights53",
+            "object": {
+              "capability": "windows.fileeffectiverights53",
+              "set": {
+                "operator": "union",
+                "operands": [
+                  {
+                    "object": {
+                      "capability": "windows.fileeffectiverights53",
+                      "selectors": {
+                        "directory": {
+                          "operation": "equals",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "local": {
+                              "datatype": "string",
+                              "expression": {
+                                "regex_capture": {
+                                  "pattern": "^(.*)\\\\wwwroot$",
+                                  "value": {
+                                    "local": {
+                                      "datatype": "string",
+                                      "expression": {
+                                        "values": {
+                                          "object": {
+                                            "capability": "windows.registry",
+                                            "selectors": {
+                                              "hive": {
+                                                "operation": "equals",
+                                                "comparison_datatype": "string",
+                                                "operand": {
+                                                  "datatype": "string",
+                                                  "value": "local_machine"
+                                                }
+                                              },
+                                              "key": {
+                                                "operation": "equals",
+                                                "comparison_datatype": "string",
+                                                "operand": {
+                                                  "datatype": "string",
+                                                  "value": "SOFTWARE\\Microsoft\\inetStp"
+                                                }
+                                              },
+                                              "name": {
+                                                "operation": "equals",
+                                                "comparison_datatype": "string",
+                                                "operand": {
+                                                  "datatype": "string",
+                                                  "value": "PathWWWRoot"
+                                                }
+                                              }
+                                            },
+                                            "filters": [
+                                              {
+                                                "include": {
+                                                  "field": "value",
+                                                  "predicate": {
+                                                    "operation": "matches_regex",
+                                                    "comparison_datatype": "string",
+                                                    "operand": {
+                                                      "datatype": "string",
+                                                      "value": "^[a-zA-Z]:"
+                                                    },
+                                                    "found": "one_or_more",
+                                                    "matching": "every"
+                                                  }
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          "field": "value"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "expected_matching": "one_or_more"
+                        },
+                        "name": null,
+                        "trustee_sid": {
+                          "operation": "matches_regex",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "datatype": "string",
+                            "value": ".*"
+                          }
+                        },
+                        "filesystem": "all"
+                      }
+                    },
+                    "filters": []
+                  },
+                  {
+                    "object": {
+                      "capability": "windows.fileeffectiverights53",
+                      "selectors": {
+                        "directory": {
+                          "operation": "equals",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "local": {
+                              "datatype": "string",
+                              "expression": {
+                                "concat": [
+                                  {
+                                    "values": {
+                                      "object": {
+                                        "capability": "independent.environmentvariable58",
+                                        "selectors": {
+                                          "pid": null,
+                                          "name": {
+                                            "operation": "equals",
+                                            "comparison_datatype": "string",
+                                            "operand": {
+                                              "local": {
+                                                "datatype": "string",
+                                                "expression": {
+                                                  "regex_capture": {
+                                                    "pattern": "%(.*)%",
+                                                    "value": {
+                                                      "local": {
+                                                        "datatype": "string",
+                                                        "expression": {
+                                                          "values": {
+                                                            "object": {
+                                                              "capability": "windows.registry",
+                                                              "selectors": {
+                                                                "hive": {
+                                                                  "operation": "equals",
+                                                                  "comparison_datatype": "string",
+                                                                  "operand": {
+                                                                    "datatype": "string",
+                                                                    "value": "local_machine"
+                                                                  }
+                                                                },
+                                                                "key": {
+                                                                  "operation": "equals",
+                                                                  "comparison_datatype": "string",
+                                                                  "operand": {
+                                                                    "datatype": "string",
+                                                                    "value": "SOFTWARE\\Microsoft\\inetStp"
+                                                                  }
+                                                                },
+                                                                "name": {
+                                                                  "operation": "equals",
+                                                                  "comparison_datatype": "string",
+                                                                  "operand": {
+                                                                    "datatype": "string",
+                                                                    "value": "PathWWWRoot"
+                                                                  }
+                                                                }
+                                                              },
+                                                              "filters": [
+                                                                {
+                                                                  "include": {
+                                                                    "field": "value",
+                                                                    "predicate": {
+                                                                      "operation": "matches_regex",
+                                                                      "comparison_datatype": "string",
+                                                                      "operand": {
+                                                                        "datatype": "string",
+                                                                        "value": "^%"
+                                                                      },
+                                                                      "found": "one_or_more",
+                                                                      "matching": "every"
+                                                                    }
+                                                                  }
+                                                                }
+                                                              ]
+                                                            },
+                                                            "field": "value"
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "expected_matching": "every"
+                                          }
+                                        }
+                                      },
+                                      "field": "value"
+                                    }
+                                  },
+                                  {
+                                    "local": {
+                                      "datatype": "string",
+                                      "expression": {
+                                        "regex_capture": {
+                                          "pattern": "%.*%(.*)\\\\wwwroot$",
+                                          "value": {
+                                            "local": {
+                                              "datatype": "string",
+                                              "expression": {
+                                                "values": {
+                                                  "object": {
+                                                    "capability": "windows.registry",
+                                                    "selectors": {
+                                                      "hive": {
+                                                        "operation": "equals",
+                                                        "comparison_datatype": "string",
+                                                        "operand": {
+                                                          "datatype": "string",
+                                                          "value": "local_machine"
+                                                        }
+                                                      },
+                                                      "key": {
+                                                        "operation": "equals",
+                                                        "comparison_datatype": "string",
+                                                        "operand": {
+                                                          "datatype": "string",
+                                                          "value": "SOFTWARE\\Microsoft\\inetStp"
+                                                        }
+                                                      },
+                                                      "name": {
+                                                        "operation": "equals",
+                                                        "comparison_datatype": "string",
+                                                        "operand": {
+                                                          "datatype": "string",
+                                                          "value": "PathWWWRoot"
+                                                        }
+                                                      }
+                                                    },
+                                                    "filters": [
+                                                      {
+                                                        "include": {
+                                                          "field": "value",
+                                                          "predicate": {
+                                                            "operation": "matches_regex",
+                                                            "comparison_datatype": "string",
+                                                            "operand": {
+                                                              "datatype": "string",
+                                                              "value": "^%"
+                                                            },
+                                                            "found": "one_or_more",
+                                                            "matching": "every"
+                                                          }
+                                                        }
+                                                      }
+                                                    ]
+                                                  },
+                                                  "field": "value"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          "expected_matching": "one_or_more"
+                        },
+                        "name": null,
+                        "trustee_sid": {
+                          "operation": "matches_regex",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "datatype": "string",
+                            "value": ".*"
+                          }
+                        },
+                        "filesystem": "all"
+                      }
+                    },
+                    "filters": []
+                  }
+                ]
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "trustee_sid",
+              "predicate": {
+                "operation": "matches_regex",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "^(S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464|S-1-5-18|S-1-5-32-544|S-1-3-0|S-1-5-32-545|S-1-15-2-1)$"
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "native_term": {
+            "capability": "windows.fileeffectiverights53",
+            "object": {
+              "capability": "windows.fileeffectiverights53",
+              "set": {
+                "operator": "union",
+                "operands": [
+                  {
+                    "object": {
+                      "capability": "windows.fileeffectiverights53",
+                      "selectors": {
+                        "directory": {
+                          "operation": "equals",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "local": {
+                              "datatype": "string",
+                              "expression": {
+                                "regex_capture": {
+                                  "pattern": "^(.*)\\\\wwwroot$",
+                                  "value": {
+                                    "local": {
+                                      "datatype": "string",
+                                      "expression": {
+                                        "values": {
+                                          "object": {
+                                            "capability": "windows.registry",
+                                            "selectors": {
+                                              "hive": {
+                                                "operation": "equals",
+                                                "comparison_datatype": "string",
+                                                "operand": {
+                                                  "datatype": "string",
+                                                  "value": "local_machine"
+                                                }
+                                              },
+                                              "key": {
+                                                "operation": "equals",
+                                                "comparison_datatype": "string",
+                                                "operand": {
+                                                  "datatype": "string",
+                                                  "value": "SOFTWARE\\Microsoft\\inetStp"
+                                                }
+                                              },
+                                              "name": {
+                                                "operation": "equals",
+                                                "comparison_datatype": "string",
+                                                "operand": {
+                                                  "datatype": "string",
+                                                  "value": "PathWWWRoot"
+                                                }
+                                              }
+                                            },
+                                            "filters": [
+                                              {
+                                                "include": {
+                                                  "field": "value",
+                                                  "predicate": {
+                                                    "operation": "matches_regex",
+                                                    "comparison_datatype": "string",
+                                                    "operand": {
+                                                      "datatype": "string",
+                                                      "value": "^[a-zA-Z]:"
+                                                    },
+                                                    "found": "one_or_more",
+                                                    "matching": "every"
+                                                  }
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          "field": "value"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "expected_matching": "one_or_more"
+                        },
+                        "name": null,
+                        "trustee_sid": {
+                          "operation": "matches_regex",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "datatype": "string",
+                            "value": ".*"
+                          }
+                        },
+                        "filesystem": "all"
+                      }
+                    },
+                    "filters": []
+                  },
+                  {
+                    "object": {
+                      "capability": "windows.fileeffectiverights53",
+                      "selectors": {
+                        "directory": {
+                          "operation": "equals",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "local": {
+                              "datatype": "string",
+                              "expression": {
+                                "concat": [
+                                  {
+                                    "values": {
+                                      "object": {
+                                        "capability": "independent.environmentvariable58",
+                                        "selectors": {
+                                          "name": {
+                                            "operation": "equals",
+                                            "comparison_datatype": "string",
+                                            "operand": {
+                                              "local": {
+                                                "datatype": "string",
+                                                "expression": {
+                                                  "regex_capture": {
+                                                    "pattern": "%(.*)%",
+                                                    "value": {
+                                                      "local": {
+                                                        "datatype": "string",
+                                                        "expression": {
+                                                          "values": {
+                                                            "object": {
+                                                              "capability": "windows.registry",
+                                                              "selectors": {
+                                                                "hive": {
+                                                                  "operation": "equals",
+                                                                  "comparison_datatype": "string",
+                                                                  "operand": {
+                                                                    "datatype": "string",
+                                                                    "value": "local_machine"
+                                                                  }
+                                                                },
+                                                                "key": {
+                                                                  "operation": "equals",
+                                                                  "comparison_datatype": "string",
+                                                                  "operand": {
+                                                                    "datatype": "string",
+                                                                    "value": "SOFTWARE\\Microsoft\\inetStp"
+                                                                  }
+                                                                },
+                                                                "name": {
+                                                                  "operation": "equals",
+                                                                  "comparison_datatype": "string",
+                                                                  "operand": {
+                                                                    "datatype": "string",
+                                                                    "value": "PathWWWRoot"
+                                                                  }
+                                                                }
+                                                              },
+                                                              "filters": [
+                                                                {
+                                                                  "include": {
+                                                                    "field": "value",
+                                                                    "predicate": {
+                                                                      "operation": "matches_regex",
+                                                                      "comparison_datatype": "string",
+                                                                      "operand": {
+                                                                        "datatype": "string",
+                                                                        "value": "^%"
+                                                                      },
+                                                                      "found": "one_or_more",
+                                                                      "matching": "every"
+                                                                    }
+                                                                  }
+                                                                }
+                                                              ]
+                                                            },
+                                                            "field": "value"
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "expected_matching": "every"
+                                          },
+                                          "pid": null
+                                        }
+                                      },
+                                      "field": "value"
+                                    }
+                                  },
+                                  {
+                                    "local": {
+                                      "datatype": "string",
+                                      "expression": {
+                                        "regex_capture": {
+                                          "pattern": "%.*%(.*)\\\\wwwroot$",
+                                          "value": {
+                                            "local": {
+                                              "datatype": "string",
+                                              "expression": {
+                                                "values": {
+                                                  "object": {
+                                                    "capability": "windows.registry",
+                                                    "selectors": {
+                                                      "hive": {
+                                                        "operation": "equals",
+                                                        "comparison_datatype": "string",
+                                                        "operand": {
+                                                          "datatype": "string",
+                                                          "value": "local_machine"
+                                                        }
+                                                      },
+                                                      "key": {
+                                                        "operation": "equals",
+                                                        "comparison_datatype": "string",
+                                                        "operand": {
+                                                          "datatype": "string",
+                                                          "value": "SOFTWARE\\Microsoft\\inetStp"
+                                                        }
+                                                      },
+                                                      "name": {
+                                                        "operation": "equals",
+                                                        "comparison_datatype": "string",
+                                                        "operand": {
+                                                          "datatype": "string",
+                                                          "value": "PathWWWRoot"
+                                                        }
+                                                      }
+                                                    },
+                                                    "filters": [
+                                                      {
+                                                        "include": {
+                                                          "field": "value",
+                                                          "predicate": {
+                                                            "operation": "matches_regex",
+                                                            "comparison_datatype": "string",
+                                                            "operand": {
+                                                              "datatype": "string",
+                                                              "value": "^%"
+                                                            },
+                                                            "found": "one_or_more",
+                                                            "matching": "every"
+                                                          }
+                                                        }
+                                                      }
+                                                    ]
+                                                  },
+                                                  "field": "value"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          "expected_matching": "one_or_more"
+                        },
+                        "name": null,
+                        "trustee_sid": {
+                          "operation": "matches_regex",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "datatype": "string",
+                            "value": ".*"
+                          }
+                        },
+                        "filesystem": "all"
+                      }
+                    },
+                    "filters": []
+                  }
+                ]
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "trustee_sid",
+              "predicate": {
+                "operation": "matches_regex",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "^(S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464|S-1-5-18|S-1-5-32-544|S-1-3-0|S-1-5-32-545|S-1-15-2-1)$"
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "term_sha256": "4191c138ed5d6a34531a05a8ed213caf6d313f761ce6336839f0f769c676169e"
+        },
+        {
+          "source_test": "oval:navy.navwar.niwcatlantic.scc.ms.iis.8.5.server:tst:311",
+          "native_test": "file-perm-assigned-to-users-group-for-inetpub-directory-open-explorer-bbde4ed0-test",
+          "source_term": {
+            "capability": "windows.fileeffectiverights53",
+            "object": {
+              "capability": "windows.fileeffectiverights53",
+              "set": {
+                "operator": "union",
+                "operands": [
+                  {
+                    "object": {
+                      "capability": "windows.fileeffectiverights53",
+                      "selectors": {
+                        "directory": {
+                          "operation": "equals",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "local": {
+                              "datatype": "string",
+                              "expression": {
+                                "regex_capture": {
+                                  "pattern": "^(.*)\\\\wwwroot$",
+                                  "value": {
+                                    "local": {
+                                      "datatype": "string",
+                                      "expression": {
+                                        "values": {
+                                          "object": {
+                                            "capability": "windows.registry",
+                                            "selectors": {
+                                              "hive": {
+                                                "operation": "equals",
+                                                "comparison_datatype": "string",
+                                                "operand": {
+                                                  "datatype": "string",
+                                                  "value": "local_machine"
+                                                }
+                                              },
+                                              "key": {
+                                                "operation": "equals",
+                                                "comparison_datatype": "string",
+                                                "operand": {
+                                                  "datatype": "string",
+                                                  "value": "SOFTWARE\\Microsoft\\inetStp"
+                                                }
+                                              },
+                                              "name": {
+                                                "operation": "equals",
+                                                "comparison_datatype": "string",
+                                                "operand": {
+                                                  "datatype": "string",
+                                                  "value": "PathWWWRoot"
+                                                }
+                                              }
+                                            },
+                                            "filters": [
+                                              {
+                                                "include": {
+                                                  "field": "value",
+                                                  "predicate": {
+                                                    "operation": "matches_regex",
+                                                    "comparison_datatype": "string",
+                                                    "operand": {
+                                                      "datatype": "string",
+                                                      "value": "^[a-zA-Z]:"
+                                                    },
+                                                    "found": "one_or_more",
+                                                    "matching": "every"
+                                                  }
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          "field": "value"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "expected_matching": "one_or_more"
+                        },
+                        "name": null,
+                        "trustee_sid": {
+                          "operation": "matches_regex",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "datatype": "string",
+                            "value": ".*"
+                          }
+                        },
+                        "filesystem": "all"
+                      },
+                      "filters": [
+                        {
+                          "include": {
+                            "field": "trustee_sid",
+                            "predicate": {
+                              "operation": "equals",
+                              "comparison_datatype": "string",
+                              "operand": {
+                                "datatype": "string",
+                                "value": "S-1-5-32-545"
+                              },
+                              "found": "one_or_more",
+                              "matching": "every"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "filters": []
+                  },
+                  {
+                    "object": {
+                      "capability": "windows.fileeffectiverights53",
+                      "selectors": {
+                        "directory": {
+                          "operation": "equals",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "local": {
+                              "datatype": "string",
+                              "expression": {
+                                "concat": [
+                                  {
+                                    "values": {
+                                      "object": {
+                                        "capability": "independent.environmentvariable58",
+                                        "selectors": {
+                                          "pid": null,
+                                          "name": {
+                                            "operation": "equals",
+                                            "comparison_datatype": "string",
+                                            "operand": {
+                                              "local": {
+                                                "datatype": "string",
+                                                "expression": {
+                                                  "regex_capture": {
+                                                    "pattern": "%(.*)%",
+                                                    "value": {
+                                                      "local": {
+                                                        "datatype": "string",
+                                                        "expression": {
+                                                          "values": {
+                                                            "object": {
+                                                              "capability": "windows.registry",
+                                                              "selectors": {
+                                                                "hive": {
+                                                                  "operation": "equals",
+                                                                  "comparison_datatype": "string",
+                                                                  "operand": {
+                                                                    "datatype": "string",
+                                                                    "value": "local_machine"
+                                                                  }
+                                                                },
+                                                                "key": {
+                                                                  "operation": "equals",
+                                                                  "comparison_datatype": "string",
+                                                                  "operand": {
+                                                                    "datatype": "string",
+                                                                    "value": "SOFTWARE\\Microsoft\\inetStp"
+                                                                  }
+                                                                },
+                                                                "name": {
+                                                                  "operation": "equals",
+                                                                  "comparison_datatype": "string",
+                                                                  "operand": {
+                                                                    "datatype": "string",
+                                                                    "value": "PathWWWRoot"
+                                                                  }
+                                                                }
+                                                              },
+                                                              "filters": [
+                                                                {
+                                                                  "include": {
+                                                                    "field": "value",
+                                                                    "predicate": {
+                                                                      "operation": "matches_regex",
+                                                                      "comparison_datatype": "string",
+                                                                      "operand": {
+                                                                        "datatype": "string",
+                                                                        "value": "^%"
+                                                                      },
+                                                                      "found": "one_or_more",
+                                                                      "matching": "every"
+                                                                    }
+                                                                  }
+                                                                }
+                                                              ]
+                                                            },
+                                                            "field": "value"
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "expected_matching": "every"
+                                          }
+                                        }
+                                      },
+                                      "field": "value"
+                                    }
+                                  },
+                                  {
+                                    "local": {
+                                      "datatype": "string",
+                                      "expression": {
+                                        "regex_capture": {
+                                          "pattern": "%.*%(.*)\\\\wwwroot$",
+                                          "value": {
+                                            "local": {
+                                              "datatype": "string",
+                                              "expression": {
+                                                "values": {
+                                                  "object": {
+                                                    "capability": "windows.registry",
+                                                    "selectors": {
+                                                      "hive": {
+                                                        "operation": "equals",
+                                                        "comparison_datatype": "string",
+                                                        "operand": {
+                                                          "datatype": "string",
+                                                          "value": "local_machine"
+                                                        }
+                                                      },
+                                                      "key": {
+                                                        "operation": "equals",
+                                                        "comparison_datatype": "string",
+                                                        "operand": {
+                                                          "datatype": "string",
+                                                          "value": "SOFTWARE\\Microsoft\\inetStp"
+                                                        }
+                                                      },
+                                                      "name": {
+                                                        "operation": "equals",
+                                                        "comparison_datatype": "string",
+                                                        "operand": {
+                                                          "datatype": "string",
+                                                          "value": "PathWWWRoot"
+                                                        }
+                                                      }
+                                                    },
+                                                    "filters": [
+                                                      {
+                                                        "include": {
+                                                          "field": "value",
+                                                          "predicate": {
+                                                            "operation": "matches_regex",
+                                                            "comparison_datatype": "string",
+                                                            "operand": {
+                                                              "datatype": "string",
+                                                              "value": "^%"
+                                                            },
+                                                            "found": "one_or_more",
+                                                            "matching": "every"
+                                                          }
+                                                        }
+                                                      }
+                                                    ]
+                                                  },
+                                                  "field": "value"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          "expected_matching": "one_or_more"
+                        },
+                        "name": null,
+                        "trustee_sid": {
+                          "operation": "matches_regex",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "datatype": "string",
+                            "value": ".*"
+                          }
+                        },
+                        "filesystem": "all"
+                      },
+                      "filters": [
+                        {
+                          "include": {
+                            "field": "trustee_sid",
+                            "predicate": {
+                              "operation": "equals",
+                              "comparison_datatype": "string",
+                              "operand": {
+                                "datatype": "string",
+                                "value": "S-1-5-32-545"
+                              },
+                              "found": "one_or_more",
+                              "matching": "every"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "filters": []
+                  }
+                ]
+              }
+            },
+            "found": "may_be_absent",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "generic_all",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "file_write_ea",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "generic_write",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "file_write_attributes",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "standard_write_owner",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "file_write_data",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "file_delete_child",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "file_append_data",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "standard_delete",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "standard_write_dac",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "access_system_security",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "native_term": {
+            "capability": "windows.fileeffectiverights53",
+            "object": {
+              "capability": "windows.fileeffectiverights53",
+              "set": {
+                "operator": "union",
+                "operands": [
+                  {
+                    "object": {
+                      "capability": "windows.fileeffectiverights53",
+                      "selectors": {
+                        "directory": {
+                          "operation": "equals",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "local": {
+                              "datatype": "string",
+                              "expression": {
+                                "regex_capture": {
+                                  "pattern": "^(.*)\\\\wwwroot$",
+                                  "value": {
+                                    "local": {
+                                      "datatype": "string",
+                                      "expression": {
+                                        "values": {
+                                          "object": {
+                                            "capability": "windows.registry",
+                                            "selectors": {
+                                              "hive": {
+                                                "operation": "equals",
+                                                "comparison_datatype": "string",
+                                                "operand": {
+                                                  "datatype": "string",
+                                                  "value": "local_machine"
+                                                }
+                                              },
+                                              "key": {
+                                                "operation": "equals",
+                                                "comparison_datatype": "string",
+                                                "operand": {
+                                                  "datatype": "string",
+                                                  "value": "SOFTWARE\\Microsoft\\inetStp"
+                                                }
+                                              },
+                                              "name": {
+                                                "operation": "equals",
+                                                "comparison_datatype": "string",
+                                                "operand": {
+                                                  "datatype": "string",
+                                                  "value": "PathWWWRoot"
+                                                }
+                                              }
+                                            },
+                                            "filters": [
+                                              {
+                                                "include": {
+                                                  "field": "value",
+                                                  "predicate": {
+                                                    "operation": "matches_regex",
+                                                    "comparison_datatype": "string",
+                                                    "operand": {
+                                                      "datatype": "string",
+                                                      "value": "^[a-zA-Z]:"
+                                                    },
+                                                    "found": "one_or_more",
+                                                    "matching": "every"
+                                                  }
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          "field": "value"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "expected_matching": "one_or_more"
+                        },
+                        "name": null,
+                        "trustee_sid": {
+                          "operation": "matches_regex",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "datatype": "string",
+                            "value": ".*"
+                          }
+                        },
+                        "filesystem": "all"
+                      },
+                      "filters": [
+                        {
+                          "include": {
+                            "field": "trustee_sid",
+                            "predicate": {
+                              "operation": "equals",
+                              "comparison_datatype": "string",
+                              "operand": {
+                                "datatype": "string",
+                                "value": "S-1-5-32-545"
+                              },
+                              "found": "one_or_more",
+                              "matching": "every"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "filters": []
+                  },
+                  {
+                    "object": {
+                      "capability": "windows.fileeffectiverights53",
+                      "selectors": {
+                        "directory": {
+                          "operation": "equals",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "local": {
+                              "datatype": "string",
+                              "expression": {
+                                "concat": [
+                                  {
+                                    "values": {
+                                      "object": {
+                                        "capability": "independent.environmentvariable58",
+                                        "selectors": {
+                                          "name": {
+                                            "operation": "equals",
+                                            "comparison_datatype": "string",
+                                            "operand": {
+                                              "local": {
+                                                "datatype": "string",
+                                                "expression": {
+                                                  "regex_capture": {
+                                                    "pattern": "%(.*)%",
+                                                    "value": {
+                                                      "local": {
+                                                        "datatype": "string",
+                                                        "expression": {
+                                                          "values": {
+                                                            "object": {
+                                                              "capability": "windows.registry",
+                                                              "selectors": {
+                                                                "hive": {
+                                                                  "operation": "equals",
+                                                                  "comparison_datatype": "string",
+                                                                  "operand": {
+                                                                    "datatype": "string",
+                                                                    "value": "local_machine"
+                                                                  }
+                                                                },
+                                                                "key": {
+                                                                  "operation": "equals",
+                                                                  "comparison_datatype": "string",
+                                                                  "operand": {
+                                                                    "datatype": "string",
+                                                                    "value": "SOFTWARE\\Microsoft\\inetStp"
+                                                                  }
+                                                                },
+                                                                "name": {
+                                                                  "operation": "equals",
+                                                                  "comparison_datatype": "string",
+                                                                  "operand": {
+                                                                    "datatype": "string",
+                                                                    "value": "PathWWWRoot"
+                                                                  }
+                                                                }
+                                                              },
+                                                              "filters": [
+                                                                {
+                                                                  "include": {
+                                                                    "field": "value",
+                                                                    "predicate": {
+                                                                      "operation": "matches_regex",
+                                                                      "comparison_datatype": "string",
+                                                                      "operand": {
+                                                                        "datatype": "string",
+                                                                        "value": "^%"
+                                                                      },
+                                                                      "found": "one_or_more",
+                                                                      "matching": "every"
+                                                                    }
+                                                                  }
+                                                                }
+                                                              ]
+                                                            },
+                                                            "field": "value"
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "expected_matching": "every"
+                                          },
+                                          "pid": null
+                                        }
+                                      },
+                                      "field": "value"
+                                    }
+                                  },
+                                  {
+                                    "local": {
+                                      "datatype": "string",
+                                      "expression": {
+                                        "regex_capture": {
+                                          "pattern": "%.*%(.*)\\\\wwwroot$",
+                                          "value": {
+                                            "local": {
+                                              "datatype": "string",
+                                              "expression": {
+                                                "values": {
+                                                  "object": {
+                                                    "capability": "windows.registry",
+                                                    "selectors": {
+                                                      "hive": {
+                                                        "operation": "equals",
+                                                        "comparison_datatype": "string",
+                                                        "operand": {
+                                                          "datatype": "string",
+                                                          "value": "local_machine"
+                                                        }
+                                                      },
+                                                      "key": {
+                                                        "operation": "equals",
+                                                        "comparison_datatype": "string",
+                                                        "operand": {
+                                                          "datatype": "string",
+                                                          "value": "SOFTWARE\\Microsoft\\inetStp"
+                                                        }
+                                                      },
+                                                      "name": {
+                                                        "operation": "equals",
+                                                        "comparison_datatype": "string",
+                                                        "operand": {
+                                                          "datatype": "string",
+                                                          "value": "PathWWWRoot"
+                                                        }
+                                                      }
+                                                    },
+                                                    "filters": [
+                                                      {
+                                                        "include": {
+                                                          "field": "value",
+                                                          "predicate": {
+                                                            "operation": "matches_regex",
+                                                            "comparison_datatype": "string",
+                                                            "operand": {
+                                                              "datatype": "string",
+                                                              "value": "^%"
+                                                            },
+                                                            "found": "one_or_more",
+                                                            "matching": "every"
+                                                          }
+                                                        }
+                                                      }
+                                                    ]
+                                                  },
+                                                  "field": "value"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          "expected_matching": "one_or_more"
+                        },
+                        "name": null,
+                        "trustee_sid": {
+                          "operation": "matches_regex",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "datatype": "string",
+                            "value": ".*"
+                          }
+                        },
+                        "filesystem": "all"
+                      },
+                      "filters": [
+                        {
+                          "include": {
+                            "field": "trustee_sid",
+                            "predicate": {
+                              "operation": "equals",
+                              "comparison_datatype": "string",
+                              "operand": {
+                                "datatype": "string",
+                                "value": "S-1-5-32-545"
+                              },
+                              "found": "one_or_more",
+                              "matching": "every"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "filters": []
+                  }
+                ]
+              }
+            },
+            "found": "may_be_absent",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "generic_all",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "file_write_ea",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "generic_write",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "file_write_attributes",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "standard_write_owner",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "file_write_data",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "file_delete_child",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "file_append_data",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "standard_delete",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "standard_write_dac",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "access_system_security",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "term_sha256": "30752950cea39272b63730b927f46a91121c62713effdc5c7c646ae83f969f21"
+        },
+        {
+          "source_test": "oval:navy.navwar.niwcatlantic.scc.ms.iis.8.5.server:tst:312",
+          "native_test": "file-perm-assigned-to-all-application-packages-for-inetpub-directory-o-4b65f96a-test",
+          "source_term": {
+            "capability": "windows.fileeffectiverights53",
+            "object": {
+              "capability": "windows.fileeffectiverights53",
+              "set": {
+                "operator": "union",
+                "operands": [
+                  {
+                    "object": {
+                      "capability": "windows.fileeffectiverights53",
+                      "selectors": {
+                        "directory": {
+                          "operation": "equals",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "local": {
+                              "datatype": "string",
+                              "expression": {
+                                "regex_capture": {
+                                  "pattern": "^(.*)\\\\wwwroot$",
+                                  "value": {
+                                    "local": {
+                                      "datatype": "string",
+                                      "expression": {
+                                        "values": {
+                                          "object": {
+                                            "capability": "windows.registry",
+                                            "selectors": {
+                                              "hive": {
+                                                "operation": "equals",
+                                                "comparison_datatype": "string",
+                                                "operand": {
+                                                  "datatype": "string",
+                                                  "value": "local_machine"
+                                                }
+                                              },
+                                              "key": {
+                                                "operation": "equals",
+                                                "comparison_datatype": "string",
+                                                "operand": {
+                                                  "datatype": "string",
+                                                  "value": "SOFTWARE\\Microsoft\\inetStp"
+                                                }
+                                              },
+                                              "name": {
+                                                "operation": "equals",
+                                                "comparison_datatype": "string",
+                                                "operand": {
+                                                  "datatype": "string",
+                                                  "value": "PathWWWRoot"
+                                                }
+                                              }
+                                            },
+                                            "filters": [
+                                              {
+                                                "include": {
+                                                  "field": "value",
+                                                  "predicate": {
+                                                    "operation": "matches_regex",
+                                                    "comparison_datatype": "string",
+                                                    "operand": {
+                                                      "datatype": "string",
+                                                      "value": "^[a-zA-Z]:"
+                                                    },
+                                                    "found": "one_or_more",
+                                                    "matching": "every"
+                                                  }
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          "field": "value"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "expected_matching": "one_or_more"
+                        },
+                        "name": null,
+                        "trustee_sid": {
+                          "operation": "matches_regex",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "datatype": "string",
+                            "value": ".*"
+                          }
+                        },
+                        "filesystem": "all"
+                      },
+                      "filters": [
+                        {
+                          "include": {
+                            "field": "trustee_sid",
+                            "predicate": {
+                              "operation": "equals",
+                              "comparison_datatype": "string",
+                              "operand": {
+                                "datatype": "string",
+                                "value": "S-1-15-2-1"
+                              },
+                              "found": "one_or_more",
+                              "matching": "every"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "filters": []
+                  },
+                  {
+                    "object": {
+                      "capability": "windows.fileeffectiverights53",
+                      "selectors": {
+                        "directory": {
+                          "operation": "equals",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "local": {
+                              "datatype": "string",
+                              "expression": {
+                                "concat": [
+                                  {
+                                    "values": {
+                                      "object": {
+                                        "capability": "independent.environmentvariable58",
+                                        "selectors": {
+                                          "pid": null,
+                                          "name": {
+                                            "operation": "equals",
+                                            "comparison_datatype": "string",
+                                            "operand": {
+                                              "local": {
+                                                "datatype": "string",
+                                                "expression": {
+                                                  "regex_capture": {
+                                                    "pattern": "%(.*)%",
+                                                    "value": {
+                                                      "local": {
+                                                        "datatype": "string",
+                                                        "expression": {
+                                                          "values": {
+                                                            "object": {
+                                                              "capability": "windows.registry",
+                                                              "selectors": {
+                                                                "hive": {
+                                                                  "operation": "equals",
+                                                                  "comparison_datatype": "string",
+                                                                  "operand": {
+                                                                    "datatype": "string",
+                                                                    "value": "local_machine"
+                                                                  }
+                                                                },
+                                                                "key": {
+                                                                  "operation": "equals",
+                                                                  "comparison_datatype": "string",
+                                                                  "operand": {
+                                                                    "datatype": "string",
+                                                                    "value": "SOFTWARE\\Microsoft\\inetStp"
+                                                                  }
+                                                                },
+                                                                "name": {
+                                                                  "operation": "equals",
+                                                                  "comparison_datatype": "string",
+                                                                  "operand": {
+                                                                    "datatype": "string",
+                                                                    "value": "PathWWWRoot"
+                                                                  }
+                                                                }
+                                                              },
+                                                              "filters": [
+                                                                {
+                                                                  "include": {
+                                                                    "field": "value",
+                                                                    "predicate": {
+                                                                      "operation": "matches_regex",
+                                                                      "comparison_datatype": "string",
+                                                                      "operand": {
+                                                                        "datatype": "string",
+                                                                        "value": "^%"
+                                                                      },
+                                                                      "found": "one_or_more",
+                                                                      "matching": "every"
+                                                                    }
+                                                                  }
+                                                                }
+                                                              ]
+                                                            },
+                                                            "field": "value"
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "expected_matching": "every"
+                                          }
+                                        }
+                                      },
+                                      "field": "value"
+                                    }
+                                  },
+                                  {
+                                    "local": {
+                                      "datatype": "string",
+                                      "expression": {
+                                        "regex_capture": {
+                                          "pattern": "%.*%(.*)\\\\wwwroot$",
+                                          "value": {
+                                            "local": {
+                                              "datatype": "string",
+                                              "expression": {
+                                                "values": {
+                                                  "object": {
+                                                    "capability": "windows.registry",
+                                                    "selectors": {
+                                                      "hive": {
+                                                        "operation": "equals",
+                                                        "comparison_datatype": "string",
+                                                        "operand": {
+                                                          "datatype": "string",
+                                                          "value": "local_machine"
+                                                        }
+                                                      },
+                                                      "key": {
+                                                        "operation": "equals",
+                                                        "comparison_datatype": "string",
+                                                        "operand": {
+                                                          "datatype": "string",
+                                                          "value": "SOFTWARE\\Microsoft\\inetStp"
+                                                        }
+                                                      },
+                                                      "name": {
+                                                        "operation": "equals",
+                                                        "comparison_datatype": "string",
+                                                        "operand": {
+                                                          "datatype": "string",
+                                                          "value": "PathWWWRoot"
+                                                        }
+                                                      }
+                                                    },
+                                                    "filters": [
+                                                      {
+                                                        "include": {
+                                                          "field": "value",
+                                                          "predicate": {
+                                                            "operation": "matches_regex",
+                                                            "comparison_datatype": "string",
+                                                            "operand": {
+                                                              "datatype": "string",
+                                                              "value": "^%"
+                                                            },
+                                                            "found": "one_or_more",
+                                                            "matching": "every"
+                                                          }
+                                                        }
+                                                      }
+                                                    ]
+                                                  },
+                                                  "field": "value"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          "expected_matching": "one_or_more"
+                        },
+                        "name": null,
+                        "trustee_sid": {
+                          "operation": "matches_regex",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "datatype": "string",
+                            "value": ".*"
+                          }
+                        },
+                        "filesystem": "all"
+                      },
+                      "filters": [
+                        {
+                          "include": {
+                            "field": "trustee_sid",
+                            "predicate": {
+                              "operation": "equals",
+                              "comparison_datatype": "string",
+                              "operand": {
+                                "datatype": "string",
+                                "value": "S-1-15-2-1"
+                              },
+                              "found": "one_or_more",
+                              "matching": "every"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "filters": []
+                  }
+                ]
+              }
+            },
+            "found": "may_be_absent",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "generic_all",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "file_write_ea",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "generic_write",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "file_write_attributes",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "standard_write_owner",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "file_write_data",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "file_delete_child",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "file_append_data",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "standard_delete",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "standard_write_dac",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "access_system_security",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "native_term": {
+            "capability": "windows.fileeffectiverights53",
+            "object": {
+              "capability": "windows.fileeffectiverights53",
+              "set": {
+                "operator": "union",
+                "operands": [
+                  {
+                    "object": {
+                      "capability": "windows.fileeffectiverights53",
+                      "selectors": {
+                        "directory": {
+                          "operation": "equals",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "local": {
+                              "datatype": "string",
+                              "expression": {
+                                "regex_capture": {
+                                  "pattern": "^(.*)\\\\wwwroot$",
+                                  "value": {
+                                    "local": {
+                                      "datatype": "string",
+                                      "expression": {
+                                        "values": {
+                                          "object": {
+                                            "capability": "windows.registry",
+                                            "selectors": {
+                                              "hive": {
+                                                "operation": "equals",
+                                                "comparison_datatype": "string",
+                                                "operand": {
+                                                  "datatype": "string",
+                                                  "value": "local_machine"
+                                                }
+                                              },
+                                              "key": {
+                                                "operation": "equals",
+                                                "comparison_datatype": "string",
+                                                "operand": {
+                                                  "datatype": "string",
+                                                  "value": "SOFTWARE\\Microsoft\\inetStp"
+                                                }
+                                              },
+                                              "name": {
+                                                "operation": "equals",
+                                                "comparison_datatype": "string",
+                                                "operand": {
+                                                  "datatype": "string",
+                                                  "value": "PathWWWRoot"
+                                                }
+                                              }
+                                            },
+                                            "filters": [
+                                              {
+                                                "include": {
+                                                  "field": "value",
+                                                  "predicate": {
+                                                    "operation": "matches_regex",
+                                                    "comparison_datatype": "string",
+                                                    "operand": {
+                                                      "datatype": "string",
+                                                      "value": "^[a-zA-Z]:"
+                                                    },
+                                                    "found": "one_or_more",
+                                                    "matching": "every"
+                                                  }
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          "field": "value"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "expected_matching": "one_or_more"
+                        },
+                        "name": null,
+                        "trustee_sid": {
+                          "operation": "matches_regex",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "datatype": "string",
+                            "value": ".*"
+                          }
+                        },
+                        "filesystem": "all"
+                      },
+                      "filters": [
+                        {
+                          "include": {
+                            "field": "trustee_sid",
+                            "predicate": {
+                              "operation": "equals",
+                              "comparison_datatype": "string",
+                              "operand": {
+                                "datatype": "string",
+                                "value": "S-1-15-2-1"
+                              },
+                              "found": "one_or_more",
+                              "matching": "every"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "filters": []
+                  },
+                  {
+                    "object": {
+                      "capability": "windows.fileeffectiverights53",
+                      "selectors": {
+                        "directory": {
+                          "operation": "equals",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "local": {
+                              "datatype": "string",
+                              "expression": {
+                                "concat": [
+                                  {
+                                    "values": {
+                                      "object": {
+                                        "capability": "independent.environmentvariable58",
+                                        "selectors": {
+                                          "name": {
+                                            "operation": "equals",
+                                            "comparison_datatype": "string",
+                                            "operand": {
+                                              "local": {
+                                                "datatype": "string",
+                                                "expression": {
+                                                  "regex_capture": {
+                                                    "pattern": "%(.*)%",
+                                                    "value": {
+                                                      "local": {
+                                                        "datatype": "string",
+                                                        "expression": {
+                                                          "values": {
+                                                            "object": {
+                                                              "capability": "windows.registry",
+                                                              "selectors": {
+                                                                "hive": {
+                                                                  "operation": "equals",
+                                                                  "comparison_datatype": "string",
+                                                                  "operand": {
+                                                                    "datatype": "string",
+                                                                    "value": "local_machine"
+                                                                  }
+                                                                },
+                                                                "key": {
+                                                                  "operation": "equals",
+                                                                  "comparison_datatype": "string",
+                                                                  "operand": {
+                                                                    "datatype": "string",
+                                                                    "value": "SOFTWARE\\Microsoft\\inetStp"
+                                                                  }
+                                                                },
+                                                                "name": {
+                                                                  "operation": "equals",
+                                                                  "comparison_datatype": "string",
+                                                                  "operand": {
+                                                                    "datatype": "string",
+                                                                    "value": "PathWWWRoot"
+                                                                  }
+                                                                }
+                                                              },
+                                                              "filters": [
+                                                                {
+                                                                  "include": {
+                                                                    "field": "value",
+                                                                    "predicate": {
+                                                                      "operation": "matches_regex",
+                                                                      "comparison_datatype": "string",
+                                                                      "operand": {
+                                                                        "datatype": "string",
+                                                                        "value": "^%"
+                                                                      },
+                                                                      "found": "one_or_more",
+                                                                      "matching": "every"
+                                                                    }
+                                                                  }
+                                                                }
+                                                              ]
+                                                            },
+                                                            "field": "value"
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "expected_matching": "every"
+                                          },
+                                          "pid": null
+                                        }
+                                      },
+                                      "field": "value"
+                                    }
+                                  },
+                                  {
+                                    "local": {
+                                      "datatype": "string",
+                                      "expression": {
+                                        "regex_capture": {
+                                          "pattern": "%.*%(.*)\\\\wwwroot$",
+                                          "value": {
+                                            "local": {
+                                              "datatype": "string",
+                                              "expression": {
+                                                "values": {
+                                                  "object": {
+                                                    "capability": "windows.registry",
+                                                    "selectors": {
+                                                      "hive": {
+                                                        "operation": "equals",
+                                                        "comparison_datatype": "string",
+                                                        "operand": {
+                                                          "datatype": "string",
+                                                          "value": "local_machine"
+                                                        }
+                                                      },
+                                                      "key": {
+                                                        "operation": "equals",
+                                                        "comparison_datatype": "string",
+                                                        "operand": {
+                                                          "datatype": "string",
+                                                          "value": "SOFTWARE\\Microsoft\\inetStp"
+                                                        }
+                                                      },
+                                                      "name": {
+                                                        "operation": "equals",
+                                                        "comparison_datatype": "string",
+                                                        "operand": {
+                                                          "datatype": "string",
+                                                          "value": "PathWWWRoot"
+                                                        }
+                                                      }
+                                                    },
+                                                    "filters": [
+                                                      {
+                                                        "include": {
+                                                          "field": "value",
+                                                          "predicate": {
+                                                            "operation": "matches_regex",
+                                                            "comparison_datatype": "string",
+                                                            "operand": {
+                                                              "datatype": "string",
+                                                              "value": "^%"
+                                                            },
+                                                            "found": "one_or_more",
+                                                            "matching": "every"
+                                                          }
+                                                        }
+                                                      }
+                                                    ]
+                                                  },
+                                                  "field": "value"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          "expected_matching": "one_or_more"
+                        },
+                        "name": null,
+                        "trustee_sid": {
+                          "operation": "matches_regex",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "datatype": "string",
+                            "value": ".*"
+                          }
+                        },
+                        "filesystem": "all"
+                      },
+                      "filters": [
+                        {
+                          "include": {
+                            "field": "trustee_sid",
+                            "predicate": {
+                              "operation": "equals",
+                              "comparison_datatype": "string",
+                              "operand": {
+                                "datatype": "string",
+                                "value": "S-1-15-2-1"
+                              },
+                              "found": "one_or_more",
+                              "matching": "every"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "filters": []
+                  }
+                ]
+              }
+            },
+            "found": "may_be_absent",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "generic_all",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "file_write_ea",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "generic_write",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "file_write_attributes",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "standard_write_owner",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "file_write_data",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "file_delete_child",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "file_append_data",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "standard_delete",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "standard_write_dac",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "access_system_security",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "boolean",
+                    "operand": {
+                      "datatype": "boolean",
+                      "value": false
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "term_sha256": "47d4da7404bd3bfb955ed266729739f1a9a92e8b2814ec928023ede50a9cca2a"
+        }
+      ],
+      "unsupported_obligations": [],
+      "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+      "normalizations_applied": []
+    }
+  },
+  {
+    "benchmark": "U_MS_Windows_2012_and_2012_R2_DC_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+    "source_rule": "xccdf_mil.disa.fso_rule_SV-226319r794546_rule",
+    "assessment": {
+      "assessment": {
+        "id": "unauthorized-remotely-accessible-registry-paths-must-not-be-configured-3d7c40e8-assessment",
+        "version": 1,
+        "assessment_title": "Unauthorized remotely accessible registry paths must not be configured.",
+        "mode": "automated",
+        "class": "compliance",
+        "purpose": "assessment",
+        "specification": {
+          "id": "scap-ng.pre-alpha.assessment",
+          "version": "0.4.0"
+        },
+        "shared_objects": {
+          "registry-hive-equals-hkey-local-machine-key-equals-system-currentcontr-f207e356-object": {
+            "capability": "windows.registry",
+            "hive": {
+              "equals": "local_machine"
+            },
+            "key": {
+              "equals": "System\\CurrentControlSet\\Control\\SecurePipeServers\\Winreg\\AllowedExactPaths"
+            },
+            "name": {
+              "equals": "Machine"
+            },
+            "object_title": "Registry: hive equals 'HKEY_LOCAL_MACHINE'; key equals 'System\\\\CurrentControlSet\\\\Control\\\\SecurePipeServers\\\\Winreg\\\\AllowedExactPaths'; name equals 'Machine'"
+          }
+        },
+        "tests": {
+          "network-access-remotely-accessible-registry-paths-is-configured-to-con-0c9d61f4-test": {
+            "test_title": "'Network access: Remotely accessible registry paths' is configured to contain authorized registry paths",
+            "capability": "windows.registry",
+            "object": "registry-hive-equals-hkey-local-machine-key-equals-system-currentcontr-f207e356-object",
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "and": [
+                {
+                  "fields": {
+                    "type": {
+                      "equals": "multi_string",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "value": {
+                      "matches_regex": "^((System\\\\CurrentControlSet\\\\Control\\\\ProductOptions)|(System\\\\CurrentControlSet\\\\Control\\\\Server Applications)|(Software\\\\Microsoft\\\\Windows NT\\\\CurrentVersion)|())$",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                }
+              ]
+            },
+            "reported_elements": "all"
+          },
+          "network-access-remotely-accessible-registry-paths-is-configured-to-con-5108afd4-test": {
+            "test_title": "'Network access: Remotely accessible registry paths' is configured to contain no entries",
+            "capability": "windows.registry",
+            "object": "registry-hive-equals-hkey-local-machine-key-equals-system-currentcontr-f207e356-object",
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "and": [
+                {
+                  "fields": {
+                    "type": {
+                      "equals": "multi_string",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "value": {
+                      "matches_regex": ".+",
+                      "values_found": "one_or_more",
+                      "values_matching": "none"
+                    }
+                  }
+                }
+              ]
+            },
+            "reported_elements": "all"
+          },
+          "network-access-remotely-accessible-registry-paths-is-is-not-configured-04188454-test": {
+            "test_title": "'Network access: Remotely accessible registry paths' is is not configured",
+            "capability": "windows.registry",
+            "object": "registry-hive-equals-hkey-local-machine-key-equals-system-currentcontr-f207e356-object",
+            "require": {
+              "items_found": "none"
+            },
+            "reported_elements": "all"
+          }
+        },
+        "evaluate": {
+          "or": [
+            {
+              "test": "network-access-remotely-accessible-registry-paths-is-configured-to-con-0c9d61f4-test"
+            },
+            {
+              "test": "network-access-remotely-accessible-registry-paths-is-configured-to-con-5108afd4-test"
+            },
+            {
+              "test": "network-access-remotely-accessible-registry-paths-is-is-not-configured-04188454-test"
+            }
+          ]
+        }
+      }
+    },
+    "independent_proof": {
+      "rule": "xccdf_mil.disa.fso_rule_SV-226319r794546_rule",
+      "outcome": "PROVED",
+      "test_bindings": {
+        "oval:mil.disa.fso.windows:tst:458200": "network-access-remotely-accessible-registry-paths-is-configured-to-con-0c9d61f4-test",
+        "oval:mil.disa.fso.windows:tst:458201": "network-access-remotely-accessible-registry-paths-is-configured-to-con-5108afd4-test",
+        "oval:mil.disa.fso.windows:tst:458202": "network-access-remotely-accessible-registry-paths-is-is-not-configured-04188454-test"
+      },
+      "comparisons": [
+        {
+          "source_test": "oval:mil.disa.fso.windows:tst:458200",
+          "native_test": "network-access-remotely-accessible-registry-paths-is-configured-to-con-0c9d61f4-test",
+          "source_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "System\\CurrentControlSet\\Control\\SecurePipeServers\\Winreg\\AllowedExactPaths"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "Machine"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "value",
+                  "predicate": {
+                    "operation": "matches_regex",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "^((System\\\\CurrentControlSet\\\\Control\\\\ProductOptions)|(System\\\\CurrentControlSet\\\\Control\\\\Server Applications)|(Software\\\\Microsoft\\\\Windows NT\\\\CurrentVersion)|())$"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "type",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "multi_string"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "native_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "System\\CurrentControlSet\\Control\\SecurePipeServers\\Winreg\\AllowedExactPaths"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "Machine"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "value",
+                  "predicate": {
+                    "operation": "matches_regex",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "^((System\\\\CurrentControlSet\\\\Control\\\\ProductOptions)|(System\\\\CurrentControlSet\\\\Control\\\\Server Applications)|(Software\\\\Microsoft\\\\Windows NT\\\\CurrentVersion)|())$"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "type",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "multi_string"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "term_sha256": "ecba9dd92846080e51eba19df4b2bc8c2819514b023de2cab01ec1c7aca1c5aa"
+        },
+        {
+          "source_test": "oval:mil.disa.fso.windows:tst:458201",
+          "native_test": "network-access-remotely-accessible-registry-paths-is-configured-to-con-5108afd4-test",
+          "source_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "System\\CurrentControlSet\\Control\\SecurePipeServers\\Winreg\\AllowedExactPaths"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "Machine"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "value",
+                  "predicate": {
+                    "operation": "matches_regex",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": ".+"
+                    },
+                    "found": "one_or_more",
+                    "matching": "none"
+                  }
+                },
+                {
+                  "field": "type",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "multi_string"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "native_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "System\\CurrentControlSet\\Control\\SecurePipeServers\\Winreg\\AllowedExactPaths"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "Machine"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "value",
+                  "predicate": {
+                    "operation": "matches_regex",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": ".+"
+                    },
+                    "found": "one_or_more",
+                    "matching": "none"
+                  }
+                },
+                {
+                  "field": "type",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "multi_string"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "term_sha256": "aa1f9973fbf77faa1b2610e378fa4721db4c7b2b3653097c309780116d4eb790"
+        },
+        {
+          "source_test": "oval:mil.disa.fso.windows:tst:458202",
+          "native_test": "network-access-remotely-accessible-registry-paths-is-is-not-configured-04188454-test",
+          "source_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "System\\CurrentControlSet\\Control\\SecurePipeServers\\Winreg\\AllowedExactPaths"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "Machine"
+                  }
+                }
+              }
+            },
+            "found": "none"
+          },
+          "native_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "System\\CurrentControlSet\\Control\\SecurePipeServers\\Winreg\\AllowedExactPaths"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "Machine"
+                  }
+                }
+              }
+            },
+            "found": "none"
+          },
+          "term_sha256": "d92565790df42f4e597b031622aa4d107607103bcb09dd972354cfcf28d15f52"
+        }
+      ],
+      "unsupported_obligations": [],
+      "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+      "normalizations_applied": []
+    }
+  },
+  {
+    "benchmark": "U_MS_Windows_2012_and_2012_R2_MS_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+    "source_rule": "xccdf_mil.disa.fso_rule_SV-225495r569185_rule",
+    "assessment": {
+      "assessment": {
+        "id": "named-pipes-that-can-be-accessed-anonymously-must-be-configured-to-con-4fa5c88d-assessment",
+        "version": 1,
+        "assessment_title": "Named pipes that can be accessed anonymously must be configured to contain no values on member servers.",
+        "mode": "automated",
+        "class": "compliance",
+        "purpose": "assessment",
+        "specification": {
+          "id": "scap-ng.pre-alpha.assessment",
+          "version": "0.4.0"
+        },
+        "tests": {
+          "network-access-named-pipes-that-can-be-accessed-anonymously-is-configu-72c36c08-test": {
+            "test_title": "'Network access: Named Pipes that can be accessed anonymously' is configured to contain no values",
+            "capability": "windows.registry",
+            "object": {
+              "hive": {
+                "equals": "local_machine"
+              },
+              "key": {
+                "equals": "System\\CurrentControlSet\\Services\\LanManServer\\Parameters"
+              },
+              "name": {
+                "equals": "NullSessionPipes"
+              }
+            },
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "and": [
+                {
+                  "fields": {
+                    "type": {
+                      "equals": "multi_string",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "value": {
+                      "matches_regex": ".+",
+                      "values_found": "one_or_more",
+                      "values_matching": "none"
+                    }
+                  }
+                }
+              ]
+            },
+            "reported_elements": "all"
+          }
+        },
+        "evaluate": {
+          "test": "network-access-named-pipes-that-can-be-accessed-anonymously-is-configu-72c36c08-test"
+        }
+      }
+    },
+    "independent_proof": {
+      "rule": "xccdf_mil.disa.fso_rule_SV-225495r569185_rule",
+      "outcome": "PROVED",
+      "test_bindings": {
+        "oval:mil.disa.fso.windows:tst:471500": "network-access-named-pipes-that-can-be-accessed-anonymously-is-configu-72c36c08-test"
+      },
+      "comparisons": [
+        {
+          "source_test": "oval:mil.disa.fso.windows:tst:471500",
+          "native_test": "network-access-named-pipes-that-can-be-accessed-anonymously-is-configu-72c36c08-test",
+          "source_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "System\\CurrentControlSet\\Services\\LanManServer\\Parameters"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "NullSessionPipes"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "value",
+                  "predicate": {
+                    "operation": "matches_regex",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": ".+"
+                    },
+                    "found": "one_or_more",
+                    "matching": "none"
+                  }
+                },
+                {
+                  "field": "type",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "multi_string"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "native_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "System\\CurrentControlSet\\Services\\LanManServer\\Parameters"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "NullSessionPipes"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "value",
+                  "predicate": {
+                    "operation": "matches_regex",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": ".+"
+                    },
+                    "found": "one_or_more",
+                    "matching": "none"
+                  }
+                },
+                {
+                  "field": "type",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "multi_string"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "term_sha256": "7a9525407dbec712d3df5bebe77b7d402a18bd44d5a8a81370bae3546ca6eee4"
+        }
+      ],
+      "unsupported_obligations": [],
+      "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+      "normalizations_applied": []
+    }
+  }
+]

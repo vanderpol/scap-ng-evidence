@@ -1,0 +1,58 @@
+{
+  "implementation": "5e847f8268697f7555a442256c06f5bfa48f4676",
+  "proved_retained": 4,
+  "cases": [
+    {
+      "rule": "xccdf_mil.disa.stig_rule_SV-225069r991589_rule",
+      "source_pin": {
+        "file": "U_MS_Windows_Server_2016_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV19-signed.zip",
+        "sha256": "76cf6a14fefd077136d9a23a6ba4a30c82a0b254adc8cf2abd88592dc30776a8"
+      },
+      "authoring_sha256": "1333f15ca527661e87e7817112686f726c35b3ea8cf55e7107993ccab41e30f5",
+      "program_sha256": "6e9f6b54e87c8f4357c24e5854688a23f9367fd7f84b2061a7ba53c76665d3c7",
+      "unchanged_published_program_sha256": true,
+      "independent_proof_sha256": "0a09686e6502e09e33cb915d29fcc5b794a3f9665f82a6baf6224a96430583ff",
+      "source_terms_sha256": "e811940152082d5755de95f7a64aa5a73a99d9b4b28753c9124b2ec33c47fb26",
+      "native_terms_sha256": "e811940152082d5755de95f7a64aa5a73a99d9b4b28753c9124b2ec33c47fb26"
+    },
+    {
+      "rule": "xccdf_mil.disa.stig_rule_SV-220955r991589_rule",
+      "source_pin": {
+        "file": "U_MS_Windows_10_V3R7_STIG_SCAP_1-4_Benchmark-enhancedV17-signed.zip",
+        "sha256": "8562a9de2792fd97a3d2bc0a4950012a7b51a05d1514bfaf180db7b99bf3baee"
+      },
+      "authoring_sha256": "9f832fe4cf85fbabea7727db2ebf72a9f7cfac2fdf226cbb8993e34e08df6703",
+      "program_sha256": "9205a92e386491c587e8234531f2250337b25332358ac0e3cbe40b72690640c6",
+      "unchanged_published_program_sha256": true,
+      "independent_proof_sha256": "a239bb32a3e088f005d5c19f19bcdb8b8903a10ab7d6f2f10bc48541f9a3c84e",
+      "source_terms_sha256": "e811940152082d5755de95f7a64aa5a73a99d9b4b28753c9124b2ec33c47fb26",
+      "native_terms_sha256": "e811940152082d5755de95f7a64aa5a73a99d9b4b28753c9124b2ec33c47fb26"
+    },
+    {
+      "rule": "xccdf_mil.disa.stig_rule_SV-216181r959010_rule",
+      "source_pin": {
+        "file": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed.zip",
+        "sha256": "f988154cba7cf0ab39fa3063e510398c716e5d7d5865ae5cc187dc10d2071f2a"
+      },
+      "authoring_sha256": "5ead6fa2935f0891c9217459994f3a85269b039d6330c440e4803e85ea804c8f",
+      "program_sha256": "6d0b8b767caf4cc498f178315bbfe041c085cc052e14a118f1c51c8b61a78f0c",
+      "unchanged_published_program_sha256": true,
+      "independent_proof_sha256": "11f9bb807ad918d1cbaabfdfa712be8b4ea61dcea40510166dfda2ef410b76d7",
+      "source_terms_sha256": "e7fa4dc391b44de19ed2eb52cc063208ba9ee2b0fef5ec688cda9416f9c2bcea",
+      "native_terms_sha256": "e7fa4dc391b44de19ed2eb52cc063208ba9ee2b0fef5ec688cda9416f9c2bcea"
+    },
+    {
+      "rule": "xccdf_mil.disa.stig_rule_SV-216418r959010_rule",
+      "source_pin": {
+        "file": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed.zip",
+        "sha256": "b8ae7486d503b46e25ca885cfd53b9b47c40f313b9b4117683f88102c7222b1d"
+      },
+      "authoring_sha256": "8cc3e3dd60f5a372b9b7abfdc447beab90ad8aae69a1193871e60db8d0acbe27",
+      "program_sha256": "e9c8ed197bb250c8fd454ee7dccd780d30c792f170da18cbf9d5bc8bb204a7ff",
+      "unchanged_published_program_sha256": true,
+      "independent_proof_sha256": "11f9bb807ad918d1cbaabfdfa712be8b4ea61dcea40510166dfda2ef410b76d7",
+      "source_terms_sha256": "e7fa4dc391b44de19ed2eb52cc063208ba9ee2b0fef5ec688cda9416f9c2bcea",
+      "native_terms_sha256": "e7fa4dc391b44de19ed2eb52cc063208ba9ee2b0fef5ec688cda9416f9c2bcea"
+    }
+  ]
+}

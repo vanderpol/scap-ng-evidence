@@ -1,0 +1,134 @@
+{
+  "checked": 3095,
+  "canonical_authoring_hashes_unchanged": true,
+  "benchmarks": [
+    {
+      "benchmark": "U_MS_Windows_Server_2019_V3R9_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+      "checked": 243
+    },
+    {
+      "benchmark": "U_MS_Windows_10_V3R7_STIG_SCAP_1-4_Benchmark-enhancedV17-signed",
+      "checked": 208
+    },
+    {
+      "benchmark": "U_MS_Windows_Server_2016_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+      "checked": 155
+    },
+    {
+      "benchmark": "U_MS_Windows_Server_2022_V2R10_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+      "checked": 239
+    },
+    {
+      "benchmark": "U_Oracle_Linux_8_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+      "checked": 220
+    },
+    {
+      "benchmark": "U_RHEL_8_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV22-signed",
+      "checked": 226
+    },
+    {
+      "benchmark": "U_Adobe_Acrobat_Pro_DC_Continuous_V2R2_STIG_SCAP_1-4_Benchmark-enhancedV2-signed",
+      "checked": 19
+    },
+    {
+      "benchmark": "U_Adobe_Acrobat_Reader_DC_Continuous_V2R5_STIG_SCAP_1-4_Benchmark-enhancedV12-signed",
+      "checked": 25
+    },
+    {
+      "benchmark": "U_Amazon_Linux_2023_V1R2_STIG_SCAP_1-4_Benchmark-enhancedV1-signed",
+      "checked": 120
+    },
+    {
+      "benchmark": "U_CAN_Ubuntu_18-04_LTS_V2R12_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+      "checked": 67
+    },
+    {
+      "benchmark": "U_CAN_Ubuntu_20-04_LTS_V2R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed",
+      "checked": 121
+    },
+    {
+      "benchmark": "U_CAN_Ubuntu_22-04_LTS_V2R7_STIG_SCAP_1-4_Benchmark-enhancedV10-signed",
+      "checked": 124
+    },
+    {
+      "benchmark": "U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-signed",
+      "checked": 125
+    },
+    {
+      "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+      "checked": 19
+    },
+    {
+      "benchmark": "U_Kubernetes_V2R5_STIG_SCAP_1-4_Benchmark-enhancedV8-signed",
+      "checked": 61
+    },
+    {
+      "benchmark": "U_MOZ_Firefox_Windows_V6R8_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+      "checked": 31
+    },
+    {
+      "benchmark": "U_MS_Defender_Antivirus_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV15-signed",
+      "checked": 59
+    },
+    {
+      "benchmark": "U_MS_DotNet_Framework_4-0_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV15-signed",
+      "checked": 5
+    },
+    {
+      "benchmark": "U_MS_Edge_V2R5_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+      "checked": 56
+    },
+    {
+      "benchmark": "U_MS_IE11_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV17-signed",
+      "checked": 63
+    },
+    {
+      "benchmark": "U_MS_IIS_8-5_Server_V2R7_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+      "checked": 15
+    },
+    {
+      "benchmark": "U_MS_IIS_8-5_Site_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+      "checked": 15
+    },
+    {
+      "benchmark": "U_MS_Office_365_ProPlus_V3R8_STIG_SCAP_1-4_Benchmark-enhancedV11-signed",
+      "checked": 22
+    },
+    {
+      "benchmark": "U_MS_Windows_2012_and_2012_R2_DC_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+      "checked": 89
+    },
+    {
+      "benchmark": "U_MS_Windows_2012_and_2012_R2_MS_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+      "checked": 83
+    },
+    {
+      "benchmark": "U_Oracle_Linux_7_V3R3_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+      "checked": 95
+    },
+    {
+      "benchmark": "U_RHEL_7_V3R15_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+      "checked": 110
+    },
+    {
+      "benchmark": "U_SLES_12_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV17-signed",
+      "checked": 46
+    },
+    {
+      "benchmark": "U_SLES_15_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+      "checked": 111
+    },
+    {
+      "benchmark": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed",
+      "checked": 108
+    },
+    {
+      "benchmark": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed",
+      "checked": 107
+    },
+    {
+      "benchmark": "U_TOSS_4_V2R7_STIG_SCAP_1-4_Benchmark-enhancedV8-signed",
+      "checked": 108
+    }
+  ]
+}

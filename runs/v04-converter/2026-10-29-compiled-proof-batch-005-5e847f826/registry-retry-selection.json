@@ -1,0 +1,811 @@
+[
+  {
+    "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+    "rule": "xccdf_mil.disa.stig_rule_SV-221558r960804_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.stig.chrome:ste:240001",
+        "type": [
+          "constant",
+          [
+            "reg_dword"
+          ]
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.stig.chrome:tst:240001",
+        "native_test": "disable-firewall-traversal-8ff62d5e-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+    "rule": "xccdf_mil.disa.stig_rule_SV-221559r961083_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.stig.chrome:ste:240002",
+        "type": [
+          "constant",
+          [
+            "reg_dword"
+          ]
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.stig.chrome:tst:240002",
+        "native_test": "disable-tracking-user-s-location-6ff604f0-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+    "rule": "xccdf_mil.disa.stig_rule_SV-221561r960963_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.stig.chrome:ste:240004",
+        "type": [
+          "constant",
+          [
+            "reg_dword"
+          ]
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.stig.chrome:tst:240004",
+        "native_test": "disable-pop-ups-876f816c-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+    "rule": "xccdf_mil.disa.stig_rule_SV-221562r960879_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.stig.chrome:ste:240005",
+        "type": [
+          "constant",
+          [
+            "reg_sz"
+          ]
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.stig.chrome:tst:240005",
+        "native_test": "extensions-installation-are-blocklisted-by-default-51c3f40f-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+    "rule": "xccdf_mil.disa.stig_rule_SV-221563r1015468_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.stig.chrome:ste:240006",
+        "type": [
+          "constant",
+          [
+            "reg_sz"
+          ]
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.stig.chrome:tst:240006",
+        "native_test": "extensions-that-are-approved-for-use-are-allowlisted-42634452-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+    "rule": "xccdf_mil.disa.stig_rule_SV-221564r960963_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.stig.chrome:ste:240007",
+        "type": [
+          "constant",
+          [
+            "reg_sz"
+          ]
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.stig.chrome:tst:240007",
+        "native_test": "set-default-search-provider-name-c48f7084-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+    "rule": "xccdf_mil.disa.stig_rule_SV-221566r960963_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.stig.chrome:ste:240009",
+        "type": [
+          "constant",
+          [
+            "reg_dword"
+          ]
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.stig.chrome:tst:240009",
+        "native_test": "enable-default-search-provider-50006cde-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+    "rule": "xccdf_mil.disa.stig_rule_SV-221567r960963_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.stig.chrome:ste:240011",
+        "type": [
+          "constant",
+          [
+            "reg_dword"
+          ]
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.stig.chrome:tst:240011",
+        "native_test": "disable-password-manager-d0076a15-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+    "rule": "xccdf_mil.disa.stig_rule_SV-221570r960921_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.stig.chrome:ste:240017",
+        "type": [
+          "constant",
+          [
+            "reg_dword"
+          ]
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.stig.chrome:tst:240017",
+        "native_test": "disable-background-processing-e0d7bbd3-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+    "rule": "xccdf_mil.disa.stig_rule_SV-221571r987620_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.stig.chrome:ste:240020",
+        "type": [
+          "constant",
+          [
+            "reg_dword"
+          ]
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.stig.chrome:tst:240020",
+        "native_test": "disable-google-data-synchronization-0fdd03e1-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+    "rule": "xccdf_mil.disa.stig_rule_SV-221572r960963_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.stig.chrome:ste:2400211",
+        "type": [
+          "constant",
+          [
+            "reg_sz"
+          ]
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.stig.chrome:tst:2400211",
+        "native_test": "the-url-protocol-schema-javascript-is-disabled-5bdd076f-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+    "rule": "xccdf_mil.disa.stig_rule_SV-221573r987620_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.stig.chrome:ste:240023",
+        "type": [
+          "constant",
+          [
+            "reg_dword"
+          ]
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.stig.chrome:tst:240023",
+        "native_test": "disable-cloud-print-sharing-9206abe5-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+    "rule": "xccdf_mil.disa.stig_rule_SV-221575r960963_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.stig.chrome:ste:240026",
+        "type": [
+          "constant",
+          [
+            "reg_dword"
+          ]
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.stig.chrome:tst:240026",
+        "native_test": "disable-google-metrics-reporting-249eb099-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+    "rule": "xccdf_mil.disa.stig_rule_SV-221576r960963_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.stig.chrome:ste:240027",
+        "type": [
+          "constant",
+          [
+            "reg_dword"
+          ]
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.stig.chrome:tst:240027",
+        "native_test": "enable-search-suggestion-4add1e6e-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+    "rule": "xccdf_mil.disa.stig_rule_SV-221577r960963_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.stig.chrome:ste:240029",
+        "type": [
+          "constant",
+          [
+            "reg_dword"
+          ]
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.stig.chrome:tst:240029",
+        "native_test": "password-history-var-f629cea5-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+    "rule": "xccdf_mil.disa.stig_rule_SV-221578r960864_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.stig.chrome:ste:240030",
+        "type": [
+          "constant",
+          [
+            "reg_dword"
+          ]
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.stig.chrome:tst:240030",
+        "native_test": "disable-incognito-mode-dbac3a96-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+    "rule": "xccdf_mil.disa.stig_rule_SV-221579r961893_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.stig.chrome:ste:240037",
+        "type": [
+          "constant",
+          [
+            "reg_dword"
+          ]
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.stig.chrome:tst:240037",
+        "native_test": "perform-online-revocation-checks-1a732fb8-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+    "rule": "xccdf_mil.disa.stig_rule_SV-221580r961083_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.stig.chrome:ste:240038",
+        "type": [
+          "constant",
+          [
+            "reg_dword"
+          ]
+        ]
+      },
+      {
+        "state": "oval:mil.disa.stig.chrome:ste:24003801",
+        "type": [
+          "constant",
+          [
+            "reg_dword"
+          ]
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.stig.chrome:tst:240038",
+        "native_test": "safe-browsing-is-enabled-d1aa656c-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+    "rule": "xccdf_mil.disa.stig_rule_SV-221581r961128_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.stig.chrome:ste:240039",
+        "type": [
+          "constant",
+          [
+            "reg_dword"
+          ]
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.stig.chrome:tst:240039",
+        "native_test": "save-browser-history-d3ac5869-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+    "rule": "xccdf_mil.disa.stig_rule_SV-221587r960879_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.stig.chrome:ste:640053",
+        "type": [
+          "constant",
+          [
+            "reg_dword"
+          ]
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.stig.chrome:tst:640053",
+        "native_test": "prompt-for-download-location-65ac439d-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+    "rule": "xccdf_mil.disa.stig_rule_SV-221590r961083_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.stig.chrome:ste:66005700",
+        "type": [
+          "constant",
+          [
+            "reg_dword"
+          ]
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.stig.chrome:tst:66005700",
+        "native_test": "check-safebrowsingextendedreportingenabled-value-6a702297-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+    "rule": "xccdf_mil.disa.stig_rule_SV-221591r960963_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.stig.chrome:ste:67005800",
+        "type": [
+          "constant",
+          [
+            "reg_dword"
+          ]
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.stig.chrome:tst:67005800",
+        "native_test": "webusb-must-be-disabled-75f7b14b-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+    "rule": "xccdf_mil.disa.stig_rule_SV-221594r960963_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.stig.chrome:ste:52006300",
+        "type": [
+          "constant",
+          [
+            "reg_dword"
+          ]
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.stig.chrome:tst:52006300",
+        "native_test": "google-cast-must-be-disabled-95be6d57-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+    "rule": "xccdf_mil.disa.stig_rule_SV-221595r960963_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.stig.chrome:ste:66005500",
+        "type": [
+          "constant",
+          [
+            "reg_dword"
+          ]
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.stig.chrome:tst:66005500",
+        "native_test": "autoplay-is-disabled-a8bda58c-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+    "rule": "xccdf_mil.disa.stig_rule_SV-221599r961167_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.stig.chrome:ste:68006200",
+        "type": [
+          "constant",
+          [
+            "reg_dword"
+          ]
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.stig.chrome:tst:68006200",
+        "native_test": "chrome-developer-tools-availability-must-be-disallowed-8f8fb404-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_MS_Windows_2012_and_2012_R2_DC_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+    "rule": "xccdf_mil.disa.fso_rule_SV-226319r794546_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.fso.windows:ste:458200",
+        "type": [
+          "literal",
+          "reg_multi_sz"
+        ]
+      },
+      {
+        "state": "oval:mil.disa.fso.windows:ste:462100",
+        "type": [
+          "literal",
+          "reg_multi_sz"
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.fso.windows:tst:458200",
+        "native_test": "network-access-remotely-accessible-registry-paths-is-configured-to-con-0c9d61f4-test",
+        "reason": "registry type proof unavailable"
+      },
+      {
+        "source_test": "oval:mil.disa.fso.windows:tst:458201",
+        "native_test": "network-access-remotely-accessible-registry-paths-is-configured-to-con-5108afd4-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_MS_Windows_2012_and_2012_R2_DC_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+    "rule": "xccdf_mil.disa.fso_rule_SV-226320r794547_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.fso.windows:ste:458300",
+        "type": [
+          "literal",
+          "reg_multi_sz"
+        ]
+      },
+      {
+        "state": "oval:mil.disa.fso.windows:ste:462100",
+        "type": [
+          "literal",
+          "reg_multi_sz"
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.fso.windows:tst:458300",
+        "native_test": "network-access-remotely-accessible-registry-paths-and-sub-paths-is-con-a922d20f-test",
+        "reason": "registry type proof unavailable"
+      },
+      {
+        "source_test": "oval:mil.disa.fso.windows:tst:458302",
+        "native_test": "network-access-remotely-accessible-registry-paths-and-sub-paths-is-con-46502b5a-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_MS_Windows_2012_and_2012_R2_DC_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+    "rule": "xccdf_mil.disa.fso_rule_SV-226322r794549_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.fso.windows:ste:458500",
+        "type": [
+          "literal",
+          "reg_multi_sz"
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.fso.windows:tst:458500",
+        "native_test": "network-access-shares-that-can-be-accessed-anonymously-is-blank-272637dd-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_MS_Windows_2012_and_2012_R2_DC_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+    "rule": "xccdf_mil.disa.fso_rule_SV-226348r794632_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.fso.windows:ste:462100",
+        "type": [
+          "literal",
+          "reg_multi_sz"
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.fso.windows:tst:462100",
+        "native_test": "system-settings-optional-subsystems-is-blank-66fefaf6-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_MS_Windows_2012_and_2012_R2_MS_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+    "rule": "xccdf_mil.disa.fso_rule_SV-225495r569185_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.fso.windows:ste:462100",
+        "type": [
+          "literal",
+          "reg_multi_sz"
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.fso.windows:tst:471500",
+        "native_test": "network-access-named-pipes-that-can-be-accessed-anonymously-is-configu-72c36c08-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_MS_Windows_2012_and_2012_R2_MS_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+    "rule": "xccdf_mil.disa.fso_rule_SV-225496r569185_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.fso.windows:ste:458200",
+        "type": [
+          "literal",
+          "reg_multi_sz"
+        ]
+      },
+      {
+        "state": "oval:mil.disa.fso.windows:ste:462100",
+        "type": [
+          "literal",
+          "reg_multi_sz"
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.fso.windows:tst:458200",
+        "native_test": "network-access-remotely-accessible-registry-paths-is-configured-to-con-0c9d61f4-test",
+        "reason": "registry type proof unavailable"
+      },
+      {
+        "source_test": "oval:mil.disa.fso.windows:tst:458201",
+        "native_test": "network-access-remotely-accessible-registry-paths-is-configured-to-con-5108afd4-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_MS_Windows_2012_and_2012_R2_MS_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+    "rule": "xccdf_mil.disa.fso_rule_SV-225497r569185_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.fso.windows:ste:458300",
+        "type": [
+          "literal",
+          "reg_multi_sz"
+        ]
+      },
+      {
+        "state": "oval:mil.disa.fso.windows:ste:462100",
+        "type": [
+          "literal",
+          "reg_multi_sz"
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.fso.windows:tst:458300",
+        "native_test": "network-access-remotely-accessible-registry-paths-and-sub-paths-is-con-a922d20f-test",
+        "reason": "registry type proof unavailable"
+      },
+      {
+        "source_test": "oval:mil.disa.fso.windows:tst:458302",
+        "native_test": "network-access-remotely-accessible-registry-paths-and-sub-paths-is-con-46502b5a-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_MS_Windows_2012_and_2012_R2_MS_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+    "rule": "xccdf_mil.disa.fso_rule_SV-225499r569185_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.fso.windows:ste:458500",
+        "type": [
+          "literal",
+          "reg_multi_sz"
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.fso.windows:tst:458500",
+        "native_test": "network-access-shares-that-can-be-accessed-anonymously-is-blank-272637dd-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_MS_Windows_2012_and_2012_R2_MS_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+    "rule": "xccdf_mil.disa.fso_rule_SV-225525r569185_rule",
+    "types": [
+      {
+        "state": "oval:mil.disa.fso.windows:ste:462100",
+        "type": [
+          "literal",
+          "reg_multi_sz"
+        ]
+      }
+    ],
+    "obligations": [
+      {
+        "source_test": "oval:mil.disa.fso.windows:tst:462100",
+        "native_test": "system-settings-optional-subsystems-is-blank-66fefaf6-test",
+        "reason": "registry type proof unavailable"
+      }
+    ]
+  },
+  {
+    "benchmark": "U_MS_IIS_8-5_Server_V2R7_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+    "rule": "xccdf_navy.navwar.niwcatlantic.scc.ms.iis_rule_SV-214429r879717_rule",
+    "types": [],
+    "obligations": [
+      {
+        "source_test": "oval:navy.navwar.niwcatlantic.scc.ms.iis.8.5.server:tst:310",
+        "native_test": "verify-unspecified-objects-are-not-assigned-to-acl-open-explorer-and-n-6a0c85d6-test",
+        "reason": "Set/Filter/behavior collection proof unavailable: oval:navy.navwar.niwcatlantic.scc.ms.iis.8.5.server:obj:317"
+      },
+      {
+        "source_test": "oval:navy.navwar.niwcatlantic.scc.ms.iis.8.5.server:tst:311",
+        "native_test": "file-perm-assigned-to-users-group-for-inetpub-directory-open-explorer-bbde4ed0-test",
+        "reason": "Set/Filter/behavior collection proof unavailable: oval:navy.navwar.niwcatlantic.scc.ms.iis.8.5.server:obj:317"
+      },
+      {
+        "source_test": "oval:navy.navwar.niwcatlantic.scc.ms.iis.8.5.server:tst:312",
+        "native_test": "file-perm-assigned-to-all-application-packages-for-inetpub-directory-o-4b65f96a-test",
+        "reason": "Set/Filter/behavior collection proof unavailable: oval:navy.navwar.niwcatlantic.scc.ms.iis.8.5.server:obj:317"
+      }
+    ]
+  }
+]

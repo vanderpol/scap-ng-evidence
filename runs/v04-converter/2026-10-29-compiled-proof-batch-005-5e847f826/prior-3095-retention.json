@@ -1,0 +1,142 @@
+{
+  "expanded_reader_sha256": "7e3a138bf7744ba5cd4ade5686533af37c74994c5e276ccaf59495c7db85c620",
+  "reader_sha256": "cf91eea8b3ca0d896f24ff7b29a232e99778b77b728c25a3828983b71d2ad413",
+  "prior_new_primary_proofs_retained": 3095,
+  "unchanged_hashes": [
+    "authoring_sha256",
+    "independent_proof_sha256",
+    "source_terms_sha256",
+    "native_terms_sha256"
+  ],
+  "elapsed_seconds": 21.14121030300157,
+  "benchmarks": [
+    {
+      "benchmark": "U_MS_Windows_Server_2019_V3R9_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+      "retained": 243
+    },
+    {
+      "benchmark": "U_MS_Windows_10_V3R7_STIG_SCAP_1-4_Benchmark-enhancedV17-signed",
+      "retained": 208
+    },
+    {
+      "benchmark": "U_MS_Windows_Server_2016_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+      "retained": 155
+    },
+    {
+      "benchmark": "U_MS_Windows_Server_2022_V2R10_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+      "retained": 239
+    },
+    {
+      "benchmark": "U_Oracle_Linux_8_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+      "retained": 220
+    },
+    {
+      "benchmark": "U_RHEL_8_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV22-signed",
+      "retained": 226
+    },
+    {
+      "benchmark": "U_Adobe_Acrobat_Pro_DC_Continuous_V2R2_STIG_SCAP_1-4_Benchmark-enhancedV2-signed",
+      "retained": 19
+    },
+    {
+      "benchmark": "U_Adobe_Acrobat_Reader_DC_Continuous_V2R5_STIG_SCAP_1-4_Benchmark-enhancedV12-signed",
+      "retained": 25
+    },
+    {
+      "benchmark": "U_Amazon_Linux_2023_V1R2_STIG_SCAP_1-4_Benchmark-enhancedV1-signed",
+      "retained": 120
+    },
+    {
+      "benchmark": "U_CAN_Ubuntu_18-04_LTS_V2R12_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+      "retained": 67
+    },
+    {
+      "benchmark": "U_CAN_Ubuntu_20-04_LTS_V2R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed",
+      "retained": 121
+    },
+    {
+      "benchmark": "U_CAN_Ubuntu_22-04_LTS_V2R7_STIG_SCAP_1-4_Benchmark-enhancedV10-signed",
+      "retained": 124
+    },
+    {
+      "benchmark": "U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-signed",
+      "retained": 125
+    },
+    {
+      "benchmark": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+      "retained": 19
+    },
+    {
+      "benchmark": "U_Kubernetes_V2R5_STIG_SCAP_1-4_Benchmark-enhancedV8-signed",
+      "retained": 61
+    },
+    {
+      "benchmark": "U_MOZ_Firefox_Windows_V6R8_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+      "retained": 31
+    },
+    {
+      "benchmark": "U_MS_Defender_Antivirus_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV15-signed",
+      "retained": 59
+    },
+    {
+      "benchmark": "U_MS_DotNet_Framework_4-0_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV15-signed",
+      "retained": 5
+    },
+    {
+      "benchmark": "U_MS_Edge_V2R5_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+      "retained": 56
+    },
+    {
+      "benchmark": "U_MS_IE11_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV17-signed",
+      "retained": 63
+    },
+    {
+      "benchmark": "U_MS_IIS_8-5_Server_V2R7_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+      "retained": 15
+    },
+    {
+      "benchmark": "U_MS_IIS_8-5_Site_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+      "retained": 15
+    },
+    {
+      "benchmark": "U_MS_Office_365_ProPlus_V3R8_STIG_SCAP_1-4_Benchmark-enhancedV11-signed",
+      "retained": 22
+    },
+    {
+      "benchmark": "U_MS_Windows_2012_and_2012_R2_DC_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+      "retained": 89
+    },
+    {
+      "benchmark": "U_MS_Windows_2012_and_2012_R2_MS_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed",
+      "retained": 83
+    },
+    {
+      "benchmark": "U_Oracle_Linux_7_V3R3_STIG_SCAP_1-4_Benchmark-enhancedV16-signed",
+      "retained": 95
+    },
+    {
+      "benchmark": "U_RHEL_7_V3R15_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+      "retained": 110
+    },
+    {
+      "benchmark": "U_SLES_12_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV17-signed",
+      "retained": 46
+    },
+    {
+      "benchmark": "U_SLES_15_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+      "retained": 111
+    },
+    {
+      "benchmark": "U_SOL_11_SPARC_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed",
+      "retained": 108
+    },
+    {
+      "benchmark": "U_SOL_11_X86_V3R5_STIG_SCAP_1-4_Benchmark-enhancedV18-signed",
+      "retained": 107
+    },
+    {
+      "benchmark": "U_TOSS_4_V2R7_STIG_SCAP_1-4_Benchmark-enhancedV8-signed",
+      "retained": 108
+    }
+  ]
+}

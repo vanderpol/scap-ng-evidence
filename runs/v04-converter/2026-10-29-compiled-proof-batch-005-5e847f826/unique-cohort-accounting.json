@@ -1,0 +1,11 @@
+{
+  "distinct_candidates": 3138,
+  "benchmarks": 32,
+  "outcomes": {
+    "PROVED": 3130,
+    "BLOCKED": 8
+  },
+  "source_invalid": 7,
+  "deprecated": 1,
+  "total_primary_static_proofs_including_previous_floor": 4206
+}

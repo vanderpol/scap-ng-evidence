@@ -1,0 +1,349 @@
+{
+  "evidence_id": "2026-10-29-compiled-proof-batch-005-5e847f826",
+  "evidence_kind": "production migration evidence; independently verified static primary OVAL subset",
+  "created_at": "2026-10-29T15:54:55.032946+00:00",
+  "source_repository": "vanderpol/scap-ng",
+  "source_commit": "5e847f8268697f7555a442256c06f5bfa48f4676",
+  "source_commits": [
+    "5e847f8268697f7555a442256c06f5bfa48f4676"
+  ],
+  "generating_tool": "tools/verify_v04_direct_scope.py:accept_source with independent Registry readers",
+  "generating_tool_commit": "5e847f8268697f7555a442256c06f5bfa48f4676",
+  "reproduction_driver": "reproduce.py; exact selected 35 in registry-retry-selection.json",
+  "reader_files": {
+    "tools/v04_source_package_semantics.py": "cf91eea8b3ca0d896f24ff7b29a232e99778b77b728c25a3828983b71d2ad413",
+    "tools/v04_expanded_source_proof.py": "7e3a138bf7744ba5cd4ade5686533af37c74994c5e276ccaf59495c7db85c620"
+  },
+  "source_revision": "niwc-atlantic/scap-content-library@8c8e5dff860af6b1290ee9273a282db24278f8d5",
+  "source_pins": [
+    {
+      "file": "U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed.zip",
+      "repository_path": "Current/U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed.zip",
+      "git_blob_sha": "cf448b06e82fbaf5b86ee2c664b987752efa4732",
+      "sha256": "78e58d9ce76f458e8c436de80cb2b30e15ebce35d1527bf6e38aca5069e6bfd1",
+      "bytes": 46737
+    },
+    {
+      "file": "U_MS_IIS_8-5_Server_V2R7_STIG_SCAP_1-4_Benchmark-enhancedV13-signed.zip",
+      "repository_path": "Current/U_MS_IIS_8-5_Server_V2R7_STIG_SCAP_1-4_Benchmark-enhancedV13-signed.zip",
+      "git_blob_sha": "6f10d2006c517b52885c6868bedeb75ccbf0dd13",
+      "sha256": "3b2f7aa396dbfc647b73de8f7506a5bca1578ff5b79f96d40d13859da57613e4",
+      "bytes": 58980
+    },
+    {
+      "file": "U_MS_Windows_2012_and_2012_R2_DC_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed.zip",
+      "repository_path": "Current/U_MS_Windows_2012_and_2012_R2_DC_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed.zip",
+      "git_blob_sha": "753e5bce3d6b5e25df61734e76b281e6e8b9d0b6",
+      "sha256": "ecba937d43efc0a72037eefb501b46a2e417158088b2f2699f2c86b68bd1de9c",
+      "bytes": 277994
+    },
+    {
+      "file": "U_MS_Windows_2012_and_2012_R2_MS_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed.zip",
+      "repository_path": "Current/U_MS_Windows_2012_and_2012_R2_MS_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed.zip",
+      "git_blob_sha": "79738d50d236dbcb35cbc6cc4c1d3660624d02f4",
+      "sha256": "3ad256b29d6f85fe69ba9a14b18502a6f50e923faea2880d9ce10246f780a50a",
+      "bytes": 239788
+    }
+  ],
+  "frozen_draft_sha256": "5f86d016c1bce82018eec82c6468ab583816ff0b38c8d3ea5e9210a931cc1a08",
+  "cohort_size": 3138,
+  "selected": 35,
+  "new_primary_proofs": 35,
+  "unchanged_frozen_authoring_program_pairs": 35,
+  "negative_mutations_rejected": 8,
+  "prior_new_primary_proof_hashes_retained": 3095,
+  "conformance_four_hash_records_retained": 523,
+  "exact_commands": [
+    "PYTHONDONTWRITEBYTECODE=1 python reproduce.py --benchmark U_Google_Chrome_V2R11_STIG_SCAP_1-4_Benchmark-enhancedV16-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 python reproduce.py --benchmark U_MS_IIS_8-5_Server_V2R7_STIG_SCAP_1-4_Benchmark-enhancedV13-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 python reproduce.py --benchmark U_MS_Windows_2012_and_2012_R2_DC_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 python reproduce.py --benchmark U_MS_Windows_2012_and_2012_R2_MS_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV13-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY"
+  ],
+  "output_root": "batch-evidence.zip (per-benchmark accepted/ directories)",
+  "output_file_count": 184,
+  "validation_status": "VERIFIED_STATIC_PRIMARY_SUBSET",
+  "checks": [
+    "Original ZIP SHA-256/Git blob, primary closure XSD/Schematron/semantic and deprecation checks",
+    "Frozen Rule/dependency identities, unchanged authoring and compiled program hashes",
+    "Independent source/native graph terms and independent compiled operand/package consumers",
+    "Representative source and compiled operand cardinality mutations rejected",
+    "3095 prior new proof hashes and 523 conformance four-hash records retained",
+    "All eight path-selected exact-commit workflows passed; maintained suite and original six-source gate"
+  ],
+  "integration_ci": {
+    "commit": "5e847f8268697f7555a442256c06f5bfa48f4676",
+    "workflows": [
+      {
+        "id": 40904268704,
+        "name": "Markdown navigation and duplication audit",
+        "url": "https://github.com/vanderpol/scap-ng/actions/runs/40904268704",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 123554609976,
+            "name": "Audit all Markdown paths and section anchors",
+            "conclusion": "success"
+          }
+        ],
+        "artifacts": [
+          {
+            "id": 12909924776,
+            "name": "markdown-cross-reference-audit",
+            "size_in_bytes": 2829
+          }
+        ]
+      },
+      {
+        "id": 40904268616,
+        "name": "Commit issue reference",
+        "url": "https://github.com/vanderpol/scap-ng/actions/runs/40904268616",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 123554610204,
+            "name": "validate",
+            "conclusion": "success"
+          }
+        ],
+        "artifacts": []
+      },
+      {
+        "id": 40904268827,
+        "name": "0.4.0 direct UNIX password original-source acceptance",
+        "url": "https://github.com/vanderpol/scap-ng/actions/runs/40904268827",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 123554610765,
+            "name": "original-source",
+            "conclusion": "success"
+          }
+        ],
+        "artifacts": [
+          {
+            "id": 12911685146,
+            "name": "v04-direct-unix-password-source-proof",
+            "size_in_bytes": 113252
+          }
+        ]
+      },
+      {
+        "id": 40904268718,
+        "name": "0.4.0 canonical authoring fast checks",
+        "url": "https://github.com/vanderpol/scap-ng/actions/runs/40904268718",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 123554609904,
+            "name": "focused",
+            "conclusion": "success"
+          }
+        ],
+        "artifacts": [
+          {
+            "id": 12909979755,
+            "name": "scap-ng-040-approved-three-case-integration",
+            "size_in_bytes": 26717
+          }
+        ]
+      },
+      {
+        "id": 40904268894,
+        "name": "Current-design regression contracts",
+        "url": "https://github.com/vanderpol/scap-ng/actions/runs/40904268894",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 123554611278,
+            "name": "contracts (windows-latest)",
+            "conclusion": "success"
+          },
+          {
+            "id": 123554611594,
+            "name": "contracts (ubuntu-latest)",
+            "conclusion": "success"
+          }
+        ],
+        "artifacts": [
+          {
+            "id": 12911255753,
+            "name": "generated-capability-schema-ubuntu-latest",
+            "size_in_bytes": 2793
+          },
+          {
+            "id": 12910572655,
+            "name": "conditional-known-results-windows-latest",
+            "size_in_bytes": 6085
+          },
+          {
+            "id": 12910438024,
+            "name": "generated-capability-schema-windows-latest",
+            "size_in_bytes": 2839
+          },
+          {
+            "id": 12910308091,
+            "name": "conditional-known-results-ubuntu-latest",
+            "size_in_bytes": 6022
+          }
+        ]
+      },
+      {
+        "id": 40904268896,
+        "name": "0.4.0 pinned OVAL Test Content converter coverage",
+        "url": "https://github.com/vanderpol/scap-ng/actions/runs/40904268896",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 123554610393,
+            "name": "coverage",
+            "conclusion": "success"
+          }
+        ],
+        "artifacts": [
+          {
+            "id": 12910288695,
+            "name": "v04-original-oval-test-corpus-coverage",
+            "size_in_bytes": 274866
+          }
+        ]
+      },
+      {
+        "id": 40904268977,
+        "name": "Rebaseline smoke regression",
+        "url": "https://github.com/vanderpol/scap-ng/actions/runs/40904268977",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 123554611774,
+            "name": "smoke",
+            "conclusion": "success"
+          }
+        ],
+        "artifacts": [
+          {
+            "id": 12910359527,
+            "name": "current-v04-regression-results",
+            "size_in_bytes": 78764
+          }
+        ]
+      },
+      {
+        "id": 40904268774,
+        "name": "0.4.0 direct converter original six-STIG requirements",
+        "url": "https://github.com/vanderpol/scap-ng/actions/runs/40904268774",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 123554610454,
+            "name": "inventory",
+            "conclusion": "success"
+          }
+        ],
+        "artifacts": [
+          {
+            "id": 12910957628,
+            "name": "v04-original-six-source-requirements",
+            "size_in_bytes": 10431393
+          }
+        ]
+      }
+    ],
+    "maintained": {
+      "run": 40904268977,
+      "job": 123554611774,
+      "artifact": 12910359527,
+      "tests": 3292,
+      "passed": 3291,
+      "failures": 0,
+      "errors": 0,
+      "skips": 1,
+      "elapsed_seconds": 619.389,
+      "skipped_tests": [
+        "test_full_pinned_original_oval_census_when_corpus_supplied (test_research_c_local_literal_inputs.LocalLiteralCollectionBindings.test_full_pinned_original_oval_census_when_corpus_supplied) ... skipped 'run original source corpus through dedicated C workflow'"
+      ],
+      "preceding_skip_identity_retained": true
+    },
+    "six_source": {
+      "run": 40904268774,
+      "job": 123554610454,
+      "artifact": 12910957628,
+      "primary_proofs": 1072,
+      "by_source": {
+        "rhel_9": 304,
+        "oracle_linux_9": 291,
+        "ms_windows_11": 228,
+        "ms_windows_server_2025": 249
+      }
+    },
+    "path_selection_note": "Eight workflows selected by this reader-only diff. Bluetooth workflow paths did not match; its original-source acceptance CLI passes locally and its regression module is covered by maintained suite."
+  },
+  "limitations": [
+    "Primary OVAL only; no complete policy/CPE/manual or scanner-runtime claim",
+    "Seven original-invalid and one deprecated frozen candidate remain excluded",
+    "Retries supersede 35 earlier reader-limited outcomes; they do not enlarge the 3138 distinct-candidate denominator",
+    "No schema/mapping/converter/compiler/protected workflow or #255 contract change",
+    "Frozen all-65 DRAFT remains unchanged"
+  ],
+  "files": {
+    "batch-evidence.zip": {
+      "bytes": 959855,
+      "sha256": "e7165846f8017d86463a455cfa9eebfd0befdf3aeacfe2b92ee83712508e8b36"
+    },
+    "bluetooth-current-source-proof.json": {
+      "bytes": 7305,
+      "sha256": "a45dbe5f9635dc6b91ef1584dc19ebd3a056a4151ecd7fa7d26c20f703797aac"
+    },
+    "conformance-retention.json": {
+      "bytes": 49768,
+      "sha256": "af2b6204b9058f2094da705cfc93fa3a39f9ef259559c000d8e6f46c112e3998"
+    },
+    "distributed-evidence-integrity.json": {
+      "bytes": 930,
+      "sha256": "058e72e9d650922f3e9091da3d0c0226a21625fdf92b00759fe5bfe2cfcff273"
+    },
+    "environment.json": {
+      "bytes": 194,
+      "sha256": "3fcb72d05ed9bb785606bbab1b9a2e22a3328bee72756896a4d71b5e24c5da5a"
+    },
+    "integration-ci.json": {
+      "bytes": 5723,
+      "sha256": "a3cf9d530737525ee53b90c91fd86f09fa281cb2244676d964f0ab4d1c2c51d7"
+    },
+    "previous-four-guard-retention.json": {
+      "bytes": 3357,
+      "sha256": "5c080ca1cd26faac66bcd8d7fe4636d13ab4a04b22ded1b3afcdee14df3820b3"
+    },
+    "prior-3095-canonical-retention.json": {
+      "bytes": 4033,
+      "sha256": "7495744196d0b8e6926ca5f2bdf604f44e71ce0905ce6948a0b702a7ff250694"
+    },
+    "prior-3095-retention.json": {
+      "bytes": 4404,
+      "sha256": "7cad68052ae0ff959c0a9575010d25ce321bb43da4f3152a06005ca9c4003072"
+    },
+    "proof-hashes.json": {
+      "bytes": 48679,
+      "sha256": "12d0825108dad0b1e9340d2ece6ec7c3a37f5992b4b946ca8a56e1ef3eb86634"
+    },
+    "registry-retry-selection.json": {
+      "bytes": 22895,
+      "sha256": "21c3124ed2e2723492498b4248b4b6cb610d9cf4ee3115342f478d8f7128369b"
+    },
+    "remaining-original-exclusions.json": {
+      "bytes": 19953,
+      "sha256": "1b9302f07367acbf131784853d1d6431f8a984b1825c586d26bfb29baeb93f7e"
+    },
+    "representatives.json": {
+      "bytes": 183549,
+      "sha256": "a4a143bd35f1e958b8ccf726418cc9dde84848e24aad48f7a50bdf450fb259bc"
+    },
+    "reproduce.py": {
+      "bytes": 8841,
+      "sha256": "6afe16cff103ba2cfba18d48d2fabefd4c1e10bca12bdf8aa5cc220e55e3f3b6"
+    },
+    "unique-cohort-accounting.json": {
+      "bytes": 218,
+      "sha256": "930f00e5b312e67c2b65de889fd80f7b3970f52fbd8a40fc40d83e6e5f76ba14"
+    }
+  }
+}
