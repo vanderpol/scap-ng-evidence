@@ -1,0 +1,85 @@
+{
+  "evidence_id": "2026-10-29-compiled-proof-batch-002-dc42163d2",
+  "evidence_kind": "production migration evidence; independently verified static primary OVAL subset",
+  "created_at": "2026-10-29T13:25:49.339773+00:00",
+  "source_repository": "vanderpol/scap-ng",
+  "source_commits": [
+    "dc42163d20c23874efa3888a53f9701095dc5316"
+  ],
+  "generating_tool": "tools/v04_direct_converter.py --verify / verify_v04_direct_scope.accept_source",
+  "generating_tool_commit": "10f4e35b331c622c14f6e3aa2bd4aa8981c810c1",
+  "reproduction_driver": "reproduce.py (snapshot, not a competing converter)",
+  "source_revision": "niwc-atlantic/scap-content-library@8c8e5dff860af6b1290ee9273a282db24278f8d5",
+  "frozen_draft_sha256": "5f86d016c1bce82018eec82c6468ab583816ff0b38c8d3ea5e9210a931cc1a08",
+  "cohort_size": 3138,
+  "selected": 602,
+  "new_primary_proofs": 602,
+  "unchanged_frozen_authoring_program_pairs": 602,
+  "negative_mutations_rejected": 70,
+  "source_pins": [
+    {
+      "file": "U_MS_Windows_10_V3R7_STIG_SCAP_1-4_Benchmark-enhancedV17-signed.zip",
+      "repository_path": "Current/U_MS_Windows_10_V3R7_STIG_SCAP_1-4_Benchmark-enhancedV17-signed.zip",
+      "git_blob_sha": "f6b3745fab22cb9bf60fb8cf62665b55c0a856cb",
+      "sha256": "8562a9de2792fd97a3d2bc0a4950012a7b51a05d1514bfaf180db7b99bf3baee",
+      "bytes": 223157
+    },
+    {
+      "file": "U_MS_Windows_Server_2016_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV19-signed.zip",
+      "repository_path": "Current/U_MS_Windows_Server_2016_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV19-signed.zip",
+      "git_blob_sha": "7ff1830662c5a57db5a4363c8f30b5cd7a7c5673",
+      "sha256": "76cf6a14fefd077136d9a23a6ba4a30c82a0b254adc8cf2abd88592dc30776a8",
+      "bytes": 235790
+    },
+    {
+      "file": "U_MS_Windows_Server_2022_V2R10_STIG_SCAP_1-4_Benchmark-enhancedV19-signed.zip",
+      "repository_path": "Current/U_MS_Windows_Server_2022_V2R10_STIG_SCAP_1-4_Benchmark-enhancedV19-signed.zip",
+      "git_blob_sha": "c93998167afcdb092ffd9cdea563d8b3f4874163",
+      "sha256": "5ba5577961a13ded0d4e9a0c6603f93b8201b4fc74d23ef679eba7726e0182f4",
+      "bytes": 238978
+    }
+  ],
+  "exact_commands": [
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_MS_Windows_10_V3R7_STIG_SCAP_1-4_Benchmark-enhancedV17-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_MS_Windows_Server_2016_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV19-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_MS_Windows_Server_2022_V2R10_STIG_SCAP_1-4_Benchmark-enhancedV19-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY"
+  ],
+  "validation_status": "VERIFIED_STATIC_PRIMARY_SUBSET",
+  "checks": [
+    "Original ZIP SHA-256 and Git blob identity",
+    "Original OVAL XSD/Schematron/semantic validity and deprecation guard",
+    "Original Rule and dependency identities match frozen ledger",
+    "Native schemas and independent source/native typed terms",
+    "Frozen authoring identity and exact compiled program hash retention",
+    "Independent compiled operand and package consumers",
+    "Representative source/native cardinality mutants rejected"
+  ],
+  "unchanged_implementation_ci": "https://github.com/vanderpol/scap-ng/actions/runs/40867417638",
+  "implementation_ci_result": "3284 run, 3283 passed, zero failures/errors, one existing skip; all nine exact-code workflows pass",
+  "limitations": [
+    "Primary OVAL only; original policy/CPE/manual execution not proved",
+    "Static verification, not scanner runtime or complete toolchain release",
+    "Frozen DRAFT archive remains unchanged",
+    "Failed or unsupported closures remain explicit and do not enter accepted packages",
+    "Existing 1072 anchor + 4 guard proofs and 523 conformance proof records remain separate and unchanged"
+  ],
+  "output_file_count": 2441,
+  "files": {
+    "proof-hashes.json": {
+      "bytes": 797616,
+      "sha256": "672fd982f2b15db9b2436f2cba277c79f89127770a6a59e6a8abc1459ec4d5ec"
+    },
+    "representatives.json": {
+      "bytes": 100230,
+      "sha256": "b36a78be302d5483e78e35f54a842a37a0cdb75ba88767a788d4c11d1e546862"
+    },
+    "reproduce.py": {
+      "bytes": 8081,
+      "sha256": "7367b47b75bab615dd50e7dcc73126e4f68ca15d893fe205a08b3a50a016d38d"
+    },
+    "batch-evidence.zip": {
+      "bytes": 5542985,
+      "sha256": "195923b007a3be79e11840e18de15a3f6cfea40e369ec70d0e27d215fe5387f0"
+    }
+  }
+}

@@ -1,0 +1,2806 @@
+[
+  {
+    "benchmark": "U_MS_Windows_10_V3R7_STIG_SCAP_1-4_Benchmark-enhancedV17-signed",
+    "source_rule": "xccdf_mil.disa.stig_rule_SV-220697r991589_rule",
+    "assessment": {
+      "assessment": {
+        "id": "domain-joined-systems-must-use-windows-10-enterprise-edition-64-bit-ve-ca560dfc-assessment",
+        "version": 1,
+        "assessment_title": "Domain-joined systems must use Windows 10 Enterprise Edition 64-bit version.",
+        "mode": "automated",
+        "class": "compliance",
+        "purpose": "assessment",
+        "specification": {
+          "id": "scap-ng.pre-alpha.assessment",
+          "version": "0.4.0"
+        },
+        "tests": {
+          "editionid-is-enterprise-or-enterprises-694c15ba-test": {
+            "test_title": "EditionID is Enterprise or EnterpriseS",
+            "capability": "windows.registry",
+            "object": {
+              "hive": {
+                "equals": "local_machine"
+              },
+              "key": {
+                "equals": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+              },
+              "name": {
+                "equals": "EditionId"
+              }
+            },
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "or": [
+                {
+                  "and": [
+                    {
+                      "fields": {
+                        "type": {
+                          "equals": "string",
+                          "values_found": "one_or_more",
+                          "values_matching": "every"
+                        }
+                      }
+                    },
+                    {
+                      "fields": {
+                        "value": {
+                          "equals": "Enterprise",
+                          "values_found": "one_or_more",
+                          "values_matching": "every"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "fields": {
+                        "type": {
+                          "equals": "string",
+                          "values_found": "one_or_more",
+                          "values_matching": "every"
+                        }
+                      }
+                    },
+                    {
+                      "fields": {
+                        "value": {
+                          "equals": "EnterpriseS",
+                          "values_found": "one_or_more",
+                          "values_matching": "every"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "reported_elements": "all"
+          }
+        },
+        "evaluate": {
+          "test": "editionid-is-enterprise-or-enterprises-694c15ba-test"
+        }
+      }
+    },
+    "independent_proof": {
+      "rule": "xccdf_mil.disa.stig_rule_SV-220697r991589_rule",
+      "outcome": "PROVED",
+      "test_bindings": {
+        "oval:mil.disa.stig.win:tst:25325400": "editionid-is-enterprise-or-enterprises-694c15ba-test"
+      },
+      "comparisons": [
+        {
+          "source_test": "oval:mil.disa.stig.win:tst:25325400",
+          "native_test": "editionid-is-enterprise-or-enterprises-694c15ba-test",
+          "source_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "EditionId"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "or": [
+                {
+                  "and": [
+                    {
+                      "field": "value",
+                      "predicate": {
+                        "operation": "equals",
+                        "comparison_datatype": "string",
+                        "operand": {
+                          "datatype": "string",
+                          "value": "Enterprise"
+                        },
+                        "found": "one_or_more",
+                        "matching": "every"
+                      }
+                    },
+                    {
+                      "field": "type",
+                      "predicate": {
+                        "operation": "equals",
+                        "comparison_datatype": "string",
+                        "operand": {
+                          "datatype": "string",
+                          "value": "string"
+                        },
+                        "found": "one_or_more",
+                        "matching": "every"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "field": "value",
+                      "predicate": {
+                        "operation": "equals",
+                        "comparison_datatype": "string",
+                        "operand": {
+                          "datatype": "string",
+                          "value": "EnterpriseS"
+                        },
+                        "found": "one_or_more",
+                        "matching": "every"
+                      }
+                    },
+                    {
+                      "field": "type",
+                      "predicate": {
+                        "operation": "equals",
+                        "comparison_datatype": "string",
+                        "operand": {
+                          "datatype": "string",
+                          "value": "string"
+                        },
+                        "found": "one_or_more",
+                        "matching": "every"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "native_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "EditionId"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "or": [
+                {
+                  "and": [
+                    {
+                      "field": "value",
+                      "predicate": {
+                        "operation": "equals",
+                        "comparison_datatype": "string",
+                        "operand": {
+                          "datatype": "string",
+                          "value": "Enterprise"
+                        },
+                        "found": "one_or_more",
+                        "matching": "every"
+                      }
+                    },
+                    {
+                      "field": "type",
+                      "predicate": {
+                        "operation": "equals",
+                        "comparison_datatype": "string",
+                        "operand": {
+                          "datatype": "string",
+                          "value": "string"
+                        },
+                        "found": "one_or_more",
+                        "matching": "every"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "field": "value",
+                      "predicate": {
+                        "operation": "equals",
+                        "comparison_datatype": "string",
+                        "operand": {
+                          "datatype": "string",
+                          "value": "EnterpriseS"
+                        },
+                        "found": "one_or_more",
+                        "matching": "every"
+                      }
+                    },
+                    {
+                      "field": "type",
+                      "predicate": {
+                        "operation": "equals",
+                        "comparison_datatype": "string",
+                        "operand": {
+                          "datatype": "string",
+                          "value": "string"
+                        },
+                        "found": "one_or_more",
+                        "matching": "every"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "term_sha256": "cb74b34f817c0b66feeeb6d311caf29c9aa12c43c0e39988f80d8053975ea668"
+        }
+      ],
+      "unsupported_obligations": [],
+      "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+      "normalizations_applied": []
+    }
+  },
+  {
+    "benchmark": "U_MS_Windows_10_V3R7_STIG_SCAP_1-4_Benchmark-enhancedV17-signed",
+    "source_rule": "xccdf_mil.disa.stig_rule_SV-220700r991589_rule",
+    "assessment": {
+      "assessment": {
+        "id": "secure-boot-must-be-enabled-on-windows-10-systems-f0f54a43-assessment",
+        "version": 1,
+        "assessment_title": "Secure Boot must be enabled on Windows 10 systems.",
+        "mode": "automated",
+        "class": "compliance",
+        "purpose": "assessment",
+        "specification": {
+          "id": "scap-ng.pre-alpha.assessment",
+          "version": "0.4.0"
+        },
+        "tests": {
+          "run-a-powershell-command-to-determine-if-secure-boot-must-be-enabled-0a8825d3-test": {
+            "test_title": "Run a PowerShell command to determine if Secure Boot must be enabled.",
+            "capability": "independent.shellcommand",
+            "object": {
+              "shell": "powershell",
+              "command": "Confirm-SecureBootUEFI",
+              "pattern": "",
+              "error_if_exit_status_not_0": false,
+              "error_if_stderr_exists": false
+            },
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "fields": {
+                "stdout_line": {
+                  "equals": "True",
+                  "values_found": "one_or_more",
+                  "values_matching": "every"
+                }
+              }
+            },
+            "reported_elements": "all"
+          }
+        },
+        "evaluate": {
+          "test": "run-a-powershell-command-to-determine-if-secure-boot-must-be-enabled-0a8825d3-test"
+        }
+      }
+    },
+    "independent_proof": {
+      "rule": "xccdf_mil.disa.stig_rule_SV-220700r991589_rule",
+      "outcome": "PROVED",
+      "test_bindings": {
+        "oval:navy.navwar.niwcatlantic.scc.windows:tst:22070001": "run-a-powershell-command-to-determine-if-secure-boot-must-be-enabled-0a8825d3-test"
+      },
+      "comparisons": [
+        {
+          "source_test": "oval:navy.navwar.niwcatlantic.scc.windows:tst:22070001",
+          "native_test": "run-a-powershell-command-to-determine-if-secure-boot-must-be-enabled-0a8825d3-test",
+          "source_term": {
+            "capability": "independent.shellcommand",
+            "object": {
+              "capability": "independent.shellcommand",
+              "selectors": {
+                "shell": {
+                  "datatype": "string",
+                  "value": "powershell"
+                },
+                "command": {
+                  "datatype": "string",
+                  "value": "Confirm-SecureBootUEFI"
+                },
+                "pattern": {
+                  "datatype": "string",
+                  "value": ""
+                },
+                "error_if_exit_status_not_0": false,
+                "error_if_stderr_exists": false
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "stdout_line",
+              "predicate": {
+                "operation": "equals",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "True"
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "native_term": {
+            "capability": "independent.shellcommand",
+            "object": {
+              "capability": "independent.shellcommand",
+              "selectors": {
+                "shell": {
+                  "datatype": "string",
+                  "value": "powershell"
+                },
+                "command": {
+                  "datatype": "string",
+                  "value": "Confirm-SecureBootUEFI"
+                },
+                "pattern": {
+                  "datatype": "string",
+                  "value": ""
+                },
+                "error_if_exit_status_not_0": false,
+                "error_if_stderr_exists": false
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "stdout_line",
+              "predicate": {
+                "operation": "equals",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "True"
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "term_sha256": "1cd3a25d395eaa28b764322eeb71e9908fa68dd28f81b2bbca8a69dd4568ba6e"
+        }
+      ],
+      "unsupported_obligations": [],
+      "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+      "normalizations_applied": []
+    }
+  },
+  {
+    "benchmark": "U_MS_Windows_10_V3R7_STIG_SCAP_1-4_Benchmark-enhancedV17-signed",
+    "source_rule": "xccdf_mil.disa.stig_rule_SV-220706r1153413_rule",
+    "assessment": {
+      "assessment": {
+        "id": "windows-10-systems-must-be-maintained-at-a-supported-servicing-level-f7367e40-assessment",
+        "version": 1,
+        "assessment_title": "Windows 10 systems must be maintained at a supported servicing level.",
+        "mode": "automated",
+        "class": "compliance",
+        "purpose": "assessment",
+        "specification": {
+          "id": "scap-ng.pre-alpha.assessment",
+          "version": "0.4.0"
+        },
+        "tests": {
+          "the-installed-operating-system-belongs-to-the-microsoft-windows-family-17a0140f-test": {
+            "test_title": "The installed operating system belongs to the Microsoft Windows family",
+            "capability": "independent.family",
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "fields": {
+                "family": {
+                  "equals": "windows",
+                  "values_found": "one_or_more",
+                  "values_matching": "every"
+                }
+              }
+            },
+            "reported_elements": "all"
+          },
+          "the-installed-operating-system-is-windows-10-or-11-aea0862e-test": {
+            "test_title": "The installed operating system is Windows 10 or 11",
+            "capability": "windows.registry",
+            "object": {
+              "hive": {
+                "equals": "local_machine"
+              },
+              "key": {
+                "equals": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+              },
+              "name": {
+                "equals": "ProductName"
+              }
+            },
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "fields": {
+                "value": {
+                  "matches_regex": "^[Ww][Ii][Nn][Dd][Oo][Ww][Ss] 1[01].*$",
+                  "values_found": "one_or_more",
+                  "values_matching": "every"
+                }
+              }
+            },
+            "reported_elements": "all"
+          },
+          "the-current-build-number-is-less-than-22000-8bb20f0c-test": {
+            "test_title": "The current build number is less than 22000.",
+            "capability": "windows.registry",
+            "object": {
+              "hive": {
+                "equals": "local_machine"
+              },
+              "key": {
+                "equals": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+              },
+              "name": {
+                "equals": "CurrentBuildNumber"
+              }
+            },
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "fields": {
+                "value": {
+                  "less_than": 22000,
+                  "datatype": "integer",
+                  "values_found": "one_or_more",
+                  "values_matching": "every"
+                }
+              }
+            },
+            "reported_elements": "all"
+          }
+        },
+        "evaluate": {
+          "not": {
+            "and": [
+              {
+                "test": "the-installed-operating-system-belongs-to-the-microsoft-windows-family-17a0140f-test"
+              },
+              {
+                "test": "the-installed-operating-system-is-windows-10-or-11-aea0862e-test"
+              },
+              {
+                "test": "the-current-build-number-is-less-than-22000-8bb20f0c-test"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "independent_proof": {
+      "rule": "xccdf_mil.disa.stig_rule_SV-220706r1153413_rule",
+      "outcome": "PROVED",
+      "test_bindings": {
+        "oval:mil.disa.stig.ind:tst:10000000": "the-installed-operating-system-belongs-to-the-microsoft-windows-family-17a0140f-test",
+        "oval:mil.disa.stig.win:tst:10000000": "the-installed-operating-system-is-windows-10-or-11-aea0862e-test",
+        "oval:mil.disa.stig.win:tst:10000003": "the-current-build-number-is-less-than-22000-8bb20f0c-test"
+      },
+      "comparisons": [
+        {
+          "source_test": "oval:mil.disa.stig.ind:tst:10000000",
+          "native_test": "the-installed-operating-system-belongs-to-the-microsoft-windows-family-17a0140f-test",
+          "source_term": {
+            "capability": "independent.family",
+            "object": {
+              "capability": "independent.family",
+              "selectors": {}
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "family",
+              "predicate": {
+                "operation": "equals",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "windows"
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "native_term": {
+            "capability": "independent.family",
+            "object": {
+              "capability": "independent.family",
+              "selectors": {}
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "family",
+              "predicate": {
+                "operation": "equals",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "windows"
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "term_sha256": "29f9a6eb125b700f6a64e86a6c8d5245d5de61a94d9499af86dedf906550e756"
+        },
+        {
+          "source_test": "oval:mil.disa.stig.win:tst:10000000",
+          "native_test": "the-installed-operating-system-is-windows-10-or-11-aea0862e-test",
+          "source_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "ProductName"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "value",
+              "predicate": {
+                "operation": "matches_regex",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "^[Ww][Ii][Nn][Dd][Oo][Ww][Ss] 1[01].*$"
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "native_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "ProductName"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "value",
+              "predicate": {
+                "operation": "matches_regex",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "^[Ww][Ii][Nn][Dd][Oo][Ww][Ss] 1[01].*$"
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "term_sha256": "3a1d902a1043ef588df68d489ebfdf0fb590ed076bbd8706866fb5b2aecafb6f"
+        },
+        {
+          "source_test": "oval:mil.disa.stig.win:tst:10000003",
+          "native_test": "the-current-build-number-is-less-than-22000-8bb20f0c-test",
+          "source_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "CurrentBuildNumber"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "value",
+              "predicate": {
+                "operation": "less_than",
+                "comparison_datatype": "integer",
+                "operand": {
+                  "datatype": "integer",
+                  "value": 22000
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "native_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "CurrentBuildNumber"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "value",
+              "predicate": {
+                "operation": "less_than",
+                "comparison_datatype": "integer",
+                "operand": {
+                  "datatype": "integer",
+                  "value": 22000
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "term_sha256": "6158e403b8ecf03816fcca3d23029ab3b7aadb0dbaeaf0b5c93e9dc38f05dfe2"
+        }
+      ],
+      "unsupported_obligations": [],
+      "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+      "normalizations_applied": []
+    }
+  },
+  {
+    "benchmark": "U_MS_Windows_Server_2016_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+    "source_rule": "xccdf_mil.disa.stig_rule_SV-224820r982200_rule",
+    "assessment": {
+      "assessment": {
+        "id": "passwords-for-the-built-in-administrator-account-must-be-changed-at-le-d321cf04-assessment",
+        "version": 1,
+        "assessment_title": "Passwords for the built-in Administrator account must be changed at least every 60 days.",
+        "mode": "automated",
+        "class": "compliance",
+        "purpose": "assessment",
+        "specification": {
+          "id": "scap-ng.pre-alpha.assessment",
+          "version": "0.4.0"
+        },
+        "shared_objects": {
+          "domainrole-property-640ed726-object": {
+            "capability": "windows.wmi.query",
+            "namespace": "root\\cimv2",
+            "query": "SELECT DomainRole FROM win32_computersystem",
+            "object_title": "DomainRole property"
+          }
+        },
+        "tests": {
+          "get-password-age-of-built-in-administrator-on-domain-controller-43fc4a64-test": {
+            "test_title": "Get Password Age of built-in administrator on domain controller",
+            "capability": "independent.shellcommand",
+            "object": {
+              "shell": "powershell",
+              "command": "try{$user = Get-ADUser -Filter * -Properties SID, PasswordLastSet | Where SID -Like '*-500'; ([datetime]::Now - $user.PasswordLastSet).Days} catch {[Console]::Error.WriteLine('Get-ADUser cmdlet is not available on this system.')}",
+              "pattern": "",
+              "error_if_exit_status_not_0": false,
+              "error_if_stderr_exists": false
+            },
+            "require": {
+              "items_found": "may_be_absent",
+              "items_satisfying": "exactly_one",
+              "fields": {
+                "stdout_line": {
+                  "less_than_or_equal": 60,
+                  "datatype": "integer",
+                  "values_found": "one_or_more",
+                  "values_matching": "every"
+                }
+              }
+            },
+            "reported_elements": "all"
+          },
+          "system-is-a-domain-controller-4f908f22-test": {
+            "test_title": "System is a domain controller",
+            "capability": "windows.wmi.query",
+            "object": "domainrole-property-640ed726-object",
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "fields": {
+                "result": {
+                  "record": {
+                    "records_found": "one_or_more",
+                    "records_matching": "every",
+                    "fields": {
+                      "domainrole": {
+                        "equals": "5",
+                        "values_found": "one_or_more",
+                        "values_matching": "every"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "reported_elements": "all"
+          },
+          "get-password-age-of-built-in-administrator-on-member-server-or-standal-2399e468-test": {
+            "test_title": "Get Password Age of built-in administrator on member server or standalone system",
+            "capability": "independent.shellcommand",
+            "object": {
+              "shell": "powershell",
+              "command": "$user = Get-Localuser | Where-Object {$_.SID -like '*-500'}; ([datetime]::Now - $user.PasswordLastSet).Days",
+              "pattern": "",
+              "error_if_exit_status_not_0": false,
+              "error_if_stderr_exists": false
+            },
+            "require": {
+              "items_found": "may_be_absent",
+              "items_satisfying": "exactly_one",
+              "fields": {
+                "stdout_line": {
+                  "less_than_or_equal": 60,
+                  "datatype": "integer",
+                  "values_found": "one_or_more",
+                  "values_matching": "every"
+                }
+              }
+            },
+            "reported_elements": "all"
+          },
+          "system-is-a-member-server-or-standalone-nondomain-joined-86eb2106-test": {
+            "test_title": "System is a member server or standalone/nondomain-joined",
+            "capability": "windows.wmi.query",
+            "object": "domainrole-property-640ed726-object",
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "or": [
+                {
+                  "fields": {
+                    "result": {
+                      "record": {
+                        "records_found": "one_or_more",
+                        "records_matching": "every",
+                        "fields": {
+                          "domainrole": {
+                            "equals": "2",
+                            "values_found": "one_or_more",
+                            "values_matching": "every"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "result": {
+                      "record": {
+                        "records_found": "one_or_more",
+                        "records_matching": "every",
+                        "fields": {
+                          "domainrole": {
+                            "equals": "3",
+                            "values_found": "one_or_more",
+                            "values_matching": "every"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "reported_elements": "all"
+          }
+        },
+        "evaluate": {
+          "or": [
+            {
+              "and": [
+                {
+                  "test": "get-password-age-of-built-in-administrator-on-domain-controller-43fc4a64-test"
+                },
+                {
+                  "test": "system-is-a-domain-controller-4f908f22-test"
+                }
+              ]
+            },
+            {
+              "and": [
+                {
+                  "test": "get-password-age-of-built-in-administrator-on-member-server-or-standal-2399e468-test"
+                },
+                {
+                  "test": "system-is-a-member-server-or-standalone-nondomain-joined-86eb2106-test"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "independent_proof": {
+      "rule": "xccdf_mil.disa.stig_rule_SV-224820r982200_rule",
+      "outcome": "PROVED",
+      "test_bindings": {
+        "oval:navy.navwar.niwcatlantic.scc.windows:tst:22482001": "get-password-age-of-built-in-administrator-on-domain-controller-43fc4a64-test",
+        "oval:navy.navwar.niwcatlantic.scc.windows:tst:22482003": "system-is-a-domain-controller-4f908f22-test",
+        "oval:navy.navwar.niwcatlantic.scc.windows:tst:22482002": "get-password-age-of-built-in-administrator-on-member-server-or-standal-2399e468-test",
+        "oval:navy.navwar.niwcatlantic.scc.windows:tst:22482004": "system-is-a-member-server-or-standalone-nondomain-joined-86eb2106-test"
+      },
+      "comparisons": [
+        {
+          "source_test": "oval:navy.navwar.niwcatlantic.scc.windows:tst:22482001",
+          "native_test": "get-password-age-of-built-in-administrator-on-domain-controller-43fc4a64-test",
+          "source_term": {
+            "capability": "independent.shellcommand",
+            "object": {
+              "capability": "independent.shellcommand",
+              "selectors": {
+                "shell": {
+                  "datatype": "string",
+                  "value": "powershell"
+                },
+                "command": {
+                  "datatype": "string",
+                  "value": "try{$user = Get-ADUser -Filter * -Properties SID, PasswordLastSet | Where SID -Like '*-500'; ([datetime]::Now - $user.PasswordLastSet).Days} catch {[Console]::Error.WriteLine('Get-ADUser cmdlet is not available on this system.')}"
+                },
+                "pattern": {
+                  "datatype": "string",
+                  "value": ""
+                },
+                "error_if_exit_status_not_0": false,
+                "error_if_stderr_exists": false
+              }
+            },
+            "found": "may_be_absent",
+            "matching": "exactly_one",
+            "condition": {
+              "field": "stdout_line",
+              "predicate": {
+                "operation": "less_than_or_equal",
+                "comparison_datatype": "integer",
+                "operand": {
+                  "datatype": "integer",
+                  "value": 60
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "native_term": {
+            "capability": "independent.shellcommand",
+            "object": {
+              "capability": "independent.shellcommand",
+              "selectors": {
+                "shell": {
+                  "datatype": "string",
+                  "value": "powershell"
+                },
+                "command": {
+                  "datatype": "string",
+                  "value": "try{$user = Get-ADUser -Filter * -Properties SID, PasswordLastSet | Where SID -Like '*-500'; ([datetime]::Now - $user.PasswordLastSet).Days} catch {[Console]::Error.WriteLine('Get-ADUser cmdlet is not available on this system.')}"
+                },
+                "pattern": {
+                  "datatype": "string",
+                  "value": ""
+                },
+                "error_if_exit_status_not_0": false,
+                "error_if_stderr_exists": false
+              }
+            },
+            "found": "may_be_absent",
+            "matching": "exactly_one",
+            "condition": {
+              "field": "stdout_line",
+              "predicate": {
+                "operation": "less_than_or_equal",
+                "comparison_datatype": "integer",
+                "operand": {
+                  "datatype": "integer",
+                  "value": 60
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "term_sha256": "8452bcf5e98642d9ca8310480f5261c35fc691b5eb092e7cc569bed078a957c3"
+        },
+        {
+          "source_test": "oval:navy.navwar.niwcatlantic.scc.windows:tst:22482003",
+          "native_test": "system-is-a-domain-controller-4f908f22-test",
+          "source_term": {
+            "capability": "windows.wmi.query",
+            "object": {
+              "capability": "windows.wmi.query",
+              "selectors": {
+                "namespace": {
+                  "datatype": "string",
+                  "value": "root\\cimv2"
+                },
+                "query": {
+                  "datatype": "string",
+                  "value": "SELECT DomainRole FROM win32_computersystem"
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "result",
+              "predicate": {
+                "operation": "equals",
+                "comparison_datatype": "record",
+                "operand": {
+                  "record": {
+                    "domainrole": {
+                      "operation": "equals",
+                      "comparison_datatype": "string",
+                      "operand": {
+                        "datatype": "string",
+                        "value": "5"
+                      },
+                      "found": "one_or_more",
+                      "matching": "every"
+                    }
+                  }
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "native_term": {
+            "capability": "windows.wmi.query",
+            "object": {
+              "capability": "windows.wmi.query",
+              "selectors": {
+                "namespace": {
+                  "datatype": "string",
+                  "value": "root\\cimv2"
+                },
+                "query": {
+                  "datatype": "string",
+                  "value": "SELECT DomainRole FROM win32_computersystem"
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "result",
+              "predicate": {
+                "operation": "equals",
+                "comparison_datatype": "record",
+                "found": "one_or_more",
+                "matching": "every",
+                "operand": {
+                  "record": {
+                    "domainrole": {
+                      "operation": "equals",
+                      "comparison_datatype": "string",
+                      "operand": {
+                        "datatype": "string",
+                        "value": "5"
+                      },
+                      "found": "one_or_more",
+                      "matching": "every"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "term_sha256": "baf6109009ce4312e6bf502e444e2e9a6876731476d990b34ce355a1c4cc1823"
+        },
+        {
+          "source_test": "oval:navy.navwar.niwcatlantic.scc.windows:tst:22482002",
+          "native_test": "get-password-age-of-built-in-administrator-on-member-server-or-standal-2399e468-test",
+          "source_term": {
+            "capability": "independent.shellcommand",
+            "object": {
+              "capability": "independent.shellcommand",
+              "selectors": {
+                "shell": {
+                  "datatype": "string",
+                  "value": "powershell"
+                },
+                "command": {
+                  "datatype": "string",
+                  "value": "$user = Get-Localuser | Where-Object {$_.SID -like '*-500'}; ([datetime]::Now - $user.PasswordLastSet).Days"
+                },
+                "pattern": {
+                  "datatype": "string",
+                  "value": ""
+                },
+                "error_if_exit_status_not_0": false,
+                "error_if_stderr_exists": false
+              }
+            },
+            "found": "may_be_absent",
+            "matching": "exactly_one",
+            "condition": {
+              "field": "stdout_line",
+              "predicate": {
+                "operation": "less_than_or_equal",
+                "comparison_datatype": "integer",
+                "operand": {
+                  "datatype": "integer",
+                  "value": 60
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "native_term": {
+            "capability": "independent.shellcommand",
+            "object": {
+              "capability": "independent.shellcommand",
+              "selectors": {
+                "shell": {
+                  "datatype": "string",
+                  "value": "powershell"
+                },
+                "command": {
+                  "datatype": "string",
+                  "value": "$user = Get-Localuser | Where-Object {$_.SID -like '*-500'}; ([datetime]::Now - $user.PasswordLastSet).Days"
+                },
+                "pattern": {
+                  "datatype": "string",
+                  "value": ""
+                },
+                "error_if_exit_status_not_0": false,
+                "error_if_stderr_exists": false
+              }
+            },
+            "found": "may_be_absent",
+            "matching": "exactly_one",
+            "condition": {
+              "field": "stdout_line",
+              "predicate": {
+                "operation": "less_than_or_equal",
+                "comparison_datatype": "integer",
+                "operand": {
+                  "datatype": "integer",
+                  "value": 60
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "term_sha256": "1f9688c638ef4ae382e2768d8d1b04c6914ae301e2b3886e2018c5dab5dc11b9"
+        },
+        {
+          "source_test": "oval:navy.navwar.niwcatlantic.scc.windows:tst:22482004",
+          "native_test": "system-is-a-member-server-or-standalone-nondomain-joined-86eb2106-test",
+          "source_term": {
+            "capability": "windows.wmi.query",
+            "object": {
+              "capability": "windows.wmi.query",
+              "selectors": {
+                "namespace": {
+                  "datatype": "string",
+                  "value": "root\\cimv2"
+                },
+                "query": {
+                  "datatype": "string",
+                  "value": "SELECT DomainRole FROM win32_computersystem"
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "or": [
+                {
+                  "field": "result",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "record",
+                    "operand": {
+                      "record": {
+                        "domainrole": {
+                          "operation": "equals",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "datatype": "string",
+                            "value": "2"
+                          },
+                          "found": "one_or_more",
+                          "matching": "every"
+                        }
+                      }
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "result",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "record",
+                    "operand": {
+                      "record": {
+                        "domainrole": {
+                          "operation": "equals",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "datatype": "string",
+                            "value": "3"
+                          },
+                          "found": "one_or_more",
+                          "matching": "every"
+                        }
+                      }
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "native_term": {
+            "capability": "windows.wmi.query",
+            "object": {
+              "capability": "windows.wmi.query",
+              "selectors": {
+                "namespace": {
+                  "datatype": "string",
+                  "value": "root\\cimv2"
+                },
+                "query": {
+                  "datatype": "string",
+                  "value": "SELECT DomainRole FROM win32_computersystem"
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "or": [
+                {
+                  "field": "result",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "record",
+                    "found": "one_or_more",
+                    "matching": "every",
+                    "operand": {
+                      "record": {
+                        "domainrole": {
+                          "operation": "equals",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "datatype": "string",
+                            "value": "2"
+                          },
+                          "found": "one_or_more",
+                          "matching": "every"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "field": "result",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "record",
+                    "found": "one_or_more",
+                    "matching": "every",
+                    "operand": {
+                      "record": {
+                        "domainrole": {
+                          "operation": "equals",
+                          "comparison_datatype": "string",
+                          "operand": {
+                            "datatype": "string",
+                            "value": "3"
+                          },
+                          "found": "one_or_more",
+                          "matching": "every"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "term_sha256": "2a05795e357dcf3dece979911c6e9cd5f3bca1b51fa09c60a24bdf30e6313bfe"
+        }
+      ],
+      "unsupported_obligations": [],
+      "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+      "normalizations_applied": []
+    }
+  },
+  {
+    "benchmark": "U_MS_Windows_Server_2016_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+    "source_rule": "xccdf_mil.disa.stig_rule_SV-224823r1016376_rule",
+    "assessment": {
+      "assessment": {
+        "id": "manually-managed-application-account-passwords-must-be-at-least-14-cha-c62133e4-assessment",
+        "version": 1,
+        "assessment_title": "Manually managed application account passwords must be at least 14 characters in length.",
+        "mode": "automated",
+        "class": "compliance",
+        "purpose": "assessment",
+        "specification": {
+          "id": "scap-ng.pre-alpha.assessment",
+          "version": "0.4.0"
+        },
+        "tests": {
+          "verify-password-length-setting-is-required-to-be-14-or-more-characters-d715cfbc-test": {
+            "test_title": "Verify Password Length Setting is required to be 14 or more characters.",
+            "capability": "windows.passwordpolicy",
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "fields": {
+                "min_passwd_len": {
+                  "greater_than_or_equal": 14,
+                  "datatype": "integer",
+                  "values_found": "one_or_more",
+                  "values_matching": "every"
+                }
+              }
+            },
+            "reported_elements": "all"
+          }
+        },
+        "evaluate": {
+          "test": "verify-password-length-setting-is-required-to-be-14-or-more-characters-d715cfbc-test"
+        }
+      }
+    },
+    "independent_proof": {
+      "rule": "xccdf_mil.disa.stig_rule_SV-224823r1016376_rule",
+      "outcome": "PROVED",
+      "test_bindings": {
+        "oval:navy.navwar.niwcatlantic.scc.windows:tst:22482301": "verify-password-length-setting-is-required-to-be-14-or-more-characters-d715cfbc-test"
+      },
+      "comparisons": [
+        {
+          "source_test": "oval:navy.navwar.niwcatlantic.scc.windows:tst:22482301",
+          "native_test": "verify-password-length-setting-is-required-to-be-14-or-more-characters-d715cfbc-test",
+          "source_term": {
+            "capability": "windows.passwordpolicy",
+            "object": {
+              "capability": "windows.passwordpolicy",
+              "selectors": {}
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "min_passwd_len",
+              "predicate": {
+                "operation": "greater_than_or_equal",
+                "comparison_datatype": "integer",
+                "operand": {
+                  "datatype": "integer",
+                  "value": 14
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "native_term": {
+            "capability": "windows.passwordpolicy",
+            "object": {
+              "capability": "windows.passwordpolicy",
+              "selectors": {}
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "min_passwd_len",
+              "predicate": {
+                "operation": "greater_than_or_equal",
+                "comparison_datatype": "integer",
+                "operand": {
+                  "datatype": "integer",
+                  "value": 14
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "term_sha256": "d9947eb681c1e0258af9677420193d234ad92dfe17b0e9317c1de8c56958b953"
+        }
+      ],
+      "unsupported_obligations": [],
+      "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+      "normalizations_applied": []
+    }
+  },
+  {
+    "benchmark": "U_MS_Windows_Server_2016_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+    "source_rule": "xccdf_mil.disa.stig_rule_SV-224828r991589_rule",
+    "assessment": {
+      "assessment": {
+        "id": "systems-must-be-maintained-at-a-supported-servicing-level-12badf1c-assessment",
+        "version": 1,
+        "assessment_title": "Systems must be maintained at a supported servicing level.",
+        "mode": "automated",
+        "class": "compliance",
+        "purpose": "assessment",
+        "specification": {
+          "id": "scap-ng.pre-alpha.assessment",
+          "version": "0.4.0"
+        },
+        "tests": {
+          "verifies-the-os-major-version-is-equal-to-or-greater-than-10-4ea422e6-test": {
+            "test_title": "Verifies the OS Major Version is equal to or greater than 10",
+            "capability": "windows.registry",
+            "object": {
+              "hive": {
+                "equals": "local_machine"
+              },
+              "key": {
+                "equals": "Software\\Microsoft\\Windows NT\\CurrentVersion"
+              },
+              "name": {
+                "equals": "CurrentMajorVersionNumber"
+              }
+            },
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "and": [
+                {
+                  "fields": {
+                    "type": {
+                      "equals": "dword",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "value": {
+                      "greater_than_or_equal": 10,
+                      "datatype": "integer",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                }
+              ]
+            },
+            "reported_elements": "all"
+          },
+          "verifies-the-os-build-currentnumber-is-equal-to-or-greater-than-14393-6314e418-test": {
+            "test_title": "Verifies the OS Build (currentNumber) is equal to or greater than 14393",
+            "capability": "windows.registry",
+            "object": {
+              "hive": {
+                "equals": "local_machine"
+              },
+              "key": {
+                "equals": "Software\\Microsoft\\Windows NT\\CurrentVersion"
+              },
+              "name": {
+                "equals": "CurrentBuildNumber"
+              }
+            },
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "and": [
+                {
+                  "fields": {
+                    "type": {
+                      "equals": "string",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "value": {
+                      "version_greater_than_or_equal": "14393",
+                      "datatype": "version",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                }
+              ]
+            },
+            "reported_elements": "all"
+          },
+          "verifies-the-os-release-is-equal-to-or-greater-than-1607-d0cc8d5d-test": {
+            "test_title": "Verifies the OS Release is equal to or greater than 1607",
+            "capability": "windows.registry",
+            "object": {
+              "hive": {
+                "equals": "local_machine"
+              },
+              "key": {
+                "equals": "Software\\Microsoft\\Windows NT\\CurrentVersion"
+              },
+              "name": {
+                "equals": "ReleaseId"
+              }
+            },
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "and": [
+                {
+                  "fields": {
+                    "type": {
+                      "equals": "string",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "value": {
+                      "version_greater_than_or_equal": "1607",
+                      "datatype": "version",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                }
+              ]
+            },
+            "reported_elements": "all"
+          },
+          "verifies-the-os-build-current-is-equal-to-or-greater-than-14393-7dc58fe6-test": {
+            "test_title": "Verifies the OS Build (current) is equal to or greater than 14393",
+            "capability": "windows.registry",
+            "object": {
+              "hive": {
+                "equals": "local_machine"
+              },
+              "key": {
+                "equals": "Software\\Microsoft\\Windows NT\\CurrentVersion"
+              },
+              "name": {
+                "equals": "CurrentBuild"
+              }
+            },
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "and": [
+                {
+                  "fields": {
+                    "type": {
+                      "equals": "string",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "value": {
+                      "version_greater_than_or_equal": "14393",
+                      "datatype": "version",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                }
+              ]
+            },
+            "reported_elements": "all"
+          }
+        },
+        "evaluate": {
+          "and": [
+            {
+              "test": "verifies-the-os-major-version-is-equal-to-or-greater-than-10-4ea422e6-test"
+            },
+            {
+              "test": "verifies-the-os-build-currentnumber-is-equal-to-or-greater-than-14393-6314e418-test"
+            },
+            {
+              "test": "verifies-the-os-release-is-equal-to-or-greater-than-1607-d0cc8d5d-test"
+            },
+            {
+              "test": "verifies-the-os-build-current-is-equal-to-or-greater-than-14393-7dc58fe6-test"
+            }
+          ]
+        }
+      }
+    },
+    "independent_proof": {
+      "rule": "xccdf_mil.disa.stig_rule_SV-224828r991589_rule",
+      "outcome": "PROVED",
+      "test_bindings": {
+        "oval:mil.disa.stig.windows:tst:102000": "verifies-the-os-major-version-is-equal-to-or-greater-than-10-4ea422e6-test",
+        "oval:mil.disa.stig.windows:tst:102001": "verifies-the-os-build-currentnumber-is-equal-to-or-greater-than-14393-6314e418-test",
+        "oval:mil.disa.stig.windows:tst:102002": "verifies-the-os-release-is-equal-to-or-greater-than-1607-d0cc8d5d-test",
+        "oval:mil.disa.stig.windows:tst:102003": "verifies-the-os-build-current-is-equal-to-or-greater-than-14393-7dc58fe6-test"
+      },
+      "comparisons": [
+        {
+          "source_test": "oval:mil.disa.stig.windows:tst:102000",
+          "native_test": "verifies-the-os-major-version-is-equal-to-or-greater-than-10-4ea422e6-test",
+          "source_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "Software\\Microsoft\\Windows NT\\CurrentVersion"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "CurrentMajorVersionNumber"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "value",
+                  "predicate": {
+                    "operation": "greater_than_or_equal",
+                    "comparison_datatype": "integer",
+                    "operand": {
+                      "datatype": "integer",
+                      "value": 10
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "type",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "dword"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "native_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "Software\\Microsoft\\Windows NT\\CurrentVersion"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "CurrentMajorVersionNumber"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "value",
+                  "predicate": {
+                    "operation": "greater_than_or_equal",
+                    "comparison_datatype": "integer",
+                    "operand": {
+                      "datatype": "integer",
+                      "value": 10
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "type",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "dword"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "term_sha256": "53eecef4e674abc2356fb8714b30d76d8f2ed2f2a1cf36c0cc8de7168ae3afc9"
+        },
+        {
+          "source_test": "oval:mil.disa.stig.windows:tst:102001",
+          "native_test": "verifies-the-os-build-currentnumber-is-equal-to-or-greater-than-14393-6314e418-test",
+          "source_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "Software\\Microsoft\\Windows NT\\CurrentVersion"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "CurrentBuildNumber"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "value",
+                  "predicate": {
+                    "operation": "greater_than_or_equal",
+                    "comparison_datatype": "version",
+                    "operand": {
+                      "datatype": "version",
+                      "value": "14393"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "type",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "string"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "native_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "Software\\Microsoft\\Windows NT\\CurrentVersion"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "CurrentBuildNumber"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "value",
+                  "predicate": {
+                    "operation": "greater_than_or_equal",
+                    "comparison_datatype": "version",
+                    "operand": {
+                      "datatype": "version",
+                      "value": "14393"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "type",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "string"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "term_sha256": "1dfa66892231a07cac03e475dfc93bd8bdf666f643d4a7da61dbbdc1a0ce967a"
+        },
+        {
+          "source_test": "oval:mil.disa.stig.windows:tst:102002",
+          "native_test": "verifies-the-os-release-is-equal-to-or-greater-than-1607-d0cc8d5d-test",
+          "source_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "Software\\Microsoft\\Windows NT\\CurrentVersion"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "ReleaseId"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "value",
+                  "predicate": {
+                    "operation": "greater_than_or_equal",
+                    "comparison_datatype": "version",
+                    "operand": {
+                      "datatype": "version",
+                      "value": "1607"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "type",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "string"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "native_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "Software\\Microsoft\\Windows NT\\CurrentVersion"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "ReleaseId"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "value",
+                  "predicate": {
+                    "operation": "greater_than_or_equal",
+                    "comparison_datatype": "version",
+                    "operand": {
+                      "datatype": "version",
+                      "value": "1607"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "type",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "string"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "term_sha256": "147bf039151f13061fae2feddad408c8d63377a5758cd17d35e2a46d202aa41d"
+        },
+        {
+          "source_test": "oval:mil.disa.stig.windows:tst:102003",
+          "native_test": "verifies-the-os-build-current-is-equal-to-or-greater-than-14393-7dc58fe6-test",
+          "source_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "Software\\Microsoft\\Windows NT\\CurrentVersion"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "CurrentBuild"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "value",
+                  "predicate": {
+                    "operation": "greater_than_or_equal",
+                    "comparison_datatype": "version",
+                    "operand": {
+                      "datatype": "version",
+                      "value": "14393"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "type",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "string"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "native_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "Software\\Microsoft\\Windows NT\\CurrentVersion"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "CurrentBuild"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "value",
+                  "predicate": {
+                    "operation": "greater_than_or_equal",
+                    "comparison_datatype": "version",
+                    "operand": {
+                      "datatype": "version",
+                      "value": "14393"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "type",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "string"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "term_sha256": "c94683ed3f3fea40d790068398b8837f839557f98e7e190438c9a0fe622ff5ce"
+        }
+      ],
+      "unsupported_obligations": [],
+      "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+      "normalizations_applied": []
+    }
+  },
+  {
+    "benchmark": "U_MS_Windows_Server_2022_V2R10_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+    "source_rule": "xccdf_mil.disa.stig_rule_SV-254242r1051087_rule",
+    "assessment": {
+      "assessment": {
+        "id": "windows-server-2022-manually-managed-application-account-passwords-mus-4311ac0f-assessment",
+        "version": 1,
+        "assessment_title": "Windows Server 2022 manually managed application account passwords must be at least 14 characters in length.",
+        "mode": "automated",
+        "class": "compliance",
+        "purpose": "assessment",
+        "specification": {
+          "id": "scap-ng.pre-alpha.assessment",
+          "version": "0.4.0"
+        },
+        "tests": {
+          "verify-password-length-setting-is-required-to-be-14-or-more-characters-fe1d538f-test": {
+            "test_title": "Verify Password Length Setting is required to be 14 or more characters.",
+            "capability": "windows.passwordpolicy",
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "fields": {
+                "min_passwd_len": {
+                  "greater_than_or_equal": 14,
+                  "datatype": "integer",
+                  "values_found": "one_or_more",
+                  "values_matching": "every"
+                }
+              }
+            },
+            "reported_elements": "all"
+          }
+        },
+        "evaluate": {
+          "test": "verify-password-length-setting-is-required-to-be-14-or-more-characters-fe1d538f-test"
+        }
+      }
+    },
+    "independent_proof": {
+      "rule": "xccdf_mil.disa.stig_rule_SV-254242r1051087_rule",
+      "outcome": "PROVED",
+      "test_bindings": {
+        "oval:navy.navwar.niwcatlantic.scc.windows:tst:25424201": "verify-password-length-setting-is-required-to-be-14-or-more-characters-fe1d538f-test"
+      },
+      "comparisons": [
+        {
+          "source_test": "oval:navy.navwar.niwcatlantic.scc.windows:tst:25424201",
+          "native_test": "verify-password-length-setting-is-required-to-be-14-or-more-characters-fe1d538f-test",
+          "source_term": {
+            "capability": "windows.passwordpolicy",
+            "object": {
+              "capability": "windows.passwordpolicy",
+              "selectors": {}
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "min_passwd_len",
+              "predicate": {
+                "operation": "greater_than_or_equal",
+                "comparison_datatype": "integer",
+                "operand": {
+                  "datatype": "integer",
+                  "value": 14
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "native_term": {
+            "capability": "windows.passwordpolicy",
+            "object": {
+              "capability": "windows.passwordpolicy",
+              "selectors": {}
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "min_passwd_len",
+              "predicate": {
+                "operation": "greater_than_or_equal",
+                "comparison_datatype": "integer",
+                "operand": {
+                  "datatype": "integer",
+                  "value": 14
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "term_sha256": "d9947eb681c1e0258af9677420193d234ad92dfe17b0e9317c1de8c56958b953"
+        }
+      ],
+      "unsupported_obligations": [],
+      "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+      "normalizations_applied": []
+    }
+  },
+  {
+    "benchmark": "U_MS_Windows_Server_2022_V2R10_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+    "source_rule": "xccdf_mil.disa.stig_rule_SV-254247r991589_rule",
+    "assessment": {
+      "assessment": {
+        "id": "windows-server-2022-must-be-maintained-at-a-supported-servicing-level-5ca07033-assessment",
+        "version": 1,
+        "assessment_title": "Windows Server 2022 must be maintained at a supported servicing level.",
+        "mode": "automated",
+        "class": "compliance",
+        "purpose": "assessment",
+        "specification": {
+          "id": "scap-ng.pre-alpha.assessment",
+          "version": "0.4.0"
+        },
+        "tests": {
+          "the-os-version-is-equal-to-or-greater-than-6-3-6c931b68-test": {
+            "test_title": "The OS Version is equal to or greater than 6.3",
+            "capability": "windows.registry",
+            "object": {
+              "hive": {
+                "equals": "local_machine"
+              },
+              "key": {
+                "equals": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+              },
+              "name": {
+                "equals": "CurrentVersion"
+              }
+            },
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "and": [
+                {
+                  "fields": {
+                    "type": {
+                      "equals": "string",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "value": {
+                      "version_greater_than_or_equal": "6.3",
+                      "datatype": "version",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                }
+              ]
+            },
+            "reported_elements": "all"
+          },
+          "the-os-build-is-equal-to-or-greater-than-20348-5fcb20e7-test": {
+            "test_title": "The OS Build is equal to or greater than 20348",
+            "capability": "windows.registry",
+            "object": {
+              "hive": {
+                "equals": "local_machine"
+              },
+              "key": {
+                "equals": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+              },
+              "name": {
+                "equals": "CurrentBuildNumber"
+              }
+            },
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "and": [
+                {
+                  "fields": {
+                    "type": {
+                      "equals": "string",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "value": {
+                      "version_greater_than_or_equal": "20348",
+                      "datatype": "version",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                }
+              ]
+            },
+            "reported_elements": "all"
+          }
+        },
+        "evaluate": {
+          "and": [
+            {
+              "test": "the-os-version-is-equal-to-or-greater-than-6-3-6c931b68-test"
+            },
+            {
+              "test": "the-os-build-is-equal-to-or-greater-than-20348-5fcb20e7-test"
+            }
+          ]
+        }
+      }
+    },
+    "independent_proof": {
+      "rule": "xccdf_mil.disa.stig_rule_SV-254247r991589_rule",
+      "outcome": "PROVED",
+      "test_bindings": {
+        "oval:mil.disa.stig.win:tst:25326300": "the-os-version-is-equal-to-or-greater-than-6-3-6c931b68-test",
+        "oval:mil.disa.stig.win:tst:25424700": "the-os-build-is-equal-to-or-greater-than-20348-5fcb20e7-test"
+      },
+      "comparisons": [
+        {
+          "source_test": "oval:mil.disa.stig.win:tst:25326300",
+          "native_test": "the-os-version-is-equal-to-or-greater-than-6-3-6c931b68-test",
+          "source_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "CurrentVersion"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "value",
+                  "predicate": {
+                    "operation": "greater_than_or_equal",
+                    "comparison_datatype": "version",
+                    "operand": {
+                      "datatype": "version",
+                      "value": "6.3"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "type",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "string"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "native_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "CurrentVersion"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "value",
+                  "predicate": {
+                    "operation": "greater_than_or_equal",
+                    "comparison_datatype": "version",
+                    "operand": {
+                      "datatype": "version",
+                      "value": "6.3"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "type",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "string"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "term_sha256": "21e743b133bfbf61e893f955132dc03180c70130ea1de14090b0ed7c78c21cd9"
+        },
+        {
+          "source_test": "oval:mil.disa.stig.win:tst:25424700",
+          "native_test": "the-os-build-is-equal-to-or-greater-than-20348-5fcb20e7-test",
+          "source_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "CurrentBuildNumber"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "value",
+                  "predicate": {
+                    "operation": "greater_than_or_equal",
+                    "comparison_datatype": "version",
+                    "operand": {
+                      "datatype": "version",
+                      "value": "20348"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "type",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "string"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "native_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "CurrentBuildNumber"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "value",
+                  "predicate": {
+                    "operation": "greater_than_or_equal",
+                    "comparison_datatype": "version",
+                    "operand": {
+                      "datatype": "version",
+                      "value": "20348"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "type",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "string"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "term_sha256": "f5d5eac5f8af86006e1af3ecada06c3f2689670020d0648115d3ff496c6122e5"
+        }
+      ],
+      "unsupported_obligations": [],
+      "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+      "normalizations_applied": []
+    }
+  },
+  {
+    "benchmark": "U_MS_Windows_Server_2022_V2R10_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+    "source_rule": "xccdf_mil.disa.stig_rule_SV-254250r1137691_rule",
+    "assessment": {
+      "assessment": {
+        "id": "windows-server-2022-local-volumes-must-use-a-format-that-supports-ntfs-46dc3151-assessment",
+        "version": 1,
+        "assessment_title": "Windows Server 2022 local volumes must use a format that supports NTFS attributes.",
+        "mode": "automated",
+        "class": "compliance",
+        "purpose": "assessment",
+        "specification": {
+          "id": "scap-ng.pre-alpha.assessment",
+          "version": "0.4.0"
+        },
+        "tests": {
+          "local-volumes-are-formatted-using-ntfs-refs-or-csvfs-cd6114f1-test": {
+            "test_title": "local volumes are formatted using NTFS, ReFS or CSVFS",
+            "capability": "windows.wmi.query",
+            "object": {
+              "namespace": "root\\cimv2",
+              "query": "SELECT filesystem FROM win32_logicaldisk WHERE drivetype=3 AND filesystem!='NTFS' AND filesystem!='ReFS' AND filesystem!='CSVFS'"
+            },
+            "require": {
+              "items_found": "none"
+            },
+            "reported_elements": "all"
+          }
+        },
+        "evaluate": {
+          "test": "local-volumes-are-formatted-using-ntfs-refs-or-csvfs-cd6114f1-test"
+        }
+      }
+    },
+    "independent_proof": {
+      "rule": "xccdf_mil.disa.stig_rule_SV-254250r1137691_rule",
+      "outcome": "PROVED",
+      "test_bindings": {
+        "oval:mil.disa.stig.win:tst:25425000": "local-volumes-are-formatted-using-ntfs-refs-or-csvfs-cd6114f1-test"
+      },
+      "comparisons": [
+        {
+          "source_test": "oval:mil.disa.stig.win:tst:25425000",
+          "native_test": "local-volumes-are-formatted-using-ntfs-refs-or-csvfs-cd6114f1-test",
+          "source_term": {
+            "capability": "windows.wmi.query",
+            "object": {
+              "capability": "windows.wmi.query",
+              "selectors": {
+                "namespace": {
+                  "datatype": "string",
+                  "value": "root\\cimv2"
+                },
+                "query": {
+                  "datatype": "string",
+                  "value": "SELECT filesystem FROM win32_logicaldisk WHERE drivetype=3 AND filesystem!='NTFS' AND filesystem!='ReFS' AND filesystem!='CSVFS'"
+                }
+              }
+            },
+            "found": "none"
+          },
+          "native_term": {
+            "capability": "windows.wmi.query",
+            "object": {
+              "capability": "windows.wmi.query",
+              "selectors": {
+                "namespace": {
+                  "datatype": "string",
+                  "value": "root\\cimv2"
+                },
+                "query": {
+                  "datatype": "string",
+                  "value": "SELECT filesystem FROM win32_logicaldisk WHERE drivetype=3 AND filesystem!='NTFS' AND filesystem!='ReFS' AND filesystem!='CSVFS'"
+                }
+              }
+            },
+            "found": "none"
+          },
+          "term_sha256": "f249542ddc65e9d0310994900a218bbe048cd6b39a4e39a322bceed78ba03a75"
+        }
+      ],
+      "unsupported_obligations": [],
+      "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+      "normalizations_applied": []
+    }
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "evidence_id": "2026-10-29-compiled-proof-batch-001-dc42163d2",
+  "evidence_kind": "production migration evidence; independently verified static primary OVAL subset",
+  "created_at": "2026-10-29T13:11:08.099490+00:00",
+  "source_repository": "vanderpol/scap-ng",
+  "source_commits": [
+    "dc42163d20c23874efa3888a53f9701095dc5316"
+  ],
+  "generating_tool": "tools/v04_direct_converter.py --verify / verify_v04_direct_scope.accept_source",
+  "generating_tool_commit": "10f4e35b331c622c14f6e3aa2bd4aa8981c810c1",
+  "reproduction_driver": "reproduce.py (snapshot, not a competing converter)",
+  "source_revision": "niwc-atlantic/scap-content-library@8c8e5dff860af6b1290ee9273a282db24278f8d5",
+  "frozen_draft_sha256": "5f86d016c1bce82018eec82c6468ab583816ff0b38c8d3ea5e9210a931cc1a08",
+  "cohort_size": 3138,
+  "selected": 243,
+  "new_primary_proofs": 243,
+  "unchanged_frozen_authoring_program_pairs": 243,
+  "negative_mutations_rejected": 22,
+  "source_pins": [
+    {
+      "file": "U_MS_Windows_Server_2019_V3R9_STIG_SCAP_1-4_Benchmark-enhancedV19-signed.zip",
+      "repository_path": "Current/U_MS_Windows_Server_2019_V3R9_STIG_SCAP_1-4_Benchmark-enhancedV19-signed.zip",
+      "git_blob_sha": "0349c5a663f099fcecc2f32540d362ab3587fa39",
+      "sha256": "54113f747a0a256f66b8c8db34763daebee3dc2c769041ec5f043ec7ed5948a1",
+      "bytes": 251174
+    }
+  ],
+  "exact_commands": [
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python reproduce.py --benchmark U_MS_Windows_Server_2019_V3R9_STIG_SCAP_1-4_Benchmark-enhancedV19-signed --output NEW_OUTPUT_ROOT --inputs ORIGINAL_ZIP_DIRECTORY"
+  ],
+  "validation_status": "VERIFIED_STATIC_PRIMARY_SUBSET",
+  "checks": [
+    "Original ZIP SHA-256 and Git blob identity",
+    "Original OVAL XSD/Schematron/semantic validity and deprecation guard",
+    "Original Rule and dependency identities match frozen ledger",
+    "Native schemas and independent source/native typed terms",
+    "Frozen authoring identity and exact compiled program hash retention",
+    "Independent compiled operand and package consumers",
+    "Representative source/native cardinality mutants rejected"
+  ],
+  "unchanged_implementation_ci": "https://github.com/vanderpol/scap-ng/actions/runs/40867417638",
+  "implementation_ci_result": "3284 run, 3283 passed, zero failures/errors, one existing skip; all nine exact-code workflows pass",
+  "limitations": [
+    "Primary OVAL only; original policy/CPE/manual execution not proved",
+    "Static verification, not scanner runtime or complete toolchain release",
+    "Frozen DRAFT archive remains unchanged",
+    "Failed or unsupported closures remain explicit and do not enter accepted packages",
+    "Existing 1072 anchor + 4 guard proofs and 523 conformance proof records remain separate and unchanged"
+  ],
+  "output_file_count": 983,
+  "files": {
+    "proof-hashes.json": {
+      "bytes": 321508,
+      "sha256": "ab33434fce95e7d5c526d9b30c084ebb021f9b577e851bdc0d3e400824b531b2"
+    },
+    "representatives.json": {
+      "bytes": 48711,
+      "sha256": "c9e0cb0a875a2500a18a340b45be1988e9e0bbbd03f7ae1f8520180b90895718"
+    },
+    "reproduce.py": {
+      "bytes": 8081,
+      "sha256": "7367b47b75bab615dd50e7dcc73126e4f68ca15d893fe205a08b3a50a016d38d"
+    },
+    "batch-evidence.zip": {
+      "bytes": 2216969,
+      "sha256": "665c1f8a99cfb4788a101348cfe4ccd866fd0877f239aa0afb9fde2ce4b0f879"
+    }
+  }
+}

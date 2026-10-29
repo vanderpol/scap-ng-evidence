@@ -23,3 +23,6 @@ runs/
 - [2026-10-28 verified static six-source primary OVAL](v04-converter/2026-10-28-six-primary-static-verified-248895772/README.md): 1,072 independent primary proofs, all 1,055 previous program hashes retained, exact-commit maintained suite green; no runtime claim.
 
 - [2026-10-29 verified static enum-selector conformance](v04-converter/2026-10-29-identity-enum-static-verified-66a166bf2/README.md): two original Tests added, all 521 previous four-hash proofs and 1,072 primary programs retained; exact-commit integration green.
+
+- [2026-10-29 compiled-cohort proof batch 001](v04-converter/2026-10-29-compiled-proof-batch-001-dc42163d2/README.md): 243 original Windows Server 2019 primary Rules independently proved; frozen authoring/program hashes retained.
+- [2026-10-29 compiled-cohort proof batch 002](v04-converter/2026-10-29-compiled-proof-batch-002-dc42163d2/README.md): 602 original Server 2022, Windows 10 and Server 2016 primary Rules independently proved; original source validation and frozen hash retention.

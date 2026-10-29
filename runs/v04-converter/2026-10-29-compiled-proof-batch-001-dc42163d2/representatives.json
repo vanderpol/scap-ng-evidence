@@ -1,0 +1,1214 @@
+[
+  {
+    "benchmark": "U_MS_Windows_Server_2019_V3R9_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+    "source_rule": "xccdf_mil.disa.stig_rule_SV-205625r958368_rule",
+    "assessment": {
+      "assessment": {
+        "id": "windows-server-2019-must-be-configured-to-audit-account-management-sec-ae021230-assessment",
+        "version": 1,
+        "assessment_title": "Windows Server 2019 must be configured to audit Account Management - Security Group Management successes.",
+        "mode": "automated",
+        "class": "compliance",
+        "purpose": "assessment",
+        "specification": {
+          "id": "scap-ng.pre-alpha.assessment",
+          "version": "0.4.0"
+        },
+        "tests": {
+          "audit-security-group-management-is-set-to-success-or-success-and-failu-80dc103a-test": {
+            "test_title": "'Audit Security Group Management' is set to 'Success' or 'Success and Failure'",
+            "capability": "windows.auditeventpolicysubcategories",
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "or": [
+                {
+                  "fields": {
+                    "security_group_management": {
+                      "equals": "AUDIT_SUCCESS",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "security_group_management": {
+                      "equals": "AUDIT_SUCCESS_FAILURE",
+                      "values_found": "one_or_more",
+                      "values_matching": "every"
+                    }
+                  }
+                }
+              ]
+            },
+            "reported_elements": "all"
+          }
+        },
+        "evaluate": {
+          "test": "audit-security-group-management-is-set-to-success-or-success-and-failu-80dc103a-test"
+        }
+      }
+    },
+    "independent_proof": {
+      "rule": "xccdf_mil.disa.stig_rule_SV-205625r958368_rule",
+      "outcome": "PROVED",
+      "test_bindings": {
+        "oval:mil.disa.stig.win:tst:25330800": "audit-security-group-management-is-set-to-success-or-success-and-failu-80dc103a-test"
+      },
+      "comparisons": [
+        {
+          "source_test": "oval:mil.disa.stig.win:tst:25330800",
+          "native_test": "audit-security-group-management-is-set-to-success-or-success-and-failu-80dc103a-test",
+          "source_term": {
+            "capability": "windows.auditeventpolicysubcategories",
+            "object": {
+              "capability": "windows.auditeventpolicysubcategories",
+              "selectors": {}
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "or": [
+                {
+                  "field": "security_group_management",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "AUDIT_SUCCESS"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "security_group_management",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "AUDIT_SUCCESS_FAILURE"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "native_term": {
+            "capability": "windows.auditeventpolicysubcategories",
+            "object": {
+              "capability": "windows.auditeventpolicysubcategories",
+              "selectors": {}
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "or": [
+                {
+                  "field": "security_group_management",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "AUDIT_SUCCESS"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "security_group_management",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "AUDIT_SUCCESS_FAILURE"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "term_sha256": "257a97f96dad576aba745fa059eb3c54ea78f86c19743cc3e948964c63371ed1"
+        }
+      ],
+      "unsupported_obligations": [],
+      "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+      "normalizations_applied": []
+    }
+  },
+  {
+    "benchmark": "U_MS_Windows_Server_2019_V3R9_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+    "source_rule": "xccdf_mil.disa.stig_rule_SV-205629r958388_rule",
+    "assessment": {
+      "assessment": {
+        "id": "windows-server-2019-must-have-the-number-of-allowed-bad-logon-attempts-aa42d6f2-assessment",
+        "version": 1,
+        "assessment_title": "Windows Server 2019 must have the number of allowed bad logon attempts configured to three or less.",
+        "mode": "automated",
+        "class": "compliance",
+        "purpose": "assessment",
+        "specification": {
+          "id": "scap-ng.pre-alpha.assessment",
+          "version": "0.4.0"
+        },
+        "tests": {
+          "account-lockout-threshold-is-set-to-3-or-less-d2bed2e1-test": {
+            "test_title": "'Account lockout threshold' is set to '3' or less",
+            "capability": "windows.lockoutpolicy",
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "fields": {
+                "lockout_threshold": {
+                  "less_than_or_equal": 3,
+                  "datatype": "integer",
+                  "values_found": "one_or_more",
+                  "values_matching": "every"
+                }
+              }
+            },
+            "reported_elements": "all"
+          },
+          "account-lockout-threshold-is-not-set-to-0-870535b1-test": {
+            "test_title": "'Account lockout threshold' is not set to '0'",
+            "capability": "windows.lockoutpolicy",
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every",
+              "fields": {
+                "lockout_threshold": {
+                  "greater_than": 0,
+                  "datatype": "integer",
+                  "values_found": "one_or_more",
+                  "values_matching": "every"
+                }
+              }
+            },
+            "reported_elements": "all"
+          }
+        },
+        "evaluate": {
+          "and": [
+            {
+              "test": "account-lockout-threshold-is-set-to-3-or-less-d2bed2e1-test"
+            },
+            {
+              "test": "account-lockout-threshold-is-not-set-to-0-870535b1-test"
+            }
+          ]
+        }
+      }
+    },
+    "independent_proof": {
+      "rule": "xccdf_mil.disa.stig_rule_SV-205629r958388_rule",
+      "outcome": "PROVED",
+      "test_bindings": {
+        "oval:mil.disa.stig.win:tst:25329800": "account-lockout-threshold-is-set-to-3-or-less-d2bed2e1-test",
+        "oval:mil.disa.stig.win:tst:25329801": "account-lockout-threshold-is-not-set-to-0-870535b1-test"
+      },
+      "comparisons": [
+        {
+          "source_test": "oval:mil.disa.stig.win:tst:25329800",
+          "native_test": "account-lockout-threshold-is-set-to-3-or-less-d2bed2e1-test",
+          "source_term": {
+            "capability": "windows.lockoutpolicy",
+            "object": {
+              "capability": "windows.lockoutpolicy",
+              "selectors": {}
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "lockout_threshold",
+              "predicate": {
+                "operation": "less_than_or_equal",
+                "comparison_datatype": "integer",
+                "operand": {
+                  "datatype": "integer",
+                  "value": 3
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "native_term": {
+            "capability": "windows.lockoutpolicy",
+            "object": {
+              "capability": "windows.lockoutpolicy",
+              "selectors": {}
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "lockout_threshold",
+              "predicate": {
+                "operation": "less_than_or_equal",
+                "comparison_datatype": "integer",
+                "operand": {
+                  "datatype": "integer",
+                  "value": 3
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "term_sha256": "01f26bbb2f0f9b426f21dbb8ce7d72229137be799983e3973d0c0a29969a980f"
+        },
+        {
+          "source_test": "oval:mil.disa.stig.win:tst:25329801",
+          "native_test": "account-lockout-threshold-is-not-set-to-0-870535b1-test",
+          "source_term": {
+            "capability": "windows.lockoutpolicy",
+            "object": {
+              "capability": "windows.lockoutpolicy",
+              "selectors": {}
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "lockout_threshold",
+              "predicate": {
+                "operation": "greater_than",
+                "comparison_datatype": "integer",
+                "operand": {
+                  "datatype": "integer",
+                  "value": 0
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "native_term": {
+            "capability": "windows.lockoutpolicy",
+            "object": {
+              "capability": "windows.lockoutpolicy",
+              "selectors": {}
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "field": "lockout_threshold",
+              "predicate": {
+                "operation": "greater_than",
+                "comparison_datatype": "integer",
+                "operand": {
+                  "datatype": "integer",
+                  "value": 0
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "term_sha256": "bf07d5b81febc39cab46c8aecece391839f10d24eaee0c38074f38c7d9c96955"
+        }
+      ],
+      "unsupported_obligations": [],
+      "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+      "normalizations_applied": []
+    }
+  },
+  {
+    "benchmark": "U_MS_Windows_Server_2019_V3R9_STIG_SCAP_1-4_Benchmark-enhancedV19-signed",
+    "source_rule": "xccdf_mil.disa.stig_rule_SV-205631r958390_rule",
+    "assessment": {
+      "assessment": {
+        "id": "windows-server-2019-required-legal-notice-must-be-configured-to-displa-0975e224-assessment",
+        "version": 1,
+        "assessment_title": "Windows Server 2019 required legal notice must be configured to display before console logon.",
+        "mode": "automated",
+        "class": "compliance",
+        "purpose": "assessment",
+        "specification": {
+          "id": "scap-ng.pre-alpha.assessment",
+          "version": "0.4.0"
+        },
+        "shared_objects": {
+          "legal-notice-text-4b8b2bb6-object": {
+            "capability": "windows.registry",
+            "hive": {
+              "equals": "local_machine"
+            },
+            "key": {
+              "equals": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System"
+            },
+            "name": {
+              "equals": "LegalNoticeText"
+            },
+            "object_title": "Legal notice text"
+          }
+        },
+        "tests": {
+          "the-required-legal-notice-must-be-configured-to-display-before-console-c1c4eb09-test": {
+            "test_title": "The required legal notice must be configured to display before console logon - Message Content 1",
+            "capability": "windows.registry",
+            "object": "legal-notice-text-4b8b2bb6-object",
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "exactly_one",
+              "fields": {
+                "value": {
+                  "matches_regex": "You are accessing a U.S. Government \\(USG\\) Information System \\(IS\\) that is provided for USG-authorized use only.",
+                  "values_found": "one_or_more",
+                  "values_matching": "every"
+                }
+              }
+            },
+            "reported_elements": "all"
+          },
+          "the-required-legal-notice-must-be-configured-to-display-before-console-02679686-test": {
+            "test_title": "The required legal notice must be configured to display before console logon - Message Content 2",
+            "capability": "windows.registry",
+            "object": "legal-notice-text-4b8b2bb6-object",
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "exactly_one",
+              "fields": {
+                "value": {
+                  "matches_regex": "By using this IS \\(which includes any device attached to this IS\\), you consent to the following conditions:",
+                  "values_found": "one_or_more",
+                  "values_matching": "every"
+                }
+              }
+            },
+            "reported_elements": "all"
+          },
+          "the-required-legal-notice-must-be-configured-to-display-before-console-5e884515-test": {
+            "test_title": "The required legal notice must be configured to display before console logon - Message Content 3",
+            "capability": "windows.registry",
+            "object": "legal-notice-text-4b8b2bb6-object",
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "exactly_one",
+              "fields": {
+                "value": {
+                  "matches_regex": "-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct \\(PM\\), law enforcement \\(LE\\), and counterintelligence \\(CI\\) investigations.",
+                  "values_found": "one_or_more",
+                  "values_matching": "every"
+                }
+              }
+            },
+            "reported_elements": "all"
+          },
+          "the-required-legal-notice-must-be-configured-to-display-before-console-d3ab6fc8-test": {
+            "test_title": "The required legal notice must be configured to display before console logon - Message Content 4",
+            "capability": "windows.registry",
+            "object": "legal-notice-text-4b8b2bb6-object",
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "exactly_one",
+              "fields": {
+                "value": {
+                  "matches_regex": "-At any time, the USG may inspect and seize data stored on this IS.",
+                  "values_found": "one_or_more",
+                  "values_matching": "every"
+                }
+              }
+            },
+            "reported_elements": "all"
+          },
+          "the-required-legal-notice-must-be-configured-to-display-before-console-9ca788e5-test": {
+            "test_title": "The required legal notice must be configured to display before console logon - Message Content 5",
+            "capability": "windows.registry",
+            "object": "legal-notice-text-4b8b2bb6-object",
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "exactly_one",
+              "fields": {
+                "value": {
+                  "matches_regex": "-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.",
+                  "values_found": "one_or_more",
+                  "values_matching": "every"
+                }
+              }
+            },
+            "reported_elements": "all"
+          },
+          "the-required-legal-notice-must-be-configured-to-display-before-console-fc32c7bd-test": {
+            "test_title": "The required legal notice must be configured to display before console logon - Message Content 6",
+            "capability": "windows.registry",
+            "object": "legal-notice-text-4b8b2bb6-object",
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "exactly_one",
+              "fields": {
+                "value": {
+                  "matches_regex": "-This IS includes security measures \\(e.g., authentication and access controls\\) to protect USG interests--not for your personal benefit or privacy.",
+                  "values_found": "one_or_more",
+                  "values_matching": "every"
+                }
+              }
+            },
+            "reported_elements": "all"
+          },
+          "the-required-legal-notice-must-be-configured-to-display-before-console-eb81c749-test": {
+            "test_title": "The required legal notice must be configured to display before console logon - Message Content 7",
+            "capability": "windows.registry",
+            "object": "legal-notice-text-4b8b2bb6-object",
+            "require": {
+              "items_found": "one_or_more",
+              "items_satisfying": "exactly_one",
+              "fields": {
+                "value": {
+                  "matches_regex": "-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details.",
+                  "values_found": "one_or_more",
+                  "values_matching": "every"
+                }
+              }
+            },
+            "reported_elements": "all"
+          }
+        },
+        "evaluate": {
+          "and": [
+            {
+              "test": "the-required-legal-notice-must-be-configured-to-display-before-console-c1c4eb09-test"
+            },
+            {
+              "test": "the-required-legal-notice-must-be-configured-to-display-before-console-02679686-test"
+            },
+            {
+              "test": "the-required-legal-notice-must-be-configured-to-display-before-console-5e884515-test"
+            },
+            {
+              "test": "the-required-legal-notice-must-be-configured-to-display-before-console-d3ab6fc8-test"
+            },
+            {
+              "test": "the-required-legal-notice-must-be-configured-to-display-before-console-9ca788e5-test"
+            },
+            {
+              "test": "the-required-legal-notice-must-be-configured-to-display-before-console-fc32c7bd-test"
+            },
+            {
+              "test": "the-required-legal-notice-must-be-configured-to-display-before-console-eb81c749-test"
+            }
+          ]
+        }
+      }
+    },
+    "independent_proof": {
+      "rule": "xccdf_mil.disa.stig_rule_SV-205631r958390_rule",
+      "outcome": "PROVED",
+      "test_bindings": {
+        "oval:navy.navwar.niwcatlantic.scc.windows:tst:20563101": "the-required-legal-notice-must-be-configured-to-display-before-console-c1c4eb09-test",
+        "oval:navy.navwar.niwcatlantic.scc.windows:tst:20563102": "the-required-legal-notice-must-be-configured-to-display-before-console-02679686-test",
+        "oval:navy.navwar.niwcatlantic.scc.windows:tst:20563103": "the-required-legal-notice-must-be-configured-to-display-before-console-5e884515-test",
+        "oval:navy.navwar.niwcatlantic.scc.windows:tst:20563104": "the-required-legal-notice-must-be-configured-to-display-before-console-d3ab6fc8-test",
+        "oval:navy.navwar.niwcatlantic.scc.windows:tst:20563105": "the-required-legal-notice-must-be-configured-to-display-before-console-9ca788e5-test",
+        "oval:navy.navwar.niwcatlantic.scc.windows:tst:20563106": "the-required-legal-notice-must-be-configured-to-display-before-console-fc32c7bd-test",
+        "oval:navy.navwar.niwcatlantic.scc.windows:tst:20563107": "the-required-legal-notice-must-be-configured-to-display-before-console-eb81c749-test"
+      },
+      "comparisons": [
+        {
+          "source_test": "oval:navy.navwar.niwcatlantic.scc.windows:tst:20563101",
+          "native_test": "the-required-legal-notice-must-be-configured-to-display-before-console-c1c4eb09-test",
+          "source_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "LegalNoticeText"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "exactly_one",
+            "condition": {
+              "field": "value",
+              "predicate": {
+                "operation": "matches_regex",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "You are accessing a U.S. Government \\(USG\\) Information System \\(IS\\) that is provided for USG-authorized use only."
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "native_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "LegalNoticeText"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "exactly_one",
+            "condition": {
+              "field": "value",
+              "predicate": {
+                "operation": "matches_regex",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "You are accessing a U.S. Government \\(USG\\) Information System \\(IS\\) that is provided for USG-authorized use only."
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "term_sha256": "3c2ff35d173ef7b34e1d19282e27ff67b4fc50c4643603bb1cce8ffc188e0199"
+        },
+        {
+          "source_test": "oval:navy.navwar.niwcatlantic.scc.windows:tst:20563102",
+          "native_test": "the-required-legal-notice-must-be-configured-to-display-before-console-02679686-test",
+          "source_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "LegalNoticeText"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "exactly_one",
+            "condition": {
+              "field": "value",
+              "predicate": {
+                "operation": "matches_regex",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "By using this IS \\(which includes any device attached to this IS\\), you consent to the following conditions:"
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "native_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "LegalNoticeText"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "exactly_one",
+            "condition": {
+              "field": "value",
+              "predicate": {
+                "operation": "matches_regex",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "By using this IS \\(which includes any device attached to this IS\\), you consent to the following conditions:"
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "term_sha256": "439714e5e81e57ef64f4a3cdc71d0a1a3c220d7532a97f493e6a067aeec74349"
+        },
+        {
+          "source_test": "oval:navy.navwar.niwcatlantic.scc.windows:tst:20563103",
+          "native_test": "the-required-legal-notice-must-be-configured-to-display-before-console-5e884515-test",
+          "source_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "LegalNoticeText"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "exactly_one",
+            "condition": {
+              "field": "value",
+              "predicate": {
+                "operation": "matches_regex",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct \\(PM\\), law enforcement \\(LE\\), and counterintelligence \\(CI\\) investigations."
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "native_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "LegalNoticeText"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "exactly_one",
+            "condition": {
+              "field": "value",
+              "predicate": {
+                "operation": "matches_regex",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct \\(PM\\), law enforcement \\(LE\\), and counterintelligence \\(CI\\) investigations."
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "term_sha256": "5b2ff71e6722162040a5836a71da6c45a5df0e1f793f59b17304f1fa43e2d4a4"
+        },
+        {
+          "source_test": "oval:navy.navwar.niwcatlantic.scc.windows:tst:20563104",
+          "native_test": "the-required-legal-notice-must-be-configured-to-display-before-console-d3ab6fc8-test",
+          "source_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "LegalNoticeText"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "exactly_one",
+            "condition": {
+              "field": "value",
+              "predicate": {
+                "operation": "matches_regex",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "-At any time, the USG may inspect and seize data stored on this IS."
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "native_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "LegalNoticeText"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "exactly_one",
+            "condition": {
+              "field": "value",
+              "predicate": {
+                "operation": "matches_regex",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "-At any time, the USG may inspect and seize data stored on this IS."
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "term_sha256": "56b127bab55763a529571fec2faf544e28cc6798222c606b3c9dd7eca110f58d"
+        },
+        {
+          "source_test": "oval:navy.navwar.niwcatlantic.scc.windows:tst:20563105",
+          "native_test": "the-required-legal-notice-must-be-configured-to-display-before-console-9ca788e5-test",
+          "source_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "LegalNoticeText"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "exactly_one",
+            "condition": {
+              "field": "value",
+              "predicate": {
+                "operation": "matches_regex",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose."
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "native_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "LegalNoticeText"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "exactly_one",
+            "condition": {
+              "field": "value",
+              "predicate": {
+                "operation": "matches_regex",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose."
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "term_sha256": "d29c7dbdbe10f376c418d5ae5d5697e7ea6764c99623dda379bdd51a4c22ed11"
+        },
+        {
+          "source_test": "oval:navy.navwar.niwcatlantic.scc.windows:tst:20563106",
+          "native_test": "the-required-legal-notice-must-be-configured-to-display-before-console-fc32c7bd-test",
+          "source_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "LegalNoticeText"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "exactly_one",
+            "condition": {
+              "field": "value",
+              "predicate": {
+                "operation": "matches_regex",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "-This IS includes security measures \\(e.g., authentication and access controls\\) to protect USG interests--not for your personal benefit or privacy."
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "native_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "LegalNoticeText"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "exactly_one",
+            "condition": {
+              "field": "value",
+              "predicate": {
+                "operation": "matches_regex",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "-This IS includes security measures \\(e.g., authentication and access controls\\) to protect USG interests--not for your personal benefit or privacy."
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "term_sha256": "c955446717fd22bedad2add8f2718aec2544a2b0b44a9667096a119d4a9d287c"
+        },
+        {
+          "source_test": "oval:navy.navwar.niwcatlantic.scc.windows:tst:20563107",
+          "native_test": "the-required-legal-notice-must-be-configured-to-display-before-console-eb81c749-test",
+          "source_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "LegalNoticeText"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "exactly_one",
+            "condition": {
+              "field": "value",
+              "predicate": {
+                "operation": "matches_regex",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "native_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "LegalNoticeText"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "exactly_one",
+            "condition": {
+              "field": "value",
+              "predicate": {
+                "operation": "matches_regex",
+                "comparison_datatype": "string",
+                "operand": {
+                  "datatype": "string",
+                  "value": "-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+                },
+                "found": "one_or_more",
+                "matching": "every"
+              }
+            }
+          },
+          "term_sha256": "fc60c3295605c836b50521f772465ddced778ce00ae51bbce282d50a4bc8f40e"
+        }
+      ],
+      "unsupported_obligations": [],
+      "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+      "normalizations_applied": []
+    }
+  }
+]
