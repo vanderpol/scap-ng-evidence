@@ -1,0 +1,69 @@
+{
+  "evidence_id": "v04-all-65-complete-draft-stage-one-20261029",
+  "evidence_kind": "production-migration-draft",
+  "created_at": "2026-10-29T20:03:38.740746+00:00",
+  "source_repository": "vanderpol/scap-ng",
+  "source_commit": "0b2fdb2d392c5d80a4128d73ae4ac5ada573cf26",
+  "generating_tool": "tools/build_v04_full_draft.py + tools/finalize_v04_full_draft.py",
+  "generating_tool_commit": "0b2fdb2d392c5d80a4128d73ae4ac5ada573cf26",
+  "reproduction": "README.md and pinned builder command; packaging script included separately",
+  "inputs": "source-pins.json; 65 original ZIPs at NIWC 8c8e5dff860af6b1290ee9273a282db24278f8d5",
+  "output_root": "all-65-complete-draft.zip",
+  "output_file_count": 26939,
+  "archive": {
+    "file": "all-65-complete-draft.zip",
+    "bytes": 81003351,
+    "sha256": "5338f760dbc043f6302bc7d65e65a130281c22549f9ea34f2a4e51f4921ff18c"
+  },
+  "validation_status": "DRAFT; original preservation, accounting, schema, compilation and retained-proof hashes PASS; 52 native candidates independently UNVERIFIED",
+  "checks": [
+    "All 65 original ZIP byte counts and SHA-256 retained",
+    "Every original Rule XML identity retained",
+    "No fabricated blocked/manual Assessment",
+    "Every native candidate has JSON/YAML and an exact authoring hash",
+    "Compiled program hashes agree with actual diagnostic packages",
+    "All published proof authoring/program/source-Rule hashes retained",
+    "4258 candidates compiled with checked operands",
+    "archive CRC and every expanded payload digest checked"
+  ],
+  "counts": {
+    "benchmarks": 65,
+    "rules": 8892,
+    "automated_conversion_attempts": 7239,
+    "retained_published_proofs": 4206,
+    "statuses": {
+      "BLOCKED_EXPLICIT": 2981,
+      "MANUAL_OCIL_ONLY_PRESERVED": 1653,
+      "RETAINED_PUBLISHED_STATIC_PRIMARY_PROOF": 4206,
+      "CONVERTED_SCHEMA_VALID_UNVERIFIED": 52
+    },
+    "blocked_primary_dispositions": {
+      "catalog_binding": 992,
+      "blocked_contract_255": 1630,
+      "other_converter_or_source_investigation": 39,
+      "known_invalid_or_deprecated_original": 32,
+      "sqlext_package": 137,
+      "effective_deprecated_original": 151
+    }
+  },
+  "maintained_ci": {
+    "source_commit": "0b2fdb2d392c5d80a4128d73ae4ac5ada573cf26",
+    "run": 40927089208,
+    "job": 123635368063,
+    "tests_run": 3308,
+    "passed": 3307,
+    "skips": 1,
+    "failures": 0,
+    "errors": 0,
+    "seconds": 603.717,
+    "artifact": 12920644342
+  },
+  "limitations": [
+    "DRAFT, not verified for execution",
+    "Native primary subset; complete original policy/manual content preserved separately",
+    "Unverified candidates require original validity and independent proof in stage two",
+    "No schema/#255/source-repair/runtime acceptance inferred"
+  ],
+  "storage_decision": "See STORAGE-DECISION.md; explicit inspectable DRAFT deliverable authorized under #251",
+  "interrupted_payload_recovery": "Original local build directory absent; regenerated once because necessary, preserving pinned code/input/proof floor and all prior archive bytes."
+}
