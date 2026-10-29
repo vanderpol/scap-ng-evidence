@@ -1,0 +1,61 @@
+{
+  "format": "scap-ng-0.4.0-native-assessment-program/0.1",
+  "assessment_id": "application-pool-setting-example-all-application-pools-reviewed-variab-6be816b4-assessment",
+  "assessment_source_sha256": "4ba1db2c19709fac4410c2a7098585c56dd33bba4c6990a8304682749c570b21",
+  "test_instructions": [
+    {
+      "opcode": "CHECK_ITEM_CONDITION",
+      "test_id": "application-pool-setting-example-all-application-pools-reviewed-variab-6be816b4-test",
+      "capability": "windows.appcmd",
+      "source_test_sha256": "9a44ddc7688144529c5685063ef542a9707b75464113701d6e62e5f9b387536f",
+      "operands": {
+        "test_title": "Application Pool Setting Example - All Application Pools Reviewed Variable Test identifier_type",
+        "capability": "windows.appcmd",
+        "object": {
+          "identifier_type": {
+            "equals": {
+              "variable": "apppool-21523498-variable"
+            },
+            "datatype": "string",
+            "value_match": "every"
+          },
+          "identifier": {
+            "matches_regex": ".*"
+          },
+          "parameter": {
+            "equals": "recycling.periodicRestart.time"
+          }
+        },
+        "require": {
+          "items_found": "one_or_more",
+          "items_satisfying": "every",
+          "fields": {
+            "result": {
+              "matches_regex": ".*",
+              "values_found": "one_or_more",
+              "values_matching": "every"
+            }
+          }
+        },
+        "reported_elements": "all"
+      }
+    }
+  ],
+  "result_instructions": [
+    {
+      "op": "read_test",
+      "id": "application-pool-setting-example-all-application-pools-reviewed-variab-6be816b4-test",
+      "path": [
+        "evaluate"
+      ]
+    }
+  ],
+  "result_requires": {
+    "tests": [
+      "application-pool-setting-example-all-application-pools-reviewed-variab-6be816b4-test"
+    ],
+    "dependencies": []
+  },
+  "result_expression_sha256": "396358e59e19a41be34d1da948ce04898e2ab369c7535eb185736e0097d10555",
+  "scanner_evaluated": false
+}

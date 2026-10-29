@@ -1,0 +1,63 @@
+{
+  "capability": "windows.appcmdlistconfig",
+  "object": {
+    "capability": "windows.appcmdlistconfig",
+    "selectors": {
+      "identifier_type": {
+        "operation": "equals",
+        "comparison_datatype": "string",
+        "operand": {
+          "local": {
+            "datatype": "string",
+            "expression": {
+              "literal": {
+                "datatype": "string",
+                "value": "Site"
+              }
+            }
+          }
+        },
+        "expected_matching": "every"
+      },
+      "identifier": {
+        "operation": "equals",
+        "comparison_datatype": "string",
+        "operand": {
+          "datatype": "string",
+          "value": "Default Web Site"
+        }
+      },
+      "section": {
+        "operation": "equals",
+        "comparison_datatype": "string",
+        "operand": {
+          "datatype": "string",
+          "value": "system.webServer/security/authentication/anonymousAuthentication"
+        }
+      },
+      "parameter": {
+        "operation": "equals",
+        "comparison_datatype": "string",
+        "operand": {
+          "datatype": "string",
+          "value": "logonMethod"
+        }
+      }
+    }
+  },
+  "found": "one_or_more",
+  "matching": "every",
+  "condition": {
+    "field": "result",
+    "predicate": {
+      "operation": "matches_regex",
+      "comparison_datatype": "string",
+      "operand": {
+        "datatype": "string",
+        "value": ".*"
+      },
+      "found": "one_or_more",
+      "matching": "every"
+    }
+  }
+}

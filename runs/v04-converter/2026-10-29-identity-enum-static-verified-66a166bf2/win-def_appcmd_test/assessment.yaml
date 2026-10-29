@@ -1,0 +1,36 @@
+assessment:
+  id: application-pool-setting-example-all-application-pools-reviewed-variab-6be816b4-assessment
+  version: 1
+  assessment_title: Application Pool Setting Example - All Application Pools Reviewed Variable Test identifier_type
+  mode: automated
+  class: compliance
+  purpose: assessment
+  specification:
+    id: scap-ng.pre-alpha.assessment
+    version: 0.4.0
+  tests:
+    application-pool-setting-example-all-application-pools-reviewed-variab-6be816b4-test:
+      test_title: Application Pool Setting Example - All Application Pools Reviewed Variable Test identifier_type
+      capability: windows.appcmd
+      object:
+        identifier_type:
+          equals:
+            variable: apppool-21523498-variable
+          datatype: string
+          value_match: every
+        identifier: {matches_regex: .*}
+        parameter: {equals: recycling.periodicRestart.time}
+      require:
+        items_found: one_or_more
+        items_satisfying: every
+        fields:
+          result: {matches_regex: .*, values_found: one_or_more, values_matching: every}
+      reported_elements: all
+  evaluate:
+    test: application-pool-setting-example-all-application-pools-reviewed-variab-6be816b4-test
+  variables:
+    apppool-21523498-variable:
+      kind: local
+      datatype: string
+      expression:
+        literal: {datatype: string, value: Apppool}

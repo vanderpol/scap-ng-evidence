@@ -1,0 +1,146 @@
+{
+  "evidence_id": "v04-identity-enum-static-verified-20261029-66a166bf2",
+  "kind": "language-conformance-static-proof",
+  "status": "VERIFIED STATIC LANGUAGE CONFORMANCE \u2014 NOT RUNTIME VERIFIED",
+  "created_at": "2026-10-29T00:35:19.368631+00:00",
+  "source_scap_ng_repository": "vanderpol/scap-ng",
+  "toolchain_sha": "66a166bf282a377c233bc4a1ffd1ac43d0bd734c",
+  "generating_tool": "tools/audit_v04_oval_test_corpus.py; included source/native excerpts generated with current production visitor/compiler and unchanged independent readers",
+  "input_pin": {
+    "file_manifest_sha256": "6716516bafdbb1d93c761b68bda64a4f75062dd918132f5b7f3ee896008f5a20",
+    "path": "SCAP_1.4/OVAL_Test_Content",
+    "repository": "OVAL-Community/SCAP-Self-Assertion",
+    "revision": "e3538595c5083b9c34d937a81d319234df9bbfaa"
+  },
+  "commands": [
+    "PYTHONPATH=tools python tools/audit_v04_oval_test_corpus.py --source-root PINNED_OVAL_TEST_CONTENT --output NEW_CORPUS_REPORT.json",
+    "PYTHONPATH=tools python tools/verify_v04_direct_scope.py --inputs ORIGINAL_SIX_ZIP_DIRECTORY --output NEW_EVIDENCE_DIRECTORY"
+  ],
+  "results": {
+    "compiled_and_independently_compared": 523,
+    "configured_tests": 713,
+    "original_tests": 803,
+    "previous_four_hash_proofs_retained": 521,
+    "added_original_test_proofs": 2,
+    "previous_primary_program_hashes_retained": 1072,
+    "focused_tests": 40
+  },
+  "checks": [
+    "whole source collection byte-manifest verification",
+    "native schema",
+    "compiled operand comparison",
+    "unchanged independent original/native terms",
+    "original XSD/Schematron/nondeprecation on both additions",
+    "all previous 521 authoring/source-term/native-term/program hashes retained",
+    "all previous 1072 six-source primary programs retained",
+    "all 100 generated contract parity hashes retained"
+  ],
+  "raw_storage_decision": "Retain compact 523-proof hash ledger, two actual original-backed authoring/compiled/typed-term excerpts and receipt. Full deterministic corpus reports are reproducible-only; no bulk report/archive copy.",
+  "limitations": [
+    "Single-Test synthetic Assessments are conformance evidence, not additional production Rules",
+    "No scanner/runtime equivalence",
+    "No schema/function grammar/collector semantics changes",
+    "Only static primary six-source retention; full policy/applicability/manual conversion unproved"
+  ],
+  "maintained_suite": {
+    "run": 40793748077,
+    "job": 123185027830,
+    "tests_run": 3273,
+    "passed": 3272,
+    "failures": 0,
+    "errors": 0,
+    "skips": 1,
+    "seconds": 1132.409,
+    "artifact": 12863807377,
+    "artifact_zip_sha256": "73cc4469dd47d56588681ab92ded6ae4bc09bb77ae0164349dfca75115dc4c10"
+  },
+  "hosted_six_source_gate": {
+    "run": 40793748148,
+    "job": 123185027661,
+    "proved": 1072,
+    "blocked_automated": 324,
+    "manual_ocil_only": 171,
+    "status": "PASS",
+    "artifact": 12862983307,
+    "artifact_zip_sha256": "fc88664b42935ae98414b214699e3bf4b5203e9c8fa06586b86afb8d65ed5821"
+  },
+  "file_inventory": [
+    {
+      "path": "README.md",
+      "bytes": 1892,
+      "sha256": "448e8d150556112f24b04a5bd6fa65210a25a23cb0d6de14011fdd264136fdac"
+    },
+    {
+      "path": "proof-hashes.json",
+      "bytes": 325270,
+      "sha256": "b81bb936320cd86bcf7417624a3d45f2c5a4f04ea1420208e2d473cf7ff8ce0b"
+    },
+    {
+      "path": "receipt.json",
+      "bytes": 3365,
+      "sha256": "018f98fa159822b543a57b07f2b861525f4753096c2423165ba7d0d72a6534f8"
+    },
+    {
+      "path": "win-def_appcmd_test/assessment.json",
+      "bytes": 1866,
+      "sha256": "5ba9e0ed2864931d108617041b3680588afaab9e1be3c06c5a9f1b072f3efa98"
+    },
+    {
+      "path": "win-def_appcmd_test/assessment.yaml",
+      "bytes": 1354,
+      "sha256": "7f1f3f99c15f5e80e2e90ff3fb634546eba32272da934febe433371c3a1249d7"
+    },
+    {
+      "path": "win-def_appcmd_test/compiled-program.json",
+      "bytes": 2032,
+      "sha256": "fea3c9b647c46f49dfb8d7b8f0957a8a044551a6b41d14c70c1f567ed2f4ab71"
+    },
+    {
+      "path": "win-def_appcmd_test/native-term.json",
+      "bytes": 1262,
+      "sha256": "a894569ef4532d670988129ac7c0350057ff4ed4df31bf5a8b4a84dc80fef1e8"
+    },
+    {
+      "path": "win-def_appcmd_test/source-term.json",
+      "bytes": 1262,
+      "sha256": "f7486200aa7029fad887da89d50b7e7cebe4973e77886570a3b18a2fc9b1cf7a"
+    },
+    {
+      "path": "win-def_appcmd_test/source.json",
+      "bytes": 327,
+      "sha256": "9b79f313e268fffb56461d4a7e4fc669dffad87994123a65375c72ccc138383b"
+    },
+    {
+      "path": "win-def_appcmdlistconfig_test/assessment.json",
+      "bytes": 2062,
+      "sha256": "f7b919c9135d79e9d225924477e8d01cf493f8529f79da5dc8e01f0c8f19fa6b"
+    },
+    {
+      "path": "win-def_appcmdlistconfig_test/assessment.yaml",
+      "bytes": 1517,
+      "sha256": "75edbbc698f1863c2eb8424151f31ac081387a6d18226ae5a0d21147dac5cd45"
+    },
+    {
+      "path": "win-def_appcmdlistconfig_test/compiled-program.json",
+      "bytes": 2203,
+      "sha256": "723bca520f44cfad16bc40dc0d7d856bdd6b20a33bbbdc233e7fb31a8f2a1d6f"
+    },
+    {
+      "path": "win-def_appcmdlistconfig_test/native-term.json",
+      "bytes": 1516,
+      "sha256": "ba3b453a249d3e0a2fe6a64e47400d2e231c483c7145c378aa3a90790e4142e7"
+    },
+    {
+      "path": "win-def_appcmdlistconfig_test/source-term.json",
+      "bytes": 1516,
+      "sha256": "0f97f3426855913df41617f13c82954c13b6ac2b737e23415ba441b70b75e899"
+    },
+    {
+      "path": "win-def_appcmdlistconfig_test/source.json",
+      "bytes": 337,
+      "sha256": "c45252ca0e3a370022bcaf0a8523ad735996b6fde9c7c886379a36f8fac497cf"
+    }
+  ],
+  "file_count": 16,
+  "file_inventory_excludes": "manifest.json (self-description; Git commit fixes its bytes)"
+}
