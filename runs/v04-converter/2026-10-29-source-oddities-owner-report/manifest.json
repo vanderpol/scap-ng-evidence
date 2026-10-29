@@ -1,0 +1,225 @@
+{
+  "evidence_id": "v04-source-oddities-owner-report-20261029",
+  "evidence_kind": "source-content-and-producer-improvement-investigation",
+  "created_at": "2026-10-29T23:05:14.215566+00:00",
+  "source_repository": "vanderpol/scap-ng",
+  "source_commit": "4d78f700a4a555b474b38c230d7199e6e1a6bf21",
+  "generating_tool": "build_owner_report.py (embedded in ZIP); existing pinned ledgers and validation records; printable rendering via ReportLab",
+  "generating_tool_commit": "Driver preserved in this evidence commit; SHA-256 in the package manifest",
+  "exact_command": "python build_owner_report.py --recovery-root INPUTS --output OUTPUT; input extraction instructions in ZIP README.md",
+  "inputs": {
+    "original_niwc_revision": "8c8e5dff860af6b1290ee9273a282db24278f8d5",
+    "complete_draft_evidence": "57032484aa098d18fecf69fe186b2ef753473245",
+    "investigation_evidence": "5b1b027623cd454b263aa60e16122bba503566a9"
+  },
+  "output_root": "scap-ng-source-oddities-20261029.zip",
+  "output_file_count": 11,
+  "counts": {
+    "finding_classes": 23,
+    "distinct_rule_records": 3024,
+    "blocked_automated_rules_covered": 2981,
+    "additional_manual_identifier_cases": 5,
+    "resolved_iosxe_reader_cases": 38,
+    "detailed_original_closure_records": 71
+  },
+  "findings": [
+    {
+      "id": "O01",
+      "title": "Foreign namespace on catalog URI entries",
+      "affected_rules": 992,
+      "affected_source_count": 21,
+      "likely_control": "Producer packaging",
+      "confidence": "Confirmed source encoding; standard URI semantics absent"
+    },
+    {
+      "id": "O02",
+      "title": "Stale standard catalog references",
+      "affected_rules": 979,
+      "affected_source_count": 20,
+      "likely_control": "Producer packaging",
+      "confidence": "Confirmed dangling standard entries in 20 affected sources"
+    },
+    {
+      "id": "O03",
+      "title": "Missing record datatype on cmdlet parameters",
+      "affected_rules": 11,
+      "affected_source_count": 6,
+      "likely_control": "Source author/generator",
+      "confidence": "Pinned original Schematron failure"
+    },
+    {
+      "id": "O04",
+      "title": "Pattern path combined with prohibited recursion behaviors",
+      "affected_rules": 7,
+      "affected_source_count": 7,
+      "likely_control": "Source author/generator",
+      "confidence": "Pinned original Schematron failure"
+    },
+    {
+      "id": "O05",
+      "title": "Pattern entity uses incompatible/default operation",
+      "affected_rules": 11,
+      "affected_source_count": 7,
+      "likely_control": "Source author/generator",
+      "confidence": "Pinned original Schematron failure"
+    },
+    {
+      "id": "O06",
+      "title": "Test none_exist also references a State",
+      "affected_rules": 4,
+      "affected_source_count": 4,
+      "likely_control": "Source author",
+      "confidence": "Pinned original Schematron failure"
+    },
+    {
+      "id": "O07",
+      "title": "Object, State or Filter has the wrong capability family",
+      "affected_rules": 4,
+      "affected_source_count": 1,
+      "likely_control": "Source author/generator",
+      "confidence": "Pinned original Schematron failure"
+    },
+    {
+      "id": "O08",
+      "title": "Deprecated Tests, Objects, States or attribute values",
+      "affected_rules": 162,
+      "affected_source_count": 11,
+      "likely_control": "Source maintenance plus standards support policy",
+      "confidence": "Effective Test exclusions or observed original deprecation diagnostics"
+    },
+    {
+      "id": "O09",
+      "title": "Nonstandard independent.sqlext packages",
+      "affected_rules": 137,
+      "affected_source_count": 4,
+      "likely_control": "Extension publisher and SCAP-NG support",
+      "confidence": "Nonstandard extension; not established malformed content"
+    },
+    {
+      "id": "O10",
+      "title": "Integer count consumed by string functions",
+      "affected_rules": 4,
+      "affected_source_count": 1,
+      "likely_control": "OVAL standards/validator review; source author involved",
+      "confidence": "Schematron failure conflicts with function-casting prose"
+    },
+    {
+      "id": "O11",
+      "title": "IOS XE text and regex captures declared integer",
+      "affected_rules": 1,
+      "affected_source_count": 1,
+      "likely_control": "Source author",
+      "confidence": "Strong content-defect candidate; runtime untested"
+    },
+    {
+      "id": "O12",
+      "title": "IOS XE split delimiter is literal backslash+n",
+      "affected_rules": 1,
+      "affected_source_count": 1,
+      "likely_control": "Source author and collector implementer",
+      "confidence": "Confirmed XML lexical value; runtime escape behavior untested"
+    },
+    {
+      "id": "O13",
+      "title": "IOS XE Switch Rule IDs carry ms.dns prefix",
+      "affected_rules": 42,
+      "affected_source_count": 1,
+      "likely_control": "Source generator/provenance",
+      "confidence": "Confirmed naming anomaly, not proof of wrong check logic"
+    },
+    {
+      "id": "O14",
+      "title": "all_exist collection-population ambiguity",
+      "affected_rules": 1184,
+      "affected_source_count": 28,
+      "likely_control": "SCAP-NG/OVAL semantic decision",
+      "confidence": "Valid source construct; unrestricted equivalence unproved"
+    },
+    {
+      "id": "O15",
+      "title": "XCCDF/OVAL check imports and exports",
+      "affected_rules": 381,
+      "affected_source_count": 7,
+      "likely_control": "SCAP-NG converter/binding contract",
+      "confidence": "Unsupported binding behavior, not established source defect"
+    },
+    {
+      "id": "O16",
+      "title": "Multiple aggregation components",
+      "affected_rules": 30,
+      "affected_source_count": 1,
+      "likely_control": "SCAP-NG collection-expression contract",
+      "confidence": "Unsupported collection expression, not established source defect"
+    },
+    {
+      "id": "O17",
+      "title": "Functions: count, split and substring",
+      "affected_rules": 33,
+      "affected_source_count": 12,
+      "likely_control": "SCAP-NG function contract/implementation",
+      "confidence": "Unsupported function, not established source defect"
+    },
+    {
+      "id": "O18",
+      "title": "Acquisition comparison/type contracts",
+      "affected_rules": 2,
+      "affected_source_count": 2,
+      "likely_control": "SCAP-NG capability/collection contract",
+      "confidence": "Original closures validated; acquisition semantics unresolved"
+    },
+    {
+      "id": "O19",
+      "title": "Ordered comparison on non-integer source datatype",
+      "affected_rules": 10,
+      "affected_source_count": 9,
+      "likely_control": "SCAP-NG converter/number contract",
+      "confidence": "Ten investigated original closures valid/nondeprecated"
+    },
+    {
+      "id": "O20",
+      "title": "Field absence still carries a literal comparator",
+      "affected_rules": 9,
+      "affected_source_count": 8,
+      "likely_control": "Source intent review plus converter contract",
+      "confidence": "Nine investigated original closures valid/nondeprecated"
+    },
+    {
+      "id": "O21",
+      "title": "Supported-source field missing from native crosswalk",
+      "affected_rules": 2,
+      "affected_source_count": 2,
+      "likely_control": "SCAP-NG mapping contract",
+      "confidence": "Two investigated original closures valid/nondeprecated"
+    },
+    {
+      "id": "O22",
+      "title": "Variable-source attributes reach an unsupported function",
+      "affected_rules": 2,
+      "affected_source_count": 2,
+      "likely_control": "SCAP-NG converter/function contract",
+      "confidence": "Two investigated original closures valid/nondeprecated"
+    },
+    {
+      "id": "O23",
+      "title": "IOS XE independent-reader coverage gap, resolved",
+      "affected_rules": 38,
+      "affected_source_count": 2,
+      "likely_control": "SCAP-NG tooling",
+      "confidence": "38 original Rules now independently static-proved"
+    }
+  ],
+  "validation_status": "Count joins, uniqueness, complete residual-blocker coverage, byte-identical CSV/JSON replay and ZIP integrity PASS; PDF pages visually sampled; no new broken Markdown links",
+  "numeric_capture_clarification": "A regex capture of 5 can be used numerically. SV-215833 var:21583310 is the valid HTTP numeric-capture branch; the concern is intermediate text Variables 21583304/07/05.",
+  "limitations": [
+    "Finding counts overlap and must not be summed",
+    "Source validity does not establish intended behavior",
+    "No scanner-runtime claims",
+    "No originals, native grammar or validators changed",
+    "Producer control is suggested, not assumed"
+  ],
+  "archive": {
+    "file": "scap-ng-source-oddities-20261029.zip",
+    "bytes": 405055,
+    "sha256": "f644fb233e7958746f99379cf113f4be3ea5edc14139407d584863e6c2079e19"
+  }
+}
