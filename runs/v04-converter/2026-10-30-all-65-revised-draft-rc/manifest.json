@@ -1,0 +1,77 @@
+{
+  "evidence_id": "2026-10-30-all-65-revised-draft-rc",
+  "evidence_kind": "production migration evidence; UNVERIFIED DRAFT",
+  "created_utc": "2026-10-30T01:31:54.161661+00:00",
+  "source_repository": "vanderpol/scap-ng",
+  "source_commit": "a08c9beb9dcf781a726adbdf05676f5ae2e57309",
+  "generator": {
+    "path": "tools/build_v04_full_draft.py",
+    "commit": "a08c9beb9dcf781a726adbdf05676f5ae2e57309",
+    "command": "python tools/build_v04_full_draft.py --source-pins source-pins.json --inputs ORIGINAL_ZIPS --baseline proof-baseline-4258.json --known-invalid known-invalid-rc.json --output NEW_DIRECTORY --workers 3 --acknowledge-full-corpus-deliverable",
+    "materialization": "Completed once from candidate working code before commit. Subsequent int32 substring boundary guard audited over all emitted canonical subtrees; no authoring/program change. Release-gate invocation corrections are separate from converter output."
+  },
+  "external_inputs": {
+    "pins": "source-pins.json",
+    "proof_baseline": "proof-baseline-4258.json inside archive",
+    "known_exclusions": "known-invalid-rc.json inside archive"
+  },
+  "output": {
+    "file": "all-65-revised-draft.zip",
+    "bytes": 108003966,
+    "sha256": "a09ee9a13cdfeeb1b8599eab61308e935a19b99eb62eadafd32002d13d90f8bd",
+    "payload_files": 37283,
+    "crc": "PASS",
+    "every_payload_digest": "PASS"
+  },
+  "archive_url": "https://github.com/vanderpol/scap-ng-evidence/releases/download/v04-revised-all65-draft-20261030-a08c9beb9/all-65-revised-draft.zip",
+  "draft_evidence_tag": "v04-revised-all65-draft-20261030-a08c9beb9",
+  "conversion_statuses": {
+    "CONVERTED_UNVERIFIED": 2559,
+    "MANUAL_OCIL_ONLY_PRESERVED": 1653,
+    "CONVERTED_VERIFIED": 4258,
+    "BLOCKED": 422
+  },
+  "overlapping_warning_rules": {
+    "niwc_ds_uri_compatibility": 989,
+    "test_all_exist_unproved": 1767,
+    "variable_function_unproved": 55,
+    "multiple_aggregation_unproved": 30,
+    "check_export_binding_unproved": 326
+  },
+  "compiled_native_candidates": 6817,
+  "preservation": [
+    {
+      "path": "2026-10-28-niwc-65-draft-248895772/niwc-65-draft-248895772.zip",
+      "sha256": "5f86d016c1bce82018eec82c6468ab583816ff0b38c8d3ea5e9210a931cc1a08",
+      "unchanged": "PASS"
+    },
+    {
+      "path": "2026-10-29-all-65-complete-draft-stage-one/all-65-complete-draft.zip",
+      "sha256": "5338f760dbc043f6302bc7d65e65a130281c22549f9ea34f2a4e51f4921ff18c",
+      "unchanged": "PASS"
+    }
+  ],
+  "validation_status": "PASS original preservation/accounting/schema/compilation/accepted hash retention; new semantic proof UNPROVED",
+  "checks": [
+    "All 65 original ZIP byte counts and SHA-256 retained",
+    "Every original Rule XML identity retained",
+    "No fabricated blocked/manual Assessment",
+    "Every native candidate has JSON/YAML and an exact authoring hash",
+    "Compiled program hashes agree with actual diagnostic packages",
+    "All published proof authoring/program/source-Rule hashes retained",
+    "Archive CRC and every expanded payload digest checked",
+    "6817 compiled candidates",
+    "Canonical function subtrees match committed migration contract"
+  ],
+  "limitations": [
+    "DRAFT, not verified for execution",
+    "Native primary subset; complete original policy/manual content preserved separately",
+    "Unverified candidates require original validity and independent proof in stage two",
+    "No schema/#255/source-repair/runtime acceptance inferred",
+    "No project-wide source/specification license declared; owner decision pending",
+    "Not a final 0.4.0 release or scanner-runtime equivalence claim"
+  ],
+  "storage_decision": "Compressed DRAFT is a prerelease asset, not ordinary Git payload; required external owner review of complete preserved originals/native drafts. Exact payload inventory retained compressed and embedded. Prior archives unchanged.",
+  "output_root": "all-65-revised-draft/",
+  "output_files": 37283
+}
