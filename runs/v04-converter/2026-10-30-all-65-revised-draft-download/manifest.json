@@ -1,0 +1,47 @@
+{
+  "evidence_id": "2026-10-30-all-65-revised-draft-download",
+  "evidence_kind": "production migration evidence; complete UNVERIFIED DRAFT download",
+  "created_utc": "2026-10-30T08:51:42.065695+00:00",
+  "source_repository": "vanderpol/scap-ng",
+  "source_commit": "a08c9beb9dcf781a726adbdf05676f5ae2e57309",
+  "generator": {
+    "path": "tools/build_v04_full_draft.py",
+    "commit": "a08c9beb9dcf781a726adbdf05676f5ae2e57309"
+  },
+  "original_manifest": "../2026-10-30-all-65-revised-draft-rc/manifest.json",
+  "archive": {
+    "file": "all-65-revised-draft.zip",
+    "bytes": 108003966,
+    "sha256": "a09ee9a13cdfeeb1b8599eab61308e935a19b99eb62eadafd32002d13d90f8bd",
+    "payload_files": 37283,
+    "crc": "PASS",
+    "every_payload_digest": "PASS"
+  },
+  "parts": [
+    {
+      "file": "all-65-revised-draft.zip.part01",
+      "bytes": 41943040,
+      "sha256": "e07bd8211a793da679ad8042d64c1d6ec648d1db060c47e08689aaebea856eae"
+    },
+    {
+      "file": "all-65-revised-draft.zip.part02",
+      "bytes": 41943040,
+      "sha256": "6f66c60aaf2f8210af7d0c556b3604c02b70d0574e619ab703ee467aaad3da11"
+    },
+    {
+      "file": "all-65-revised-draft.zip.part03",
+      "bytes": 24117886,
+      "sha256": "8ac499e5c287f97b12a77aa7df933c7030d9fff145afc70bcbfc0061ff5102a6"
+    }
+  ],
+  "download_tag": "v04-revised-all65-draft-files-20261030-a08c9beb9",
+  "validation_status": "PASS exact archive reconstructed from all parts",
+  "external_inputs": "../2026-10-30-all-65-revised-draft-rc/source-pins.json",
+  "storage_decision": "Owner requires complete reviewable downloadable DRAFT. Preferred non-history release-asset upload failed HTTP401 at uploads.github.com; Git pushes remain authorized. Bounded fallback stores this one exact 108MB archive in three <50MiB ordinary-Git parts. Preserve older payloads and all proof hashes. No other corpus regeneration or duplicate archive retained in Git.",
+  "limitations": [
+    "New 2559 native candidates remain independently UNVERIFIED",
+    "No scanner runtime/publisher trust claim",
+    "No final SCAP-NG 0.4.0 release/tag",
+    "Source/specification license is undecided"
+  ]
+}
