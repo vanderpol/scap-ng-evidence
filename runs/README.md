@@ -37,3 +37,5 @@ runs/
 - [2026-10-29 compiled-cohort proof batch 004](v04-converter/2026-10-29-compiled-proof-batch-004-dc42163d2/README.md): remaining benchmark cohorts independently assessed; failed original validation and reader limitations remain explicit.
 
 - [2026-10-29 compiled-cohort proof batch 005](v04-converter/2026-10-29-compiled-proof-batch-005-5e847f826/README.md): all 35 Registry-reader retries prove at exact green implementation; completed cohort 3,130 proved, seven invalid and one deprecated original excluded. Previous proof hashes retained.
+
+- [2026-10-30 all-65 normalized native-library review](v04-library/2026-10-30-all65-normalized-review-ff69d46b3/README.md): separate out-of-place review ZIP, 6,817 unchanged compiled programs, 4,258 preserved proofs, offline editor-callable CLI, no sharing promotions.

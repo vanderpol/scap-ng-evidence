@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "scope": "red-hat-enterprise-linux-9-stig-scap-benchmark-n-e258b4d9",
+      "name": "linux",
+      "seconds": 40.88619502799702,
+      "package_sha256": "bf09e459797a6bf3f7ce7f192f7ece7669289997d2e5b0f4b7295cdc5b238c28",
+      "independent_consumer": {
+        "status": "INDEPENDENT_PACKAGE_CONSUMER_PASS",
+        "benchmark": "direct-slice",
+        "bundle_sha256": "bf09e459797a6bf3f7ce7f192f7ece7669289997d2e5b0f4b7295cdc5b238c28",
+        "documents": 832,
+        "programs": 415,
+        "tests": 647,
+        "shared_objects": 20,
+        "variables": 39,
+        "source_graph_sha256": "b30c311316576799c4f7b97328e90c8ebd53a72d168ddea8d7a215ab0ad1b1e2",
+        "external_source_compared": true,
+        "scanner_evaluated": false,
+        "publisher_trust_verified": false
+      },
+      "unchanged_program_hashes": 415
+    },
+    {
+      "scope": "microsoft-windows-server-2025-stig-scap-benchmar-3266ecf9",
+      "name": "windows",
+      "seconds": 56.0228045249969,
+      "package_sha256": "5943152d2ec376a894e178d21c3b456531b67a6315594a890e126f0af6b5ef5d",
+      "independent_consumer": {
+        "status": "INDEPENDENT_PACKAGE_CONSUMER_PASS",
+        "benchmark": "direct-slice",
+        "bundle_sha256": "5943152d2ec376a894e178d21c3b456531b67a6315594a890e126f0af6b5ef5d",
+        "documents": 516,
+        "programs": 257,
+        "tests": 370,
+        "shared_objects": 18,
+        "variables": 17,
+        "source_graph_sha256": "21987feb504fb4936aceb465ee54e242bfe2e98915191fac60a4ecf6ecfa5f5a",
+        "external_source_compared": true,
+        "scanner_evaluated": false,
+        "publisher_trust_verified": false
+      },
+      "unchanged_program_hashes": 257
+    }
+  ],
+  "new_source_proofs": 0,
+  "scanner_evaluated": false
+}

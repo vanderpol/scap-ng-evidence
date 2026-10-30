@@ -1,0 +1,884 @@
+{
+  "stats": {
+    "cache": {
+      "hits": 0,
+      "misses": 4
+    },
+    "changed": {
+      "applicability_files_rewritten": 2,
+      "duplicate_assessment_definitions_avoided": 1,
+      "exact_duplicate_groups_promoted": 1,
+      "local_assessment_files_removed": 2,
+      "rule_files_rewritten": 0
+    },
+    "examined": {
+      "benchmarks": 2,
+      "exact_semantic_fingerprints": 3,
+      "referenced_assessment_instances": 4,
+      "rules": 2,
+      "shape_fingerprints": 2
+    },
+    "format": "scap-ng-normalizer-stats-0.1",
+    "mode": "exact-rewrite",
+    "rates": {
+      "cache_hit_pct": 0.0,
+      "exact_definition_reduction_pct": 25.0
+    },
+    "reasons": {
+      "automatic_change_exact_semantic_duplicate_groups": 1,
+      "review_only_near_duplicate_groups": 0,
+      "review_only_rule_overlap_candidates": 0
+    },
+    "tool": "scap_ng_repo_normalizer",
+    "unchanged_or_review": {
+      "assessment_definitions_after_exact_normalization": 3,
+      "near_duplicate_review_groups": 0,
+      "near_duplicate_rule_candidates_reported": 0
+    }
+  },
+  "summary": {
+    "applicability_files_rewritten": 2,
+    "assessment_definitions_after_exact_normalization": 3,
+    "benchmarks": 2,
+    "duplicate_assessment_definitions_avoided": 1,
+    "exact_definition_reduction_pct": 25.0,
+    "exact_duplicate_groups": 1,
+    "fingerprint_cache_hits": 0,
+    "fingerprint_cache_misses": 4,
+    "local_assessment_files_removed": 2,
+    "near_duplicate_review_groups": 0,
+    "near_duplicate_rule_candidates_reported": 0,
+    "referenced_assessment_instances_before": 4,
+    "rule_files_rewritten": 0,
+    "rules": 2
+  }
+}
+{
+  "stats": {
+    "cache": {
+      "hits": 0,
+      "misses": 2
+    },
+    "changed": {
+      "applicability_files_rewritten": 0,
+      "duplicate_assessment_definitions_avoided": 1,
+      "exact_duplicate_groups_promoted": 1,
+      "local_assessment_files_removed": 2,
+      "rule_files_rewritten": 2
+    },
+    "examined": {
+      "benchmarks": 2,
+      "exact_semantic_fingerprints": 1,
+      "referenced_assessment_instances": 2,
+      "rules": 2,
+      "shape_fingerprints": 1
+    },
+    "format": "scap-ng-normalizer-stats-0.1",
+    "mode": "exact-rewrite",
+    "rates": {
+      "cache_hit_pct": 0.0,
+      "exact_definition_reduction_pct": 50.0
+    },
+    "reasons": {
+      "automatic_change_exact_semantic_duplicate_groups": 1,
+      "review_only_near_duplicate_groups": 0,
+      "review_only_rule_overlap_candidates": 0
+    },
+    "tool": "scap_ng_repo_normalizer",
+    "unchanged_or_review": {
+      "assessment_definitions_after_exact_normalization": 1,
+      "near_duplicate_review_groups": 0,
+      "near_duplicate_rule_candidates_reported": 0
+    }
+  },
+  "summary": {
+    "applicability_files_rewritten": 0,
+    "assessment_definitions_after_exact_normalization": 1,
+    "benchmarks": 2,
+    "duplicate_assessment_definitions_avoided": 1,
+    "exact_definition_reduction_pct": 50.0,
+    "exact_duplicate_groups": 1,
+    "fingerprint_cache_hits": 0,
+    "fingerprint_cache_misses": 2,
+    "local_assessment_files_removed": 2,
+    "near_duplicate_review_groups": 0,
+    "near_duplicate_rule_candidates_reported": 0,
+    "referenced_assessment_instances_before": 2,
+    "rule_files_rewritten": 2,
+    "rules": 2
+  }
+}
+{
+  "stats": {
+    "cache": {
+      "hits": 0,
+      "misses": 2
+    },
+    "changed": {
+      "applicability_files_rewritten": 0,
+      "duplicate_assessment_definitions_avoided": 1,
+      "exact_duplicate_groups_promoted": 1,
+      "local_assessment_files_removed": 0,
+      "rule_files_rewritten": 0
+    },
+    "examined": {
+      "benchmarks": 2,
+      "exact_semantic_fingerprints": 1,
+      "referenced_assessment_instances": 2,
+      "rules": 2,
+      "shape_fingerprints": 1
+    },
+    "format": "scap-ng-normalizer-stats-0.1",
+    "mode": "dry-run-exact-plan",
+    "rates": {
+      "cache_hit_pct": 0.0,
+      "exact_definition_reduction_pct": 50.0
+    },
+    "reasons": {
+      "automatic_change_exact_semantic_duplicate_groups": 1,
+      "review_only_near_duplicate_groups": 0,
+      "review_only_rule_overlap_candidates": 1
+    },
+    "tool": "scap_ng_repo_normalizer",
+    "unchanged_or_review": {
+      "assessment_definitions_after_exact_normalization": 1,
+      "near_duplicate_review_groups": 0,
+      "near_duplicate_rule_candidates_reported": 1
+    }
+  },
+  "summary": {
+    "applicability_files_rewritten": 0,
+    "assessment_definitions_after_exact_normalization": 1,
+    "benchmarks": 2,
+    "duplicate_assessment_definitions_avoided": 1,
+    "exact_definition_reduction_pct": 50.0,
+    "exact_duplicate_groups": 1,
+    "fingerprint_cache_hits": 0,
+    "fingerprint_cache_misses": 2,
+    "local_assessment_files_removed": 0,
+    "near_duplicate_review_groups": 0,
+    "near_duplicate_rule_candidates_reported": 1,
+    "referenced_assessment_instances_before": 2,
+    "rule_files_rewritten": 0,
+    "rules": 2
+  }
+}
+{
+  "stats": {
+    "cache": {
+      "hits": 0,
+      "misses": 3
+    },
+    "changed": {
+      "applicability_files_rewritten": 0,
+      "duplicate_assessment_definitions_avoided": 1,
+      "exact_duplicate_groups_promoted": 1,
+      "local_assessment_files_removed": 2,
+      "rule_files_rewritten": 2
+    },
+    "examined": {
+      "benchmarks": 3,
+      "exact_semantic_fingerprints": 2,
+      "referenced_assessment_instances": 3,
+      "rules": 3,
+      "shape_fingerprints": 1
+    },
+    "format": "scap-ng-normalizer-stats-0.1",
+    "mode": "exact-rewrite",
+    "rates": {
+      "cache_hit_pct": 0.0,
+      "exact_definition_reduction_pct": 33.33
+    },
+    "reasons": {
+      "automatic_change_exact_semantic_duplicate_groups": 1,
+      "review_only_near_duplicate_groups": 1,
+      "review_only_rule_overlap_candidates": 1
+    },
+    "tool": "scap_ng_repo_normalizer",
+    "unchanged_or_review": {
+      "assessment_definitions_after_exact_normalization": 2,
+      "near_duplicate_review_groups": 1,
+      "near_duplicate_rule_candidates_reported": 1
+    }
+  },
+  "summary": {
+    "applicability_files_rewritten": 0,
+    "assessment_definitions_after_exact_normalization": 2,
+    "benchmarks": 3,
+    "duplicate_assessment_definitions_avoided": 1,
+    "exact_definition_reduction_pct": 33.33,
+    "exact_duplicate_groups": 1,
+    "fingerprint_cache_hits": 0,
+    "fingerprint_cache_misses": 3,
+    "local_assessment_files_removed": 2,
+    "near_duplicate_review_groups": 1,
+    "near_duplicate_rule_candidates_reported": 1,
+    "referenced_assessment_instances_before": 3,
+    "rule_files_rewritten": 2,
+    "rules": 3
+  }
+}
+{
+  "stats": {
+    "cache": {
+      "hits": 0,
+      "misses": 3
+    },
+    "changed": {
+      "applicability_files_rewritten": 0,
+      "duplicate_assessment_definitions_avoided": 1,
+      "exact_duplicate_groups_promoted": 1,
+      "local_assessment_files_removed": 0,
+      "rule_files_rewritten": 0
+    },
+    "examined": {
+      "benchmarks": 3,
+      "exact_semantic_fingerprints": 2,
+      "referenced_assessment_instances": 3,
+      "rules": 3,
+      "shape_fingerprints": 1
+    },
+    "format": "scap-ng-normalizer-stats-0.1",
+    "mode": "dry-run-exact-plan",
+    "rates": {
+      "cache_hit_pct": 0.0,
+      "exact_definition_reduction_pct": 33.33
+    },
+    "reasons": {
+      "automatic_change_exact_semantic_duplicate_groups": 1,
+      "review_only_near_duplicate_groups": 1,
+      "review_only_rule_overlap_candidates": 1
+    },
+    "tool": "scap_ng_repo_normalizer",
+    "unchanged_or_review": {
+      "assessment_definitions_after_exact_normalization": 2,
+      "near_duplicate_review_groups": 1,
+      "near_duplicate_rule_candidates_reported": 1
+    }
+  },
+  "summary": {
+    "applicability_files_rewritten": 0,
+    "assessment_definitions_after_exact_normalization": 2,
+    "benchmarks": 3,
+    "duplicate_assessment_definitions_avoided": 1,
+    "exact_definition_reduction_pct": 33.33,
+    "exact_duplicate_groups": 1,
+    "fingerprint_cache_hits": 0,
+    "fingerprint_cache_misses": 3,
+    "local_assessment_files_removed": 0,
+    "near_duplicate_review_groups": 1,
+    "near_duplicate_rule_candidates_reported": 1,
+    "referenced_assessment_instances_before": 3,
+    "rule_files_rewritten": 0,
+    "rules": 3
+  }
+}
+{
+  "stats": {
+    "cache": {
+      "hits": 0,
+      "misses": 3
+    },
+    "changed": {
+      "applicability_files_rewritten": 0,
+      "duplicate_assessment_definitions_avoided": 1,
+      "exact_duplicate_groups_promoted": 1,
+      "local_assessment_files_removed": 0,
+      "rule_files_rewritten": 0
+    },
+    "examined": {
+      "benchmarks": 3,
+      "exact_semantic_fingerprints": 2,
+      "referenced_assessment_instances": 3,
+      "rules": 3,
+      "shape_fingerprints": 1
+    },
+    "format": "scap-ng-normalizer-stats-0.1",
+    "mode": "dry-run-exact-plan",
+    "rates": {
+      "cache_hit_pct": 0.0,
+      "exact_definition_reduction_pct": 33.33
+    },
+    "reasons": {
+      "automatic_change_exact_semantic_duplicate_groups": 1,
+      "review_only_near_duplicate_groups": 0,
+      "review_only_rule_overlap_candidates": 0
+    },
+    "tool": "scap_ng_repo_normalizer",
+    "unchanged_or_review": {
+      "assessment_definitions_after_exact_normalization": 2,
+      "near_duplicate_review_groups": 0,
+      "near_duplicate_rule_candidates_reported": 0
+    }
+  },
+  "summary": {
+    "applicability_files_rewritten": 0,
+    "assessment_definitions_after_exact_normalization": 2,
+    "benchmarks": 3,
+    "duplicate_assessment_definitions_avoided": 1,
+    "exact_definition_reduction_pct": 33.33,
+    "exact_duplicate_groups": 1,
+    "fingerprint_cache_hits": 0,
+    "fingerprint_cache_misses": 3,
+    "local_assessment_files_removed": 0,
+    "near_duplicate_review_groups": 0,
+    "near_duplicate_rule_candidates_reported": 0,
+    "referenced_assessment_instances_before": 3,
+    "rule_files_rewritten": 0,
+    "rules": 3
+  }
+}
+{
+  "stats": {
+    "cache": {
+      "hits": 0,
+      "misses": 2
+    },
+    "changed": {
+      "applicability_files_rewritten": 0,
+      "duplicate_assessment_definitions_avoided": 1,
+      "exact_duplicate_groups_promoted": 1,
+      "local_assessment_files_removed": 0,
+      "rule_files_rewritten": 0
+    },
+    "examined": {
+      "benchmarks": 2,
+      "exact_semantic_fingerprints": 1,
+      "referenced_assessment_instances": 2,
+      "rules": 2,
+      "shape_fingerprints": 1
+    },
+    "format": "scap-ng-normalizer-stats-0.1",
+    "mode": "dry-run-exact-plan",
+    "rates": {
+      "cache_hit_pct": 0.0,
+      "exact_definition_reduction_pct": 50.0
+    },
+    "reasons": {
+      "automatic_change_exact_semantic_duplicate_groups": 1,
+      "review_only_near_duplicate_groups": 0,
+      "review_only_rule_overlap_candidates": 0
+    },
+    "tool": "scap_ng_repo_normalizer",
+    "unchanged_or_review": {
+      "assessment_definitions_after_exact_normalization": 1,
+      "near_duplicate_review_groups": 0,
+      "near_duplicate_rule_candidates_reported": 0
+    }
+  },
+  "summary": {
+    "applicability_files_rewritten": 0,
+    "assessment_definitions_after_exact_normalization": 1,
+    "benchmarks": 2,
+    "duplicate_assessment_definitions_avoided": 1,
+    "exact_definition_reduction_pct": 50.0,
+    "exact_duplicate_groups": 1,
+    "fingerprint_cache_hits": 0,
+    "fingerprint_cache_misses": 2,
+    "local_assessment_files_removed": 0,
+    "near_duplicate_review_groups": 0,
+    "near_duplicate_rule_candidates_reported": 0,
+    "referenced_assessment_instances_before": 2,
+    "rule_files_rewritten": 0,
+    "rules": 2
+  }
+}
+{
+  "stats": {
+    "cache": {
+      "hits": 2,
+      "misses": 0
+    },
+    "changed": {
+      "applicability_files_rewritten": 0,
+      "duplicate_assessment_definitions_avoided": 1,
+      "exact_duplicate_groups_promoted": 1,
+      "local_assessment_files_removed": 0,
+      "rule_files_rewritten": 0
+    },
+    "examined": {
+      "benchmarks": 2,
+      "exact_semantic_fingerprints": 1,
+      "referenced_assessment_instances": 2,
+      "rules": 2,
+      "shape_fingerprints": 1
+    },
+    "format": "scap-ng-normalizer-stats-0.1",
+    "mode": "dry-run-exact-plan",
+    "rates": {
+      "cache_hit_pct": 100.0,
+      "exact_definition_reduction_pct": 50.0
+    },
+    "reasons": {
+      "automatic_change_exact_semantic_duplicate_groups": 1,
+      "review_only_near_duplicate_groups": 0,
+      "review_only_rule_overlap_candidates": 0
+    },
+    "tool": "scap_ng_repo_normalizer",
+    "unchanged_or_review": {
+      "assessment_definitions_after_exact_normalization": 1,
+      "near_duplicate_review_groups": 0,
+      "near_duplicate_rule_candidates_reported": 0
+    }
+  },
+  "summary": {
+    "applicability_files_rewritten": 0,
+    "assessment_definitions_after_exact_normalization": 1,
+    "benchmarks": 2,
+    "duplicate_assessment_definitions_avoided": 1,
+    "exact_definition_reduction_pct": 50.0,
+    "exact_duplicate_groups": 1,
+    "fingerprint_cache_hits": 2,
+    "fingerprint_cache_misses": 0,
+    "local_assessment_files_removed": 0,
+    "near_duplicate_review_groups": 0,
+    "near_duplicate_rule_candidates_reported": 0,
+    "referenced_assessment_instances_before": 2,
+    "rule_files_rewritten": 0,
+    "rules": 2
+  }
+}
+{
+  "stats": {
+    "cache": {
+      "hits": 0,
+      "misses": 2
+    },
+    "changed": {
+      "applicability_files_rewritten": 0,
+      "duplicate_assessment_definitions_avoided": 1,
+      "exact_duplicate_groups_promoted": 1,
+      "local_assessment_files_removed": 2,
+      "rule_files_rewritten": 2
+    },
+    "examined": {
+      "benchmarks": 2,
+      "exact_semantic_fingerprints": 1,
+      "referenced_assessment_instances": 2,
+      "rules": 2,
+      "shape_fingerprints": 1
+    },
+    "format": "scap-ng-normalizer-stats-0.1",
+    "mode": "exact-rewrite",
+    "rates": {
+      "cache_hit_pct": 0.0,
+      "exact_definition_reduction_pct": 50.0
+    },
+    "reasons": {
+      "automatic_change_exact_semantic_duplicate_groups": 1,
+      "review_only_near_duplicate_groups": 0,
+      "review_only_rule_overlap_candidates": 0
+    },
+    "tool": "scap_ng_repo_normalizer",
+    "unchanged_or_review": {
+      "assessment_definitions_after_exact_normalization": 1,
+      "near_duplicate_review_groups": 0,
+      "near_duplicate_rule_candidates_reported": 0
+    }
+  },
+  "summary": {
+    "applicability_files_rewritten": 0,
+    "assessment_definitions_after_exact_normalization": 1,
+    "benchmarks": 2,
+    "duplicate_assessment_definitions_avoided": 1,
+    "exact_definition_reduction_pct": 50.0,
+    "exact_duplicate_groups": 1,
+    "fingerprint_cache_hits": 0,
+    "fingerprint_cache_misses": 2,
+    "local_assessment_files_removed": 2,
+    "near_duplicate_review_groups": 0,
+    "near_duplicate_rule_candidates_reported": 0,
+    "referenced_assessment_instances_before": 2,
+    "rule_files_rewritten": 2,
+    "rules": 2
+  }
+}
+{
+  "stats": {
+    "cache": {
+      "hits": 0,
+      "misses": 2
+    },
+    "changed": {
+      "applicability_files_rewritten": 0,
+      "duplicate_assessment_definitions_avoided": 1,
+      "exact_duplicate_groups_promoted": 1,
+      "local_assessment_files_removed": 2,
+      "rule_files_rewritten": 2
+    },
+    "examined": {
+      "benchmarks": 2,
+      "exact_semantic_fingerprints": 1,
+      "referenced_assessment_instances": 2,
+      "rules": 2,
+      "shape_fingerprints": 1
+    },
+    "format": "scap-ng-normalizer-stats-0.1",
+    "mode": "exact-rewrite",
+    "rates": {
+      "cache_hit_pct": 0.0,
+      "exact_definition_reduction_pct": 50.0
+    },
+    "reasons": {
+      "automatic_change_exact_semantic_duplicate_groups": 1,
+      "review_only_near_duplicate_groups": 0,
+      "review_only_rule_overlap_candidates": 0
+    },
+    "tool": "scap_ng_repo_normalizer",
+    "unchanged_or_review": {
+      "assessment_definitions_after_exact_normalization": 1,
+      "near_duplicate_review_groups": 0,
+      "near_duplicate_rule_candidates_reported": 0
+    }
+  },
+  "summary": {
+    "applicability_files_rewritten": 0,
+    "assessment_definitions_after_exact_normalization": 1,
+    "benchmarks": 2,
+    "duplicate_assessment_definitions_avoided": 1,
+    "exact_definition_reduction_pct": 50.0,
+    "exact_duplicate_groups": 1,
+    "fingerprint_cache_hits": 0,
+    "fingerprint_cache_misses": 2,
+    "local_assessment_files_removed": 2,
+    "near_duplicate_review_groups": 0,
+    "near_duplicate_rule_candidates_reported": 0,
+    "referenced_assessment_instances_before": 2,
+    "rule_files_rewritten": 2,
+    "rules": 2
+  }
+}
+{
+  "stats": {
+    "cache": {
+      "hits": 0,
+      "misses": 2
+    },
+    "changed": {
+      "applicability_files_rewritten": 0,
+      "duplicate_assessment_definitions_avoided": 1,
+      "exact_duplicate_groups_promoted": 1,
+      "local_assessment_files_removed": 2,
+      "rule_files_rewritten": 2
+    },
+    "examined": {
+      "benchmarks": 2,
+      "exact_semantic_fingerprints": 1,
+      "referenced_assessment_instances": 2,
+      "rules": 2,
+      "shape_fingerprints": 1
+    },
+    "format": "scap-ng-normalizer-stats-0.1",
+    "mode": "exact-rewrite",
+    "rates": {
+      "cache_hit_pct": 0.0,
+      "exact_definition_reduction_pct": 50.0
+    },
+    "reasons": {
+      "automatic_change_exact_semantic_duplicate_groups": 1,
+      "review_only_near_duplicate_groups": 0,
+      "review_only_rule_overlap_candidates": 0
+    },
+    "tool": "scap_ng_repo_normalizer",
+    "unchanged_or_review": {
+      "assessment_definitions_after_exact_normalization": 1,
+      "near_duplicate_review_groups": 0,
+      "near_duplicate_rule_candidates_reported": 0
+    }
+  },
+  "summary": {
+    "applicability_files_rewritten": 0,
+    "assessment_definitions_after_exact_normalization": 1,
+    "benchmarks": 2,
+    "duplicate_assessment_definitions_avoided": 1,
+    "exact_definition_reduction_pct": 50.0,
+    "exact_duplicate_groups": 1,
+    "fingerprint_cache_hits": 0,
+    "fingerprint_cache_misses": 2,
+    "local_assessment_files_removed": 2,
+    "near_duplicate_review_groups": 0,
+    "near_duplicate_rule_candidates_reported": 0,
+    "referenced_assessment_instances_before": 2,
+    "rule_files_rewritten": 2,
+    "rules": 2
+  }
+}
+{
+  "stats": {
+    "cache": {
+      "hits": 0,
+      "misses": 1
+    },
+    "changed": {
+      "applicability_files_rewritten": 0,
+      "duplicate_assessment_definitions_avoided": 0,
+      "exact_duplicate_groups_promoted": 0,
+      "local_assessment_files_removed": 0,
+      "rule_files_rewritten": 0
+    },
+    "examined": {
+      "benchmarks": 2,
+      "exact_semantic_fingerprints": 1,
+      "referenced_assessment_instances": 1,
+      "rules": 2,
+      "shape_fingerprints": 1
+    },
+    "format": "scap-ng-normalizer-stats-0.1",
+    "mode": "exact-rewrite",
+    "rates": {
+      "cache_hit_pct": 0.0,
+      "exact_definition_reduction_pct": 0.0
+    },
+    "reasons": {
+      "automatic_change_exact_semantic_duplicate_groups": 0,
+      "review_only_near_duplicate_groups": 0,
+      "review_only_rule_overlap_candidates": 0
+    },
+    "tool": "scap_ng_repo_normalizer",
+    "unchanged_or_review": {
+      "assessment_definitions_after_exact_normalization": 1,
+      "near_duplicate_review_groups": 0,
+      "near_duplicate_rule_candidates_reported": 0
+    }
+  },
+  "summary": {
+    "applicability_files_rewritten": 0,
+    "assessment_definitions_after_exact_normalization": 1,
+    "benchmarks": 2,
+    "duplicate_assessment_definitions_avoided": 0,
+    "exact_definition_reduction_pct": 0.0,
+    "exact_duplicate_groups": 0,
+    "fingerprint_cache_hits": 0,
+    "fingerprint_cache_misses": 1,
+    "local_assessment_files_removed": 0,
+    "near_duplicate_review_groups": 0,
+    "near_duplicate_rule_candidates_reported": 0,
+    "referenced_assessment_instances_before": 1,
+    "rule_files_rewritten": 0,
+    "rules": 2
+  }
+}----------------------------------------------------------------------
+Ran 44 tests in 8.878s
+
+OK
+
+{
+  "stats": {
+    "cache": {
+      "hits": 0,
+      "misses": 4
+    },
+    "changed": {
+      "applicability_files_rewritten": 0,
+      "duplicate_assessment_definitions_avoided": 2,
+      "exact_duplicate_groups_promoted": 2,
+      "local_assessment_files_removed": 4,
+      "rule_files_rewritten": 4
+    },
+    "examined": {
+      "benchmarks": 4,
+      "exact_semantic_fingerprints": 2,
+      "referenced_assessment_instances": 4,
+      "rules": 4,
+      "shape_fingerprints": 1
+    },
+    "format": "scap-ng-normalizer-stats-0.1",
+    "mode": "exact-rewrite",
+    "rates": {
+      "cache_hit_pct": 0.0,
+      "exact_definition_reduction_pct": 50.0
+    },
+    "reasons": {
+      "automatic_change_exact_semantic_duplicate_groups": 2,
+      "review_only_near_duplicate_groups": 0,
+      "review_only_rule_overlap_candidates": 0
+    },
+    "tool": "scap_ng_repo_normalizer",
+    "unchanged_or_review": {
+      "assessment_definitions_after_exact_normalization": 2,
+      "near_duplicate_review_groups": 0,
+      "near_duplicate_rule_candidates_reported": 0
+    }
+  },
+  "summary": {
+    "applicability_files_rewritten": 0,
+    "assessment_definitions_after_exact_normalization": 2,
+    "benchmarks": 4,
+    "duplicate_assessment_definitions_avoided": 2,
+    "exact_definition_reduction_pct": 50.0,
+    "exact_duplicate_groups": 2,
+    "fingerprint_cache_hits": 0,
+    "fingerprint_cache_misses": 4,
+    "local_assessment_files_removed": 4,
+    "near_duplicate_review_groups": 0,
+    "near_duplicate_rule_candidates_reported": 0,
+    "referenced_assessment_instances_before": 4,
+    "rule_files_rewritten": 4,
+    "rules": 4
+  }
+}
+{
+  "stats": {
+    "cache": {
+      "hits": 0,
+      "misses": 2
+    },
+    "changed": {
+      "applicability_files_rewritten": 0,
+      "duplicate_assessment_definitions_avoided": 1,
+      "exact_duplicate_groups_promoted": 1,
+      "local_assessment_files_removed": 2,
+      "rule_files_rewritten": 2
+    },
+    "examined": {
+      "benchmarks": 2,
+      "exact_semantic_fingerprints": 1,
+      "referenced_assessment_instances": 2,
+      "rules": 2,
+      "shape_fingerprints": 1
+    },
+    "format": "scap-ng-normalizer-stats-0.1",
+    "mode": "exact-rewrite",
+    "rates": {
+      "cache_hit_pct": 0.0,
+      "exact_definition_reduction_pct": 50.0
+    },
+    "reasons": {
+      "automatic_change_exact_semantic_duplicate_groups": 1,
+      "review_only_near_duplicate_groups": 0,
+      "review_only_rule_overlap_candidates": 1
+    },
+    "tool": "scap_ng_repo_normalizer",
+    "unchanged_or_review": {
+      "assessment_definitions_after_exact_normalization": 1,
+      "near_duplicate_review_groups": 0,
+      "near_duplicate_rule_candidates_reported": 1
+    }
+  },
+  "summary": {
+    "applicability_files_rewritten": 0,
+    "assessment_definitions_after_exact_normalization": 1,
+    "benchmarks": 2,
+    "duplicate_assessment_definitions_avoided": 1,
+    "exact_definition_reduction_pct": 50.0,
+    "exact_duplicate_groups": 1,
+    "fingerprint_cache_hits": 0,
+    "fingerprint_cache_misses": 2,
+    "local_assessment_files_removed": 2,
+    "near_duplicate_review_groups": 0,
+    "near_duplicate_rule_candidates_reported": 1,
+    "referenced_assessment_instances_before": 2,
+    "rule_files_rewritten": 2,
+    "rules": 2
+  }
+}
+{
+  "stats": {
+    "cache": {
+      "hits": 0,
+      "misses": 1
+    },
+    "changed": {
+      "applicability_files_rewritten": 0,
+      "duplicate_assessment_definitions_avoided": 0,
+      "exact_duplicate_groups_promoted": 0,
+      "local_assessment_files_removed": 0,
+      "rule_files_rewritten": 0
+    },
+    "examined": {
+      "benchmarks": 2,
+      "exact_semantic_fingerprints": 1,
+      "referenced_assessment_instances": 1,
+      "rules": 2,
+      "shape_fingerprints": 1
+    },
+    "format": "scap-ng-normalizer-stats-0.1",
+    "mode": "exact-rewrite",
+    "rates": {
+      "cache_hit_pct": 0.0,
+      "exact_definition_reduction_pct": 0.0
+    },
+    "reasons": {
+      "automatic_change_exact_semantic_duplicate_groups": 0,
+      "review_only_near_duplicate_groups": 0,
+      "review_only_rule_overlap_candidates": 1
+    },
+    "tool": "scap_ng_repo_normalizer",
+    "unchanged_or_review": {
+      "assessment_definitions_after_exact_normalization": 1,
+      "near_duplicate_review_groups": 0,
+      "near_duplicate_rule_candidates_reported": 1
+    }
+  },
+  "summary": {
+    "applicability_files_rewritten": 0,
+    "assessment_definitions_after_exact_normalization": 1,
+    "benchmarks": 2,
+    "duplicate_assessment_definitions_avoided": 0,
+    "exact_definition_reduction_pct": 0.0,
+    "exact_duplicate_groups": 0,
+    "fingerprint_cache_hits": 0,
+    "fingerprint_cache_misses": 1,
+    "local_assessment_files_removed": 0,
+    "near_duplicate_review_groups": 0,
+    "near_duplicate_rule_candidates_reported": 1,
+    "referenced_assessment_instances_before": 1,
+    "rule_files_rewritten": 0,
+    "rules": 2
+  }
+}
+{
+  "stats": {
+    "cache": {
+      "hits": 0,
+      "misses": 2
+    },
+    "changed": {
+      "applicability_files_rewritten": 0,
+      "duplicate_assessment_definitions_avoided": 1,
+      "exact_duplicate_groups_promoted": 1,
+      "local_assessment_files_removed": 0,
+      "rule_files_rewritten": 0
+    },
+    "examined": {
+      "benchmarks": 2,
+      "exact_semantic_fingerprints": 1,
+      "referenced_assessment_instances": 2,
+      "rules": 2,
+      "shape_fingerprints": 1
+    },
+    "format": "scap-ng-normalizer-stats-0.1",
+    "mode": "dry-run-exact-plan",
+    "rates": {
+      "cache_hit_pct": 0.0,
+      "exact_definition_reduction_pct": 50.0
+    },
+    "reasons": {
+      "automatic_change_exact_semantic_duplicate_groups": 1,
+      "review_only_near_duplicate_groups": 0,
+      "review_only_rule_overlap_candidates": 0
+    },
+    "tool": "scap_ng_repo_normalizer",
+    "unchanged_or_review": {
+      "assessment_definitions_after_exact_normalization": 1,
+      "near_duplicate_review_groups": 0,
+      "near_duplicate_rule_candidates_reported": 0
+    }
+  },
+  "summary": {
+    "applicability_files_rewritten": 0,
+    "assessment_definitions_after_exact_normalization": 1,
+    "benchmarks": 2,
+    "duplicate_assessment_definitions_avoided": 1,
+    "exact_definition_reduction_pct": 50.0,
+    "exact_duplicate_groups": 1,
+    "fingerprint_cache_hits": 0,
+    "fingerprint_cache_misses": 2,
+    "local_assessment_files_removed": 0,
+    "near_duplicate_review_groups": 0,
+    "near_duplicate_rule_candidates_reported": 0,
+    "referenced_assessment_instances_before": 2,
+    "rule_files_rewritten": 0,
+    "rules": 2
+  }
+}

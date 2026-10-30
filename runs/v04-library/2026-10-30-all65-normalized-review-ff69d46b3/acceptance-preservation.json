@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "original_rule_statuses": {
+    "CONVERTED_UNVERIFIED": 2559,
+    "MANUAL_OCIL_ONLY_PRESERVED": 1653,
+    "CONVERTED_VERIFIED": 4258,
+    "BLOCKED": 422
+  },
+  "retained_frozen_proof_pairs": 4258,
+  "native_files": 13754,
+  "native_yaml_bytes_changed": 0,
+  "original_only_streams": [
+    {
+      "scope": "preserved-original-40b8f6f9b11e",
+      "title": "MS SQL Server 2022 Database STIG SCAP Benchmark - NIWC Enhanced with Manual Questions",
+      "original_rules": 23,
+      "conversion_statuses": {
+        "BLOCKED": 16,
+        "MANUAL_OCIL_ONLY_PRESERVED": 7
+      }
+    },
+    {
+      "scope": "preserved-original-8075819872d2",
+      "title": "Apache Tomcat Application Server 9 STIG SCAP Benchmark - NIWC Enhanced with Manual Questions",
+      "original_rules": 79,
+      "conversion_statuses": {
+        "MANUAL_OCIL_ONLY_PRESERVED": 79
+      }
+    },
+    {
+      "scope": "preserved-original-daed925b2837",
+      "title": "MS SQL Server 2022 Instance STIG SCAP Benchmark - NIWC Enhanced with Manual Questions",
+      "original_rules": 79,
+      "conversion_statuses": {
+        "MANUAL_OCIL_ONLY_PRESERVED": 31,
+        "BLOCKED": 48
+      }
+    },
+    {
+      "scope": "preserved-original-e9052d20e1ea",
+      "title": "MS SQL Server 2016 Database STIG SCAP Benchmark - NIWC Enhanced with Manual Questions",
+      "original_rules": 23,
+      "conversion_statuses": {
+        "BLOCKED": 16,
+        "MANUAL_OCIL_ONLY_PRESERVED": 7
+      }
+    },
+    {
+      "scope": "preserved-original-ea9dd9a028d1",
+      "title": "MS SQL Server 2016 Instance STIG SCAP Benchmark - NIWC Enhanced with Manual Questions",
+      "original_rules": 84,
+      "conversion_statuses": {
+        "MANUAL_OCIL_ONLY_PRESERVED": 27,
+        "BLOCKED": 57
+      }
+    }
+  ],
+  "catalog_enrichment": "Generated title/status metadata only; no native payload/ref/program mutation",
+  "full_source_conversion_or_oval_proof_replay": false
+}

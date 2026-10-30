@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "cached_open_and_scope_search_seconds": 0.05857279500196455,
+  "changed_document_check_seconds": 0.573553301001084,
+  "parsed_documents": 1,
+  "indexed_documents": 13754,
+  "peak_rss_kib_linux": 173004,
+  "source_mutations": 0
+}

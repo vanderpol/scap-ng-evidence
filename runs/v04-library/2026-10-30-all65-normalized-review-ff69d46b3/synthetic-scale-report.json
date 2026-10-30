@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "synthetic": true,
+  "streams": 100,
+  "native_index_documents": 10100,
+  "setup_seconds": 40.90864518500166,
+  "lazy_scope_search_seconds": 0.011717804001818877,
+  "lazy_matches": 20,
+  "incremental_check_seconds": 0.4329418820052524,
+  "incremental": {
+    "format": "scap-ng-library-report/1",
+    "mode": "check",
+    "status": "PASS",
+    "validation_scope": "changed_notifications_and_indexed_reference_graph",
+    "diagnostics": [],
+    "counts": {
+      "assessment": 5000,
+      "benchmark": 100,
+      "rule": 5000
+    },
+    "affected_consumers": [
+      "benchmarks/scale-000.yaml",
+      "rules/scale-000/policy-scale-000-rule.yaml"
+    ],
+    "metrics": {
+      "parsed_documents": 1,
+      "indexed_documents": 10100,
+      "used_read_only_cache": true,
+      "reference_check_seconds": 0.24156208799831802
+    },
+    "scanner_evaluated": false,
+    "semantic_deduplication_performed": false
+  },
+  "peak_rss_kib_linux": 82256,
+  "limitations": [
+    "Index/reference performance only; not scanner/runtime/source-proof evidence",
+    "Initial native-fixture copies seeded without per-document schema replay; edited Assessment validated normally"
+  ]
+}

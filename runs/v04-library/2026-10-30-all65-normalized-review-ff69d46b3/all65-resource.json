@@ -1,0 +1,15 @@
+{
+  "seconds": 705.8442941120011,
+  "peak_rss_kib_linux": 279924,
+  "exit_code": 0,
+  "command": [
+    "tools/scap_ng_library_cli.py",
+    "export-draft",
+    "/workspace/rc-v040-20261029/all-65-draft",
+    "--output",
+    "/workspace/library-v04-261/normalized-all65",
+    "--full-corpus-deliverable",
+    "--source-archive",
+    "/workspace/rc-v040-20261029/remote-verified-all-65-revised-draft.zip"
+  ]
+}

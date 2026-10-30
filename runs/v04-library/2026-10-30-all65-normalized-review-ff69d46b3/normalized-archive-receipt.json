@@ -1,0 +1,11 @@
+{
+  "file": "scap-ng-v04-normalized-library-review.zip",
+  "bytes": 44544308,
+  "sha256": "a01ea589501bf8a53e5df68e50ca9478f19543d2bd3844546667fde743c28d8c",
+  "payload_files": 13890,
+  "every_payload_digest": "PASS",
+  "zip_crc": "PASS",
+  "native_files": 13754,
+  "native_yaml_changed": 0,
+  "shared_promotions": 0
+}

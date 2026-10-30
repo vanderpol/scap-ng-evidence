@@ -1,0 +1,54 @@
+{
+  "evidence_id": "2026-10-30-all65-normalized-review-ff69d46b3",
+  "kind": "repository/audit evidence: non-normative native library review",
+  "created_at": "2026-10-30",
+  "source_repository": "https://github.com/vanderpol/scap-ng",
+  "source_commit": "ff69d46b36e05e45074a5e7f43bf2ef3cf464ddf",
+  "export_engine_commit": "03ddc6beda8dcda5ff57439b0c3d7a2d12763d1b",
+  "tool": "tools/scap_ng_library_cli.py export-draft",
+  "command": [
+    "tools/scap_ng_library_cli.py",
+    "export-draft",
+    "/workspace/rc-v040-20261029/all-65-draft",
+    "--output",
+    "/workspace/library-v04-261/normalized-all65",
+    "--full-corpus-deliverable",
+    "--source-archive",
+    "/workspace/rc-v040-20261029/remote-verified-all-65-revised-draft.zip"
+  ],
+  "external_input": {
+    "url": "https://github.com/vanderpol/scap-ng-evidence/tree/v04-revised-all65-draft-files-20261030-a08c9beb9/runs/v04-converter/2026-10-30-all-65-revised-draft-download",
+    "archive_sha256": "a09ee9a13cdfeeb1b8599eab61308e935a19b99eb62eadafd32002d13d90f8bd"
+  },
+  "output_root": "runs/v04-library/2026-10-30-all65-normalized-review-ff69d46b3",
+  "payload_files": 13890,
+  "storage_decision": "Bounded review-deliverable exception: retain one compressed complete normalized preview and one exact toolchain snapshot in Git to satisfy owner-requested downloadable review candidate. Release asset upload unavailable (HTTP 401); no retry/bypass. No expanded corpus or runtime packages retained. Compact analyses and inventories accompany both archives; older evidence unchanged.",
+  "validation": {
+    "archive_crc_and_all_payload_digests": "PASS",
+    "native_yaml_changed": 0,
+    "program_hashes_preserved": 6817,
+    "accepted_proof_triples_preserved": 4258,
+    "new_proofs": 0,
+    "promotions": 0,
+    "final_implementation_ci": "IN_PROGRESS"
+  },
+  "limitations": [
+    "60 editable native Benchmark namespaces; five original-only streams retained as records",
+    "2559 native candidates remain unverified; 422 blocked and1653 manual originals preserved",
+    "No source conversion, OVAL proof replay, runtime scanner claim or publisher trust assertion",
+    "No schema/compiler/editor changes, final release tag or license decision",
+    "Known unrelated historical #214 preview renderer/schema failure; see CI report"
+  ],
+  "artifacts": [
+    {
+      "file": "scap-ng-0.4.0-toolchain-ff69d46b36e0.zip",
+      "bytes": 24022349,
+      "sha256": "adbb52973ce608ce918e840658ead7b3265c601b43dc71a466da4e8257fe421d"
+    },
+    {
+      "file": "scap-ng-v04-normalized-library-review.zip",
+      "bytes": 44544308,
+      "sha256": "a01ea589501bf8a53e5df68e50ca9478f19543d2bd3844546667fde743c28d8c"
+    }
+  ]
+}

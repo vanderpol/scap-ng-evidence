@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "source_commit": "ff69d46b36e05e45074a5e7f43bf2ef3cf464ddf",
+  "fresh_offline_dependency_install": true,
+  "pip_check": "PASS",
+  "focused_tests_passed": 28,
+  "cli_checks": [
+    "version",
+    "focused export",
+    "analyze zero changes",
+    "original manual archive locators",
+    "unverified search",
+    "cache deletion and rebuild",
+    "compile selected scope"
+  ],
+  "checkout_import_fallback": false,
+  "source_archive_crc": "PASS",
+  "new_runtime_or_source_proofs": 0,
+  "source_snapshot_reproducible": true,
+  "source_snapshot_sha256": "adbb52973ce608ce918e840658ead7b3265c601b43dc71a466da4e8257fe421d",
+  "independent_package_consumer": "PASS"
+}
