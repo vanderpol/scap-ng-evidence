@@ -30,7 +30,9 @@
     "accepted_proof_triples_preserved": 4258,
     "new_proofs": 0,
     "promotions": 0,
-    "final_implementation_ci": "IN_PROGRESS"
+    "final_implementation_ci": "PASS 3359 selected /3358 passed /one explicit optional corpus skip",
+    "fresh_remote_archive_downloads": "SHA256 and CRC PASS",
+    "clean_extracted_cli": "PASS; offline pinned dependencies, 28 focused tests, compile and independent reader"
   },
   "limitations": [
     "60 editable native Benchmark namespaces; five original-only streams retained as records",
@@ -50,5 +52,6 @@
       "bytes": 44544308,
       "sha256": "a01ea589501bf8a53e5df68e50ca9478f19543d2bd3844546667fde743c28d8c"
     }
-  ]
+  ],
+  "immutable_review_tag": "v04-normalized-library-review-20261030-ff69d46b3"
 }

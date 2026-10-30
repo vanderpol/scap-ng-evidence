@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "method": "fresh HTTPS download from immutable evidence commit, SHA256 and ZIP CRC",
+  "artifacts": [
+    {
+      "url": "https://raw.githubusercontent.com/vanderpol/scap-ng-evidence/2fc4c4b/runs/v04-library/2026-10-30-all65-normalized-review-ff69d46b3/scap-ng-v04-normalized-library-review.zip",
+      "bytes": 44544308,
+      "sha256": "a01ea589501bf8a53e5df68e50ca9478f19543d2bd3844546667fde743c28d8c",
+      "zip_crc": "PASS"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/vanderpol/scap-ng-evidence/2fc4c4b/runs/v04-library/2026-10-30-all65-normalized-review-ff69d46b3/scap-ng-0.4.0-toolchain-ff69d46b36e0.zip",
+      "bytes": 24022349,
+      "sha256": "adbb52973ce608ce918e840658ead7b3265c601b43dc71a466da4e8257fe421d",
+      "zip_crc": "PASS"
+    }
+  ]
+}

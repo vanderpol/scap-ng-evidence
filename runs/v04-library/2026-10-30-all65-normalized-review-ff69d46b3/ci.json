@@ -1,6 +1,6 @@
 {
   "source_commit": "ff69d46b36e05e45074a5e7f43bf2ef3cf464ddf",
-  "status": "IN_PROGRESS",
+  "status": "PASS",
   "run_id": 41052208017,
   "url": "https://github.com/vanderpol/scap-ng/actions/runs/41052208017",
   "previous_maintained": {
@@ -23,5 +23,34 @@
     "issue": 214,
     "stage": "unchanged source renderer/schema before normalizer",
     "rejected_documents": 1567
-  }
+  },
+  "job_id": 124050782106,
+  "artifact_id": 12975404451,
+  "selected": 3359,
+  "passed": 3358,
+  "skips": 1,
+  "failures": 0,
+  "errors": 0,
+  "test_seconds": 1159.586,
+  "job_seconds": 1191,
+  "triggered_workflows": [
+    {
+      "id": 41052208017,
+      "name": "Rebaseline smoke regression",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 41052207957,
+      "name": "Current-design regression contracts",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 41052207972,
+      "name": "Commit issue reference",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ]
 }
