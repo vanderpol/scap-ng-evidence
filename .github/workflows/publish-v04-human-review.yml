@@ -1,0 +1,74 @@
+name: Publish human-readable 0.4.0 authoring review (immutable)
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-v04-human-review.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: immutable-v04-human-review
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == 'vanderpol/scap-ng-evidence'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 80
+    steps:
+      - name: Check out the exact reviewed source implementation
+        uses: actions/checkout@v4
+        with:
+          repository: vanderpol/scap-ng
+          ref: ab5cddd018bb68f8e90701b37afeb38333e29bae
+          path: source
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install offline library dependencies
+        run: python -m pip install --disable-pip-version-check PyYAML==6.0.2 jsonschema==4.25.1
+      - name: Retrieve checksum-pinned immutable normalized v1 source
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/original"
+          curl --fail --location --retry 4 --retry-all-errors \
+            'https://raw.githubusercontent.com/vanderpol/scap-ng-evidence/v04-normalized-library-review-20261030-ff69d46b3/runs/v04-library/2026-10-30-all65-normalized-review-ff69d46b3/scap-ng-v04-normalized-library-review.zip' \
+            --output "$RUNNER_TEMP/normalized-v1.zip"
+          echo 'a01ea589501bf8a53e5df68e50ca9478f19543d2bd3844546667fde743c28d8c  '"$RUNNER_TEMP/normalized-v1.zip" | sha256sum --check
+          unzip -q "$RUNNER_TEMP/normalized-v1.zip" -d "$RUNNER_TEMP/original"
+      - name: Reflow all 65 streams with no content changes
+        shell: bash
+        run: |
+          set -euo pipefail
+          PYTHONPATH=source/tools python source/tools/scap_ng_library_cli.py reflow-layout \
+            "$RUNNER_TEMP/original/scap-ng-normalized-review" \
+            --output "$RUNNER_TEMP/human-review" --full-corpus-deliverable
+          jq -e '.status == "PASS" and .streams == 65 and .native_yaml == 13754 and .native_benchmarks == 60 and .compiled_program_hashes_unchanged == 6817 and .accepted_static_proofs_unchanged == 4258 and .index_check.status == "PASS" and (.index_check.diagnostics | length) == 0 and .native_ids_and_yaml_bytes == "UNCHANGED" and .automatic_shared_promotions == 0' \
+            "$RUNNER_TEMP/human-review/metadata/reflow-receipt.json"
+      - name: Create and check new portable ZIP and per-file manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/output"
+          PYTHONPATH=source/tools python source/tools/package_v04_human_library.py \
+            "$RUNNER_TEMP/human-review" \
+            --output "$RUNNER_TEMP/output/scap-ng-0.4.0-human-readable-authoring-review.zip"
+          unzip -tqq "$RUNNER_TEMP/output/scap-ng-0.4.0-human-readable-authoring-review.zip"
+          sha256sum "$RUNNER_TEMP/output/scap-ng-0.4.0-human-readable-authoring-review.zip"
+      - name: Publish as a separate pre-alpha REVIEW release, never replace old assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          tag='v04-human-readable-review-20261030-ab5cddd'
+          gh release create "$tag" \
+            "$RUNNER_TEMP/output/scap-ng-0.4.0-human-readable-authoring-review.zip" \
+            "$RUNNER_TEMP/output/scap-ng-0.4.0-human-readable-authoring-review.zip.manifest.json" \
+            --prerelease --target "$GITHUB_SHA" \
+            --title 'SCAP-NG 0.4.0 human-readable authoring library — 65-stream REVIEW' \
+            --notes 'REVIEW/DRAFT only; not a final SCAP-NG 0.4.0 release. The 0.3-style authoring/ tree removes local/ and random suffixes, keeps manual and automated separate, preserves 13,754 native YAML files byte-for-byte and 6,817 compiled program hashes/4,258 accepted static proofs. Five source-only streams remain durable records. No scanner equivalence or publisher-trust claims. Source conversion and its pinned v1 technical package remain immutable. See vanderpol/scap-ng issue #263 and commit ab5cddd.'
