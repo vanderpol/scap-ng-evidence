@@ -1,0 +1,218 @@
+[
+  {
+    "branch": "assessment-reference-20261003",
+    "sha": "bd5a0d867c02a8122a7a1710259a2f73d1ea8ba3",
+    "behind_main": 5334,
+    "ahead_main": 0
+  },
+  {
+    "branch": "assessment-results-0.2-20261003",
+    "sha": "35d994eb83901923e279ac7ea19d63f23990b040",
+    "behind_main": 5346,
+    "ahead_main": 0
+  },
+  {
+    "branch": "audit/issue-30-rhel9-selection",
+    "sha": "e90efeede635b11f8dfaf73a82dbf52baa40ced4",
+    "behind_main": 6632,
+    "ahead_main": 1
+  },
+  {
+    "branch": "capability-audit-20261003",
+    "sha": "5bb0e28d12a036740f24ac9a92a4733224d80be3",
+    "behind_main": 5336,
+    "ahead_main": 0
+  },
+  {
+    "branch": "collected-items-0.2-20261003",
+    "sha": "e000d80f03e17df4f22f62d488d7917e0429444a",
+    "behind_main": 5351,
+    "ahead_main": 0
+  },
+  {
+    "branch": "conditional-conformance-0.2-20261003",
+    "sha": "dec2cef9a3a5de01bc4cf4cfe15ca8fac86df170",
+    "behind_main": 5355,
+    "ahead_main": 0
+  },
+  {
+    "branch": "conditional-schema-0.2-20261003",
+    "sha": "31d54712a004b2172a5d3e1210a51e451f2de60e",
+    "behind_main": 5354,
+    "ahead_main": 0
+  },
+  {
+    "branch": "esx-host-capabilities-20261003",
+    "sha": "1b439fb6270eed910058a72b1936fb4b790a412d",
+    "behind_main": 5332,
+    "ahead_main": 0
+  },
+  {
+    "branch": "esx-host-identity-software-20261003",
+    "sha": "9978c0c2f0b6d23f88477d70733581ab08231d76",
+    "behind_main": 5330,
+    "ahead_main": 0
+  },
+  {
+    "branch": "fast-five-conversion-regression",
+    "sha": "68f6f999c44e47d7f468f60f7861c56785803c63",
+    "behind_main": 5111,
+    "ahead_main": 0
+  },
+  {
+    "branch": "feature/optional-auto-map-groups",
+    "sha": "e3fc312f40d7fab445ae614d2a7bfd55b98e05fa",
+    "behind_main": 4652,
+    "ahead_main": 23
+  },
+  {
+    "branch": "feature/stig-manual-audit-outputs-159",
+    "sha": "5ecc2458ba97acabbf817d4b1454961c35fe4f94",
+    "behind_main": 4655,
+    "ahead_main": 34
+  },
+  {
+    "branch": "feature/stig-manual-conversion-audit-161",
+    "sha": "d70260662c1f0673899f01e9bcd932bd11c59b34",
+    "behind_main": 4654,
+    "ahead_main": 18
+  },
+  {
+    "branch": "fix/variable-filter-dependency-validation",
+    "sha": "b2ca3e16ac6efa43dc610d17b61e185678d150a7",
+    "behind_main": 6610,
+    "ahead_main": 1
+  },
+  {
+    "branch": "freeze-v020-exact-main-trigger",
+    "sha": "6273c10ff3aae700f346807a53f910ea09a1e14d",
+    "behind_main": 5095,
+    "ahead_main": 0
+  },
+  {
+    "branch": "freeze-v020-final-audit-fixes",
+    "sha": "21799478af220a8925ab2d09ce4f2dfd9f2a9edb",
+    "behind_main": 5107,
+    "ahead_main": 0
+  },
+  {
+    "branch": "freeze-v020-final-postmerge",
+    "sha": "7f560bbf59c7777fb69eb10ac22acb512fe5e2af",
+    "behind_main": 5113,
+    "ahead_main": 0
+  },
+  {
+    "branch": "freeze-v020-rhel-audit-fix",
+    "sha": "68380d5389411fc0d4fb24eca5e6a7bd825269a3",
+    "behind_main": 5112,
+    "ahead_main": 3
+  },
+  {
+    "branch": "freeze-v020-rhel-audit-quarantine",
+    "sha": "38c61c914f390d303ecc1da13a48e2a5f7e74f56",
+    "behind_main": 5112,
+    "ahead_main": 5
+  },
+  {
+    "branch": "freeze-v020-rhel-source-defect-fix",
+    "sha": "cdff2a3b39dd6536acb8298e65fe1522ae4061d4",
+    "behind_main": 5109,
+    "ahead_main": 0
+  },
+  {
+    "branch": "handoff-v020-branch-discipline",
+    "sha": "1754c402a6c2f0fb06724dfe5fbd3fc1fdd363b4",
+    "behind_main": 5094,
+    "ahead_main": 1
+  },
+  {
+    "branch": "hold-esx-upstream-guidance-20261003",
+    "sha": "1485842150aab286c8e4ddc5ff0782f5f4c64d95",
+    "behind_main": 5329,
+    "ahead_main": 1
+  },
+  {
+    "branch": "item-inclusion-0.2-20261003",
+    "sha": "0047f6b55b76403b12143a74f127ab8a66ab5cc0",
+    "behind_main": 5341,
+    "ahead_main": 0
+  },
+  {
+    "branch": "iteration-002-policy-structure",
+    "sha": "68a62d62373b88b7cb81422c70578ada1ea8e0fc",
+    "behind_main": 7307,
+    "ahead_main": 0
+  },
+  {
+    "branch": "iteration-003-clean-conversion",
+    "sha": "fcd581e096457a87e1114ae95ffa4a5a285124bd",
+    "behind_main": 7094,
+    "ahead_main": 0
+  },
+  {
+    "branch": "main",
+    "sha": "4d78f700a4a555b474b38c230d7199e6e1a6bf21",
+    "behind_main": 0,
+    "ahead_main": 0
+  },
+  {
+    "branch": "reported-elements-0.2-20261003",
+    "sha": "b9f42d24a2a4883a3f1753c12e5c843fc9b5da80",
+    "behind_main": 5353,
+    "ahead_main": 0
+  },
+  {
+    "branch": "research/for-each-audit-20261006",
+    "sha": "47eac54d8a374cbf4d725784f1fae717ef6b7f69",
+    "behind_main": 4649,
+    "ahead_main": 110
+  },
+  {
+    "branch": "result-package-0.2-20261003",
+    "sha": "814d972cca262837b8eac78b96ca7edd2a8c9488",
+    "behind_main": 5339,
+    "ahead_main": 0
+  },
+  {
+    "branch": "roundtrip-ci-probe",
+    "sha": "e815776353165789525559457e07d4d179f943c2",
+    "behind_main": 6878,
+    "ahead_main": 13
+  },
+  {
+    "branch": "roundtrip-conformance-003",
+    "sha": "6599036c22e62b1249312355102fb614ee5acf6a",
+    "behind_main": 6865,
+    "ahead_main": 147
+  },
+  {
+    "branch": "roundtrip-conformance-003-validation",
+    "sha": "efcf4a19d4e3af262a9e4aea6370bf717a1d3817",
+    "behind_main": 6865,
+    "ahead_main": 49
+  },
+  {
+    "branch": "schema-020-remaining-scope-20261003",
+    "sha": "4fda7d15b376bf027db815818a3a950220b761ed",
+    "behind_main": 5329,
+    "ahead_main": 1
+  },
+  {
+    "branch": "schema-enforcement-0.2-scope-20261003",
+    "sha": "4025740660acc5e85c640b744fb0b6ae0a28f95b",
+    "behind_main": 5360,
+    "ahead_main": 0
+  },
+  {
+    "branch": "schema-v020-self-contained-repair",
+    "sha": "43fdf5608617744aeb55ca45153f49ea5c51f564",
+    "behind_main": 5121,
+    "ahead_main": 0
+  },
+  {
+    "branch": "verify-fast-five-current-baseline",
+    "sha": "2e0044e5ea530493e242b5f00354c02965de8781",
+    "behind_main": 5094,
+    "ahead_main": 1
+  }
+]

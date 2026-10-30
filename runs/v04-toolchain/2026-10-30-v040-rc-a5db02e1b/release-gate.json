@@ -1,0 +1,300 @@
+{
+  "status": "PASS",
+  "source_root": "/workspace/rc-v040-20261029/final-clean/scap-ng-0.4.0-toolchain",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "extracted": true,
+  "cases": [
+    {
+      "name": "linux-static",
+      "source_sha256": "88cc35f98c9ff96c567110c284c06e6adfc556fd59967019bdec6fd1cc5a204f",
+      "draft": false,
+      "execution": {
+        "argv": [
+          "/workspace/rc-v040-20261029/final-clean-env/bin/python",
+          "/workspace/rc-v040-20261029/final-clean/scap-ng-0.4.0-toolchain/tools/v04_direct_converter.py",
+          "/workspace/rc-v040-20261029/final-clean/scap-ng-0.4.0-toolchain/tests/fixtures/v04-draft-compatibility/U_Amazon_Linux_2023_V1R2_STIG_SCAP_1-4_Benchmark-enhancedV1-signed.zip",
+          "--sha256",
+          "88cc35f98c9ff96c567110c284c06e6adfc556fd59967019bdec6fd1cc5a204f",
+          "--output",
+          "/workspace/rc-v040-20261029/final-clean-gate/linux-static",
+          "--verify",
+          "--rule",
+          "xccdf_mil.disa.stig_rule_SV-273996r1119976_rule"
+        ],
+        "returncode": 0,
+        "log": "linux-static.log"
+      },
+      "outcomes": {
+        "NOT_SELECTED": 186,
+        "PROVED": 1
+      },
+      "package_consumer": {
+        "status": "INDEPENDENT_PACKAGE_CONSUMER_PASS",
+        "benchmark": "direct-slice",
+        "bundle_sha256": "1b963b8ebdadee4912b9bb3331551c747eb25ce5a7240a20be0a06c6ed9ab9a4",
+        "documents": 4,
+        "programs": 1,
+        "tests": 1,
+        "shared_objects": 0,
+        "variables": 0,
+        "source_graph_sha256": "6a4e693f723b71a00f992a1071364ea6e7c1e04f9f2fe7dabccb51fe1366223b",
+        "external_source_compared": true,
+        "scanner_evaluated": false,
+        "publisher_trust_verified": false
+      }
+    },
+    {
+      "name": "windows-static-shared",
+      "source_sha256": "2f46264b5fa21c8a033236121794ebe372314bf7458dac0aca4f81179fe7ece0",
+      "draft": false,
+      "execution": {
+        "argv": [
+          "/workspace/rc-v040-20261029/final-clean-env/bin/python",
+          "/workspace/rc-v040-20261029/final-clean/scap-ng-0.4.0-toolchain/tools/v04_direct_converter.py",
+          "/workspace/rc-v040-20261029/final-clean/scap-ng-0.4.0-toolchain/tests/fixtures/v04-direct-prototype/server2025-signed.zip",
+          "--sha256",
+          "2f46264b5fa21c8a033236121794ebe372314bf7458dac0aca4f81179fe7ece0",
+          "--output",
+          "/workspace/rc-v040-20261029/final-clean-gate/windows-static-shared",
+          "--verify",
+          "--rule",
+          "xccdf_mil.disa.stig_rule_SV-278139r1182083_rule",
+          "--rule",
+          "xccdf_mil.disa.stig_rule_SV-278001r1211143_rule"
+        ],
+        "returncode": 0,
+        "log": "windows-static-shared.log"
+      },
+      "outcomes": {
+        "NOT_SELECTED": 289,
+        "PROVED": 2
+      },
+      "package_consumer": {
+        "status": "INDEPENDENT_PACKAGE_CONSUMER_PASS",
+        "benchmark": "direct-slice",
+        "bundle_sha256": "70cca2d582540e824f4c1ff372b412a2a47766d2262c1ed755c0b752ffc0a86f",
+        "documents": 6,
+        "programs": 2,
+        "tests": 6,
+        "shared_objects": 1,
+        "variables": 1,
+        "source_graph_sha256": "799161b84c43b8124eeeef0020a1ef92041c5d1bf34a2b265f9008ffae5bc46b",
+        "external_source_compared": true,
+        "scanner_evaluated": false,
+        "publisher_trust_verified": false
+      }
+    },
+    {
+      "name": "catalog-warning",
+      "source_sha256": "94740b7929dd868043ab1b476c3b568712fc26d045a4d450359cea90effbfa1c",
+      "draft": true,
+      "execution": {
+        "argv": [
+          "/workspace/rc-v040-20261029/final-clean-env/bin/python",
+          "/workspace/rc-v040-20261029/final-clean/scap-ng-0.4.0-toolchain/tools/v04_direct_converter.py",
+          "/workspace/rc-v040-20261029/final-clean/scap-ng-0.4.0-toolchain/tests/fixtures/v04-draft-compatibility/U_Active_Directory_Domain_V3R6_STIG_SCAP_1-4_Benchmark-enhancedV2-signed.zip",
+          "--sha256",
+          "94740b7929dd868043ab1b476c3b568712fc26d045a4d450359cea90effbfa1c",
+          "--output",
+          "/workspace/rc-v040-20261029/final-clean-gate/catalog-warning",
+          "--draft",
+          "--compile",
+          "--rule",
+          "xccdf_navy.navwar.niwcatlantic.scc.ms_rule_SV-243466r959010_rule"
+        ],
+        "returncode": 0,
+        "log": "catalog-warning.log",
+        "independent_reader": {
+          "argv": [
+            "/workspace/rc-v040-20261029/final-clean-env/bin/python",
+            "/workspace/rc-v040-20261029/final-clean/scap-ng-0.4.0-toolchain/tools/verify_v04_package_consumer.py",
+            "/workspace/rc-v040-20261029/final-clean-gate/catalog-warning/CONVERTED_UNVERIFIED.scapng",
+            "--source-json",
+            "/workspace/rc-v040-20261029/final-clean-gate/catalog-warning/authoring-json.zip",
+            "--source-yaml",
+            "/workspace/rc-v040-20261029/final-clean-gate/catalog-warning/authoring-yaml.zip",
+            "--report",
+            "/workspace/rc-v040-20261029/final-clean-gate/catalog-warning/independent-package.json"
+          ],
+          "returncode": 0,
+          "log": "catalog-warning-reader.log"
+        }
+      },
+      "outcomes": null,
+      "package_consumer": {
+        "status": "INDEPENDENT_PACKAGE_CONSUMER_PASS",
+        "benchmark": "direct-slice",
+        "bundle_sha256": "b2af653c14733fc18516fbe438fa18c86b75130900e2e7254558eff97eaa0634",
+        "documents": 4,
+        "programs": 1,
+        "tests": 2,
+        "shared_objects": 0,
+        "variables": 0,
+        "source_graph_sha256": "b66a82a0c7283cd66c3919d6dd5edaa79b4e469655a98237a7ce531fe5f425de",
+        "external_source_compared": true,
+        "scanner_evaluated": false,
+        "publisher_trust_verified": false,
+        "independent_static_proof": "NOT_ESTABLISHED_BY_COMPILATION",
+        "conversion_status": "CONVERTED_UNVERIFIED"
+      }
+    },
+    {
+      "name": "all-exist-warning",
+      "source_sha256": "88cc35f98c9ff96c567110c284c06e6adfc556fd59967019bdec6fd1cc5a204f",
+      "draft": true,
+      "execution": {
+        "argv": [
+          "/workspace/rc-v040-20261029/final-clean-env/bin/python",
+          "/workspace/rc-v040-20261029/final-clean/scap-ng-0.4.0-toolchain/tools/v04_direct_converter.py",
+          "/workspace/rc-v040-20261029/final-clean/scap-ng-0.4.0-toolchain/tests/fixtures/v04-draft-compatibility/U_Amazon_Linux_2023_V1R2_STIG_SCAP_1-4_Benchmark-enhancedV1-signed.zip",
+          "--sha256",
+          "88cc35f98c9ff96c567110c284c06e6adfc556fd59967019bdec6fd1cc5a204f",
+          "--output",
+          "/workspace/rc-v040-20261029/final-clean-gate/all-exist-warning",
+          "--draft",
+          "--compile",
+          "--rule",
+          "xccdf_mil.disa.stig_rule_SV-274017r1120039_rule"
+        ],
+        "returncode": 0,
+        "log": "all-exist-warning.log",
+        "independent_reader": {
+          "argv": [
+            "/workspace/rc-v040-20261029/final-clean-env/bin/python",
+            "/workspace/rc-v040-20261029/final-clean/scap-ng-0.4.0-toolchain/tools/verify_v04_package_consumer.py",
+            "/workspace/rc-v040-20261029/final-clean-gate/all-exist-warning/CONVERTED_UNVERIFIED.scapng",
+            "--source-json",
+            "/workspace/rc-v040-20261029/final-clean-gate/all-exist-warning/authoring-json.zip",
+            "--source-yaml",
+            "/workspace/rc-v040-20261029/final-clean-gate/all-exist-warning/authoring-yaml.zip",
+            "--report",
+            "/workspace/rc-v040-20261029/final-clean-gate/all-exist-warning/independent-package.json"
+          ],
+          "returncode": 0,
+          "log": "all-exist-warning-reader.log"
+        }
+      },
+      "outcomes": null,
+      "package_consumer": {
+        "status": "INDEPENDENT_PACKAGE_CONSUMER_PASS",
+        "benchmark": "direct-slice",
+        "bundle_sha256": "0bb2d2f4e9f5ceb5e8f1f02d7a5f61d5243482a2e4a98aa3f6d66d77491e1c7b",
+        "documents": 4,
+        "programs": 1,
+        "tests": 1,
+        "shared_objects": 0,
+        "variables": 0,
+        "source_graph_sha256": "9c0c57fb5723c618145a477c170f79637a7e6a9d45d702c3c16b1a8f100ae89c",
+        "external_source_compared": true,
+        "scanner_evaluated": false,
+        "publisher_trust_verified": false,
+        "independent_static_proof": "NOT_ESTABLISHED_BY_COMPILATION",
+        "conversion_status": "CONVERTED_UNVERIFIED"
+      }
+    },
+    {
+      "name": "input-binding-warning",
+      "source_sha256": "d16c868152e14bab0a1e2ecdfa6ec889972e068625d4d20d4ac3f861ff2009ca",
+      "draft": true,
+      "execution": {
+        "argv": [
+          "/workspace/rc-v040-20261029/final-clean-env/bin/python",
+          "/workspace/rc-v040-20261029/final-clean/scap-ng-0.4.0-toolchain/tools/v04_direct_converter.py",
+          "/workspace/rc-v040-20261029/final-clean/scap-ng-0.4.0-toolchain/tests/fixtures/v04-draft-compatibility/U_MS_Windows_Defender_Firewall_V2R3_STIG_SCAP_1-4_Benchmark-enhancedV14-signed.zip",
+          "--sha256",
+          "d16c868152e14bab0a1e2ecdfa6ec889972e068625d4d20d4ac3f861ff2009ca",
+          "--output",
+          "/workspace/rc-v040-20261029/final-clean-gate/input-binding-warning",
+          "--draft",
+          "--compile",
+          "--rule",
+          "xccdf_mil.disa.fso_rule_SV-241989r922928_rule"
+        ],
+        "returncode": 0,
+        "log": "input-binding-warning.log",
+        "independent_reader": {
+          "argv": [
+            "/workspace/rc-v040-20261029/final-clean-env/bin/python",
+            "/workspace/rc-v040-20261029/final-clean/scap-ng-0.4.0-toolchain/tools/verify_v04_package_consumer.py",
+            "/workspace/rc-v040-20261029/final-clean-gate/input-binding-warning/CONVERTED_UNVERIFIED.scapng",
+            "--source-json",
+            "/workspace/rc-v040-20261029/final-clean-gate/input-binding-warning/authoring-json.zip",
+            "--source-yaml",
+            "/workspace/rc-v040-20261029/final-clean-gate/input-binding-warning/authoring-yaml.zip",
+            "--report",
+            "/workspace/rc-v040-20261029/final-clean-gate/input-binding-warning/independent-package.json"
+          ],
+          "returncode": 0,
+          "log": "input-binding-warning-reader.log"
+        }
+      },
+      "outcomes": null,
+      "package_consumer": {
+        "status": "INDEPENDENT_PACKAGE_CONSUMER_PASS",
+        "benchmark": "direct-slice",
+        "bundle_sha256": "9110236637ac9a14fb0365403b776207abb019680a75be2c0e29c1e5fbec543a",
+        "documents": 4,
+        "programs": 1,
+        "tests": 3,
+        "shared_objects": 1,
+        "variables": 0,
+        "source_graph_sha256": "d2d2691d0bdf13fceabc0bb15e371558b6a98cf33650a6f1cb4e1e716126dbbd",
+        "external_source_compared": true,
+        "scanner_evaluated": false,
+        "publisher_trust_verified": false,
+        "independent_static_proof": "NOT_ESTABLISHED_BY_COMPILATION",
+        "conversion_status": "CONVERTED_UNVERIFIED"
+      }
+    },
+    {
+      "name": "incompatible-source-negative",
+      "source_sha256": "2f46264b5fa21c8a033236121794ebe372314bf7458dac0aca4f81179fe7ece0",
+      "draft": false,
+      "execution": {
+        "argv": [
+          "/workspace/rc-v040-20261029/final-clean-env/bin/python",
+          "/workspace/rc-v040-20261029/final-clean/scap-ng-0.4.0-toolchain/tools/v04_direct_converter.py",
+          "/workspace/rc-v040-20261029/final-clean/scap-ng-0.4.0-toolchain/tests/fixtures/v04-direct-prototype/server2025-signed.zip",
+          "--sha256",
+          "2f46264b5fa21c8a033236121794ebe372314bf7458dac0aca4f81179fe7ece0",
+          "--output",
+          "/workspace/rc-v040-20261029/final-clean-gate/incompatible-source-negative",
+          "--verify",
+          "--rule",
+          "xccdf_mil.disa.stig_rule_SV-278031r1182046_rule"
+        ],
+        "returncode": 0,
+        "log": "incompatible-source-negative.log"
+      },
+      "outcomes": {
+        "NOT_SELECTED": 290,
+        "BLOCKED": 1
+      },
+      "package_consumer": {
+        "status": "NOT_RUN_NO_PROVED_CLOSURES"
+      }
+    },
+    {
+      "name": "synthetic-ambiguous-catalog-negative",
+      "execution": {
+        "argv": [
+          "/workspace/rc-v040-20261029/final-clean-env/bin/python",
+          "/workspace/rc-v040-20261029/final-clean/scap-ng-0.4.0-toolchain/tools/v04_direct_converter.py",
+          "/workspace/rc-v040-20261029/final-clean-gate/synthetic-duplicate-catalog.zip",
+          "--sha256",
+          "d778e835686eed02b260a15e6ccd5d352aba3b10313ffbd9ba097c529e37f96a",
+          "--rule",
+          "xccdf_navy.navwar.niwcatlantic.scc.ms_rule_SV-243466r959010_rule",
+          "--draft",
+          "--compile",
+          "--output",
+          "/workspace/rc-v040-20261029/final-clean-gate/must-not-exist"
+        ],
+        "returncode": 1,
+        "log": "ambiguous-catalog-negative.log"
+      }
+    }
+  ],
+  "scanner_runtime": "NOT_RUN",
+  "publisher_trust": "NOT_VERIFIED"
+}

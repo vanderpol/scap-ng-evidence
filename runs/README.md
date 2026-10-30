@@ -1,5 +1,11 @@
 # Evidence runs
 
+## 0.4.0 candidate and complete revised DRAFT (2026-10-30)
+
+- [Exact-SHA toolchain candidate / CI / offline installation / owner decision packet](v04-toolchain/2026-10-30-v040-rc-a5db02e1b/README.md) — candidate preparation, licensing/final publication pending.
+- [Complete original-preserving all-65 revised DRAFT download](v04-converter/2026-10-30-all-65-revised-draft-download/README.md) — 6,817 compiled native candidates, including 2,559 unverified additions.
+
+
 Generated evidence sets live here.
 
 Use a stable run identifier and include a manifest satisfying [EVIDENCE-CONTRACT.md](../EVIDENCE-CONTRACT.md).

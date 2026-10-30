@@ -1,0 +1,11 @@
+{
+  "canonical_migration_subtrees": "PASS",
+  "counts": {
+    "split": 20,
+    "count": 43,
+    "substring": 1,
+    "unique": 30
+  },
+  "int32_substring_boundary": "PASS",
+  "scope": "Existing completed native drafts audited against committed migration contract; no regeneration or runtime claim"
+}

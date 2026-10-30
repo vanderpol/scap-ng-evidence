@@ -1,0 +1,34 @@
+[
+  {
+    "id": 41029222610,
+    "name": "Commit issue reference",
+    "head_sha": "a5db02e1b29a2d7c312ddcf593be1ee055afb750",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/vanderpol/scap-ng/actions/runs/41029222610"
+  },
+  {
+    "id": 41029222409,
+    "name": "Markdown navigation and duplication audit",
+    "head_sha": "a5db02e1b29a2d7c312ddcf593be1ee055afb750",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/vanderpol/scap-ng/actions/runs/41029222409"
+  },
+  {
+    "id": 41029222474,
+    "name": "0.4.0 canonical authoring fast checks",
+    "head_sha": "a5db02e1b29a2d7c312ddcf593be1ee055afb750",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/vanderpol/scap-ng/actions/runs/41029222474"
+  },
+  {
+    "id": 41029222399,
+    "name": "Rebaseline smoke regression",
+    "head_sha": "a5db02e1b29a2d7c312ddcf593be1ee055afb750",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/vanderpol/scap-ng/actions/runs/41029222399"
+  }
+]
