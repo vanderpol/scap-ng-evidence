@@ -1,0 +1,106 @@
+[
+  {
+    "id": 41233943603,
+    "name": "0.4.0 toolchain clean-extract smoke",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/vanderpol/scap-ng/actions/runs/41233943603",
+    "source_commit": "a70ec7690b55999f34de8a812c8968b704cbde08"
+  },
+  {
+    "id": 41233943695,
+    "name": "Native SCAP-NG schema validation",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/vanderpol/scap-ng/actions/runs/41233943695",
+    "source_commit": "a70ec7690b55999f34de8a812c8968b704cbde08"
+  },
+  {
+    "id": 41233943598,
+    "name": "Current-design regression contracts",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/vanderpol/scap-ng/actions/runs/41233943598",
+    "source_commit": "a70ec7690b55999f34de8a812c8968b704cbde08"
+  },
+  {
+    "id": 41233943634,
+    "name": "0.4.0 canonical authoring fast checks",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/vanderpol/scap-ng/actions/runs/41233943634",
+    "source_commit": "a70ec7690b55999f34de8a812c8968b704cbde08"
+  },
+  {
+    "id": 41233943587,
+    "name": "SCAP-NG 0.4 draft schema checks",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/vanderpol/scap-ng/actions/runs/41233943587",
+    "source_commit": "a70ec7690b55999f34de8a812c8968b704cbde08"
+  },
+  {
+    "id": 41233943704,
+    "name": "0.4 schema and converter contract synchronization",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/vanderpol/scap-ng/actions/runs/41233943704",
+    "source_commit": "a70ec7690b55999f34de8a812c8968b704cbde08"
+  },
+  {
+    "id": 41233943606,
+    "name": "Commit issue reference",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/vanderpol/scap-ng/actions/runs/41233943606",
+    "source_commit": "a70ec7690b55999f34de8a812c8968b704cbde08"
+  },
+  {
+    "id": 41233943605,
+    "name": "0.4 independent JSON authoring schema and reference gate",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/vanderpol/scap-ng/actions/runs/41233943605",
+    "source_commit": "a70ec7690b55999f34de8a812c8968b704cbde08"
+  },
+  {
+    "id": 41233943694,
+    "name": "Markdown navigation and duplication audit",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/vanderpol/scap-ng/actions/runs/41233943694",
+    "source_commit": "a70ec7690b55999f34de8a812c8968b704cbde08"
+  },
+  {
+    "id": 41233943601,
+    "name": "Representative Board conversion regression",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/vanderpol/scap-ng/actions/runs/41233943601",
+    "source_commit": "a70ec7690b55999f34de8a812c8968b704cbde08"
+  },
+  {
+    "id": 41233939593,
+    "name": "SCAP-NG 0.4 draft schema checks",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/vanderpol/scap-ng/actions/runs/41233939593",
+    "source_commit": "a70ec7690b55999f34de8a812c8968b704cbde08"
+  },
+  {
+    "id": 41233939541,
+    "name": "Foreach modernization research",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/vanderpol/scap-ng/actions/runs/41233939541",
+    "source_commit": "a70ec7690b55999f34de8a812c8968b704cbde08"
+  },
+  {
+    "id": 41233939535,
+    "name": "Commit issue reference",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/vanderpol/scap-ng/actions/runs/41233939535",
+    "source_commit": "a70ec7690b55999f34de8a812c8968b704cbde08"
+  }
+]

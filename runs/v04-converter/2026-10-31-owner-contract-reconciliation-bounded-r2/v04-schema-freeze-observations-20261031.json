@@ -1,0 +1,36 @@
+{
+  "classification": "NATIVE_SCHEMA_COMPILER_GRAMMAR_GAP",
+  "source_rule": "xccdf_mil.disa.stig_rule_SV-278080r1180946_rule",
+  "source_definition": "oval:mil.disa.stig.windows2025:def:278080",
+  "pinned_original_zip": "tests/fixtures/v04-direct-prototype/server2025-signed.zip",
+  "pinned_original_zip_sha256": "2f46264b5fa21c8a033236121794ebe372314bf7458dac0aca4f81179fe7ece0",
+  "base_sample": "docs/examples/owner-contract-20261031/windows-server-2025-shows-on-lock-screen-sv-278080-assessment.json",
+  "base_sample_sha256": "35bbd3a0e686baa2f5cde6e8b426101bfe4229b20ea1d7fd296e1e9e3e8113f6",
+  "counterexample": "docs/audit/v04-freeze-variable-expression-counterexample-20261031.json",
+  "mutation": "Replace expected integer 1 by a declared integer Variable whose expression uses unapproved_placeholder",
+  "native_schema_errors": 0,
+  "program_compiler": "ACCEPTED",
+  "compiled_test_count": 1,
+  "independent_original_source_comparison": "UNVERIFIABLE/UNSUPPORTED",
+  "source_comparison_details": {
+    "outcome": "UNVERIFIABLE/UNSUPPORTED",
+    "test_bindings": {
+      "oval:mil.disa.stig.win:tst:25335200": "verifies-prevent-enabling-screen-slide-show-is-set-enabled-test"
+    },
+    "comparisons": [],
+    "unsupported_obligations": [
+      {
+        "source_test": "oval:mil.disa.stig.win:tst:25335200",
+        "native_test": "verifies-prevent-enabling-screen-slide-show-is-set-enabled-test",
+        "reason": "native function proof unavailable: unapproved_placeholder"
+      }
+    ],
+    "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+    "normalizations_applied": [],
+    "invocation_purpose": "assessment",
+    "historical_root_purpose_metadata": false
+  },
+  "schema_freeze": "NO_GO_PENDING_CLOSED_VARIABLE_EXPRESSION_CONTRACT",
+  "existing_originals_and_proofs_modified": false,
+  "scanner_evaluated": false
+}

@@ -1,0 +1,59 @@
+{
+  "format": "scap-ng/owner-compatibility-samples/1",
+  "status": "BOUNDED_STATIC_SOURCE_PROOFS_NOT_SCANNER_RUNTIME",
+  "source_commit": "0ec285e5c4d5cc92176041355cde3af34fe984a4",
+  "tool": "tools/build_v04_owner_compatibility_samples.py",
+  "assessment_count": 3,
+  "source_inputs": [
+    {
+      "path": "tests/fixtures/v04-direct-prototype/server2025-signed.zip",
+      "sha256": "2f46264b5fa21c8a033236121794ebe372314bf7458dac0aca4f81179fe7ece0",
+      "rules": [
+        "xccdf_mil.disa.stig_rule_SV-278139r1182083_rule",
+        "xccdf_mil.disa.stig_rule_SV-278080r1180946_rule"
+      ]
+    },
+    {
+      "path": "tests/fixtures/v04-independent-validation/SV-257851.xml",
+      "sha256": "e8f90bbaca3c86da93c18d66d4a0e3cf68eb2da6c34f7e851d8b98f6993b3565",
+      "definition": "oval:mil.disa.stig.rhel9os:def:257851"
+    }
+  ],
+  "windows_bundle": {
+    "status": "NATIVE_040_COMPILED_CONTENT_BUNDLE_NOT_SCANNER_TESTED",
+    "benchmark": "direct-slice",
+    "documents": 6,
+    "programs": 2,
+    "tests": 2,
+    "source_graph_sha256": "ebed7f704d4753fa5b1b1264f949ce283da8af63284304e7d3791d5152005b51",
+    "scanner_evaluated": false,
+    "signature_verified": false
+  },
+  "preserved_pins_before": {
+    "tests/fixtures/v04-scalar-proof-contracts.json": "9a32096822afaef3c7fc51f656014f1b912ba9084abdd4a9166df93c8f51dd47",
+    "tests/fixtures/v04-native-generator-parity.json": "f292d3c1d5db613b64066fa2788c0716fe2c8426983504ea8ad1b99243ec6ba6",
+    "tests/fixtures/v04-independent-validation/SV-257851.json": "f98388d83e1ac726b89e099c0521b4a13bd3f0909be1d4cc76247d5d45dd8a39"
+  },
+  "preserved_pins_after": {
+    "tests/fixtures/v04-scalar-proof-contracts.json": "9a32096822afaef3c7fc51f656014f1b912ba9084abdd4a9166df93c8f51dd47",
+    "tests/fixtures/v04-native-generator-parity.json": "f292d3c1d5db613b64066fa2788c0716fe2c8426983504ea8ad1b99243ec6ba6",
+    "tests/fixtures/v04-independent-validation/SV-257851.json": "f98388d83e1ac726b89e099c0521b4a13bd3f0909be1d4cc76247d5d45dd8a39"
+  },
+  "python": "3.12.14",
+  "packages": {
+    "jsonschema": "4.26.0",
+    "PyYAML": "6.0.3",
+    "lxml": "6.1.1"
+  },
+  "native_and_generated_schema": "PASS",
+  "compilation": "PASS",
+  "static_source_comparison": "PROVED",
+  "library_regenerated": false,
+  "existing_evidence_rebaselined": false,
+  "scanner_evaluated": false,
+  "limitations": [
+    "Linux standalone usage context remains unspecified",
+    "No source-intent correction to the pinned Linux regex",
+    "No full corpus, host collection, runtime Input/Variable or scanner equivalence claim"
+  ]
+}

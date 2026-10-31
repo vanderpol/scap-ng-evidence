@@ -1,0 +1,247 @@
+[
+  {
+    "test": "tools/test_v04_restore_missing_applicability.py",
+    "exit_code": 0,
+    "seconds": 0.196
+  },
+  {
+    "test": "tools/test_v04_all_items_schema.py",
+    "exit_code": 0,
+    "seconds": 0.205
+  },
+  {
+    "test": "tools/test_v04_source_schema_registry.py",
+    "exit_code": 0,
+    "seconds": 0.274
+  },
+  {
+    "test": "tools/test_v04_authoring_blocker_audit.py",
+    "exit_code": 0,
+    "seconds": 0.076
+  },
+  {
+    "test": "tools/test_v04_authoring_cleanup.py",
+    "exit_code": 0,
+    "seconds": 0.196
+  },
+  {
+    "test": "tools/test_migrate_v04_evaluate_and_or.py",
+    "exit_code": 0,
+    "seconds": 0.067
+  },
+  {
+    "test": "tools/test_v04_logical_and_or_vocab.py",
+    "exit_code": 0,
+    "seconds": 0.218
+  },
+  {
+    "test": "tools/test_v04_evaluate_operator_schema.py",
+    "exit_code": 0,
+    "seconds": 0.132
+  },
+  {
+    "test": "tools/test_v04_review_reference_graph.py",
+    "exit_code": 0,
+    "seconds": 0.065
+  },
+  {
+    "test": "tools/test_migrate_v04_states_match_to_logic.py",
+    "exit_code": 0,
+    "seconds": 0.158
+  },
+  {
+    "test": "tools/test_migrate_v04_enum_selectors.py",
+    "exit_code": 0,
+    "seconds": 0.072
+  },
+  {
+    "test": "tools/test_v04_apache_preview_compatibility.py",
+    "exit_code": 0,
+    "seconds": 2.892
+  },
+  {
+    "test": "tools/test_v04_package_consumer.py",
+    "exit_code": 0,
+    "seconds": 0.685
+  },
+  {
+    "test": "tools/test_v04_public_validator.py",
+    "exit_code": 0,
+    "seconds": 0.425
+  },
+  {
+    "test": "tools/test_v04_original_source_ledger.py",
+    "exit_code": 0,
+    "seconds": 0.28
+  },
+  {
+    "test": "tools/test_v04_source_package_semantics.py",
+    "exit_code": 0,
+    "seconds": 0.183
+  },
+  {
+    "test": "tools/test_v04_expanded_source_proof.py",
+    "exit_code": 0,
+    "seconds": 0.612
+  },
+  {
+    "test": "tools/test_audit_v04_evaluate_six_state.py",
+    "exit_code": 0,
+    "seconds": 0.106
+  },
+  {
+    "test": "tools/test_v04_canonical_authoring_guard.py",
+    "exit_code": 0,
+    "seconds": 0.167
+  },
+  {
+    "test": "tools/test_v04_flat_object_authoring.py",
+    "exit_code": 0,
+    "seconds": 0.093
+  },
+  {
+    "test": "tools/test_v04_object_contract.py",
+    "exit_code": 0,
+    "seconds": 1.909
+  },
+  {
+    "test": "tools/test_v04_windows_all_exist_decisions.py",
+    "exit_code": 0,
+    "seconds": 0.092
+  },
+  {
+    "test": "tools/test_v04_field_requirement_conversion.py",
+    "exit_code": 0,
+    "seconds": 3.275
+  },
+  {
+    "test": "tools/test_v04_canonical_source_ir.py",
+    "exit_code": 0,
+    "seconds": 0.279
+  },
+  {
+    "test": "tools/test_audit_v04_review_readiness.py",
+    "exit_code": 0,
+    "seconds": 0.102
+  },
+  {
+    "test": "tools/test_v04_a_dataflow_index.py",
+    "exit_code": 0,
+    "seconds": 0.073
+  },
+  {
+    "test": "tools/test_v04_canonical_version_preview.py",
+    "exit_code": 0,
+    "seconds": 0.245
+  },
+  {
+    "test": "tools/test_guard_v04_filtered_union_migration.py",
+    "exit_code": 0,
+    "seconds": 0.085
+  },
+  {
+    "test": "tools/test_migrate_v04_oval_proven_direct_filters.py",
+    "exit_code": 0,
+    "seconds": 0.069
+  },
+  {
+    "test": "tools/test_migrate_v04_additional_source_filters.py",
+    "exit_code": 0,
+    "seconds": 0.078
+  },
+  {
+    "test": "tools/test_guard_v04_additional_source_filters.py",
+    "exit_code": 0,
+    "seconds": 0.092
+  },
+  {
+    "test": "tools/test_audit_v04_filtered_union_oval_provenance.py",
+    "exit_code": 0,
+    "seconds": 0.065
+  },
+  {
+    "test": "tools/test_audit_v04_remaining_singletons_oval.py",
+    "exit_code": 0,
+    "seconds": 0.072
+  },
+  {
+    "test": "tools/test_audit_v04_authoring_patterns.py",
+    "exit_code": 0,
+    "seconds": 0.069
+  },
+  {
+    "test": "tools/test_v04_canonical_result_plan.py",
+    "exit_code": 0,
+    "seconds": 0.073
+  },
+  {
+    "test": "tools/test_v04_result_summaries.py",
+    "exit_code": 0,
+    "seconds": 0.103
+  },
+  {
+    "test": "tools/test_v04_exception_source_oracle.py",
+    "exit_code": 0,
+    "seconds": 0.38
+  },
+  {
+    "test": "tools/test_v04_canonical_requirement_oracle.py",
+    "exit_code": 0,
+    "seconds": 0.363
+  },
+  {
+    "test": "tools/test_v04_canonical_unsigned_package.py",
+    "exit_code": 0,
+    "seconds": 0.229
+  },
+  {
+    "test": "tools/test_v04_canonical_signed_source_package.py",
+    "exit_code": 0,
+    "seconds": 0.363
+  },
+  {
+    "test": "tools/test_v04_native_bundle_compiler.py",
+    "exit_code": 0,
+    "seconds": 0.674
+  },
+  {
+    "test": "tools/test_v04_native_bundle_signing.py",
+    "exit_code": 0,
+    "seconds": 0.526
+  },
+  {
+    "test": "tools/test_v04_approved_pipeline.py",
+    "exit_code": 0,
+    "seconds": 7.251
+  },
+  {
+    "test": "tools/test_v04_schema_draft.py",
+    "exit_code": 0,
+    "seconds": 1.649
+  },
+  {
+    "test": "tools/test_v04_clear_cardinality_schema.py",
+    "exit_code": 0,
+    "seconds": 2.055
+  },
+  {
+    "test": "tools/test_v04_field_requirement_schema.py",
+    "exit_code": 0,
+    "seconds": 5.388
+  },
+  {
+    "test": "tools/test_v04_object_selector_language.py",
+    "exit_code": 0,
+    "seconds": 0.338
+  },
+  {
+    "test": "tools/test_v04_absence_only_integration.py",
+    "exit_code": 0,
+    "seconds": 3.515
+  },
+  {
+    "test": "tools/test_v04_scalar_none_exist_source.py",
+    "exit_code": 0,
+    "seconds": 0.589
+  }
+]
