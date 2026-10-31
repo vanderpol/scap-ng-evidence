@@ -1,0 +1,29 @@
+{
+  "evidence_id": "2026-10-31-owner-contract-final-handoff-b21b10ed3",
+  "evidence_kind": "repository/audit",
+  "created_utc": "2026-10-31T21:44:51.869522+00:00",
+  "source_repository": "https://github.com/vanderpol/scap-ng",
+  "source_commit": "b21b10ed37f129d809dc7b3b7d47c39559d5eef8",
+  "tool_path": "GitHub Actions REST workflow runs + git diff --name-status",
+  "tool_commit": "b21b10ed37f129d809dc7b3b7d47c39559d5eef8",
+  "commands": [
+    "GET /repos/vanderpol/scap-ng/actions/runs?head_sha=b21b10ed37f129d809dc7b3b7d47c39559d5eef8&per_page=100",
+    "git diff --name-status a5a7fc08c98968dc32c449307fc5c65e6f2b9c1b b21b10ed37f129d809dc7b3b7d47c39559d5eef8 -- tests/fixtures"
+  ],
+  "immutable_inputs": [
+    "source baseline a5a7fc08c98968dc32c449307fc5c65e6f2b9c1b",
+    "workflow IDs/URLs in ci-exact-head.json"
+  ],
+  "output_root": "runs/v04-converter/2026-10-31-owner-contract-final-handoff-b21b10ed3",
+  "payload_file_count": 4,
+  "validation": {
+    "ci_runs_pass": 11,
+    "ci_runs_fail": 0,
+    "existing_fixture_payload_changes": 0
+  },
+  "known_limitations": [
+    "CI does not confer semantic approval, full-library equivalence or scanner-runtime qualification.",
+    "Final head differs from reviewed artifact source only by documentation/receipts."
+  ],
+  "original_path_provenance": "Existing draft PR268; no main checkout mutation."
+}

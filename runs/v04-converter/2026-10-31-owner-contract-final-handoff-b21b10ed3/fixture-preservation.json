@@ -1,0 +1,22 @@
+{
+  "source": "b21b10ed37f129d809dc7b3b7d47c39559d5eef8",
+  "baseline": "a5a7fc08c98968dc32c449307fc5c65e6f2b9c1b",
+  "existing_test_fixture_payloads_modified": 0,
+  "new_preservation_copy_count": 14,
+  "new_paths": [
+    "tests/fixtures/v04-owner-original-mappings-20261031/independent.environmentvariable58.json",
+    "tests/fixtures/v04-owner-original-mappings-20261031/independent.sql512.json",
+    "tests/fixtures/v04-owner-original-mappings-20261031/independent.textfilecontent54.json",
+    "tests/fixtures/v04-owner-original-mappings-20261031/macos.nvram512.json",
+    "tests/fixtures/v04-owner-original-mappings-20261031/macos.plist511.json",
+    "tests/fixtures/v04-owner-original-mappings-20261031/macos.pwpolicy512.json",
+    "tests/fixtures/v04-owner-original-mappings-20261031/solaris.package511.json",
+    "tests/fixtures/v04-owner-original-mappings-20261031/unix.process58.json",
+    "tests/fixtures/v04-owner-original-mappings-20261031/windows.cmdlet.json",
+    "tests/fixtures/v04-owner-original-mappings-20261031/windows.fileeffectiverights53.json",
+    "tests/fixtures/v04-owner-original-mappings-20261031/windows.regkeyeffectiverights53.json",
+    "tests/fixtures/v04-owner-original-mappings-20261031/windows.user_sid55.json",
+    "tests/fixtures/v04-preserved-proof-anchors-20261031/capability-common.schema.json",
+    "tests/fixtures/v04-preserved-proof-anchors-20261031/independent.textfilecontent54.json"
+  ]
+}
