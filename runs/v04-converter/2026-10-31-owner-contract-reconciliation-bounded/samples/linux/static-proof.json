@@ -1,0 +1,80 @@
+{
+  "outcome": "PROVED",
+  "test_bindings": {
+    "oval:mil.disa.stig.linux:tst:23029900": "home-is-mounted-with-the-nosuid-option-test"
+  },
+  "comparisons": [
+    {
+      "source_test": "oval:mil.disa.stig.linux:tst:23029900",
+      "native_test": "home-is-mounted-with-the-nosuid-option-test",
+      "source_term": {
+        "capability": "linux.partition",
+        "object": {
+          "capability": "linux.partition",
+          "selectors": {
+            "mount_point": {
+              "operation": "matches_regex",
+              "comparison_datatype": "string",
+              "operand": {
+                "datatype": "string",
+                "value": ".*\\/home"
+              }
+            }
+          }
+        },
+        "found": "one_or_more",
+        "matching": "every",
+        "condition": {
+          "field": "mount_options",
+          "predicate": {
+            "operation": "equals",
+            "comparison_datatype": "string",
+            "operand": {
+              "datatype": "string",
+              "value": "nosuid"
+            },
+            "found": "one_or_more",
+            "matching": "one_or_more"
+          }
+        }
+      },
+      "native_term": {
+        "capability": "linux.partition",
+        "object": {
+          "capability": "linux.partition",
+          "selectors": {
+            "mount_point": {
+              "operation": "matches_regex",
+              "comparison_datatype": "string",
+              "operand": {
+                "datatype": "string",
+                "value": ".*\\/home"
+              }
+            }
+          }
+        },
+        "found": "one_or_more",
+        "matching": "every",
+        "condition": {
+          "field": "mount_options",
+          "predicate": {
+            "operation": "equals",
+            "comparison_datatype": "string",
+            "operand": {
+              "datatype": "string",
+              "value": "nosuid"
+            },
+            "found": "one_or_more",
+            "matching": "one_or_more"
+          }
+        }
+      },
+      "term_sha256": "472de108901c1daed9b492c8b16f09b71df4ce3bda0d4a8029ac0678feda6d28"
+    }
+  ],
+  "unsupported_obligations": [],
+  "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+  "normalizations_applied": [],
+  "invocation_purpose": null,
+  "historical_root_purpose_metadata": false
+}

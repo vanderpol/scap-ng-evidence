@@ -1,0 +1,113 @@
+{
+  "evidence_id": "2026-10-31-owner-contract-reconciliation-bounded",
+  "created_utc": "2026-10-31T19:45:19.278210+00:00",
+  "evidence_kind": "repository/audit with bounded production-migration examples",
+  "classes": {
+    "repository/audit": [
+      "editor-default-review.csv",
+      "editor-default-review.json",
+      "mechanical-reconciliation.json"
+    ],
+    "bounded production migration": [
+      "samples/"
+    ],
+    "validation receipts": [
+      "validation/"
+    ]
+  },
+  "source_repository": "https://github.com/vanderpol/scap-ng",
+  "source_commit": "0ec285e5c4d5cc92176041355cde3af34fe984a4",
+  "tool_commit": "0ec285e5c4d5cc92176041355cde3af34fe984a4",
+  "tool_paths": [
+    "tools/audit_v04_owner_reconciliation.py",
+    "tools/audit_v04_editor_default_catalog.py",
+    "tools/build_v04_owner_compatibility_samples.py"
+  ],
+  "commands": [
+    "PYTHONPATH=tools python tools/audit_v04_owner_reconciliation.py --output RUN/mechanical-reconciliation.json",
+    "PYTHONPATH=tools python tools/audit_v04_editor_default_catalog.py --output RUN/editor-default-review.json --table RUN/editor-default-review.csv",
+    "PYTHONPATH=tools python tools/build_v04_owner_compatibility_samples.py --output RUN/samples"
+  ],
+  "source_inputs": [
+    {
+      "path": "tests/fixtures/v04-direct-prototype/server2025-signed.zip",
+      "sha256": "2f46264b5fa21c8a033236121794ebe372314bf7458dac0aca4f81179fe7ece0",
+      "rules": [
+        "xccdf_mil.disa.stig_rule_SV-278139r1182083_rule",
+        "xccdf_mil.disa.stig_rule_SV-278080r1180946_rule"
+      ]
+    },
+    {
+      "path": "tests/fixtures/v04-independent-validation/SV-257851.xml",
+      "sha256": "e8f90bbaca3c86da93c18d66d4a0e3cf68eb2da6c34f7e851d8b98f6993b3565",
+      "definition": "oval:mil.disa.stig.rhel9os:def:257851"
+    }
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "packages": {
+      "jsonschema": "4.26.0",
+      "PyYAML": "6.0.3",
+      "lxml": "6.1.1"
+    }
+  },
+  "output_root": "runs/v04-converter/2026-10-31-owner-contract-reconciliation-bounded",
+  "control_rows": 453,
+  "supported_capabilities": 100,
+  "annotated_controls": 5,
+  "source_only_declarations": 15,
+  "sample_assessments": 3,
+  "old_example_rules_with_visible_pinned_drift": 41,
+  "validation": {
+    "native_and_generated_schema": "PASS",
+    "yaml_json": "PASS",
+    "compilation": "PASS",
+    "fresh_static_source_comparison": "PROVED",
+    "maintained_scripts": {
+      "pass": 49,
+      "fail": 0,
+      "source_state": "later committed as a70ec7690"
+    },
+    "github_ci": {
+      "commit": "a70ec7690b55999f34de8a812c8968b704cbde08",
+      "all_runs": "PASS"
+    },
+    "local_clean_extract_commit": "7354dc69fcc4f5570bbfe3cee5d3c71a81fb5b98",
+    "local_clean_extract": "PASS",
+    "all100_fingerprint_projection": "PASS_ORIGINAL_FINGERPRINTS_UNCHANGED"
+  },
+  "proof_baselines_changed": false,
+  "existing_65_stream_library_regenerated": false,
+  "scanner_evaluated": false,
+  "known_limitations": [
+    "Audit only; annotations and consumer runtime unchanged",
+    "Exact NG paths/shapes resolved; source QName reachability is not full occurrence-level XSD PSVI",
+    "No source-equivalence or scanner-runtime claim from editor suggestions",
+    "Unsupported source-only defaults remain explicit, not fabricated native controls",
+    "Linux standalone usage context remains unspecified",
+    "No source-intent correction to the pinned Linux regex",
+    "No full corpus, host collection, runtime Input/Variable or scanner equivalence claim",
+    "No new default annotations activated; future owner/editor choices remain pending",
+    "Older pinned examples retain historical grammar and are not current-schema qualification",
+    "CI receipt source commit is distinct from audit/tooling commit; final PR status is tracked in #268"
+  ],
+  "original_path_provenance": {
+    "source_fixtures": [
+      {
+        "path": "tests/fixtures/v04-direct-prototype/server2025-signed.zip",
+        "sha256": "2f46264b5fa21c8a033236121794ebe372314bf7458dac0aca4f81179fe7ece0",
+        "rules": [
+          "xccdf_mil.disa.stig_rule_SV-278139r1182083_rule",
+          "xccdf_mil.disa.stig_rule_SV-278080r1180946_rule"
+        ]
+      },
+      {
+        "path": "tests/fixtures/v04-independent-validation/SV-257851.xml",
+        "sha256": "e8f90bbaca3c86da93c18d66d4a0e3cf68eb2da6c34f7e851d8b98f6993b3565",
+        "definition": "oval:mil.disa.stig.rhel9os:def:257851"
+      }
+    ],
+    "preserved_baseline": "a5a7fc08c98968dc32c449307fc5c65e6f2b9c1b"
+  },
+  "payload_file_count": 84
+}

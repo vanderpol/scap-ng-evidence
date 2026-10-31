@@ -1,0 +1,53 @@
+{
+  "format": "scap-ng-0.4.0-native-assessment-program/0.1",
+  "assessment_id": "linux-home-mount-nosuid-assessment",
+  "assessment_source_sha256": "643d3b6ea6411698ed3fe5a9cdb6762ad7f9b1ac19b4a76b637a0b5b33f88ab5",
+  "test_instructions": [
+    {
+      "opcode": "CHECK_ITEM_CONDITION",
+      "test_id": "home-is-mounted-with-the-nosuid-option-test",
+      "capability": "linux.partition",
+      "source_test_sha256": "48304ab6146234403acfc5f4a493c84f604cd0d652bbf3fb60716e4a6573523c",
+      "operands": {
+        "test_title": "/home is mounted with the nosuid option.",
+        "capability": "linux.partition",
+        "object": {
+          "mount_point": {
+            "matches_regex": ".*\\/home"
+          }
+        },
+        "require": {
+          "items_found": "one_or_more",
+          "items_satisfying": "every",
+          "fields": {
+            "mount_options": {
+              "equals": "nosuid"
+            }
+          },
+          "field_requirement": {
+            "values_found": "one_or_more",
+            "values_matching": "one_or_more"
+          }
+        },
+        "reported_elements": "all"
+      }
+    }
+  ],
+  "result_instructions": [
+    {
+      "op": "read_test",
+      "id": "home-is-mounted-with-the-nosuid-option-test",
+      "path": [
+        "evaluate"
+      ]
+    }
+  ],
+  "result_requires": {
+    "tests": [
+      "home-is-mounted-with-the-nosuid-option-test"
+    ],
+    "dependencies": []
+  },
+  "result_expression_sha256": "8ad73bb77627d8f87ed1e133836c6874d2d7bcb3ac5b5bf4b5037eda0c62301c",
+  "scanner_evaluated": false
+}

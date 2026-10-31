@@ -1,0 +1,14 @@
+test_applicability_assessment_closure (__main__.GraphTests.test_applicability_assessment_closure) ... ok
+test_duplicate_id (__main__.GraphTests.test_duplicate_id) ... ok
+test_missing_evaluate_test (__main__.GraphTests.test_missing_evaluate_test) ... ok
+test_missing_object (__main__.GraphTests.test_missing_object) ... ok
+test_missing_rule_choice (__main__.GraphTests.test_missing_rule_choice) ... ok
+test_missing_variable (__main__.GraphTests.test_missing_variable) ... ok
+test_mixed_evaluate_operators_and_empty_groups_fail_closed (__main__.GraphTests.test_mixed_evaluate_operators_and_empty_groups_fail_closed) ... ok
+test_new_evaluate_and_or_xor_with_legacy_source_compatibility (__main__.GraphTests.test_new_evaluate_and_or_xor_with_legacy_source_compatibility) ... ok
+test_valid (__main__.GraphTests.test_valid) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK

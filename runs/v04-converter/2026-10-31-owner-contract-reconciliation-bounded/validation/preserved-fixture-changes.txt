@@ -1,0 +1,14 @@
+A	tests/fixtures/v04-owner-original-mappings-20261031/independent.environmentvariable58.json
+A	tests/fixtures/v04-owner-original-mappings-20261031/independent.sql512.json
+A	tests/fixtures/v04-owner-original-mappings-20261031/independent.textfilecontent54.json
+A	tests/fixtures/v04-owner-original-mappings-20261031/macos.nvram512.json
+A	tests/fixtures/v04-owner-original-mappings-20261031/macos.plist511.json
+A	tests/fixtures/v04-owner-original-mappings-20261031/macos.pwpolicy512.json
+A	tests/fixtures/v04-owner-original-mappings-20261031/solaris.package511.json
+A	tests/fixtures/v04-owner-original-mappings-20261031/unix.process58.json
+A	tests/fixtures/v04-owner-original-mappings-20261031/windows.cmdlet.json
+A	tests/fixtures/v04-owner-original-mappings-20261031/windows.fileeffectiverights53.json
+A	tests/fixtures/v04-owner-original-mappings-20261031/windows.regkeyeffectiverights53.json
+A	tests/fixtures/v04-owner-original-mappings-20261031/windows.user_sid55.json
+A	tests/fixtures/v04-preserved-proof-anchors-20261031/capability-common.schema.json
+A	tests/fixtures/v04-preserved-proof-anchors-20261031/independent.textfilecontent54.json

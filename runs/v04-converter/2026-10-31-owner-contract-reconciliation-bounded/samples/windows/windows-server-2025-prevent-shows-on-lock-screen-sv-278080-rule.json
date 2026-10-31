@@ -1,0 +1,22 @@
+{
+  "rule": {
+    "id": "windows-server-2025-prevent-shows-on-lock-screen-sv-278080-rule",
+    "version": "WN25-CC-000010",
+    "title": "Windows Server 2025 must prevent the display of slide shows on the lock screen.",
+    "severity": "medium",
+    "role": "full",
+    "weight": 10.0,
+    "discussion": "<VulnDiscussion>Slide shows displayed on the lock screen could display sensitive information to unauthorized personnel. Turning off this feature will limit access to the information to a logged-on user.</VulnDiscussion><FalsePositives></FalsePositives><FalseNegatives></FalseNegatives><Documentable>false</Documentable><Mitigations></Mitigations><SeverityOverrideGuidance></SeverityOverrideGuidance><PotentialImpacts></PotentialImpacts><ThirdPartyTools></ThirdPartyTools><MitigationControl></MitigationControl><Responsibility></Responsibility><IAControls></IAControls>",
+    "requires": [],
+    "conflicts": [],
+    "applicability": [],
+    "parameters": {},
+    "organizational_input_requirements": {},
+    "assessment_choices": {
+      "automated": {
+        "assessment": "windows-server-2025-shows-on-lock-screen-sv-278080-assessment"
+      }
+    },
+    "default_assessment_choice": "automated"
+  }
+}
