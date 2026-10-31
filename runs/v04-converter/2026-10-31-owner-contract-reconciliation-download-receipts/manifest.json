@@ -1,0 +1,22 @@
+{
+  "evidence_id": "2026-10-31-owner-contract-reconciliation-download-receipts",
+  "evidence_kind": "repository/audit",
+  "created_utc": "2026-10-31T21:15:52.921532+00:00",
+  "source_repository": "https://github.com/vanderpol/scap-ng",
+  "source_commit": "ad29b88081765462ab93a61bbe2f737bfb14a7e8",
+  "tool_path": "tools/verify_v04_owner_review_download.py",
+  "tool_commit": "ad29b88081765462ab93a61bbe2f737bfb14a7e8",
+  "commands": "Exact download and verification commands recorded per receipt. No builder/compiler imports.",
+  "immutable_inputs": {
+    "r1_evidence_commit": "49eee15547b030405a62a3de470312ad60ec9c0a",
+    "r2_evidence_commit": "f1b0cef2c9d36daeb307f53e25917e1f16543396"
+  },
+  "output_root": "runs/v04-converter/2026-10-31-owner-contract-reconciliation-download-receipts",
+  "payload_file_count": 4,
+  "validation": "PASS_DOWNLOADED_COPY_INDEPENDENT_EXTRACTION_AND_DIGESTS",
+  "known_limitations": [
+    "Integrity/static samples only; no publisher trust or scanner evaluation",
+    "Board run was in progress at receipt time; exact final status tracked on PR #268"
+  ],
+  "original_path_provenance": "/workspace/reconciliation-268-20261031"
+}
