@@ -1,0 +1,67 @@
+{
+  "evidence_id": "2026-11-01-decision29-variable-closure-05fbd7a4e",
+  "evidence_kind": "repository/audit + bounded original-source contract qualification",
+  "created_utc": "2026-11-01T00:15:38.352217+00:00",
+  "source_repository": "https://github.com/vanderpol/scap-ng",
+  "source_commit": "05fbd7a4e49aea4f49e223552d18c9951531322d",
+  "implementation_commit": "b7d39cbb14a360068e72227ecd52539833d5558c",
+  "tool_commit": "05fbd7a4e49aea4f49e223552d18c9951531322d",
+  "tool_paths": [
+    "tools/v04_variable_expressions.py",
+    "tools/test_v04_variable_expressions.py",
+    "tools/test_v04_schema_draft.py",
+    ".github/workflows/research-c-shared-engine.yml"
+  ],
+  "commands": [
+    "PYTHONPATH=tools python -m unittest tools.test_v04_variable_expressions tools.test_v04_direct_variables tools.test_v04_direct_converter tools.test_v04_direct_enum_variables tools.test_v04_comparison_types tools.test_v04_native_schema_generation tools.test_v04_variable_function_expression_contract tools.test_v04_package_consumer tools.test_v04_native_bundle_compiler tools.test_v04_a_dataflow_index",
+    "PYTHONPATH=tools python tools/test_v04_schema_draft.py",
+    "Each maintained test script in maintained-results.json run independently",
+    "Exact existing C-research workflow unittest command and subsequent export checks; output path relocated into recovery directory only"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "packages": {
+      "jsonschema": "4.26.0",
+      "PyYAML": "6.0.3",
+      "lxml": "6.1.1"
+    }
+  },
+  "immutable_inputs": {
+    "native_source_fixtures": "tests/fixtures/v04-direct-variables/provenance.json",
+    "historical_research_schema": "tests/fixtures/v04-c-historical-contract-20261101/provenance.json",
+    "retained_R2_commit": "f1b0cef2c9d36daeb307f53e25917e1f16543396"
+  },
+  "output_root": "runs/v04-converter/2026-11-01-decision29-variable-closure-05fbd7a4e",
+  "validation": {
+    "focused_tests_pass": 99,
+    "final_affected_tests_pass": 22,
+    "schema_tests_pass": 24,
+    "maintained_scripts_pass": 49,
+    "research_tests": 422,
+    "research_optional_skips": 1,
+    "research_export_steps_pass": 4,
+    "native_after_research_pin_tests_pass": 20,
+    "retained_programs_byte_identical": 3,
+    "final_github_ci": "PASS_ALL_12_TRIGGERED_RUNS",
+    "final_scalar_boundary_tests_pass": 36,
+    "final_schema_tests_pass": 24,
+    "final_pinned_source_tests_pass": 7,
+    "research_tests_passed": 421,
+    "compatibility_github_ci": "PASS_ALL_12_TRIGGERED_RUNS_INCLUDING_RESEARCH",
+    "counterexample_public_yaml_cli": "REJECTED",
+    "counterexample_direct_compiler": "REJECTED"
+  },
+  "known_limitations": [
+    "Static schema/type/program/source-term evidence; no scanner execution or runtime lexical/status/population equivalence",
+    "Two historical NIWC merge static comparisons retained separately from current compiler type acceptance",
+    "Canonical function-call candidate stays inactive; unknown/unsupported function conversions fail closed",
+    "No final schema freeze, merge, release, corpus regeneration or proof/hash rebaseline"
+  ],
+  "original_path_provenance": "/workspace/reconciliation-268-20261031",
+  "payload_file_count": 72,
+  "research_compatibility_commit": "dba98d4e8e2f6c90af959146a682d3be98ed86ec",
+  "source_review_url": "https://github.com/vanderpol/scap-ng/blob/05fbd7a4e49aea4f49e223552d18c9951531322d/docs/audit/v04-decision29-variable-closure-20261031.md",
+  "copied_review_links_resolved_to_source_commit": true,
+  "schema_freeze_recommendation": "GO_FOR_OWNER_REVIEW_SEPARATE_FREEZE_APPROVAL_REQUIRED",
+  "completed_utc": "2026-11-01T00:39:21.319627+00:00"
+}

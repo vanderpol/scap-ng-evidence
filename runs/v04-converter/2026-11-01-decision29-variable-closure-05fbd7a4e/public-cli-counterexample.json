@@ -1,0 +1,30 @@
+{
+  "documents_checked": 1,
+  "valid": 0,
+  "invalid": 1,
+  "unclassified_yaml": 0,
+  "unclassified_paths": [],
+  "results": [
+    {
+      "path": "counterexample.assessment.yaml",
+      "kind": "assessment",
+      "valid": false,
+      "errors": [
+        {
+          "path": "",
+          "schema_path": "",
+          "validator": "native_variable_expression",
+          "message": "Native Variable expression: Variable unexpected-variable/expression: {'unapproved_placeholder': {'value': 1}} is not valid under any of the given schemas",
+          "classification": "untriaged"
+        },
+        {
+          "path": "assessment/variables/unexpected-variable/expression",
+          "schema_path": "properties/assessment/properties/variables/additionalProperties/properties/expression/oneOf",
+          "validator": "oneOf",
+          "message": "{'unapproved_placeholder': {'value': 1}} is not valid under any of the given schemas",
+          "classification": "untriaged"
+        }
+      ]
+    }
+  ]
+}

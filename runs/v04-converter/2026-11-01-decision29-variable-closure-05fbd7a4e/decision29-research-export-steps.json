@@ -1,0 +1,22 @@
+[
+  {
+    "step": "Summarize private Object-derived Apache values (read-only source audit)",
+    "exit_code": 0,
+    "log": "Real Apache SV-214268 variable/Object source scope:\n{\"inline_object_acquisitions\": 4, \"named_shared_object_value_sources\": 2, \"named_variables\": 19, \"private_value_cards\": 4, \"unclassified_object_contexts\": 0}\n"
+  },
+  {
+    "step": "Audit real Apache Variable consumers before splitting authored value roles",
+    "exit_code": 0,
+    "log": "Real original Apache 19-Variable usage contexts:\n{\"origin_system_derived\": 19, \"used_acquisition_parameter\": 9, \"used_value_transformation\": 10}\n"
+  },
+  {
+    "step": "Export original 19-value Apache C hybrid source and verify original reconstruction",
+    "exit_code": 0,
+    "log": "{\"C_normative_acceptance\": false, \"authored_output_sha256\": \"795908c3a263c1572f5a5be1cd75be9af7349f546da32267bdf375aad4ae013d\", \"compact_authoring_file\": \"apache-sv214268-author-edited-only.research.yaml\", \"compact_authoring_sha256\": \"81a4db67a4f9693f46e5a71d5e8853edf7cff7b11a6027c073d6a51957a94a9b\", \"compact_editable_metrics\": {\"bytes\": 12716, \"legacy_source_ids_in_editable_steps\": 0, \"lines\": 354, \"visible_derived_value_steps\": 19}, \"compact_proof\": {\"authored_derived_value_steps\": 19, \"authored_named_observations\": 1, \"exact_full_original_assessment_reconstructed\": true, \"legacy_source_ids_in_authoring\": 0, \"legacy_source_ids_in_provenance\": 25, \"legacy_types_kinds_in_authoring\": 0, \"legacy_types_kinds_in_provenance\": 19, \"original_scanner_execution_proven\": false, \"original_source_equivalent\": true, \"scanner_runtime_parity_proven\": false, \"six_state_runtime_parity_proven\": false, \"source_shared_acquisition_count\": 1, \"source_test_count\": 5, \"source_variable_count\": 19, \"stage\": \"C_RESEARCH_APACHE_AUTHORING_WITH_REQUIRED_PROVENANCE_SIDECAR\"}, \"grouped_output\": \"apache-sv214268-fifteen-visible-four-nested-derived.research.yaml\", \"grouped_output_sha256\": \"f1fcd3dc5c6c11ed02ca430c3a716d78a3969eb82e6b6ebb985792e4b3488376\", \"grouped_proof\": {\"author_visible_derived_value_steps\": 15, \"authored_derived_value_steps\": 19, \"authored_named_observations\": 1, \"exact_full_original_assessment_reconstructed\": true, \"native_A_variables_rehydrated\": 19, \"nested_pure_value_steps\": 4, \"original_scanner_execution_proven\": false, \"scanner_runtime_parity_proven\": false, \"six_state_runtime_parity_proven\": false, \"source_shared_acquisition_count\": 1, \"source_test_count\": 5, \"source_variable_count\": 19, \"stage\": \"C_RESEARCH_GROUP_SAFE_SINGLE_USE_DERIVED_VALUES\"}, \"managed_provenance_file\": \"apache-sv214268-compiler-provenance.research.yaml\", \"managed_provenance_sha256\": \"cdd7e5928134087c00f3e8696cd051a3ab0909dce1b20156f2c200ba195d84e4\", \"original_repository_source\": \"research/requirements-first-language/contract-candidate/corpus/source-specimens/independent-shellcommand-1-3d964d126ca8.source.yaml\", \"original_source_sha256\": \"e020339a22ddf4daaca6db5e37c6251d78f32a9d467c84b64a76ccc174166ef5\", \"output\": \"apache-sv214268-five-checks-nineteen-derived-values.research.yaml\", \"presentation_comparison\": {\"authoring_comprehension_test_completed\": false, \"automatic_grouping_promoted\": false, \"full\": {\"bytes\": 15596, \"lines\": 428, \"visible_derived_value_declarations\": 19}, \"grouped\": {\"bytes\": 16179, \"lines\": 428, \"visible_derived_value_declarations\": 15}, \"source_graph_equal_in_both\": true}, \"proof\": {\"authored_derived_value_steps\": 19, \"authored_named_observations\": 1, \"exact_full_original_assessment_reconstructed\": true, \"original_scanner_execution_proven\": false, \"six_state_runtime_parity_proven\": false, \"source_shared_acquisition_count\": 1, \"source_test_count\": 5, \"source_variable_count\": 19, \"stage\": \"C_RESEARCH_COMPLETE_APACHE_DERIVED_VALUES_AND_MUST_TO_0_3_IR\"}, \"provenance_sidecar_metrics\": {\"bytes\": 4571, \"lines\": 100}, \"scanner_runtime_parity\": false, \"stage\": \"C_RESEARCH_APACHE_FULL_HYBRID_REVIEW_SOURCE_EXACT\"}\nAll 3 Apache forms, including separate typed provenance, reproduce exact original A graph.\n"
+  },
+  {
+    "step": "Assert C proof is labelled research only",
+    "exit_code": 0,
+    "log": "C/A bounded structural + fixture-only proof, not scanner parity\n"
+  }
+]

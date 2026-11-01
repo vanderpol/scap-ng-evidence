@@ -1,0 +1,8 @@
+{
+  "source_commit": "05fbd7a4e49aea4f49e223552d18c9951531322d",
+  "original_mutation_sha256": "90bce2b8a7b80c2580cf14d8f0885a4ba2019fb17160a94295e8ef78c02856dc",
+  "public_yaml_cli_exit": 1,
+  "direct_compiler": "REJECTED_VALUEERROR",
+  "diagnostic": "Variable unexpected-variable/expression: {'unapproved_placeholder': {'value': 1}} is not valid under any of the given schemas",
+  "source_proof_unchanged": true
+}

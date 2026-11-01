@@ -1,0 +1,20 @@
+[
+  {
+    "assessment": "windows-server-2025-shows-on-lock-screen-sv-278080-assessment",
+    "program_sha256_before": "16e73a5517ee51d7866d16939980f59f3cbdf4422dc9bfb735acee257cd161d1",
+    "program_sha256_after": "16e73a5517ee51d7866d16939980f59f3cbdf4422dc9bfb735acee257cd161d1",
+    "byte_equivalent": true
+  },
+  {
+    "assessment": "linux-home-mount-nosuid-assessment",
+    "program_sha256_before": "78a63fdf01a9145d96459385825a08b4e56b8b4f41b899e8f447567db40fe44f",
+    "program_sha256_after": "78a63fdf01a9145d96459385825a08b4e56b8b4f41b899e8f447567db40fe44f",
+    "byte_equivalent": true
+  },
+  {
+    "assessment": "windows-server-2025-control-permissions-sv-278139-assessment",
+    "program_sha256_before": "15862f617d7503a0ccc5d3c4aac5a557a658e003fec172ee7bceae92ad1c53db",
+    "program_sha256_after": "15862f617d7503a0ccc5d3c4aac5a557a658e003fec172ee7bceae92ad1c53db",
+    "byte_equivalent": true
+  }
+]

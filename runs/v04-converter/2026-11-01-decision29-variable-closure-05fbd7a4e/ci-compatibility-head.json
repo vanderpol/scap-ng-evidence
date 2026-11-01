@@ -1,0 +1,90 @@
+{
+  "source_commit": "dba98d4e8e2f6c90af959146a682d3be98ed86ec",
+  "all_pass": true,
+  "runs": [
+    {
+      "id": 41255819741,
+      "name": "0.4 schema and converter contract synchronization",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41255819741"
+    },
+    {
+      "id": 41255819693,
+      "name": "Native SCAP-NG schema validation",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41255819693"
+    },
+    {
+      "id": 41255819743,
+      "name": "0.4 independent JSON authoring schema and reference gate",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41255819743"
+    },
+    {
+      "id": 41255819768,
+      "name": "Commit issue reference",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41255819768"
+    },
+    {
+      "id": 41255819735,
+      "name": "0.4.0 toolchain clean-extract smoke",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41255819735"
+    },
+    {
+      "id": 41255819694,
+      "name": "Markdown navigation and duplication audit",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41255819694"
+    },
+    {
+      "id": 41255819746,
+      "name": "SCAP-NG 0.4 draft schema checks",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41255819746"
+    },
+    {
+      "id": 41255819788,
+      "name": "0.4.0 canonical authoring fast checks",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41255819788"
+    },
+    {
+      "id": 41255819729,
+      "name": "Current-design regression contracts",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41255819729"
+    },
+    {
+      "id": 41255819726,
+      "name": "Representative Board conversion regression",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41255819726"
+    },
+    {
+      "id": 41255816877,
+      "name": "0.4-C shared A engine research (bounded)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41255816877"
+    },
+    {
+      "id": 41255816865,
+      "name": "Commit issue reference",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41255816865"
+    }
+  ]
+}

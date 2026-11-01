@@ -1,0 +1,26 @@
+{
+  "source_commit": "05fbd7a4e49aea4f49e223552d18c9951531322d",
+  "baseline": "b21b10ed37f129d809dc7b3b7d47c39559d5eef8",
+  "existing_fixture_payloads_changed": 0,
+  "new_historical_C_input_paths": [
+    "A\ttests/fixtures/v04-c-historical-contract-20261101/README.md",
+    "A\ttests/fixtures/v04-c-historical-contract-20261101/assessment-language.schema.json",
+    "A\ttests/fixtures/v04-c-historical-contract-20261101/provenance.json"
+  ],
+  "historical_01_03_or_native_mapping_changes": 0,
+  "existing_65_stream_library_regenerated": false,
+  "frozen_proof_or_fingerprint_rebaseline": false,
+  "scanner_evaluated": false,
+  "published_archives": [
+    {
+      "path": "runs/v04-converter/2026-10-31-owner-contract-reconciliation-bounded/owner-contract-reconciliation-bounded.zip",
+      "bytes": 193812,
+      "sha256": "d421af13001b794cd8e2f7a4d93348ddbb322ad0ebe95dce05521eb5095a6cb9"
+    },
+    {
+      "path": "runs/v04-converter/2026-10-31-owner-contract-reconciliation-bounded-r2/owner-contract-reconciliation-bounded.zip",
+      "bytes": 199739,
+      "sha256": "4bda9be98668b987dd726951ce2738ecfa72e9ffd0f675fa2bc836819e585ba6"
+    }
+  ]
+}
