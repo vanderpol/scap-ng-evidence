@@ -1,0 +1,11 @@
+✔ all 100 mappings and every annotated location resolve offline with valid suggestions (575.741401ms)
+✔ original-backed Linux and Windows source opens byte-identically; minimal edit/undo preserves source (65.720053ms)
+✔ Show All / safe / aggressive retain explicit YAML and visible overrides (396.493938ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1044.068299

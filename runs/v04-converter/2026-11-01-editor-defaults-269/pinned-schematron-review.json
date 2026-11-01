@@ -1,0 +1,2086 @@
+{
+  "scope": "Relevant original embedded Schematron clauses across supported source schema files; bounded evaluation, not full Schematron/corpus or runtime parity",
+  "source_commit": "a8a9db7039399610cb8af654ab9e880d69cffa04",
+  "source_files": 13,
+  "clauses": [
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 171,
+      "source_xpath": "/xsd:schema/xsd:element[5]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule/sch:assert",
+      "context": "ind-def:filehash_object/ind-def:filepath",
+      "test": "not(preceding-sibling::ind-def:behaviors[@max_depth or @recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the max_depth and recurse_direction behaviors are not allowed with a filepath entity"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 176,
+      "source_xpath": "/xsd:schema/xsd:element[5]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element/xsd:annotation/xsd:appinfo/sch:pattern[2]/sch:rule/sch:assert",
+      "context": "ind-def:filehash_object/ind-def:filepath[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::ind-def:behaviors[@recurse_file_system='defined'])",
+      "kind": "assert",
+      "documentation": "- the recurse_file_system behavior MUST not be set to 'defined' when a pattern match is used with a filepath entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 189,
+      "source_xpath": "/xsd:schema/xsd:element[5]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[1]",
+      "context": "ind-def:filehash_object/ind-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::ind-def:behaviors[@recurse_file_system='defined'])",
+      "kind": "assert",
+      "documentation": "- the recurse_file_system behavior MUST not be set to 'defined' when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 190,
+      "source_xpath": "/xsd:schema/xsd:element[5]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[2]",
+      "context": "ind-def:filehash_object/ind-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::ind-def:behaviors[@max_depth])",
+      "kind": "assert",
+      "documentation": "- the max_depth behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 191,
+      "source_xpath": "/xsd:schema/xsd:element[5]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[3]",
+      "context": "ind-def:filehash_object/ind-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::ind-def:behaviors[@recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the recurse_direction behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 192,
+      "source_xpath": "/xsd:schema/xsd:element[5]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[4]",
+      "context": "ind-def:filehash_object/ind-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::ind-def:behaviors[@recurse])",
+      "kind": "assert",
+      "documentation": "- the recurse behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 204,
+      "source_xpath": "/xsd:schema/xsd:element[5]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "ind-def:filehash_object/ind-def:filename",
+      "test": "(@var_ref and .='') or not(.='') or (.='' and @operation = 'pattern match')",
+      "kind": "assert",
+      "documentation": "- filename entity cannot be empty unless the xsi:nil attribute is set to true or a var_ref is used"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 352,
+      "source_xpath": "/xsd:schema/xsd:element[8]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule/sch:assert",
+      "context": "ind-def:filehash58_object/ind-def:filepath",
+      "test": "not(preceding-sibling::ind-def:behaviors[@max_depth or @recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the max_depth and recurse_direction behaviors are not allowed with a filepath entity"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 357,
+      "source_xpath": "/xsd:schema/xsd:element[8]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element/xsd:annotation/xsd:appinfo/sch:pattern[2]/sch:rule/sch:assert",
+      "context": "ind-def:filehash58_object/ind-def:filepath[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::ind-def:behaviors[@recurse_file_system='defined'])",
+      "kind": "assert",
+      "documentation": "- the recurse_file_system behavior MUST not be set to 'defined' when a pattern match is used with a filepath entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 370,
+      "source_xpath": "/xsd:schema/xsd:element[8]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[1]",
+      "context": "ind-def:filehash58_object/ind-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::ind-def:behaviors[@recurse_file_system='defined'])",
+      "kind": "assert",
+      "documentation": "- the recurse_file_system behavior MUST not be set to 'defined' when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 371,
+      "source_xpath": "/xsd:schema/xsd:element[8]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[2]",
+      "context": "ind-def:filehash58_object/ind-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::ind-def:behaviors[@max_depth])",
+      "kind": "assert",
+      "documentation": "- the max_depth behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 372,
+      "source_xpath": "/xsd:schema/xsd:element[8]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[3]",
+      "context": "ind-def:filehash58_object/ind-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::ind-def:behaviors[@recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the recurse_direction behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 373,
+      "source_xpath": "/xsd:schema/xsd:element[8]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[4]",
+      "context": "ind-def:filehash58_object/ind-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::ind-def:behaviors[@recurse])",
+      "kind": "assert",
+      "documentation": "- the recurse behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 385,
+      "source_xpath": "/xsd:schema/xsd:element[8]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "ind-def:filehash58_object/ind-def:filename",
+      "test": "(@var_ref and .='') or not(.='') or (.='' and @operation = 'pattern match')",
+      "kind": "assert",
+      "documentation": "- filename entity cannot be empty unless the xsi:nil attribute is set to true or a var_ref is used"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 1084,
+      "source_xpath": "/xsd:schema/xsd:element[23]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[4]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "ind-def:textfilecontent54_object/ind-def:pattern",
+      "test": "@operation='pattern match'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the pattern entity of a shellcommand_object should be 'pattern match'"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 1124,
+      "source_xpath": "/xsd:schema/xsd:element[24]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:element[3]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "ind-def:textfilecontent54_state/ind-def:pattern",
+      "test": "@operation='pattern match'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the pattern entity of a shellcommand_object should be 'pattern match'"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 1248,
+      "source_xpath": "/xsd:schema/xsd:element[26]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "ind-def:sql_object/ind-def:engine",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the engine entity of an sql_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 1260,
+      "source_xpath": "/xsd:schema/xsd:element[26]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "ind-def:sql_object/ind-def:version",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the version entity of an sql_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 1272,
+      "source_xpath": "/xsd:schema/xsd:element[26]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[3]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "ind-def:sql_object/ind-def:connection_string",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the connection_string entity of an sql_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 1284,
+      "source_xpath": "/xsd:schema/xsd:element[26]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[4]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "ind-def:sql_object/ind-def:sql",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the sql entity of an sql_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 1425,
+      "source_xpath": "/xsd:schema/xsd:element[29]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "ind-def:sql57_object/ind-def:engine",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the engine entity of an sql57_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 1437,
+      "source_xpath": "/xsd:schema/xsd:element[29]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "ind-def:sql57_object/ind-def:version",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the version entity of an sql57_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 1449,
+      "source_xpath": "/xsd:schema/xsd:element[29]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[3]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "ind-def:sql57_object/ind-def:connection_string",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the connection_string entity of an sql57_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 1461,
+      "source_xpath": "/xsd:schema/xsd:element[29]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[4]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "ind-def:sql57_object/ind-def:sql",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the sql entity of an sql57_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 1611,
+      "source_xpath": "/xsd:schema/xsd:element[32]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "ind-def:sqlext_object/ind-def:engine",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the engine entity of an sqlext_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 1623,
+      "source_xpath": "/xsd:schema/xsd:element[32]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[3]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "ind-def:sqlext_object/ind-def:version",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the version entity of an sqlext_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 1645,
+      "source_xpath": "/xsd:schema/xsd:element[32]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[6]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "ind-def:sqlext_object/ind-def:sql",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the sql entity of an sqlext_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 1803,
+      "source_xpath": "/xsd:schema/xsd:element[35]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "ind-def:sql512_object/ind-def:engine",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the engine entity of an sql512_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 1846,
+      "source_xpath": "/xsd:schema/xsd:element[35]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[5]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "ind-def:sql512_object/ind-def:sql",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the sql entity of an sql512_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 1984,
+      "source_xpath": "/xsd:schema/xsd:element[38]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule/sch:assert",
+      "context": "ind-def:textfilecontent54_object/ind-def:filepath",
+      "test": "not(preceding-sibling::ind-def:behaviors[@max_depth or @recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the max_depth and recurse_direction behaviors are not allowed with a filepath entity"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 1989,
+      "source_xpath": "/xsd:schema/xsd:element[38]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element/xsd:annotation/xsd:appinfo/sch:pattern[2]/sch:rule/sch:assert",
+      "context": "ind-def:textfilecontent54_object/ind-def:filepath[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::ind-def:behaviors[@recurse_file_system='defined'])",
+      "kind": "assert",
+      "documentation": "- the recurse_file_system behavior MUST not be set to 'defined' when a pattern match is used with a filepath entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 2002,
+      "source_xpath": "/xsd:schema/xsd:element[38]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[1]",
+      "context": "ind-def:textfilecontent54_object/ind-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::ind-def:behaviors[@recurse_file_system='defined'])",
+      "kind": "assert",
+      "documentation": "- the recurse_file_system behavior MUST not be set to 'defined' when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 2003,
+      "source_xpath": "/xsd:schema/xsd:element[38]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[2]",
+      "context": "ind-def:textfilecontent54_object/ind-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::ind-def:behaviors[@max_depth])",
+      "kind": "assert",
+      "documentation": "- the max_depth behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 2004,
+      "source_xpath": "/xsd:schema/xsd:element[38]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[3]",
+      "context": "ind-def:textfilecontent54_object/ind-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::ind-def:behaviors[@recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the recurse_direction behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 2005,
+      "source_xpath": "/xsd:schema/xsd:element[38]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[4]",
+      "context": "ind-def:textfilecontent54_object/ind-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::ind-def:behaviors[@recurse])",
+      "kind": "assert",
+      "documentation": "- the recurse behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 2017,
+      "source_xpath": "/xsd:schema/xsd:element[38]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "ind-def:textfilecontent54_object/ind-def:filename",
+      "test": "(@var_ref and .='') or not(.='') or (.='' and @operation = 'pattern match')",
+      "kind": "assert",
+      "documentation": "- filename entity cannot be empty unless the xsi:nil attribute is set to true or a var_ref is used"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 2032,
+      "source_xpath": "/xsd:schema/xsd:element[38]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "ind-def:textfilecontent54_object/ind-def:pattern",
+      "test": "@operation='pattern match'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the pattern entity of a textfilecontent54_object should be 'pattern match'"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 2242,
+      "source_xpath": "/xsd:schema/xsd:element[41]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[3]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "ind-def:textfilecontent_object/ind-def:filename",
+      "test": "(@var_ref and .='') or not(.='') or (.='' and @operation = 'pattern match')",
+      "kind": "assert",
+      "documentation": "- filename entity cannot be empty unless the xsi:nil attribute is set to true or a var_ref is used"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 2255,
+      "source_xpath": "/xsd:schema/xsd:element[41]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[4]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "ind-def:textfilecontent_object/ind-def:line",
+      "test": "@operation='pattern match'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the line entity of a textfilecontent_object should be 'pattern match'"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 2530,
+      "source_xpath": "/xsd:schema/xsd:element[48]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule/sch:assert",
+      "context": "ind-def:xmlfilecontent_object/ind-def:filepath",
+      "test": "not(preceding-sibling::ind-def:behaviors[@max_depth or @recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the max_depth and recurse_direction behaviors are not allowed with a filepath entity"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 2535,
+      "source_xpath": "/xsd:schema/xsd:element[48]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element/xsd:annotation/xsd:appinfo/sch:pattern[2]/sch:rule/sch:assert",
+      "context": "ind-def:xmlfilecontent_object/ind-def:filepath[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::ind-def:behaviors[@recurse_file_system='defined'])",
+      "kind": "assert",
+      "documentation": "- the recurse_file_system behavior MUST not be set to 'defined' when a pattern match is used with a filepath entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 2548,
+      "source_xpath": "/xsd:schema/xsd:element[48]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[1]",
+      "context": "ind-def:xmlfilecontent_object/ind-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::ind-def:behaviors[@recurse_file_system='defined'])",
+      "kind": "assert",
+      "documentation": "- the recurse_file_system behavior MUST not be set to 'defined' when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 2549,
+      "source_xpath": "/xsd:schema/xsd:element[48]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[2]",
+      "context": "ind-def:xmlfilecontent_object/ind-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::ind-def:behaviors[@max_depth])",
+      "kind": "assert",
+      "documentation": "- the max_depth behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 2550,
+      "source_xpath": "/xsd:schema/xsd:element[48]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[3]",
+      "context": "ind-def:xmlfilecontent_object/ind-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::ind-def:behaviors[@recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the recurse_direction behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 2551,
+      "source_xpath": "/xsd:schema/xsd:element[48]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[4]",
+      "context": "ind-def:xmlfilecontent_object/ind-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::ind-def:behaviors[@recurse])",
+      "kind": "assert",
+      "documentation": "- the recurse behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 2563,
+      "source_xpath": "/xsd:schema/xsd:element[48]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "ind-def:xmlfilecontent_object/ind-def:filename",
+      "test": "(@var_ref and .='') or not(.='') or (.='' and @operation = 'pattern match')",
+      "kind": "assert",
+      "documentation": "- filename entity cannot be empty unless the xsi:nil attribute is set to true or a var_ref is used"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 2577,
+      "source_xpath": "/xsd:schema/xsd:element[48]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "ind-def:xmlfilecontent_object/ind-def:xpath",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the xpath entity of a xmlfilecontent_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 2736,
+      "source_xpath": "/xsd:schema/xsd:element[51]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule/sch:assert",
+      "context": "ind-def:yamlfilecontent_object/ind-def:filepath",
+      "test": "not(preceding-sibling::ind-def:behaviors[@max_depth or @recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the max_depth and recurse_direction behaviors are not allowed with a filepath entity"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 2741,
+      "source_xpath": "/xsd:schema/xsd:element[51]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern[2]/sch:rule/sch:assert",
+      "context": "ind-def:yamlfilecontent_object/ind-def:filepath[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::ind-def:behaviors[@recurse_file_system='defined'])",
+      "kind": "assert",
+      "documentation": "- the recurse_file_system behavior MUST not be set to 'defined' when a pattern match is used with a filepath entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 2754,
+      "source_xpath": "/xsd:schema/xsd:element[51]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[1]",
+      "context": "ind-def:yamlfilecontent_object/ind-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::ind-def:behaviors[@recurse_file_system='defined'])",
+      "kind": "assert",
+      "documentation": "- the recurse_file_system behavior MUST not be set to 'defined' when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 2755,
+      "source_xpath": "/xsd:schema/xsd:element[51]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[2]",
+      "context": "ind-def:yamlfilecontent_object/ind-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::ind-def:behaviors[@max_depth])",
+      "kind": "assert",
+      "documentation": "- the max_depth behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 2756,
+      "source_xpath": "/xsd:schema/xsd:element[51]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[3]",
+      "context": "ind-def:yamlfilecontent_object/ind-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::ind-def:behaviors[@recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the recurse_direction behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 2757,
+      "source_xpath": "/xsd:schema/xsd:element[51]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[4]",
+      "context": "ind-def:yamlfilecontent_object/ind-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::ind-def:behaviors[@recurse])",
+      "kind": "assert",
+      "documentation": "- the recurse behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 2769,
+      "source_xpath": "/xsd:schema/xsd:element[51]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "ind-def:yamlfilecontent_object/ind-def:filename",
+      "test": "(@var_ref and .='') or not(.='') or (.='' and @operation = 'pattern match')",
+      "kind": "assert",
+      "documentation": "- filename entity cannot be empty unless the xsi:nil attribute is set to true or a var_ref is used"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 2782,
+      "source_xpath": "/xsd:schema/xsd:element[51]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "ind-def:yamlfilecontent_object/ind-def:content",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the content entity of a yamlfilecontent_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+      "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+      "source_line": 2795,
+      "source_xpath": "/xsd:schema/xsd:element[51]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "ind-def:yamlfilecontent_object/ind-def:yamlpath",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the yamlpath entity of a yamlfilecontent_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/junos-definitions-schema.xsd",
+      "source_sha256": "20cf3663546c769074133747b03c4b12f2af39564e74288a1cfb0858b83944b8",
+      "source_line": 95,
+      "source_xpath": "/xsd:schema/xsd:element[2]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "junos-def:xml_config_object/junos-def:xpath",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the xpath entity of a xml_config_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/junos-definitions-schema.xsd",
+      "source_sha256": "20cf3663546c769074133747b03c4b12f2af39564e74288a1cfb0858b83944b8",
+      "source_line": 412,
+      "source_xpath": "/xsd:schema/xsd:element[11]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "junos-def:xml_show_object/junos-def:xpath",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the xpath entity of a xml_show_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/linux-definitions-schema.xsd",
+      "source_sha256": "b3415940c8c3992463caed33a87599cd6c53af5a4310b53ec24b11bfcb2191c7",
+      "source_line": 2185,
+      "source_xpath": "/xsd:schema/xsd:element[35]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule/sch:assert",
+      "context": "linux-def:selinuxsecuritycontext_object/linux-def:filepath",
+      "test": "not(preceding-sibling::linux-def:behaviors[@max_depth or @recurse or @recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the max_depth, recurse, and recurse_direction behaviors are not allowed with a filepath entity"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/linux-definitions-schema.xsd",
+      "source_sha256": "b3415940c8c3992463caed33a87599cd6c53af5a4310b53ec24b11bfcb2191c7",
+      "source_line": 2190,
+      "source_xpath": "/xsd:schema/xsd:element[35]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern[2]/sch:rule/sch:assert",
+      "context": "linux-def:selinuxsecuritycontext_object/linux-def:filepath[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::linux-def:behaviors[@recurse_file_system='defined'])",
+      "kind": "assert",
+      "documentation": "- the recurse_file_system behavior MUST not be set to 'defined' when a pattern match is used with a filepath entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/linux-definitions-schema.xsd",
+      "source_sha256": "b3415940c8c3992463caed33a87599cd6c53af5a4310b53ec24b11bfcb2191c7",
+      "source_line": 2203,
+      "source_xpath": "/xsd:schema/xsd:element[35]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[1]",
+      "context": "linux-def:selinuxsecuritycontext_object/linux-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::linux-def:behaviors[@recurse_file_system='defined'])",
+      "kind": "assert",
+      "documentation": "- the recurse_file_system behavior MUST not be set to 'defined' when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/linux-definitions-schema.xsd",
+      "source_sha256": "b3415940c8c3992463caed33a87599cd6c53af5a4310b53ec24b11bfcb2191c7",
+      "source_line": 2204,
+      "source_xpath": "/xsd:schema/xsd:element[35]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[2]",
+      "context": "linux-def:selinuxsecuritycontext_object/linux-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::linux-def:behaviors[@max_depth])",
+      "kind": "assert",
+      "documentation": "- the max_depth behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/linux-definitions-schema.xsd",
+      "source_sha256": "b3415940c8c3992463caed33a87599cd6c53af5a4310b53ec24b11bfcb2191c7",
+      "source_line": 2205,
+      "source_xpath": "/xsd:schema/xsd:element[35]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[3]",
+      "context": "linux-def:selinuxsecuritycontext_object/linux-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::linux-def:behaviors[@recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the recurse_direction behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/linux-definitions-schema.xsd",
+      "source_sha256": "b3415940c8c3992463caed33a87599cd6c53af5a4310b53ec24b11bfcb2191c7",
+      "source_line": 2206,
+      "source_xpath": "/xsd:schema/xsd:element[35]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[4]",
+      "context": "linux-def:selinuxsecuritycontext_object/linux-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::linux-def:behaviors[@recurse])",
+      "kind": "assert",
+      "documentation": "- the recurse behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/linux-definitions-schema.xsd",
+      "source_sha256": "b3415940c8c3992463caed33a87599cd6c53af5a4310b53ec24b11bfcb2191c7",
+      "source_line": 2218,
+      "source_xpath": "/xsd:schema/xsd:element[35]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "linux-def:selinuxsecuritycontext_object/linux-def:filename",
+      "test": "(@var_ref and .='') or ((@xsi:nil='1' or @xsi:nil='true') and .='') or not(.='') or (.='' and @operation = 'pattern match')",
+      "kind": "assert",
+      "documentation": "- filename entity cannot be empty unless the xsi:nil attribute is set to true or a var_ref is used"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+      "source_sha256": "d5dd70c91397d0941df3be3f9e18c7bf711dfe346bdcb58938caf15999b68e66",
+      "source_line": 223,
+      "source_xpath": "/xsd:schema/xsd:element[5]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "macos-def:authorizationdb_object/macos-def:xpath",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the xpath entity of an authorizationdb_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+      "source_sha256": "d5dd70c91397d0941df3be3f9e18c7bf711dfe346bdcb58938caf15999b68e66",
+      "source_line": 343,
+      "source_xpath": "/xsd:schema/xsd:element[8]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "macos-def:corestorage_object/macos-def:xpath",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the xpath entity of an corestorage_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+      "source_sha256": "d5dd70c91397d0941df3be3f9e18c7bf711dfe346bdcb58938caf15999b68e66",
+      "source_line": 2061,
+      "source_xpath": "/xsd:schema/xsd:element[50]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "macos-def:plist_object/macos-def:filepath",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the filepath entity of a plist_object should be 'equals'"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+      "source_sha256": "d5dd70c91397d0941df3be3f9e18c7bf711dfe346bdcb58938caf15999b68e66",
+      "source_line": 2242,
+      "source_xpath": "/xsd:schema/xsd:element[53]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "macos-def:plist510_object/macos-def:filepath",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the filepath entity of a plist510_object should be 'equals'"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+      "source_sha256": "d5dd70c91397d0941df3be3f9e18c7bf711dfe346bdcb58938caf15999b68e66",
+      "source_line": 2390,
+      "source_xpath": "/xsd:schema/xsd:element[56]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "macos-def:plist511_object/macos-def:filepath",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the filepath entity of a plist511_object should be 'equals'"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+      "source_sha256": "d5dd70c91397d0941df3be3f9e18c7bf711dfe346bdcb58938caf15999b68e66",
+      "source_line": 2405,
+      "source_xpath": "/xsd:schema/xsd:element[56]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "macos-def:plist_object/macos-def:xpath",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the xpath entity of a plist_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+      "source_sha256": "d5dd70c91397d0941df3be3f9e18c7bf711dfe346bdcb58938caf15999b68e66",
+      "source_line": 2628,
+      "source_xpath": "/xsd:schema/xsd:element[62]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "macos-def:pwpolicy_object/macos-def:username",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the username entity of a pwpolicy_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+      "source_sha256": "d5dd70c91397d0941df3be3f9e18c7bf711dfe346bdcb58938caf15999b68e66",
+      "source_line": 2640,
+      "source_xpath": "/xsd:schema/xsd:element[62]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "macos-def:pwpolicy_object/macos-def:userpass",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the userpass entity of a pwpolicy_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+      "source_sha256": "d5dd70c91397d0941df3be3f9e18c7bf711dfe346bdcb58938caf15999b68e66",
+      "source_line": 2652,
+      "source_xpath": "/xsd:schema/xsd:element[62]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[3]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "macos-def:pwpolicy_object/macos-def:directory_node",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the directory_node entity of a pwpolicy_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+      "source_sha256": "d5dd70c91397d0941df3be3f9e18c7bf711dfe346bdcb58938caf15999b68e66",
+      "source_line": 2825,
+      "source_xpath": "/xsd:schema/xsd:element[65]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[3]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[1]",
+      "context": "macos-def:pwpolicy59_object/macos-def:userpass",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the userpass entity of a pwpolicy59_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+      "source_sha256": "d5dd70c91397d0941df3be3f9e18c7bf711dfe346bdcb58938caf15999b68e66",
+      "source_line": 2838,
+      "source_xpath": "/xsd:schema/xsd:element[65]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[4]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "macos-def:pwpolicy59_object/macos-def:directory_node",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the directory_node entity of a pwpolicy59_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+      "source_sha256": "d5dd70c91397d0941df3be3f9e18c7bf711dfe346bdcb58938caf15999b68e66",
+      "source_line": 3073,
+      "source_xpath": "/xsd:schema/xsd:element[68]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[3]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[1]",
+      "context": "macos-def:pwpolicy512_object/macos-def:authenticator_password",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the authenticator_password entity of a pwpolicy512_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+      "source_sha256": "d5dd70c91397d0941df3be3f9e18c7bf711dfe346bdcb58938caf15999b68e66",
+      "source_line": 3086,
+      "source_xpath": "/xsd:schema/xsd:element[68]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[4]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "macos-def:pwpolicy512_object/macos-def:directory_node",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the directory_node entity of a pwpolicy512_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+      "source_sha256": "d5dd70c91397d0941df3be3f9e18c7bf711dfe346bdcb58938caf15999b68e66",
+      "source_line": 3098,
+      "source_xpath": "/xsd:schema/xsd:element[68]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[5]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "macos-def:pwpolicy512_object/macos-def:xpath",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the xpath entity of a pwpolicy512_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+      "source_sha256": "d5dd70c91397d0941df3be3f9e18c7bf711dfe346bdcb58938caf15999b68e66",
+      "source_line": 3453,
+      "source_xpath": "/xsd:schema/xsd:element[77]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "macos-def:systemprofiler_object/macos-def:xpath",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the xpath entity of an systemprofiler_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+      "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+      "source_line": 363,
+      "source_xpath": "/xsd:schema/xsd:complexType[10]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "oval-def:oval_definitions/oval-def:tests/*[@check_existence='none_exist']",
+      "test": "not(*[local-name()='state'])",
+      "kind": "assert",
+      "documentation": "- No state should be referenced when check_existence has a value of 'none_exist'."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+      "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+      "source_line": 1300,
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[2]/sch:report",
+      "context": "oval-def:objects/*/*[@var_ref]|oval-def:objects/*/*/*[@var_ref]",
+      "test": "not(@var_check)",
+      "kind": "report",
+      "documentation": "- a var_ref has been supplied for the entity so a var_check should also be provided"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+      "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+      "source_line": 1303,
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[3]/sch:assert",
+      "context": "oval-def:objects/*/*[@var_check]|oval-def:objects/*/*/*[@var_check]",
+      "test": "@var_ref",
+      "kind": "assert",
+      "documentation": "- a var_check has been supplied for the entity so a var_ref must also be provided"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+      "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+      "source_line": 1306,
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[4]/sch:report",
+      "context": "oval-def:states/*/*[@var_ref]|oval-def:states/*/*/*[@var_ref]",
+      "test": "not(@var_check)",
+      "kind": "report",
+      "documentation": "- a var_ref has been supplied for the entity so a var_check should also be provided"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+      "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+      "source_line": 1309,
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[5]/sch:assert",
+      "context": "oval-def:states/*/*[@var_check]|oval-def:states/*/*/*[@var_check]",
+      "test": "@var_ref",
+      "kind": "assert",
+      "documentation": "- a var_check has been supplied for the entity so a var_ref must also be provided"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+      "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+      "source_line": 1313,
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[6]/sch:assert",
+      "context": "oval-def:objects/*/*[not(@datatype)]|oval-def:objects/*/*/*[not(@datatype)]|oval-def:states/*/*[not(@datatype)]|oval-def:states/*/*/*[not(@datatype)]",
+      "test": "not(@operation) or @operation='equals' or @operation='not equal' or @operation='case insensitive equals' or @operation='case insensitive not equal' or @operation='pattern match'",
+      "kind": "assert",
+      "documentation": "- The use of ' ' for the operation attribute of the entity is not valid given the lack of a declared datatype (hence a default datatype of string)."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+      "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+      "source_line": 1316,
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[7]/sch:assert",
+      "context": "oval-def:objects/*/*[@datatype='binary']|oval-def:objects/*/*/*[@datatype='binary']|oval-def:states/*/*[@datatype='binary']|oval-def:states/*/*/*[@datatype='binary']",
+      "test": "not(@operation) or @operation='equals' or @operation='not equal'",
+      "kind": "assert",
+      "documentation": "- The use of ' ' for the operation attribute of the entity is not valid given a datatype of binary."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+      "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+      "source_line": 1320,
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[8]/sch:assert",
+      "context": "oval-def:objects/*/*[@datatype='boolean']|oval-def:objects/*/*/*[@datatype='boolean']|oval-def:states/*/*[@datatype='boolean']|oval-def:states/*/*/*[@datatype='boolean']",
+      "test": "not(@operation) or @operation='equals' or @operation='not equal'",
+      "kind": "assert",
+      "documentation": "- The use of ' ' for the operation attribute of the entity is not valid given a datatype of boolean."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+      "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+      "source_line": 1324,
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[9]/sch:assert",
+      "context": "oval-def:objects/*/*[@datatype='evr_string']|oval-def:objects/*/*/*[@datatype='evr_string']|oval-def:states/*/*[@datatype='evr_string']|oval-def:states/*/*/*[@datatype='evr_string']",
+      "test": "not(@operation) or @operation='equals' or @operation='not equal' or  @operation='greater than' or @operation='greater than or equal' or @operation='less than' or @operation='less than or equal'",
+      "kind": "assert",
+      "documentation": "- The use of ' ' for the operation attribute of the entity is not valid given a datatype of evr_string."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+      "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+      "source_line": 1328,
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[10]/sch:assert",
+      "context": "oval-def:objects/*/*[@datatype='debian_evr_string']|oval-def:objects/*/*/*[@datatype='debian_evr_string']|oval-def:states/*/*[@datatype='debian_evr_string']|oval-def:states/*/*/*[@datatype='debian_evr_string']",
+      "test": "not(@operation) or @operation='equals' or @operation='not equal' or  @operation='greater than' or @operation='greater than or equal' or @operation='less than' or @operation='less than or equal'",
+      "kind": "assert",
+      "documentation": "- The use of ' ' for the operation attribute of the entity is not valid given a datatype of debian_evr_string."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+      "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+      "source_line": 1331,
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[11]/sch:assert",
+      "context": "oval-def:objects/*/*[@datatype='fileset_revision']|oval-def:objects/*/*/*[@datatype='fileset_revision']|oval-def:states/*/*[@datatype='fileset_revision']|oval-def:states/*/*/*[@datatype='fileset_revision']",
+      "test": "not(@operation) or @operation='equals' or @operation='not equal' or  @operation='greater than' or @operation='greater than or equal' or @operation='less than' or @operation='less than or equal'",
+      "kind": "assert",
+      "documentation": "- The use of ' ' for the operation attribute of the entity is not valid given a datatype of fileset_revision."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+      "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+      "source_line": 1334,
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[12]/sch:assert",
+      "context": "oval-def:objects/*/*[@datatype='float']|oval-def:objects/*/*/*[@datatype='float']|oval-def:states/*/*[@datatype='float']|oval-def:states/*/*/*[@datatype='float']",
+      "test": "not(@operation) or @operation='equals' or @operation='not equal' or @operation='greater than' or @operation='greater than or equal' or @operation='less than' or @operation='less than or equal'",
+      "kind": "assert",
+      "documentation": "- The use of ' ' for the operation attribute of the entity is not valid given a datatype of float."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+      "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+      "source_line": 1338,
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[13]/sch:assert",
+      "context": "oval-def:objects/*/*[@datatype='ios_version']|oval-def:objects/*/*/*[@datatype='ios_version']|oval-def:states/*/*[@datatype='ios_version']|oval-def:states/*/*/*[@datatype='ios_version']",
+      "test": "not(@operation) or @operation='equals' or @operation='not equal' or @operation='greater than' or @operation='greater than or equal' or @operation='less than' or @operation='less than or equal'",
+      "kind": "assert",
+      "documentation": "- The use of ' ' for the operation attribute of the entity is not valid given a datatype of ios_version."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+      "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+      "source_line": 1341,
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[14]/sch:assert",
+      "context": "oval-def:objects/*/*[@datatype='int']|oval-def:objects/*/*/*[@datatype='int']|oval-def:states/*/*[@datatype='int']|oval-def:states/*/*/*[@datatype='int']",
+      "test": "not(@operation) or @operation='equals' or @operation='not equal' or @operation='greater than' or @operation='greater than or equal' or @operation='less than' or @operation='less than or equal' or @operation='bitwise and' or @operation='bitwise or'",
+      "kind": "assert",
+      "documentation": "- The use of ' ' for the operation attribute of the entity is not valid given a datatype of int."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+      "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+      "source_line": 1345,
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[15]/sch:assert",
+      "context": "oval-def:objects/*/*[@datatype='ipv4_address']|oval-def:objects/*/*/*[@datatype='ipv4_address']|oval-def:states/*/*[@datatype='ipv4_address']|oval-def:states/*/*/*[@datatype='ipv4_address']",
+      "test": "not(@operation) or @operation='equals' or @operation='not equal' or @operation='greater than' or @operation='greater than or equal' or @operation='less than' or @operation='less than or equal' or @operation='subset of' or @operation='superset of'",
+      "kind": "assert",
+      "documentation": "- The use of ' ' for the operation attribute of the entity is not valid given a datatype of ipv4_address."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+      "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+      "source_line": 1349,
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[16]/sch:assert",
+      "context": "oval-def:objects/*/*[@datatype='ipv6_address']|oval-def:objects/*/*/*[@datatype='ipv6_address']|oval-def:states/*/*[@datatype='ipv6_address']|oval-def:states/*/*/*[@datatype='ipv6_address']",
+      "test": "not(@operation) or @operation='equals' or @operation='not equal' or @operation='greater than' or @operation='greater than or equal' or @operation='less than' or @operation='less than or equal' or @operation='subset of' or @operation='superset of'",
+      "kind": "assert",
+      "documentation": "- The use of ' ' for the operation attribute of the entity is not valid given a datatype of ipv6_address."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+      "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+      "source_line": 1353,
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[17]/sch:assert",
+      "context": "oval-def:objects/*/*[@datatype='string']|oval-def:objects/*/*/*[@datatype='string']|oval-def:states/*/*[@datatype='string']|oval-def:states/*/*/*[@datatype='string']",
+      "test": "not(@operation) or @operation='equals' or @operation='not equal' or @operation='case insensitive equals' or @operation='case insensitive not equal' or @operation='pattern match'",
+      "kind": "assert",
+      "documentation": "- The use of ' ' for the operation attribute of the entity is not valid given a datatype of string."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+      "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+      "source_line": 1356,
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[18]/sch:assert",
+      "context": "oval-def:objects/*/*[@datatype='version']|oval-def:objects/*/*/*[@datatype='version']|oval-def:states/*/*[@datatype='version']|oval-def:states/*/*/*[@datatype='version']",
+      "test": "not(@operation) or @operation='equals' or @operation='not equal' or @operation='greater than' or @operation='greater than or equal' or @operation='less than' or @operation='less than or equal'",
+      "kind": "assert",
+      "documentation": "- The use of ' ' for the operation attribute of the entity is not valid given a datatype of version."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+      "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+      "source_line": 1359,
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[19]/sch:assert",
+      "context": "oval-def:objects/*/*[@datatype='record']|oval-def:states/*/*[@datatype='record']",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- The use of ' ' for the operation attribute of the entity is not valid given a datatype of record."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/panos-definitions-schema.xsd",
+      "source_sha256": "7e4640d863422fabfdbc179f7ffd0e525b46984617858fb84c8a2242be9a567f",
+      "source_line": 130,
+      "source_xpath": "/xsd:schema/xsd:element[2]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "panos-def:config_object/panos-def:xpath",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the xpath entity of a config_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+      "source_sha256": "02932ac19f02fbfa967529e4d96006d87c42220db273db6fbb6a1701a21bbec1",
+      "source_line": 202,
+      "source_xpath": "/xsd:schema/xsd:element[5]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule/sch:assert",
+      "context": "unix-def:file_object/unix-def:filepath",
+      "test": "not(preceding-sibling::unix-def:behaviors[@max_depth or @recurse or @recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the max_depth, recurse, and recurse_direction behaviors are not allowed with a filepath entity"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+      "source_sha256": "02932ac19f02fbfa967529e4d96006d87c42220db273db6fbb6a1701a21bbec1",
+      "source_line": 207,
+      "source_xpath": "/xsd:schema/xsd:element[5]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element/xsd:annotation/xsd:appinfo/sch:pattern[2]/sch:rule/sch:assert",
+      "context": "unix-def:file_object/unix-def:filepath[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::unix-def:behaviors[@recurse_file_system='defined'])",
+      "kind": "assert",
+      "documentation": "- the recurse_file_system behavior MUST not be set to 'defined' when a pattern match is used with a filepath entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+      "source_sha256": "02932ac19f02fbfa967529e4d96006d87c42220db273db6fbb6a1701a21bbec1",
+      "source_line": 220,
+      "source_xpath": "/xsd:schema/xsd:element[5]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[1]",
+      "context": "unix-def:file_object/unix-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::unix-def:behaviors[@recurse_file_system='defined'])",
+      "kind": "assert",
+      "documentation": "- the recurse_file_system behavior MUST not be set to 'defined' when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+      "source_sha256": "02932ac19f02fbfa967529e4d96006d87c42220db273db6fbb6a1701a21bbec1",
+      "source_line": 221,
+      "source_xpath": "/xsd:schema/xsd:element[5]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[2]",
+      "context": "unix-def:file_object/unix-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::unix-def:behaviors[@max_depth])",
+      "kind": "assert",
+      "documentation": "- the max_depth behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+      "source_sha256": "02932ac19f02fbfa967529e4d96006d87c42220db273db6fbb6a1701a21bbec1",
+      "source_line": 222,
+      "source_xpath": "/xsd:schema/xsd:element[5]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[3]",
+      "context": "unix-def:file_object/unix-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::unix-def:behaviors[@recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the recurse_direction behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+      "source_sha256": "02932ac19f02fbfa967529e4d96006d87c42220db273db6fbb6a1701a21bbec1",
+      "source_line": 223,
+      "source_xpath": "/xsd:schema/xsd:element[5]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[4]",
+      "context": "unix-def:file_object/unix-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::unix-def:behaviors[@recurse])",
+      "kind": "assert",
+      "documentation": "- the recurse behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+      "source_sha256": "02932ac19f02fbfa967529e4d96006d87c42220db273db6fbb6a1701a21bbec1",
+      "source_line": 235,
+      "source_xpath": "/xsd:schema/xsd:element[5]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "unix-def:file_object/unix-def:filename",
+      "test": "(@var_ref and .='') or (@xsi:nil='1' or @xsi:nil='true') or not(.='') or (.='' and @operation = 'pattern match')",
+      "kind": "assert",
+      "documentation": "- filename entity cannot be empty unless the xsi:nil attribute is set to true or a var_ref is used"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+      "source_sha256": "02932ac19f02fbfa967529e4d96006d87c42220db273db6fbb6a1701a21bbec1",
+      "source_line": 488,
+      "source_xpath": "/xsd:schema/xsd:complexType[1]/xsd:attribute[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:report[1]",
+      "context": "oval-def:oval_definitions/oval-def:objects/unix-def:file_object/unix-def:behaviors",
+      "test": "@recurse='files'",
+      "kind": "report",
+      "documentation": "DEPRECATED ATTRIBUTE VALUE IN: ATTRIBUTE VALUE:"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+      "source_sha256": "02932ac19f02fbfa967529e4d96006d87c42220db273db6fbb6a1701a21bbec1",
+      "source_line": 489,
+      "source_xpath": "/xsd:schema/xsd:complexType[1]/xsd:attribute[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:report[2]",
+      "context": "oval-def:oval_definitions/oval-def:objects/unix-def:file_object/unix-def:behaviors",
+      "test": "@recurse='files and directories'",
+      "kind": "report",
+      "documentation": "DEPRECATED ATTRIBUTE VALUE IN: ATTRIBUTE VALUE:"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+      "source_sha256": "02932ac19f02fbfa967529e4d96006d87c42220db273db6fbb6a1701a21bbec1",
+      "source_line": 490,
+      "source_xpath": "/xsd:schema/xsd:complexType[1]/xsd:attribute[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:report[3]",
+      "context": "oval-def:oval_definitions/oval-def:objects/unix-def:file_object/unix-def:behaviors",
+      "test": "@recurse='none'",
+      "kind": "report",
+      "documentation": "DEPRECATED ATTRIBUTE VALUE IN: ATTRIBUTE VALUE:"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+      "source_sha256": "02932ac19f02fbfa967529e4d96006d87c42220db273db6fbb6a1701a21bbec1",
+      "source_line": 651,
+      "source_xpath": "/xsd:schema/xsd:element[8]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule/sch:assert",
+      "context": "unix-def:fileextendedattribute_object/unix-def:filepath",
+      "test": "not(preceding-sibling::unix-def:behaviors[@max_depth or @recurse or @recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the max_depth, recurse, and recurse_direction behaviors are not allowed with a filepath entity"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+      "source_sha256": "02932ac19f02fbfa967529e4d96006d87c42220db273db6fbb6a1701a21bbec1",
+      "source_line": 656,
+      "source_xpath": "/xsd:schema/xsd:element[8]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element/xsd:annotation/xsd:appinfo/sch:pattern[2]/sch:rule/sch:assert",
+      "context": "unix-def:fileextendedattribute_object/unix-def:filepath[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::unix-def:behaviors[@recurse_file_system='defined'])",
+      "kind": "assert",
+      "documentation": "- the recurse_file_system behavior MUST not be set to 'defined' when a pattern match is used with a filepath entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+      "source_sha256": "02932ac19f02fbfa967529e4d96006d87c42220db273db6fbb6a1701a21bbec1",
+      "source_line": 669,
+      "source_xpath": "/xsd:schema/xsd:element[8]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[1]",
+      "context": "unix-def:fileextendedattribute_object/unix-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::unix-def:behaviors[@recurse_file_system='defined'])",
+      "kind": "assert",
+      "documentation": "- the recurse_file_system behavior MUST not be set to 'defined' when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+      "source_sha256": "02932ac19f02fbfa967529e4d96006d87c42220db273db6fbb6a1701a21bbec1",
+      "source_line": 670,
+      "source_xpath": "/xsd:schema/xsd:element[8]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[2]",
+      "context": "unix-def:fileextendedattribute_object/unix-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::unix-def:behaviors[@max_depth])",
+      "kind": "assert",
+      "documentation": "- the max_depth behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+      "source_sha256": "02932ac19f02fbfa967529e4d96006d87c42220db273db6fbb6a1701a21bbec1",
+      "source_line": 671,
+      "source_xpath": "/xsd:schema/xsd:element[8]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[3]",
+      "context": "unix-def:fileextendedattribute_object/unix-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::unix-def:behaviors[@recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the recurse_direction behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+      "source_sha256": "02932ac19f02fbfa967529e4d96006d87c42220db273db6fbb6a1701a21bbec1",
+      "source_line": 672,
+      "source_xpath": "/xsd:schema/xsd:element[8]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[4]",
+      "context": "unix-def:fileextendedattribute_object/unix-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::unix-def:behaviors[@recurse])",
+      "kind": "assert",
+      "documentation": "- the recurse behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+      "source_sha256": "02932ac19f02fbfa967529e4d96006d87c42220db273db6fbb6a1701a21bbec1",
+      "source_line": 684,
+      "source_xpath": "/xsd:schema/xsd:element[8]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "unix-def:fileextendedattribute_object/unix-def:filename",
+      "test": "(@var_ref and .='') or ((@xsi:nil='1' or @xsi:nil='true') and .='') or not(.='') or (.='' and @operation = 'pattern match')",
+      "kind": "assert",
+      "documentation": "- filename entity cannot be empty unless the xsi:nil attribute is set to true or a var_ref is used"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+      "source_sha256": "02932ac19f02fbfa967529e4d96006d87c42220db273db6fbb6a1701a21bbec1",
+      "source_line": 820,
+      "source_xpath": "/xsd:schema/xsd:element[11]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "unix-def:gconf_object/unix-def:source",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the source entity of a gconf_object should be 'equals'"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+      "source_sha256": "02932ac19f02fbfa967529e4d96006d87c42220db273db6fbb6a1701a21bbec1",
+      "source_line": 1953,
+      "source_xpath": "/xsd:schema/xsd:element[35]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule/sch:assert",
+      "context": "unix-def:sccs_object/unix-def:filepath",
+      "test": "not(preceding-sibling::unix-def:behaviors[@max_depth or @recurse or @recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the max_depth, recurse, and recurse_direction behaviors are not allowed with a filepath entity"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+      "source_sha256": "02932ac19f02fbfa967529e4d96006d87c42220db273db6fbb6a1701a21bbec1",
+      "source_line": 1958,
+      "source_xpath": "/xsd:schema/xsd:element[35]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element/xsd:annotation/xsd:appinfo/sch:pattern[2]/sch:rule/sch:assert",
+      "context": "unix-def:sccs_object/unix-def:filepath[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::unix-def:behaviors[@recurse_file_system='defined'])",
+      "kind": "assert",
+      "documentation": "- the recurse_file_system behavior MUST not be set to 'defined' when a pattern match is used with a filepath entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+      "source_sha256": "02932ac19f02fbfa967529e4d96006d87c42220db273db6fbb6a1701a21bbec1",
+      "source_line": 1971,
+      "source_xpath": "/xsd:schema/xsd:element[35]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[1]",
+      "context": "unix-def:sccs_object/unix-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::unix-def:behaviors[@recurse_file_system='defined'])",
+      "kind": "assert",
+      "documentation": "- the recurse_file_system behavior MUST not be set to 'defined' when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+      "source_sha256": "02932ac19f02fbfa967529e4d96006d87c42220db273db6fbb6a1701a21bbec1",
+      "source_line": 1972,
+      "source_xpath": "/xsd:schema/xsd:element[35]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[2]",
+      "context": "unix-def:sccs_object/unix-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::unix-def:behaviors[@max_depth])",
+      "kind": "assert",
+      "documentation": "- the max_depth behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+      "source_sha256": "02932ac19f02fbfa967529e4d96006d87c42220db273db6fbb6a1701a21bbec1",
+      "source_line": 1973,
+      "source_xpath": "/xsd:schema/xsd:element[35]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[3]",
+      "context": "unix-def:sccs_object/unix-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::unix-def:behaviors[@recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the recurse_direction behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+      "source_sha256": "02932ac19f02fbfa967529e4d96006d87c42220db273db6fbb6a1701a21bbec1",
+      "source_line": 1974,
+      "source_xpath": "/xsd:schema/xsd:element[35]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[4]",
+      "context": "unix-def:sccs_object/unix-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::unix-def:behaviors[@recurse])",
+      "kind": "assert",
+      "documentation": "- the recurse behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+      "source_sha256": "02932ac19f02fbfa967529e4d96006d87c42220db273db6fbb6a1701a21bbec1",
+      "source_line": 1986,
+      "source_xpath": "/xsd:schema/xsd:element[35]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "unix-def:sccs_object/unix-def:filename",
+      "test": "(@var_ref and .='') or not(.='') or (.='' and @operation = 'pattern match')",
+      "kind": "assert",
+      "documentation": "- filename entity cannot be empty unless the xsi:nil attribute is set to true or a var_ref is used"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 399,
+      "source_xpath": "/xsd:schema/xsd:complexType[1]/xsd:attribute[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:report",
+      "context": "oval-def:oval_definitions/oval-def:objects/win-def:accesstoken_object/win-def:behaviors",
+      "test": "@include_group",
+      "kind": "report",
+      "documentation": "DEPRECATED BEHAVIOR IN: win-def:accesstoken_object"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 1280,
+      "source_xpath": "/xsd:schema/xsd:element[17]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "win-def:cmdlet_object/win-def:module_name",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the module_name entity of a cmdlet_object must be 'equals'"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 1292,
+      "source_xpath": "/xsd:schema/xsd:element[17]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "win-def:cmdlet_object/win-def:module_id",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the module_id entity of a cmdlet_object must be 'equals'"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 1309,
+      "source_xpath": "/xsd:schema/xsd:element[17]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[4]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "win-def:cmdlet_object/win-def:verb",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the verb entity of a cmdlet_object must be 'equals'"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 1321,
+      "source_xpath": "/xsd:schema/xsd:element[17]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[5]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "win-def:cmdlet_object/win-def:noun",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the noun entity of a cmdlet_object must be 'equals'"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 1631,
+      "source_xpath": "/xsd:schema/xsd:element[23]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule/sch:assert",
+      "context": "win-def:file_object/win-def:filepath",
+      "test": "not(preceding-sibling::win-def:behaviors[@max_depth or @recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the max_depth and recurse_direction behaviors are not allowed with a filepath entity"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 1636,
+      "source_xpath": "/xsd:schema/xsd:element[23]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element/xsd:annotation/xsd:appinfo/sch:pattern[2]/sch:rule/sch:assert",
+      "context": "win-def:file_object/win-def:filepath[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@recurse_file_system='defined'])",
+      "kind": "assert",
+      "documentation": "- the recurse_file_system behavior MUST not be set to 'defined' when a pattern match is used with a filepath entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 1649,
+      "source_xpath": "/xsd:schema/xsd:element[23]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[1]",
+      "context": "win-def:file_object/win-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@recurse_file_system='defined'])",
+      "kind": "assert",
+      "documentation": "- the recurse_file_system behavior MUST not be set to 'defined' when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 1650,
+      "source_xpath": "/xsd:schema/xsd:element[23]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[2]",
+      "context": "win-def:file_object/win-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@max_depth])",
+      "kind": "assert",
+      "documentation": "- the max_depth behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 1651,
+      "source_xpath": "/xsd:schema/xsd:element[23]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[3]",
+      "context": "win-def:file_object/win-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the recurse_direction behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 1663,
+      "source_xpath": "/xsd:schema/xsd:element[23]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[1]",
+      "context": "win-def:file_object/win-def:filename",
+      "test": "(not(contains(.,'\\') or contains(.,'/') or contains(.,':') or contains(.,'*') or contains(.,'?') or contains(.,'>') or contains(.,'|') or contains(.,'<') or contains(.,'\"'))) or (@operation='pattern match')",
+      "kind": "assert",
+      "documentation": "- filename entity cannot contain the characters / \\ : * ? > | < \""
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 1704,
+      "source_xpath": "/xsd:schema/xsd:element[24]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:element[3]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "win-def:file_state/win-def:filename",
+      "test": "(not(contains(.,'\\') or contains(.,'/') or contains(.,':') or contains(.,'*') or contains(.,'?') or contains(.,'>') or contains(.,'|') or contains(.,'<') or contains(.,'\"'))) or (@operation='pattern match')",
+      "kind": "assert",
+      "documentation": "- filename entity cannot contain the characters / \\ : * ? > | < \""
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 1986,
+      "source_xpath": "/xsd:schema/xsd:element[26]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule/sch:assert",
+      "context": "win-def:fileauditedpermissions53_object/win-def:filepath",
+      "test": "not(preceding-sibling::win-def:behaviors[@max_depth or @recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the max_depth and recurse_direction behaviors are not allowed with a filepath entity"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 1991,
+      "source_xpath": "/xsd:schema/xsd:element[26]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element/xsd:annotation/xsd:appinfo/sch:pattern[2]/sch:rule/sch:assert",
+      "context": "win-def:fileauditedpermissions53_object/win-def:filepath[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@recurse_file_system='defined'])",
+      "kind": "assert",
+      "documentation": "- the recurse_file_system behavior MUST not be set to 'defined' when a pattern match is used with a filepath entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 2004,
+      "source_xpath": "/xsd:schema/xsd:element[26]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[1]",
+      "context": "win-def:fileauditedpermissions53_object/win-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@recurse_file_system='defined'])",
+      "kind": "assert",
+      "documentation": "- the recurse_file_system behavior MUST not be set to 'defined' when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 2005,
+      "source_xpath": "/xsd:schema/xsd:element[26]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[2]",
+      "context": "win-def:fileauditedpermissions53_object/win-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@max_depth])",
+      "kind": "assert",
+      "documentation": "- the max_depth behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 2006,
+      "source_xpath": "/xsd:schema/xsd:element[26]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[3]",
+      "context": "win-def:fileauditedpermissions53_object/win-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the recurse_direction behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 2018,
+      "source_xpath": "/xsd:schema/xsd:element[26]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[1]",
+      "context": "win-def:fileauditedpermissions53_object/win-def:filename",
+      "test": "(not(contains(.,'\\') or contains(.,'/') or contains(.,':') or contains(.,'*') or contains(.,'?') or contains(.,'>') or contains(.,'|') or contains(.,'<') or contains(.,'\"'))) or (@operation='pattern match')",
+      "kind": "assert",
+      "documentation": "- filename entity cannot contain the characters / \\ : * ? > | < \""
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 2019,
+      "source_xpath": "/xsd:schema/xsd:element[26]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[2]",
+      "context": "win-def:fileauditedpermissions53_object/win-def:filename",
+      "test": "(@var_ref and .='') or ((@xsi:nil='1' or @xsi:nil='true') and .='') or not(.='') or (.='' and @operation='pattern match')",
+      "kind": "assert",
+      "documentation": "- filename entity cannot be empty unless the xsi:nil attribute is set to true or a var_ref is used"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 2064,
+      "source_xpath": "/xsd:schema/xsd:element[27]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:element[3]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "win-def:fileauditedpermissions53_state/win-def:filename",
+      "test": "(not(contains(.,'\\') or contains(.,'/') or contains(.,':') or contains(.,'*') or contains(.,'?') or contains(.,'>') or contains(.,'|') or contains(.,'<') or contains(.,'\"'))) or (@operation='pattern match')",
+      "kind": "assert",
+      "documentation": "- filename entity cannot contain the characters / \\ : * ? > | < \""
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 2211,
+      "source_xpath": "/xsd:schema/xsd:complexType[3]/xsd:complexContent/xsd:extension/xsd:attribute[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:report",
+      "context": "oval-def:oval_definitions/oval-def:objects/win-def:fileauditedpermissions53_object/win-def:behaviors",
+      "test": "@include_group",
+      "kind": "report",
+      "documentation": "DEPRECATED BEHAVIOR IN: win-def:fileauditedpermissions53_object"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 2321,
+      "source_xpath": "/xsd:schema/xsd:element[29]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[3]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[1]",
+      "context": "win-def:fileauditedpermissions_object/win-def:filename",
+      "test": "(not(contains(.,'\\') or contains(.,'/') or contains(.,':') or contains(.,'*') or contains(.,'?') or contains(.,'>') or contains(.,'|') or contains(.,'<') or contains(.,'\"'))) or (@operation='pattern match')",
+      "kind": "assert",
+      "documentation": "- filename entity cannot contain the characters / \\ : * ? > | < \""
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 2322,
+      "source_xpath": "/xsd:schema/xsd:element[29]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[3]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[2]",
+      "context": "win-def:fileauditedpermissions_object/win-def:filename",
+      "test": "(@var_ref and .='') or ((@xsi:nil='1' or @xsi:nil='true') and .='') or not(.='') or (.='' and @operation='pattern match')",
+      "kind": "assert",
+      "documentation": "- filename entity cannot be empty unless the xsi:nil attribute is set to true or a var_ref is used"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 2371,
+      "source_xpath": "/xsd:schema/xsd:element[30]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "win-def:fileauditedpermissions_state/win-def:filename",
+      "test": "(not(contains(.,'\\') or contains(.,'/') or contains(.,':') or contains(.,'*') or contains(.,'?') or contains(.,'>') or contains(.,'|') or contains(.,'<') or contains(.,'\"'))) or (@operation='pattern match')",
+      "kind": "assert",
+      "documentation": "- filename entity cannot contain the characters / \\ : * ? > | < \""
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 2519,
+      "source_xpath": "/xsd:schema/xsd:complexType[4]/xsd:complexContent/xsd:extension/xsd:attribute[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:report",
+      "context": "oval-def:oval_definitions/oval-def:objects/win-def:fileauditedpermissions_object/win-def:behaviors",
+      "test": "@include_group",
+      "kind": "report",
+      "documentation": "DEPRECATED BEHAVIOR IN: win-def:fileauditedpermissions_object"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 2616,
+      "source_xpath": "/xsd:schema/xsd:element[32]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule/sch:assert",
+      "context": "win-def:fileeffectiverights53_object/win-def:filepath",
+      "test": "not(preceding-sibling::win-def:behaviors[@max_depth or @recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the max_depth and recurse_direction behaviors are not allowed with a filepath entity"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 2621,
+      "source_xpath": "/xsd:schema/xsd:element[32]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element/xsd:annotation/xsd:appinfo/sch:pattern[2]/sch:rule/sch:assert",
+      "context": "win-def:fileeffectiverights53_object/win-def:filepath[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@recurse_file_system='defined'])",
+      "kind": "assert",
+      "documentation": "- the recurse_file_system behavior MUST not be set to 'defined' when a pattern match is used with a filepath entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 2634,
+      "source_xpath": "/xsd:schema/xsd:element[32]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[1]",
+      "context": "win-def:fileeffectiverights53_object/win-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@recurse_file_system='defined'])",
+      "kind": "assert",
+      "documentation": "- the recurse_file_system behavior MUST not be set to 'defined' when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 2635,
+      "source_xpath": "/xsd:schema/xsd:element[32]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[2]",
+      "context": "win-def:fileeffectiverights53_object/win-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@max_depth])",
+      "kind": "assert",
+      "documentation": "- the max_depth behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 2636,
+      "source_xpath": "/xsd:schema/xsd:element[32]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[3]",
+      "context": "win-def:fileeffectiverights53_object/win-def:path[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the recurse_direction behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 2648,
+      "source_xpath": "/xsd:schema/xsd:element[32]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[1]",
+      "context": "win-def:fileeffectiverights53_object/win-def:filename",
+      "test": "(not(contains(.,'\\') or contains(.,'/') or contains(.,':') or contains(.,'*') or contains(.,'?') or contains(.,'>') or contains(.,'|') or contains(.,'<') or contains(.,'\"'))) or (@operation='pattern match')",
+      "kind": "assert",
+      "documentation": "- filename entity cannot contain the characters / \\ : * ? > | < \""
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 2649,
+      "source_xpath": "/xsd:schema/xsd:element[32]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[2]",
+      "context": "win-def:fileeffectiverights53_object/win-def:filename",
+      "test": "(@var_ref and .='') or ((@xsi:nil='1' or @xsi:nil='true') and .='') or not(.='') or (.='' and @operation='pattern match')",
+      "kind": "assert",
+      "documentation": "- filename entity cannot be empty unless the xsi:nil attribute is set to true or a var_ref is used"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 2694,
+      "source_xpath": "/xsd:schema/xsd:element[33]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:element[3]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "win-def:fileeffectiverights53_state/win-def:filename",
+      "test": "(not(contains(.,'\\') or contains(.,'/') or contains(.,':') or contains(.,'*') or contains(.,'?') or contains(.,'>') or contains(.,'|') or contains(.,'<') or contains(.,'\"'))) or (@operation='pattern match')",
+      "kind": "assert",
+      "documentation": "- filename entity cannot contain the characters / \\ : * ? > | < \""
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 2841,
+      "source_xpath": "/xsd:schema/xsd:complexType[5]/xsd:complexContent/xsd:extension/xsd:attribute[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:report",
+      "context": "oval-def:oval_definitions/oval-def:objects/win-def:fileeffectiverights53_object/win-def:behaviors",
+      "test": "@include_group",
+      "kind": "report",
+      "documentation": "DEPRECATED BEHAVIOR IN: win-def:fileeffectiverights53_object"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 2951,
+      "source_xpath": "/xsd:schema/xsd:element[35]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[3]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[1]",
+      "context": "win-def:fileeffectiverights_object/win-def:filename",
+      "test": "(not(contains(.,'\\') or contains(.,'/') or contains(.,':') or contains(.,'*') or contains(.,'?') or contains(.,'>') or contains(.,'|') or contains(.,'<') or contains(.,'\"'))) or (@operation='pattern match')",
+      "kind": "assert",
+      "documentation": "- filename entity cannot contain the characters / \\ : * ? > | < \""
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 2952,
+      "source_xpath": "/xsd:schema/xsd:element[35]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[3]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[2]",
+      "context": "win-def:fileeffectiverights_object/win-def:filename",
+      "test": "(@var_ref and .='') or ((@xsi:nil='1' or @xsi:nil='true') and .='') or not(.='') or (.='' and @operation='pattern match')",
+      "kind": "assert",
+      "documentation": "- filename entity cannot be empty unless the xsi:nil attribute is set to true or a var_ref is used"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 3001,
+      "source_xpath": "/xsd:schema/xsd:element[36]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "win-def:fileeffectiverights_state/win-def:filename",
+      "test": "(not(contains(.,'\\') or contains(.,'/') or contains(.,':') or contains(.,'*') or contains(.,'?') or contains(.,'>') or contains(.,'|') or contains(.,'<') or contains(.,'\"'))) or (@operation='pattern match')",
+      "kind": "assert",
+      "documentation": "- filename entity cannot contain the characters / \\ : * ? > | < \""
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 3149,
+      "source_xpath": "/xsd:schema/xsd:complexType[6]/xsd:complexContent/xsd:extension/xsd:attribute[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:report",
+      "context": "oval-def:oval_definitions/oval-def:objects/win-def:fileeffectiverights_object/win-def:behaviors",
+      "test": "@include_group",
+      "kind": "report",
+      "documentation": "DEPRECATED BEHAVIOR IN: win-def:fileeffectiverights_object"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 4060,
+      "source_xpath": "/xsd:schema/xsd:element[59]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[1]",
+      "context": "win-def:ntuser_object/win-def:key[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@max_depth])",
+      "kind": "assert",
+      "documentation": "- the max_depth behavior MUST not be used when a pattern match is used with a key entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 4062,
+      "source_xpath": "/xsd:schema/xsd:element[59]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[2]",
+      "context": "win-def:ntuser_object/win-def:key[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the recurse_direction behavior MUST not be used when a pattern match is used with a key entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 4447,
+      "source_xpath": "/xsd:schema/xsd:element[65]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule/sch:assert",
+      "context": "win-def:peheader_object/win-def:filepath",
+      "test": "not(preceding-sibling::win-def:behaviors[@max_depth or @recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the max_depth and recurse_direction behaviors are not allowed with a filepath entity"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 4452,
+      "source_xpath": "/xsd:schema/xsd:element[65]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element/xsd:annotation/xsd:appinfo/sch:pattern[2]/sch:rule/sch:assert",
+      "context": "win-def:peheader_object/win-def:filepath[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@recurse_file_system='defined'])",
+      "kind": "assert",
+      "documentation": "- the recurse_file_system behavior MUST not be set to 'defined' when a pattern match is used with a filepath entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 4465,
+      "source_xpath": "/xsd:schema/xsd:element[65]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[1]",
+      "context": "win-def:peheader_object/win-def:filepath[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@recurse_file_system='defined'])",
+      "kind": "assert",
+      "documentation": "- the recurse_file_system behavior MUST not be set to 'defined' when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 4466,
+      "source_xpath": "/xsd:schema/xsd:element[65]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[2]",
+      "context": "win-def:peheader_object/win-def:filepath[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@max_depth])",
+      "kind": "assert",
+      "documentation": "- the max_depth behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 4467,
+      "source_xpath": "/xsd:schema/xsd:element[65]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[3]",
+      "context": "win-def:peheader_object/win-def:filepath[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the recurse_direction behavior MUST not be used when a pattern match is used with a path entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 4479,
+      "source_xpath": "/xsd:schema/xsd:element[65]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "win-def:peheader_object/win-def:filename",
+      "test": "(not(contains(.,'\\') or contains(.,'/') or contains(.,':') or contains(.,'*') or contains(.,'?') or contains(.,'>') or contains(.,'|') or contains(.,'<') or contains(.,'\"'))) or (@operation='pattern match')",
+      "kind": "assert",
+      "documentation": "- filename entity cannot contain the characters / \\ : * ? > | < \""
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 4520,
+      "source_xpath": "/xsd:schema/xsd:element[66]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:element[3]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "win-def:peheader_state/win-def:filename",
+      "test": "(not(contains(.,'\\') or contains(.,'/') or contains(.,':') or contains(.,'*') or contains(.,'?') or contains(.,'>') or contains(.,'|') or contains(.,'<') or contains(.,'\"'))) or (@operation='pattern match')",
+      "kind": "assert",
+      "documentation": "- filename entity cannot contain the characters / \\ : * ? > | < \""
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 5130,
+      "source_xpath": "/xsd:schema/xsd:complexType[8]/xsd:attribute[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:report",
+      "context": "oval-def:oval_definitions/oval-def:objects/win-def:printereffectiverights_object/win-def:behaviors",
+      "test": "@include_group",
+      "kind": "report",
+      "documentation": "DEPRECATED BEHAVIOR IN: win-def:printereffectiverights_object"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 5536,
+      "source_xpath": "/xsd:schema/xsd:element[80]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[3]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[1]",
+      "context": "win-def:registry_object/win-def:key[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@max_depth])",
+      "kind": "assert",
+      "documentation": "- the max_depth behavior MUST not be used when a pattern match is used with a key entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 5537,
+      "source_xpath": "/xsd:schema/xsd:element[80]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[3]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[2]",
+      "context": "win-def:registry_object/win-def:key[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the recurse_direction behavior MUST not be used when a pattern match is used with a key entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 5756,
+      "source_xpath": "/xsd:schema/xsd:element[83]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[3]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[1]",
+      "context": "win-def:regkeyauditedpermissions53_object/win-def:key[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@max_depth])",
+      "kind": "assert",
+      "documentation": "- the max_depth behavior MUST not be used when a pattern match is used with a key entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 5757,
+      "source_xpath": "/xsd:schema/xsd:element[83]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[3]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[2]",
+      "context": "win-def:regkeyauditedpermissions53_object/win-def:key[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the recurse_direction behavior MUST not be used when a pattern match is used with a key entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 5945,
+      "source_xpath": "/xsd:schema/xsd:complexType[10]/xsd:complexContent/xsd:extension/xsd:attribute[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:report",
+      "context": "oval-def:oval_definitions/oval-def:objects/win-def:regkeyauditedpermissions53_object/win-def:behaviors",
+      "test": "@include_group",
+      "kind": "report",
+      "documentation": "DEPRECATED BEHAVIOR IN: win-def:regkeyauditedpermissions53_object"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 6055,
+      "source_xpath": "/xsd:schema/xsd:element[86]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[3]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[1]",
+      "context": "win-def:regkeyauditedpermissions_object/win-def:key[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@max_depth])",
+      "kind": "assert",
+      "documentation": "- the max_depth behavior MUST not be used when a pattern match is used with a key entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 6056,
+      "source_xpath": "/xsd:schema/xsd:element[86]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[3]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[2]",
+      "context": "win-def:regkeyauditedpermissions_object/win-def:key[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the recurse_direction behavior MUST not be used when a pattern match is used with a key entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 6246,
+      "source_xpath": "/xsd:schema/xsd:complexType[11]/xsd:complexContent/xsd:extension/xsd:attribute[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:report",
+      "context": "oval-def:oval_definitions/oval-def:objects/win-def:regkeyauditedpermissions_object/win-def:behaviors",
+      "test": "@include_group",
+      "kind": "report",
+      "documentation": "DEPRECATED BEHAVIOR IN: win-def:regkeyauditedpermissions_object"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 6345,
+      "source_xpath": "/xsd:schema/xsd:element[89]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[3]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[1]",
+      "context": "win-def:regkeyeffectiverights53_object/win-def:key[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@max_depth])",
+      "kind": "assert",
+      "documentation": "- the max_depth behavior MUST not be used when a pattern match is used with a key entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 6346,
+      "source_xpath": "/xsd:schema/xsd:element[89]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[3]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[2]",
+      "context": "win-def:regkeyeffectiverights53_object/win-def:key[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the recurse_direction behavior MUST not be used when a pattern match is used with a key entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 6534,
+      "source_xpath": "/xsd:schema/xsd:complexType[12]/xsd:complexContent/xsd:extension/xsd:attribute[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:report",
+      "context": "oval-def:oval_definitions/oval-def:objects/win-def:regkeyeffectiverights53_object/win-def:behaviors",
+      "test": "@include_group",
+      "kind": "report",
+      "documentation": "DEPRECATED BEHAVIOR IN: win-def:regkeyeffectiverights53_object"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 6642,
+      "source_xpath": "/xsd:schema/xsd:element[92]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[3]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[1]",
+      "context": "win-def:regkeyeffectiverights_object/win-def:key[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@max_depth])",
+      "kind": "assert",
+      "documentation": "- the max_depth behavior MUST not be used when a pattern match is used with a key entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 6643,
+      "source_xpath": "/xsd:schema/xsd:element[92]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[3]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[2]",
+      "context": "win-def:regkeyeffectiverights_object/win-def:key[not(@operation='equals' or not(@operation))]",
+      "test": "not(preceding-sibling::win-def:behaviors[@recurse_direction])",
+      "kind": "assert",
+      "documentation": "- the recurse_direction behavior MUST not be used when a pattern match is used with a key entity."
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 6833,
+      "source_xpath": "/xsd:schema/xsd:complexType[13]/xsd:complexContent/xsd:extension/xsd:attribute[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:report",
+      "context": "oval-def:oval_definitions/oval-def:objects/win-def:regkeyeffectiverights_object/win-def:behaviors",
+      "test": "@include_group",
+      "kind": "report",
+      "documentation": "DEPRECATED BEHAVIOR IN: win-def:regkeyeffectiverights_object"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 7210,
+      "source_xpath": "/xsd:schema/xsd:complexType[14]/xsd:attribute[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:report",
+      "context": "oval-def:oval_definitions/oval-def:objects/win-def:serviceeffectiverights_object/win-def:behaviors",
+      "test": "@include_group",
+      "kind": "report",
+      "documentation": "DEPRECATED BEHAVIOR IN: win-def:serviceeffectiverights_object"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 7566,
+      "source_xpath": "/xsd:schema/xsd:complexType[15]/xsd:attribute/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:report",
+      "context": "oval-def:oval_definitions/oval-def:objects/win-def:sharedresourceauditedpermissions_object/win-def:behaviors",
+      "test": "@include_group",
+      "kind": "report",
+      "documentation": "DEPRECATED BEHAVIOR IN: win-def:sharedresourceauditedpermissions_object"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 7747,
+      "source_xpath": "/xsd:schema/xsd:complexType[16]/xsd:attribute/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:report",
+      "context": "oval-def:oval_definitions/oval-def:objects/win-def:sharedresourceeffectiverights_object/win-def:behaviors",
+      "test": "@include_group",
+      "kind": "report",
+      "documentation": "DEPRECATED BEHAVIOR IN: win-def:sharedresourceeffectiverights_object"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 9279,
+      "source_xpath": "/xsd:schema/xsd:element[143]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "win-def:wmi_object/win-def:namespace",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the namespace entity of a wmi_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 9291,
+      "source_xpath": "/xsd:schema/xsd:element[143]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "win-def:wmi_object/win-def:wql",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the wql entity of a wmi_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 9410,
+      "source_xpath": "/xsd:schema/xsd:element[146]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "win-def:wmi57_object/win-def:namespace",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the namespace entity of a wmi57_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 9422,
+      "source_xpath": "/xsd:schema/xsd:element[146]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "win-def:wmi57_object/win-def:wql",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the wql entity of a wmi57_object should be 'equals', note that this overrules the general operation attribute validation (i.e. follow this one)"
+    },
+    {
+      "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+      "source_sha256": "b66f1547bfd0bb8ea6cf58a0eec9f8de417aad6642f741d0ed0ad7b6462314ff",
+      "source_line": 9547,
+      "source_xpath": "/xsd:schema/xsd:element[149]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[2]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert",
+      "context": "win-def:wuaupdatesearcher_object/win-def:search_criteria",
+      "test": "not(@operation) or @operation='equals'",
+      "kind": "assert",
+      "documentation": "- operation attribute for the search_criteria entity of a wuaupdatesearcher_object must be 'equals'"
+    }
+  ],
+  "bounded_cases": [
+    {
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[6]/sch:assert",
+      "case": "equals permitted within source datatype restriction",
+      "actual": true
+    },
+    {
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[7]/sch:assert",
+      "case": "equals permitted within source datatype restriction",
+      "actual": true
+    },
+    {
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[8]/sch:assert",
+      "case": "equals permitted within source datatype restriction",
+      "actual": true
+    },
+    {
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[9]/sch:assert",
+      "case": "equals permitted within source datatype restriction",
+      "actual": true
+    },
+    {
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[10]/sch:assert",
+      "case": "equals permitted within source datatype restriction",
+      "actual": true
+    },
+    {
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[11]/sch:assert",
+      "case": "equals permitted within source datatype restriction",
+      "actual": true
+    },
+    {
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[12]/sch:assert",
+      "case": "equals permitted within source datatype restriction",
+      "actual": true
+    },
+    {
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[13]/sch:assert",
+      "case": "equals permitted within source datatype restriction",
+      "actual": true
+    },
+    {
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[14]/sch:assert",
+      "case": "equals permitted within source datatype restriction",
+      "actual": true
+    },
+    {
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[15]/sch:assert",
+      "case": "equals permitted within source datatype restriction",
+      "actual": true
+    },
+    {
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[16]/sch:assert",
+      "case": "equals permitted within source datatype restriction",
+      "actual": true
+    },
+    {
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[17]/sch:assert",
+      "case": "equals permitted within source datatype restriction",
+      "actual": true
+    },
+    {
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[18]/sch:assert",
+      "case": "equals permitted within source datatype restriction",
+      "actual": true
+    },
+    {
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[19]/sch:assert",
+      "case": "equals permitted within source datatype restriction",
+      "actual": true
+    },
+    {
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[3]/sch:assert",
+      "case": "var_check requires variable dependency",
+      "attributes": {
+        "var_check": "all"
+      },
+      "actual": false,
+      "expected": false
+    },
+    {
+      "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[3]/sch:assert",
+      "case": "var_check requires variable dependency",
+      "attributes": {
+        "var_check": "all",
+        "var_ref": "oval:example:var:1"
+      },
+      "actual": true,
+      "expected": true
+    },
+    {
+      "source_xpath": "/xsd:schema/xsd:element[5]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule/sch:assert",
+      "context": "ind-def:filehash_object/ind-def:filepath",
+      "case": "source path/behavior context",
+      "behavior_present": false,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "source_xpath": "/xsd:schema/xsd:element[5]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:element/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule/sch:assert",
+      "context": "ind-def:filehash_object/ind-def:filepath",
+      "case": "source path/behavior context",
+      "behavior_present": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "source_xpath": "/xsd:schema/xsd:element[5]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[4]",
+      "context": "ind-def:filehash_object/ind-def:path[not(@operation='equals' or not(@operation))]",
+      "case": "source path/behavior context",
+      "behavior_present": false,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "source_xpath": "/xsd:schema/xsd:element[5]/xsd:complexType/xsd:complexContent/xsd:extension/xsd:sequence/xsd:choice/xsd:sequence/xsd:choice/xsd:sequence/xsd:element[1]/xsd:annotation/xsd:appinfo/sch:pattern/sch:rule/sch:assert[4]",
+      "context": "ind-def:filehash_object/ind-def:path[not(@operation='equals' or not(@operation))]",
+      "case": "source path/behavior context",
+      "behavior_present": true,
+      "actual": false,
+      "expected": false
+    }
+  ],
+  "conclusions": [
+    "Equality stays within source datatype-operation constraints; no constant datatype default.",
+    "Variable/array matching requires dependency context; Schematron rejects var_check without var_ref and reports omitted var_check with var_ref.",
+    "Source filepath/pattern-path contexts restrict recursion behaviors. Existing NG file selection rejects full_path plus traversal. Defaults only fill an explicitly requested present construct; host must validate full context and preserve diagnostics.",
+    "Clause review does not establish scanner/collection equivalence. Converted explicit and effective values remain untouched."
+  ]
+}

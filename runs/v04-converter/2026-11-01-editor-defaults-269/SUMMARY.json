@@ -1,0 +1,51 @@
+{
+  "source_commit": "a8a9db7039399610cb8af654ab9e880d69cffa04",
+  "editor_commit": "44eb6af1ea347d3ff38b5627fd84bd2b527584c0",
+  "source_pr": "https://github.com/vanderpol/scap-ng/pull/268",
+  "source_issue": 269,
+  "editor_issue": 7,
+  "original_rows": 453,
+  "source_only_rows": 15,
+  "dispositions": {
+    "A": 249,
+    "B": 10,
+    "C": 16,
+    "D": 186,
+    "E": 0,
+    "F": 7
+  },
+  "unique_controls": 38,
+  "annotation_locations": 264,
+  "safe_controls": 34,
+  "aggressive_only_controls": 4,
+  "new_owner_semantic_decisions": [],
+  "local_verification": {
+    "expanded_schema_tests": 38,
+    "old_full_generator_fingerprints_unchanged": 100,
+    "original_backed_static_proofs": 3,
+    "r2_sample_payloads_byte_identical": 20,
+    "editor_unit_cases": 8,
+    "editor_integration_cases": 3,
+    "lint_build_package": "PASS",
+    "maintained_probe": "48/49 initially; sole stale date assertion corrected and affected5-test gate PASS; exact updated38-test schema entrypoint PASS"
+  },
+  "remaining_editor_implementation": [
+    "extension host/CustomTextEditorProvider/TextDocument/WorkspaceEdit/Structured-Guided UI (#1/#2)",
+    "real UI screenshots and extension-host undo/redo proof",
+    "offline bounded regex/sample playground (#7); full Assessment evaluation unavailable"
+  ],
+  "no_merge_freeze_release": true,
+  "corpus_regenerated": false,
+  "proofs_rebaselined": false,
+  "scanner_runtime_equivalence_claimed": false,
+  "hosted_verification": {
+    "source_workflows": "10/10 PASS at a8a9db703; Board41302147435 included",
+    "editor_workflow": "PASS41302520698 at44eb6af"
+  },
+  "pinned_embedded_schematron_review": {
+    "source_files": 13,
+    "relevant_clauses": 195,
+    "bounded_cases_passed": 20,
+    "scope": "bounded clauses; not full corpus/scanner"
+  }
+}

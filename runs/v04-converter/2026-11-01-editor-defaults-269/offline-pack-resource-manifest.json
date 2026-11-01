@@ -1,0 +1,2042 @@
+{
+  "format": "scap-ng/offline-editor-pack/1",
+  "schema_version": "0.4.0",
+  "authoring_metadata_version": 1,
+  "source_commit": "a8a9db7039399610cb8af654ab9e880d69cffa04",
+  "resources": [
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/applicability.schema.json",
+      "path": "schemas/applicability.schema.json",
+      "kind": "schema",
+      "bytes": 1039,
+      "sha256": "f3d52f65b0e2a3033609f637e7d21640870950c50be298ba3a5025bf9f68a637"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json",
+      "path": "schemas/assessment-language.schema.json",
+      "kind": "schema",
+      "bytes": 733295,
+      "sha256": "81349d591972e9d3762ef10d4b3838b6696374f5afe8ba2499d345d4f77c895d"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/assessment-result-set.schema.json",
+      "path": "schemas/assessment-result-set.schema.json",
+      "kind": "schema",
+      "bytes": 872,
+      "sha256": "d4e5744e1156873617b2427ad9f220a7199b45b5763b8b391e1958ee049176a9"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/assessment-result.schema.json",
+      "path": "schemas/assessment-result.schema.json",
+      "kind": "schema",
+      "bytes": 20152,
+      "sha256": "14da571d062d212db587098f58a0a8cb79a26d67833c70ef8d4427a0a5f70773"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/assessment.schema.json",
+      "path": "schemas/assessment.schema.json",
+      "kind": "schema",
+      "bytes": 14461,
+      "sha256": "a3b7381d2a0a1a0ca9c540732fa918869d4099f15ba7ede8525a5777dcaf20c3"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/benchmark-result.schema.json",
+      "path": "schemas/benchmark-result.schema.json",
+      "kind": "schema",
+      "bytes": 7720,
+      "sha256": "b2b482f337d769b95e5f0d7ff5a670d2a4ba5af9dd466974f4101ed232442d40"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/benchmark.schema.json",
+      "path": "schemas/benchmark.schema.json",
+      "kind": "schema",
+      "bytes": 6960,
+      "sha256": "c9f345337da8483e68ef2acc4325d4b5305c142bef4a04dff9be5d93c81f2e23"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json",
+      "path": "schemas/capability-common.schema.json",
+      "kind": "schema",
+      "bytes": 35485,
+      "sha256": "e6e14208941a8a130005771afcec56bbc6b4a9d59a74d7c575a3820e525933c8"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/collected-item.schema.json",
+      "path": "schemas/collected-item.schema.json",
+      "kind": "schema",
+      "bytes": 10555,
+      "sha256": "c16a7549acbde6020007ee4bcbc4a8095d2cc615b67bd65c3ec6b92d5b9c5630"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/collection-result.schema.json",
+      "path": "schemas/collection-result.schema.json",
+      "kind": "schema",
+      "bytes": 1833,
+      "sha256": "ee6b292933d5dc090a2b2171ab3127dfb16a7ab29ba48530ddbc398492a0b91f"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/entity-result.schema.json",
+      "path": "schemas/entity-result.schema.json",
+      "kind": "schema",
+      "bytes": 1975,
+      "sha256": "965863e9ac565a2c416d535a67617c3d2eec4647265fb7bf01e1b356d981ad66"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/expression-invocation.schema.json",
+      "path": "schemas/expression-invocation.schema.json",
+      "kind": "schema",
+      "bytes": 8544,
+      "sha256": "4c57f541a00e63f06d0dadffd16e7bb795104bbcafa72086210aa845732b0f0e"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/expression-result.schema.json",
+      "path": "schemas/expression-result.schema.json",
+      "kind": "schema",
+      "bytes": 9108,
+      "sha256": "c47faafd5c0978c61778d7ba21a5eac76851b4de728c2c00025ea0941a8ef547"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/expression.schema.json",
+      "path": "schemas/expression.schema.json",
+      "kind": "schema",
+      "bytes": 7743,
+      "sha256": "9ea036959d007f8e8449fb493f20275b377807633aff56bcecdbdb9b4a112bd5"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/item-materialization.schema.json",
+      "path": "schemas/item-materialization.schema.json",
+      "kind": "schema",
+      "bytes": 1600,
+      "sha256": "57ee177eab0c35b744e81e8d7682569377c4ac07dbb96d6b6d7f2d79c665748d"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/item-report.schema.json",
+      "path": "schemas/item-report.schema.json",
+      "kind": "schema",
+      "bytes": 4322,
+      "sha256": "59e6fc8c8099967941cf305a4d252ea61cb9c47f7a5bef23463bb09dba37debd"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/manual-assessment-result.schema.json",
+      "path": "schemas/manual-assessment-result.schema.json",
+      "kind": "schema",
+      "bytes": 4717,
+      "sha256": "a03df388df846ec2419244f34fb2e5a47a12d5b5db9806d6bc3eb5049464fe55"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/manual-assessment.schema.json",
+      "path": "schemas/manual-assessment.schema.json",
+      "kind": "schema",
+      "bytes": 3503,
+      "sha256": "3be4b012fe130ef309cd14eaacdc28125c9d8bc946b41b2766f2f217580105cb"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/organizational-input.schema.json",
+      "path": "schemas/organizational-input.schema.json",
+      "kind": "schema",
+      "bytes": 7066,
+      "sha256": "7b1c6f0c67f7c9494151f3b1e4f4ac29909f5468c91cf01e41d80eb89b79f434"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/package-manifest.schema.json",
+      "path": "schemas/package-manifest.schema.json",
+      "kind": "schema",
+      "bytes": 4471,
+      "sha256": "0f82d626651af47a47f8aae46805519911d662adb01dc44c10d5ddaa09fb47ae"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/reported-elements.schema.json",
+      "path": "schemas/reported-elements.schema.json",
+      "kind": "schema",
+      "bytes": 661,
+      "sha256": "b6205bd0a35f3bbc764f09b8697b8007a9728def7a45b3d077180e0dec9d0941"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/result-package-manifest.schema.json",
+      "path": "schemas/result-package-manifest.schema.json",
+      "kind": "schema",
+      "bytes": 2623,
+      "sha256": "451c7e9796c1b061b5de006af233a209ce6335c207a353e0bc758038a0f365c1"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json",
+      "path": "schemas/result-types.schema.json",
+      "kind": "schema",
+      "bytes": 6240,
+      "sha256": "259eb551f04cefaa95f579dd5720bbe938834b1274e39bd31765b23d279cbf9a"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/rule-result.schema.json",
+      "path": "schemas/rule-result.schema.json",
+      "kind": "schema",
+      "bytes": 15827,
+      "sha256": "d509571269ee192e59827f5bd4226329528870c889a3e371219ce2b15db0c095"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/rule.schema.json",
+      "path": "schemas/rule.schema.json",
+      "kind": "schema",
+      "bytes": 6712,
+      "sha256": "39c57c5c7ec89bf84a20fb93a1b4e57fa17b460cf8da7cbf069a201d4bc9b55e"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/scan-result.schema.json",
+      "path": "schemas/scan-result.schema.json",
+      "kind": "schema",
+      "bytes": 3658,
+      "sha256": "57e1b7e31a6f44638b26ab8e0f305a4b3d2e1f0b2d1944cedb889b24ea09fdc4"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/state-result.schema.json",
+      "path": "schemas/state-result.schema.json",
+      "kind": "schema",
+      "bytes": 1371,
+      "sha256": "8e5df53ce63eaf97d48117ea7086ca1457db5aa6a53b5389b2cf52c70000f16a"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/tailoring.schema.json",
+      "path": "schemas/tailoring.schema.json",
+      "kind": "schema",
+      "bytes": 5383,
+      "sha256": "c8f2d6a0e0107e9612f0bdaf8d22262082beb57cd328daef3877b5cc1a8224de"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/test-result.schema.json",
+      "path": "schemas/test-result.schema.json",
+      "kind": "schema",
+      "bytes": 5432,
+      "sha256": "066161ba55ba9f9e9d3e27513098bc1b88bb3d5d11f2d2114fce93b5cea50597"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/variable-expression.schema.json",
+      "path": "schemas/variable-expression.schema.json",
+      "kind": "schema",
+      "bytes": 11552,
+      "sha256": "bdc0686fd1ae283274dfc95ed3021f0475555025faad1c0fb1ae8e6c24509e36"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/variable-function-expression.schema.json",
+      "path": "schemas/variable-function-expression.schema.json",
+      "kind": "schema",
+      "bytes": 12619,
+      "sha256": "7d1feb35e8596607c211401064f1332f075548887228b2f53c4684b79ed2247e"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/variable-result.schema.json",
+      "path": "schemas/variable-result.schema.json",
+      "kind": "schema",
+      "bytes": 3628,
+      "sha256": "cf403cd28c62ddd8b1aac37a1808457524d97b991099b8b7adc91e9beb778fe1"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/aix.fileset.schema.json",
+      "path": "capabilities/aix.fileset.json",
+      "kind": "schema",
+      "bytes": 19710,
+      "sha256": "24a09049e0d947a998c75d5c67f1016eabecb1decd02d3945737d8119752ef54"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:aix.fileset",
+      "path": "mappings/aix.fileset.json",
+      "kind": "mapping",
+      "bytes": 1314,
+      "sha256": "329f6df9ae24fd18701a9031a996b9e640b38a06e3aa7f57dc30cc13989def2d"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/aix.fix.schema.json",
+      "path": "capabilities/aix.fix.json",
+      "kind": "schema",
+      "bytes": 19699,
+      "sha256": "f9bd8a5c2c4671bd6c55c7fdc8f365213a2032cbbf96610816f2c00d24b6f5ca"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:aix.fix",
+      "path": "mappings/aix.fix.json",
+      "kind": "mapping",
+      "bytes": 1334,
+      "sha256": "e8b7f98babccc24ff201e7020e87c9bc09a16d1c5e7230490d5b9f68d1205e29"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/asa.line.schema.json",
+      "path": "capabilities/asa.line.json",
+      "kind": "schema",
+      "bytes": 17110,
+      "sha256": "29215732432dee6aac372574b1ae2069b48ba95f141d214282c383e44cc68c90"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:asa.line",
+      "path": "mappings/asa.line.json",
+      "kind": "mapping",
+      "bytes": 1194,
+      "sha256": "f11a576779b475685d394859900a900db802715d6a70b53bc43f2aacd3d36770"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/asa.version.schema.json",
+      "path": "capabilities/asa.version.json",
+      "kind": "schema",
+      "bytes": 12342,
+      "sha256": "7451c8a1d7d8192bbab7ca1792188562807960b87099a70ac94b724b17d953a7"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:asa.version",
+      "path": "mappings/asa.version.json",
+      "kind": "mapping",
+      "bytes": 1445,
+      "sha256": "77ad910311d0930bf7c5c6ade778832f5dc6e21c7f5d06f29d3be61ce170da81"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/file.hash.schema.json",
+      "path": "capabilities/file.hash.json",
+      "kind": "schema",
+      "bytes": 34468,
+      "sha256": "f0c8d9f0009305a46fb5eb559dabe2760125e37a550e6b80e1dd78921982feba"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:file.hash",
+      "path": "mappings/file.hash.json",
+      "kind": "mapping",
+      "bytes": 3891,
+      "sha256": "ebd182502923867d67b9550220132387d93d4989103fe6a6095ec1ae150d7c46"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.environmentvariable.schema.json",
+      "path": "capabilities/independent.environmentvariable.json",
+      "kind": "schema",
+      "bytes": 23053,
+      "sha256": "3f75e39fae7d6d7d1918b47567fc5c199fcb0a22e7faa5dbbbf375b20692973f"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:independent.environmentvariable",
+      "path": "mappings/independent.environmentvariable.json",
+      "kind": "mapping",
+      "bytes": 2112,
+      "sha256": "5feb807c50acc878fce5acaeb53ea054f3e2cc7e57717a60f9b98ef2e3cd0f5a"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.family.schema.json",
+      "path": "capabilities/independent.family.json",
+      "kind": "schema",
+      "bytes": 8676,
+      "sha256": "0033bc7871f3288e65c6260ec4e61e86e1214534a76f5d5deabc2301c71af2cc"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:independent.family",
+      "path": "mappings/independent.family.json",
+      "kind": "mapping",
+      "bytes": 1756,
+      "sha256": "f0be811e4a2ccb45bc8feb2e78d1684d0baef2e636582f617c5f9454c31dc073"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.shellcommand.schema.json",
+      "path": "capabilities/independent.shellcommand.json",
+      "kind": "schema",
+      "bytes": 30068,
+      "sha256": "e87f45c7fe89fd05aabe0c13f1e3055815a1cf86658f1b15d616f62f9fdd1acf"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:independent.shellcommand",
+      "path": "mappings/independent.shellcommand.json",
+      "kind": "mapping",
+      "bytes": 5866,
+      "sha256": "09c7d44518add11804162b62ce078c2a6b8f7b8c662d170ad5da281732ff60f2"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.sql.schema.json",
+      "path": "capabilities/independent.sql.json",
+      "kind": "schema",
+      "bytes": 22409,
+      "sha256": "fb77eec46116a070920ac9fb026363db94971e40a9be84cf571ea76e4e441bb6"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:independent.sql",
+      "path": "mappings/independent.sql.json",
+      "kind": "mapping",
+      "bytes": 4655,
+      "sha256": "f225d6337e66e2bf17ee28030582c1fe90f6e5ca210c0a79e0ae121d7353ed34"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.textfilecontent.schema.json",
+      "path": "capabilities/independent.textfilecontent.json",
+      "kind": "schema",
+      "bytes": 53378,
+      "sha256": "4a3e34948c18070091ec19208abd87cb84e6859dbfd043cbb73bb64ae0a9add5"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:independent.textfilecontent",
+      "path": "mappings/independent.textfilecontent.json",
+      "kind": "mapping",
+      "bytes": 4881,
+      "sha256": "8c73d9f7e8b9cd026686861c2dad1331c75c6390be441c2133c296740c820166"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.unknown.schema.json",
+      "path": "capabilities/independent.unknown.json",
+      "kind": "schema",
+      "bytes": 1540,
+      "sha256": "602089be2e5dda00607715add7a395c2cb558e4ea10e8604efc67abdd763bbf6"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:independent.unknown",
+      "path": "mappings/independent.unknown.json",
+      "kind": "mapping",
+      "bytes": 1106,
+      "sha256": "9b8698aadd6b260925cbfaf20cb13a8351811abff1f113cc62b82919c0f0f6d2"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.xmlfilecontent.schema.json",
+      "path": "capabilities/independent.xmlfilecontent.json",
+      "kind": "schema",
+      "bytes": 37893,
+      "sha256": "ed0fef60c9a0c14578e0f285ccd04c2956462984ed0d3426f0109f9ad0b26f13"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:independent.xmlfilecontent",
+      "path": "mappings/independent.xmlfilecontent.json",
+      "kind": "mapping",
+      "bytes": 4143,
+      "sha256": "7036c671e39c36dcb91522dc15236d6eb1669d79397bf0c9036916592b87b98f"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.yamlfilecontent.schema.json",
+      "path": "capabilities/independent.yamlfilecontent.json",
+      "kind": "schema",
+      "bytes": 38137,
+      "sha256": "bb7fdc3b32463382ce7d2714f81068bdc7e3966d3cde4d6418eb3b9f3eaa6b20"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:independent.yamlfilecontent",
+      "path": "mappings/independent.yamlfilecontent.json",
+      "kind": "mapping",
+      "bytes": 3876,
+      "sha256": "9a7f400102139731a9dc79ce65a9c3f3d30e33dfbc8c0620bb90108bdb6f368f"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/ios.bgpneighbor.schema.json",
+      "path": "capabilities/ios.bgpneighbor.json",
+      "kind": "schema",
+      "bytes": 17171,
+      "sha256": "3bd9bf715e8557fe8f05ad826fd1bd14aad710d8d99efcc6329cfcd37770b80a"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:ios.bgpneighbor",
+      "path": "mappings/ios.bgpneighbor.json",
+      "kind": "mapping",
+      "bytes": 1256,
+      "sha256": "cbaf46c1eb84f571f513e834edeee84a44941171d25eeeb9966cd8393a2a061e"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/ios.global.schema.json",
+      "path": "capabilities/ios.global.json",
+      "kind": "schema",
+      "bytes": 15820,
+      "sha256": "491c639f0421e7cb4a1c6e19055f7fd51ae913eb00459a28488a065a2f8fd03b"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:ios.global",
+      "path": "mappings/ios.global.json",
+      "kind": "mapping",
+      "bytes": 1166,
+      "sha256": "38b4d58758b9f17d29213d1df426fac9cd45294112274811a0cff3752c5bed1e"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/ios.interface.schema.json",
+      "path": "capabilities/ios.interface.json",
+      "kind": "schema",
+      "bytes": 40858,
+      "sha256": "623ab84d1e53854351be23cc30bfb323a1aeda2bc2616637668519700cdcf0ec"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:ios.interface",
+      "path": "mappings/ios.interface.json",
+      "kind": "mapping",
+      "bytes": 2043,
+      "sha256": "81a7f68b8a690aa2976f7339322183e91a6e0544ac76a4eefacafe47e303d60e"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/ios.line.schema.json",
+      "path": "capabilities/ios.line.json",
+      "kind": "schema",
+      "bytes": 17110,
+      "sha256": "6c132de99358bcd8f58ac22fe3d39225277ea2408609365da7d2acaf6fe87c2e"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:ios.line",
+      "path": "mappings/ios.line.json",
+      "kind": "mapping",
+      "bytes": 1237,
+      "sha256": "0b0a7c78f4d6990970c01e3258b14fe50a7f2ec3280f5be922efc1dacf167a5c"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/ios.routingprotocolauthintf.schema.json",
+      "path": "capabilities/ios.routingprotocolauthintf.json",
+      "kind": "schema",
+      "bytes": 25773,
+      "sha256": "e45880660890384781bc29b20cd48376b6b16b666be9effa76df5432c0c72c76"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:ios.routingprotocolauthintf",
+      "path": "mappings/ios.routingprotocolauthintf.json",
+      "kind": "mapping",
+      "bytes": 1745,
+      "sha256": "701e063d50e8d30af22b66ac229c5b7c88615356ae693a35b1a6c08eea41a807"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/ios.section.schema.json",
+      "path": "capabilities/ios.section.json",
+      "kind": "schema",
+      "bytes": 18625,
+      "sha256": "3df61b3ad8ee3dcfccaaf22d847e78bf774f2d5f2dfb001fa4564735092f9257"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:ios.section",
+      "path": "mappings/ios.section.json",
+      "kind": "mapping",
+      "bytes": 1379,
+      "sha256": "83fb711397e3bfe2a6b349785b1b1388bffa39df71310b6d6ab16b3c197d916e"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/ios.snmpcommunity.schema.json",
+      "path": "capabilities/ios.snmpcommunity.json",
+      "kind": "schema",
+      "bytes": 21289,
+      "sha256": "bab7763d08737ff8883a16f072d41a92dbdd5d13495900856a2bc4d3fe636302"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:ios.snmpcommunity",
+      "path": "mappings/ios.snmpcommunity.json",
+      "kind": "mapping",
+      "bytes": 1456,
+      "sha256": "539487a1fe1ce64733411c6ee7531008f1ef64efba8f42a3f0957d176a4085ab"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/ios.snmpgroup.schema.json",
+      "path": "capabilities/ios.snmpgroup.json",
+      "kind": "schema",
+      "bytes": 25207,
+      "sha256": "ebe04692fb6de4359914f6d62e40ad5930cb497eb0eb066d5309fbd93ebf01b1"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:ios.snmpgroup",
+      "path": "mappings/ios.snmpgroup.json",
+      "kind": "mapping",
+      "bytes": 1707,
+      "sha256": "682392a5f95f263e47dd4e10fedcf8d3ac0af968fcdf54da6af3be52283fa40f"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/ios.snmphost.schema.json",
+      "path": "capabilities/ios.snmphost.json",
+      "kind": "schema",
+      "bytes": 21051,
+      "sha256": "2a2ef51937a7aa6ff741f75d617bad4d5aee3f60b1f4fd8e2c0841811577efe7"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:ios.snmphost",
+      "path": "mappings/ios.snmphost.json",
+      "kind": "mapping",
+      "bytes": 1469,
+      "sha256": "1364b4366dca5a3dbafb8ba9b2e02140c1756cc79bf69de5a4ae0b022dfe9fa9"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/ios.snmpuser.schema.json",
+      "path": "capabilities/ios.snmpuser.json",
+      "kind": "schema",
+      "bytes": 23805,
+      "sha256": "ac742087c23b8471e36fafafaf27af20cfe481abb9e44efc0799f84808db4001"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:ios.snmpuser",
+      "path": "mappings/ios.snmpuser.json",
+      "kind": "mapping",
+      "bytes": 1546,
+      "sha256": "5ca82df2dff547592ab4bd010d01fd1dd2f7cad4f3279ac996abc797c9865512"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/iosxe.bgpneighbor.schema.json",
+      "path": "capabilities/iosxe.bgpneighbor.json",
+      "kind": "schema",
+      "bytes": 17207,
+      "sha256": "ef69c49013ecfd5a9b9baea47b187d30c1fb629b80604662be54e1baacc1f3be"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:iosxe.bgpneighbor",
+      "path": "mappings/iosxe.bgpneighbor.json",
+      "kind": "mapping",
+      "bytes": 1268,
+      "sha256": "1708e923340f130e7385412414ee7d927024599397daec36572b16d82d285bee"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/iosxe.global.schema.json",
+      "path": "capabilities/iosxe.global.json",
+      "kind": "schema",
+      "bytes": 15856,
+      "sha256": "dfa87b226d3424ec51a09f59a79f582922fb3857e44b57736734110a5ff98e63"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:iosxe.global",
+      "path": "mappings/iosxe.global.json",
+      "kind": "mapping",
+      "bytes": 1178,
+      "sha256": "f6fcae1e04478946feaeec687f826d60d887146372ac3e5e00090c0a2e446134"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/iosxe.interface.schema.json",
+      "path": "capabilities/iosxe.interface.json",
+      "kind": "schema",
+      "bytes": 40606,
+      "sha256": "52c1654a7197b9fb5c606afbe9efdbd7b6395c1c4a869cb3559485a5881a4d77"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:iosxe.interface",
+      "path": "mappings/iosxe.interface.json",
+      "kind": "mapping",
+      "bytes": 2009,
+      "sha256": "0b7db03b66681057e766d8d0a20feadabb010e0d45888235307de9e50b306d16"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/iosxe.line.schema.json",
+      "path": "capabilities/iosxe.line.json",
+      "kind": "schema",
+      "bytes": 17146,
+      "sha256": "3c7ec5eb4ccdc029e65c03ddae6218dda6c93e9e01c0d10dbe990d6fef22a5fc"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:iosxe.line",
+      "path": "mappings/iosxe.line.json",
+      "kind": "mapping",
+      "bytes": 1249,
+      "sha256": "8929796bfece7bef4b62d8b5fcee28c2080925a7047185696b73a4c5f690b31d"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/iosxe.routingprotocolauthintf.schema.json",
+      "path": "capabilities/iosxe.routingprotocolauthintf.json",
+      "kind": "schema",
+      "bytes": 25809,
+      "sha256": "34ecf2861d1c0c8b68a64da4a3ccf4ed3b4287db21091646137bd1c5e2052d31"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:iosxe.routingprotocolauthintf",
+      "path": "mappings/iosxe.routingprotocolauthintf.json",
+      "kind": "mapping",
+      "bytes": 1757,
+      "sha256": "c265d730c4c4c7728badaab6958febf84516b0f806eaec32b4143296e79bcee0"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/iosxe.section.schema.json",
+      "path": "capabilities/iosxe.section.json",
+      "kind": "schema",
+      "bytes": 18661,
+      "sha256": "86f6805de4f3a62b9df6dc30de9cefb81237a0b256cbdf4433659221a42aea04"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:iosxe.section",
+      "path": "mappings/iosxe.section.json",
+      "kind": "mapping",
+      "bytes": 1391,
+      "sha256": "ad4f98970cab8f06bf4d7b22d4bfcba83dd04c37d7d5260df09d3b20682f2f3e"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/iosxe.snmpcommunity.schema.json",
+      "path": "capabilities/iosxe.snmpcommunity.json",
+      "kind": "schema",
+      "bytes": 21325,
+      "sha256": "7abd398af808ded342dec01d3f2b2765ad3d95003512721d205c1bf395af2316"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:iosxe.snmpcommunity",
+      "path": "mappings/iosxe.snmpcommunity.json",
+      "kind": "mapping",
+      "bytes": 1468,
+      "sha256": "2df2aa9930ab7b47858c7110c454f6a19b9319f9af16266dbe72f0bc5ec8a8ad"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/iosxe.snmpgroup.schema.json",
+      "path": "capabilities/iosxe.snmpgroup.json",
+      "kind": "schema",
+      "bytes": 25243,
+      "sha256": "40f280faf78080807b5d1a738fcba84fd9489058fcaeec428c8b604c635f73dd"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:iosxe.snmpgroup",
+      "path": "mappings/iosxe.snmpgroup.json",
+      "kind": "mapping",
+      "bytes": 1719,
+      "sha256": "f91bb8815df73efe38c02bc321140413a54ea166ab970f818c7f9df7e37c2acb"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/iosxe.snmphost.schema.json",
+      "path": "capabilities/iosxe.snmphost.json",
+      "kind": "schema",
+      "bytes": 21087,
+      "sha256": "781998e2109f5f7931ef64dcac29369f8289cd5b5f9f8e70b6d0a750047f2cd2"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:iosxe.snmphost",
+      "path": "mappings/iosxe.snmphost.json",
+      "kind": "mapping",
+      "bytes": 1481,
+      "sha256": "8aba3d8df1c72733b0910d407338f54c2f5fd9d8d8244b073666515e668ab64c"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/iosxe.snmpuser.schema.json",
+      "path": "capabilities/iosxe.snmpuser.json",
+      "kind": "schema",
+      "bytes": 23841,
+      "sha256": "31fc7d8e18efed6d433175f833d1b56d315607ce2b04f4a0d80f5a4151d4aef5"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:iosxe.snmpuser",
+      "path": "mappings/iosxe.snmpuser.json",
+      "kind": "mapping",
+      "bytes": 1558,
+      "sha256": "846c6d59d590bfcd348442a3d92b1a1ec17e3da661c83018951a68831a4d3b50"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/iosxe.version.schema.json",
+      "path": "capabilities/iosxe.version.json",
+      "kind": "schema",
+      "bytes": 13632,
+      "sha256": "6935dc9a9bb5801d0aa0bf15c2bf6b8290ad73741935621198bb1425b50fc2fd"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:iosxe.version",
+      "path": "mappings/iosxe.version.json",
+      "kind": "mapping",
+      "bytes": 1486,
+      "sha256": "b6a3adbcf1cc5a6c9523d2ae721cc5ed5cda5ce91e516186924b3c0eee53344c"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/junos.show.schema.json",
+      "path": "capabilities/junos.show.json",
+      "kind": "schema",
+      "bytes": 17088,
+      "sha256": "ddda1810f68c8fb39615ecc7bfc072dc736e246521c5696e024cab1f46b7519a"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:junos.show",
+      "path": "mappings/junos.show.json",
+      "kind": "mapping",
+      "bytes": 1158,
+      "sha256": "7fe5d5110c3efde163173d89880da160cefe91141c704db4bc6c125d2b1a8e0f"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/linux.apparmorstatus.schema.json",
+      "path": "capabilities/linux.apparmorstatus.json",
+      "kind": "schema",
+      "bytes": 16761,
+      "sha256": "accd9eb95124f29ef3cb3f193b3e74082dae2ddbcb1d5b2eb023677272577d5c"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:linux.apparmorstatus",
+      "path": "mappings/linux.apparmorstatus.json",
+      "kind": "mapping",
+      "bytes": 2117,
+      "sha256": "ad48373c4c9545d54cae467aecad2b4b3360c0560c156613e47bdb8823c9e640"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/linux.dpkginfo.schema.json",
+      "path": "capabilities/linux.dpkginfo.json",
+      "kind": "schema",
+      "bytes": 23052,
+      "sha256": "0030d03576505b144c541b06faceaf7ae291bec1d8cc4db86a816476e3de513d"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:linux.dpkginfo",
+      "path": "mappings/linux.dpkginfo.json",
+      "kind": "mapping",
+      "bytes": 1782,
+      "sha256": "97e8190fbece46e3f781f30cfd4454901b5d02ea838fc18e1f12e9cd79b3f672"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/linux.inetlisteningservers.schema.json",
+      "path": "capabilities/linux.inetlisteningservers.json",
+      "kind": "schema",
+      "bytes": 34323,
+      "sha256": "f280dc10d7008ba532d8f62fd64a6f54b8b69e8823e1ab0d92fa59ac109d7bb1"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:linux.inetlisteningservers",
+      "path": "mappings/linux.inetlisteningservers.json",
+      "kind": "mapping",
+      "bytes": 2458,
+      "sha256": "8964b592bfb41253164739223e4d63a1ac49492dff4d00f7a2585a7c73844e46"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/linux.kernelmodule.schema.json",
+      "path": "capabilities/linux.kernelmodule.json",
+      "kind": "schema",
+      "bytes": 18556,
+      "sha256": "ca25256e6fd3aabb24ee46865a65ccf9f403787b21c7f534491c4f5cac83f2bc"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:linux.kernelmodule",
+      "path": "mappings/linux.kernelmodule.json",
+      "kind": "mapping",
+      "bytes": 1382,
+      "sha256": "7dc46a1bc66074497cd9b7504693f5be882058dd7c4837761dacf8b60528337e"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/linux.partition.schema.json",
+      "path": "capabilities/linux.partition.json",
+      "kind": "schema",
+      "bytes": 28143,
+      "sha256": "47dcd8bf8dd206ca6b38165b8b4ea5ee190d44f3a8003b1989c074620717bdd2"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:linux.partition",
+      "path": "mappings/linux.partition.json",
+      "kind": "mapping",
+      "bytes": 2151,
+      "sha256": "860e7828ed5c98f56d571b69512019d331cc17c3a62adc3d83a732706ff0e484"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/linux.rpminfo.schema.json",
+      "path": "capabilities/linux.rpminfo.json",
+      "kind": "schema",
+      "bytes": 29459,
+      "sha256": "78a51eb3ec7856fc0a49a2c17759c922bcdf0faa25e1c7f8b4c341c05e35fd52"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:linux.rpminfo",
+      "path": "mappings/linux.rpminfo.json",
+      "kind": "mapping",
+      "bytes": 2706,
+      "sha256": "02feb7e666ef8a2512f4c058febd05a96f1c4eca4b18db60a3473380a27f66cf"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/linux.rpmverifyfile.schema.json",
+      "path": "capabilities/linux.rpmverifyfile.json",
+      "kind": "schema",
+      "bytes": 84599,
+      "sha256": "34f315ee7a0336a0ba9fead4180fe8d8a7c44195442811e6c5756ab540c7b7b1"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:linux.rpmverifyfile",
+      "path": "mappings/linux.rpmverifyfile.json",
+      "kind": "mapping",
+      "bytes": 7226,
+      "sha256": "286cc688c751b8d4a69f196eb8494bbdc3839147dbb9b522c5b5bdd3cf2bf5b5"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/linux.rpmverifypackage.schema.json",
+      "path": "capabilities/linux.rpmverifypackage.json",
+      "kind": "schema",
+      "bytes": 43287,
+      "sha256": "fd017ace885e9c6238a193fb3221e029c1f4b29acdd9a50004996a770de829cf"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:linux.rpmverifypackage",
+      "path": "mappings/linux.rpmverifypackage.json",
+      "kind": "mapping",
+      "bytes": 3308,
+      "sha256": "a5330da5c080e2ee005bdd9b59c420ddc10a9e505d353d4928af299975867cae"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/linux.selinuxboolean.schema.json",
+      "path": "capabilities/linux.selinuxboolean.json",
+      "kind": "schema",
+      "bytes": 18789,
+      "sha256": "751cd1dbbe8f5d37e3b209ed024ca2d3437009e4d9166e28f7b438af465eb131"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:linux.selinuxboolean",
+      "path": "mappings/linux.selinuxboolean.json",
+      "kind": "mapping",
+      "bytes": 1386,
+      "sha256": "8d8fabb65ea766556b2f90b5993e8129db1c86c32ada85215e472eade46e8e4e"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/linux.selinuxsecuritycontext.schema.json",
+      "path": "capabilities/linux.selinuxsecuritycontext.json",
+      "kind": "schema",
+      "bytes": 47140,
+      "sha256": "f1e616cd231a88d359aac1c798373e6406047397d14106e7ad0b31b9b408f538"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:linux.selinuxsecuritycontext",
+      "path": "mappings/linux.selinuxsecuritycontext.json",
+      "kind": "mapping",
+      "bytes": 4048,
+      "sha256": "08f80816ac44977aa9824579340e007d66237ec852a2786d3dd3f6252f322f9a"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/linux.sestatus.schema.json",
+      "path": "capabilities/linux.sestatus.json",
+      "kind": "schema",
+      "bytes": 13756,
+      "sha256": "5301e0d37b713da3f61e9b80fa023aad9fbe5b8a790612146cdb59d17a7feee3"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:linux.sestatus",
+      "path": "mappings/linux.sestatus.json",
+      "kind": "mapping",
+      "bytes": 1609,
+      "sha256": "f78b28fb4dc5e9274bfd31ba32fb6d37428a517c7148d16b0d15ea3f8b56ef1c"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/linux.systemdunitdependency.schema.json",
+      "path": "capabilities/linux.systemdunitdependency.json",
+      "kind": "schema",
+      "bytes": 17477,
+      "sha256": "bd7a23e1af80cf3576208b9e220285b46a3fdd7900dc33a2999d5c62e06598bf"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:linux.systemdunitdependency",
+      "path": "mappings/linux.systemdunitdependency.json",
+      "kind": "mapping",
+      "bytes": 1341,
+      "sha256": "bd59977d198a59790092e1cf9a0ee4fcb94a432d372dea45b119556a4f113678"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/linux.systemdunitproperty.schema.json",
+      "path": "capabilities/linux.systemdunitproperty.json",
+      "kind": "schema",
+      "bytes": 22664,
+      "sha256": "ca78baca0e35a560296c09826e47de22f00777a78c0a375b8e0afb58378b0f44"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:linux.systemdunitproperty",
+      "path": "mappings/linux.systemdunitproperty.json",
+      "kind": "mapping",
+      "bytes": 1559,
+      "sha256": "9d2045c9aa10a1544a36ba258daa36ade06c2ddd5f73b0d6ae5ad18b719a6b58"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.accountinfo.schema.json",
+      "path": "capabilities/macos.accountinfo.json",
+      "kind": "schema",
+      "bytes": 25059,
+      "sha256": "ac1b69e814d9cb3a4bdcecdb7526dbbbcf2ed27ad107e9f7c80f4551da2886d9"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:macos.accountinfo",
+      "path": "mappings/macos.accountinfo.json",
+      "kind": "mapping",
+      "bytes": 1670,
+      "sha256": "5f8031c55382fa222996a7ce1ddb8254042de9484137bed8773d76372c49ec8d"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.authorizationdb.schema.json",
+      "path": "capabilities/macos.authorizationdb.json",
+      "kind": "schema",
+      "bytes": 22625,
+      "sha256": "17821ff575a8ee1b56f9aae2e8faf7ea8cdfd71071d2090ca8fc7ef3486cdad3"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:macos.authorizationdb",
+      "path": "mappings/macos.authorizationdb.json",
+      "kind": "mapping",
+      "bytes": 1590,
+      "sha256": "26a5e289966755b01510d064e6ed10244a59750bff43d215ab86573e5e2c682f"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.disabledservice.schema.json",
+      "path": "capabilities/macos.disabledservice.json",
+      "kind": "schema",
+      "bytes": 9771,
+      "sha256": "c228d751d2df11916ca6f312485ed086069372f53bdf231fe7f74b728dbada06"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:macos.disabledservice",
+      "path": "mappings/macos.disabledservice.json",
+      "kind": "mapping",
+      "bytes": 1198,
+      "sha256": "f7ab660b18faee31b3cbc5b8b657a008015cd999f9f493faa3e0c51b83449373"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.diskinfo.schema.json",
+      "path": "capabilities/macos.diskinfo.json",
+      "kind": "schema",
+      "bytes": 30577,
+      "sha256": "56280e652c1682816d01f370f4708560c6c8a4a3d967c02218d5bf061dc0ea96"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:macos.diskinfo",
+      "path": "mappings/macos.diskinfo.json",
+      "kind": "mapping",
+      "bytes": 2147,
+      "sha256": "383582fb47bd78fdb462b45daa808778c724622565a7ec6d6015c8646bb0c075"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.filevault.schema.json",
+      "path": "capabilities/macos.filevault.json",
+      "kind": "schema",
+      "bytes": 8367,
+      "sha256": "cb88635288f9a0295d93148ce2c830d73fb7358562ac3ea395246f702750e687"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:macos.filevault",
+      "path": "mappings/macos.filevault.json",
+      "kind": "mapping",
+      "bytes": 1268,
+      "sha256": "229e416885e34ec74a40fa13ded18b5f3f8b92e8a0b49d51d193b62a2b58b051"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.firmwarepassword.schema.json",
+      "path": "capabilities/macos.firmwarepassword.json",
+      "kind": "schema",
+      "bytes": 8464,
+      "sha256": "c640caf741f7f9ef552de7d8b23dd269118669cf391e5df00761d11b68c166e2"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:macos.firmwarepassword",
+      "path": "mappings/macos.firmwarepassword.json",
+      "kind": "mapping",
+      "bytes": 1216,
+      "sha256": "b1c93756769690f83db7f932e4a4ad000b22d498d63b942f4270b750b4ec5733"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.gatekeeper.schema.json",
+      "path": "capabilities/macos.gatekeeper.json",
+      "kind": "schema",
+      "bytes": 11171,
+      "sha256": "baf64aae10eb6be477acff35454b4e84765e5a2c70ec11c464529beace1b77d0"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:macos.gatekeeper",
+      "path": "mappings/macos.gatekeeper.json",
+      "kind": "mapping",
+      "bytes": 1273,
+      "sha256": "b19f1a94e7c1e24f9bbdfcc4816743474ad865a763445f40f3a872f89dd13981"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.installhistory.schema.json",
+      "path": "capabilities/macos.installhistory.json",
+      "kind": "schema",
+      "bytes": 20113,
+      "sha256": "0fe78e72cf36de063920d8219eb0a4deaceb62dc9427ef569b386438bc93d6f1"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:macos.installhistory",
+      "path": "mappings/macos.installhistory.json",
+      "kind": "mapping",
+      "bytes": 1552,
+      "sha256": "b8a9476d928c9653fc6e6a36b9650fe1b684e825eb8695c5198c8945c7560a55"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.keychain.schema.json",
+      "path": "capabilities/macos.keychain.json",
+      "kind": "schema",
+      "bytes": 18478,
+      "sha256": "b57e290c76ad2a5b26c216a6e543a40c6010df4d82db65d29a51acd77c2f02ea"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:macos.keychain",
+      "path": "mappings/macos.keychain.json",
+      "kind": "mapping",
+      "bytes": 1281,
+      "sha256": "3c17e21c1bd301297da2a72ba3542262471ed18608c47e0a2a0814588fbfcede"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.launchd.schema.json",
+      "path": "capabilities/macos.launchd.json",
+      "kind": "schema",
+      "bytes": 18403,
+      "sha256": "4b757be4d5caab7304b870225b8f6053e6039df0b1ac02ea388cf87e515f2c28"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:macos.launchd",
+      "path": "mappings/macos.launchd.json",
+      "kind": "mapping",
+      "bytes": 1221,
+      "sha256": "245cf93bef8305dff75f2e45fa04992b2a3f82aa502327a510a22d808b4aaca7"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.nvram.schema.json",
+      "path": "capabilities/macos.nvram.json",
+      "kind": "schema",
+      "bytes": 17090,
+      "sha256": "1d22122d95b9d6452ea38213536de8605b6bf5e0ef5c9e9f87697c0d4a95ec26"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:macos.nvram",
+      "path": "mappings/macos.nvram.json",
+      "kind": "mapping",
+      "bytes": 1170,
+      "sha256": "c6a31c5529bc8ce1c59e3861649c9d99a2cb73c5533a74ba2abb5a16deabd751"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.plist.schema.json",
+      "path": "capabilities/macos.plist.json",
+      "kind": "schema",
+      "bytes": 27760,
+      "sha256": "0ce757fb4ae084e41f2069ebaabdb05130085bf45fa284e6dd2e7bc76c03d2d6"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:macos.plist",
+      "path": "mappings/macos.plist.json",
+      "kind": "mapping",
+      "bytes": 1933,
+      "sha256": "bc5ecc5f5cb4fb43efff862bd2f7012beb3d8f2b7e2c84630a61e44057242b22"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.profiles.schema.json",
+      "path": "capabilities/macos.profiles.json",
+      "kind": "schema",
+      "bytes": 9705,
+      "sha256": "daf4978606552f57fb77ae226af94481fb0031834151c9baed0e0b3a8747f4df"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:macos.profiles",
+      "path": "mappings/macos.profiles.json",
+      "kind": "mapping",
+      "bytes": 1255,
+      "sha256": "b82ef30bfb3c91dc0b57b38cc9808173cc05a245efca858045036407465080c2"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.pwpolicy.schema.json",
+      "path": "capabilities/macos.pwpolicy.json",
+      "kind": "schema",
+      "bytes": 37243,
+      "sha256": "c01df0de83f1cd48b59353e83826e7bfa41e9a50c67b4c3fe767d95daef4f741"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:macos.pwpolicy",
+      "path": "mappings/macos.pwpolicy.json",
+      "kind": "mapping",
+      "bytes": 3283,
+      "sha256": "28ac78995ac19c6574c036e484d146103bbc86970216bd280a8fa5c76c774bc4"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.softwareupdate.schema.json",
+      "path": "capabilities/macos.softwareupdate.json",
+      "kind": "schema",
+      "bytes": 9914,
+      "sha256": "56a3ab4ddd07d3f567c52ad77ae60aac8bf248d69da7ee85b8510e1fc0131f6e"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:macos.softwareupdate",
+      "path": "mappings/macos.softwareupdate.json",
+      "kind": "mapping",
+      "bytes": 1230,
+      "sha256": "430aebe35347ddc83c6f732da56724b1fc992849a83dcd2f58c231b17f3824c7"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.systemprofiler.schema.json",
+      "path": "capabilities/macos.systemprofiler.json",
+      "kind": "schema",
+      "bytes": 22785,
+      "sha256": "e8e4186476d346db1b9e6f9846de70d461d2c39e8f89de2852cfe1e6dc5c6522"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:macos.systemprofiler",
+      "path": "mappings/macos.systemprofiler.json",
+      "kind": "mapping",
+      "bytes": 1761,
+      "sha256": "dc85c14cb4d4ffa4b0fe4a4f8200fdbb55ed3d9dad26be5a567cd92991517ded"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.systemsetup.schema.json",
+      "path": "capabilities/macos.systemsetup.json",
+      "kind": "schema",
+      "bytes": 32547,
+      "sha256": "cf49f0dd2d0b630a069ce24a1792b42e5e9689027c0bb56e4317dfe3391a0612"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:macos.systemsetup",
+      "path": "mappings/macos.systemsetup.json",
+      "kind": "mapping",
+      "bytes": 3021,
+      "sha256": "88661058f40573a156149ed16f939ff922cbbeb2dd4305533ac4923002e0c815"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/panos.config.schema.json",
+      "path": "capabilities/panos.config.json",
+      "kind": "schema",
+      "bytes": 18203,
+      "sha256": "e52dd92679f50f7f02f7bc2d440a65c8f967f1e11fdb00323e7cb7236b342b2a"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:panos.config",
+      "path": "mappings/panos.config.json",
+      "kind": "mapping",
+      "bytes": 1515,
+      "sha256": "ad2bf0cffc048a2538daae8804dfbf78fff2f91ba546fc0434c443d34ca453e8"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/panos.version.schema.json",
+      "path": "capabilities/panos.version.json",
+      "kind": "schema",
+      "bytes": 15789,
+      "sha256": "8373665163ec7727a6564d24feaad9f7e4e55fe674fd4fa71faf9dbd8d41270c"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:panos.version",
+      "path": "mappings/panos.version.json",
+      "kind": "mapping",
+      "bytes": 1797,
+      "sha256": "77cabb500170f13897cc0d7fdc660b327c44fa33c56ca29c6c12bb1c76b52dee"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/solaris.package.ips.schema.json",
+      "path": "capabilities/solaris.package.ips.json",
+      "kind": "schema",
+      "bytes": 35856,
+      "sha256": "e7aa4c7ba797a9fba9274c7b30bcc724fa1560f69ccb4303f29bc557674792e0"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:solaris.package.ips",
+      "path": "mappings/solaris.package.ips.json",
+      "kind": "mapping",
+      "bytes": 1912,
+      "sha256": "19d3f021e0c1fcbfc9960e42ad1b99e7a3d1dba17d177f7d893ca5a246d6b5d9"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/solaris.package.schema.json",
+      "path": "capabilities/solaris.package.json",
+      "kind": "schema",
+      "bytes": 22387,
+      "sha256": "a8a98c50ec812ea6ee1c8bfafa1e2aba7e67eeba2b1c5e2fdd2f54604ddb3046"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:solaris.package",
+      "path": "mappings/solaris.package.json",
+      "kind": "mapping",
+      "bytes": 1480,
+      "sha256": "a5ad33b2832ab748316faec100369f7b842694b1f6a8f9d6c939a0573f9d8a5b"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/solaris.smf.schema.json",
+      "path": "capabilities/solaris.smf.json",
+      "kind": "schema",
+      "bytes": 23821,
+      "sha256": "1437c113ad8f822b5d6f41a78b7137c08788dc58a1254e23298354db3029ea3a"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:solaris.smf",
+      "path": "mappings/solaris.smf.json",
+      "kind": "mapping",
+      "bytes": 1697,
+      "sha256": "32c602ec98807b0873d6b3c118806fbb83b952eb77626e842b4dcee0369e68c0"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/solaris.smfproperty.schema.json",
+      "path": "capabilities/solaris.smfproperty.json",
+      "kind": "schema",
+      "bytes": 28127,
+      "sha256": "734d7691b955085621419fb6d991ad6b022ae9921c2c93b56222276fc0eac165"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:solaris.smfproperty",
+      "path": "mappings/solaris.smfproperty.json",
+      "kind": "mapping",
+      "bytes": 1747,
+      "sha256": "d7e3464d6b5f1c05056880ca688e9724ffb2252f101c0a0ab20060d3b8d5a31c"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/unix.file.schema.json",
+      "path": "capabilities/unix.file.json",
+      "kind": "schema",
+      "bytes": 52793,
+      "sha256": "5700a75bca84f75a5e9ad6b955f769daa5eec12fc2a8ebfc82a8f69e17dec225"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:unix.file",
+      "path": "mappings/unix.file.json",
+      "kind": "mapping",
+      "bytes": 5187,
+      "sha256": "abccccd353bfa651d956f5a5750f6de715673e34f59c692ff51316cf19c5e4e7"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/unix.interface.schema.json",
+      "path": "capabilities/unix.interface.json",
+      "kind": "schema",
+      "bytes": 24278,
+      "sha256": "2ba1e6188c7a942247db2c608c258f9f70578cdcde58253aca68febc143a8143"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:unix.interface",
+      "path": "mappings/unix.interface.json",
+      "kind": "mapping",
+      "bytes": 2289,
+      "sha256": "b7735d7266a5fbdc2590c832077f86193255538fe6357ab638fce8ec34aff4c8"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/unix.password.schema.json",
+      "path": "capabilities/unix.password.json",
+      "kind": "schema",
+      "bytes": 25139,
+      "sha256": "cb0c313e254dbdd8edb7f29e5621bc7b2dd0c9df9a31917ab694a4893473b6ef"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:unix.password",
+      "path": "mappings/unix.password.json",
+      "kind": "mapping",
+      "bytes": 1913,
+      "sha256": "15817552156e7c654117a369257748bdec94461c8ae8bb99a04e5c26505eb34f"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/unix.process.schema.json",
+      "path": "capabilities/unix.process.json",
+      "kind": "schema",
+      "bytes": 38387,
+      "sha256": "4a79761e8f9a749572709286d4dffee4843c13676e31d3a873e9eedbdd851b89"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:unix.process",
+      "path": "mappings/unix.process.json",
+      "kind": "mapping",
+      "bytes": 2457,
+      "sha256": "c0f5017524bae2c09b798f7134aba7c75d36a942bedfe3a6dccc349facf62dc1"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/unix.shadow.schema.json",
+      "path": "capabilities/unix.shadow.json",
+      "kind": "schema",
+      "bytes": 28389,
+      "sha256": "0dff1b13a9d63ac779834d188194039e892de9906b37e10133bc683adb1f65bf"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:unix.shadow",
+      "path": "mappings/unix.shadow.json",
+      "kind": "mapping",
+      "bytes": 2724,
+      "sha256": "9e5a528e6b6c07359e30a732fe9b61655696b532514b7b1dd6df97e32b108d0e"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/unix.sshd.schema.json",
+      "path": "capabilities/unix.sshd.json",
+      "kind": "schema",
+      "bytes": 22587,
+      "sha256": "8f49c971330242974a7d38a1137bbfa8cda23e92f807eea8e95f46a4964a52bb"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:unix.sshd",
+      "path": "mappings/unix.sshd.json",
+      "kind": "mapping",
+      "bytes": 1546,
+      "sha256": "1f05fc91b78ce324cec6ff7ebf75d234a0f625a55e7d68b44d0e08b676bac3ce"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/unix.symlink.schema.json",
+      "path": "capabilities/unix.symlink.json",
+      "kind": "schema",
+      "bytes": 17412,
+      "sha256": "6267818e2e94da3056df9f087775f05242a93f400ff5d141c1649f4bb8bf88d3"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:unix.symlink",
+      "path": "mappings/unix.symlink.json",
+      "kind": "mapping",
+      "bytes": 1534,
+      "sha256": "2ad3d3838e5c44d53d1e2049a4f99a1a00aa9cc4bc3046a761dbb519fcf724f3"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/unix.sysctl.schema.json",
+      "path": "capabilities/unix.sysctl.json",
+      "kind": "schema",
+      "bytes": 18235,
+      "sha256": "500873c22ac49be39d92c9e738d935e53d4765bb39c8291423f481df04ff388f"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:unix.sysctl",
+      "path": "mappings/unix.sysctl.json",
+      "kind": "mapping",
+      "bytes": 1391,
+      "sha256": "0d9aed1a3658f9d5b07ab3541cd5be38ecfd8d1f80c1844d74b794fe74ad4063"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/unix.uname.schema.json",
+      "path": "capabilities/unix.uname.json",
+      "kind": "schema",
+      "bytes": 14917,
+      "sha256": "c5cfb008e1654ab7deb4cf7b432fbcdee324ef3a1349a73b346ad1d0d4a6ce64"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:unix.uname",
+      "path": "mappings/unix.uname.json",
+      "kind": "mapping",
+      "bytes": 1557,
+      "sha256": "d5d49aac2f7f11734a74e2be41ce06b78e2f01fc738ac3cf8db44b7a8c19c17e"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/variable.value.schema.json",
+      "path": "capabilities/variable.value.json",
+      "kind": "schema",
+      "bytes": 10021,
+      "sha256": "121a58d50cef85a2ea9567590672a502e4e2db77ba7df6a28215d4c7fa6acfa8"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:variable.value",
+      "path": "mappings/variable.value.json",
+      "kind": "mapping",
+      "bytes": 2009,
+      "sha256": "2d6be11c38d3c687c13c091d2116d59fb2c7af49636e553eadf478190c738778"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.appcmd.schema.json",
+      "path": "capabilities/windows.appcmd.json",
+      "kind": "schema",
+      "bytes": 28283,
+      "sha256": "5ac7d0fa4e4472a6e1f1fbd9ec301577c5bfc2a64e78d3c38e1a833bac8b30cf"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:windows.appcmd",
+      "path": "mappings/windows.appcmd.json",
+      "kind": "mapping",
+      "bytes": 1948,
+      "sha256": "6498ead8b7a5f9aea72852bea3255ebe3c2d55fcd565f7ebcac2236e693373eb"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.appcmdlistconfig.schema.json",
+      "path": "capabilities/windows.appcmdlistconfig.json",
+      "kind": "schema",
+      "bytes": 33058,
+      "sha256": "ae0a1111d30641b849fbc70619758174386ef2b8af87a28eb17af4437bc3c99a"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:windows.appcmdlistconfig",
+      "path": "mappings/windows.appcmdlistconfig.json",
+      "kind": "mapping",
+      "bytes": 2337,
+      "sha256": "8b3f885725cf1106b8f4c5867ea3b9a722ed0116ef465269858658b51e4df521"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.auditeventpolicysubcategories.schema.json",
+      "path": "capabilities/windows.auditeventpolicysubcategories.json",
+      "kind": "schema",
+      "bytes": 88573,
+      "sha256": "e63a3f7f19d9c08c9d3b7e8ba319fa2ead4ad1dc7118cab16abcb4ec1a811be1"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:windows.auditeventpolicysubcategories",
+      "path": "mappings/windows.auditeventpolicysubcategories.json",
+      "kind": "mapping",
+      "bytes": 17624,
+      "sha256": "753bc7e093928fa8c267db5f51b07cfdf1c1b9a3e0305bd80596a3dc6ce46fe8"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.cmdlet.schema.json",
+      "path": "capabilities/windows.cmdlet.json",
+      "kind": "schema",
+      "bytes": 25775,
+      "sha256": "4f6d23f49b6792fc172e1fee92dabb6d44e5e4c51070a7f33adccfa5f31922e4"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:windows.cmdlet",
+      "path": "mappings/windows.cmdlet.json",
+      "kind": "mapping",
+      "bytes": 5791,
+      "sha256": "d3fa56f32250193912f3bd9e14a71c90f11db61740a03c52eba76474e789b282"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.file.schema.json",
+      "path": "capabilities/windows.file.json",
+      "kind": "schema",
+      "bytes": 47991,
+      "sha256": "7778779d507089b1ab34eb4cd960b1c868be288d6b336d13fb204b0321552f0b"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:windows.file",
+      "path": "mappings/windows.file.json",
+      "kind": "mapping",
+      "bytes": 6789,
+      "sha256": "7743c4a63b64be01d16d33b474aaf4d8d9f4c374e87b8471229c9f879ef6a29e"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.fileeffectiverights.schema.json",
+      "path": "capabilities/windows.fileeffectiverights.json",
+      "kind": "schema",
+      "bytes": 58425,
+      "sha256": "52dce59d60349ecb92d5ed65b60cbfb8eda3f69d1d2c7c178755c0869f85bf92"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:windows.fileeffectiverights",
+      "path": "mappings/windows.fileeffectiverights.json",
+      "kind": "mapping",
+      "bytes": 5497,
+      "sha256": "055cda975257ec737c90d7e5c153a74cde78a627bdf6d54ced516128b5aa560f"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.group_sid.schema.json",
+      "path": "capabilities/windows.group_sid.json",
+      "kind": "schema",
+      "bytes": 22906,
+      "sha256": "d7ab75659ee913d3fb707d184039a25b4a6e0aa35648689b4eda40d6c057632b"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:windows.group_sid",
+      "path": "mappings/windows.group_sid.json",
+      "kind": "mapping",
+      "bytes": 1513,
+      "sha256": "0321f9cde11563bc03d10af332a56c49cad9311e2dd3498fd93a88156ed44d54"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.lockoutpolicy.schema.json",
+      "path": "capabilities/windows.lockoutpolicy.json",
+      "kind": "schema",
+      "bytes": 12777,
+      "sha256": "b4de2f09b8f60630c0c1cd1892e429574e25bca4f054d4ce460f800e2739e744"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:windows.lockoutpolicy",
+      "path": "mappings/windows.lockoutpolicy.json",
+      "kind": "mapping",
+      "bytes": 1789,
+      "sha256": "fa7d16672a119321be61ee8480adf3f0e031244b0463114577510745efff344d"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.ntuser.schema.json",
+      "path": "capabilities/windows.ntuser.json",
+      "kind": "schema",
+      "bytes": 45439,
+      "sha256": "7b4e997ee194136cccfdca954835f918bee413a6a8bcb919e823a5ded1a07b16"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:windows.ntuser",
+      "path": "mappings/windows.ntuser.json",
+      "kind": "mapping",
+      "bytes": 5797,
+      "sha256": "3793d1885661993d4735c012c0dd196e3e6fea44aaff2df54c75cdaa801692db"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.passwordpolicy.schema.json",
+      "path": "capabilities/windows.passwordpolicy.json",
+      "kind": "schema",
+      "bytes": 16767,
+      "sha256": "05fd1c75a21facc93b73d3f17e5e825155bd9205cd8ef128a60b2f01918a0696"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:windows.passwordpolicy",
+      "path": "mappings/windows.passwordpolicy.json",
+      "kind": "mapping",
+      "bytes": 2072,
+      "sha256": "328ca7f1411544b6a3f354143d93c01136d1fbf7b39d73f2baa1a6f9e5bc05c4"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.registry.schema.json",
+      "path": "capabilities/windows.registry.json",
+      "kind": "schema",
+      "bytes": 33011,
+      "sha256": "c9f9b7d1bbc26995c37cd447cf0feab6353cf15b131bd66bbda63b38ede368ac"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:windows.registry",
+      "path": "mappings/windows.registry.json",
+      "kind": "mapping",
+      "bytes": 5233,
+      "sha256": "048fc02794e77d5b65c3d151a0cb5aad47f4f58e4fe100d2dd1cbf862686e1fe"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.regkeyeffectiverights.schema.json",
+      "path": "capabilities/windows.regkeyeffectiverights.json",
+      "kind": "schema",
+      "bytes": 52733,
+      "sha256": "47293fb3dc39ad7befd07a503dbeb9c775b27f8a5fe390ec5ff9015bce6ff117"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:windows.regkeyeffectiverights",
+      "path": "mappings/windows.regkeyeffectiverights.json",
+      "kind": "mapping",
+      "bytes": 5193,
+      "sha256": "f9a2ee7b8588a33cad0fb239dd7e5e78a712c12e0a0ca870770fc2ad0c7eb308"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.service.schema.json",
+      "path": "capabilities/windows.service.json",
+      "kind": "schema",
+      "bytes": 30729,
+      "sha256": "5773a6b3b413a456016762514c1df811c19b8951de7008b6f0a8adbb5abb4c1d"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:windows.service",
+      "path": "mappings/windows.service.json",
+      "kind": "mapping",
+      "bytes": 3205,
+      "sha256": "15ef2ca1c419ee0d145661aa0cfba0a44d11016ac464d3c6252c156ed623250c"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.sid.schema.json",
+      "path": "capabilities/windows.sid.json",
+      "kind": "schema",
+      "bytes": 24528,
+      "sha256": "e3689cb3112fa13faede27a774810de407a0a17d5291956bea62880556bfdce4"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:windows.sid",
+      "path": "mappings/windows.sid.json",
+      "kind": "mapping",
+      "bytes": 2024,
+      "sha256": "6dfd162abbc5c14191bacfe65fd7466b12b846d6aa17f4c550d3f321c988adfa"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.sid_sid.schema.json",
+      "path": "capabilities/windows.sid_sid.json",
+      "kind": "schema",
+      "bytes": 24611,
+      "sha256": "f62f5d98e47e2abb57b79cacc4046463766c54a9dd3102bc3e159d4a82d5fd7a"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:windows.sid_sid",
+      "path": "mappings/windows.sid_sid.json",
+      "kind": "mapping",
+      "bytes": 2061,
+      "sha256": "9a4a9406f17ad1690fc7e4b0feb918a154660a89b78aa157119989e13689f215"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.user_sid.schema.json",
+      "path": "capabilities/windows.user_sid.json",
+      "kind": "schema",
+      "bytes": 26602,
+      "sha256": "b9f86849af203bb8e3fdf7222cf83eaceaa1e52cd70b5efeaa4043052d92d1ca"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:windows.user_sid",
+      "path": "mappings/windows.user_sid.json",
+      "kind": "mapping",
+      "bytes": 1834,
+      "sha256": "06f8e36fadec828604bbfff22e80a4187b1166483d71a1f0fbf05284c2b30048"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.userright.schema.json",
+      "path": "capabilities/windows.userright.json",
+      "kind": "schema",
+      "bytes": 24957,
+      "sha256": "e266e7fb4d7bb4dca26b5e8ffd8cf6a6279321dc81f7a6a31a20a561de0e2aba"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:windows.userright",
+      "path": "mappings/windows.userright.json",
+      "kind": "mapping",
+      "bytes": 7408,
+      "sha256": "a714e03b8a1186a7fdca8b5e2dbf4ad263d2a8c27c383d23d53d0ab3943ce385"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.wmi.query.schema.json",
+      "path": "capabilities/windows.wmi.query.json",
+      "kind": "schema",
+      "bytes": 16252,
+      "sha256": "c276680f5d438d2670bb69692d76082ae9c1492bd94d747deefde898c2972059"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:windows.wmi.query",
+      "path": "mappings/windows.wmi.query.json",
+      "kind": "mapping",
+      "bytes": 2532,
+      "sha256": "53b1311bef8e2a51e7deacdf1fdc0be7360bd075fd8b43452695b901e58442df"
+    },
+    {
+      "uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.wuaupdatesearcher.schema.json",
+      "path": "capabilities/windows.wuaupdatesearcher.json",
+      "kind": "schema",
+      "bytes": 32972,
+      "sha256": "487dc4816d8ab783df259729a740c3b441fc603ac64ff30c3491bdf587c07451"
+    },
+    {
+      "uri": "scap-ng:mapping:0.4.0:windows.wuaupdatesearcher",
+      "path": "mappings/windows.wuaupdatesearcher.json",
+      "kind": "mapping",
+      "bytes": 3794,
+      "sha256": "bf2bad50baee581e6aa10be0ab055705b0bdd1d1e22d7abf9dd9d3f9d42d3e04"
+    },
+    {
+      "uri": "scap-ng:vocabulary:0.4.0:en",
+      "path": "vocabulary/en.json",
+      "kind": "vocabulary",
+      "bytes": 11070,
+      "sha256": "343583b73ccfe048058f87d8599c52e0b198780a9af1ae7250f4d785a9fc2297"
+    }
+  ],
+  "capabilities": {
+    "aix.fileset": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/aix.fileset.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:aix.fileset"
+    },
+    "aix.fix": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/aix.fix.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:aix.fix"
+    },
+    "asa.line": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/asa.line.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:asa.line"
+    },
+    "asa.version": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/asa.version.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:asa.version"
+    },
+    "file.hash": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/file.hash.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:file.hash"
+    },
+    "independent.environmentvariable": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.environmentvariable.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:independent.environmentvariable"
+    },
+    "independent.family": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.family.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:independent.family"
+    },
+    "independent.shellcommand": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.shellcommand.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:independent.shellcommand"
+    },
+    "independent.sql": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.sql.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:independent.sql"
+    },
+    "independent.textfilecontent": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.textfilecontent.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:independent.textfilecontent"
+    },
+    "independent.unknown": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.unknown.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:independent.unknown"
+    },
+    "independent.xmlfilecontent": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.xmlfilecontent.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:independent.xmlfilecontent"
+    },
+    "independent.yamlfilecontent": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.yamlfilecontent.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:independent.yamlfilecontent"
+    },
+    "ios.bgpneighbor": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/ios.bgpneighbor.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:ios.bgpneighbor"
+    },
+    "ios.global": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/ios.global.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:ios.global"
+    },
+    "ios.interface": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/ios.interface.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:ios.interface"
+    },
+    "ios.line": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/ios.line.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:ios.line"
+    },
+    "ios.routingprotocolauthintf": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/ios.routingprotocolauthintf.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:ios.routingprotocolauthintf"
+    },
+    "ios.section": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/ios.section.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:ios.section"
+    },
+    "ios.snmpcommunity": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/ios.snmpcommunity.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:ios.snmpcommunity"
+    },
+    "ios.snmpgroup": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/ios.snmpgroup.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:ios.snmpgroup"
+    },
+    "ios.snmphost": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/ios.snmphost.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:ios.snmphost"
+    },
+    "ios.snmpuser": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/ios.snmpuser.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:ios.snmpuser"
+    },
+    "iosxe.bgpneighbor": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/iosxe.bgpneighbor.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:iosxe.bgpneighbor"
+    },
+    "iosxe.global": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/iosxe.global.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:iosxe.global"
+    },
+    "iosxe.interface": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/iosxe.interface.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:iosxe.interface"
+    },
+    "iosxe.line": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/iosxe.line.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:iosxe.line"
+    },
+    "iosxe.routingprotocolauthintf": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/iosxe.routingprotocolauthintf.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:iosxe.routingprotocolauthintf"
+    },
+    "iosxe.section": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/iosxe.section.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:iosxe.section"
+    },
+    "iosxe.snmpcommunity": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/iosxe.snmpcommunity.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:iosxe.snmpcommunity"
+    },
+    "iosxe.snmpgroup": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/iosxe.snmpgroup.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:iosxe.snmpgroup"
+    },
+    "iosxe.snmphost": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/iosxe.snmphost.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:iosxe.snmphost"
+    },
+    "iosxe.snmpuser": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/iosxe.snmpuser.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:iosxe.snmpuser"
+    },
+    "iosxe.version": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/iosxe.version.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:iosxe.version"
+    },
+    "junos.show": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/junos.show.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:junos.show"
+    },
+    "linux.apparmorstatus": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/linux.apparmorstatus.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:linux.apparmorstatus"
+    },
+    "linux.dpkginfo": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/linux.dpkginfo.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:linux.dpkginfo"
+    },
+    "linux.inetlisteningservers": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/linux.inetlisteningservers.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:linux.inetlisteningservers"
+    },
+    "linux.kernelmodule": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/linux.kernelmodule.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:linux.kernelmodule"
+    },
+    "linux.partition": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/linux.partition.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:linux.partition"
+    },
+    "linux.rpminfo": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/linux.rpminfo.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:linux.rpminfo"
+    },
+    "linux.rpmverifyfile": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/linux.rpmverifyfile.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:linux.rpmverifyfile"
+    },
+    "linux.rpmverifypackage": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/linux.rpmverifypackage.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:linux.rpmverifypackage"
+    },
+    "linux.selinuxboolean": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/linux.selinuxboolean.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:linux.selinuxboolean"
+    },
+    "linux.selinuxsecuritycontext": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/linux.selinuxsecuritycontext.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:linux.selinuxsecuritycontext"
+    },
+    "linux.sestatus": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/linux.sestatus.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:linux.sestatus"
+    },
+    "linux.systemdunitdependency": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/linux.systemdunitdependency.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:linux.systemdunitdependency"
+    },
+    "linux.systemdunitproperty": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/linux.systemdunitproperty.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:linux.systemdunitproperty"
+    },
+    "macos.accountinfo": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.accountinfo.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:macos.accountinfo"
+    },
+    "macos.authorizationdb": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.authorizationdb.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:macos.authorizationdb"
+    },
+    "macos.disabledservice": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.disabledservice.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:macos.disabledservice"
+    },
+    "macos.diskinfo": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.diskinfo.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:macos.diskinfo"
+    },
+    "macos.filevault": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.filevault.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:macos.filevault"
+    },
+    "macos.firmwarepassword": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.firmwarepassword.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:macos.firmwarepassword"
+    },
+    "macos.gatekeeper": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.gatekeeper.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:macos.gatekeeper"
+    },
+    "macos.installhistory": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.installhistory.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:macos.installhistory"
+    },
+    "macos.keychain": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.keychain.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:macos.keychain"
+    },
+    "macos.launchd": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.launchd.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:macos.launchd"
+    },
+    "macos.nvram": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.nvram.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:macos.nvram"
+    },
+    "macos.plist": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.plist.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:macos.plist"
+    },
+    "macos.profiles": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.profiles.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:macos.profiles"
+    },
+    "macos.pwpolicy": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.pwpolicy.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:macos.pwpolicy"
+    },
+    "macos.softwareupdate": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.softwareupdate.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:macos.softwareupdate"
+    },
+    "macos.systemprofiler": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.systemprofiler.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:macos.systemprofiler"
+    },
+    "macos.systemsetup": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/macos.systemsetup.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:macos.systemsetup"
+    },
+    "panos.config": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/panos.config.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:panos.config"
+    },
+    "panos.version": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/panos.version.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:panos.version"
+    },
+    "solaris.package.ips": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/solaris.package.ips.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:solaris.package.ips"
+    },
+    "solaris.package": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/solaris.package.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:solaris.package"
+    },
+    "solaris.smf": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/solaris.smf.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:solaris.smf"
+    },
+    "solaris.smfproperty": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/solaris.smfproperty.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:solaris.smfproperty"
+    },
+    "unix.file": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/unix.file.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:unix.file"
+    },
+    "unix.interface": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/unix.interface.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:unix.interface"
+    },
+    "unix.password": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/unix.password.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:unix.password"
+    },
+    "unix.process": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/unix.process.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:unix.process"
+    },
+    "unix.shadow": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/unix.shadow.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:unix.shadow"
+    },
+    "unix.sshd": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/unix.sshd.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:unix.sshd"
+    },
+    "unix.symlink": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/unix.symlink.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:unix.symlink"
+    },
+    "unix.sysctl": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/unix.sysctl.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:unix.sysctl"
+    },
+    "unix.uname": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/unix.uname.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:unix.uname"
+    },
+    "variable.value": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/variable.value.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:variable.value"
+    },
+    "windows.appcmd": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.appcmd.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:windows.appcmd"
+    },
+    "windows.appcmdlistconfig": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.appcmdlistconfig.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:windows.appcmdlistconfig"
+    },
+    "windows.auditeventpolicysubcategories": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.auditeventpolicysubcategories.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:windows.auditeventpolicysubcategories"
+    },
+    "windows.cmdlet": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.cmdlet.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:windows.cmdlet"
+    },
+    "windows.file": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.file.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:windows.file"
+    },
+    "windows.fileeffectiverights": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.fileeffectiverights.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:windows.fileeffectiverights"
+    },
+    "windows.group_sid": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.group_sid.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:windows.group_sid"
+    },
+    "windows.lockoutpolicy": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.lockoutpolicy.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:windows.lockoutpolicy"
+    },
+    "windows.ntuser": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.ntuser.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:windows.ntuser"
+    },
+    "windows.passwordpolicy": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.passwordpolicy.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:windows.passwordpolicy"
+    },
+    "windows.registry": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.registry.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:windows.registry"
+    },
+    "windows.regkeyeffectiverights": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.regkeyeffectiverights.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:windows.regkeyeffectiverights"
+    },
+    "windows.service": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.service.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:windows.service"
+    },
+    "windows.sid": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.sid.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:windows.sid"
+    },
+    "windows.sid_sid": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.sid_sid.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:windows.sid_sid"
+    },
+    "windows.user_sid": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.user_sid.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:windows.user_sid"
+    },
+    "windows.userright": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.userright.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:windows.userright"
+    },
+    "windows.wmi.query": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.wmi.query.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:windows.wmi.query"
+    },
+    "windows.wuaupdatesearcher": {
+      "schema_uri": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.wuaupdatesearcher.schema.json",
+      "mapping_uri": "scap-ng:mapping:0.4.0:windows.wuaupdatesearcher"
+    }
+  },
+  "vocabulary_uri": "scap-ng:vocabulary:0.4.0:en"
+}

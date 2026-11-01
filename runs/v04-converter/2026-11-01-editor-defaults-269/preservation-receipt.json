@@ -1,0 +1,89 @@
+{
+  "source_commit": "a8a9db7039399610cb8af654ab9e880d69cffa04",
+  "previous_r2_sha256": "4bda9be98668b987dd726951ce2738ecfa72e9ffd0f675fa2bc836819e585ba6",
+  "unchanged_members": [
+    {
+      "path": "samples/linux/compiled-program.json",
+      "sha256": "93237f60057a7341588fc2c9a86373070dc98abb8e019a90ad7a5c10966b7f55"
+    },
+    {
+      "path": "samples/linux/home-mount-nosuid.json",
+      "sha256": "6c54c661e799f2a35b862e5e541f10ed430d7f06a6c78e3c5aac33b616444eaa"
+    },
+    {
+      "path": "samples/linux/home-mount-nosuid.yaml",
+      "sha256": "6a6519e7c7b30ebede613ac3703eb0e3bf1e0cbe3c8add1e816a68c6d7bc102b"
+    },
+    {
+      "path": "samples/linux/original-source.xml",
+      "sha256": "e8f90bbaca3c86da93c18d66d4a0e3cf68eb2da6c34f7e851d8b98f6993b3565"
+    },
+    {
+      "path": "samples/linux/static-proof.json",
+      "sha256": "26d05faa80a2478fa8df3f2848b254508b66a746b012694105677b10ab4160d2"
+    },
+    {
+      "path": "samples/windows/applicability.json",
+      "sha256": "73e46e4538a1b7a0ec9632341887934f38bd7a374f0e49ed959590770f9abcc6"
+    },
+    {
+      "path": "samples/windows/applicability.yaml",
+      "sha256": "cfe4e4274edf47b4b7725bb6e5a1a05217bf4f5c2f5f0bebe95217fffd384b8d"
+    },
+    {
+      "path": "samples/windows/benchmark.json",
+      "sha256": "b22a60b1e019a881ca751e524a10723dcc5d494de56e6c35aa8a62455ca682c0"
+    },
+    {
+      "path": "samples/windows/benchmark.yaml",
+      "sha256": "e62c10cea1c4802ca96acc727048866e3bbcfe6884f49a606020ac0e77f23a6a"
+    },
+    {
+      "path": "samples/windows/samples.scapng",
+      "sha256": "38006c06be4c54e0db7235e3268b02f7691a4bcc9001f2e56dd51bbecd6eb91f"
+    },
+    {
+      "path": "samples/windows/source-trace.json",
+      "sha256": "2fa011d93200b80bca8bd879ab74acd64fcc8b28d102cc8154235c6241118b95"
+    },
+    {
+      "path": "samples/windows/static-proofs.json",
+      "sha256": "13c9382c6f6ff745e95fb8e0c242e0d087b524f439c9159584bc1fb27c931222"
+    },
+    {
+      "path": "samples/windows/windows-server-2025-active-control-permissions-sv-278139-rule.json",
+      "sha256": "846a416d4fc75e329c1104c1b5951a441ed9d8bc6270cd5d37451e3e16524775"
+    },
+    {
+      "path": "samples/windows/windows-server-2025-active-control-permissions-sv-278139-rule.yaml",
+      "sha256": "76fec41e1c6f49af1c3624c1e383abea8584779d703994b4e5071efdb603547c"
+    },
+    {
+      "path": "samples/windows/windows-server-2025-control-permissions-sv-278139-assessment.json",
+      "sha256": "05ca7f5e1df4c390949676e85e5ee55283d82957b748360e5ddb44c80c1982cd"
+    },
+    {
+      "path": "samples/windows/windows-server-2025-control-permissions-sv-278139-assessment.yaml",
+      "sha256": "70cedba557b7b9e1ee14e5a30957035ca6a9920e6733e31f399ff8b6dbc2594a"
+    },
+    {
+      "path": "samples/windows/windows-server-2025-prevent-shows-on-lock-screen-sv-278080-rule.json",
+      "sha256": "6bd14d2e9a408b0d1958408b4d3ba957190885fb05a045aedbe2327537d6be03"
+    },
+    {
+      "path": "samples/windows/windows-server-2025-prevent-shows-on-lock-screen-sv-278080-rule.yaml",
+      "sha256": "484a52624888753d8156ff97ebe16ef17152f74257aac718d3fed6a1a6596850"
+    },
+    {
+      "path": "samples/windows/windows-server-2025-shows-on-lock-screen-sv-278080-assessment.json",
+      "sha256": "35bbd3a0e686baa2f5cde6e8b426101bfe4229b20ea1d7fd296e1e9e3e8113f6"
+    },
+    {
+      "path": "samples/windows/windows-server-2025-shows-on-lock-screen-sv-278080-assessment.yaml",
+      "sha256": "3aa9b893596aa8c9b5e68d81dca18a91725437b6050c26bcc47e257c1b6bb19d"
+    }
+  ],
+  "original_backed_static_proofs": 3,
+  "scanner_evaluated": false,
+  "corpus_regenerated": false
+}
