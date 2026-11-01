@@ -1,0 +1,70 @@
+{
+  "kind": "current-boundary observation, not candidate execution",
+  "source": "37b614858c9f6f1d6261fac244cb734c8acc060b",
+  "candidate_accepted": false,
+  "public_errors": [
+    "{'if': {'input_provided': 'expected-owner-input'}, 'then': {'test': 'registry-value-test'}, 'else': {'not_evaluated': {'reason': 'Expected owner not supplied'}}} is not valid under any of the given schemas",
+    "Native comparison datatype: /tests/registry-value-test/require/fields/owner_uid: optional Input requires explicit omission handling; no approved guard form is implemented"
+  ],
+  "direct_compile_error": "/tests/registry-value-test/require/fields/owner_uid: optional Input requires explicit omission handling; no approved guard form is implemented",
+  "candidate": {
+    "id": "windows-registry-value-assessment",
+    "version": 1,
+    "assessment_title": "Example",
+    "mode": "automated",
+    "class": "compliance",
+    "tests": {
+      "registry-value-test": {
+        "test_title": "Example content-authoring regression",
+        "capability": "unix.file",
+        "require": {
+          "items_found": "one_or_more",
+          "items_satisfying": "every",
+          "field_requirement": {
+            "values_found": "one_or_more",
+            "values_matching": "every"
+          },
+          "fields": {
+            "owner_uid": {
+              "equals": {
+                "input": "expected-owner-input"
+              },
+              "value_match": "every"
+            }
+          }
+        },
+        "reported_elements": "all",
+        "object": {
+          "full_path": {
+            "equals": "/etc/example"
+          },
+          "filesystem": "all"
+        }
+      }
+    },
+    "evaluate": {
+      "if": {
+        "input_provided": "expected-owner-input"
+      },
+      "then": {
+        "test": "registry-value-test"
+      },
+      "else": {
+        "not_evaluated": {
+          "reason": "Expected owner not supplied"
+        }
+      }
+    },
+    "specification": {
+      "id": "scap-ng.pre-alpha.assessment",
+      "version": "0.4.0"
+    },
+    "inputs": {
+      "expected-owner-input": {
+        "datatype": "integer",
+        "cardinality": "zero_or_more",
+        "required": false
+      }
+    }
+  }
+}

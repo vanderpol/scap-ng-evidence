@@ -1,0 +1,140 @@
+{
+  "status": "PROPOSED EXPECTATIONS, NOT EXECUTED OR CONFORMANCE RESULTS",
+  "binding_vectors": [
+    {
+      "name": "omitted optional",
+      "binding": "omitted",
+      "required": false,
+      "cardinality": "exactly_one",
+      "expected_guard": "false"
+    },
+    {
+      "name": "provided integer",
+      "binding": "valid [0]",
+      "required": false,
+      "cardinality": "exactly_one",
+      "expected_guard": "true"
+    },
+    {
+      "name": "provided empty",
+      "binding": "valid []",
+      "required": false,
+      "cardinality": "zero_or_more",
+      "expected_guard": "true"
+    },
+    {
+      "name": "invalid empty",
+      "binding": "[]",
+      "required": false,
+      "cardinality": "exactly_one",
+      "expected_guard": "error"
+    },
+    {
+      "name": "provided false",
+      "binding": "valid [false] boolean declaration",
+      "required": false,
+      "cardinality": "exactly_one",
+      "expected_guard": "true"
+    },
+    {
+      "name": "provided empty text",
+      "binding": "valid [empty string] string declaration",
+      "required": false,
+      "cardinality": "exactly_one",
+      "expected_guard": "true"
+    },
+    {
+      "name": "omitted required",
+      "binding": "omitted",
+      "required": true,
+      "cardinality": "zero_or_more",
+      "expected_guard": "error"
+    },
+    {
+      "name": "type conflict",
+      "binding": "string under integer",
+      "required": false,
+      "cardinality": "exactly_one",
+      "expected_guard": "error"
+    },
+    {
+      "name": "unknown provision",
+      "binding": "unresolved provider",
+      "required": false,
+      "cardinality": "zero_or_more",
+      "expected_guard": "unknown"
+    },
+    {
+      "name": "provider failure",
+      "binding": "provider error",
+      "required": false,
+      "cardinality": "zero_or_more",
+      "expected_guard": "error"
+    },
+    {
+      "name": "pending provision",
+      "binding": "pending",
+      "required": false,
+      "cardinality": "zero_or_more",
+      "expected_guard": "pending, never false"
+    }
+  ],
+  "static_and_scheduling_vectors": [
+    {
+      "case": "dangling guard Input",
+      "expected": "reject"
+    },
+    {
+      "case": "wrong-kind guard reference",
+      "expected": "reject"
+    },
+    {
+      "case": "guard in general and/not",
+      "expected": "reject in proposed first version"
+    },
+    {
+      "case": "guarded direct Test use",
+      "expected": "accept if all transitive dependencies guarded"
+    },
+    {
+      "case": "unguarded same Test elsewhere",
+      "expected": "reject"
+    },
+    {
+      "case": "guarded Variable-to-Object chain",
+      "expected": "accept only under selected lazy closure"
+    },
+    {
+      "case": "two optional Inputs with one guard",
+      "expected": "reject"
+    },
+    {
+      "case": "nested two positive guards",
+      "expected": "accept"
+    },
+    {
+      "case": "false first guard then unrelated else_if consumer",
+      "expected": "reject"
+    },
+    {
+      "case": "unselected branch has missing static reference",
+      "expected": "reject"
+    },
+    {
+      "case": "unselected branch has valid guarded dependency",
+      "expected": "do not execute it"
+    },
+    {
+      "case": "selected then produces false/error",
+      "expected": "retain false/error, do not fallback"
+    },
+    {
+      "case": "cache from another binding invocation",
+      "expected": "reject reuse"
+    },
+    {
+      "case": "invalid required Input on unselected branch",
+      "expected": "invocation error"
+    }
+  ]
+}

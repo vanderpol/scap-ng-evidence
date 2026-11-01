@@ -1,0 +1,27 @@
+{
+  "url": "https://raw.githubusercontent.com/vanderpol/scap-ng-evidence/b4e6de20e41bf48ffdb57d1c7950777b00c84262/runs/v04-converter/2026-11-01-audit-recovery-d3ccc8f7d/audit-recovery-evidence.zip",
+  "evidence_commit": "b4e6de20e41bf48ffdb57d1c7950777b00c84262",
+  "source_commit": "d3ccc8f7d4613e214dbccfe801a12531c5aa021c",
+  "editor_commit": "ae7f812590fa108b412146f21e59171d60507f29",
+  "bytes": 591746,
+  "sha256": "21c5047c0d8e36078924f1d4ed7c19e5c2f6773f44b590feed4e2e2f0c50bac2",
+  "zip_crc": "PASS",
+  "unique_safe_members": 267,
+  "payload_digests_verified": 266,
+  "exact_inventory": "PASS",
+  "audit_rows": 29,
+  "audit_counts": {
+    "VERIFIED": 18,
+    "PARTIAL": 10,
+    "UNPROVED": 1,
+    "FAILED": 0,
+    "NOT APPLICABLE": 0
+  },
+  "source_ci": "12 completed successful runs /11 workflows",
+  "editor_ci": "41349007241 completed success",
+  "pack_profile": {
+    "schemaVersion": "0.4.0",
+    "sourceCommit": "d3ccc8f7d4613e214dbccfe801a12531c5aa021c",
+    "manifestSha256": "5d736b1c82fcb6ea3ee4f7af6704dd1a9b630d25ec8f28e2064645a1500c48dc"
+  }
+}

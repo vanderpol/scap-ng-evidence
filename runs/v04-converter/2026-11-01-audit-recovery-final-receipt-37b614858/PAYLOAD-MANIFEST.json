@@ -1,0 +1,44 @@
+{
+  "files": [
+    {
+      "path": "OPTIONAL-INPUT-GUARD-DESIGN.md",
+      "bytes": 9432,
+      "sha256": "c8ab2f7821f99e84bc52c46516ac62bc61ecd91dfd6b8a65888d39b0077e405e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1353,
+      "sha256": "a8b4fbb87923a46f3b47a9762cde748368811dd73a713533b6a0576c72825a67"
+    },
+    {
+      "path": "current-boundary-observation.json",
+      "bytes": 2218,
+      "sha256": "930fb84de8ca2db384ed55a23ba455797c654f335812d7c65437af1125ad40e8"
+    },
+    {
+      "path": "design-review-vectors.json",
+      "bytes": 3528,
+      "sha256": "253c8008c139e85c7299472878c9c7484ede26e636e7ff132e67184923b98f30"
+    },
+    {
+      "path": "documentation-final-ci.json",
+      "bytes": 150732,
+      "sha256": "d056ba2f9c68be5e9e85aee95756d12430d41596807414b64acb636bc3f2f587"
+    },
+    {
+      "path": "documentation-tree-parity.json",
+      "bytes": 230,
+      "sha256": "9b160f9737c58583b5055f258549a7eeceb3c61e354833f4a33c718889e8c68c"
+    },
+    {
+      "path": "download-receipt.json",
+      "bytes": 1066,
+      "sha256": "138dd9cab5f0599df64a33a48692b990307fff474d69b55473af7e69c69ff659"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 1549,
+      "sha256": "d90c69144d54fa4e18e6893c3dcdfc3cc446b4cdc1dd950ab334179999b9b899"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "evidence_id": "2026-11-01-audit-recovery-final-receipt-37b614858",
+  "kind": "repository/audit evidence",
+  "created_at": "2026-11-01T21:06:54.084586+00:00",
+  "source_repository": "vanderpol/scap-ng",
+  "source_commit": "37b614858c9f6f1d6261fac244cb734c8acc060b",
+  "generating_tool": "GitHub REST workflow runs API; Python hashlib/zipfile verification",
+  "generating_tool_commit": "implementation d3ccc8f7d4613e214dbccfe801a12531c5aa021c; exact commands in referenced evidence manifest",
+  "external_input": "Evidence ZIP pinned to b4e6de20e41bf48ffdb57d1c7950777b00c84262; SHA256 in download-receipt.json",
+  "output_root": "runs/v04-converter/2026-11-01-audit-recovery-final-receipt-37b614858",
+  "checks": [
+    "Published ZIP download/CRC/exact inventory/all payload digests",
+    "Exact tools/schema/third_party/tests Git tree parity between implementation and final documentation head",
+    "Final-head hosted CI status snapshot",
+    "Current public/direct compiler rejects candidate;25 proposed design vectors are not execution results"
+  ],
+  "limitations": [
+    "Static evidence only; no scanner, editor-host, runtime parity, release, merge or corpus run."
+  ],
+  "provenance": "Separate final receipt; original evidence run and archives unchanged.",
+  "validation_status": "PASS",
+  "file_count": 9,
+  "owner_direction": "2026-11-01: Approve designing the explicit presence guard. Design only; proposed syntax not adopted.",
+  "owner_direction_record": "https://github.com/vanderpol/scap-ng/issues/255#issuecomment-6563996364"
+}
