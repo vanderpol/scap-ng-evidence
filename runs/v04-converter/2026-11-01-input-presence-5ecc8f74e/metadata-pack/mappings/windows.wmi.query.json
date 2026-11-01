@@ -1,0 +1,87 @@
+{
+  "capability": "windows.wmi.query",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "wmi": "migration_error_deprecated",
+      "wmi57": "windows.wmi.query"
+    },
+    "object": {
+      "namespace": "object.namespace",
+      "wql": "object.query"
+    },
+    "removed_constraints": {
+      "complex_result_rejection": "removed_native_record_limitation",
+      "lowercase_record_field_name": "not_native",
+      "object_operation_equals": "collector_input_not_comparison"
+    },
+    "state": {
+      "result": "result.record",
+      "wql": "query"
+    }
+  },
+  "native": {
+    "collection_parameter_source_map": {
+      "namespace": "namespace",
+      "wql": "query"
+    },
+    "collection_parameters": {
+      "namespace": {
+        "allow_variable": true,
+        "description": "WMI namespace in which to execute the query.",
+        "required": true,
+        "type": "string"
+      },
+      "query": {
+        "allow_variable": true,
+        "description": "WQL query to execute. Selected fields are returned as named record fields.",
+        "required": true,
+        "type": "string"
+      }
+    },
+    "field_datatypes": {
+      "namespace": [
+        "string"
+      ],
+      "query": [
+        "string"
+      ],
+      "result": [
+        "record"
+      ]
+    },
+    "post_alignment_ready": true,
+    "record_state_fields": [
+      "result"
+    ],
+    "state_field_map": {
+      "namespace": "namespace",
+      "result": "result",
+      "wql": "query"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "windows.wmi.query.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability windows.wmi.query."
+    },
+    {
+      "id": "windows.wmi.query.source_fields",
+      "rule": "The query result record field names used in a State must be fields selected by the WQL query or otherwise present in collected evidence."
+    },
+    {
+      "id": "windows.wmi.query.structured_results",
+      "rule": "Complex WMI result values are represented explicitly as nested record/list predicates; importers must not flatten them into strings."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#windows",
+    "object": "wmi57_object",
+    "state": "wmi57_state",
+    "test": "wmi57_test"
+  },
+  "specification_version": "0.4.0"
+}

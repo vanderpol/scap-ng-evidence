@@ -1,0 +1,12 @@
+{
+  "source_example": "docs/examples/conformance-remediation-20261101/windows-server-2025-shows-on-lock-screen-sv-278080-assessment.yaml",
+  "source_example_sha256": "1a0033280fdfc8defe57104b37268af90860b4b81ce28685f8db5445e7aedca6",
+  "original_rule": "SV-278080",
+  "original_zip_sha256": "2f46264b5fa21c8a033236121794ebe372314bf7458dac0aca4f81179fe7ece0",
+  "original_namespace": "DISA",
+  "distributor": "NIWC",
+  "distributor_revision": "8c8e5dff860af6b1290ee9273a282db24278f8d5",
+  "intentional_new_requirement_identity": true,
+  "source_equivalence_claimed": false,
+  "scanner_execution_claimed": false
+}

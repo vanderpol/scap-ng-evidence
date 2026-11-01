@@ -1,0 +1,113 @@
+{
+  "capability": "unix.process",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "process58": "unix.process"
+    },
+    "object": {
+      "command_line": "object.command_line",
+      "pid": "object.pid"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "command_line": [
+        "string"
+      ],
+      "exec_shield": [
+        "boolean"
+      ],
+      "exec_time": [
+        "string"
+      ],
+      "loginuid": [
+        "integer"
+      ],
+      "pid": [
+        "integer"
+      ],
+      "posix_capability": [
+        "string"
+      ],
+      "ppid": [
+        "integer"
+      ],
+      "priority": [
+        "integer"
+      ],
+      "ruid": [
+        "integer"
+      ],
+      "scheduling_class": [
+        "string"
+      ],
+      "selinux_domain_label": [
+        "string"
+      ],
+      "session_id": [
+        "integer"
+      ],
+      "start_time": [
+        "string"
+      ],
+      "tty": [
+        "string"
+      ],
+      "user_id": [
+        "integer"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "command_line"
+      ],
+      [
+        "pid"
+      ],
+      [
+        "command_line",
+        "pid"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "command_line": "command_line",
+      "pid": "pid"
+    },
+    "state_field_map": {
+      "command_line": "command_line",
+      "exec_shield": "exec_shield",
+      "exec_time": "exec_time",
+      "loginuid": "loginuid",
+      "pid": "pid",
+      "posix_capability": "posix_capability",
+      "ppid": "ppid",
+      "priority": "priority",
+      "ruid": "ruid",
+      "scheduling_class": "scheduling_class",
+      "selinux_domain_label": "selinux_domain_label",
+      "session_id": "session_id",
+      "start_time": "start_time",
+      "tty": "tty",
+      "user_id": "user_id"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "unix.process.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability unix.process."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+    "item": "process58_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#unix",
+    "object": "process58_object",
+    "state": "process58_state",
+    "test": "process58_test"
+  },
+  "specification_version": "0.4.0"
+}

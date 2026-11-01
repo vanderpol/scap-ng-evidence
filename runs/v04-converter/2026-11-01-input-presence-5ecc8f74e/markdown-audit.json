@@ -1,0 +1,405 @@
+{
+  "total_markdown": 696,
+  "by_scope": {
+    "current": 241,
+    "historical": 455
+  },
+  "local_links_checked": 3435,
+  "external_or_nonfile_refs": 3021,
+  "broken": [
+    {
+      "source": "board/discussions/ASSESSMENT-VOCABULARY-ABCD-CLEAN.md",
+      "url": "https://github.com/vanderpol/scap-ng/blob/main/specification/examples/assessments.md#2-the-automated-check-embeds-its-expectation",
+      "target": "specification/examples/assessments.md",
+      "reason": "missing_heading",
+      "scope": "current"
+    },
+    {
+      "source": "board/discussions/ASSESSMENT-VOCABULARY-ABCD-SHARED.md",
+      "url": "https://github.com/vanderpol/scap-ng/blob/main/specification/examples/assessments.md#2-the-automated-check-embeds-its-expectation",
+      "target": "specification/examples/assessments.md",
+      "reason": "missing_heading",
+      "scope": "current"
+    },
+    {
+      "source": "board/discussions/ASSESSMENT-VOCABULARY-ABCD.md",
+      "url": "https://github.com/vanderpol/scap-ng/blob/main/specification/examples/assessments.md#2-the-automated-check-embeds-its-expectation",
+      "target": "specification/examples/assessments.md",
+      "reason": "missing_heading",
+      "scope": "current"
+    },
+    {
+      "source": "research/assessment-simplification/compact-authoring-04/C-CRITICAL-DESIGN-REVIEW-2026-10-19.md",
+      "url": "../../../../schema/v0.4.0/assessment-language.schema.json",
+      "target": "outside",
+      "reason": "escapes_repository",
+      "scope": "historical"
+    },
+    {
+      "source": "research/assessment-simplification/compact-authoring-04/C-GUIDED-EDITOR-SEMANTIC-PROBE-2026-10-19.md",
+      "url": "../../../../.github/workflows/research-c-shared-engine.yml",
+      "target": "outside",
+      "reason": "escapes_repository",
+      "scope": "historical"
+    },
+    {
+      "source": "research/assessment-simplification/compact-authoring-04/C-REGISTRY-A-VS-C-CORRECTION-2026-10-19.md",
+      "url": "../../../../schema/v0.4.0/README.md",
+      "target": "outside",
+      "reason": "escapes_repository",
+      "scope": "historical"
+    },
+    {
+      "source": "research/assessment-simplification/compact-authoring-04/C-REGISTRY-A-VS-C-CORRECTION-2026-10-19.md",
+      "url": "../../../../schema/v0.4.0/capability-mappings/supported/windows.registry.json",
+      "target": "outside",
+      "reason": "escapes_repository",
+      "scope": "historical"
+    },
+    {
+      "source": "research/assessment-simplification/method-02/README.md",
+      "url": "HANDOFF.md",
+      "target": "research/assessment-simplification/method-02/HANDOFF.md",
+      "reason": "missing_target",
+      "scope": "historical"
+    },
+    {
+      "source": "research/assessment-simplification/slang-feedback-04/EXISTENCE-MATCH-CATALOG.md",
+      "url": "../../../../tools/research_04_quantifier_aliases.py",
+      "target": "outside",
+      "reason": "escapes_repository",
+      "scope": "historical"
+    },
+    {
+      "source": "research/assessment-simplification/slang-feedback-04/NONE-EXISTS-CANDIDATE.md",
+      "url": "../../../../tools/research_04_none_exist_alias.py",
+      "target": "outside",
+      "reason": "escapes_repository",
+      "scope": "historical"
+    },
+    {
+      "source": "research/assessment-simplification/slang-feedback-04/NONE-EXISTS-CANDIDATE.md",
+      "url": "../../../../tools/test_research_04_none_exist_alias.py",
+      "target": "outside",
+      "reason": "escapes_repository",
+      "scope": "historical"
+    },
+    {
+      "source": "research/assessment-simplification/slang-feedback-04/QUANTIFIER-PRESETS.md",
+      "url": "../../../../tools/research_04_quantifier_aliases.py",
+      "target": "outside",
+      "reason": "escapes_repository",
+      "scope": "historical"
+    },
+    {
+      "source": "research/assessment-simplification/slang-feedback-04/QUANTIFIER-PRESETS.md",
+      "url": "../../../../tools/test_research_04_quantifier_aliases.py",
+      "target": "outside",
+      "reason": "escapes_repository",
+      "scope": "historical"
+    },
+    {
+      "source": "research/assessment-simplification/slang-feedback-04/README.md",
+      "url": "../../../../tools/research_slang_scoped_facade.py",
+      "target": "outside",
+      "reason": "escapes_repository",
+      "scope": "historical"
+    },
+    {
+      "source": "research/assessment-simplification/slang-feedback-04/README.md",
+      "url": "../../../../tools/test_research_slang_scoped_facade.py",
+      "target": "outside",
+      "reason": "escapes_repository",
+      "scope": "historical"
+    },
+    {
+      "source": "research/assessment-simplification/static-literals-21/README.md",
+      "url": "../../specification/examples/assessments.md",
+      "target": "research/specification/examples/assessments.md",
+      "reason": "missing_target",
+      "scope": "historical"
+    },
+    {
+      "source": "research/assessment-simplification/transform-03/README.md",
+      "url": "HANDOFF.md",
+      "target": "research/assessment-simplification/transform-03/HANDOFF.md",
+      "reason": "missing_target",
+      "scope": "historical"
+    },
+    {
+      "source": "research/iterations/003/design/assessment-oval-vocabulary-alignment.md",
+      "url": "../../../specification/assessment/assessment-method.md",
+      "target": "research/specification/assessment/assessment-method.md",
+      "reason": "missing_target",
+      "scope": "historical"
+    },
+    {
+      "source": "research/iterations/003/design/assessment-oval-vocabulary-alignment.md",
+      "url": "../../../specification/examples/assessments.md",
+      "target": "research/specification/examples/assessments.md",
+      "reason": "missing_target",
+      "scope": "historical"
+    },
+    {
+      "source": "research/iterations/003/design/converter-stability-and-windows.md",
+      "url": "../review/rhel9-current-full/README.md",
+      "target": "research/iterations/003/review/rhel9-current-full/README.md",
+      "reason": "missing_target",
+      "scope": "historical"
+    },
+    {
+      "source": "research/iterations/003/design/datatype-operator-lossless-review.md",
+      "url": "../../../tools/scap_upconvert_v003/native_capability_mapping.py",
+      "target": "research/tools/scap_upconvert_v003/native_capability_mapping.py",
+      "reason": "missing_target",
+      "scope": "historical"
+    },
+    {
+      "source": "research/iterations/003/design/datatype-operator-lossless-review.md",
+      "url": "../../../specification/migration/oval-5.12.3-to-ng.md",
+      "target": "research/specification/migration/oval-5.12.3-to-ng.md",
+      "reason": "missing_target",
+      "scope": "historical"
+    },
+    {
+      "source": "research/iterations/003/design/datatype-operator-lossless-review.md",
+      "url": "../../../schema/v0.3.0/capability-common.schema.json",
+      "target": "research/schema/v0.3.0/capability-common.schema.json",
+      "reason": "missing_target",
+      "scope": "historical"
+    },
+    {
+      "source": "research/iterations/003/design/datatype-operator-lossless-review.md",
+      "url": "../../../tools/research_type_syntax_codec.py",
+      "target": "research/tools/research_type_syntax_codec.py",
+      "reason": "missing_target",
+      "scope": "historical"
+    },
+    {
+      "source": "research/iterations/003/design/datatype-operator-lossless-review.md",
+      "url": "../../../tools/test_research_type_syntax_codec.py",
+      "target": "research/tools/test_research_type_syntax_codec.py",
+      "reason": "missing_target",
+      "scope": "historical"
+    },
+    {
+      "source": "research/iterations/003/design/datatype-operator-lossless-review.md",
+      "url": "../../../.github/workflows/research-datatype-authoring-prototype.yml",
+      "target": "research/.github/workflows/research-datatype-authoring-prototype.yml",
+      "reason": "missing_target",
+      "scope": "historical"
+    },
+    {
+      "source": "research/iterations/003/design/datatype-operator-lossless-review.md",
+      "url": "../../../tests/datatype-operator-evaluation-0.3/expected-cases.json",
+      "target": "research/tests/datatype-operator-evaluation-0.3/expected-cases.json",
+      "reason": "missing_target",
+      "scope": "historical"
+    },
+    {
+      "source": "research/iterations/003/design/datatype-operator-lossless-review.md",
+      "url": "../../../tools/test_research_type_evaluation_fixtures.py",
+      "target": "research/tools/test_research_type_evaluation_fixtures.py",
+      "reason": "missing_target",
+      "scope": "historical"
+    },
+    {
+      "source": "research/iterations/003/design/datatype-operator-lossless-review.md",
+      "url": "../../../.github/workflows/research-datatype-authoring-prototype.yml",
+      "target": "research/.github/workflows/research-datatype-authoring-prototype.yml",
+      "reason": "missing_target",
+      "scope": "historical"
+    },
+    {
+      "source": "research/iterations/003/design/native-source-layout.md",
+      "url": "../review/rhel9-current-full/README.md",
+      "target": "research/iterations/003/review/rhel9-current-full/README.md",
+      "reason": "missing_target",
+      "scope": "historical"
+    },
+    {
+      "source": "research/iterations/003/examples/stig-derived/SV-278217/EXPANSION-CHECKPOINT.md",
+      "url": "../../../../../tools/research_expand_registry_authoring.py",
+      "target": "research/tools/research_expand_registry_authoring.py",
+      "reason": "missing_target",
+      "scope": "historical"
+    },
+    {
+      "source": "research/iterations/003/examples/stig-derived/SV-278217/EXPANSION-CHECKPOINT.md",
+      "url": "../../../../../tools/test_research_expand_registry_authoring.py",
+      "target": "research/tools/test_research_expand_registry_authoring.py",
+      "reason": "missing_target",
+      "scope": "historical"
+    },
+    {
+      "source": "research/iterations/003/examples/stig-derived/SV-278217/README.md",
+      "url": "../../../../../schema/v0.3.0/capability-mappings/supported/windows.registry.json",
+      "target": "research/schema/v0.3.0/capability-mappings/supported/windows.registry.json",
+      "reason": "missing_target",
+      "scope": "historical"
+    },
+    {
+      "source": "research/iterations/003/examples/stig-derived/SV-278217/README.md",
+      "url": "../../../../../tools/validate_v03_registry_collected_item.py",
+      "target": "research/tools/validate_v03_registry_collected_item.py",
+      "reason": "missing_target",
+      "scope": "historical"
+    },
+    {
+      "source": "research/iterations/003/examples/stig-derived/SV-278217/README.md",
+      "url": "../../../../../tools/test_v03_registry_collected_item.py",
+      "target": "research/tools/test_v03_registry_collected_item.py",
+      "reason": "missing_target",
+      "scope": "historical"
+    },
+    {
+      "source": "research/iterations/003/examples/stig-derived/SV-278217/README.md",
+      "url": "../../../../../tools/audit_v03_item_cardinality.py",
+      "target": "research/tools/audit_v03_item_cardinality.py",
+      "reason": "missing_target",
+      "scope": "historical"
+    },
+    {
+      "source": "research/iterations/003/review/rhel9-full-review.md",
+      "url": "rhel9-current-full/README.md",
+      "target": "research/iterations/003/review/rhel9-current-full/README.md",
+      "reason": "missing_target",
+      "scope": "historical"
+    },
+    {
+      "source": "research/requirements-first-language/contract-candidate/corpus/source-accounting.md",
+      "url": "../CAPABILITY-READINESS-GATE.md",
+      "target": "research/requirements-first-language/contract-candidate/CAPABILITY-READINESS-GATE.md",
+      "reason": "missing_target",
+      "scope": "historical"
+    },
+    {
+      "source": "schema/v0.1.0/capability-mappings/README.md",
+      "url": "../../../specification/migration/oval-5.12.3-capability-crosswalk.md#reviewed-native-mappings-override-the-provisional-inventory",
+      "target": "specification/migration/oval-5.12.3-capability-crosswalk.md",
+      "reason": "missing_heading",
+      "scope": "historical"
+    },
+    {
+      "source": "schema/v0.2.0/README.md",
+      "url": "../../board/SCAP-NG-0.2.0-REVIEW-CHECKPOINT.md",
+      "target": "board/SCAP-NG-0.2.0-REVIEW-CHECKPOINT.md",
+      "reason": "missing_target",
+      "scope": "historical"
+    },
+    {
+      "source": "schema/v0.2.0/README.md",
+      "url": "../../board/PROPOSAL-COVERAGE-AUDIT.md",
+      "target": "board/PROPOSAL-COVERAGE-AUDIT.md",
+      "reason": "missing_target",
+      "scope": "historical"
+    },
+    {
+      "source": "transition/handoff-0.2.0-content-development-2026-10-03.md",
+      "url": "0.2.0-freeze-criteria-2026-10-03.md",
+      "target": "transition/0.2.0-freeze-criteria-2026-10-03.md",
+      "reason": "missing_target",
+      "scope": "historical"
+    }
+  ],
+  "broken_current": 3,
+  "broken_historical": 39,
+  "similarity_candidates": [
+    {
+      "a": "schema/v0.3.0/capability-mappings/experimental/README.md",
+      "b": "schema/v0.4.0/capability-mappings/experimental/README.md",
+      "jaccard": 1.0,
+      "overlap_words": 42
+    },
+    {
+      "a": "schema/v0.3.0/capability-mappings/supported/README.md",
+      "b": "schema/v0.4.0/capability-mappings/supported/README.md",
+      "jaccard": 0.873,
+      "overlap_words": 131
+    },
+    {
+      "a": "board/discussions/ASSESSMENT-VOCABULARY-ABCD-CLEAN.md",
+      "b": "board/discussions/ASSESSMENT-VOCABULARY-ABCD.md",
+      "jaccard": 0.858,
+      "overlap_words": 484
+    },
+    {
+      "a": "board/discussions/ASSESSMENT-VOCABULARY-ABCD-CLEAN.md",
+      "b": "board/discussions/ASSESSMENT-VOCABULARY-ABCD-SHARED.md",
+      "jaccard": 0.805,
+      "overlap_words": 499
+    },
+    {
+      "a": "docs/examples/direct-iis/README.md",
+      "b": "docs/examples/direct-ntuser/README.md",
+      "jaccard": 0.802,
+      "overlap_words": 73
+    },
+    {
+      "a": "docs/examples/direct-file-rights/README.md",
+      "b": "docs/examples/direct-iis/README.md",
+      "jaccard": 0.798,
+      "overlap_words": 75
+    },
+    {
+      "a": "docs/examples/direct-iis/README.md",
+      "b": "docs/examples/direct-textfile/README.md",
+      "jaccard": 0.781,
+      "overlap_words": 75
+    },
+    {
+      "a": "docs/examples/direct-file-rights/README.md",
+      "b": "docs/examples/direct-ntuser/README.md",
+      "jaccard": 0.779,
+      "overlap_words": 74
+    },
+    {
+      "a": "schema/v0.3.0/capability-mappings/README.md",
+      "b": "schema/v0.4.0/capability-mappings/README.md",
+      "jaccard": 0.778,
+      "overlap_words": 165
+    },
+    {
+      "a": "docs/examples/direct-command-behaviors/README.md",
+      "b": "docs/examples/direct-wmi/README.md",
+      "jaccard": 0.773,
+      "overlap_words": 85
+    },
+    {
+      "a": "docs/examples/direct-iis/README.md",
+      "b": "docs/examples/direct-wmi/README.md",
+      "jaccard": 0.758,
+      "overlap_words": 75
+    },
+    {
+      "a": "board/discussions/ASSESSMENT-VOCABULARY-ABCD-SHARED.md",
+      "b": "board/discussions/ASSESSMENT-VOCABULARY-ABCD.md",
+      "jaccard": 0.748,
+      "overlap_words": 478
+    },
+    {
+      "a": "docs/examples/direct-ntuser/README.md",
+      "b": "docs/examples/direct-textfile/README.md",
+      "jaccard": 0.745,
+      "overlap_words": 73
+    },
+    {
+      "a": "docs/examples/direct-file-rights/README.md",
+      "b": "docs/examples/direct-textfile/README.md",
+      "jaccard": 0.743,
+      "overlap_words": 75
+    },
+    {
+      "a": "docs/examples/direct-file-rights/README.md",
+      "b": "docs/examples/direct-wmi/README.md",
+      "jaccard": 0.738,
+      "overlap_words": 76
+    },
+    {
+      "a": "docs/examples/direct-ntuser/README.md",
+      "b": "docs/examples/direct-wmi/README.md",
+      "jaccard": 0.723,
+      "overlap_words": 73
+    }
+  ]
+}

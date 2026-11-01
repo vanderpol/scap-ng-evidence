@@ -1,0 +1,226 @@
+{
+  "capability": "windows.file",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-31",
+  "migration_crosswalk": {
+    "file_attribute": {
+      "": "variable_reference_artifact_not_native_value",
+      "FILE_ATTRIBUTE_ARCHIVE": "archive",
+      "FILE_ATTRIBUTE_COMPRESSED": "compressed",
+      "FILE_ATTRIBUTE_DEVICE": "device",
+      "FILE_ATTRIBUTE_DIRECTORY": "directory",
+      "FILE_ATTRIBUTE_ENCRYPTED": "encrypted",
+      "FILE_ATTRIBUTE_HIDDEN": "hidden",
+      "FILE_ATTRIBUTE_INTEGRITY_STREAM": "integrity_stream",
+      "FILE_ATTRIBUTE_NORMAL": "normal",
+      "FILE_ATTRIBUTE_NOT_CONTENT_INDEXED": "not_content_indexed",
+      "FILE_ATTRIBUTE_NO_SCRUB_DATA": "no_scrub_data",
+      "FILE_ATTRIBUTE_OFFLINE": "offline",
+      "FILE_ATTRIBUTE_READONLY": "readonly",
+      "FILE_ATTRIBUTE_REPARSE_POINT": "reparse_point",
+      "FILE_ATTRIBUTE_SPARSE_FILE": "sparse_file",
+      "FILE_ATTRIBUTE_SYSTEM": "system",
+      "FILE_ATTRIBUTE_TEMPORARY": "temporary",
+      "FILE_ATTRIBUTE_VIRTUAL": "virtual"
+    },
+    "file_type": {
+      "": "variable_reference_artifact_not_native_value",
+      "FILE_ATTRIBUTE_DIRECTORY": "directory",
+      "FILE_TYPE_CHAR": "char",
+      "FILE_TYPE_DISK": "disk",
+      "FILE_TYPE_PIPE": "pipe",
+      "FILE_TYPE_REMOTE": "remote",
+      "FILE_TYPE_UNKNOWN": "unknown"
+    },
+    "removed_source_fields": {
+      "windows_view": "deprecated_not_native"
+    },
+    "traversal": {
+      "max_depth_-1": "max_depth_unlimited",
+      "recurse.directories": "directories",
+      "recurse.junctions": "junctions",
+      "recurse.junctions and directories": "junctions_and_directories",
+      "recurse_direction.down": "implicit_downward_traversal",
+      "recurse_direction.none": "no_traversal",
+      "recurse_direction.up": "migration_error_deprecated",
+      "recurse_file_system.all": "all",
+      "recurse_file_system.defined": "same",
+      "recurse_file_system.local": "local"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "access_time": [
+        "integer"
+      ],
+      "attribute": [
+        "string"
+      ],
+      "company": [
+        "string"
+      ],
+      "creation_time": [
+        "integer"
+      ],
+      "development_class": [
+        "string"
+      ],
+      "directory": [
+        "string"
+      ],
+      "full_path": [
+        "string"
+      ],
+      "internal_name": [
+        "string"
+      ],
+      "language": [
+        "string"
+      ],
+      "microsoft_checksum": [
+        "string"
+      ],
+      "modify_time": [
+        "integer"
+      ],
+      "name": [
+        "string"
+      ],
+      "original_name": [
+        "string"
+      ],
+      "owner": [
+        "string"
+      ],
+      "product_name": [
+        "string"
+      ],
+      "product_version": [
+        "string",
+        "version"
+      ],
+      "size": [
+        "integer"
+      ],
+      "type": [
+        "string"
+      ],
+      "version": [
+        "version"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "full_path"
+      ],
+      [
+        "directory",
+        "name"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_case_semantics": {
+      "directory": {
+        "description": "Directory component lookup follows the effective case-sensitivity configuration of the parent directory.",
+        "mode": "filesystem_per_directory"
+      },
+      "full_path": {
+        "description": "Resolve path components under each containing directory's effective case-sensitivity configuration; do not normalize filenames unconditionally.",
+        "mode": "filesystem_per_directory"
+      },
+      "name": {
+        "description": "Filename lookup follows the containing directory's effective case-sensitivity configuration.",
+        "mode": "filesystem_per_directory"
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/windows/wsl/case-sensitivity",
+        "https://learn.microsoft.com/en-us/windows/desktop/fileio/naming-a-file"
+      ],
+      "scanner_discovery": "On Windows, query the containing directory's case-sensitive flag before enforcing exact path-name matching; Microsoft documents fsutil.exe file queryCaseSensitiveInfo <path>. API implementations must also account for filesystem and Win32 API-specific lookup behavior. Do not assume NTFS case-insensitive lookup universally."
+    },
+    "selector_map": {
+      "filename": "name",
+      "filepath": "full_path",
+      "path": "directory"
+    },
+    "state_field_map": {
+      "a_time": "access_time",
+      "attribute": "attribute",
+      "c_time": "creation_time",
+      "company": "company",
+      "development_class": "development_class",
+      "filename": "name",
+      "filepath": "full_path",
+      "internal_name": "internal_name",
+      "language": "language",
+      "m_time": "modify_time",
+      "ms_checksum": "microsoft_checksum",
+      "original_filename": "original_name",
+      "owner": "owner",
+      "path": "directory",
+      "product_name": "product_name",
+      "product_version": "product_version",
+      "size": "size",
+      "type": "type",
+      "version": "version"
+    },
+    "state_value_enums": {
+      "attribute": [
+        "archive",
+        "compressed",
+        "device",
+        "directory",
+        "encrypted",
+        "hidden",
+        "integrity_stream",
+        "normal",
+        "not_content_indexed",
+        "no_scrub_data",
+        "offline",
+        "readonly",
+        "reparse_point",
+        "sparse_file",
+        "system",
+        "temporary",
+        "virtual"
+      ],
+      "type": [
+        "directory",
+        "char",
+        "disk",
+        "pipe",
+        "remote",
+        "unknown"
+      ]
+    },
+    "traversal_definition": "windows_file_traversal",
+    "uses_file_traversal": true
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "windows.file.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability windows.file."
+    },
+    {
+      "id": "windows.file.full_path_no_traversal",
+      "rule": "Traversal is not permitted when full_path selection is used."
+    },
+    {
+      "id": "windows.file.pattern_directory_no_traversal",
+      "rule": "Traversal is not permitted when directory uses non-equality pattern-style selection."
+    },
+    {
+      "id": "windows.file.literal_name_characters",
+      "rule": "Literal file names must not contain Windows path separator or reserved filename characters; match expressions are exempt."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#windows",
+    "object": "file_object",
+    "state": "file_state",
+    "test": "file_test"
+  },
+  "specification_version": "0.4.0"
+}

@@ -1,0 +1,61 @@
+test_01_to_11_adopted_binding_vectors (test_v04_input_presence.InputPresenceTests.test_01_to_11_adopted_binding_vectors) ... ok
+test_12_dangling_guard_input (test_v04_input_presence.InputPresenceTests.test_12_dangling_guard_input) ... ok
+test_13_wrong_kind_guard (test_v04_input_presence.InputPresenceTests.test_13_wrong_kind_guard) ... ok
+test_14_general_boolean_and_not_do_not_authorize_consumption (test_v04_input_presence.InputPresenceTests.test_14_general_boolean_and_not_do_not_authorize_consumption) ... ok
+test_15_guarded_direct_use_public_direct_and_independent (test_v04_input_presence.InputPresenceTests.test_15_guarded_direct_use_public_direct_and_independent) ... ok
+test_16_guarded_use_does_not_authorize_same_test_elsewhere (test_v04_input_presence.InputPresenceTests.test_16_guarded_use_does_not_authorize_same_test_elsewhere) ... ok
+test_17_transitive_variable_object_chain_is_guarded_and_lazy (test_v04_input_presence.InputPresenceTests.test_17_transitive_variable_object_chain_is_guarded_and_lazy) ... ok
+test_18_two_optional_inputs_one_guard_rejects (test_v04_input_presence.InputPresenceTests.test_18_two_optional_inputs_one_guard_rejects) ... ok
+test_19_nested_positive_guards_authorize_both (test_v04_input_presence.InputPresenceTests.test_19_nested_positive_guards_authorize_both) ... ok
+test_20_false_guard_does_not_authorize_else_if (test_v04_input_presence.InputPresenceTests.test_20_false_guard_does_not_authorize_else_if) ... ok
+test_21_unselected_branch_still_closes_references (test_v04_input_presence.InputPresenceTests.test_21_unselected_branch_still_closes_references) ... ok
+test_22_unselected_valid_consumer_never_reads_supplied_outcome (test_v04_input_presence.InputPresenceTests.test_22_unselected_valid_consumer_never_reads_supplied_outcome) ... ok
+test_23_selected_false_and_error_never_fall_back (test_v04_input_presence.InputPresenceTests.test_23_selected_false_and_error_never_fall_back) ... ok
+test_24_cache_identity_includes_invocation_and_binding (test_v04_input_presence.InputPresenceTests.test_24_cache_identity_includes_invocation_and_binding) ... ok
+test_25_invalid_required_binding_errors_even_when_consumer_unselected (test_v04_input_presence.InputPresenceTests.test_25_invalid_required_binding_errors_even_when_consumer_unselected) ... ok
+test_binding_trace_schema_preserves_reasons_and_rejects_missing_provenance (test_v04_input_presence.InputPresenceTests.test_binding_trace_schema_preserves_reasons_and_rejects_missing_provenance) ... ERROR
+test_else_if_and_boolean_selected_paths_keep_guards_and_trace_order (test_v04_input_presence.InputPresenceTests.test_else_if_and_boolean_selected_paths_keep_guards_and_trace_order) ... ERROR
+test_explicit_states_immutable_snapshot_and_constraints (test_v04_input_presence.InputPresenceTests.test_explicit_states_immutable_snapshot_and_constraints) ... ok
+test_independent_complete_package_and_version_tamper (test_v04_input_presence.InputPresenceTests.test_independent_complete_package_and_version_tamper) ... ok
+test_literal_record_data_is_not_a_reference_and_direct_selector_inputs_stay_unsupported (test_v04_input_presence.InputPresenceTests.test_literal_record_data_is_not_a_reference_and_direct_selector_inputs_stay_unsupported) ... ok
+test_old_instruction_version_rejects_presence_and_datatype_stays_compatible (test_v04_input_presence.InputPresenceTests.test_old_instruction_version_rejects_presence_and_datatype_stays_compatible) ... ok
+test_all_six_guard_results_and_only_selected_branch_reads (test_v04_owner_conditional_plan.OwnerConditionalPlan.test_all_six_guard_results_and_only_selected_branch_reads) ... ok
+test_conditional_dependency_context_is_external_and_guarded (test_v04_owner_conditional_plan.OwnerConditionalPlan.test_conditional_dependency_context_is_external_and_guarded) ... ok
+test_current_authoring_compiles_and_independent_package_reader_checks_branch_blocks (test_v04_owner_conditional_plan.OwnerConditionalPlan.test_current_authoring_compiles_and_independent_package_reader_checks_branch_blocks) ... ok
+test_explicit_terminals_retain_reasons_and_do_not_turn_errors_or_failures_into_followup (test_v04_owner_conditional_plan.OwnerConditionalPlan.test_explicit_terminals_retain_reasons_and_do_not_turn_errors_or_failures_into_followup) ... ok
+test_independent_reader_matches_blocks_and_detects_branch_reordering (test_v04_owner_conditional_plan.OwnerConditionalPlan.test_independent_reader_matches_blocks_and_detects_branch_reordering) ... ok
+test_indeterminate_else_if_does_not_fall_through (test_v04_owner_conditional_plan.OwnerConditionalPlan.test_indeterminate_else_if_does_not_fall_through) ... ok
+test_legacy_native_boolean_aliases_rejected_even_inside_conditional (test_v04_owner_conditional_plan.OwnerConditionalPlan.test_legacy_native_boolean_aliases_rejected_even_inside_conditional) ... ok
+test_missing_unselected_outcome_allowed_missing_selected_outcome_errors (test_v04_owner_conditional_plan.OwnerConditionalPlan.test_missing_unselected_outcome_allowed_missing_selected_outcome_errors) ... ok
+test_ordered_else_if_first_true_wins_even_when_selected_result_is_false (test_v04_owner_conditional_plan.OwnerConditionalPlan.test_ordered_else_if_first_true_wins_even_when_selected_result_is_false) ... ok
+test_schema_and_compiler_reject_missing_else_bad_order_shape_and_reason (test_v04_owner_conditional_plan.OwnerConditionalPlan.test_schema_and_compiler_reject_missing_else_bad_order_shape_and_reason) ... ok
+test_static_reference_closure_includes_every_branch (test_v04_owner_conditional_plan.OwnerConditionalPlan.test_static_reference_closure_includes_every_branch) ... ok
+test_all_activated_paths_and_defaults_validate (test_v04_editor_metadata.MetadataTests.test_all_activated_paths_and_defaults_validate) ... ok
+test_all_generated_object_controls_have_resolved_help (test_v04_editor_metadata.MetadataTests.test_all_generated_object_controls_have_resolved_help) ... ok
+test_annotation_suggestions_do_not_satisfy_required_fields (test_v04_editor_metadata.MetadataTests.test_annotation_suggestions_do_not_satisfy_required_fields) ... ok
+test_exhaustive_dispositions_and_distinct_controls (test_v04_editor_metadata.MetadataTests.test_exhaustive_dispositions_and_distinct_controls) ... ok
+test_export_bytes_and_resource_hashes_are_independent_of_hash_seed (test_v04_editor_metadata.MetadataTests.test_export_bytes_and_resource_hashes_are_independent_of_hash_seed) ... ok
+test_shared_normative_structure_unchanged (test_v04_editor_metadata.MetadataTests.test_shared_normative_structure_unchanged) ... ok
+
+======================================================================
+ERROR: test_binding_trace_schema_preserves_reasons_and_rejects_missing_provenance (test_v04_input_presence.InputPresenceTests.test_binding_trace_schema_preserves_reasons_and_rejects_missing_provenance)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scap-ng-owner-contract-268/tools/test_v04_input_presence.py", line 228, in test_binding_trace_schema_preserves_reasons_and_rejects_missing_provenance
+    v=build_validators(ROOT/'schema/v0.4.0')['expression-invocation.schema.json']
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'expression-invocation.schema.json'
+
+======================================================================
+ERROR: test_else_if_and_boolean_selected_paths_keep_guards_and_trace_order (test_v04_input_presence.InputPresenceTests.test_else_if_and_boolean_selected_paths_keep_guards_and_trace_order)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scap-ng-owner-contract-268/tools/test_v04_input_presence.py", line 250, in test_else_if_and_boolean_selected_paths_keep_guards_and_trace_order
+    v=build_validators(ROOT/'schema/v0.4.0')['expression-invocation.schema.json']
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'expression-invocation.schema.json'
+
+----------------------------------------------------------------------
+Ran 38 tests in 10.003s
+
+FAILED (errors=2)

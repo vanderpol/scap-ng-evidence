@@ -1,0 +1,73 @@
+{
+  "capability": "windows.sid_sid",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "behaviors": {
+      "include_group": "object.include_group",
+      "resolve_group": "object.resolve_group"
+    },
+    "capability": {
+      "sid_sid": "windows.sid_sid"
+    }
+  },
+  "native": {
+    "collection_parameters": {
+      "include_group": {
+        "description": "Whether matching groups are included; importers materialize OVAL default true.",
+        "required": true,
+        "type": "boolean"
+      },
+      "resolve_group": {
+        "description": "Whether group membership is recursively resolved; importers materialize OVAL default false.",
+        "required": true,
+        "type": "boolean"
+      }
+    },
+    "field_datatypes": {
+      "trustee_domain": [
+        "string"
+      ],
+      "trustee_name": [
+        "string"
+      ],
+      "trustee_sid": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "trustee_sid"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "trustee_sid": "trustee_sid"
+    },
+    "state_field_map": {
+      "trustee_domain": "trustee_domain",
+      "trustee_name": "trustee_name",
+      "trustee_sid": "trustee_sid"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "windows.sid_sid.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability windows.sid_sid."
+    },
+    {
+      "id": "windows.sid_sid.materialized_behaviors",
+      "rule": "Direct native Objects explicitly carry include_group and resolve_group; importers materialize OVAL defaults."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+    "item": "sid_sid_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#windows",
+    "object": "sid_sid_object",
+    "state": "sid_sid_state",
+    "test": "sid_sid_test"
+  },
+  "specification_version": "0.4.0"
+}

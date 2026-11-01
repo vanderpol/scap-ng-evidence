@@ -1,0 +1,25 @@
+{
+  "schema": "schema/v0.4.0/test-result.schema.json",
+  "candidate": {
+    "id": "registry-value-test",
+    "outcome": "error",
+    "object_refs": [],
+    "state_refs": [
+      "registry-value-test.states[0]"
+    ],
+    "item_refs": [],
+    "per_item_results": [],
+    "item_summary": {
+      "evaluated_items": 0,
+      "observed_mismatches": 0,
+      "actual_mismatches": "unknown",
+      "returned_items": 0,
+      "truncated_evidence": false
+    },
+    "check_existence": "all_exist",
+    "check": "all",
+    "state_operator": "AND"
+  },
+  "schema_errors": [],
+  "source_contract_mismatch": "The source Test uses require.fields and has no states[0]. Native output accepts OVAL check vocabulary. Error Test has no reason. No scanner executed."
+}

@@ -1,0 +1,58 @@
+{
+  "evidence_id": "2026-11-01-input-presence-5ecc8f74e",
+  "kind": "language-conformance and repository/audit evidence; supplied states only",
+  "created_at": "2026-11-01T23:17:47.389206+00:00",
+  "source_repository": "vanderpol/scap-ng",
+  "source_commit": "5ecc8f74eb44d9a1b935de4d1fc6f0f74d16c63a",
+  "editor_repository": "vanderpol/scap-ng-vscode",
+  "editor_commit": "90ec19a8bef0291cb71d03e4a6cbb598accbb50b",
+  "generating_tools": [
+    {
+      "path": "tools/test_v04_input_presence.py",
+      "commit": "5ecc8f74eb44d9a1b935de4d1fc6f0f74d16c63a"
+    },
+    {
+      "path": "tools/audit_v04_schema_freeze_readiness.py",
+      "commit": "5ecc8f74eb44d9a1b935de4d1fc6f0f74d16c63a"
+    }
+  ],
+  "commands": [
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python tools/test_v04_schema_draft.py",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python run-review-cases.py",
+    "Run each of the49 maintained-scripts.json entries in its own Python process",
+    "python tools/audit_v04_schema_freeze_readiness.py --output <new-report.json>",
+    "python tools/build_v04_editor_metadata_pack.py --output <new-pack>",
+    "SCAP_NG_METADATA_PACK=<new-pack> SCAP_NG_SOURCE_ROOT=<source> npm run test:integration; npm run lint; npm test; npm run package --cache <writable-cache>"
+  ],
+  "input_pins": "Immutable design/25 cases at evidence b2c633a1378feaa0a318b34a76843e591e02ddb3; old sample program hashes against source37b614858 in preservation-receipt.json; example/provenance.json includes original ZIP/distributor/source digest.",
+  "dependencies": {
+    "PyYAML": "6.0.3",
+    "jsonschema": "4.26.0",
+    "referencing": "0.37.0",
+    "lxml": "6.1.1"
+  },
+  "output_root": "runs/v04-converter/2026-11-01-input-presence-5ecc8f74e",
+  "validation_status": "PASS for adopted guard and supplied-binding scope; NO_GO full schema-family freeze",
+  "checks": {
+    "adopted_cases": 25,
+    "focused_test_methods": 23,
+    "schema_tests": 78,
+    "maintained_scripts": 49,
+    "all_13_source_ci_runs_pass": true,
+    "editor_ci": 41361289594,
+    "preexisting_program_hashes_retained": 5,
+    "generated_capability_fingerprints_retained": 100,
+    "root_schemas": 32,
+    "local_refs": 230,
+    "reference_errors": 0
+  },
+  "limitations": [
+    "No provider, collector, Test or Variable execution, live scanner parity, full Rule report or VS Code host/UI qualification.",
+    "Full schema family remains NO_GO:15 selector/API contracts undocumented and legacy native Result wire mapping awaits one owner decision.",
+    "Compatible field datatype retained; no global retirement, new source proofs or rebaseline.",
+    "All old schema/source/fixture/archive trees preserved; no65-stream generation, merge, freeze, tag or release.",
+    "Initial47/49 maintained pass and both diagnosed integration regressions retained alongside final49/49 and corrected45-test pass; tests/proof floors unchanged.",
+    "Three preexisting current Board link-anchor findings retained; no new broken current links."
+  ],
+  "payload_files": 366
+}

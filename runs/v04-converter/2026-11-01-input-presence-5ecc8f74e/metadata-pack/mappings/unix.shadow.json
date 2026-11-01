@@ -1,0 +1,115 @@
+{
+  "capability": "unix.shadow",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "shadow": "unix.shadow"
+    },
+    "fields": {
+      "chg_allow": "chg_allow",
+      "chg_lst": "chg_lst",
+      "chg_req": "chg_req",
+      "encrypt_method": "encrypt_method",
+      "exp_date": "exp_date",
+      "exp_inact": "exp_inact",
+      "exp_warn": "exp_warn",
+      "flag": "flag",
+      "password": "password",
+      "username": "username"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "chg_allow": [
+        "string",
+        "integer"
+      ],
+      "chg_lst": [
+        "string",
+        "integer"
+      ],
+      "chg_req": [
+        "string",
+        "integer"
+      ],
+      "encrypt_method": [
+        "string"
+      ],
+      "exp_date": [
+        "string",
+        "integer"
+      ],
+      "exp_inact": [
+        "string",
+        "integer"
+      ],
+      "exp_warn": [
+        "string",
+        "integer"
+      ],
+      "flag": [
+        "string",
+        "integer"
+      ],
+      "password": [
+        "string"
+      ],
+      "username": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "username"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "username": "username"
+    },
+    "state_field_map": {
+      "chg_allow": "chg_allow",
+      "chg_lst": "chg_lst",
+      "chg_req": "chg_req",
+      "encrypt_method": "encrypt_method",
+      "exp_date": "exp_date",
+      "exp_inact": "exp_inact",
+      "exp_warn": "exp_warn",
+      "flag": "flag",
+      "password": "password",
+      "username": "username"
+    },
+    "state_value_enums": {
+      "encrypt_method": [
+        "DES",
+        "BSDi",
+        "MD5",
+        "Blowfish",
+        "Sun MD5",
+        "SHA-256",
+        "SHA-512"
+      ]
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "unix.shadow.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability unix.shadow."
+    },
+    {
+      "id": "unix.shadow.encrypt_method_literal",
+      "rule": "Literal encrypt_method values SHALL use the source OVAL encryption-method vocabulary; the source empty-string enumeration is only a serialization allowance for variable references and is not a native literal value."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+    "item": "shadow_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#unix",
+    "object": "shadow_object",
+    "state": "shadow_state",
+    "test": "shadow_test"
+  },
+  "specification_version": "0.4.0"
+}

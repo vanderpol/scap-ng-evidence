@@ -1,0 +1,466 @@
+{
+  "$id": "https://scap-ng.dev/schema/v0.4.0/assessment.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Pre-alpha 0.4 Assessment single authoring grammar. Import conversion required for 0.3 syntax.",
+  "properties": {
+    "assessment": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "mode": {
+                "const": "manual"
+              }
+            },
+            "required": [
+              "mode"
+            ]
+          },
+          "then": {
+            "$ref": "manual-assessment.schema.json#/properties/assessment"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "mode": {
+                "const": "automated"
+              }
+            },
+            "required": [
+              "mode"
+            ]
+          },
+          "then": {
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "procedure"
+                  ]
+                },
+                {
+                  "required": [
+                    "response"
+                  ]
+                },
+                {
+                  "required": [
+                    "references"
+                  ]
+                },
+                {
+                  "required": [
+                    "evidence_guidance"
+                  ]
+                }
+              ]
+            },
+            "properties": {
+              "specification": {
+                "properties": {
+                  "id": {
+                    "const": "scap-ng.pre-alpha.assessment"
+                  },
+                  "version": {
+                    "const": "0.4.0"
+                  }
+                }
+              },
+              "version": {
+                "minimum": 1,
+                "type": "integer"
+              }
+            },
+            "required": [
+              "specification",
+              "tests",
+              "evaluate"
+            ]
+          }
+        }
+      ],
+      "description": "Automated Assessments contain Test-local typed predicates and Object/Set-operand Filters with no named State registry. Shared Objects retain explicit acquisition identity.",
+      "properties": {
+        "applicability": {
+          "oneOf": [
+            {
+              "$ref": "expression.schema.json"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "assessment_title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "class": {
+          "enum": [
+            "compliance",
+            "vulnerability",
+            "patch",
+            "inventory",
+            "miscellaneous"
+          ],
+          "type": "string"
+        },
+        "dependencies": {
+          "additionalProperties": {
+            "additionalProperties": false,
+            "properties": {
+              "assessment": {
+                "description": "Logical Assessment ID in 0.3 authoring; compiler resolves kind, identity, exact version and scope to a packaged reference. Relative source paths are a legacy converter bridge only.",
+                "minLength": 1,
+                "title": "Assessment",
+                "type": "string"
+              },
+              "expected_id": {
+                "description": "Transitional duplicate target identity for converted source; when present it SHALL match the resolved Assessment ID. Not required for native logical-ID authoring.",
+                "minLength": 1,
+                "type": "string"
+              },
+              "expected_version": {
+                "type": [
+                  "string",
+                  "integer"
+                ]
+              },
+              "purpose": {
+                "description": "Optional explicit invocation context at this dependency reference (#266, Decision 6). Never an intrinsic target property or an implicit assessment default.",
+                "enum": [
+                  "assessment",
+                  "applicability"
+                ]
+              }
+            },
+            "required": [
+              "assessment",
+              "expected_version"
+            ],
+            "type": "object"
+          },
+          "description": "Statically declared dependencies on other Assessments whose final Assessment truth/result may be consumed by this Assessment's evaluate expression. Keys are local aliases.",
+          "propertyNames": {
+            "maxLength": 64,
+            "minLength": 1,
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+            "type": "string"
+          },
+          "type": "object"
+        },
+        "evaluate": {
+          "$ref": "expression.schema.json",
+          "description": "Combines Test outcomes with OVAL-aligned Boolean operators.",
+          "title": "Test result evaluation"
+        },
+        "evidence": {
+          "description": "Publisher-authored evidence requirements/guidance for this Assessment. This is source policy metadata, not collected runtime evidence; observed evidence belongs in Assessment Results or referenced evidence artifacts.",
+          "type": "array"
+        },
+        "evidence_guidance": {},
+        "id": {
+          "maxLength": 64,
+          "minLength": 1,
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "type": "string"
+        },
+        "inputs": {
+          "additionalProperties": {
+            "additionalProperties": false,
+            "properties": {
+              "cardinality": {
+                "description": "Allowed number of supplied values. This is independent from whether the Input must be provided: a provided empty population is distinct from an omitted binding.",
+                "enum": [
+                  "exactly_one",
+                  "zero_or_one",
+                  "one_or_more",
+                  "zero_or_more"
+                ],
+                "type": "string"
+              },
+              "constraints": {
+                "additionalProperties": false,
+                "description": "Explicit constraints on supplied values. They do not supply a missing Input or change its cardinality.",
+                "properties": {
+                  "allowed": {
+                    "description": "Explicit allowed values in the declared domain; no casts or defaults.",
+                    "items": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean",
+                        "object"
+                      ]
+                    },
+                    "type": "array"
+                  }
+                },
+                "type": "object"
+              },
+              "datatype": {
+                "$ref": "capability-common.schema.json#/$defs/native_datatype"
+              },
+              "description": {
+                "description": "Human explanation of the expected input and its policy meaning; not an executable requirement.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "required": {
+                "description": "Whether an invocation must supply this Input. False permits omission, never an invented default or empty population. Optional consumers must be dominated by an explicit input_provided conditional guard.",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "datatype",
+              "cardinality",
+              "required"
+            ],
+            "type": "object"
+          },
+          "description": "Named typed input contracts declared by the Assessment. Policy-layer bindings are supplied by the referring Rule/Assessment selection, not hard-coded here.",
+          "propertyNames": {
+            "maxLength": 64,
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-input$",
+            "type": "string"
+          },
+          "type": "object"
+        },
+        "mode": {
+          "enum": [
+            "manual",
+            "automated"
+          ],
+          "type": "string"
+        },
+        "procedure": {
+          "type": "string"
+        },
+        "references": {},
+        "response": {},
+        "shared_objects": {
+          "additionalProperties": {
+            "allOf": [
+              {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/inline_object"
+              },
+              {
+                "properties": {
+                  "object_title": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "object_title",
+                  "capability"
+                ],
+                "type": "object"
+              }
+            ]
+          },
+          "description": "Assessment-scoped named Objects with meaningful reusable/referenceable acquisition identity. Private Objects are authored inline with their consumer.",
+          "propertyNames": {
+            "maxLength": 64,
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-object$",
+            "type": "string"
+          },
+          "title": "Shared collection Objects",
+          "type": "object"
+        },
+        "specification": {
+          "additionalProperties": false,
+          "description": "Exact automated assessment specification used by this Assessment. The current pre-alpha implementation identifier is provisional pending OVAL Board naming/ratification.",
+          "properties": {
+            "id": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "version": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "version"
+          ],
+          "type": "object"
+        },
+        "tests": {
+          "additionalProperties": {
+            "additionalProperties": false,
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "capability": {
+                      "not": {
+                        "const": "independent.unknown"
+                      }
+                    }
+                  },
+                  "required": [
+                    "capability"
+                  ]
+                },
+                "then": {
+                  "required": [
+                    "reported_elements"
+                  ]
+                }
+              },
+              {
+                "$ref": "assessment-language.schema.json#/$defs/test"
+              }
+            ],
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "result"
+                  ]
+                },
+                {
+                  "required": [
+                    "existence"
+                  ]
+                },
+                {
+                  "required": [
+                    "match"
+                  ]
+                },
+                {
+                  "required": [
+                    "state"
+                  ]
+                },
+                {
+                  "required": [
+                    "states"
+                  ]
+                },
+                {
+                  "required": [
+                    "states_match"
+                  ]
+                },
+                {
+                  "required": [
+                    "state_fields_require"
+                  ]
+                }
+              ]
+            },
+            "properties": {
+              "capability": {
+                "description": "Identifies the native collector and its supported selector and result fields.",
+                "minLength": 1,
+                "title": "Evidence collection capability",
+                "type": "string"
+              },
+              "object": {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/object_use",
+                "description": "Defines the evidence source and selectors; an inline Object inherits its Test capability.",
+                "title": "Collection Object"
+              },
+              "reported_elements": {
+                "$ref": "reported-elements.schema.json",
+                "default": "all",
+                "description": "Required in saved automated Tests. The editor may prefill and hide 'all', but must serialize it explicitly; this is not a scanner default.",
+                "title": "Reported elements",
+                "x-scap-ng-authoring": {
+                  "aggressive_preview": false,
+                  "authority": "https://github.com/vanderpol/scap-ng/issues/269",
+                  "context": "automated_test",
+                  "control_id": "reported_elements",
+                  "group": "reporting",
+                  "hide_when_default": true,
+                  "new_authoring_only": true,
+                  "preserve_overrides": true,
+                  "representation": "value",
+                  "serialize_explicitly": true,
+                  "version": 1
+                }
+              },
+              "require": {
+                "$ref": "assessment-language.schema.json#/$defs/test/properties/require",
+                "description": "Structured collected-Item population and field requirements; no legacy State wrapper or implicit field default.",
+                "title": "Required evidence conditions"
+              },
+              "test_title": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "variable": {
+                "description": "Named Variable used as the native Test source where the capability supports variable.value.",
+                "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-variable$",
+                "type": "string"
+              }
+            },
+            "required": [
+              "test_title",
+              "capability",
+              "require"
+            ],
+            "type": "object"
+          },
+          "description": "Named Tests. A capability defines its Test source shape: commonly an Object, but clean native capabilities MAY consume another first-class source such as a Variable directly.",
+          "propertyNames": {
+            "maxLength": 64,
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-test$",
+            "type": "string"
+          },
+          "title": "Named automated Tests",
+          "type": "object"
+        },
+        "variables": {
+          "additionalProperties": {
+            "$ref": "variable-expression.schema.json"
+          },
+          "description": "Named typed Variables. Decision 29 closes declarations and legacy expression forms; unknown functions/options/arities and incompatible derived datatypes fail validation and direct compilation. No implicit values or canonical function envelope.",
+          "propertyNames": {
+            "maxLength": 64,
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-variable$",
+            "type": "string"
+          },
+          "type": "object"
+        },
+        "version": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "version",
+        "assessment_title",
+        "mode",
+        "class"
+      ],
+      "title": "Assessment",
+      "type": "object"
+    }
+  },
+  "required": [
+    "assessment"
+  ],
+  "title": "SCAP-NG Assessment v0.4.0 draft",
+  "type": "object",
+  "x-last-modified": "2026-11-01",
+  "x-scap-ng-version": "0.4.0"
+}

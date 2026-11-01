@@ -1,0 +1,278 @@
+{
+  "$id": "https://scap-ng.dev/schema/v0.4.0/organizational-input.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "External organization-supplied policy data for Parameters intentionally left unresolved by a Benchmark publisher.",
+  "properties": {
+    "organizational_input": {
+      "additionalProperties": false,
+      "properties": {
+        "benchmark": {
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "version": {
+              "type": [
+                "string",
+                "integer"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "version"
+          ],
+          "type": "object"
+        },
+        "effective_from": {
+          "format": "date-time",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "expires_at": {
+          "format": "date-time",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "intended_scope": {
+          "additionalProperties": false,
+          "description": "Descriptive intended scope only. It does not cause implicit selection or application.",
+          "properties": {
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "organization": {
+              "type": [
+                "string",
+                "object",
+                "null"
+              ]
+            },
+            "organizational_unit": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "system_or_environment": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "provenance": {
+          "additionalProperties": true,
+          "properties": {
+            "authorization_reference": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "authorization_status": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "authorized_at": {
+              "format": "date-time",
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "authorized_by": {
+              "type": [
+                "string",
+                "object",
+                "null"
+              ]
+            },
+            "contact": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "organization": {
+              "type": [
+                "string",
+                "object",
+                "null"
+              ]
+            },
+            "source_system": {
+              "type": [
+                "string",
+                "object",
+                "null"
+              ]
+            },
+            "supplied_at": {
+              "format": "date-time",
+              "type": "string"
+            },
+            "supplied_by": {
+              "description": "Person, service, or authoritative system that supplied the Input Set.",
+              "type": [
+                "string",
+                "object"
+              ]
+            }
+          },
+          "required": [
+            "organization",
+            "supplied_by",
+            "supplied_at",
+            "authorization_status"
+          ],
+          "type": "object"
+        },
+        "purpose": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "value_provenance": {
+          "additionalProperties": {
+            "additionalProperties": true,
+            "properties": {
+              "authority_basis": {
+                "type": [
+                  "string",
+                  "object",
+                  "null"
+                ]
+              },
+              "authorization_reference": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "authorized_at": {
+                "format": "date-time",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "authorized_by": {
+                "type": [
+                  "string",
+                  "object",
+                  "null"
+                ]
+              },
+              "contact": {
+                "type": [
+                  "object",
+                  "null"
+                ]
+              },
+              "effective_from": {
+                "format": "date-time",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "expires_at": {
+                "format": "date-time",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "intended_scope": {
+                "type": [
+                  "object",
+                  "null"
+                ]
+              },
+              "organization": {
+                "type": [
+                  "string",
+                  "object",
+                  "null"
+                ]
+              },
+              "source_system": {
+                "type": [
+                  "string",
+                  "object",
+                  "null"
+                ]
+              },
+              "supplied_at": {
+                "format": "date-time",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "supplied_by": {
+                "type": [
+                  "string",
+                  "object",
+                  "null"
+                ]
+              }
+            },
+            "type": "object"
+          },
+          "description": "Optional per-Parameter provenance when values have different authorities or sources.",
+          "type": "object"
+        },
+        "values": {
+          "additionalProperties": true,
+          "description": "Parameter ID to supplied typed value. Parameter type/cardinality/constraints are authoritative in the Benchmark.",
+          "minProperties": 1,
+          "type": "object"
+        },
+        "version": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "version",
+        "purpose",
+        "benchmark",
+        "values",
+        "provenance"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "organizational_input"
+  ],
+  "title": "SCAP-NG Organizational Input Set v0.4.0 draft",
+  "type": "object",
+  "x-last-modified": "2026-10-06",
+  "x-scap-ng-version": "0.4.0"
+}

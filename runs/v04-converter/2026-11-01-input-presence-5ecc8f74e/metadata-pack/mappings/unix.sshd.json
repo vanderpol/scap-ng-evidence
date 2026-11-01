@@ -1,0 +1,70 @@
+{
+  "capability": "unix.sshd",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "sshd": "unix.sshd"
+    },
+    "object": {
+      "filepath": "object.filepath",
+      "name": "object.name"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "filepath": [
+        "string"
+      ],
+      "name": [
+        "string"
+      ],
+      "value": [
+        "string",
+        "boolean",
+        "integer",
+        "float",
+        "binary",
+        "version",
+        "ipv4",
+        "ipv6",
+        "rpm_evr",
+        "debian_evr",
+        "fileset_revision",
+        "ios_version"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "filepath",
+        "name"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "filepath": "filepath",
+      "name": "name"
+    },
+    "state_field_map": {
+      "filepath": "filepath",
+      "name": "name",
+      "value": "value"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "unix.sshd.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability unix.sshd."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+    "item": "sshd_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#unix",
+    "object": "sshd_object",
+    "state": "sshd_state",
+    "test": "sshd_test"
+  },
+  "specification_version": "0.4.0"
+}

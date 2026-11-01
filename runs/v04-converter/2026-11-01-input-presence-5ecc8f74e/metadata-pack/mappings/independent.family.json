@@ -1,0 +1,66 @@
+{
+  "capability": "independent.family",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "family": "independent.family"
+    },
+    "object": {
+      "family_object": "omitted_native_singleton_system_source"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "family": [
+        "string"
+      ]
+    },
+    "post_alignment_ready": true,
+    "state_field_map": {
+      "family": "family"
+    },
+    "state_value_enums": {
+      "family": [
+        "android",
+        "apple_ios",
+        "asa",
+        "aws",
+        "catos",
+        "ios",
+        "iosxe",
+        "junos",
+        "macos",
+        "panos",
+        "pixos",
+        "undefined",
+        "unix",
+        "vmware_infrastructure",
+        "windows"
+      ]
+    },
+    "test_source": {
+      "kind": "none"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "independent.family.singleton_source",
+      "rule": "The capability evaluates the current system family directly; native content SHALL NOT introduce a meaningless singleton Object."
+    },
+    {
+      "id": "independent.family.literal_vocabulary",
+      "rule": "Literal family values SHALL use the source OVAL family vocabulary; the source empty string is only a variable-reference serialization allowance and is not a native literal."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+    "item": "family_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#independent",
+    "object": "family_object",
+    "state": "family_state",
+    "test": "family_test"
+  },
+  "specification_version": "0.4.0"
+}

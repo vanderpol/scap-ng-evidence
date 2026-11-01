@@ -1,0 +1,50 @@
+{
+  "capability": "macos.filevault",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "filevault": "macos.filevault"
+    },
+    "object": {
+      "filevault_object": "omitted_native_singleton_system_source"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "status": [
+        "string"
+      ]
+    },
+    "post_alignment_ready": true,
+    "state_field_map": {
+      "status": "status"
+    },
+    "state_value_enums": {
+      "status": [
+        "enabled",
+        "disabled",
+        "encrypting"
+      ]
+    },
+    "test_source": {
+      "kind": "none"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "macos.filevault.singleton_source",
+      "rule": "The capability evaluates current system FileVault status directly; native content omits the empty legacy Object."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+    "item": "filevault_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#macos",
+    "object": "filevault_object",
+    "state": "filevault_state",
+    "test": "filevault_test"
+  },
+  "specification_version": "0.4.0"
+}

@@ -1,0 +1,20 @@
+.E....
+======================================================================
+ERROR: test_canonical_and_or_xor_match_original_oval_six_state_algebra (__main__.CanonicalResultPlanTests.test_canonical_and_or_xor_match_original_oval_six_state_algebra)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scap-ng-owner-contract-268/tools/test_v04_canonical_result_plan.py", line 39, in test_canonical_and_or_xor_match_original_oval_six_state_algebra
+    compile_canonical_result_plan(authored(paired(legacy)))
+  File "/workspace/scap-ng-owner-contract-268/tools/v04_canonical_result_plan.py", line 138, in compile_canonical_result_plan
+    provision = presence_contract(assessment)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scap-ng-owner-contract-268/tools/v04_input_presence.py", line 138, in presence_contract
+    walk(assessment[field], set(), [field], applicability=field == 'applicability')
+  File "/workspace/scap-ng-owner-contract-268/tools/v04_input_presence.py", line 134, in walk
+    raise ValueError('unsupported result operator: ' + op)
+ValueError: unsupported result operator: all
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.008s
+
+FAILED (errors=1)

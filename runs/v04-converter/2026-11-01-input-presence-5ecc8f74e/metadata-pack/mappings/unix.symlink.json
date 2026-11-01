@@ -1,0 +1,56 @@
+{
+  "capability": "unix.symlink",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "symlink": "unix.symlink"
+    },
+    "fields": {
+      "canonical_path": "canonical_path",
+      "filepath": "full_path"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "canonical_path": [
+        "string"
+      ],
+      "full_path": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "full_path"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "filepath": "full_path"
+    },
+    "state_field_map": {
+      "canonical_path": "canonical_path",
+      "filepath": "full_path"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "unix.symlink.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability unix.symlink."
+    },
+    {
+      "id": "unix.symlink.canonical_resolution",
+      "rule": "Collection resolves the symbolic-link target to its final canonical destination; missing targets and circular links retain error/nonexistence semantics rather than being silently normalized."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#unix",
+    "object": "symlink_object",
+    "state": "symlink_state",
+    "test": "symlink_test"
+  },
+  "specification_version": "0.4.0"
+}

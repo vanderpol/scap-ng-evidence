@@ -1,0 +1,64 @@
+E......E..........
+======================================================================
+ERROR: test_apache_regex_capture_merge_unique_and_discovery_order_mutants_rejected (__main__.ExpandedSourceProofTests.test_apache_regex_capture_merge_unique_and_discovery_order_mutants_rejected) (change='missing')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scap-ng-owner-contract-268/tools/test_v04_expanded_source_proof.py", line 241, in test_apache_regex_capture_merge_unique_and_discovery_order_mutants_rejected
+    consistently_rehash_program(f)
+  File "/workspace/scap-ng-owner-contract-268/tools/test_v04_source_package_semantics.py", line 38, in consistently_rehash_program
+    verify_program(a, p)
+  File "/workspace/scap-ng-owner-contract-268/tools/audit_v04_eight_assessment_pilot.py", line 139, in verify_program
+    plan, required = expression_plan(a)
+                     ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scap-ng-owner-contract-268/tools/verify_v04_package_consumer.py", line 169, in expression_plan
+    provision = input_plan_metadata(a)
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scap-ng-owner-contract-268/tools/verify_v04_package_consumer.py", line 136, in input_plan_metadata
+    for name in table: needs(kind, name)
+                       ^^^^^^^^^^^^^^^^^
+  File "/workspace/scap-ng-owner-contract-268/tools/verify_v04_package_consumer.py", line 129, in needs
+    if isinstance(value.get(field), str): result |= needs(field, value[field])
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scap-ng-owner-contract-268/tools/verify_v04_package_consumer.py", line 129, in needs
+    if isinstance(value.get(field), str): result |= needs(field, value[field])
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scap-ng-owner-contract-268/tools/verify_v04_package_consumer.py", line 129, in needs
+    if isinstance(value.get(field), str): result |= needs(field, value[field])
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 1 more time]
+  File "/workspace/scap-ng-owner-contract-268/tools/verify_v04_package_consumer.py", line 115, in needs
+    require(name in tables[kind], 'unresolved consumer/data reference')
+  File "/workspace/scap-ng-owner-contract-268/tools/verify_v04_package_consumer.py", line 37, in require
+    raise ValueError(message)
+ValueError: unresolved consumer/data reference
+
+======================================================================
+ERROR: test_missing_collection_dependency_cannot_be_hidden_by_foreach (__main__.ExpandedSourceProofTests.test_missing_collection_dependency_cannot_be_hidden_by_foreach)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scap-ng-owner-contract-268/tools/test_v04_expanded_source_proof.py", line 284, in test_missing_collection_dependency_cannot_be_hidden_by_foreach
+    consistently_rehash_program(f)
+  File "/workspace/scap-ng-owner-contract-268/tools/test_v04_source_package_semantics.py", line 38, in consistently_rehash_program
+    verify_program(a, p)
+  File "/workspace/scap-ng-owner-contract-268/tools/audit_v04_eight_assessment_pilot.py", line 139, in verify_program
+    plan, required = expression_plan(a)
+                     ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scap-ng-owner-contract-268/tools/verify_v04_package_consumer.py", line 169, in expression_plan
+    provision = input_plan_metadata(a)
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scap-ng-owner-contract-268/tools/verify_v04_package_consumer.py", line 136, in input_plan_metadata
+    for name in table: needs(kind, name)
+                       ^^^^^^^^^^^^^^^^^
+  File "/workspace/scap-ng-owner-contract-268/tools/verify_v04_package_consumer.py", line 130, in needs
+    if isinstance(value.get('for_each'), dict): result |= needs('object', value['for_each']['in'])
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scap-ng-owner-contract-268/tools/verify_v04_package_consumer.py", line 115, in needs
+    require(name in tables[kind], 'unresolved consumer/data reference')
+  File "/workspace/scap-ng-owner-contract-268/tools/verify_v04_package_consumer.py", line 37, in require
+    raise ValueError(message)
+ValueError: unresolved consumer/data reference
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.617s
+
+FAILED (errors=2)

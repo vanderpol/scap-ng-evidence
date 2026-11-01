@@ -1,0 +1,70 @@
+{
+  "capability": "macos.systemprofiler",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "systemprofiler": "macos.systemprofiler"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "data_type": [
+        "string"
+      ],
+      "value_of": [
+        "string",
+        "boolean",
+        "integer",
+        "float",
+        "binary",
+        "version",
+        "ipv4",
+        "ipv6",
+        "rpm_evr",
+        "debian_evr",
+        "fileset_revision",
+        "ios_version"
+      ],
+      "xpath": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "data_type",
+        "xpath"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "data_type": "data_type",
+      "xpath": "xpath"
+    },
+    "state_field_map": {
+      "data_type": "data_type",
+      "value_of": "value_of",
+      "xpath": "xpath"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "macos.systemprofiler.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability macos.systemprofiler."
+    },
+    {
+      "id": "macos.systemprofiler.xpath_equal",
+      "rule": "The xpath Object selector uses equality semantics and represents the system_profiler result field selection."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+    "item": "systemprofiler_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#macos",
+    "object": "systemprofiler_object",
+    "state": "systemprofiler_state",
+    "test": "systemprofiler_test"
+  },
+  "specification_version": "0.4.0"
+}

@@ -1,0 +1,446 @@
+[
+  {
+    "case": "omitted",
+    "scanner_executed": false,
+    "provider_executed": false,
+    "bindings": {
+      "bindings": {
+        "slideshow-value-input": {
+          "source": "explicit supplied-evidence harness",
+          "state": "omitted"
+        }
+      },
+      "contracts": {
+        "slideshow-value-input": {
+          "cardinality": "exactly_one",
+          "datatype": "integer",
+          "description": "Explicitly supplied expected registry value for this distinct demonstration policy.",
+          "required": false
+        }
+      },
+      "invocation_id": "supplied-example-omitted",
+      "version": 1
+    },
+    "harness_result": {
+      "stage": "CANONICAL_040_SUPPLIED_BINDINGS_AND_RESULTS_NOT_SCANNER/1",
+      "assessment_id": "windows-lock-screen-organizational-demo-assessment",
+      "expression_field": "evaluate",
+      "outcome": "not_evaluated",
+      "trace": [
+        {
+          "path": [
+            "evaluate",
+            "if"
+          ],
+          "operation": "read_input_presence",
+          "outcome": "false",
+          "input": "slideshow-value-input",
+          "source": "explicit supplied-evidence harness"
+        },
+        {
+          "path": [
+            "evaluate",
+            "else"
+          ],
+          "operation": "not_evaluated",
+          "outcome": "not_evaluated"
+        },
+        {
+          "path": [
+            "evaluate"
+          ],
+          "operation": "select_first_true",
+          "outcome": "not_evaluated",
+          "condition_outcome": "false",
+          "condition_path": [
+            "evaluate",
+            "if"
+          ],
+          "branch_index": 0,
+          "selected_branch": "else"
+        }
+      ],
+      "explicit_terminal_outcomes": [
+        {
+          "outcome": "not_evaluated",
+          "reason": "Organization has not supplied the expected slideshow policy value",
+          "path": [
+            "evaluate",
+            "else"
+          ],
+          "follow_up": "Obtain an authorized organizational value or perform manual review"
+        }
+      ],
+      "manual_follow_up_required": true,
+      "tests_supplied": 1,
+      "dependencies_supplied": 0,
+      "scanner_executed": false,
+      "tests_evaluated": false,
+      "outcomes_provided_by_caller": true,
+      "binding_set_id": "47a756e40c4dd5f9010955ce1693fdede37bff162b063c36a943c9ee50c0a831"
+    },
+    "schema_shaped_expression_trace": {
+      "assessment": "windows-lock-screen-organizational-demo-assessment",
+      "invocation_ref": "supplied-example-omitted",
+      "outcome": "not_evaluated",
+      "binding_set_id": "47a756e40c4dd5f9010955ce1693fdede37bff162b063c36a943c9ee50c0a831",
+      "input_presence_version": 1,
+      "executed_tests": [],
+      "trace": [
+        {
+          "path": "/evaluate/if",
+          "outcome": "false",
+          "owner_invocation_ref": "supplied-example-omitted",
+          "kind": "input_presence",
+          "input": "slideshow-value-input",
+          "binding_set_id": "47a756e40c4dd5f9010955ce1693fdede37bff162b063c36a943c9ee50c0a831",
+          "source": "explicit supplied-evidence harness"
+        },
+        {
+          "path": "/evaluate/else",
+          "outcome": "not_evaluated",
+          "owner_invocation_ref": "supplied-example-omitted",
+          "kind": "expression",
+          "reason": "Organization has not supplied the expected slideshow policy value",
+          "follow_up": "Obtain an authorized organizational value or perform manual review"
+        },
+        {
+          "path": "/evaluate",
+          "outcome": "not_evaluated",
+          "owner_invocation_ref": "supplied-example-omitted",
+          "kind": "conditional",
+          "condition_outcome": "false",
+          "selected_branch": "else",
+          "branch_index": 0,
+          "condition_path": "/evaluate/if"
+        }
+      ],
+      "diagnostics": []
+    },
+    "trace_schema": "PASS",
+    "selected_reads": []
+  },
+  {
+    "case": "provided-known-failure",
+    "scanner_executed": false,
+    "provider_executed": false,
+    "bindings": {
+      "bindings": {
+        "slideshow-value-input": {
+          "source": "explicit supplied-evidence harness",
+          "state": "provided",
+          "values": [
+            1
+          ]
+        }
+      },
+      "contracts": {
+        "slideshow-value-input": {
+          "cardinality": "exactly_one",
+          "datatype": "integer",
+          "description": "Explicitly supplied expected registry value for this distinct demonstration policy.",
+          "required": false
+        }
+      },
+      "invocation_id": "supplied-example-provided-known-failure",
+      "version": 1
+    },
+    "harness_result": {
+      "stage": "CANONICAL_040_SUPPLIED_BINDINGS_AND_RESULTS_NOT_SCANNER/1",
+      "assessment_id": "windows-lock-screen-organizational-demo-assessment",
+      "expression_field": "evaluate",
+      "outcome": "false",
+      "trace": [
+        {
+          "path": [
+            "evaluate",
+            "if"
+          ],
+          "operation": "read_input_presence",
+          "outcome": "true",
+          "input": "slideshow-value-input",
+          "source": "explicit supplied-evidence harness"
+        },
+        {
+          "path": [
+            "evaluate",
+            "then"
+          ],
+          "operation": "read_test",
+          "outcome": "false",
+          "id": "verifies-prevent-enabling-screen-slide-show-is-set-enabled-test"
+        },
+        {
+          "path": [
+            "evaluate"
+          ],
+          "operation": "select_first_true",
+          "outcome": "false",
+          "condition_outcome": "true",
+          "condition_path": [
+            "evaluate",
+            "if"
+          ],
+          "branch_index": 0,
+          "selected_branch": "then"
+        }
+      ],
+      "explicit_terminal_outcomes": [],
+      "manual_follow_up_required": false,
+      "tests_supplied": 1,
+      "dependencies_supplied": 0,
+      "scanner_executed": false,
+      "tests_evaluated": false,
+      "outcomes_provided_by_caller": true,
+      "binding_set_id": "f3f60e08dfb497a76d978aafc98c455edf43f6f2b7089771726348fc921a0516"
+    },
+    "schema_shaped_expression_trace": {
+      "assessment": "windows-lock-screen-organizational-demo-assessment",
+      "invocation_ref": "supplied-example-provided-known-failure",
+      "outcome": "false",
+      "binding_set_id": "f3f60e08dfb497a76d978aafc98c455edf43f6f2b7089771726348fc921a0516",
+      "input_presence_version": 1,
+      "executed_tests": [
+        "verifies-prevent-enabling-screen-slide-show-is-set-enabled-test"
+      ],
+      "trace": [
+        {
+          "path": "/evaluate/if",
+          "outcome": "true",
+          "owner_invocation_ref": "supplied-example-provided-known-failure",
+          "kind": "input_presence",
+          "input": "slideshow-value-input",
+          "binding_set_id": "f3f60e08dfb497a76d978aafc98c455edf43f6f2b7089771726348fc921a0516",
+          "source": "explicit supplied-evidence harness"
+        },
+        {
+          "path": "/evaluate/then",
+          "outcome": "false",
+          "owner_invocation_ref": "supplied-example-provided-known-failure",
+          "kind": "test",
+          "test": "verifies-prevent-enabling-screen-slide-show-is-set-enabled-test",
+          "assessment": "windows-lock-screen-organizational-demo-assessment",
+          "reused": false
+        },
+        {
+          "path": "/evaluate",
+          "outcome": "false",
+          "owner_invocation_ref": "supplied-example-provided-known-failure",
+          "kind": "conditional",
+          "condition_outcome": "true",
+          "selected_branch": "then",
+          "branch_index": 0,
+          "condition_path": "/evaluate/if"
+        }
+      ],
+      "diagnostics": []
+    },
+    "trace_schema": "PASS",
+    "selected_reads": [
+      {
+        "kind": "test",
+        "id": "verifies-prevent-enabling-screen-slide-show-is-set-enabled-test"
+      }
+    ]
+  },
+  {
+    "case": "invalid-empty",
+    "scanner_executed": false,
+    "provider_executed": false,
+    "bindings": {
+      "bindings": {
+        "slideshow-value-input": {
+          "reason": "provided Input violates cardinality",
+          "source": "explicit supplied-evidence harness",
+          "state": "error",
+          "values": []
+        }
+      },
+      "contracts": {
+        "slideshow-value-input": {
+          "cardinality": "exactly_one",
+          "datatype": "integer",
+          "description": "Explicitly supplied expected registry value for this distinct demonstration policy.",
+          "required": false
+        }
+      },
+      "invocation_id": "supplied-example-invalid-empty",
+      "version": 1
+    },
+    "harness_result": {
+      "stage": "CANONICAL_040_SUPPLIED_BINDINGS_AND_RESULTS_NOT_SCANNER/1",
+      "outcome": "error",
+      "assessment_id": "windows-lock-screen-organizational-demo-assessment",
+      "expression_field": "evaluate",
+      "binding_set_id": "609f14338a43ab86f071c57fa1ab690f980e8590d4c57fad80207dd3ddb96fc0",
+      "trace": [
+        {
+          "path": [
+            "inputs",
+            "slideshow-value-input"
+          ],
+          "operation": "input_binding_error",
+          "input": "slideshow-value-input",
+          "outcome": "error",
+          "reason": "provided Input violates cardinality",
+          "source": "explicit supplied-evidence harness"
+        }
+      ],
+      "explicit_terminal_outcomes": [],
+      "tests_supplied": 1,
+      "dependencies_supplied": 0,
+      "manual_follow_up_required": false,
+      "scanner_executed": false,
+      "tests_evaluated": false,
+      "outcomes_provided_by_caller": true
+    },
+    "schema_shaped_expression_trace": {
+      "assessment": "windows-lock-screen-organizational-demo-assessment",
+      "invocation_ref": "supplied-example-invalid-empty",
+      "outcome": "error",
+      "binding_set_id": "609f14338a43ab86f071c57fa1ab690f980e8590d4c57fad80207dd3ddb96fc0",
+      "input_presence_version": 1,
+      "executed_tests": [],
+      "trace": [
+        {
+          "path": "/inputs/slideshow-value-input",
+          "outcome": "error",
+          "owner_invocation_ref": "supplied-example-invalid-empty",
+          "kind": "input_presence",
+          "input": "slideshow-value-input",
+          "binding_set_id": "609f14338a43ab86f071c57fa1ab690f980e8590d4c57fad80207dd3ddb96fc0",
+          "source": "explicit supplied-evidence harness",
+          "reason": "provided Input violates cardinality"
+        }
+      ],
+      "diagnostics": []
+    },
+    "trace_schema": "PASS",
+    "selected_reads": []
+  },
+  {
+    "case": "unknown",
+    "scanner_executed": false,
+    "provider_executed": false,
+    "bindings": {
+      "bindings": {
+        "slideshow-value-input": {
+          "reason": "Provider has no authoritative provision answer",
+          "source": "explicit supplied-evidence harness",
+          "state": "unknown"
+        }
+      },
+      "contracts": {
+        "slideshow-value-input": {
+          "cardinality": "exactly_one",
+          "datatype": "integer",
+          "description": "Explicitly supplied expected registry value for this distinct demonstration policy.",
+          "required": false
+        }
+      },
+      "invocation_id": "supplied-example-unknown",
+      "version": 1
+    },
+    "harness_result": {
+      "stage": "CANONICAL_040_SUPPLIED_BINDINGS_AND_RESULTS_NOT_SCANNER/1",
+      "assessment_id": "windows-lock-screen-organizational-demo-assessment",
+      "expression_field": "evaluate",
+      "outcome": "unknown",
+      "trace": [
+        {
+          "path": [
+            "evaluate",
+            "if"
+          ],
+          "operation": "read_input_presence",
+          "outcome": "unknown",
+          "input": "slideshow-value-input",
+          "source": "explicit supplied-evidence harness",
+          "reason": "Provider has no authoritative provision answer"
+        },
+        {
+          "path": [
+            "evaluate"
+          ],
+          "operation": "select_first_true",
+          "outcome": "unknown",
+          "condition_outcome": "unknown",
+          "condition_path": [
+            "evaluate",
+            "if"
+          ],
+          "branch_index": 0,
+          "selected_branch": null
+        }
+      ],
+      "explicit_terminal_outcomes": [],
+      "manual_follow_up_required": false,
+      "tests_supplied": 1,
+      "dependencies_supplied": 0,
+      "scanner_executed": false,
+      "tests_evaluated": false,
+      "outcomes_provided_by_caller": true,
+      "binding_set_id": "9664726a4acd8614673b4e61f01ec65c8f76ea407ca640dc811a99ab5aa7fbe9"
+    },
+    "schema_shaped_expression_trace": {
+      "assessment": "windows-lock-screen-organizational-demo-assessment",
+      "invocation_ref": "supplied-example-unknown",
+      "outcome": "unknown",
+      "binding_set_id": "9664726a4acd8614673b4e61f01ec65c8f76ea407ca640dc811a99ab5aa7fbe9",
+      "input_presence_version": 1,
+      "executed_tests": [],
+      "trace": [
+        {
+          "path": "/evaluate/if",
+          "outcome": "unknown",
+          "owner_invocation_ref": "supplied-example-unknown",
+          "kind": "input_presence",
+          "input": "slideshow-value-input",
+          "binding_set_id": "9664726a4acd8614673b4e61f01ec65c8f76ea407ca640dc811a99ab5aa7fbe9",
+          "source": "explicit supplied-evidence harness",
+          "reason": "Provider has no authoritative provision answer"
+        },
+        {
+          "path": "/evaluate",
+          "outcome": "unknown",
+          "owner_invocation_ref": "supplied-example-unknown",
+          "kind": "conditional",
+          "condition_outcome": "unknown",
+          "selected_branch": null,
+          "branch_index": 0,
+          "condition_path": "/evaluate/if"
+        }
+      ],
+      "diagnostics": []
+    },
+    "trace_schema": "PASS",
+    "selected_reads": []
+  },
+  {
+    "case": "pending",
+    "scanner_executed": false,
+    "provider_executed": false,
+    "bindings": {
+      "bindings": {
+        "slideshow-value-input": {
+          "reason": "Provision resolution not finished",
+          "source": "explicit supplied-evidence harness",
+          "state": "pending"
+        }
+      },
+      "contracts": {
+        "slideshow-value-input": {
+          "cardinality": "exactly_one",
+          "datatype": "integer",
+          "description": "Explicitly supplied expected registry value for this distinct demonstration policy.",
+          "required": false
+        }
+      },
+      "invocation_id": "supplied-example-pending",
+      "version": 1
+    },
+    "final_outcome_emitted": false,
+    "pending_reason": "Provision resolution not finished",
+    "selected_reads": []
+  }
+]

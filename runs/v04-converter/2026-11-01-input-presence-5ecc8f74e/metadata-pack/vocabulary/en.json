@@ -1,0 +1,230 @@
+{
+  "capabilities": {
+    "independent.textfilecontent": {
+      "description": "Text collection and pattern/instance selection; do not assume complete-file or rendered-login-banner equivalence.",
+      "label": "Read and match text from a file"
+    },
+    "unix.file": {
+      "label": "Inspect Unix file properties"
+    },
+    "unix.symlink": {
+      "label": "Inspect Unix symbolic link target"
+    },
+    "windows.registry": {
+      "label": "Read Windows Registry settings",
+      "selectors": {
+        "hive": {
+          "allowed_values_source": "native.selector_value_enums.hive",
+          "label": "Registry hive"
+        },
+        "key": {
+          "label": "Registry key",
+          "prompt": "Which Registry key?"
+        },
+        "name": {
+          "label": "Value name",
+          "prompt": "Which named value (or supported default value)?"
+        }
+      },
+      "state_fields": {
+        "type": {
+          "allowed_values_source": "native.state_value_enums.type",
+          "description": "The Registry value TYPE, such as dword, string or multi_string. This is distinct from the comparison datatype of the data stored in value.",
+          "label": "Registry storage type",
+          "prompt": "Which kind of Registry data must this entry contain?"
+        },
+        "value": {
+          "datatype_choices_source": "native.field_datatypes.value",
+          "description": "Comparison datatype must be selected explicitly when ambiguous, and must be compatible with the asserted Registry type. The mapping's semantic validator governs cross-type compatibility.",
+          "label": "Stored Registry value",
+          "prompt": "What should the data contain?"
+        }
+      }
+    }
+  },
+  "conformance_rules": [
+    "Never synthesize native enumeration values from displayed labels.",
+    "Resolve *_source pointers only within the same pinned capability mapping.",
+    "If a referenced enum is missing or mismatched, disable the affected control rather than supplying a guessed list.",
+    "Display text is advisory; the normative schema and semantic contract win any disagreement.",
+    "Editors and scanners SHALL resolve displayed operation titles from the same version-pinned vocabulary catalog; titles never replace machine-readable operation identifiers.",
+    "Descriptions explain author intent, not authoritative six-state scanner outcomes; native evaluation semantics and versioned schema remain controlling."
+  ],
+  "description": "Version-local human-facing labels and concise operation/field explanations shared by editors and scanner reports. UI explanations do not alter grammar, datatypes or result semantics; source- and version-pinned native schema is authoritative.",
+  "format": "scap-ng-authoring-vocabulary/0.1",
+  "language": "en",
+  "normative": false,
+  "operations": {
+    "and": {
+      "description": "All nested conditions in this Boolean group must hold under native multi-state result semantics.",
+      "label": "All conditions must match"
+    },
+    "case_insensitive_equals": {
+      "description": "Perform a case-insensitive string equality comparison.",
+      "label": "Equals, ignoring case"
+    },
+    "equals": {
+      "description": "Compare the collected field value with the expected value, according to its native datatype.",
+      "label": "Equals"
+    },
+    "greater_than": {
+      "description": "Compare values using the operation's supported datatype and ordering.",
+      "label": "Greater than"
+    },
+    "greater_than_or_equal": {
+      "description": "Compare values using the operation's supported datatype and ordering.",
+      "label": "Greater than or equal to"
+    },
+    "less_than": {
+      "description": "Compare values using the operation's supported datatype and ordering.",
+      "label": "Less than"
+    },
+    "less_than_or_equal": {
+      "description": "Compare values using the operation's supported datatype and ordering.",
+      "label": "Less than or equal to"
+    },
+    "matches_regex": {
+      "description": "Use regular-expression pattern matching; not literal substring matching.",
+      "label": "Matches regular expression"
+    },
+    "not_equal": {
+      "description": "Compare for inequality using the field's native comparison datatype.",
+      "label": "Does not equal"
+    },
+    "or": {
+      "description": "At least one nested condition in this Boolean group must hold under native multi-state result semantics.",
+      "label": "At least one condition must match"
+    }
+  },
+  "platform_labels": {
+    "aix": "AIX",
+    "linux": "Linux",
+    "macos": "macOS",
+    "other": "Other / unsupported in this preview",
+    "solaris": "Solaris",
+    "windows": "Windows"
+  },
+  "schema_version": "0.4.0",
+  "status": "0.4.0-cardinality-schema-review-draft",
+  "term_scopes": {
+    "assessment.assessment_title": {
+      "description": "Human-authored summary, not an executable condition.",
+      "label": "Security requirement",
+      "prompt": "What security requirement should be checked?"
+    },
+    "assessment.evaluate": {
+      "description": "Combines independent named Test outcomes; not a collection or State-field condition.",
+      "label": "How the checks combine",
+      "prompt": "Which checks must pass together?"
+    },
+    "assessment.evaluate.and": {
+      "description": "Logical AND over Test/Assessment expressions. Do not infer behavior of absent evidence from this operator alone.",
+      "label": "All checks must pass"
+    },
+    "assessment.evaluate.one": {
+      "description": "Logical ONE over Test/Assessment expressions, independent of Item cardinality.",
+      "label": "Exactly one check must pass"
+    },
+    "assessment.evaluate.or": {
+      "description": "Logical OR over Test/Assessment expressions. This does not imply any particular Item-existence requirement.",
+      "label": "At least one check must pass"
+    },
+    "assessment.evaluate.xor": {
+      "description": "Logical XOR (odd parity) over Test/Assessment expressions; not exactly-one for three or more operands.",
+      "label": "An odd number of checks must pass"
+    },
+    "authoring.target_platform": {
+      "description": "Authoring context for choosing available capabilities. This editor-facing selection does not change native Assessment evaluation semantics or assert a CPE/applicability test.",
+      "label": "Target platform",
+      "prompt": "Which operating system will this Assessment check?"
+    },
+    "expression.for_each": {
+      "description": "Correlation and source scoping must be preserved; the authoring UI must not turn per-parent requirements into a global union.",
+      "label": "Repeat for each collected item"
+    },
+    "field.equals": {
+      "description": "Exact comparison as defined by the authored field's datatype.",
+      "label": "Must equal"
+    },
+    "field.matches_regex": {
+      "description": "Regular-expression comparison, not a literal-text comparison; a Guided literal-text field may escape the pattern for the author.",
+      "label": "Must match pattern"
+    },
+    "field.type": {
+      "description": "Interpretation is capability-specific; for Windows Registry this is the stored Registry type, not necessarily the comparison datatype.",
+      "label": "Collected value type"
+    },
+    "field.values_found": {
+      "description": "Existence requirement for matching field entities inside one Item, independent of comparison results.",
+      "label": "Values found"
+    },
+    "field.values_matching": {
+      "description": "How many existing field values must pass their comparison.",
+      "label": "Values matching"
+    },
+    "object.capability_inheritance": {
+      "description": "An inline Object inherits its enclosing Test capability. A shared or independently addressable Object declares its capability explicitly.",
+      "label": "Collection capability"
+    },
+    "object.object_title": {
+      "description": "Preserve meaningful titles. Omit null object_title on private inline/local Objects, including nested private Set operands. Named/shared Object metadata contracts remain unchanged.",
+      "label": "Data source title"
+    },
+    "object.shared_reference": {
+      "description": "Referenced shared Object must resolve in this Assessment's authoring context.",
+      "label": "Use an existing data source"
+    },
+    "record.records_found": {
+      "description": "Existence requirement for records inside a collected Item.",
+      "label": "Records found"
+    },
+    "record.records_matching": {
+      "description": "How many records must satisfy their nested field conditions.",
+      "label": "Records matching"
+    },
+    "test.capability": {
+      "label": "How to inspect",
+      "prompt": "Which capability will collect the evidence?"
+    },
+    "test.object": {
+      "description": "An Object specifies what evidence to collect, not the expected outcome. Inline Objects inherit the enclosing Test capability; independently shared Objects declare it.",
+      "label": "Data source"
+    },
+    "test.require": {
+      "description": "Contains distinct collected-Item existence and satisfaction counts, plus complete expected field/record conditions. Empty, incomplete, unknown, and error outcomes remain separate.",
+      "label": "What evidence is required?"
+    },
+    "test.require.and": {
+      "description": "Logical AND of the expected field/record conditions on the same collected Item; field-level cardinality is independent.",
+      "label": "All conditions must match"
+    },
+    "test.require.field_requirement": {
+      "description": "Explicit values_found and values_matching pair inherited by nested fields until a nearer complete pair overrides it.",
+      "label": "Shared field requirements"
+    },
+    "test.require.fields": {
+      "description": "Conditions for one collected Item; distinct expected fields are combined with logical AND.",
+      "label": "Expected fields"
+    },
+    "test.require.items_found": {
+      "description": "How many selected Items must exist. OVAL Test all_exist and at_least_one_exists both map to one_or_more; original source spelling is retained in provenance.",
+      "label": "Items found"
+    },
+    "test.require.items_found.one_or_more": {
+      "description": "The collection must contain one or more selected Items. An empty collection does not satisfy this requirement.",
+      "label": "At least one Item must exist"
+    },
+    "test.require.items_found.zero_or_more": {
+      "description": "No minimum number of selected Items is required; matching and incomplete/error status remain independently significant.",
+      "label": "Items may be absent"
+    },
+    "test.require.items_satisfying": {
+      "description": "How many selected Items must satisfy the complete condition; independent of items_found.",
+      "label": "Items satisfying"
+    },
+    "test.require.or": {
+      "description": "Logical OR over expected State alternatives on the same collected Item. It does not mean that at least one collected Item must exist.",
+      "label": "At least one condition must match"
+    }
+  }
+}

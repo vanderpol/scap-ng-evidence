@@ -1,0 +1,64 @@
+{
+  "capability": "macos.installhistory",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "installhistory": "macos.installhistory"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "install_date": [
+        "integer"
+      ],
+      "install_version": [
+        "version"
+      ],
+      "name": [
+        "string"
+      ],
+      "package_source": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "name"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "name": "name"
+    },
+    "state_field_map": {
+      "install_date": "install_date",
+      "install_version": "install_version",
+      "name": "name",
+      "package_source": "package_source"
+    },
+    "state_value_enums": {
+      "package_source": [
+        "Apple",
+        "AppStore",
+        "ThirdParty"
+      ]
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "macos.installhistory.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability macos.installhistory."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+    "item": "installhistory_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#macos",
+    "object": "installhistory_object",
+    "state": "installhistory_state",
+    "test": "installhistory_test"
+  },
+  "specification_version": "0.4.0"
+}

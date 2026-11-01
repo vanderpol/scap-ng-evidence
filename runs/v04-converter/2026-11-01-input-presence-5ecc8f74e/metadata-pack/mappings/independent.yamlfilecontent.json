@@ -1,0 +1,130 @@
+{
+  "capability": "independent.yamlfilecontent",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "yamlfilecontent": "independent.yamlfilecontent"
+    },
+    "object": {
+      "content": "object.content",
+      "filename": "object.name",
+      "filepath": "object.full_path",
+      "path": "object.directory",
+      "yamlpath": "object.yamlpath"
+    },
+    "removed_source_fields": {
+      "windows_view": "deprecated_not_native"
+    },
+    "structural_simplifications": {
+      "lowercase and ^ record field escaping": "not native; YAML key identity is preserved directly",
+      "record datatype=record": "implicit in record_predicate / typed record evidence",
+      "record field uniqueness": "structural map-key uniqueness"
+    },
+    "traversal": {
+      "max_depth_-1": "max_depth_unlimited",
+      "recurse.directories": "directories",
+      "recurse.symlinks": "symlinks",
+      "recurse.symlinks and directories": "symlinks_and_directories",
+      "recurse_direction.down": "implicit_downward_traversal",
+      "recurse_direction.none": "no_traversal",
+      "recurse_direction.up": "migration_error_deprecated",
+      "recurse_file_system.all": "all",
+      "recurse_file_system.defined": "same",
+      "recurse_file_system.local": "local"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "content": [
+        "string"
+      ],
+      "directory": [
+        "string"
+      ],
+      "full_path": [
+        "string"
+      ],
+      "name": [
+        "string"
+      ],
+      "value": [
+        "record"
+      ],
+      "yamlpath": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "full_path",
+        "yamlpath"
+      ],
+      [
+        "directory",
+        "name",
+        "yamlpath"
+      ],
+      [
+        "content",
+        "yamlpath"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "record_state_fields": [
+      "value"
+    ],
+    "selector_map": {
+      "content": "content",
+      "filename": "name",
+      "filepath": "full_path",
+      "path": "directory",
+      "yamlpath": "yamlpath"
+    },
+    "state_field_map": {
+      "content": "content",
+      "filename": "name",
+      "filepath": "full_path",
+      "path": "directory",
+      "value": "value",
+      "yamlpath": "yamlpath"
+    },
+    "traversal_definition": "file_traversal"
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "independent.yamlfilecontent.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability independent.yamlfilecontent."
+    },
+    {
+      "id": "independent.yamlfilecontent.content_equal",
+      "rule": "Inline content Object selection uses equality semantics."
+    },
+    {
+      "id": "independent.yamlfilecontent.yamlpath_equal",
+      "rule": "The yamlpath Object selector uses equality semantics."
+    },
+    {
+      "id": "independent.yamlfilecontent.full_path_no_traversal",
+      "rule": "Traversal is not permitted when full_path selection is used."
+    },
+    {
+      "id": "independent.yamlfilecontent.inline_content_no_traversal",
+      "rule": "Traversal is not applicable when inline content is supplied instead of a file selector."
+    },
+    {
+      "id": "independent.yamlfilecontent.record_keys",
+      "rule": "Native YAML record field names preserve original key identity and SHALL NOT apply the legacy lowercase/caret escaping convention."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+    "item": "yamlfilecontent_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#independent",
+    "object": "yamlfilecontent_object",
+    "state": "yamlfilecontent_state",
+    "test": "yamlfilecontent_test"
+  },
+  "specification_version": "0.4.0"
+}
