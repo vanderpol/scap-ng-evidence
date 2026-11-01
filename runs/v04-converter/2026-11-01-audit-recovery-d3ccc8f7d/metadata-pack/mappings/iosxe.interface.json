@@ -1,0 +1,59 @@
+{
+  "capability": "iosxe.interface",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-08",
+  "migration_crosswalk": {
+    "capability": {
+      "interface": "iosxe.interface"
+    },
+    "divergence_note": "IOS-XE preserves boolean interface fields where its OVAL schema differs from IOS."
+  },
+  "native": {
+    "object_selector_alternatives": [
+      [
+        "name"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "name": "name"
+    },
+    "state_field_map": {
+      "crypto_map": "crypto_map",
+      "hardware_addr": "hardware_addr",
+      "ip_directed_broadcast": "ip_directed_broadcast",
+      "ipv4_access_list": "ipv4_access_list",
+      "ipv4_address": "ipv4_address",
+      "ipv4_urpf_command": "ipv4_urpf_command",
+      "ipv6_access_list": "ipv6_access_list",
+      "ipv6_address": "ipv6_address",
+      "ipv6_urpf_command": "ipv6_urpf_command",
+      "name": "name",
+      "proxy_arp": "proxy_arp",
+      "shutdown": "shutdown",
+      "switchport_access_vlan": "switchport_access_vlan",
+      "switchport_mode": "switchport_mode",
+      "switchport_native_vlan": "switchport_native_vlan",
+      "switchport_port_security": "switchport_port_security",
+      "switchport_pruned_vlans": "switchport_pruned_vlans",
+      "switchport_trunk_encapsulation": "switchport_trunk_encapsulation",
+      "switchport_trunked_vlans": "switchport_trunked_vlans"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "iosxe.interface.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability iosxe.interface."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/iosxe-definitions-schema.xsd",
+    "item": "interface_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe",
+    "object": "interface_object",
+    "state": "interface_state",
+    "test": "interface_test"
+  },
+  "specification_version": "0.4.0"
+}

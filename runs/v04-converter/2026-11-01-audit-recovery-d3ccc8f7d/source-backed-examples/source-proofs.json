@@ -1,0 +1,786 @@
+[
+  {
+    "file": "windows-server-2025-control-permissions-sv-278139-assessment.yaml",
+    "source_binding": {
+      "source_rule": "xccdf_mil.disa.stig_rule_SV-278139r1182083_rule",
+      "source_rule_sha256": "ee2d15b4ef579869eff64f0122dd8938026a71aa99c39e6b6ebd0137569e0979",
+      "component": "scap_navy.navwar.niwcatlantic.scc_comp_U_MS_Windows_Server_2025_V1R1_STIG_SCAP_1-4_Benchmark-enhancedV1-oval2.xml",
+      "definition": "oval:navy.navwar.niwcatlantic.scc.windows:def:278139",
+      "native_rule": "windows-server-2025-active-control-permissions-sv-278139-rule",
+      "assessment": "windows-server-2025-control-permissions-sv-278139-assessment",
+      "dependencies": {
+        "oval:navy.navwar.niwcatlantic.scc.windows:def:278139": {
+          "kind": "definition",
+          "sha256": "186c7417a2ace510ed6471044453c0c7ca68c7f4d96ec75a537ac4b7a5098010"
+        },
+        "oval:navy.navwar.niwcatlantic.scc.windows:tst:27813901": {
+          "kind": "test",
+          "sha256": "373d0e98c332d5656f5db890f1ae3e1aef5e7f7d98ad728bdfc1c0cbc143f892"
+        },
+        "oval:navy.navwar.niwcatlantic.scc.windows:ste:27813901": {
+          "kind": "state",
+          "sha256": "953f9367991975c7610dbeb123dd35b46d82b686add2405bafac31366261c867",
+          "original_datatype_tokens": [
+            {
+              "path": [
+                0
+              ],
+              "qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5#independent}exit_status",
+              "token": "int",
+              "entity_sha256": "3c96ded80daf1e4ba01208ea8cb3757ab87c8f92de8be733fe828a9ba399f4d7"
+            }
+          ]
+        },
+        "oval:navy.navwar.niwcatlantic.scc.windows:var:27813901": {
+          "kind": "variable",
+          "sha256": "035036b0513c30e632a592c3dacb8f75575fea75b6b80d876cd0e38300fe3ad4",
+          "original_datatype_tokens": [
+            {
+              "path": [],
+              "qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5}constant_variable",
+              "token": "string",
+              "entity_sha256": "035036b0513c30e632a592c3dacb8f75575fea75b6b80d876cd0e38300fe3ad4"
+            }
+          ]
+        },
+        "oval:navy.navwar.niwcatlantic.scc.windows:obj:27813901": {
+          "kind": "object",
+          "sha256": "c40bd107a30c61f45cad6415010b93294f09167c1001039e07672c68c331b51a"
+        },
+        "oval:navy.navwar.niwcatlantic.scc.windows:var:27813902": {
+          "kind": "variable",
+          "sha256": "cb79f896dd4fc7abd25f3f00413e5e00ca30355b8301465c79bab548fa48a90f",
+          "original_datatype_tokens": [
+            {
+              "path": [],
+              "qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5}local_variable",
+              "token": "string",
+              "entity_sha256": "cb79f896dd4fc7abd25f3f00413e5e00ca30355b8301465c79bab548fa48a90f"
+            },
+            {
+              "path": [
+                0,
+                0
+              ],
+              "qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5}literal_component",
+              "token": "string",
+              "entity_sha256": "63fcaf9194dd462105d137dc0c9f586d7d56d1932227c904d4f40dabcad1d9e4"
+            }
+          ]
+        },
+        "oval:navy.navwar.niwcatlantic.scc.windows:obj:27813902": {
+          "kind": "object",
+          "sha256": "b89bfc4cd40aee710d78734bf973ad1c8d7cfa15f7f3c3feb5a81b7bac39e1ae"
+        }
+      },
+      "omitted_checks": [
+        {
+          "system": "http://scap.nist.gov/schema/ocil/2",
+          "selector": "manual",
+          "sha256": "00214da3d627a50bf7817dbec9c897f977b90f26f4d56bccba9864e53e387b8f"
+        }
+      ],
+      "source_platforms": [
+        "#xccdf_mil.disa.stig_platform_Windows_DomainController"
+      ],
+      "authoring_contract_migration": {
+        "owner_decision_date": "2026-10-31",
+        "decisions": [
+          1,
+          3,
+          6,
+          10,
+          13,
+          14
+        ],
+        "requires_fresh_proof": true,
+        "omitted_empty_optional_metadata": [
+          "rationale",
+          "extensions",
+          "warnings",
+          "identifiers",
+          "references",
+          "remediation"
+        ],
+        "native_identity_sources": [
+          {
+            "kind": "test",
+            "native_id": "permissions-must-conform-to-minimum-requirements-test",
+            "source_id": "oval:navy.navwar.niwcatlantic.scc.windows:tst:27813901"
+          },
+          {
+            "kind": "variable",
+            "native_id": "icacls-and-path-to-sysvol-directory-variable",
+            "source_id": "oval:navy.navwar.niwcatlantic.scc.windows:var:27813902"
+          }
+        ]
+      },
+      "human_authoring_compaction_review": [
+        {
+          "source_state": "oval:navy.navwar.niwcatlantic.scc.windows:ste:27813901",
+          "operation": "source-state-scalar-and",
+          "original": {
+            "and": [
+              {
+                "fields": {
+                  "exit_status": {
+                    "equals": 0,
+                    "values_found": "one_or_more",
+                    "values_matching": "every"
+                  }
+                }
+              },
+              {
+                "fields": {
+                  "stdout_line": {
+                    "matches_regex": [
+                      "(?i)NT AUTHORITY\\\\Authenticated Users:\\(RX\\)",
+                      "(?i)NT AUTHORITY\\\\Authenticated Users:\\(OI\\)\\(CI\\)\\(IO\\)\\(GR,GE\\)",
+                      "(?i)BUILTIN\\\\Server Operators:\\(RX\\)",
+                      "(?i)BUILTIN\\\\Server Operators:\\(OI\\)\\(CI\\)\\(IO\\)\\(GR,GE\\)",
+                      "(?i)BUILTIN\\\\Administrators:\\(M,WDAC,WO\\)",
+                      "(?i)BUILTIN\\\\Administrators:\\(OI\\)\\(CI\\)\\(IO\\)\\(F\\)",
+                      "(?i)NT AUTHORITY\\\\SYSTEM:\\(F\\)",
+                      "(?i)NT AUTHORITY\\\\SYSTEM:\\(OI\\)\\(CI\\)\\(IO\\)\\(F\\)",
+                      "(?i)CREATOR OWNER:\\(OI\\)\\(CI\\)\\(IO\\)\\(F\\)"
+                    ],
+                    "value_match": "one_or_more",
+                    "values_found": "one_or_more",
+                    "values_matching": "every"
+                  }
+                }
+              },
+              {
+                "fields": {
+                  "stderr_line": {
+                    "values_found": "none"
+                  }
+                }
+              }
+            ]
+          },
+          "original_sha256": "cf68e9cbc99f724e9b2e0882b4dd89712e5b2e2a18820f248ac98f0598546ff4",
+          "candidate_sha256": "e00ea9908ef755db5c28b12605207332f74c2549709b7a5491e2084614936a51"
+        }
+      ],
+      "independent_static_proof_eligible": false,
+      "conversion_status": "CONVERTED_UNVERIFIED"
+    },
+    "independent_static_proof": {
+      "outcome": "PROVED",
+      "test_bindings": {
+        "oval:navy.navwar.niwcatlantic.scc.windows:tst:27813901": "permissions-must-conform-to-minimum-requirements-test"
+      },
+      "comparisons": [
+        {
+          "source_test": "oval:navy.navwar.niwcatlantic.scc.windows:tst:27813901",
+          "native_test": "permissions-must-conform-to-minimum-requirements-test",
+          "source_term": {
+            "capability": "independent.shellcommand",
+            "object": {
+              "capability": "independent.shellcommand",
+              "selectors": {
+                "shell": {
+                  "datatype": "string",
+                  "value": "cmd"
+                },
+                "command": {
+                  "local": {
+                    "datatype": "string",
+                    "expression": {
+                      "concat": [
+                        {
+                          "literal": {
+                            "datatype": "string",
+                            "value": "icacls "
+                          }
+                        },
+                        {
+                          "regex_capture": {
+                            "pattern": "(^[a-zA-Z]:\\\\.+)\\\\sysvol",
+                            "value": {
+                              "values": {
+                                "object": {
+                                  "capability": "windows.registry",
+                                  "selectors": {
+                                    "hive": {
+                                      "operation": "equals",
+                                      "comparison_datatype": "string",
+                                      "operand": {
+                                        "datatype": "string",
+                                        "value": "local_machine"
+                                      }
+                                    },
+                                    "key": {
+                                      "operation": "equals",
+                                      "comparison_datatype": "string",
+                                      "operand": {
+                                        "datatype": "string",
+                                        "value": "SYSTEM\\CurrentControlSet\\Services\\Netlogon\\Parameters"
+                                      }
+                                    },
+                                    "name": {
+                                      "operation": "equals",
+                                      "comparison_datatype": "string",
+                                      "operand": {
+                                        "datatype": "string",
+                                        "value": "SysVol"
+                                      }
+                                    }
+                                  }
+                                },
+                                "field": "value"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                "pattern": {
+                  "datatype": "string",
+                  "value": ":"
+                },
+                "error_if_exit_status_not_0": false,
+                "error_if_stderr_exists": false
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "exit_status",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "integer",
+                    "operand": {
+                      "datatype": "integer",
+                      "value": 0
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "stderr_line",
+                  "predicate": {
+                    "found": "none"
+                  }
+                },
+                {
+                  "field": "stdout_line",
+                  "predicate": {
+                    "operation": "matches_regex",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "constant_values": [
+                        {
+                          "datatype": "string",
+                          "value": "(?i)NT AUTHORITY\\\\Authenticated Users:\\(RX\\)"
+                        },
+                        {
+                          "datatype": "string",
+                          "value": "(?i)NT AUTHORITY\\\\Authenticated Users:\\(OI\\)\\(CI\\)\\(IO\\)\\(GR,GE\\)"
+                        },
+                        {
+                          "datatype": "string",
+                          "value": "(?i)BUILTIN\\\\Server Operators:\\(RX\\)"
+                        },
+                        {
+                          "datatype": "string",
+                          "value": "(?i)BUILTIN\\\\Server Operators:\\(OI\\)\\(CI\\)\\(IO\\)\\(GR,GE\\)"
+                        },
+                        {
+                          "datatype": "string",
+                          "value": "(?i)BUILTIN\\\\Administrators:\\(M,WDAC,WO\\)"
+                        },
+                        {
+                          "datatype": "string",
+                          "value": "(?i)BUILTIN\\\\Administrators:\\(OI\\)\\(CI\\)\\(IO\\)\\(F\\)"
+                        },
+                        {
+                          "datatype": "string",
+                          "value": "(?i)NT AUTHORITY\\\\SYSTEM:\\(F\\)"
+                        },
+                        {
+                          "datatype": "string",
+                          "value": "(?i)NT AUTHORITY\\\\SYSTEM:\\(OI\\)\\(CI\\)\\(IO\\)\\(F\\)"
+                        },
+                        {
+                          "datatype": "string",
+                          "value": "(?i)CREATOR OWNER:\\(OI\\)\\(CI\\)\\(IO\\)\\(F\\)"
+                        }
+                      ]
+                    },
+                    "expected_matching": "one_or_more",
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "native_term": {
+            "capability": "independent.shellcommand",
+            "object": {
+              "capability": "independent.shellcommand",
+              "selectors": {
+                "shell": {
+                  "datatype": "string",
+                  "value": "cmd"
+                },
+                "command": {
+                  "local": {
+                    "datatype": "string",
+                    "expression": {
+                      "concat": [
+                        {
+                          "literal": {
+                            "datatype": "string",
+                            "value": "icacls "
+                          }
+                        },
+                        {
+                          "regex_capture": {
+                            "pattern": "(^[a-zA-Z]:\\\\.+)\\\\sysvol",
+                            "value": {
+                              "values": {
+                                "object": {
+                                  "capability": "windows.registry",
+                                  "selectors": {
+                                    "hive": {
+                                      "operation": "equals",
+                                      "comparison_datatype": "string",
+                                      "operand": {
+                                        "datatype": "string",
+                                        "value": "local_machine"
+                                      }
+                                    },
+                                    "key": {
+                                      "operation": "equals",
+                                      "comparison_datatype": "string",
+                                      "operand": {
+                                        "datatype": "string",
+                                        "value": "SYSTEM\\CurrentControlSet\\Services\\Netlogon\\Parameters"
+                                      }
+                                    },
+                                    "name": {
+                                      "operation": "equals",
+                                      "comparison_datatype": "string",
+                                      "operand": {
+                                        "datatype": "string",
+                                        "value": "SysVol"
+                                      }
+                                    }
+                                  }
+                                },
+                                "field": "value"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                "pattern": {
+                  "datatype": "string",
+                  "value": ":"
+                },
+                "error_if_exit_status_not_0": false,
+                "error_if_stderr_exists": false
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "exit_status",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "integer",
+                    "operand": {
+                      "datatype": "integer",
+                      "value": 0
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "stderr_line",
+                  "predicate": {
+                    "found": "none"
+                  }
+                },
+                {
+                  "field": "stdout_line",
+                  "predicate": {
+                    "operation": "matches_regex",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "constant_values": [
+                        {
+                          "datatype": "string",
+                          "value": "(?i)NT AUTHORITY\\\\Authenticated Users:\\(RX\\)"
+                        },
+                        {
+                          "datatype": "string",
+                          "value": "(?i)NT AUTHORITY\\\\Authenticated Users:\\(OI\\)\\(CI\\)\\(IO\\)\\(GR,GE\\)"
+                        },
+                        {
+                          "datatype": "string",
+                          "value": "(?i)BUILTIN\\\\Server Operators:\\(RX\\)"
+                        },
+                        {
+                          "datatype": "string",
+                          "value": "(?i)BUILTIN\\\\Server Operators:\\(OI\\)\\(CI\\)\\(IO\\)\\(GR,GE\\)"
+                        },
+                        {
+                          "datatype": "string",
+                          "value": "(?i)BUILTIN\\\\Administrators:\\(M,WDAC,WO\\)"
+                        },
+                        {
+                          "datatype": "string",
+                          "value": "(?i)BUILTIN\\\\Administrators:\\(OI\\)\\(CI\\)\\(IO\\)\\(F\\)"
+                        },
+                        {
+                          "datatype": "string",
+                          "value": "(?i)NT AUTHORITY\\\\SYSTEM:\\(F\\)"
+                        },
+                        {
+                          "datatype": "string",
+                          "value": "(?i)NT AUTHORITY\\\\SYSTEM:\\(OI\\)\\(CI\\)\\(IO\\)\\(F\\)"
+                        },
+                        {
+                          "datatype": "string",
+                          "value": "(?i)CREATOR OWNER:\\(OI\\)\\(CI\\)\\(IO\\)\\(F\\)"
+                        }
+                      ]
+                    },
+                    "expected_matching": "one_or_more",
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "term_sha256": "8243a0cd845f5723080757963660b77cdf4acf8d2362f97df9754075436e5329"
+        }
+      ],
+      "unsupported_obligations": [],
+      "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+      "normalizations_applied": [],
+      "invocation_purpose": "assessment",
+      "historical_root_purpose_metadata": false
+    }
+  },
+  {
+    "file": "windows-server-2025-shows-on-lock-screen-sv-278080-assessment.yaml",
+    "source_binding": {
+      "source_rule": "xccdf_mil.disa.stig_rule_SV-278080r1180946_rule",
+      "source_rule_sha256": "4e1444cf7983a53cd9cd1376e02398324c36fe5591519bddd46b9d8ae9142750",
+      "component": "scap_mil.disa.stig_comp_U_MS_Windows_Server_2025_V1R1_STIG_SCAP_1-4_Benchmark-enhancedV1-oval.xml",
+      "definition": "oval:mil.disa.stig.windows2025:def:278080",
+      "native_rule": "windows-server-2025-prevent-shows-on-lock-screen-sv-278080-rule",
+      "assessment": "windows-server-2025-shows-on-lock-screen-sv-278080-assessment",
+      "dependencies": {
+        "oval:mil.disa.stig.windows2025:def:278080": {
+          "kind": "definition",
+          "sha256": "b84a276417490d546b7c7b15148bd932ab5d8265e28b87141a233d23a4bdf026"
+        },
+        "oval:mil.disa.stig.defs:def:253352": {
+          "kind": "definition",
+          "sha256": "1d4e08e1d5ff3589bfb961da5c8aa3402dc4d23874b0c804f90c168b9ba7341e"
+        },
+        "oval:mil.disa.stig.win:tst:25335200": {
+          "kind": "test",
+          "sha256": "e172c106028dc3e7771b28581f2a83a27a7e6ed03a4596e461bc48e759333632"
+        },
+        "oval:mil.disa.stig.win:ste:20000001": {
+          "kind": "state",
+          "sha256": "90b5e9925de1fc45f0bee457c995cc8f36bc22b26956ccbf3e9f89a5dd47549e",
+          "original_datatype_tokens": [
+            {
+              "path": [
+                1
+              ],
+              "qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5#windows}value",
+              "token": "int",
+              "entity_sha256": "93cafc7aeeb792791c19d2cfb4ee70b2a6de14e3fbdd9d10a14aa8b2e48c3474"
+            }
+          ]
+        },
+        "oval:mil.disa.stig.win:obj:25335200": {
+          "kind": "object",
+          "sha256": "8afee6650bb7e3b92f50378b221f1d95bf42c86495964e244d55dbcb9cd5265b",
+          "original_datatype_tokens": [
+            {
+              "path": [
+                0
+              ],
+              "qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5#windows}hive",
+              "token": "string",
+              "entity_sha256": "7a1c1314ebff2c21693be732c55bfa7051134a4807d690055b9716054cf16197"
+            },
+            {
+              "path": [
+                1
+              ],
+              "qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5#windows}key",
+              "token": "string",
+              "entity_sha256": "ff67f48bdd12d2ec6a164346104492b7a3378403d302a7f807e1927042677568"
+            },
+            {
+              "path": [
+                2
+              ],
+              "qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5#windows}name",
+              "token": "string",
+              "entity_sha256": "8f25d8f3c490e775478373851529a5cb21a4825bc7a014a5d3fdc81a67f4bea6"
+            }
+          ]
+        }
+      },
+      "omitted_checks": [
+        {
+          "system": "http://scap.nist.gov/schema/ocil/2",
+          "selector": "manual",
+          "sha256": "d7804f75750fe014c6e09ea81ead8c15156d6aeb746e50397e10c1ba78e22679"
+        }
+      ],
+      "source_platforms": [],
+      "authoring_contract_migration": {
+        "owner_decision_date": "2026-10-31",
+        "decisions": [
+          1,
+          3,
+          6,
+          10,
+          13,
+          14
+        ],
+        "requires_fresh_proof": true,
+        "omitted_empty_optional_metadata": [
+          "rationale",
+          "extensions",
+          "warnings",
+          "identifiers",
+          "references",
+          "remediation"
+        ],
+        "native_identity_sources": [
+          {
+            "kind": "test",
+            "native_id": "verifies-prevent-enabling-screen-slide-show-is-set-enabled-test",
+            "source_id": "oval:mil.disa.stig.win:tst:25335200"
+          }
+        ]
+      },
+      "human_authoring_compaction_review": [
+        {
+          "source_state": "oval:mil.disa.stig.win:ste:20000001",
+          "operation": "source-state-scalar-and",
+          "original": {
+            "and": [
+              {
+                "fields": {
+                  "type": {
+                    "equals": "dword",
+                    "values_found": "one_or_more",
+                    "values_matching": "every"
+                  }
+                }
+              },
+              {
+                "fields": {
+                  "value": {
+                    "equals": 1,
+                    "values_found": "one_or_more",
+                    "values_matching": "every"
+                  }
+                }
+              }
+            ]
+          },
+          "original_sha256": "ed0b3fabb91a4777818cffaea906097e19f64db67a8bb26b8d804d7673f3feee",
+          "candidate_sha256": "6325995ae902b430faa879b2a90371c90261edb700d9932b3792a4be5b1289c1"
+        },
+        {
+          "source_test": "oval:mil.disa.stig.win:tst:25335200",
+          "operation": "test-inherited-field-cardinality",
+          "original": {
+            "items_found": "one_or_more",
+            "items_satisfying": "every",
+            "fields": {
+              "type": {
+                "equals": "dword",
+                "values_found": "one_or_more",
+                "values_matching": "every"
+              },
+              "value": {
+                "equals": 1,
+                "values_found": "one_or_more",
+                "values_matching": "every"
+              }
+            }
+          },
+          "original_sha256": "15f1b09c0529d20124a72e660f6a1a679e6863b205723254a8e66bbd76a40225",
+          "candidate_sha256": "a160bd1a229bd97615e85e68e809d111aaced1dc2925262ad31b39cb8d2d70d6"
+        }
+      ],
+      "independent_static_proof_eligible": false,
+      "conversion_status": "CONVERTED_UNVERIFIED"
+    },
+    "independent_static_proof": {
+      "outcome": "PROVED",
+      "test_bindings": {
+        "oval:mil.disa.stig.win:tst:25335200": "verifies-prevent-enabling-screen-slide-show-is-set-enabled-test"
+      },
+      "comparisons": [
+        {
+          "source_test": "oval:mil.disa.stig.win:tst:25335200",
+          "native_test": "verifies-prevent-enabling-screen-slide-show-is-set-enabled-test",
+          "source_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "NoLockScreenSlideshow"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "value",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "integer",
+                    "operand": {
+                      "datatype": "integer",
+                      "value": 1
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "type",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "dword"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "native_term": {
+            "capability": "windows.registry",
+            "object": {
+              "capability": "windows.registry",
+              "selectors": {
+                "hive": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "local_machine"
+                  }
+                },
+                "key": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization"
+                  }
+                },
+                "name": {
+                  "operation": "equals",
+                  "comparison_datatype": "string",
+                  "operand": {
+                    "datatype": "string",
+                    "value": "NoLockScreenSlideshow"
+                  }
+                }
+              }
+            },
+            "found": "one_or_more",
+            "matching": "every",
+            "condition": {
+              "and": [
+                {
+                  "field": "value",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "integer",
+                    "operand": {
+                      "datatype": "integer",
+                      "value": 1
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                },
+                {
+                  "field": "type",
+                  "predicate": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "dword"
+                    },
+                    "found": "one_or_more",
+                    "matching": "every"
+                  }
+                }
+              ]
+            }
+          },
+          "term_sha256": "63108d3a8a7e4552874958e321a8d3f295d70f18a224ecafce5846af7884e944"
+        }
+      ],
+      "unsupported_obligations": [],
+      "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+      "normalizations_applied": [],
+      "invocation_purpose": "assessment",
+      "historical_root_purpose_metadata": false
+    }
+  }
+]

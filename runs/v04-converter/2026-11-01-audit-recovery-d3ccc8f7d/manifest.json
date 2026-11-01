@@ -1,0 +1,46 @@
+{
+  "evidence_id": "2026-11-01-audit-recovery-d3ccc8f7d",
+  "kind": "repository/audit evidence",
+  "created_at": "2026-11-01T20:58:48.574086+00:00",
+  "source_repository": "vanderpol/scap-ng",
+  "source_commit": "d3ccc8f7d4613e214dbccfe801a12531c5aa021c",
+  "recovered_remediation_commit": "fecb541f9c226706738fd3d113ef1047f37faaaf",
+  "editor_repository": "vanderpol/scap-ng-vscode",
+  "editor_commit": "ae7f812590fa108b412146f21e59171d60507f29",
+  "generating_tool": "tools/build_v04_editor_metadata_pack.py",
+  "generating_tool_commit": "d3ccc8f7d4613e214dbccfe801a12531c5aa021c",
+  "commands": [
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python -m unittest -v test_v04_audit_remediation test_v04_field_datatype_elimination test_qualify_v04_shared_assessment test_v04_comparison_types test_v04_owner_identity_context test_v04_direct_file_traversal test_v04_native_capability_names",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python -m unittest -v test_v04_editor_metadata",
+    "PYTHONHASHSEED=1|2 PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python tools/build_v04_editor_metadata_pack.py --output <new directory>",
+    "npm ci --cache /tmp/scap-ng-npm-cache; npm test; npm run lint; SCAP_NG_METADATA_PACK=<published-pack> SCAP_NG_SOURCE_ROOT=<source> npm run test:integration; npm run package --cache /tmp/scap-ng-npm-cache"
+  ],
+  "inputs": "Original fixture/schema tree pins in preservation-and-replay.json; editor package-lock.json at exact editor SHA. Existing audit/source proofs copied byte-identically from fecb541f9. Python 3.12 virtualenv, node 24.19.0.",
+  "validation_status": "PASS within bounded static scope",
+  "checks": {
+    "recovery_tests": 38,
+    "metadata_tests": 6,
+    "source_runs": 12,
+    "source_distinct_workflows": 11,
+    "editor_runs": 1,
+    "all_hosted_completed_success": true,
+    "audit": {
+      "VERIFIED": 18,
+      "PARTIAL": 10,
+      "UNPROVED": 1,
+      "FAILED": 0
+    },
+    "pack_files": 235,
+    "pack_resources": 233,
+    "pack_replay_byte_identical": true,
+    "parsed_resource_parity": true
+  },
+  "limitations": [
+    "No scanner, collector runtime, editor host, UI, screenshots or Assessment execution claimed.",
+    "Optional Input guards need owner-approved syntax/binding semantics; unsafe use stays rejected.",
+    "Blanket field datatype retirement is unsafe: two retained counterexamples; float/record coverage incomplete.",
+    "GitHub artifact binary download returned Forbidden; no downloaded hosted artifact verification claimed. Hosted status API and fresh local checks retained. gh run logs returned empty, so they are excluded.",
+    "Initial editor integration rejected historical nondeterministic pack digest as expected; corrected pack passes without bypassing adapter checks.",
+    "No full corpus run, proof rebaseline, merge, freeze, tag or release."
+  ]
+}

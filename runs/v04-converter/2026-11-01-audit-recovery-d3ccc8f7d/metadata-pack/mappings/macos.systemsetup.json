@@ -1,0 +1,112 @@
+{
+  "capability": "macos.systemsetup",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "systemsetup": "macos.systemsetup"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "allowpowerbuttontosleepcomputer": [
+        "boolean"
+      ],
+      "computername": [
+        "string"
+      ],
+      "computersleep": [
+        "integer"
+      ],
+      "disablekeyboardwhenenclosurelockisengaged": [
+        "boolean"
+      ],
+      "displaysleep": [
+        "integer"
+      ],
+      "harddisksleep": [
+        "integer"
+      ],
+      "kernelbootarchitecturesetting": [
+        "string"
+      ],
+      "localsubnetname": [
+        "string"
+      ],
+      "networktimeserver": [
+        "string"
+      ],
+      "remoteappleevents": [
+        "boolean"
+      ],
+      "remotelogin": [
+        "boolean"
+      ],
+      "restartfreeze": [
+        "boolean"
+      ],
+      "restartpowerfailure": [
+        "boolean"
+      ],
+      "startupdisk": [
+        "string"
+      ],
+      "timezone": [
+        "string"
+      ],
+      "usingnetworktime": [
+        "boolean"
+      ],
+      "waitforstartupafterpowerfailure": [
+        "integer"
+      ],
+      "wakeonmodem": [
+        "boolean"
+      ],
+      "wakeonnetworkaccess": [
+        "boolean"
+      ]
+    },
+    "post_alignment_ready": true,
+    "state_field_map": {
+      "allowpowerbuttontosleepcomputer": "allowpowerbuttontosleepcomputer",
+      "computername": "computername",
+      "computersleep": "computersleep",
+      "disablekeyboardwhenenclosurelockisengaged": "disablekeyboardwhenenclosurelockisengaged",
+      "displaysleep": "displaysleep",
+      "harddisksleep": "harddisksleep",
+      "kernelbootarchitecturesetting": "kernelbootarchitecturesetting",
+      "localsubnetname": "localsubnetname",
+      "networktimeserver": "networktimeserver",
+      "remoteappleevents": "remoteappleevents",
+      "remotelogin": "remotelogin",
+      "restartfreeze": "restartfreeze",
+      "restartpowerfailure": "restartpowerfailure",
+      "startupdisk": "startupdisk",
+      "timezone": "timezone",
+      "usingnetworktime": "usingnetworktime",
+      "waitforstartupafterpowerfailure": "waitforstartupafterpowerfailure",
+      "wakeonmodem": "wakeonmodem",
+      "wakeonnetworkaccess": "wakeonnetworkaccess"
+    },
+    "test_source": {
+      "kind": "none"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "macos.systemsetup.singleton_source",
+      "rule": "The capability evaluates current systemsetup properties directly; native content omits the empty legacy Object."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+    "item": "systemsetup_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#macos",
+    "object": "systemsetup_object",
+    "state": "systemsetup_state",
+    "test": "systemsetup_test"
+  },
+  "specification_version": "0.4.0"
+}

@@ -1,0 +1,11 @@
+test_all_activated_paths_and_defaults_validate (test_v04_editor_metadata.MetadataTests.test_all_activated_paths_and_defaults_validate) ... ok
+test_all_generated_object_controls_have_resolved_help (test_v04_editor_metadata.MetadataTests.test_all_generated_object_controls_have_resolved_help) ... ok
+test_annotation_suggestions_do_not_satisfy_required_fields (test_v04_editor_metadata.MetadataTests.test_annotation_suggestions_do_not_satisfy_required_fields) ... ok
+test_exhaustive_dispositions_and_distinct_controls (test_v04_editor_metadata.MetadataTests.test_exhaustive_dispositions_and_distinct_controls) ... ok
+test_export_bytes_and_resource_hashes_are_independent_of_hash_seed (test_v04_editor_metadata.MetadataTests.test_export_bytes_and_resource_hashes_are_independent_of_hash_seed) ... ok
+test_shared_normative_structure_unchanged (test_v04_editor_metadata.MetadataTests.test_shared_normative_structure_unchanged) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 7.092s
+
+OK

@@ -1,0 +1,263 @@
+{
+  "capability": "linux.rpmverifyfile",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "behaviors": {
+      "nocaps": "object.skip_capabilities",
+      "noconfigfiles": "object.skip_config_files",
+      "nofiledigest": "object.skip_file_digest",
+      "noghostfiles": "object.skip_ghost_files",
+      "nogroup": "object.skip_group",
+      "nolinkto": "object.skip_link_target",
+      "nomode": "object.skip_mode",
+      "nomtime": "object.skip_mtime",
+      "nordev": "object.skip_rdev",
+      "nosize": "object.skip_size",
+      "nouser": "object.skip_owner"
+    },
+    "capability": {
+      "rpmverifyfile": "linux.rpmverifyfile"
+    },
+    "deprecated": {
+      "md5_differs": "migration_error_replaced_by_filedigest_differs",
+      "nomd5": "migration_error_replaced_by_nofiledigest"
+    }
+  },
+  "native": {
+    "collection_parameters": {
+      "skip_capabilities": {
+        "description": "Whether file-capability verification is skipped; importers materialize OVAL nocaps, default false.",
+        "required": true,
+        "type": "boolean"
+      },
+      "skip_config_files": {
+        "description": "Whether RPM %config files are excluded; importers materialize OVAL noconfigfiles, default false.",
+        "required": true,
+        "type": "boolean"
+      },
+      "skip_file_digest": {
+        "description": "Whether file-digest verification is skipped; importers materialize OVAL nofiledigest, default false.",
+        "required": true,
+        "type": "boolean"
+      },
+      "skip_ghost_files": {
+        "description": "Whether RPM %ghost files are excluded; importers materialize OVAL noghostfiles, default false.",
+        "required": true,
+        "type": "boolean"
+      },
+      "skip_group": {
+        "description": "Whether file-group verification is skipped; importers materialize OVAL nogroup, default false.",
+        "required": true,
+        "type": "boolean"
+      },
+      "skip_link_target": {
+        "description": "Whether symbolic-link target verification is skipped; importers materialize OVAL nolinkto, default false.",
+        "required": true,
+        "type": "boolean"
+      },
+      "skip_mode": {
+        "description": "Whether mode verification is skipped; importers materialize OVAL nomode, default false.",
+        "required": true,
+        "type": "boolean"
+      },
+      "skip_mtime": {
+        "description": "Whether mtime verification is skipped; importers materialize OVAL nomtime, default false.",
+        "required": true,
+        "type": "boolean"
+      },
+      "skip_owner": {
+        "description": "Whether file-owner verification is skipped; importers materialize OVAL nouser, default false.",
+        "required": true,
+        "type": "boolean"
+      },
+      "skip_rdev": {
+        "description": "Whether device verification is skipped; importers materialize OVAL nordev, default false.",
+        "required": true,
+        "type": "boolean"
+      },
+      "skip_size": {
+        "description": "Whether file-size verification is skipped; importers materialize OVAL nosize, default false.",
+        "required": true,
+        "type": "boolean"
+      }
+    },
+    "field_datatypes": {
+      "arch": [
+        "string"
+      ],
+      "capabilities_differ": [
+        "string"
+      ],
+      "configuration_file": [
+        "boolean"
+      ],
+      "device_differs": [
+        "string"
+      ],
+      "documentation_file": [
+        "boolean"
+      ],
+      "epoch": [
+        "string",
+        "integer"
+      ],
+      "extended_name": [
+        "string"
+      ],
+      "filedigest_differs": [
+        "string"
+      ],
+      "filepath": [
+        "string"
+      ],
+      "ghost_file": [
+        "boolean"
+      ],
+      "group_differs": [
+        "string"
+      ],
+      "license_file": [
+        "boolean"
+      ],
+      "link_mismatch": [
+        "string"
+      ],
+      "mode_differs": [
+        "string"
+      ],
+      "mtime_differs": [
+        "string"
+      ],
+      "name": [
+        "string"
+      ],
+      "ownership_differs": [
+        "string"
+      ],
+      "readme_file": [
+        "boolean"
+      ],
+      "release": [
+        "string",
+        "version"
+      ],
+      "size_differs": [
+        "string"
+      ],
+      "version": [
+        "string",
+        "version"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "name",
+        "epoch",
+        "version",
+        "release",
+        "arch",
+        "filepath"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "arch": "arch",
+      "epoch": "epoch",
+      "filepath": "filepath",
+      "name": "name",
+      "release": "release",
+      "version": "version"
+    },
+    "state_field_map": {
+      "arch": "arch",
+      "capabilities_differ": "capabilities_differ",
+      "configuration_file": "configuration_file",
+      "device_differs": "device_differs",
+      "documentation_file": "documentation_file",
+      "epoch": "epoch",
+      "extended_name": "extended_name",
+      "filedigest_differs": "filedigest_differs",
+      "filepath": "filepath",
+      "ghost_file": "ghost_file",
+      "group_differs": "group_differs",
+      "license_file": "license_file",
+      "link_mismatch": "link_mismatch",
+      "mode_differs": "mode_differs",
+      "mtime_differs": "mtime_differs",
+      "name": "name",
+      "ownership_differs": "ownership_differs",
+      "readme_file": "readme_file",
+      "release": "release",
+      "size_differs": "size_differs",
+      "version": "version"
+    },
+    "state_value_enums": {
+      "capabilities_differ": [
+        "pass",
+        "fail",
+        "not performed"
+      ],
+      "device_differs": [
+        "pass",
+        "fail",
+        "not performed"
+      ],
+      "filedigest_differs": [
+        "pass",
+        "fail",
+        "not performed"
+      ],
+      "group_differs": [
+        "pass",
+        "fail",
+        "not performed"
+      ],
+      "link_mismatch": [
+        "pass",
+        "fail",
+        "not performed"
+      ],
+      "mode_differs": [
+        "pass",
+        "fail",
+        "not performed"
+      ],
+      "mtime_differs": [
+        "pass",
+        "fail",
+        "not performed"
+      ],
+      "ownership_differs": [
+        "pass",
+        "fail",
+        "not performed"
+      ],
+      "size_differs": [
+        "pass",
+        "fail",
+        "not performed"
+      ]
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "linux.rpmverifyfile.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability linux.rpmverifyfile."
+    },
+    {
+      "id": "linux.rpmverifyfile.materialized_behaviors",
+      "rule": "Direct native Objects explicitly carry every non-deprecated verification switch; importers SHALL materialize OVAL default false values."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/linux-definitions-schema.xsd",
+    "item": "rpmverifyfile_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#linux",
+    "object": "rpmverifyfile_object",
+    "state": "rpmverifyfile_state",
+    "test": "rpmverifyfile_test"
+  },
+  "specification_version": "0.4.0"
+}

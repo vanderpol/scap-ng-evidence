@@ -1,0 +1,36 @@
+
+> scap-ng-vscode-metadata@0.0.1 package
+> npm pack --pack-destination /tmp
+
+npm notice
+npm notice 📦  scap-ng-vscode-metadata@0.0.1
+npm notice Tarball Contents
+npm notice 11.4kB LICENSE
+npm notice 4.2kB README.md
+npm notice 18.7kB THIRD-PARTY-NOTICES.md
+npm notice 60B dist/index.d.ts
+npm notice 93B dist/index.js
+npm notice 142B dist/index.js.map
+npm notice 2.5kB dist/metadata.d.ts
+npm notice 14.0kB dist/metadata.js
+npm notice 15.6kB dist/metadata.js.map
+npm notice 462B dist/source.d.ts
+npm notice 2.0kB dist/source.js
+npm notice 2.1kB dist/source.js.map
+npm notice 6.3kB docs/DEFAULTS-CHECKPOINT.md
+npm notice 16.4kB docs/EDITOR-BLUEPRINT.md
+npm notice 11.4kB docs/SCAP-NG-PRIMER.md
+npm notice 16.6kB docs/SCHEMA-DRIVEN-HELP-AND-PLAYGROUND.md
+npm notice 841B package.json
+npm notice 181B schema-profile.json
+npm notice Tarball Details
+npm notice name: scap-ng-vscode-metadata
+npm notice version: 0.0.1
+npm notice filename: scap-ng-vscode-metadata-0.0.1.tgz
+npm notice package size: 39.0 kB
+npm notice unpacked size: 123.0 kB
+npm notice shasum: efdded6cc1d2570251eb44e1c1c7bb1b1f5cc876
+npm notice integrity: sha512-TESaasQPWtVoG[...]gJ3IjEpD7fcoQ==
+npm notice total files: 18
+npm notice
+scap-ng-vscode-metadata-0.0.1.tgz

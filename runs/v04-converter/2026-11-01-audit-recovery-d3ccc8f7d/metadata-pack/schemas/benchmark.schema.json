@@ -1,0 +1,296 @@
+{
+  "$id": "https://scap-ng.dev/schema/v0.4.0/benchmark.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "benchmark": {
+      "additionalProperties": false,
+      "properties": {
+        "applicability_catalog": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "assessment_specifications": {
+          "description": "External automated assessment specifications required by Assessments referenced from this Benchmark. Manual Assessment is native to SCAP-NG and is not listed here unless separately standardized in the future.",
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "version": {
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "version"
+            ],
+            "type": "object"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "default_selection": {
+          "type": "boolean"
+        },
+        "description": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "language": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "text",
+              "language"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "front_matter": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "language": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "text",
+              "language"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "groups": {
+          "items": {
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "language": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "metadata": {
+          "type": "object"
+        },
+        "ng_schema_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "notices": {
+          "items": {
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "parameters": {
+          "type": "array"
+        },
+        "platform": {
+          "additionalProperties": false,
+          "properties": {
+            "applicability": {
+              "type": "object"
+            },
+            "id": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "applicability"
+          ],
+          "type": "object"
+        },
+        "profiles": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "disabled_rules": {
+                "items": {
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "type": "array",
+                "uniqueItems": true
+              },
+              "extends": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "id": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "parameters": {
+                "type": "object"
+              },
+              "title": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "disabled_rules"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "rear_matter": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "language": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "text",
+              "language"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "references": {
+          "items": {
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "rules": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "scoring": {
+          "type": "array"
+        },
+        "status": {
+          "items": {
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "text_blocks": {
+          "items": {
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "title": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "language": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "text",
+              "language"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "use_case": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "version": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "id",
+        "ng_schema_version",
+        "use_case",
+        "assessment_specifications",
+        "title",
+        "description",
+        "language",
+        "status",
+        "version",
+        "metadata",
+        "notices",
+        "front_matter",
+        "rear_matter",
+        "references",
+        "text_blocks",
+        "platform",
+        "applicability_catalog",
+        "scoring",
+        "parameters",
+        "default_selection",
+        "groups",
+        "profiles",
+        "rules"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "benchmark"
+  ],
+  "title": "SCAP-NG Benchmark v0.4.0",
+  "type": "object",
+  "x-last-modified": "2026-10-06",
+  "x-scap-ng-version": "0.4.0"
+}

@@ -1,0 +1,80 @@
+{
+  "capability": "independent.environmentvariable",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "environmentvariable58": "independent.environmentvariable"
+    },
+    "object": {
+      "name": "object.name",
+      "pid": "object.pid"
+    },
+    "structural_simplifications": {
+      "pid xsi:nil": "native null selecting the assessment tool's running process"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "name": [
+        "string"
+      ],
+      "pid": [
+        "integer"
+      ],
+      "value": [
+        "string",
+        "boolean",
+        "integer",
+        "float",
+        "binary",
+        "version",
+        "ipv4",
+        "ipv6",
+        "rpm_evr",
+        "debian_evr",
+        "fileset_revision",
+        "ios_version"
+      ]
+    },
+    "nullable_selectors": [
+      "pid"
+    ],
+    "object_selector_alternatives": [
+      [
+        "pid",
+        "name"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "name": "name",
+      "pid": "pid"
+    },
+    "state_field_map": {
+      "name": "name",
+      "pid": "pid",
+      "value": "value"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "independent.environmentvariable.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability independent.environmentvariable."
+    },
+    {
+      "id": "independent.environmentvariable.null_pid",
+      "rule": "A null pid preserves source xsi:nil semantics selecting the assessment tool's running process; if the scanner has no process identity, no matching item exists."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+    "item": "environmentvariable58_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#independent",
+    "object": "environmentvariable58_object",
+    "state": "environmentvariable58_state",
+    "test": "environmentvariable58_test"
+  },
+  "specification_version": "0.4.0"
+}

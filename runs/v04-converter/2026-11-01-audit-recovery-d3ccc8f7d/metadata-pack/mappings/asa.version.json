@@ -1,0 +1,55 @@
+{
+  "capability": "asa.version",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "version": "asa.version"
+    },
+    "object": {
+      "version_object": "omitted_native_singleton_system_source"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "asa_build": [
+        "integer"
+      ],
+      "asa_major_release": [
+        "version"
+      ],
+      "asa_minor_release": [
+        "version"
+      ],
+      "asa_release": [
+        "string"
+      ]
+    },
+    "post_alignment_ready": true,
+    "state_field_map": {
+      "asa_build": "asa_build",
+      "asa_major_release": "asa_major_release",
+      "asa_minor_release": "asa_minor_release",
+      "asa_release": "asa_release"
+    },
+    "test_source": {
+      "kind": "none"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "asa.version.singleton_source",
+      "rule": "The capability evaluates the current ASA software version directly; native content SHALL NOT introduce a meaningless singleton Object."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/asa-definitions-schema.xsd",
+    "item": "version_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#asa",
+    "object": "version_object",
+    "state": "version_state",
+    "test": "version_test"
+  },
+  "specification_version": "0.4.0"
+}

@@ -1,0 +1,333 @@
+{
+  "format": "scap-ng/shared-assessment-qualification/1",
+  "status": "PASS",
+  "scope": "PRIMARY_OVAL_STATIC_EQUIVALENCE_NOT_SCANNER_OR_POLICY",
+  "assessment": "windows-server-2025-shows-on-lock-screen-sv-278080-assessment",
+  "assessment_sha256": "44d5f62695be308cc7a4ca468e58ba0cb2516db91289ef369a402e2ed4de4f26",
+  "program_sha256": "ebb44a2d4d258780bf167a02b1a6d9fe85e0be94ac1fd4216c7518361e7c7538",
+  "proposed_filename": "windows-lock-screen-slideshow-disabled.automated.yaml",
+  "distinct_benchmarks": 2,
+  "source_receipts": [
+    {
+      "benchmark": "xccdf_mil.disa.stig_benchmark_MS_Windows_Server_2025_STIG",
+      "source_zip_sha256": "2f46264b5fa21c8a033236121794ebe372314bf7458dac0aca4f81179fe7ece0",
+      "source_rule": "xccdf_mil.disa.stig_rule_SV-278080r1180946_rule",
+      "source_rule_sha256": "4e1444cf7983a53cd9cd1376e02398324c36fe5591519bddd46b9d8ae9142750",
+      "component": "scap_mil.disa.stig_comp_U_MS_Windows_Server_2025_V1R1_STIG_SCAP_1-4_Benchmark-enhancedV1-oval.xml",
+      "component_sha256": "d387df37e8edc8c238c1fdbe12df942c28b6a4f1fdba95b6b0e65ac6d044e202",
+      "definition": "oval:mil.disa.stig.windows2025:def:278080",
+      "source_validity": {
+        "status": "VALID",
+        "issues": []
+      },
+      "static_proof": {
+        "outcome": "PROVED",
+        "test_bindings": {
+          "oval:mil.disa.stig.win:tst:25335200": "verifies-prevent-enabling-screen-slide-show-is-set-enabled-test"
+        },
+        "comparisons": [
+          {
+            "source_test": "oval:mil.disa.stig.win:tst:25335200",
+            "native_test": "verifies-prevent-enabling-screen-slide-show-is-set-enabled-test",
+            "source_term": {
+              "capability": "windows.registry",
+              "object": {
+                "capability": "windows.registry",
+                "selectors": {
+                  "hive": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "local_machine"
+                    }
+                  },
+                  "key": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization"
+                    }
+                  },
+                  "name": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "NoLockScreenSlideshow"
+                    }
+                  }
+                }
+              },
+              "found": "one_or_more",
+              "matching": "every",
+              "condition": {
+                "and": [
+                  {
+                    "field": "value",
+                    "predicate": {
+                      "operation": "equals",
+                      "comparison_datatype": "integer",
+                      "operand": {
+                        "datatype": "integer",
+                        "value": 1
+                      },
+                      "found": "one_or_more",
+                      "matching": "every"
+                    }
+                  },
+                  {
+                    "field": "type",
+                    "predicate": {
+                      "operation": "equals",
+                      "comparison_datatype": "string",
+                      "operand": {
+                        "datatype": "string",
+                        "value": "dword"
+                      },
+                      "found": "one_or_more",
+                      "matching": "every"
+                    }
+                  }
+                ]
+              }
+            },
+            "native_term": {
+              "capability": "windows.registry",
+              "object": {
+                "capability": "windows.registry",
+                "selectors": {
+                  "hive": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "local_machine"
+                    }
+                  },
+                  "key": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization"
+                    }
+                  },
+                  "name": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "NoLockScreenSlideshow"
+                    }
+                  }
+                }
+              },
+              "found": "one_or_more",
+              "matching": "every",
+              "condition": {
+                "and": [
+                  {
+                    "field": "value",
+                    "predicate": {
+                      "operation": "equals",
+                      "comparison_datatype": "integer",
+                      "operand": {
+                        "datatype": "integer",
+                        "value": 1
+                      },
+                      "found": "one_or_more",
+                      "matching": "every"
+                    }
+                  },
+                  {
+                    "field": "type",
+                    "predicate": {
+                      "operation": "equals",
+                      "comparison_datatype": "string",
+                      "operand": {
+                        "datatype": "string",
+                        "value": "dword"
+                      },
+                      "found": "one_or_more",
+                      "matching": "every"
+                    }
+                  }
+                ]
+              }
+            },
+            "term_sha256": "63108d3a8a7e4552874958e321a8d3f295d70f18a224ecafce5846af7884e944"
+          }
+        ],
+        "unsupported_obligations": [],
+        "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+        "normalizations_applied": [],
+        "invocation_purpose": "assessment",
+        "historical_root_purpose_metadata": false
+      }
+    },
+    {
+      "benchmark": "xccdf_mil.disa.stig_benchmark_Microsoft_Windows_11_STIG",
+      "source_zip_sha256": "e4b8d55b58aa80124bd0974977af4c7f7bde35c748e2940e02857419292d8c3d",
+      "source_rule": "xccdf_mil.disa.stig_rule_SV-253352r958478_rule",
+      "source_rule_sha256": "3fa3d2c65953fa0b025575d5da9cf3c5e9269c11884e105d8db62ecb77735e0a",
+      "component": "scap_mil.disa.stig_comp_U_MS_Windows_11_V2R10_STIG_SCAP_1-4_Benchmark-enhancedV18-oval.xml",
+      "component_sha256": "e32911a38a0e72413d49370d0e534d42472dc6e26b75d0aa4c603b678db5e0bd",
+      "definition": "oval:mil.disa.stig.windows11:def:253352",
+      "source_validity": {
+        "status": "VALID",
+        "issues": []
+      },
+      "static_proof": {
+        "outcome": "PROVED",
+        "test_bindings": {
+          "oval:mil.disa.stig.win:tst:25335200": "verifies-prevent-enabling-screen-slide-show-is-set-enabled-test"
+        },
+        "comparisons": [
+          {
+            "source_test": "oval:mil.disa.stig.win:tst:25335200",
+            "native_test": "verifies-prevent-enabling-screen-slide-show-is-set-enabled-test",
+            "source_term": {
+              "capability": "windows.registry",
+              "object": {
+                "capability": "windows.registry",
+                "selectors": {
+                  "hive": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "local_machine"
+                    }
+                  },
+                  "key": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization"
+                    }
+                  },
+                  "name": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "NoLockScreenSlideshow"
+                    }
+                  }
+                }
+              },
+              "found": "one_or_more",
+              "matching": "every",
+              "condition": {
+                "and": [
+                  {
+                    "field": "value",
+                    "predicate": {
+                      "operation": "equals",
+                      "comparison_datatype": "integer",
+                      "operand": {
+                        "datatype": "integer",
+                        "value": 1
+                      },
+                      "found": "one_or_more",
+                      "matching": "every"
+                    }
+                  },
+                  {
+                    "field": "type",
+                    "predicate": {
+                      "operation": "equals",
+                      "comparison_datatype": "string",
+                      "operand": {
+                        "datatype": "string",
+                        "value": "dword"
+                      },
+                      "found": "one_or_more",
+                      "matching": "every"
+                    }
+                  }
+                ]
+              }
+            },
+            "native_term": {
+              "capability": "windows.registry",
+              "object": {
+                "capability": "windows.registry",
+                "selectors": {
+                  "hive": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "local_machine"
+                    }
+                  },
+                  "key": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization"
+                    }
+                  },
+                  "name": {
+                    "operation": "equals",
+                    "comparison_datatype": "string",
+                    "operand": {
+                      "datatype": "string",
+                      "value": "NoLockScreenSlideshow"
+                    }
+                  }
+                }
+              },
+              "found": "one_or_more",
+              "matching": "every",
+              "condition": {
+                "and": [
+                  {
+                    "field": "value",
+                    "predicate": {
+                      "operation": "equals",
+                      "comparison_datatype": "integer",
+                      "operand": {
+                        "datatype": "integer",
+                        "value": 1
+                      },
+                      "found": "one_or_more",
+                      "matching": "every"
+                    }
+                  },
+                  {
+                    "field": "type",
+                    "predicate": {
+                      "operation": "equals",
+                      "comparison_datatype": "string",
+                      "operand": {
+                        "datatype": "string",
+                        "value": "dword"
+                      },
+                      "found": "one_or_more",
+                      "matching": "every"
+                    }
+                  }
+                ]
+              }
+            },
+            "term_sha256": "63108d3a8a7e4552874958e321a8d3f295d70f18a224ecafce5846af7884e944"
+          }
+        ],
+        "unsupported_obligations": [],
+        "proof_scope": "structural identity of typed collection/comparison/result terms; not scanner execution",
+        "normalizations_applied": [],
+        "invocation_purpose": "assessment",
+        "historical_root_purpose_metadata": false
+      }
+    }
+  ],
+  "content_moved": false,
+  "global_library_modified": false,
+  "scanner_evaluated": false
+}

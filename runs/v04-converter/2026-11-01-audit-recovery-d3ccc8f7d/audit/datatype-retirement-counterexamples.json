@@ -1,0 +1,44 @@
+[
+  {
+    "before": {
+      "datatype": "version",
+      "matches_regex": "1.*"
+    },
+    "after": {
+      "matches_regex": "1.*"
+    },
+    "native_accepts_before": true,
+    "comparison_domain_before": "version",
+    "comparison_domain_after": "string",
+    "equivalent": false,
+    "existing_typed_spelling": "version_matches_regex",
+    "typed_spelling_approved": false,
+    "source_schema": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+    "source_line": 1356,
+    "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[18]/sch:assert",
+    "source_test": "not(@operation) or @operation='equals' or @operation='not equal' or @operation='greater than' or @operation='greater than or equal' or @operation='less than' or @operation='less than or equal'",
+    "source_operation_valid": false,
+    "recommendation": "Reject these source-inconsistent combinations before field-tag retirement; owner decision required because the current native grammar accepts them. Do not invent typed operators or assert runtime equivalence."
+  },
+  {
+    "before": {
+      "datatype": "binary",
+      "case_insensitive_equals": "ff"
+    },
+    "after": {
+      "case_insensitive_equals": "ff"
+    },
+    "native_accepts_before": true,
+    "comparison_domain_before": "binary",
+    "comparison_domain_after": "string",
+    "equivalent": false,
+    "existing_typed_spelling": "binary_case_insensitive_equals",
+    "typed_spelling_approved": false,
+    "source_schema": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+    "source_line": 1316,
+    "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:annotation/xsd:appinfo/sch:pattern[1]/sch:rule[7]/sch:assert",
+    "source_test": "not(@operation) or @operation='equals' or @operation='not equal'",
+    "source_operation_valid": false,
+    "recommendation": "Reject these source-inconsistent combinations before field-tag retirement; owner decision required because the current native grammar accepts them. Do not invent typed operators or assert runtime equivalence."
+  }
+]

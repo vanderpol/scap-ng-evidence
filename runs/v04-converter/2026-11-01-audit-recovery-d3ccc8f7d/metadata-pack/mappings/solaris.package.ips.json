@@ -1,0 +1,83 @@
+{
+  "capability": "solaris.package.ips",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "package511": "solaris.package.ips"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "category": [
+        "string"
+      ],
+      "description": [
+        "string"
+      ],
+      "fmri": [
+        "string"
+      ],
+      "name": [
+        "string"
+      ],
+      "publisher": [
+        "string"
+      ],
+      "summary": [
+        "string"
+      ],
+      "timestamp": [
+        "string"
+      ],
+      "updates_available": [
+        "boolean"
+      ],
+      "version": [
+        "version"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "publisher",
+        "name",
+        "version",
+        "timestamp"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "name": "name",
+      "publisher": "publisher",
+      "timestamp": "timestamp",
+      "version": "version"
+    },
+    "state_field_map": {
+      "category": "category",
+      "description": "description",
+      "fmri": "fmri",
+      "name": "name",
+      "publisher": "publisher",
+      "summary": "summary",
+      "timestamp": "timestamp",
+      "updates_available": "updates_available",
+      "version": "version"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "solaris.package.ips.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability solaris.package.ips."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/solaris-definitions-schema.xsd",
+    "item": "package511_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris",
+    "object": "package511_object",
+    "state": "package511_state",
+    "test": "package511_test"
+  },
+  "specification_version": "0.4.0"
+}

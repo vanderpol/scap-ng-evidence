@@ -1,0 +1,116 @@
+{
+  "$id": "https://scap-ng.dev/schema/v0.4.0/result-package-manifest.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "digest_algorithm": {
+      "const": "sha256"
+    },
+    "evaluation_groups": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "entry_execution_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "execution_ids": {
+            "items": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array",
+            "uniqueItems": true
+          },
+          "target_ref": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "entry_execution_id",
+          "target_ref",
+          "execution_ids"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "format_version": {
+      "const": "scap-ng.result-package.draft-1"
+    },
+    "members": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "scan_result",
+              "benchmark_result",
+              "assessment_result"
+            ]
+          },
+          "path": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "schema_version": {
+            "const": "0.4.0"
+          },
+          "sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "size": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "path",
+          "sha256",
+          "size",
+          "schema_version"
+        ],
+        "type": "object"
+      },
+      "minItems": 2,
+      "type": "array"
+    },
+    "result_schema_version": {
+      "const": "0.4.0"
+    },
+    "run_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "scan_result_ref": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "signature_status": {
+      "const": "unsigned"
+    }
+  },
+  "required": [
+    "format_version",
+    "result_schema_version",
+    "digest_algorithm",
+    "signature_status",
+    "run_id",
+    "scan_result_ref",
+    "members",
+    "evaluation_groups"
+  ],
+  "title": "Draft unsigned result-package integrity manifest",
+  "type": "object",
+  "x-last-modified": "2026-10-06",
+  "x-scap-ng-version": "0.4.0"
+}

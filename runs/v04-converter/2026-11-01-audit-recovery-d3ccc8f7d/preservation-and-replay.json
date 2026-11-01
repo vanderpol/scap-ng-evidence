@@ -1,0 +1,30 @@
+{
+  "base": "a8a9db7039399610cb8af654ab9e880d69cffa04",
+  "implementation": "d3ccc8f7d4613e214dbccfe801a12531c5aa021c",
+  "unchanged_git_trees": {
+    "schema/v0.1.0": "8df2f26c80b0b56554723d1101ef3f3fc5d76835",
+    "schema/v0.2.0": "4230ab59a227fabde25e17fe33642a0c628d7e11",
+    "schema/v0.3.0": "711121c44034b2e125b199d93c11e657a4a34101",
+    "third_party/scap-1.4-schemas": "696d27dbb45804d08622a2c845cc5e7c89376ae8",
+    "tests/fixtures": "acea8a9c586ac0609b45bdf222b920c0fb5a3686",
+    "docs/examples/owner-contract-20261031": "f8ab66acbb73e7432e98a7964beda488cd67a6c2",
+    "docs/examples/owner-variable-contract-20261031": "badb10bc20a6796adb2dc2ee54f69869d5de3539"
+  },
+  "pack_replay": {
+    "hash_seeds": [
+      1,
+      2
+    ],
+    "byte_identical": true,
+    "files": 235,
+    "profile": {
+      "schemaVersion": "0.4.0",
+      "sourceCommit": "d3ccc8f7d4613e214dbccfe801a12531c5aa021c",
+      "manifestSha256": "5d736b1c82fcb6ea3ee4f7af6704dd1a9b630d25ec8f28e2064645a1500c48dc"
+    }
+  },
+  "pack_semantic_resource_parity": {
+    "resources": 233,
+    "equal": true
+  }
+}

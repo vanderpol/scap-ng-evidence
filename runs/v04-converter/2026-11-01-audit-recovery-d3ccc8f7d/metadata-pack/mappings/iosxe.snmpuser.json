@@ -1,0 +1,70 @@
+{
+  "capability": "iosxe.snmpuser",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "snmpuser": "iosxe.snmpuser"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "auth": [
+        "string"
+      ],
+      "group": [
+        "string"
+      ],
+      "ipv4_acl": [
+        "string"
+      ],
+      "ipv6_acl": [
+        "string"
+      ],
+      "name": [
+        "string"
+      ],
+      "priv": [
+        "string"
+      ],
+      "version": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "name"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "name": "name"
+    },
+    "shared_semantic_model": "cisco.snmpuser",
+    "state_field_map": {
+      "auth": "auth",
+      "group": "group",
+      "ipv4_acl": "ipv4_acl",
+      "ipv6_acl": "ipv6_acl",
+      "name": "name",
+      "priv": "priv",
+      "version": "version"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "iosxe.snmpuser.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability iosxe.snmpuser."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/iosxe-definitions-schema.xsd",
+    "item": "snmpuser_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe",
+    "object": "snmpuser_object",
+    "state": "snmpuser_state",
+    "test": "snmpuser_test"
+  },
+  "specification_version": "0.4.0"
+}

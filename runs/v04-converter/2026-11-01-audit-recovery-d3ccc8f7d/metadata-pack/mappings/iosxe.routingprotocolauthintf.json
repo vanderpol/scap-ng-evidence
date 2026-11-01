@@ -1,0 +1,69 @@
+{
+  "capability": "iosxe.routingprotocolauthintf",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "routingprotocolauthintf": "iosxe.routingprotocolauthintf"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "auth_type": [
+        "string"
+      ],
+      "id": [
+        "integer"
+      ],
+      "interface": [
+        "string"
+      ],
+      "key_chain": [
+        "string"
+      ],
+      "ospf_area": [
+        "integer",
+        "ipv4"
+      ],
+      "protocol": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "interface",
+        "protocol"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "interface": "interface",
+      "protocol": "protocol"
+    },
+    "shared_semantic_model": "cisco.routingprotocolauthintf",
+    "state_field_map": {
+      "auth_type": "auth_type",
+      "id": "id",
+      "interface": "interface",
+      "key_chain": "key_chain",
+      "ospf_area": "ospf_area",
+      "protocol": "protocol"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "iosxe.routingprotocolauthintf.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability iosxe.routingprotocolauthintf."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/iosxe-definitions-schema.xsd",
+    "item": "routingprotocolauthintf_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe",
+    "object": "routingprotocolauthintf_object",
+    "state": "routingprotocolauthintf_state",
+    "test": "routingprotocolauthintf_test"
+  },
+  "specification_version": "0.4.0"
+}

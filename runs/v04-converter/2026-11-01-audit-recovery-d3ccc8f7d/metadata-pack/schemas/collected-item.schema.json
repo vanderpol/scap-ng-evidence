@@ -1,0 +1,409 @@
+{
+  "$id": "https://scap-ng.dev/schema/v0.4.0/collected-item.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "imported": {
+            "const": true
+          }
+        },
+        "required": [
+          "imported"
+        ]
+      },
+      "then": {
+        "properties": {
+          "context": {
+            "required": [
+              "origin"
+            ]
+          }
+        },
+        "required": [
+          "context"
+        ]
+      }
+    }
+  ],
+  "description": "Reusable runtime Item shape. Missing Items are absent from the collection, not represented as synthetic does_not_exist Items. Collection-level absence and field-level statuses remain separate.",
+  "properties": {
+    "capability": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "context": {
+      "additionalProperties": false,
+      "properties": {
+        "import_history": {
+          "items": {
+            "additionalProperties": false,
+            "allOf": [
+              {
+                "if": {
+                  "required": [
+                    "source_digest"
+                  ]
+                },
+                "then": {
+                  "required": [
+                    "source_execution_ref",
+                    "binding_set_id",
+                    "source_completeness"
+                  ]
+                }
+              }
+            ],
+            "properties": {
+              "binding_set_id": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "item_ref": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "result_ref": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "source_completeness": {
+                "$ref": "result-types.schema.json#/$defs/completeness"
+              },
+              "source_digest": {
+                "pattern": "^sha256:[0-9a-f]{64}$",
+                "type": "string"
+              },
+              "source_execution_ref": {
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "result_ref",
+              "item_ref"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "locators": {
+          "items": {
+            "additionalProperties": false,
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "kind": {
+                      "const": "text"
+                    }
+                  }
+                },
+                "then": {
+                  "not": {
+                    "anyOf": [
+                      {
+                        "required": [
+                          "path"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "path_language"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "index"
+                        ]
+                      }
+                    ]
+                  },
+                  "required": [
+                    "line"
+                  ]
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "kind": {
+                      "const": "structured"
+                    }
+                  }
+                },
+                "then": {
+                  "not": {
+                    "anyOf": [
+                      {
+                        "required": [
+                          "line"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "column"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "index"
+                        ]
+                      }
+                    ]
+                  },
+                  "required": [
+                    "path",
+                    "path_language"
+                  ]
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "kind": {
+                      "const": "record"
+                    }
+                  }
+                },
+                "then": {
+                  "not": {
+                    "anyOf": [
+                      {
+                        "required": [
+                          "line"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "column"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "path"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "path_language"
+                        ]
+                      }
+                    ]
+                  },
+                  "required": [
+                    "index"
+                  ]
+                }
+              },
+              {
+                "if": {
+                  "anyOf": [
+                    {
+                      "required": [
+                        "value_index"
+                      ]
+                    },
+                    {
+                      "required": [
+                        "property"
+                      ]
+                    }
+                  ]
+                },
+                "then": {
+                  "properties": {
+                    "kind": {
+                      "const": "record"
+                    }
+                  },
+                  "required": [
+                    "field"
+                  ]
+                }
+              }
+            ],
+            "properties": {
+              "column": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "field": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "index": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "kind": {
+                "enum": [
+                  "text",
+                  "structured",
+                  "record"
+                ]
+              },
+              "line": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "path": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "path_language": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "property": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "source_ref": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "value_index": {
+                "minimum": 0,
+                "type": "integer"
+              }
+            },
+            "required": [
+              "kind",
+              "source_ref"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "name_resolution": {
+          "additionalProperties": {
+            "additionalProperties": false,
+            "properties": {
+              "observed_at": {
+                "format": "date-time",
+                "type": "string"
+              },
+              "source_field": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "source_ref": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "target_context_ref": {
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "source_field",
+              "target_context_ref",
+              "source_ref",
+              "observed_at"
+            ],
+            "type": "object"
+          },
+          "type": "object"
+        },
+        "origin": {
+          "additionalProperties": false,
+          "allOf": [
+            {
+              "if": {
+                "required": [
+                  "source_digest"
+                ]
+              },
+              "then": {
+                "required": [
+                  "source_execution_ref",
+                  "binding_set_id",
+                  "source_completeness"
+                ]
+              }
+            }
+          ],
+          "properties": {
+            "binding_set_id": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "item_ref": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "result_ref": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_completeness": {
+              "$ref": "result-types.schema.json#/$defs/completeness"
+            },
+            "source_digest": {
+              "pattern": "^sha256:[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "source_execution_ref": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "result_ref",
+            "item_ref"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "object"
+    },
+    "fields": {
+      "additionalProperties": {
+        "oneOf": [
+          {
+            "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+          },
+          {
+            "items": {
+              "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+            },
+            "type": "array"
+          }
+        ]
+      },
+      "type": "object"
+    },
+    "id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "imported": {
+      "type": "boolean"
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "status": {
+      "enum": [
+        "exists",
+        "error",
+        "not_collected"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "capability",
+    "status",
+    "fields",
+    "provenance"
+  ],
+  "title": "Draft canonical collected Item 0.4.0",
+  "type": "object",
+  "x-last-modified": "2026-10-23",
+  "x-scap-ng-version": "0.4.0"
+}

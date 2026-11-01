@@ -1,0 +1,76 @@
+{
+  "capability": "solaris.smfproperty",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "smfproperty": "solaris.smfproperty"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "fmri": [
+        "string"
+      ],
+      "instance": [
+        "string"
+      ],
+      "property": [
+        "string"
+      ],
+      "service": [
+        "string"
+      ],
+      "value": [
+        "string",
+        "boolean",
+        "integer",
+        "float",
+        "binary",
+        "version",
+        "ipv4",
+        "ipv6",
+        "rpm_evr",
+        "debian_evr",
+        "fileset_revision",
+        "ios_version"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "service",
+        "instance",
+        "property"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "instance": "instance",
+      "property": "property",
+      "service": "service"
+    },
+    "state_field_map": {
+      "fmri": "fmri",
+      "instance": "instance",
+      "property": "property",
+      "service": "service",
+      "value": "value"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "solaris.smfproperty.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability solaris.smfproperty."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/solaris-definitions-schema.xsd",
+    "item": "smfproperty_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris",
+    "object": "smfproperty_object",
+    "state": "smfproperty_state",
+    "test": "smfproperty_test"
+  },
+  "specification_version": "0.4.0"
+}

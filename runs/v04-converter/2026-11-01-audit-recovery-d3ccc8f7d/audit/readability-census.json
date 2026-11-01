@@ -1,0 +1,34 @@
+[
+  {
+    "rule": "xccdf_mil.disa.stig_rule_SV-278139r1182083_rule",
+    "human_compact": false,
+    "candidate_redundant_and_sites": [
+      "/tests/permissions-must-conform-to-minimum-requirements-test/require"
+    ],
+    "explicit_comparison_datatypes": [],
+    "repeated_inherited_policy_sites": []
+  },
+  {
+    "rule": "xccdf_mil.disa.stig_rule_SV-278139r1182083_rule",
+    "human_compact": true,
+    "candidate_redundant_and_sites": [],
+    "explicit_comparison_datatypes": [],
+    "repeated_inherited_policy_sites": []
+  },
+  {
+    "rule": "xccdf_mil.disa.stig_rule_SV-278080r1180946_rule",
+    "human_compact": false,
+    "candidate_redundant_and_sites": [
+      "/tests/verifies-prevent-enabling-screen-slide-show-is-set-enabled-test/require"
+    ],
+    "explicit_comparison_datatypes": [],
+    "repeated_inherited_policy_sites": []
+  },
+  {
+    "rule": "xccdf_mil.disa.stig_rule_SV-278080r1180946_rule",
+    "human_compact": true,
+    "candidate_redundant_and_sites": [],
+    "explicit_comparison_datatypes": [],
+    "repeated_inherited_policy_sites": []
+  }
+]

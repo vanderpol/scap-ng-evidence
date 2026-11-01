@@ -1,0 +1,158 @@
+{
+  "requirement": {
+    "items_found": "one_or_more",
+    "items_satisfying": "every",
+    "field_requirement": {
+      "values_found": "one_or_more",
+      "values_matching": "every"
+    },
+    "and": [
+      {
+        "fields": {
+          "test_member": {
+            "equals": "t"
+          }
+        }
+      },
+      {
+        "field_requirement": {
+          "values_found": "zero_or_more",
+          "values_matching": "one_or_more"
+        },
+        "fields": {
+          "result": {
+            "record": {
+              "records_found": "one_or_more",
+              "records_matching": "every",
+              "field_requirement": {
+                "values_found": "exactly_one",
+                "values_matching": "every"
+              },
+              "fields": {
+                "left": {
+                  "equals": "x"
+                },
+                "right": {
+                  "equals": "y",
+                  "values_found": "zero_or_more",
+                  "values_matching": "none"
+                }
+              }
+            }
+          },
+          "group_member": {
+            "equals": "g"
+          }
+        }
+      }
+    ]
+  },
+  "effective_scopes": [
+    {
+      "path": [
+        "require",
+        "and",
+        0,
+        "fields",
+        "test_member"
+      ],
+      "field_requirement": {
+        "values_found": "one_or_more",
+        "values_matching": "every"
+      },
+      "declaration_path": [
+        "require",
+        "field_requirement"
+      ]
+    },
+    {
+      "path": [
+        "require",
+        "and",
+        1,
+        "fields",
+        "group_member"
+      ],
+      "field_requirement": {
+        "values_found": "zero_or_more",
+        "values_matching": "one_or_more"
+      },
+      "declaration_path": [
+        "require",
+        "and",
+        1,
+        "field_requirement"
+      ]
+    },
+    {
+      "path": [
+        "require",
+        "and",
+        1,
+        "fields",
+        "result",
+        "record"
+      ],
+      "record_requirement": {
+        "records_found": "one_or_more",
+        "records_matching": "every"
+      }
+    },
+    {
+      "path": [
+        "require",
+        "and",
+        1,
+        "fields",
+        "result",
+        "record",
+        "fields",
+        "left"
+      ],
+      "field_requirement": {
+        "values_found": "exactly_one",
+        "values_matching": "every"
+      },
+      "declaration_path": [
+        "require",
+        "and",
+        1,
+        "fields",
+        "result",
+        "record",
+        "field_requirement"
+      ]
+    },
+    {
+      "path": [
+        "require",
+        "and",
+        1,
+        "fields",
+        "result",
+        "record",
+        "fields",
+        "right"
+      ],
+      "field_requirement": {
+        "values_found": "zero_or_more",
+        "values_matching": "none"
+      },
+      "declaration_path": [
+        "require",
+        "and",
+        1,
+        "fields",
+        "result",
+        "record",
+        "fields",
+        "right"
+      ]
+    }
+  ],
+  "owner_expected_record_member": {
+    "values_found": "exactly_one",
+    "values_matching": "every"
+  },
+  "result": "PASS"
+}

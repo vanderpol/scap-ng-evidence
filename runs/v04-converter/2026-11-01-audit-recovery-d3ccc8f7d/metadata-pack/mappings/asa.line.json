@@ -1,0 +1,49 @@
+{
+  "capability": "asa.line",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "line": "asa.line"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "config_line": [
+        "string"
+      ],
+      "show_subcommand": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "show_subcommand"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "show_subcommand": "show_subcommand"
+    },
+    "state_field_map": {
+      "config_line": "config_line",
+      "show_subcommand": "show_subcommand"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "asa.line.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability asa.line."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/asa-definitions-schema.xsd",
+    "item": "line_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#asa",
+    "object": "line_object",
+    "state": "line_state",
+    "test": "line_test"
+  },
+  "specification_version": "0.4.0"
+}

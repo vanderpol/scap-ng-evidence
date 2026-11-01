@@ -1,0 +1,2907 @@
+{
+  "$defs": {
+    "collected_item": {
+      "allOf": [
+        {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/collected-item.schema.json"
+        },
+        {
+          "properties": {
+            "capability": {
+              "const": "windows.auditeventpolicysubcategories"
+            },
+            "fields": {
+              "additionalProperties": false,
+              "properties": {
+                "account_lockout": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "application_generated": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "application_group_management": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "audit_detailedtracking_tokenrightadjusted": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "audit_policy_change": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "authentication_policy_change": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "authorization_policy_change": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "central_access_policy_staging": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "certification_services": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "computer_account_management": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "credential_validation": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "detailed_directory_service_replication": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "detailed_file_share": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "directory_service_access": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "directory_service_changes": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "directory_service_replication": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "distribution_group_management": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "dpapi_activity": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "file_share": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "file_system": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "filtering_platform_connection": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "filtering_platform_packet_drop": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "filtering_platform_policy_change": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "group_membership": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "handle_manipulation": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "ipsec_driver": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "ipsec_extended_mode": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "ipsec_main_mode": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "ipsec_quick_mode": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "kerberos_authentication_service": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "kerberos_service_ticket_operations": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "kernel_object": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "logoff": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "logon": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "logon_claims": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "mpssvc_rule_level_policy_change": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "network_policy_server": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "non_sensitive_privilege_use": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "other_account_logon_events": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "other_account_management_events": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "other_logon_logoff_events": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "other_object_access_events": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "other_policy_change_events": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "other_privilege_use_events": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "other_system_events": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "pnp_activity": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "process_creation": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "process_termination": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "registry": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "removable_storage": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "rpc_events": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "sam": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "security_group_management": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "security_state_change": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "security_system_extension": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "sensitive_privilege_use": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "special_logon": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "system_integrity": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "user_account_management": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "user_device_claims": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                }
+              },
+              "type": "object"
+            }
+          },
+          "type": "object"
+        }
+      ]
+    },
+    "native_set_expression": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "operator": {
+                "const": "difference"
+              }
+            },
+            "required": [
+              "operator"
+            ]
+          },
+          "then": {
+            "properties": {
+              "operands": {
+                "maxItems": 2
+              }
+            }
+          }
+        }
+      ],
+      "properties": {
+        "operands": {
+          "items": {
+            "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.auditeventpolicysubcategories.schema.json#/$defs/native_set_operand"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "operator": {
+          "enum": [
+            "union",
+            "intersection",
+            "difference"
+          ]
+        }
+      },
+      "required": [
+        "operator",
+        "operands"
+      ],
+      "type": "object"
+    },
+    "native_set_operand": {
+      "oneOf": [
+        {
+          "additionalProperties": false,
+          "properties": {
+            "filters": {
+              "items": {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/state_filter"
+              },
+              "type": "array"
+            },
+            "object": {
+              "oneOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/object_reference"
+                },
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.auditeventpolicysubcategories.schema.json#/$defs/object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "object",
+            "filters"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "set": {
+              "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.auditeventpolicysubcategories.schema.json#/$defs/native_set_expression"
+            }
+          },
+          "required": [
+            "set"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "state_expression": {
+      "oneOf": [
+        {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.auditeventpolicysubcategories.schema.json#/$defs/state_predicate"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "and": {
+              "items": {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.auditeventpolicysubcategories.schema.json#/$defs/state_expression"
+              },
+              "minItems": 1,
+              "type": "array"
+            }
+          },
+          "required": [
+            "and"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "or": {
+              "items": {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.auditeventpolicysubcategories.schema.json#/$defs/state_expression"
+              },
+              "minItems": 1,
+              "type": "array"
+            }
+          },
+          "required": [
+            "or"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "one": {
+              "items": {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.auditeventpolicysubcategories.schema.json#/$defs/state_expression"
+              },
+              "minItems": 1,
+              "type": "array"
+            }
+          },
+          "required": [
+            "one"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "xor": {
+              "items": {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.auditeventpolicysubcategories.schema.json#/$defs/state_expression"
+              },
+              "minItems": 1,
+              "type": "array"
+            }
+          },
+          "required": [
+            "xor"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "state_predicate": {
+      "oneOf": [
+        {
+          "additionalProperties": false,
+          "properties": {
+            "account_lockout": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "account_lockout"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "application_generated": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "application_generated"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "application_group_management": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "application_group_management"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "audit_detailedtracking_tokenrightadjusted": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "audit_detailedtracking_tokenrightadjusted"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "audit_policy_change": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "audit_policy_change"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "authentication_policy_change": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "authentication_policy_change"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "authorization_policy_change": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "authorization_policy_change"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "central_access_policy_staging": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "central_access_policy_staging"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "certification_services": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "certification_services"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "computer_account_management": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "computer_account_management"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "credential_validation": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "credential_validation"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "detailed_directory_service_replication": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "detailed_directory_service_replication"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "detailed_file_share": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "detailed_file_share"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "directory_service_access": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "directory_service_access"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "directory_service_changes": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "directory_service_changes"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "directory_service_replication": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "directory_service_replication"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "distribution_group_management": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "distribution_group_management"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "dpapi_activity": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "dpapi_activity"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "file_share": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "file_share"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "file_system": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "file_system"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "filtering_platform_connection": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "filtering_platform_connection"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "filtering_platform_packet_drop": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "filtering_platform_packet_drop"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "filtering_platform_policy_change": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "filtering_platform_policy_change"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "group_membership": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "group_membership"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "handle_manipulation": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "handle_manipulation"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "ipsec_driver": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "ipsec_driver"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "ipsec_extended_mode": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "ipsec_extended_mode"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "ipsec_main_mode": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "ipsec_main_mode"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "ipsec_quick_mode": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "ipsec_quick_mode"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "kerberos_authentication_service": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "kerberos_authentication_service"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "kerberos_service_ticket_operations": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "kerberos_service_ticket_operations"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "kernel_object": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "kernel_object"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "logoff": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "logoff"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "logon": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "logon"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "logon_claims": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "logon_claims"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "mpssvc_rule_level_policy_change": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "mpssvc_rule_level_policy_change"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "network_policy_server": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "network_policy_server"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "non_sensitive_privilege_use": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "non_sensitive_privilege_use"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "other_account_logon_events": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "other_account_logon_events"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "other_account_management_events": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "other_account_management_events"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "other_logon_logoff_events": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "other_logon_logoff_events"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "other_object_access_events": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "other_object_access_events"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "other_policy_change_events": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "other_policy_change_events"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "other_privilege_use_events": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "other_privilege_use_events"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "other_system_events": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "other_system_events"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "pnp_activity": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "pnp_activity"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "process_creation": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "process_creation"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "process_termination": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "process_termination"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "registry": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "registry"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "removable_storage": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "removable_storage"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "rpc_events": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "rpc_events"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "sam": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "sam"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "security_group_management": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "security_group_management"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "security_state_change": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "security_state_change"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "security_system_extension": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "security_system_extension"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "sensitive_privilege_use": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "sensitive_privilege_use"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "special_logon": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "special_logon"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "system_integrity": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "system_integrity"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "user_account_management": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "user_account_management"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "user_device_claims": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "user_device_claims"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "test": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "states": {
+                "minItems": 2,
+                "type": "array"
+              }
+            },
+            "required": [
+              "states"
+            ]
+          },
+          "then": {
+            "required": [
+              "states_match"
+            ]
+          }
+        },
+        {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/test"
+        }
+      ],
+      "not": {
+        "anyOf": [
+          {
+            "required": [
+              "existence"
+            ]
+          },
+          {
+            "required": [
+              "match"
+            ]
+          }
+        ]
+      },
+      "properties": {
+        "capability": {
+          "const": "windows.auditeventpolicysubcategories"
+        },
+        "reported_elements": {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/reported-elements.schema.json"
+        },
+        "require": {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/test/properties/require"
+        },
+        "test_title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "capability",
+        "reported_elements",
+        "require",
+        "test_title"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.auditeventpolicysubcategories.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "DRAFT: SCAP-NG 0.4 generated native capability contract. One authored Test/Object/State grammar; derived from reviewed source OVAL 5.12.3 mappings.",
+  "title": "Generated SCAP-NG capability fragment: windows.auditeventpolicysubcategories",
+  "x-authoring-gate": "Draft structural generation only; source enumeration and cross-field semantics require additional validation before 0.4 freeze.",
+  "x-semantic-validator-rules": [
+    {
+      "id": "windows.auditeventpolicysubcategories.singleton_source",
+      "rule": "The capability evaluates the current Windows system audit-policy subcategories directly; native content SHALL NOT introduce a meaningless singleton Object."
+    },
+    {
+      "id": "windows.auditeventpolicysubcategories.supported_fields",
+      "rule": "Deprecated OVAL state entity kerberos_ticket_events is not a native field; all other mapped OVAL 5.12.3 audit subcategory entities remain independently testable."
+    }
+  ],
+  "x-specification-version": "0.4.0"
+}

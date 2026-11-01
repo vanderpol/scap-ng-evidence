@@ -1,0 +1,65 @@
+{
+  "capability": "solaris.package",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "package": "solaris.package"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "category": [
+        "string"
+      ],
+      "description": [
+        "string"
+      ],
+      "name": [
+        "string"
+      ],
+      "pkginst": [
+        "string"
+      ],
+      "vendor": [
+        "string"
+      ],
+      "version": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "pkginst"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "pkginst": "pkginst"
+    },
+    "state_field_map": {
+      "category": "category",
+      "description": "description",
+      "name": "name",
+      "pkginst": "pkginst",
+      "vendor": "vendor",
+      "version": "version"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "solaris.package.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability solaris.package."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/solaris-definitions-schema.xsd",
+    "item": "package_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris",
+    "object": "package_object",
+    "state": "package_state",
+    "test": "package_test"
+  },
+  "specification_version": "0.4.0"
+}

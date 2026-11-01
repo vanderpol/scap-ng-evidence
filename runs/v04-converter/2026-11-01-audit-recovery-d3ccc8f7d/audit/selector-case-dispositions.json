@@ -1,0 +1,285 @@
+[
+  {
+    "capability": "independent.environmentvariable",
+    "source_kind": null,
+    "native_selector_fields": [
+      "pid",
+      "name"
+    ],
+    "acquisition_parameter_fields": [],
+    "metadata": null,
+    "status": "UNPROVED",
+    "notes": "String acquisition parameters are not automatically lookup identities; no case behavior is guessed. Environment-variable behavior depends on target platform."
+  },
+  {
+    "capability": "windows.appcmd",
+    "source_kind": null,
+    "native_selector_fields": [
+      "identifier_type",
+      "identifier",
+      "parameter"
+    ],
+    "acquisition_parameter_fields": [],
+    "metadata": null,
+    "status": "UNPROVED",
+    "notes": "String acquisition parameters are not automatically lookup identities; no case behavior is guessed. Environment-variable behavior depends on target platform."
+  },
+  {
+    "capability": "windows.appcmdlistconfig",
+    "source_kind": null,
+    "native_selector_fields": [
+      "identifier_type",
+      "identifier",
+      "section",
+      "parameter"
+    ],
+    "acquisition_parameter_fields": [],
+    "metadata": null,
+    "status": "UNPROVED",
+    "notes": "String acquisition parameters are not automatically lookup identities; no case behavior is guessed. Environment-variable behavior depends on target platform."
+  },
+  {
+    "capability": "windows.auditeventpolicysubcategories",
+    "source_kind": "none",
+    "native_selector_fields": [],
+    "acquisition_parameter_fields": [],
+    "metadata": null,
+    "status": "NOT_APPLICABLE_NO_NATIVE_SELECTORS",
+    "notes": "String acquisition parameters are not automatically lookup identities; no case behavior is guessed. Environment-variable behavior depends on target platform."
+  },
+  {
+    "capability": "windows.cmdlet",
+    "source_kind": null,
+    "native_selector_fields": [],
+    "acquisition_parameter_fields": [
+      "module_name",
+      "module_id",
+      "module_version",
+      "verb",
+      "noun",
+      "parameters",
+      "select"
+    ],
+    "metadata": null,
+    "status": "UNPROVED",
+    "notes": "String acquisition parameters are not automatically lookup identities; no case behavior is guessed. Environment-variable behavior depends on target platform."
+  },
+  {
+    "capability": "windows.file",
+    "source_kind": null,
+    "native_selector_fields": [
+      "full_path",
+      "directory",
+      "name"
+    ],
+    "acquisition_parameter_fields": [],
+    "metadata": {
+      "full_path": {
+        "mode": "filesystem_per_directory",
+        "description": "Resolve path components under each containing directory's effective case-sensitivity configuration; do not normalize filenames unconditionally."
+      },
+      "directory": {
+        "mode": "filesystem_per_directory",
+        "description": "Directory component lookup follows the effective case-sensitivity configuration of the parent directory."
+      },
+      "name": {
+        "mode": "filesystem_per_directory",
+        "description": "Filename lookup follows the containing directory's effective case-sensitivity configuration."
+      },
+      "scanner_discovery": "On Windows, query the containing directory's case-sensitive flag before enforcing exact path-name matching; Microsoft documents fsutil.exe file queryCaseSensitiveInfo <path>. API implementations must also account for filesystem and Win32 API-specific lookup behavior. Do not assume NTFS case-insensitive lookup universally.",
+      "references": [
+        "https://learn.microsoft.com/en-us/windows/wsl/case-sensitivity",
+        "https://learn.microsoft.com/en-us/windows/desktop/fileio/naming-a-file"
+      ]
+    },
+    "status": "DOCUMENTED_NOT_RUNTIME_VERIFIED",
+    "notes": "String acquisition parameters are not automatically lookup identities; no case behavior is guessed. Environment-variable behavior depends on target platform."
+  },
+  {
+    "capability": "windows.fileeffectiverights",
+    "source_kind": null,
+    "native_selector_fields": [
+      "full_path",
+      "directory",
+      "name",
+      "trustee_sid"
+    ],
+    "acquisition_parameter_fields": [],
+    "metadata": null,
+    "status": "UNPROVED",
+    "notes": "String acquisition parameters are not automatically lookup identities; no case behavior is guessed. Environment-variable behavior depends on target platform."
+  },
+  {
+    "capability": "windows.group_sid",
+    "source_kind": null,
+    "native_selector_fields": [
+      "group_sid"
+    ],
+    "acquisition_parameter_fields": [],
+    "metadata": null,
+    "status": "UNPROVED",
+    "notes": "String acquisition parameters are not automatically lookup identities; no case behavior is guessed. Environment-variable behavior depends on target platform."
+  },
+  {
+    "capability": "windows.lockoutpolicy",
+    "source_kind": "none",
+    "native_selector_fields": [],
+    "acquisition_parameter_fields": [],
+    "metadata": null,
+    "status": "NOT_APPLICABLE_NO_NATIVE_SELECTORS",
+    "notes": "String acquisition parameters are not automatically lookup identities; no case behavior is guessed. Environment-variable behavior depends on target platform."
+  },
+  {
+    "capability": "windows.ntuser",
+    "source_kind": null,
+    "native_selector_fields": [
+      "key",
+      "name"
+    ],
+    "acquisition_parameter_fields": [
+      "include_default",
+      "item_creation"
+    ],
+    "metadata": null,
+    "status": "UNPROVED",
+    "notes": "String acquisition parameters are not automatically lookup identities; no case behavior is guessed. Environment-variable behavior depends on target platform."
+  },
+  {
+    "capability": "windows.passwordpolicy",
+    "source_kind": "none",
+    "native_selector_fields": [],
+    "acquisition_parameter_fields": [],
+    "metadata": null,
+    "status": "NOT_APPLICABLE_NO_NATIVE_SELECTORS",
+    "notes": "String acquisition parameters are not automatically lookup identities; no case behavior is guessed. Environment-variable behavior depends on target platform."
+  },
+  {
+    "capability": "windows.registry",
+    "source_kind": null,
+    "native_selector_fields": [
+      "hive",
+      "key",
+      "name"
+    ],
+    "acquisition_parameter_fields": [],
+    "metadata": {
+      "hive": {
+        "mode": "canonical_enum",
+        "description": "Use the canonical hive enum; do not use a generic string case switch."
+      },
+      "key": {
+        "mode": "case_insensitive",
+        "description": "Registry key lookup follows Windows Registry API key identity, which is case-insensitive."
+      },
+      "name": {
+        "mode": "case_insensitive",
+        "description": "Registry value name lookup follows Windows Registry API value-name identity, which is case-insensitive."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/windows/win32/sysinfo/structure-of-the-registry",
+        "https://learn.microsoft.com/en-us/dotnet/api/microsoft.win32.registry.getvalue"
+      ]
+    },
+    "status": "DOCUMENTED_NOT_RUNTIME_VERIFIED",
+    "notes": "String acquisition parameters are not automatically lookup identities; no case behavior is guessed. Environment-variable behavior depends on target platform."
+  },
+  {
+    "capability": "windows.regkeyeffectiverights",
+    "source_kind": null,
+    "native_selector_fields": [
+      "hive",
+      "key",
+      "trustee_sid"
+    ],
+    "acquisition_parameter_fields": [],
+    "metadata": null,
+    "status": "UNPROVED",
+    "notes": "String acquisition parameters are not automatically lookup identities; no case behavior is guessed. Environment-variable behavior depends on target platform."
+  },
+  {
+    "capability": "windows.service",
+    "source_kind": null,
+    "native_selector_fields": [
+      "service_name"
+    ],
+    "acquisition_parameter_fields": [],
+    "metadata": null,
+    "status": "UNPROVED",
+    "notes": "String acquisition parameters are not automatically lookup identities; no case behavior is guessed. Environment-variable behavior depends on target platform."
+  },
+  {
+    "capability": "windows.sid",
+    "source_kind": null,
+    "native_selector_fields": [
+      "trustee_name"
+    ],
+    "acquisition_parameter_fields": [
+      "include_group",
+      "resolve_group"
+    ],
+    "metadata": null,
+    "status": "UNPROVED",
+    "notes": "String acquisition parameters are not automatically lookup identities; no case behavior is guessed. Environment-variable behavior depends on target platform."
+  },
+  {
+    "capability": "windows.sid_sid",
+    "source_kind": null,
+    "native_selector_fields": [
+      "trustee_sid"
+    ],
+    "acquisition_parameter_fields": [
+      "include_group",
+      "resolve_group"
+    ],
+    "metadata": null,
+    "status": "UNPROVED",
+    "notes": "String acquisition parameters are not automatically lookup identities; no case behavior is guessed. Environment-variable behavior depends on target platform."
+  },
+  {
+    "capability": "windows.user_sid",
+    "source_kind": null,
+    "native_selector_fields": [
+      "user_sid"
+    ],
+    "acquisition_parameter_fields": [],
+    "metadata": null,
+    "status": "UNPROVED",
+    "notes": "String acquisition parameters are not automatically lookup identities; no case behavior is guessed. Environment-variable behavior depends on target platform."
+  },
+  {
+    "capability": "windows.userright",
+    "source_kind": null,
+    "native_selector_fields": [
+      "userright"
+    ],
+    "acquisition_parameter_fields": [],
+    "metadata": null,
+    "status": "UNPROVED",
+    "notes": "String acquisition parameters are not automatically lookup identities; no case behavior is guessed. Environment-variable behavior depends on target platform."
+  },
+  {
+    "capability": "windows.wmi.query",
+    "source_kind": null,
+    "native_selector_fields": [],
+    "acquisition_parameter_fields": [
+      "namespace",
+      "query"
+    ],
+    "metadata": null,
+    "status": "UNPROVED",
+    "notes": "String acquisition parameters are not automatically lookup identities; no case behavior is guessed. Environment-variable behavior depends on target platform."
+  },
+  {
+    "capability": "windows.wuaupdatesearcher",
+    "source_kind": null,
+    "native_selector_fields": [
+      "search_criteria"
+    ],
+    "acquisition_parameter_fields": [
+      "include_superseded_updates"
+    ],
+    "metadata": null,
+    "status": "UNPROVED",
+    "notes": "String acquisition parameters are not automatically lookup identities; no case behavior is guessed. Environment-variable behavior depends on target platform."
+  }
+]
