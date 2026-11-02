@@ -1,0 +1,18 @@
+{
+  "evidence_id": "2026-11-02-final-schema-freeze-download-receipt",
+  "evidence_kind": "repository/audit evidence",
+  "created_at": "2026-11-02T10:46:43.254334+00:00",
+  "source_repository": "https://github.com/vanderpol/scap-ng",
+  "source_commit": "6efe0d053e79d513339f7999c52d214886b6d201",
+  "input_evidence_commit": "b399af32b9e22efa15e974ea4e3a5819a6033041",
+  "generating_tool": "verify-download.py in this receipt",
+  "generating_tool_sha256": "1e341909667b3f8653fa8bb79cba5bc73b0bfd5cb2402d3b7d77b1849f9cc73a",
+  "command": "curl immutable GitHub raw commit ZIP URL; python verify-download.py",
+  "validation_status": "PASS: archive SHA256/size/CRC, exact337members and all336payload digests; fresh extraction",
+  "output_root": "runs/v04-converter/2026-11-02-final-schema-freeze-download-receipt",
+  "output_files": 4,
+  "limitations": [
+    "Artifact integrity verification, not scanner/API execution or signed publisher authentication",
+    "GO is an owner schema-freeze acceptance recommendation; no freeze/merge/tag/release performed"
+  ]
+}
