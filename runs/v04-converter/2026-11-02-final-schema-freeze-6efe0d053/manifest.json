@@ -1,0 +1,161 @@
+{
+  "evidence_id": "2026-11-02-final-schema-freeze-6efe0d053",
+  "evidence_kind": "repository/audit and bounded language-contract verification; no native scanner execution",
+  "created_at": "2026-11-02T10:39:13.867286+00:00",
+  "source_repository": "https://github.com/vanderpol/scap-ng",
+  "source_commit": "6efe0d053e79d513339f7999c52d214886b6d201",
+  "editor_commit": "e3ac52753569e861cc1e0df1a458ecdc023ec1ad",
+  "generating_tool_commit": "6efe0d053e79d513339f7999c52d214886b6d201",
+  "generating_tools": [
+    "tools/audit_v04_selector_contracts.py",
+    "tools/audit_v04_schema_freeze_readiness.py",
+    "tools/test_v04_schema_draft.py",
+    "tools/build_v04_editor_metadata_pack.py"
+  ],
+  "commands": [
+    "PYTHONPATH=tools python tools/test_v04_selector_contracts.py -v",
+    "PYTHONPATH=tools python tools/test_v04_schema_draft.py",
+    "49 maintained scripts individually listed in maintained-scripts.json",
+    "8 additional owner-boundary suites listed with original/corrected receipts",
+    "PYTHONPATH=tools python tools/audit_v04_schema_freeze_readiness.py --output NEW.json",
+    "npm run lint; npm test; SCAP_NG_METADATA_PACK=<explicit> SCAP_NG_SOURCE_ROOT=<explicit> npm run test:integration; npm --cache <writable> run package"
+  ],
+  "inputs": "selector-api-contracts.json source URL/SHA256 receipts plus preservation.json and pinned original source fixtures",
+  "validation_status": "PASS:all bounded local checks and13 exact-source/1 editor hosted runs",
+  "recommendation": "GO for owner schema-freeze acceptance only",
+  "language_contract_findings": "LC-SELECTOR-CASE CLOSED; LC-NATIVE-RESULTS CLOSED",
+  "decision_count": 29,
+  "selector_capabilities": 15,
+  "selector_fields": 42,
+  "sources": 32,
+  "root_schemas": 34,
+  "refs_checked": 242,
+  "scanner_executed": false,
+  "api_cases_executed": false,
+  "limitations": [
+    "No actual freeze/merge/tag/release performed",
+    "native scanner/provider/Variable/Set/runtime qualification and VS Code host/UI testing remain separate",
+    "release packaging/owner authorization and recorded project licensing decision remain",
+    "no65-STIG regeneration or proof rebaseline"
+  ],
+  "previous_evidence_preserved": "3d4f300d62505e966c7aff78d8be7f53d6a38112",
+  "hosted_source_runs": [
+    {
+      "conclusion": "success",
+      "databaseId": 41430274929,
+      "headSha": "6efe0d053e79d513339f7999c52d214886b6d201",
+      "name": "Markdown navigation and duplication audit",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41430274929"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41430274985,
+      "headSha": "6efe0d053e79d513339f7999c52d214886b6d201",
+      "name": "0.4 independent JSON authoring schema and reference gate",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41430274985"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41430275012,
+      "headSha": "6efe0d053e79d513339f7999c52d214886b6d201",
+      "name": "0.4 schema and converter contract synchronization",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41430275012"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41430274987,
+      "headSha": "6efe0d053e79d513339f7999c52d214886b6d201",
+      "name": "0.4.0 toolchain clean-extract smoke",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41430274987"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41430274997,
+      "headSha": "6efe0d053e79d513339f7999c52d214886b6d201",
+      "name": "Commit issue reference",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41430274997"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41430275069,
+      "headSha": "6efe0d053e79d513339f7999c52d214886b6d201",
+      "name": "Native SCAP-NG schema validation",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41430275069"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41430274909,
+      "headSha": "6efe0d053e79d513339f7999c52d214886b6d201",
+      "name": "0.4.0 canonical authoring fast checks",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41430274909"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41430274942,
+      "headSha": "6efe0d053e79d513339f7999c52d214886b6d201",
+      "name": "Current RHEL9 full source review",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41430274942"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41430275056,
+      "headSha": "6efe0d053e79d513339f7999c52d214886b6d201",
+      "name": "Current-design regression contracts",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41430275056"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41430275022,
+      "headSha": "6efe0d053e79d513339f7999c52d214886b6d201",
+      "name": "SCAP-NG 0.4 draft schema checks",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41430275022"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41430274984,
+      "headSha": "6efe0d053e79d513339f7999c52d214886b6d201",
+      "name": "Representative Board conversion regression",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41430274984"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41430268771,
+      "headSha": "6efe0d053e79d513339f7999c52d214886b6d201",
+      "name": "Commit issue reference",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41430268771"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41430268596,
+      "headSha": "6efe0d053e79d513339f7999c52d214886b6d201",
+      "name": "SCAP-NG 0.4 draft schema checks",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41430268596"
+    }
+  ],
+  "hosted_editor_runs": [
+    {
+      "conclusion": "success",
+      "databaseId": 41430440503,
+      "headSha": "e3ac52753569e861cc1e0df1a458ecdc023ec1ad",
+      "name": "Offline metadata and source preservation",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng-vscode/actions/runs/41430440503"
+    }
+  ],
+  "schema_freeze_readiness": "GO_FOR_OWNER_ACCEPTANCE",
+  "source_and_editor_worktrees_clean": true,
+  "output_root": "runs/v04-converter/2026-11-02-final-schema-freeze-6efe0d053"
+}

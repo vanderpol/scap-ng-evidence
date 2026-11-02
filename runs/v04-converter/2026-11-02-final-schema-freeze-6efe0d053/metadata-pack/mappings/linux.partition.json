@@ -1,0 +1,84 @@
+{
+  "capability": "linux.partition",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "partition": "linux.partition"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "block_size": [
+        "integer"
+      ],
+      "device": [
+        "string"
+      ],
+      "fs_type": [
+        "string"
+      ],
+      "mount_options": [
+        "string"
+      ],
+      "mount_point": [
+        "string"
+      ],
+      "space_left": [
+        "integer"
+      ],
+      "space_left_for_unprivileged_users": [
+        "integer"
+      ],
+      "space_used": [
+        "integer"
+      ],
+      "total_space": [
+        "integer"
+      ],
+      "uuid": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "mount_point"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "mount_point": "mount_point"
+    },
+    "state_field_map": {
+      "block_size": "block_size",
+      "device": "device",
+      "fs_type": "fs_type",
+      "mount_options": "mount_options",
+      "mount_point": "mount_point",
+      "space_left": "space_left",
+      "space_left_for_unprivileged_users": "space_left_for_unprivileged_users",
+      "space_used": "space_used",
+      "total_space": "total_space",
+      "uuid": "uuid"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "linux.partition.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability linux.partition."
+    },
+    {
+      "id": "linux.partition.mount_options_complete",
+      "rule": "Collectors SHALL report the effective mount-option set, including options not visible only through /etc/mtab or /proc/mounts; /etc/fstab alone is not sufficient evidence."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/linux-definitions-schema.xsd",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#linux",
+    "object": "partition_object",
+    "state": "partition_state",
+    "test": "partition_test"
+  },
+  "specification_version": "0.4.0"
+}

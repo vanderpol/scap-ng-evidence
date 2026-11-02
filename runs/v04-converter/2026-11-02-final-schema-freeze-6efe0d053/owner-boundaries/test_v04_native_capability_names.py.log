@@ -1,0 +1,10 @@
+test_all_eleven_names_changed_only_native_identity_source_qnames_exact (__main__.NativeCapabilityNames.test_all_eleven_names_changed_only_native_identity_source_qnames_exact) ... ok
+test_archival_decoder_never_rewrites_expected_text (__main__.NativeCapabilityNames.test_archival_decoder_never_rewrites_expected_text) ... ok
+test_identity_projection_cannot_reauthorize_semantic_mapping_changes (__main__.NativeCapabilityNames.test_identity_projection_cannot_reauthorize_semantic_mapping_changes) ... ok
+test_old_native_names_are_not_current_compiler_aliases (__main__.NativeCapabilityNames.test_old_native_names_are_not_current_compiler_aliases) ... ok
+test_solaris_ips_and_svr4_remain_distinct_source_collections (__main__.NativeCapabilityNames.test_solaris_ips_and_svr4_remain_distinct_source_collections) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.099s
+
+OK

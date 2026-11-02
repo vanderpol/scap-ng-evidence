@@ -1,0 +1,196 @@
+{
+  "capability": "windows.cmdlet",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-31",
+  "migration_crosswalk": {
+    "capability": {
+      "cmdlet": "windows.cmdlet"
+    },
+    "object": {
+      "module_id": "object.module_id",
+      "module_name": "object.module_name",
+      "module_version": "object.module_version",
+      "noun": "object.noun",
+      "parameters": "object.parameters",
+      "select": "object.select",
+      "verb": "object.verb"
+    },
+    "removed_legacy_constraints": {
+      "lowercase_record_field_names": "not_native; record field identity is preserved without forcing legacy lowercase serialization"
+    },
+    "structural_simplifications": {
+      "record datatype=record": "implicit in object_record/record_predicate",
+      "record field uniqueness": "structural map-key uniqueness",
+      "record operation=equals": "implicit; no other parent record operation is meaningful",
+      "xsi:nil": "native null"
+    }
+  },
+  "native": {
+    "collection_parameter_source_map": {
+      "module_id": "module_id",
+      "module_name": "module_name",
+      "module_version": "module_version",
+      "noun": "noun",
+      "parameters": "parameters",
+      "select": "select",
+      "verb": "verb"
+    },
+    "collection_parameters": {
+      "module_id": {
+        "allow_variable": true,
+        "description": "PowerShell module GUID; null preserves source xsi:nil meaning that module GUID is unconstrained.",
+        "nullable": true,
+        "required": true,
+        "type": "string"
+      },
+      "module_name": {
+        "allow_variable": true,
+        "description": "PowerShell module name; null preserves source xsi:nil meaning that module name is unconstrained.",
+        "nullable": true,
+        "required": true,
+        "type": "string"
+      },
+      "module_version": {
+        "allow_variable": true,
+        "description": "Quoted lexical version value; type is inferred as version from this native capability contract. No author datatype needed. Reject non-version inputs rather than converting arbitrary strings. Null preserves source xsi:nil meaning that module version is unconstrained. State comparison version semantics remain distinct.",
+        "nullable": true,
+        "required": true,
+        "semantic_datatype": "version",
+        "type": "string"
+      },
+      "noun": {
+        "allow_variable": true,
+        "description": "PowerShell cmdlet noun.",
+        "required": true,
+        "type": "string"
+      },
+      "parameters": {
+        "description": "Named cmdlet invocation parameters; null means no parameters are supplied.",
+        "nullable": true,
+        "required": true,
+        "schema_ref": "object_record"
+      },
+      "select": {
+        "description": "Named output properties selected from the cmdlet result; null means Select-Object is not used.",
+        "nullable": true,
+        "required": true,
+        "schema_ref": "object_record"
+      },
+      "verb": {
+        "allow_variable": true,
+        "description": "PowerShell cmdlet verb.",
+        "enum": [
+          "Approve",
+          "Assert",
+          "Compare",
+          "Confirm",
+          "Find",
+          "Get",
+          "Import",
+          "Measure",
+          "Read",
+          "Request",
+          "Resolve",
+          "Search",
+          "Select",
+          "Show",
+          "Test",
+          "Trace",
+          "Watch"
+        ],
+        "required": true,
+        "type": "string"
+      }
+    },
+    "field_datatypes": {
+      "module_id": [
+        "string"
+      ],
+      "module_name": [
+        "string"
+      ],
+      "module_version": [
+        "version"
+      ],
+      "noun": [
+        "string"
+      ],
+      "parameters": [
+        "record"
+      ],
+      "select": [
+        "record"
+      ],
+      "value": [
+        "record"
+      ],
+      "verb": [
+        "string"
+      ]
+    },
+    "post_alignment_ready": true,
+    "record_state_fields": [
+      "parameters",
+      "select",
+      "value"
+    ],
+    "state_field_map": {
+      "module_id": "module_id",
+      "module_name": "module_name",
+      "module_version": "module_version",
+      "noun": "noun",
+      "parameters": "parameters",
+      "select": "select",
+      "value": "value",
+      "verb": "verb"
+    },
+    "state_value_enums": {
+      "verb": [
+        "Approve",
+        "Assert",
+        "Compare",
+        "Confirm",
+        "Find",
+        "Get",
+        "Import",
+        "Measure",
+        "Read",
+        "Request",
+        "Resolve",
+        "Search",
+        "Select",
+        "Show",
+        "Test",
+        "Trace",
+        "Watch"
+      ]
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "windows.cmdlet.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability windows.cmdlet."
+    },
+    {
+      "id": "windows.cmdlet.select_no_wildcard",
+      "rule": "The object.select record SHALL NOT request the '*' wildcard; selected output field names must be explicit so returned records remain evaluable by stable field identity."
+    },
+    {
+      "id": "windows.cmdlet.record_fields",
+      "rule": "parameters, select, and value retain structured record semantics; importers and scanners SHALL NOT flatten record fields into strings."
+    },
+    {
+      "id": "windows.cmdlet.module_guid",
+      "rule": "A non-null literal module_id SHALL be a valid Windows/PowerShell GUID representation."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#windows",
+    "object": "cmdlet_object",
+    "state": "cmdlet_state",
+    "test": "cmdlet_test"
+  },
+  "specification_version": "0.4.0"
+}

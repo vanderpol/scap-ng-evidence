@@ -1,0 +1,188 @@
+{
+  "capability": "windows.registry",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-31",
+  "migration_crosswalk": {
+    "hive": {
+      "": "variable_reference_artifact_not_native_value",
+      "HKEY_CLASSES_ROOT": "classes_root",
+      "HKEY_CURRENT_CONFIG": "current_config",
+      "HKEY_CURRENT_USER": "current_user",
+      "HKEY_CURRENT_USER_LOCAL_SETTINGS": "current_user_local_settings",
+      "HKEY_LOCAL_MACHINE": "local_machine",
+      "HKEY_USERS": "users"
+    },
+    "null_semantics": {
+      "key_null": "select_hive_itself",
+      "name_empty_string": "select_default_registry_value",
+      "name_null": "select_key_itself"
+    },
+    "registry_type": {
+      "": "variable_reference_artifact_not_native_value",
+      "reg_binary": "binary",
+      "reg_dword": "dword",
+      "reg_dword_big_endian": "dword_big_endian",
+      "reg_dword_little_endian": "dword",
+      "reg_expand_sz": "expand_string",
+      "reg_full_resource_descriptor": "full_resource_descriptor",
+      "reg_link": "link",
+      "reg_multi_sz": "multi_string",
+      "reg_none": "none",
+      "reg_qword": "qword",
+      "reg_qword_little_endian": "qword",
+      "reg_resource_list": "resource_list",
+      "reg_resource_requirements_list": "resource_requirements_list",
+      "reg_sz": "string"
+    },
+    "removed_source_fields": {
+      "windows_view": "deprecated_not_native"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "expanded_value": [
+        "string"
+      ],
+      "hive": [
+        "string"
+      ],
+      "key": [
+        "string"
+      ],
+      "last_write_time": [
+        "integer"
+      ],
+      "name": [
+        "string"
+      ],
+      "type": [
+        "string"
+      ],
+      "value": [
+        "string",
+        "integer",
+        "binary",
+        "version"
+      ]
+    },
+    "nullable_selectors": [
+      "key",
+      "name"
+    ],
+    "object_selector_alternatives": [
+      [
+        "hive",
+        "key",
+        "name"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_case_semantics": {
+      "hive": {
+        "description": "Use the canonical hive enum; do not use a generic string case switch.",
+        "mode": "canonical_enum"
+      },
+      "key": {
+        "description": "Registry key lookup follows Windows Registry API key identity, which is case-insensitive.",
+        "mode": "case_insensitive"
+      },
+      "name": {
+        "description": "Registry value name lookup follows Windows Registry API value-name identity, which is case-insensitive.",
+        "mode": "case_insensitive"
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/windows/win32/sysinfo/structure-of-the-registry",
+        "https://learn.microsoft.com/en-us/dotnet/api/microsoft.win32.registry.getvalue"
+      ]
+    },
+    "selector_map": {
+      "hive": "hive",
+      "key": "key",
+      "name": "name"
+    },
+    "selector_source_operations": {
+      "hive": [
+        "equals",
+        "case insensitive equals"
+      ]
+    },
+    "selector_value_crosswalk": {
+      "hive": "hive"
+    },
+    "selector_value_enums": {
+      "hive": [
+        "classes_root",
+        "current_config",
+        "current_user",
+        "current_user_local_settings",
+        "local_machine",
+        "users"
+      ]
+    },
+    "state_field_map": {
+      "expanded_value": "expanded_value",
+      "hive": "hive",
+      "key": "key",
+      "last_write_time": "last_write_time",
+      "name": "name",
+      "type": "type",
+      "value": "value"
+    },
+    "state_value_crosswalk": {
+      "hive": "hive",
+      "type": "registry_type"
+    },
+    "state_value_enums": {
+      "hive": [
+        "classes_root",
+        "current_config",
+        "current_user",
+        "current_user_local_settings",
+        "local_machine",
+        "users"
+      ],
+      "type": [
+        "binary",
+        "dword",
+        "dword_big_endian",
+        "expand_string",
+        "link",
+        "multi_string",
+        "none",
+        "qword",
+        "string",
+        "resource_list",
+        "full_resource_descriptor",
+        "resource_requirements_list"
+      ]
+    },
+    "traversal_definition": "hierarchy_traversal"
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "windows.registry.key_null_requires_name_null",
+      "rule": "When key is null, name must also be null because a value cannot exist without a containing key."
+    },
+    {
+      "id": "windows.registry.pattern_key_no_traversal",
+      "rule": "Traversal is not permitted when key uses a non-equality selector."
+    },
+    {
+      "id": "windows.registry.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability windows.registry."
+    },
+    {
+      "id": "windows.registry.value_type_datatype",
+      "rule": "Registry value datatype must be compatible with the registry type when both are asserted."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#windows",
+    "object": "registry_object",
+    "state": "registry_state",
+    "test": "registry_test"
+  },
+  "specification_version": "0.4.0"
+}

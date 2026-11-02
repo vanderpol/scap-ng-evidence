@@ -1,0 +1,50 @@
+{
+  "capability": "iosxe.bgpneighbor",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "bgpneighbor": "iosxe.bgpneighbor"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "neighbor": [
+        "string"
+      ],
+      "password": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "neighbor"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "neighbor": "neighbor"
+    },
+    "shared_semantic_model": "cisco.bgpneighbor",
+    "state_field_map": {
+      "neighbor": "neighbor",
+      "password": "password"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "iosxe.bgpneighbor.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability iosxe.bgpneighbor."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/iosxe-definitions-schema.xsd",
+    "item": "bgpneighbor_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe",
+    "object": "bgpneighbor_object",
+    "state": "bgpneighbor_state",
+    "test": "bgpneighbor_test"
+  },
+  "specification_version": "0.4.0"
+}

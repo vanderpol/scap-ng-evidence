@@ -1,0 +1,789 @@
+{
+  "format": "scap-ng/schema-freeze-readiness/1",
+  "scope": "full version-local source and Result schema family; no freeze action",
+  "schema_freeze_readiness": "READY_FOR_OWNER_REVIEW",
+  "input_presence_contract": "IMPLEMENTED; supplied binding/result evidence, not scanner execution",
+  "field_datatype": "RETAINED_COMPATIBLE; global retirement is outside task and not a blocker under that decision",
+  "schemas": [
+    {
+      "path": "schema/v0.4.0/applicability.schema.json",
+      "sha256": "f3d52f65b0e2a3033609f637e7d21640870950c50be298ba3a5025bf9f68a637"
+    },
+    {
+      "path": "schema/v0.4.0/assessment-language.schema.json",
+      "sha256": "81349d591972e9d3762ef10d4b3838b6696374f5afe8ba2499d345d4f77c895d"
+    },
+    {
+      "path": "schema/v0.4.0/assessment-result-set.schema.json",
+      "sha256": "d4e5744e1156873617b2427ad9f220a7199b45b5763b8b391e1958ee049176a9"
+    },
+    {
+      "path": "schema/v0.4.0/assessment-result.schema.json",
+      "sha256": "14da571d062d212db587098f58a0a8cb79a26d67833c70ef8d4427a0a5f70773"
+    },
+    {
+      "path": "schema/v0.4.0/assessment.schema.json",
+      "sha256": "3bae186d138616beecfcbb6c8ed05e459c525ba201dab8fefb5035ff280cb029"
+    },
+    {
+      "path": "schema/v0.4.0/benchmark-result.schema.json",
+      "sha256": "b2b482f337d769b95e5f0d7ff5a670d2a4ba5af9dd466974f4101ed232442d40"
+    },
+    {
+      "path": "schema/v0.4.0/benchmark.schema.json",
+      "sha256": "c9f345337da8483e68ef2acc4325d4b5305c142bef4a04dff9be5d93c81f2e23"
+    },
+    {
+      "path": "schema/v0.4.0/capability-common.schema.json",
+      "sha256": "e6e14208941a8a130005771afcec56bbc6b4a9d59a74d7c575a3820e525933c8"
+    },
+    {
+      "path": "schema/v0.4.0/collected-item.schema.json",
+      "sha256": "c16a7549acbde6020007ee4bcbc4a8095d2cc615b67bd65c3ec6b92d5b9c5630"
+    },
+    {
+      "path": "schema/v0.4.0/collection-result.schema.json",
+      "sha256": "333ea4e0c26f4ae0886c684c679f4eb28111462dd5f79b0c8d4707912bac8bdf"
+    },
+    {
+      "path": "schema/v0.4.0/entity-result.schema.json",
+      "sha256": "d8d509efcb18fdf45fa10b0a70c18449f37d0f0527609b13e8d9357b90d55648"
+    },
+    {
+      "path": "schema/v0.4.0/expression-invocation.schema.json",
+      "sha256": "7fbd46ec0f289bbfa4bc71d4f06a4f7d5af9a0858ed23040ce67a337d382b6fb"
+    },
+    {
+      "path": "schema/v0.4.0/expression-result.schema.json",
+      "sha256": "c47faafd5c0978c61778d7ba21a5eac76851b4de728c2c00025ea0941a8ef547"
+    },
+    {
+      "path": "schema/v0.4.0/expression.schema.json",
+      "sha256": "ad21f779f786409ceeaa14c07688806d4a0e1e18ef882a244271725f05be4752"
+    },
+    {
+      "path": "schema/v0.4.0/field-result.schema.json",
+      "sha256": "13181c0a578d342dfd5b090de599c47f707b4acffcf0dce1b15ca77ea0c9bd53"
+    },
+    {
+      "path": "schema/v0.4.0/item-materialization.schema.json",
+      "sha256": "57ee177eab0c35b744e81e8d7682569377c4ac07dbb96d6b6d7f2d79c665748d"
+    },
+    {
+      "path": "schema/v0.4.0/item-report.schema.json",
+      "sha256": "59e6fc8c8099967941cf305a4d252ea61cb9c47f7a5bef23463bb09dba37debd"
+    },
+    {
+      "path": "schema/v0.4.0/manual-assessment-result.schema.json",
+      "sha256": "a03df388df846ec2419244f34fb2e5a47a12d5b5db9806d6bc3eb5049464fe55"
+    },
+    {
+      "path": "schema/v0.4.0/manual-assessment.schema.json",
+      "sha256": "3be4b012fe130ef309cd14eaacdc28125c9d8bc946b41b2766f2f217580105cb"
+    },
+    {
+      "path": "schema/v0.4.0/organizational-input.schema.json",
+      "sha256": "7b1c6f0c67f7c9494151f3b1e4f4ac29909f5468c91cf01e41d80eb89b79f434"
+    },
+    {
+      "path": "schema/v0.4.0/package-manifest.schema.json",
+      "sha256": "0f82d626651af47a47f8aae46805519911d662adb01dc44c10d5ddaa09fb47ae"
+    },
+    {
+      "path": "schema/v0.4.0/reported-elements.schema.json",
+      "sha256": "b6205bd0a35f3bbc764f09b8697b8007a9728def7a45b3d077180e0dec9d0941"
+    },
+    {
+      "path": "schema/v0.4.0/require-result.schema.json",
+      "sha256": "a497fb451358d7009a5427db21379aef25f2eeeee8fc852e477e5df367405973"
+    },
+    {
+      "path": "schema/v0.4.0/result-package-manifest.schema.json",
+      "sha256": "451c7e9796c1b061b5de006af233a209ce6335c207a353e0bc758038a0f365c1"
+    },
+    {
+      "path": "schema/v0.4.0/result-types.schema.json",
+      "sha256": "259eb551f04cefaa95f579dd5720bbe938834b1274e39bd31765b23d279cbf9a"
+    },
+    {
+      "path": "schema/v0.4.0/rule-result.schema.json",
+      "sha256": "d509571269ee192e59827f5bd4226329528870c889a3e371219ce2b15db0c095"
+    },
+    {
+      "path": "schema/v0.4.0/rule.schema.json",
+      "sha256": "39c57c5c7ec89bf84a20fb93a1b4e57fa17b460cf8da7cbf069a201d4bc9b55e"
+    },
+    {
+      "path": "schema/v0.4.0/scan-result.schema.json",
+      "sha256": "57e1b7e31a6f44638b26ab8e0f305a4b3d2e1f0b2d1944cedb889b24ea09fdc4"
+    },
+    {
+      "path": "schema/v0.4.0/state-result.schema.json",
+      "sha256": "68d8d85aa89c209dd6af63b0888b8af0af5025204246c3a22fc889ea0700b6c4"
+    },
+    {
+      "path": "schema/v0.4.0/tailoring.schema.json",
+      "sha256": "c8f2d6a0e0107e9612f0bdaf8d22262082beb57cd328daef3877b5cc1a8224de"
+    },
+    {
+      "path": "schema/v0.4.0/test-result.schema.json",
+      "sha256": "412a743690459187a6fece064d5fbef7c01421d9bf1be206f8511beaf1510702"
+    },
+    {
+      "path": "schema/v0.4.0/variable-expression.schema.json",
+      "sha256": "bdc0686fd1ae283274dfc95ed3021f0475555025faad1c0fb1ae8e6c24509e36"
+    },
+    {
+      "path": "schema/v0.4.0/variable-function-expression.schema.json",
+      "sha256": "77124ad16ae71a8dbbae1584539eba92c99924bab5593987e1462ecd33a9f3ec"
+    },
+    {
+      "path": "schema/v0.4.0/variable-result.schema.json",
+      "sha256": "debeae231b55015cc4aa9ab298f59b38c92c3a2e1db0bfa54b44e40230b4145e"
+    }
+  ],
+  "schema_count": 34,
+  "references_checked": 242,
+  "reference_errors": [],
+  "capability_contracts": 100,
+  "language_contract_findings": [
+    {
+      "id": "LC-SELECTOR-CASE",
+      "status": "CLOSED",
+      "owner_decision_needed": false,
+      "decision": 22,
+      "evidence": [],
+      "contract_audit": {
+        "format": "scap-ng/selector-api-contract-audit/1",
+        "status": "PASS",
+        "capabilities": [
+          {
+            "capability": "independent.environmentvariable",
+            "selectors": [
+              "name",
+              "pid"
+            ],
+            "acquisition_parameters": [],
+            "traversal": null,
+            "field_count": 2
+          },
+          {
+            "capability": "windows.appcmd",
+            "selectors": [
+              "identifier",
+              "identifier_type",
+              "parameter"
+            ],
+            "acquisition_parameters": [],
+            "traversal": null,
+            "field_count": 3
+          },
+          {
+            "capability": "windows.appcmdlistconfig",
+            "selectors": [
+              "identifier",
+              "identifier_type",
+              "parameter",
+              "section"
+            ],
+            "acquisition_parameters": [],
+            "traversal": null,
+            "field_count": 4
+          },
+          {
+            "capability": "windows.cmdlet",
+            "selectors": [],
+            "acquisition_parameters": [
+              "module_id",
+              "module_name",
+              "module_version",
+              "noun",
+              "parameters",
+              "select",
+              "verb"
+            ],
+            "traversal": null,
+            "field_count": 7
+          },
+          {
+            "capability": "windows.fileeffectiverights",
+            "selectors": [
+              "directory",
+              "full_path",
+              "name",
+              "trustee_sid"
+            ],
+            "acquisition_parameters": [
+              "filesystem"
+            ],
+            "traversal": "windows_file_traversal",
+            "field_count": 5
+          },
+          {
+            "capability": "windows.group_sid",
+            "selectors": [
+              "group_sid"
+            ],
+            "acquisition_parameters": [],
+            "traversal": null,
+            "field_count": 1
+          },
+          {
+            "capability": "windows.ntuser",
+            "selectors": [
+              "key",
+              "name"
+            ],
+            "acquisition_parameters": [
+              "include_default",
+              "item_creation"
+            ],
+            "traversal": "hierarchy_traversal",
+            "field_count": 4
+          },
+          {
+            "capability": "windows.regkeyeffectiverights",
+            "selectors": [
+              "hive",
+              "key",
+              "trustee_sid"
+            ],
+            "acquisition_parameters": [],
+            "traversal": "hierarchy_traversal",
+            "field_count": 3
+          },
+          {
+            "capability": "windows.service",
+            "selectors": [
+              "service_name"
+            ],
+            "acquisition_parameters": [],
+            "traversal": null,
+            "field_count": 1
+          },
+          {
+            "capability": "windows.sid",
+            "selectors": [
+              "trustee_name"
+            ],
+            "acquisition_parameters": [
+              "include_group",
+              "resolve_group"
+            ],
+            "traversal": null,
+            "field_count": 3
+          },
+          {
+            "capability": "windows.sid_sid",
+            "selectors": [
+              "trustee_sid"
+            ],
+            "acquisition_parameters": [
+              "include_group",
+              "resolve_group"
+            ],
+            "traversal": null,
+            "field_count": 3
+          },
+          {
+            "capability": "windows.user_sid",
+            "selectors": [
+              "user_sid"
+            ],
+            "acquisition_parameters": [],
+            "traversal": null,
+            "field_count": 1
+          },
+          {
+            "capability": "windows.userright",
+            "selectors": [
+              "userright"
+            ],
+            "acquisition_parameters": [],
+            "traversal": null,
+            "field_count": 1
+          },
+          {
+            "capability": "windows.wmi.query",
+            "selectors": [],
+            "acquisition_parameters": [
+              "namespace",
+              "query"
+            ],
+            "traversal": null,
+            "field_count": 2
+          },
+          {
+            "capability": "windows.wuaupdatesearcher",
+            "selectors": [
+              "search_criteria"
+            ],
+            "acquisition_parameters": [
+              "include_superseded_updates"
+            ],
+            "traversal": null,
+            "field_count": 2
+          }
+        ],
+        "capability_count": 15,
+        "field_count": 42,
+        "source_count": 32,
+        "errors": [],
+        "scanner_executed": false,
+        "api_cases_executed": false,
+        "scope": "contract coverage, source receipts and generated-surface agreement; conditional API behavior is not a simulated collector"
+      },
+      "problem": "All15 per-capability contracts and42 fields are documented against primary references, including target/API-dependent cases; native collector behavior remains future verification.",
+      "next_action": "Qualify real providers against these fixed contracts; no universal case switch or undocumented alias."
+    },
+    {
+      "id": "LC-NATIVE-RESULTS",
+      "status": "CLOSED",
+      "owner_decision_needed": false,
+      "decisions": [
+        9,
+        17,
+        19,
+        20,
+        24
+      ],
+      "owner_adoption": "A, 2026-11-02; issue255 comment6566907992",
+      "legacy_counterexample": {
+        "id": "registry-value-test",
+        "outcome": "error",
+        "object_refs": [],
+        "state_refs": [
+          "registry-value-test.states[0]"
+        ],
+        "item_refs": [],
+        "per_item_results": [],
+        "item_summary": {
+          "evaluated_items": 0,
+          "observed_mismatches": 0,
+          "actual_mismatches": "unknown",
+          "returned_items": 0,
+          "truncated_evidence": false
+        },
+        "check_existence": "all_exist",
+        "check": "all",
+        "state_operator": "AND"
+      },
+      "legacy_rejected": true,
+      "boundary_probes": [
+        {
+          "case": "source-backed-native-positive",
+          "passed": true
+        },
+        {
+          "case": "legacy-wire",
+          "passed": true
+        },
+        {
+          "case": "foreign-invocation",
+          "passed": true
+        },
+        {
+          "case": "missing-error-reason",
+          "passed": true
+        },
+        {
+          "case": "pseudo-source-location",
+          "passed": true
+        },
+        {
+          "case": "wrong-native-control",
+          "passed": true
+        },
+        {
+          "case": "wrong-source-operand",
+          "passed": true
+        }
+      ],
+      "problem": "Native Result A adopted and implemented with source-bound require pointers, controls, record correlation and explicit reason/evidence.",
+      "next_action": "Maintain bounded semantic tests; actual scanner execution remains future verification."
+    }
+  ],
+  "decisions": [
+    {
+      "decision": 1,
+      "approved_rule": "Use **`zero_or_more`** for optional cardinality/existence; retire `may_be_absent`. Preserve source semantics in provenance.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": null,
+      "boundary_suites": [
+        "tools/test_v04_owner_decision_schema_lock.py"
+      ]
+    },
+    {
+      "decision": 2,
+      "approved_rule": "Requirement inheritance is **Test \u2192 logical group \u2192 record \u2192 individual field**, with nearest complete explicit requirement winning. A field override changes the applicable pair; record correlation is maintained. No implicit fallback.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": null,
+      "boundary_suites": [
+        "tools/test_v04_owner_producer_contract.py",
+        "tools/test_v04_result_contract.py"
+      ]
+    },
+    {
+      "decision": 3,
+      "approved_rule": "Every **comparison Test** shall declare Test-level `field_requirement` (both `values_found` and `values_matching`). Individual fields normally inherit; explicitly exceptional fields override **both** values. Existence-only Tests exempt.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": null,
+      "boundary_suites": [
+        "tools/test_v04_owner_decision_schema_lock.py"
+      ]
+    },
+    {
+      "decision": 4,
+      "approved_rule": "Infer datatypes deterministically from capability contracts, typed YAML values, explicit typed operators and typed Variables/Inputs. An explicit compatible datatype is permitted but never routinely required. Ambiguity/conflict is an error; never silently coerce.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": null,
+      "boundary_suites": [
+        "tools/test_v04_comparison_types.py",
+        "tools/test_v04_field_datatype_elimination.py"
+      ]
+    },
+    {
+      "decision": 5,
+      "approved_rule": "Remove legacy OVAL numeric suffixes from native capability names (e.g. `independent.textfilecontent54` \u2192 `independent.textfilecontent`); maintain complete original OVAL identifiers in provenance. Reject old aliases from finalized native authoring.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": null,
+      "boundary_suites": [
+        "tools/test_v04_native_capability_names.py"
+      ]
+    },
+    {
+      "decision": 6,
+      "approved_rule": "Do not put `purpose: assessment/applicability` in an Assessment: its `class` and `mode` remain. Usage as an applicability check is determined by the typed reference at the Benchmark/Rule consumer, allowing the Assessment to be reused.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": null,
+      "boundary_suites": [
+        "tools/test_v04_owner_identity_context.py"
+      ]
+    },
+    {
+      "decision": 7,
+      "approved_rule": "The graphical editor may display/hide documented defaults, but **all applicable defaults are materialized in saved YAML**. Document via JSON Schema `default` and `x-scap-ng-authoring` annotations (`group`, `hide_when_default`), including other rarely changed fields. Schema `default` is authoring metadata, **not a scanner/runtime default**.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": "VS Code host/save/UI/traversal",
+      "boundary_suites": [
+        "tools/test_v04_editor_metadata.py",
+        "tools/test_audit_v04_editor_default_catalog.py"
+      ]
+    },
+    {
+      "decision": 8,
+      "approved_rule": "Keep declarative `evaluate.if/then/else`, with static branch references and six-state results; no dynamic code, implicit loops, or deferred computation.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": null,
+      "boundary_suites": [
+        "tools/test_v04_owner_conditional_plan.py"
+      ]
+    },
+    {
+      "decision": 9,
+      "approved_rule": "For confirmed absence, use `values_found: none` when a **field** is absent; `items_found: none` when the entire Item is absent. Failed or incomplete collection is not proof of absence.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": "native collector/invocation/array/error behavior",
+      "boundary_suites": [
+        "tools/test_v04_result_contract.py",
+        "tools/test_v04_absence_only_integration.py"
+      ]
+    },
+    {
+      "decision": 10,
+      "approved_rule": "Native Assessment/Test/Object/Variable/Input/local dependency identifiers are concise, meaningful, stable, lower-case slug identifiers with suffix where prescribed, **maximum 64 characters including suffix**. Reject duplicates and random filename hashes. External original IDs are exempt.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": null,
+      "boundary_suites": [
+        "tools/test_v04_owner_identity_context.py",
+        "tools/test_v04_audit_remediation.py"
+      ]
+    },
+    {
+      "decision": 11,
+      "approved_rule": "Shared Assessment filenames use meaningful, stable names prefixed by the applicable platform family (`windows-`, `linux-`, `solaris-`, etc.), rather than SV-ID or generated hash.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": null,
+      "boundary_suites": [
+        "tools/test_v04_audit_remediation.py"
+      ]
+    },
+    {
+      "decision": 12,
+      "approved_rule": "Promote an Assessment to the global shared library **only when reused across Benchmarks** and after semantic equivalence is demonstrated. Reuse inside one Benchmark stays local to it. Separate `automated` and `manual`; do not add a redundant `local` directory.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": null,
+      "boundary_suites": [
+        "tools/test_qualify_v04_shared_assessment.py"
+      ]
+    },
+    {
+      "decision": 13,
+      "approved_rule": "Omit empty optional Rule metadata; retain required data whenever it affects evaluation/applicability.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": null,
+      "boundary_suites": [
+        "tools/test_v04_direct_converter.py"
+      ]
+    },
+    {
+      "decision": 14,
+      "approved_rule": "Applicable automated Tests must explicitly contain `reported_elements`; the editor initially fills `all` and may hide it. Result redaction is an independent concern.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": null,
+      "boundary_suites": [
+        "tools/test_v04_owner_decision_schema_lock.py",
+        "tools/test_v04_owner_producer_contract.py"
+      ]
+    },
+    {
+      "decision": 15,
+      "approved_rule": "Retain both Organizational Input `required` and `cardinality`. Distinguish unprovided Input from deliberately provided empty Input.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": "implemented and independently read in program0.2",
+      "future_verification": "native collector/invocation/array/error behavior",
+      "boundary_suites": [
+        "tools/test_v04_input_presence.py"
+      ]
+    },
+    {
+      "decision": 16,
+      "approved_rule": "Optional Assessment Inputs may be omitted, but referencing Assessments must explicitly handle omission; an unguarded missing dependency/input is an error.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": "implemented and independently read in program0.2",
+      "future_verification": "native collector/invocation/array/error behavior",
+      "boundary_suites": [
+        "tools/test_v04_input_presence.py"
+      ]
+    },
+    {
+      "decision": 17,
+      "approved_rule": "Variable arrays use the same `values_found` / `values_matching` vocabulary; no separate implicit array behavior.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": "native collector/invocation/array/error behavior",
+      "boundary_suites": [
+        "tools/test_v04_canonical_requirement_oracle.py",
+        "tools/test_v04_variable_expressions.py"
+      ]
+    },
+    {
+      "decision": 18,
+      "approved_rule": "Assessment IDs are unique across the compiled library, Test IDs within their Assessment, and Object/Variable IDs in their documented scopes. A shared Assessment retains identity.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": null,
+      "boundary_suites": [
+        "tools/test_v04_owner_identity_context.py"
+      ]
+    },
+    {
+      "decision": 19,
+      "approved_rule": "Incomplete collection is an `error` with reason/evidence, distinct from confirmed absence. Never fabricate missing Items.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": "native collector/invocation/array/error behavior",
+      "boundary_suites": [
+        "tools/test_v04_result_contract.py",
+        "tools/test_v04_variable_result_incomplete.py"
+      ]
+    },
+    {
+      "decision": 20,
+      "approved_rule": "Do not expose OVAL `all_exist` as a native authoring option. Convert only where semantics remain faithful in a no-synthetic-Items model; preserve the source in provenance; otherwise block with a precise diagnostic.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": "native collector/invocation/array/error behavior",
+      "boundary_suites": [
+        "tools/test_v04_windows_all_exist_decisions.py",
+        "tools/test_v04_scalar_none_exist_source.py"
+      ]
+    },
+    {
+      "decision": 21,
+      "approved_rule": "An incorrectly associated namespace/catalog is a **warning** if the intended binding resolves unambiguously; genuinely unresolved/ambiguous references are errors.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": null,
+      "boundary_suites": [
+        "tools/test_v04_direct_converter.py"
+      ]
+    },
+    {
+      "decision": 22,
+      "approved_rule": "Case handling is specified **per capability and selector**. Windows registry/service/environment/EventLog/WMI selectors may be case-insensitive by the corresponding native API; Windows filesystem path lookup follows per-directory filesystem case-sensitivity configuration. Unix paths normally are case-sensitive. Collected **values** are independent: `equals` compares case-sensitively; `case_insensitive_equals` requests explicit insensitive comparison. No universal `case_sensitive` switch.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": "live API lookup/case behavior",
+      "boundary_suites": [
+        "tools/test_v04_selector_contracts.py"
+      ]
+    },
+    {
+      "decision": 23,
+      "approved_rule": "`windows.cmdlet.module_version` has the native semantic datatype **version**, inferred from the capability contract. Authors use a quoted version string without redundant `datatype`. Reject invalid version values; no generalized coercion.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": null,
+      "boundary_suites": [
+        "tools/test_v04_owner_identity_context.py",
+        "tools/test_v04_audit_remediation.py"
+      ]
+    },
+    {
+      "decision": 24,
+      "approved_rule": "An Assessment may explicitly reach a technically **`not_evaluated`** branch when a necessary check is knowingly beyond available inspection (e.g. remote share ACL). The Rule reports meaningful **informational/manual follow-up**, with observed evidence and why completion was impossible. Known noncompliance stays `fail`; unexpected collection failure stays `error`.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": "complete Rule/manual follow-up report with observed target evidence",
+      "boundary_suites": [
+        "tools/test_v04_owner_conditional_plan.py",
+        "tools/test_v04_result_summaries.py"
+      ]
+    },
+    {
+      "decision": 25,
+      "approved_rule": "`not_applicable` is an explicit, reason-bearing terminal outcome when applicability is genuinely disproved, not a euphemism for scanner inability. It can be selected from **any** `then`/`else_if.then`/`else` branch. False condition selects next branch; indeterminate condition propagates. The Rule applicability gate may independently produce N/A. Preserve OVAL-style Boolean aggregation.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": null,
+      "boundary_suites": [
+        "tools/test_v04_owner_conditional_plan.py"
+      ]
+    },
+    {
+      "decision": 26,
+      "approved_rule": "Add ordered `evaluate.else_if: [{if: ..., then: ...}, ...]`, with required initial `if/then` and final `else`. Evaluate branches in order, first true wins, only selected branch runs; preserve six-state propagation. Compiler may normalize to nested `if/then/else`.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": null,
+      "boundary_suites": [
+        "tools/test_v04_owner_conditional_plan.py",
+        "tools/test_v04_input_presence.py"
+      ]
+    },
+    {
+      "decision": 27,
+      "approved_rule": "File and hierarchy traversal must express an unbounded depth as **`max_depth: unlimited`**, not `null` or a magic negative integer. Bounded depth is an integer of at least zero (`0` searches the starting directory only); OVAL `max_depth=-1` converts to `unlimited`. The editor may offer this explicitly documented choice but the scanner must not infer it from omission. Historical 0.1\u20130.3 grammars remain unchanged.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": "VS Code host/save/UI/traversal",
+      "boundary_suites": [
+        "tools/test_v04_owner_decision_schema_lock.py",
+        "tools/test_v04_editor_metadata.py"
+      ]
+    },
+    {
+      "decision": 28,
+      "approved_rule": "For **newly authored** file Objects, the editor suggests **`filesystem: local`** and writes it explicitly into YAML, even when the UI hides it. This is an **authoring preference**, not an implicit scanner default. **Source conversion is different:** OVAL 5.12.3 omitted `recurse_file_system` means effective `all`, which must serialize as **`filesystem: all`**; explicit OVAL `local` remains `local`, and `defined` becomes NG `same`. Do not normalize source-effective `all` to `local` or conflate filesystem scope with recursion depth/direction.",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": "VS Code host/save/UI/traversal",
+      "boundary_suites": [
+        "tools/test_v04_editor_metadata.py",
+        "tools/test_v04_owner_producer_contract.py"
+      ]
+    },
+    {
+      "decision": 29,
+      "approved_rule": "Accept only the finite, validated existing native Variable-expression vocabulary; reject unknown functions, malformed nodes/options/arities and incompatible declared/derived types at validation and direct compilation. Preserve valid legacy forms and explicit numeric regex-result declarations. Keep the canonical function-call candidate inactive. Future functions require separate versioned approval. [Owner approval](https://github.com/vanderpol/scap-ng/pull/268#issuecomment-6550047257).",
+      "language_contract_blockers": [],
+      "contract_verification": "Current maintained schema/authoring/compiler boundaries plus separately recorded exact-commit owner-boundary suite; not scanner execution",
+      "language_contract_status": "CLOSED",
+      "presence_surface": null,
+      "future_verification": null,
+      "boundary_suites": [
+        "tools/test_v04_variable_expressions.py",
+        "tools/test_v04_input_presence.py"
+      ]
+    }
+  ],
+  "future_scanner_verification": [
+    "real provision/provider and dependency binding adapters",
+    "collection completeness/error versus absence",
+    "array/Variable/Set execution and cache isolation",
+    "selector APIs on supported target platforms",
+    "Rule follow-up with actual observed evidence"
+  ],
+  "future_editor_verification": [
+    "TextDocument/WorkspaceEdit/undo and real save serialization",
+    "Structured/Guided UI, screenshot evidence and regex/sample playground"
+  ],
+  "preserved_boundaries": [
+    "draft PR268",
+    "no merge/freeze/tag/release",
+    "no65-stream generation",
+    "no proof rebaseline",
+    "historical schemas and source archives unchanged"
+  ]
+}

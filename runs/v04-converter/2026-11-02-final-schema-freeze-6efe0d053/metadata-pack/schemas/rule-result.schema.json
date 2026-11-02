@@ -1,0 +1,614 @@
+{
+  "$defs": {
+    "comparison_finding": {
+      "additionalProperties": false,
+      "properties": {
+        "expected": {
+          "$ref": "result-types.schema.json#/$defs/typed_value"
+        },
+        "field": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "instance_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "item_ref": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "kind": {
+          "const": "comparison"
+        },
+        "observed": {
+          "$ref": "result-types.schema.json#/$defs/typed_value"
+        },
+        "operation": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "outcome": {
+          "enum": [
+            "pass",
+            "fail",
+            "unknown",
+            "error",
+            "not_evaluated",
+            "not_applicable"
+          ],
+          "type": "string"
+        },
+        "subject": {
+          "$ref": "#/$defs/subject"
+        },
+        "test_ref": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "kind",
+        "instance_id",
+        "subject",
+        "field",
+        "operation",
+        "expected",
+        "observed",
+        "outcome"
+      ],
+      "type": "object"
+    },
+    "missing_finding": {
+      "additionalProperties": false,
+      "description": "Missing required resource or inconclusive collection; no fictional Item.",
+      "properties": {
+        "expected_existence": {
+          "enum": [
+            "exists",
+            "does_not_exist"
+          ]
+        },
+        "instance_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "kind": {
+          "const": "missing"
+        },
+        "observed_existence": {
+          "enum": [
+            "exists",
+            "does_not_exist",
+            "not_collected",
+            "error"
+          ]
+        },
+        "outcome": {
+          "enum": [
+            "pass",
+            "fail",
+            "unknown",
+            "error",
+            "not_evaluated",
+            "not_applicable"
+          ],
+          "type": "string"
+        },
+        "predicate": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "subject": {
+          "$ref": "#/$defs/subject"
+        },
+        "test_ref": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "kind",
+        "instance_id",
+        "subject",
+        "predicate",
+        "expected_existence",
+        "observed_existence",
+        "outcome"
+      ],
+      "type": "object"
+    },
+    "subject": {
+      "additionalProperties": false,
+      "properties": {
+        "identifier": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "kind": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "kind",
+        "identifier"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://scap-ng.dev/schema/v0.4.0/rule-result.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Embedded policy-facing Rule Result with bounded typed decisive facts. Assessment Results own the underlying technical execution.",
+  "properties": {
+    "applicability": {
+      "additionalProperties": false,
+      "description": "Rule-level applicability disposition plus references to the applicability Assessment Results that produced it; detailed execution data is not embedded here.",
+      "properties": {
+        "conditions": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "assessment_invocation_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "assessment_result_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "id": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "outcome": {
+                "enum": [
+                  "applicable",
+                  "not_applicable",
+                  "unknown",
+                  "error",
+                  "not_evaluated"
+                ],
+                "type": "string"
+              },
+              "reason": {
+                "type": [
+                  "object",
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "outcome"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "outcome": {
+          "enum": [
+            "applicable",
+            "not_applicable",
+            "unknown",
+            "error",
+            "not_evaluated"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "outcome",
+        "conditions"
+      ],
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "assessment": {
+      "description": "Identity of the effective selected Assessment for this Rule. Execution details live only in referenced Assessment Results.",
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "digest": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "id": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "mode": {
+              "enum": [
+                "automated",
+                "manual",
+                null
+              ],
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "version": {
+              "type": [
+                "string",
+                "integer"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "version"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "check_selector": {
+      "description": "Effective named Assessment/check selector chosen for this Rule.",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence_refs": {
+      "description": "Optional references to decisive evidence or Assessment-result evidence members; evidence is not embedded here.",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "finding_counts": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "population_complete": {
+                "const": false
+              }
+            },
+            "required": [
+              "population_complete"
+            ]
+          },
+          "then": {
+            "properties": {
+              "actual_violations": {
+                "const": "unknown"
+              }
+            }
+          }
+        }
+      ],
+      "description": "Optional collection summary: evaluated population and actual failures are distinct from returned evidence. Only aggregate independent instance populations when justified.",
+      "properties": {
+        "actual_violations": {
+          "oneOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "const": "unknown"
+            }
+          ]
+        },
+        "evaluated_items": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "observed_violations": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "population_complete": {
+          "type": "boolean"
+        },
+        "reported_items": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "sample_truncated": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "evaluated_items",
+        "observed_violations",
+        "actual_violations",
+        "population_complete",
+        "reported_items",
+        "sample_truncated"
+      ],
+      "type": "object"
+    },
+    "findings": {
+      "description": "Bounded decisive Assessment-derived typed facts. Empty when none can safely be reported; no copied execution graph.",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "#/$defs/comparison_finding"
+          },
+          {
+            "$ref": "#/$defs/missing_finding"
+          }
+        ]
+      },
+      "type": "array"
+    },
+    "instances": {
+      "description": "Explicit result instances contributing to this policy-facing Rule Result. Present even for the common single-invocation case.",
+      "items": {
+        "additionalProperties": false,
+        "description": "One policy-facing invocation/check/target instance. It references, but does not duplicate, the detailed Assessment Result.",
+        "properties": {
+          "assessment_invocation_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "assessment_result_ref": {
+            "description": "Manifest logical Assessment execution identity, never a guessed artifact filename.",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "check_instance": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evidence_refs": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "message": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "outcome": {
+            "enum": [
+              "pass",
+              "fail",
+              "error",
+              "unknown",
+              "not_evaluated",
+              "not_applicable"
+            ],
+            "type": "string"
+          },
+          "reason": {
+            "type": [
+              "string",
+              "object",
+              "null"
+            ]
+          },
+          "target_instance": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "outcome",
+          "assessment_result_ref"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "organizational_inputs": {
+      "description": "Concise organization-defined expected policy values actually used by this Rule, each linked to the single authoritative Benchmark Result effective_policy.organizational_inputs assertion. Omit for Rules that consume no Organizational Input. Full supplier/authorization records remain at Benchmark scope; do not copy execution graphs.",
+      "items": {
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "else": {
+              "required": [
+                "value"
+              ]
+            },
+            "if": {
+              "properties": {
+                "redacted": {
+                  "const": true
+                }
+              },
+              "required": [
+                "redacted"
+              ]
+            },
+            "then": {
+              "not": {
+                "required": [
+                  "value"
+                ]
+              }
+            }
+          }
+        ],
+        "properties": {
+          "organizational_input_ref": {
+            "description": "Exact key in benchmark_result.effective_policy.organizational_inputs, not a source filename.",
+            "minLength": 1,
+            "type": "string"
+          },
+          "parameter": {
+            "description": "Effective organization-resolved Benchmark Parameter.",
+            "minLength": 1,
+            "type": "string"
+          },
+          "provenance_summary": {
+            "additionalProperties": false,
+            "description": "Optional concise nonauthoritative authority summary from the referenced Benchmark assertion, not a second provenance truth.",
+            "properties": {
+              "authorization_reference": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "effective_from": {
+                "format": "date-time",
+                "type": "string"
+              },
+              "expires_at": {
+                "format": "date-time",
+                "type": "string"
+              },
+              "organization": {
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "redacted": {
+            "description": "Explicit policy-value redaction indicator; never combine true with value.",
+            "type": "boolean"
+          },
+          "value": {
+            "description": "Effective expected policy value; the same typed JSON value as the authoritative assertion, unless disclosure is restricted."
+          }
+        },
+        "required": [
+          "parameter",
+          "organizational_input_ref",
+          "redacted"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "outcome": {
+      "description": "Deterministic aggregate policy outcome derived from all Rule result instances.",
+      "enum": [
+        "pass",
+        "fail",
+        "error",
+        "unknown",
+        "not_evaluated",
+        "not_applicable"
+      ],
+      "type": "string"
+    },
+    "parameters": {
+      "description": "Effective publisher/Profile/Tailoring Parameters materially relevant to this Rule result.",
+      "type": "object"
+    },
+    "reason": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "code": {
+              "enum": [
+                "unexpected_existence",
+                "required_item_missing",
+                "required_match_missing",
+                "value_mismatch",
+                "cardinality_mismatch",
+                "unsupported_organizational_input",
+                "missing_organizational_input",
+                "invalid_organizational_input",
+                "collection_error"
+              ],
+              "type": "string"
+            },
+            "input": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "message": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "code"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "rule_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "severity": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "summary": {
+      "description": "Required concise deterministic human-readable explanation of the Rule outcome and decisive cause, consistent with findings, finding_counts, and the referenced Assessment Results; never just the outcome label.",
+      "minLength": 1,
+      "pattern": "\\S",
+      "type": "string"
+    },
+    "title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "weight": {
+      "description": "Effective Rule weight used by the selected scoring model, when defined.",
+      "minimum": 0,
+      "type": [
+        "number",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "rule_id",
+    "outcome",
+    "assessment",
+    "summary",
+    "instances",
+    "findings"
+  ],
+  "title": "SCAP-NG Rule Result draft v0.4.0 strawman",
+  "type": "object",
+  "x-last-modified": "2026-10-22",
+  "x-scap-ng-version": "0.4.0"
+}

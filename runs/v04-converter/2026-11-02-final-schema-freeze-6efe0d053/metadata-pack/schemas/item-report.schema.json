@@ -1,0 +1,150 @@
+{
+  "$defs": {
+    "names": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    }
+  },
+  "$id": "https://scap-ng.dev/schema/v0.4.0/item-report.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "An explicitly marked projection of evaluated/redacted canonical Items. Not a replacement Assessment Result.",
+  "properties": {
+    "item_report": {
+      "additionalProperties": false,
+      "properties": {
+        "items": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "item": {
+                "additionalProperties": false,
+                "properties": {
+                  "capability": {
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "context": {
+                    "type": "object"
+                  },
+                  "fields": {
+                    "additionalProperties": {
+                      "oneOf": [
+                        {
+                          "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                        },
+                        {
+                          "items": {
+                            "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                          },
+                          "type": "array"
+                        }
+                      ]
+                    },
+                    "type": "object"
+                  },
+                  "id": {
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "imported": {
+                    "type": "boolean"
+                  },
+                  "provenance": {
+                    "type": "object"
+                  },
+                  "status": {
+                    "enum": [
+                      "exists",
+                      "error",
+                      "not_collected"
+                    ]
+                  }
+                },
+                "required": [
+                  "id",
+                  "capability",
+                  "status",
+                  "fields",
+                  "provenance"
+                ],
+                "type": "object"
+              },
+              "selection": {
+                "additionalProperties": false,
+                "properties": {
+                  "omitted_elements": {
+                    "$ref": "#/$defs/names"
+                  },
+                  "retained_required_elements": {
+                    "$ref": "#/$defs/names"
+                  },
+                  "unavailable_elements": {
+                    "$ref": "#/$defs/names"
+                  }
+                },
+                "required": [
+                  "omitted_elements",
+                  "unavailable_elements",
+                  "retained_required_elements"
+                ],
+                "type": "object"
+              }
+            },
+            "required": [
+              "item",
+              "selection"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "kind": {
+          "const": "reported_elements_projection"
+        },
+        "source_completeness": {
+          "additionalProperties": false,
+          "properties": {
+            "evidence_complete": {
+              "type": "boolean"
+            },
+            "logical_complete": {
+              "type": "boolean"
+            },
+            "population_complete": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "logical_complete",
+            "population_complete",
+            "evidence_complete"
+          ],
+          "type": "object"
+        },
+        "source_execution_ref": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "kind",
+        "source_execution_ref",
+        "source_completeness",
+        "items"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "item_report"
+  ],
+  "title": "Draft derived Item report 0.4.0",
+  "type": "object",
+  "x-last-modified": "2026-10-23",
+  "x-scap-ng-version": "0.4.0"
+}

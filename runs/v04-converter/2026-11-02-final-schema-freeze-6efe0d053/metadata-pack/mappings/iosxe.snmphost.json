@@ -1,0 +1,62 @@
+{
+  "capability": "iosxe.snmphost",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "snmphost": "iosxe.snmphost"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "community_or_user": [
+        "string"
+      ],
+      "host": [
+        "string"
+      ],
+      "snmpv3_sec_level": [
+        "string"
+      ],
+      "traps": [
+        "string"
+      ],
+      "version": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "host"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "host": "host"
+    },
+    "shared_semantic_model": "cisco.snmphost",
+    "state_field_map": {
+      "community_or_user": "community_or_user",
+      "host": "host",
+      "snmpv3_sec_level": "snmpv3_sec_level",
+      "traps": "traps",
+      "version": "version"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "iosxe.snmphost.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability iosxe.snmphost."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/iosxe-definitions-schema.xsd",
+    "item": "snmphost_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe",
+    "object": "snmphost_object",
+    "state": "snmphost_state",
+    "test": "snmphost_test"
+  },
+  "specification_version": "0.4.0"
+}

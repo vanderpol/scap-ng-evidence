@@ -1,0 +1,16 @@
+test_all_six_guard_results_and_only_selected_branch_reads (__main__.OwnerConditionalPlan.test_all_six_guard_results_and_only_selected_branch_reads) ... ok
+test_conditional_dependency_context_is_external_and_guarded (__main__.OwnerConditionalPlan.test_conditional_dependency_context_is_external_and_guarded) ... ok
+test_current_authoring_compiles_and_independent_package_reader_checks_branch_blocks (__main__.OwnerConditionalPlan.test_current_authoring_compiles_and_independent_package_reader_checks_branch_blocks) ... ok
+test_explicit_terminals_retain_reasons_and_do_not_turn_errors_or_failures_into_followup (__main__.OwnerConditionalPlan.test_explicit_terminals_retain_reasons_and_do_not_turn_errors_or_failures_into_followup) ... ok
+test_independent_reader_matches_blocks_and_detects_branch_reordering (__main__.OwnerConditionalPlan.test_independent_reader_matches_blocks_and_detects_branch_reordering) ... ok
+test_indeterminate_else_if_does_not_fall_through (__main__.OwnerConditionalPlan.test_indeterminate_else_if_does_not_fall_through) ... ok
+test_legacy_native_boolean_aliases_rejected_even_inside_conditional (__main__.OwnerConditionalPlan.test_legacy_native_boolean_aliases_rejected_even_inside_conditional) ... ok
+test_missing_unselected_outcome_allowed_missing_selected_outcome_errors (__main__.OwnerConditionalPlan.test_missing_unselected_outcome_allowed_missing_selected_outcome_errors) ... ok
+test_ordered_else_if_first_true_wins_even_when_selected_result_is_false (__main__.OwnerConditionalPlan.test_ordered_else_if_first_true_wins_even_when_selected_result_is_false) ... ok
+test_schema_and_compiler_reject_missing_else_bad_order_shape_and_reason (__main__.OwnerConditionalPlan.test_schema_and_compiler_reject_missing_else_bad_order_shape_and_reason) ... ok
+test_static_reference_closure_includes_every_branch (__main__.OwnerConditionalPlan.test_static_reference_closure_includes_every_branch) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.437s
+
+OK

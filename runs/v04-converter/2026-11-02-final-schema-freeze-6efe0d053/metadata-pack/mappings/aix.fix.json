@@ -1,0 +1,57 @@
+{
+  "capability": "aix.fix",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "fix": "aix.fix"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "abstract": [
+        "string"
+      ],
+      "apar_number": [
+        "string"
+      ],
+      "installation_status": [
+        "string"
+      ],
+      "symptom": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "apar_number"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "apar_number": "apar_number"
+    },
+    "state_field_map": {
+      "abstract": "abstract",
+      "apar_number": "apar_number",
+      "installation_status": "installation_status",
+      "symptom": "symptom"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "aix.fix.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability aix.fix."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/aix-definitions-schema.xsd",
+    "item": "fix_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#aix",
+    "object": "fix_object",
+    "state": "fix_state",
+    "test": "fix_test"
+  },
+  "specification_version": "0.4.0"
+}

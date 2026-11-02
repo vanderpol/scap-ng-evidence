@@ -1,0 +1,180 @@
+{
+  "format": "scap-ng/selector-api-contract-audit/1",
+  "status": "PASS",
+  "capabilities": [
+    {
+      "capability": "independent.environmentvariable",
+      "selectors": [
+        "name",
+        "pid"
+      ],
+      "acquisition_parameters": [],
+      "traversal": null,
+      "field_count": 2
+    },
+    {
+      "capability": "windows.appcmd",
+      "selectors": [
+        "identifier",
+        "identifier_type",
+        "parameter"
+      ],
+      "acquisition_parameters": [],
+      "traversal": null,
+      "field_count": 3
+    },
+    {
+      "capability": "windows.appcmdlistconfig",
+      "selectors": [
+        "identifier",
+        "identifier_type",
+        "parameter",
+        "section"
+      ],
+      "acquisition_parameters": [],
+      "traversal": null,
+      "field_count": 4
+    },
+    {
+      "capability": "windows.cmdlet",
+      "selectors": [],
+      "acquisition_parameters": [
+        "module_id",
+        "module_name",
+        "module_version",
+        "noun",
+        "parameters",
+        "select",
+        "verb"
+      ],
+      "traversal": null,
+      "field_count": 7
+    },
+    {
+      "capability": "windows.fileeffectiverights",
+      "selectors": [
+        "directory",
+        "full_path",
+        "name",
+        "trustee_sid"
+      ],
+      "acquisition_parameters": [
+        "filesystem"
+      ],
+      "traversal": "windows_file_traversal",
+      "field_count": 5
+    },
+    {
+      "capability": "windows.group_sid",
+      "selectors": [
+        "group_sid"
+      ],
+      "acquisition_parameters": [],
+      "traversal": null,
+      "field_count": 1
+    },
+    {
+      "capability": "windows.ntuser",
+      "selectors": [
+        "key",
+        "name"
+      ],
+      "acquisition_parameters": [
+        "include_default",
+        "item_creation"
+      ],
+      "traversal": "hierarchy_traversal",
+      "field_count": 4
+    },
+    {
+      "capability": "windows.regkeyeffectiverights",
+      "selectors": [
+        "hive",
+        "key",
+        "trustee_sid"
+      ],
+      "acquisition_parameters": [],
+      "traversal": "hierarchy_traversal",
+      "field_count": 3
+    },
+    {
+      "capability": "windows.service",
+      "selectors": [
+        "service_name"
+      ],
+      "acquisition_parameters": [],
+      "traversal": null,
+      "field_count": 1
+    },
+    {
+      "capability": "windows.sid",
+      "selectors": [
+        "trustee_name"
+      ],
+      "acquisition_parameters": [
+        "include_group",
+        "resolve_group"
+      ],
+      "traversal": null,
+      "field_count": 3
+    },
+    {
+      "capability": "windows.sid_sid",
+      "selectors": [
+        "trustee_sid"
+      ],
+      "acquisition_parameters": [
+        "include_group",
+        "resolve_group"
+      ],
+      "traversal": null,
+      "field_count": 3
+    },
+    {
+      "capability": "windows.user_sid",
+      "selectors": [
+        "user_sid"
+      ],
+      "acquisition_parameters": [],
+      "traversal": null,
+      "field_count": 1
+    },
+    {
+      "capability": "windows.userright",
+      "selectors": [
+        "userright"
+      ],
+      "acquisition_parameters": [],
+      "traversal": null,
+      "field_count": 1
+    },
+    {
+      "capability": "windows.wmi.query",
+      "selectors": [],
+      "acquisition_parameters": [
+        "namespace",
+        "query"
+      ],
+      "traversal": null,
+      "field_count": 2
+    },
+    {
+      "capability": "windows.wuaupdatesearcher",
+      "selectors": [
+        "search_criteria"
+      ],
+      "acquisition_parameters": [
+        "include_superseded_updates"
+      ],
+      "traversal": null,
+      "field_count": 2
+    }
+  ],
+  "capability_count": 15,
+  "field_count": 42,
+  "source_count": 32,
+  "errors": [],
+  "scanner_executed": false,
+  "api_cases_executed": false,
+  "scope": "contract coverage, source receipts and generated-surface agreement; conditional API behavior is not a simulated collector"
+}

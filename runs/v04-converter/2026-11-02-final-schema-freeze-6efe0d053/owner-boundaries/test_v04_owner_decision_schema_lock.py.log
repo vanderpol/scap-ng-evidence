@@ -1,0 +1,18 @@
+test_case_and_version_contract_metadata (__main__.OwnerDecisionsSchemaLock.test_case_and_version_contract_metadata) ... ok
+test_case_comparison_is_explicit_independent_of_selector (__main__.OwnerDecisionsSchemaLock.test_case_comparison_is_explicit_independent_of_selector) ... ok
+test_conditional_elif_and_terminals (__main__.OwnerDecisionsSchemaLock.test_conditional_elif_and_terminals) ... ok
+test_confirmed_field_absence_is_not_failed_collection (__main__.OwnerDecisionsSchemaLock.test_confirmed_field_absence_is_not_failed_collection) ... ok
+test_existence_only_without_field_requirement (__main__.OwnerDecisionsSchemaLock.test_existence_only_without_field_requirement) ... ok
+test_field_override_must_supply_both_members (__main__.OwnerDecisionsSchemaLock.test_field_override_must_supply_both_members) ... ok
+test_native_id_limit (__main__.OwnerDecisionsSchemaLock.test_native_id_limit) ... ok
+test_optional_cardinality_uses_zero_or_more_only (__main__.OwnerDecisionsSchemaLock.test_optional_cardinality_uses_zero_or_more_only) ... ok
+test_reported_elements_must_be_explicit (__main__.OwnerDecisionsSchemaLock.test_reported_elements_must_be_explicit) ... ok
+test_root_purpose_removed_reference_context_preserved (__main__.OwnerDecisionsSchemaLock.test_root_purpose_removed_reference_context_preserved) ... ok
+test_schema_authoring_default_is_not_missing_field_acceptance (__main__.OwnerDecisionsSchemaLock.test_schema_authoring_default_is_not_missing_field_acceptance) ... ok
+test_standard_comparison_valid (__main__.OwnerDecisionsSchemaLock.test_standard_comparison_valid) ... ok
+test_test_wide_field_requirement_mandatory (__main__.OwnerDecisionsSchemaLock.test_test_wide_field_requirement_mandatory) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.736s
+
+OK

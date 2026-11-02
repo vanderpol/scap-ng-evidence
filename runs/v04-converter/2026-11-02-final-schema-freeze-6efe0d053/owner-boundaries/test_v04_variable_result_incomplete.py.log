@@ -1,0 +1,16 @@
+/workspace/scap-ng-owner-contract-268/tools/test_v04_variable_result_incomplete.py:8: DeprecationWarning: jsonschema.RefResolver is deprecated as of v4.18.0, in favor of the https://github.com/python-jsonschema/referencing library, which provides more compliant referencing behavior as well as more flexible APIs for customization. A future release will remove RefResolver. Please file a feature request (on referencing) if you are missing an API for the kind of customization you need.
+  from jsonschema import Draft202012Validator, RefResolver
+test_complete_and_incomplete_cardinality_matches_value_entries (__main__.IncompleteVariableResultSchemaTests.test_complete_and_incomplete_cardinality_matches_value_entries) ... ok
+test_existing_statuses_remain_valid (__main__.IncompleteVariableResultSchemaTests.test_existing_statuses_remain_valid) ... ok
+test_incomplete_still_requires_provenance_refs_and_cardinality (__main__.IncompleteVariableResultSchemaTests.test_incomplete_still_requires_provenance_refs_and_cardinality) ... ok
+test_incomplete_zero_one_many_observed_values (__main__.IncompleteVariableResultSchemaTests.test_incomplete_zero_one_many_observed_values) ... ok
+test_no_status_precedence_asserted (__main__.IncompleteVariableResultSchemaTests.test_no_status_precedence_asserted)
+A schema-valid partial value set is not a computed count/unique result. ... ok
+test_non_success_status_aggregation_remains_unconstrained (__main__.IncompleteVariableResultSchemaTests.test_non_success_status_aggregation_remains_unconstrained) ... ok
+test_unknown_status_and_untyped_observation_rejected (__main__.IncompleteVariableResultSchemaTests.test_unknown_status_and_untyped_observation_rejected) ... ok
+test_zero_values_requires_empty_stream_and_zero_cardinality (__main__.IncompleteVariableResultSchemaTests.test_zero_values_requires_empty_stream_and_zero_cardinality) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.015s
+
+OK

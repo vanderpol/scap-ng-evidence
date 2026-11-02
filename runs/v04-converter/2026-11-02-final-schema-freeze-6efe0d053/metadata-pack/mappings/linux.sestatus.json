@@ -1,0 +1,59 @@
+{
+  "capability": "linux.sestatus",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "sestatus": "linux.sestatus"
+    },
+    "object": {
+      "sestatus_object": "omitted_native_singleton_system_source"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "current_mode": [
+        "string"
+      ],
+      "loaded_policy_name": [
+        "string"
+      ],
+      "mode_from_config_file": [
+        "string"
+      ],
+      "policy_from_config_file": [
+        "string"
+      ],
+      "selinux_status": [
+        "string"
+      ]
+    },
+    "post_alignment_ready": true,
+    "state_field_map": {
+      "current_mode": "current_mode",
+      "loaded_policy_name": "loaded_policy_name",
+      "mode_from_config_file": "mode_from_config_file",
+      "policy_from_config_file": "policy_from_config_file",
+      "selinux_status": "selinux_status"
+    },
+    "test_source": {
+      "kind": "none"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "linux.sestatus.singleton_source",
+      "rule": "The capability evaluates the current SELinux status directly; native content SHALL NOT introduce a meaningless singleton Object."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/linux-definitions-schema.xsd",
+    "item": "sestatus_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#linux",
+    "object": "sestatus_object",
+    "state": "sestatus_state",
+    "test": "sestatus_test"
+  },
+  "specification_version": "0.4.0"
+}

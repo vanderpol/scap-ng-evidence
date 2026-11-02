@@ -1,0 +1,42 @@
+[
+  {
+    "script": "tools/test_v04_owner_decision_schema_lock.py",
+    "exit_code": 0,
+    "seconds": 1.185
+  },
+  {
+    "script": "tools/test_v04_owner_conditional_plan.py",
+    "exit_code": 0,
+    "seconds": 0.798
+  },
+  {
+    "script": "tools/test_v04_owner_identity_context.py",
+    "exit_code": 0,
+    "seconds": 2.461
+  },
+  {
+    "script": "tools/test_v04_owner_producer_contract.py",
+    "exit_code": 0,
+    "seconds": 2.919
+  },
+  {
+    "script": "tools/test_v04_comparison_types.py",
+    "exit_code": 0,
+    "seconds": 1.335
+  },
+  {
+    "script": "tools/test_v04_native_capability_names.py",
+    "exit_code": 0,
+    "seconds": 1.716
+  },
+  {
+    "script": "tools/test_v04_direct_converter.py",
+    "exit_code": 1,
+    "seconds": 10.206
+  },
+  {
+    "script": "tools/test_v04_variable_result_incomplete.py",
+    "exit_code": 0,
+    "seconds": 0.286
+  }
+]

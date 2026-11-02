@@ -1,0 +1,286 @@
+{
+  "format": "scap-ng/owner-decision-contract-verification/1",
+  "baseline": "606ffe1cf91149c2561a56eb8e0130b21f132046",
+  "decisions": [
+    {
+      "decision": 1,
+      "adopted_rule": "Use **`zero_or_more`** for optional cardinality/existence; retire `may_be_absent`. Preserve source semantics in provenance.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_owner_decision_schema_lock.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 2,
+      "adopted_rule": "Requirement inheritance is **Test \u2192 logical group \u2192 record \u2192 individual field**, with nearest complete explicit requirement winning. A field override changes the applicable pair; record correlation is maintained. No implicit fallback.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_owner_producer_contract.py",
+        "tools/test_v04_result_contract.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 3,
+      "adopted_rule": "Every **comparison Test** shall declare Test-level `field_requirement` (both `values_found` and `values_matching`). Individual fields normally inherit; explicitly exceptional fields override **both** values. Existence-only Tests exempt.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_owner_decision_schema_lock.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 4,
+      "adopted_rule": "Infer datatypes deterministically from capability contracts, typed YAML values, explicit typed operators and typed Variables/Inputs. An explicit compatible datatype is permitted but never routinely required. Ambiguity/conflict is an error; never silently coerce.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_comparison_types.py",
+        "tools/test_v04_field_datatype_elimination.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 5,
+      "adopted_rule": "Remove legacy OVAL numeric suffixes from native capability names (e.g. `independent.textfilecontent54` \u2192 `independent.textfilecontent`); maintain complete original OVAL identifiers in provenance. Reject old aliases from finalized native authoring.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_native_capability_names.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 6,
+      "adopted_rule": "Do not put `purpose: assessment/applicability` in an Assessment: its `class` and `mode` remain. Usage as an applicability check is determined by the typed reference at the Benchmark/Rule consumer, allowing the Assessment to be reused.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_owner_identity_context.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 7,
+      "adopted_rule": "The graphical editor may display/hide documented defaults, but **all applicable defaults are materialized in saved YAML**. Document via JSON Schema `default` and `x-scap-ng-authoring` annotations (`group`, `hide_when_default`), including other rarely changed fields. Schema `default` is authoring metadata, **not a scanner/runtime default**.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_editor_metadata.py",
+        "tools/test_audit_v04_editor_default_catalog.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 8,
+      "adopted_rule": "Keep declarative `evaluate.if/then/else`, with static branch references and six-state results; no dynamic code, implicit loops, or deferred computation.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_owner_conditional_plan.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 9,
+      "adopted_rule": "For confirmed absence, use `values_found: none` when a **field** is absent; `items_found: none` when the entire Item is absent. Failed or incomplete collection is not proof of absence.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_result_contract.py",
+        "tools/test_v04_absence_only_integration.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 10,
+      "adopted_rule": "Native Assessment/Test/Object/Variable/Input/local dependency identifiers are concise, meaningful, stable, lower-case slug identifiers with suffix where prescribed, **maximum 64 characters including suffix**. Reject duplicates and random filename hashes. External original IDs are exempt.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_owner_identity_context.py",
+        "tools/test_v04_audit_remediation.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 11,
+      "adopted_rule": "Shared Assessment filenames use meaningful, stable names prefixed by the applicable platform family (`windows-`, `linux-`, `solaris-`, etc.), rather than SV-ID or generated hash.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_audit_remediation.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 12,
+      "adopted_rule": "Promote an Assessment to the global shared library **only when reused across Benchmarks** and after semantic equivalence is demonstrated. Reuse inside one Benchmark stays local to it. Separate `automated` and `manual`; do not add a redundant `local` directory.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_qualify_v04_shared_assessment.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 13,
+      "adopted_rule": "Omit empty optional Rule metadata; retain required data whenever it affects evaluation/applicability.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_direct_converter.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 14,
+      "adopted_rule": "Applicable automated Tests must explicitly contain `reported_elements`; the editor initially fills `all` and may hide it. Result redaction is an independent concern.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_owner_decision_schema_lock.py",
+        "tools/test_v04_owner_producer_contract.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 15,
+      "adopted_rule": "Retain both Organizational Input `required` and `cardinality`. Distinguish unprovided Input from deliberately provided empty Input.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_input_presence.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 16,
+      "adopted_rule": "Optional Assessment Inputs may be omitted, but referencing Assessments must explicitly handle omission; an unguarded missing dependency/input is an error.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_input_presence.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 17,
+      "adopted_rule": "Variable arrays use the same `values_found` / `values_matching` vocabulary; no separate implicit array behavior.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_canonical_requirement_oracle.py",
+        "tools/test_v04_variable_expressions.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 18,
+      "adopted_rule": "Assessment IDs are unique across the compiled library, Test IDs within their Assessment, and Object/Variable IDs in their documented scopes. A shared Assessment retains identity.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_owner_identity_context.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 19,
+      "adopted_rule": "Incomplete collection is an `error` with reason/evidence, distinct from confirmed absence. Never fabricate missing Items.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_result_contract.py",
+        "tools/test_v04_variable_result_incomplete.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 20,
+      "adopted_rule": "Do not expose OVAL `all_exist` as a native authoring option. Convert only where semantics remain faithful in a no-synthetic-Items model; preserve the source in provenance; otherwise block with a precise diagnostic.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_windows_all_exist_decisions.py",
+        "tools/test_v04_scalar_none_exist_source.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 21,
+      "adopted_rule": "An incorrectly associated namespace/catalog is a **warning** if the intended binding resolves unambiguously; genuinely unresolved/ambiguous references are errors.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_direct_converter.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 22,
+      "adopted_rule": "Case handling is specified **per capability and selector**. Windows registry/service/environment/EventLog/WMI selectors may be case-insensitive by the corresponding native API; Windows filesystem path lookup follows per-directory filesystem case-sensitivity configuration. Unix paths normally are case-sensitive. Collected **values** are independent: `equals` compares case-sensitively; `case_insensitive_equals` requests explicit insensitive comparison. No universal `case_sensitive` switch.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_selector_contracts.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 23,
+      "adopted_rule": "`windows.cmdlet.module_version` has the native semantic datatype **version**, inferred from the capability contract. Authors use a quoted version string without redundant `datatype`. Reject invalid version values; no generalized coercion.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_owner_identity_context.py",
+        "tools/test_v04_audit_remediation.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 24,
+      "adopted_rule": "An Assessment may explicitly reach a technically **`not_evaluated`** branch when a necessary check is knowingly beyond available inspection (e.g. remote share ACL). The Rule reports meaningful **informational/manual follow-up**, with observed evidence and why completion was impossible. Known noncompliance stays `fail`; unexpected collection failure stays `error`.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_owner_conditional_plan.py",
+        "tools/test_v04_result_summaries.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 25,
+      "adopted_rule": "`not_applicable` is an explicit, reason-bearing terminal outcome when applicability is genuinely disproved, not a euphemism for scanner inability. It can be selected from **any** `then`/`else_if.then`/`else` branch. False condition selects next branch; indeterminate condition propagates. The Rule applicability gate may independently produce N/A. Preserve OVAL-style Boolean aggregation.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_owner_conditional_plan.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 26,
+      "adopted_rule": "Add ordered `evaluate.else_if: [{if: ..., then: ...}, ...]`, with required initial `if/then` and final `else`. Evaluate branches in order, first true wins, only selected branch runs; preserve six-state propagation. Compiler may normalize to nested `if/then/else`.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_owner_conditional_plan.py",
+        "tools/test_v04_input_presence.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 27,
+      "adopted_rule": "File and hierarchy traversal must express an unbounded depth as **`max_depth: unlimited`**, not `null` or a magic negative integer. Bounded depth is an integer of at least zero (`0` searches the starting directory only); OVAL `max_depth=-1` converts to `unlimited`. The editor may offer this explicitly documented choice but the scanner must not infer it from omission. Historical 0.1\u20130.3 grammars remain unchanged.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_owner_decision_schema_lock.py",
+        "tools/test_v04_editor_metadata.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 28,
+      "adopted_rule": "For **newly authored** file Objects, the editor suggests **`filesystem: local`** and writes it explicitly into YAML, even when the UI hides it. This is an **authoring preference**, not an implicit scanner default. **Source conversion is different:** OVAL 5.12.3 omitted `recurse_file_system` means effective `all`, which must serialize as **`filesystem: all`**; explicit OVAL `local` remains `local`, and `defined` becomes NG `same`. Do not normalize source-effective `all` to `local` or conflate filesystem scope with recursion depth/direction.",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_editor_metadata.py",
+        "tools/test_v04_owner_producer_contract.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    },
+    {
+      "decision": 29,
+      "adopted_rule": "Accept only the finite, validated existing native Variable-expression vocabulary; reject unknown functions, malformed nodes/options/arities and incompatible declared/derived types at validation and direct compilation. Preserve valid legacy forms and explicit numeric regex-result declarations. Keep the canonical function-call candidate inactive. Future functions require separate versioned approval. [Owner approval](https://github.com/vanderpol/scap-ng/pull/268#issuecomment-6550047257).",
+      "contract_status": "CLOSED",
+      "boundary_suites": [
+        "tools/test_v04_variable_expressions.py",
+        "tools/test_v04_input_presence.py"
+      ],
+      "verification_scope": "source/schema/compiler/metadata/supplied-evidence contract boundaries; no native scanner or VS Code host execution"
+    }
+  ],
+  "limits": [
+    "Test suites are executed and their exact results published separately; this matrix is traceability, not a fabricated execution receipt.",
+    "Initial independent18/10/1 and source-proof scores remain historical, not relabeled as native runtime verification."
+  ]
+}

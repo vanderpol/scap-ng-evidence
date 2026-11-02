@@ -1,0 +1,72 @@
+test_broken_references_cycles_and_blocked_semantics_fail_closed (__main__.DirectConverterAcceptance.test_broken_references_cycles_and_blocked_semantics_fail_closed) ... ok
+test_component_collision_and_wrong_catalog_never_use_global_ids (__main__.DirectConverterAcceptance.test_component_collision_and_wrong_catalog_never_use_global_ids) ... ok
+test_direct_filters_shared_identity_and_invalid_sets (__main__.DirectConverterAcceptance.test_direct_filters_shared_identity_and_invalid_sets) ... ERROR
+test_documented_integer_comparator_extension_is_source_verified (__main__.DirectConverterAcceptance.test_documented_integer_comparator_extension_is_source_verified) ... ok
+test_legacy_selector_and_invalid_predicate_fail_public_gates (__main__.DirectConverterAcceptance.test_legacy_selector_and_invalid_predicate_fail_public_gates) ... ok
+test_original_rules_profile_and_source_closure (__main__.DirectConverterAcceptance.test_original_rules_profile_and_source_closure) ... ok
+test_pinned_nested_registry_set_and_synthetic_filter_placement (__main__.DirectConverterAcceptance.test_pinned_nested_registry_set_and_synthetic_filter_placement) ... ERROR
+test_public_cli_validator_compiler_and_independent_consumer (__main__.DirectConverterAcceptance.test_public_cli_validator_compiler_and_independent_consumer) ... ok
+test_rejects_conditional_and_competing_check_choices (__main__.DirectConverterAcceptance.test_rejects_conditional_and_competing_check_choices) ... ok
+test_rule_identity_independence_and_stale_trace (__main__.DirectConverterAcceptance.test_rule_identity_independence_and_stale_trace) ... ok
+test_semantically_wrong_valid_authoring_fails_original_comparison (__main__.DirectConverterAcceptance.test_semantically_wrong_valid_authoring_fails_original_comparison) ... ok
+
+======================================================================
+ERROR: test_direct_filters_shared_identity_and_invalid_sets (__main__.DirectConverterAcceptance.test_direct_filters_shared_identity_and_invalid_sets)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scap-ng-owner-contract-268/tools/test_v04_direct_converter.py", line 305, in test_direct_filters_shared_identity_and_invalid_sets
+    acquisition = converter.reference(identifier, 'object')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scap-ng-owner-contract-268/tools/v04_direct_converter.py", line 148, in reference
+    result = getattr(self, 'convert_' + kind)(element)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scap-ng-owner-contract-268/tools/v04_direct_converter.py", line 293, in convert_object
+    acquisition['set'] = self.set_expression(sets[0], mapping)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scap-ng-owner-contract-268/tools/v04_direct_converter.py", line 430, in set_expression
+    acquisition = self.reference(identifier, 'object')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scap-ng-owner-contract-268/tools/v04_direct_converter.py", line 148, in reference
+    result = getattr(self, 'convert_' + kind)(element)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scap-ng-owner-contract-268/tools/v04_direct_converter.py", line 301, in convert_object
+    filters.append(self.filter(child, mapping))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scap-ng-owner-contract-268/tools/v04_direct_converter.py", line 443, in filter
+    return {action: self.filter_condition(self.reference(identifier, 'state'))}
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scap-ng-owner-contract-268/tools/v04_direct_converter.py", line 450, in filter_condition
+    ensure(len(condition['fields']) == 1, 'Filter requires one field per leaf')
+  File "/workspace/scap-ng-owner-contract-268/tools/v04_direct_scap_source.py", line 27, in ensure
+    raise UnsupportedSource(diagnostic)
+v04_direct_scap_source.UnsupportedSource: Filter requires one field per leaf
+
+======================================================================
+ERROR: test_pinned_nested_registry_set_and_synthetic_filter_placement (__main__.DirectConverterAcceptance.test_pinned_nested_registry_set_and_synthetic_filter_placement)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scap-ng-owner-contract-268/tools/test_v04_direct_converter.py", line 232, in test_pinned_nested_registry_set_and_synthetic_filter_placement
+    acquisition = converter.reference(identifier, 'object')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scap-ng-owner-contract-268/tools/v04_direct_converter.py", line 148, in reference
+    result = getattr(self, 'convert_' + kind)(element)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scap-ng-owner-contract-268/tools/v04_direct_converter.py", line 293, in convert_object
+    acquisition['set'] = self.set_expression(sets[0], mapping)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scap-ng-owner-contract-268/tools/v04_direct_converter.py", line 422, in set_expression
+    predicates = [self.filter(child, mapping) for child in filters]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scap-ng-owner-contract-268/tools/v04_direct_converter.py", line 443, in filter
+    return {action: self.filter_condition(self.reference(identifier, 'state'))}
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scap-ng-owner-contract-268/tools/v04_direct_converter.py", line 450, in filter_condition
+    ensure(len(condition['fields']) == 1, 'Filter requires one field per leaf')
+  File "/workspace/scap-ng-owner-contract-268/tools/v04_direct_scap_source.py", line 27, in ensure
+    raise UnsupportedSource(diagnostic)
+v04_direct_scap_source.UnsupportedSource: Filter requires one field per leaf
+
+----------------------------------------------------------------------
+Ran 11 tests in 9.296s
+
+FAILED (errors=2)

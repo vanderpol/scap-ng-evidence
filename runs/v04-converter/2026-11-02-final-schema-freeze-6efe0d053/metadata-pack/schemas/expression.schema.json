@@ -1,0 +1,276 @@
+{
+  "$defs": {
+    "condition": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/expression"
+        },
+        {
+          "$ref": "#/$defs/input_presence"
+        }
+      ]
+    },
+    "expression": {
+      "description": "Explicit new-authoring selection for assessment logic; applies only in explicit logical group. Preserve source-effective values and visible overrides; no runtime fallback.",
+      "oneOf": [
+        {
+          "additionalProperties": false,
+          "properties": {
+            "test": {
+              "maxLength": 64,
+              "minLength": 1,
+              "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-test$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "test"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "assessment": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "assessment"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "else": {
+              "$ref": "#/$defs/expression"
+            },
+            "else_if": {
+              "description": "Ordered alternative branches. A conditional evaluator chooses the first true condition, evaluates only its then expression and skips later branches. Indeterminate conditions propagate rather than falling through.",
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "if": {
+                    "$ref": "#/$defs/condition"
+                  },
+                  "then": {
+                    "$ref": "#/$defs/expression"
+                  }
+                },
+                "required": [
+                  "if",
+                  "then"
+                ],
+                "type": "object"
+              },
+              "minItems": 1,
+              "type": "array"
+            },
+            "if": {
+              "$ref": "#/$defs/condition"
+            },
+            "then": {
+              "$ref": "#/$defs/expression"
+            }
+          },
+          "required": [
+            "if",
+            "then",
+            "else"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "not": {
+              "$ref": "#/$defs/expression"
+            }
+          },
+          "required": [
+            "not"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "and": {
+              "description": "Logical AND of complete Test outcomes; separate from Test Item matching.",
+              "items": {
+                "$ref": "#/$defs/expression"
+              },
+              "minItems": 1,
+              "type": "array"
+            }
+          },
+          "required": [
+            "and"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "or": {
+              "description": "Logical OR of complete Test outcomes; separate from Test Item matching.",
+              "items": {
+                "$ref": "#/$defs/expression"
+              },
+              "minItems": 1,
+              "type": "array"
+            }
+          },
+          "required": [
+            "or"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "not_evaluated": {
+              "additionalProperties": false,
+              "description": "Author-declared, evidence-backed inability to complete a branch. Not a substitute for a failed check, a collection error, or a proven not-applicable condition.",
+              "properties": {
+                "follow_up": {
+                  "description": "What a reviewer or manual follow-up must inspect.",
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "reason": {
+                  "minLength": 1,
+                  "pattern": "\\S",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "reason"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "not_evaluated"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "not_applicable": {
+              "additionalProperties": false,
+              "properties": {
+                "reason": {
+                  "minLength": 1,
+                  "pattern": "\\S",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "reason"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "not_applicable"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "one": {
+              "items": {
+                "$ref": "#/$defs/expression"
+              },
+              "minItems": 1,
+              "type": "array"
+            }
+          },
+          "required": [
+            "one"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "xor": {
+              "description": "Logical XOR of complete Test outcomes; separate from Test Item matching.",
+              "items": {
+                "$ref": "#/$defs/expression"
+              },
+              "minItems": 1,
+              "type": "array"
+            }
+          },
+          "required": [
+            "xor"
+          ],
+          "type": "object"
+        }
+      ],
+      "title": "Assessment logic",
+      "x-scap-ng-authoring": {
+        "aggressive_preview": true,
+        "authority": "https://github.com/vanderpol/scap-ng/issues/269",
+        "context": "explicit_logical_group",
+        "control_id": "assessment_logic",
+        "default_key": "and",
+        "group": "logic",
+        "hide_scope": "choice_only_arguments_remain_visible",
+        "hide_when_default": false,
+        "new_authoring_only": true,
+        "oval_source": [
+          {
+            "attribute": "operator",
+            "declaration_context": [
+              "CriteriaType"
+            ],
+            "declaration_kind": "attribute",
+            "documentation": "",
+            "origin": "XSD_DECLARED_DEFAULT",
+            "oval_qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5}CriteriaType/@operator",
+            "reachability_limit": "QName dependency census; occurrence-specific overrides require review",
+            "source_default": "AND",
+            "source_line": 310,
+            "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+            "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+            "source_type": "oval:OperatorEnumeration",
+            "source_xpath": "/xsd:schema/xsd:complexType[6]/xsd:attribute[2]"
+          }
+        ],
+        "preserve_overrides": true,
+        "representation": "key",
+        "serialize_explicitly": true,
+        "version": 1
+      }
+    },
+    "input_presence": {
+      "additionalProperties": false,
+      "properties": {
+        "input_provided": {
+          "description": "Declared local Input provision, not truthiness or nonemptiness. Only direct evaluate if/else_if guards; absent and provided empty remain distinct.",
+          "maxLength": 64,
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-input$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "input_provided"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://scap-ng.dev/schema/v0.4.0/expression.schema.json",
+  "$ref": "#/$defs/expression",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "SCAP-NG 0.4.0 Test-result expression grammar. Logical and/or/one/xor are canonical; legacy all/any/odd are invalid. Item cardinalities are separate.",
+  "title": "Draft SCAP-NG 0.4.0 automated expression",
+  "x-last-modified": "2026-11-01",
+  "x-scap-ng-version": "0.4.0"
+}

@@ -1,0 +1,52 @@
+{
+  "capability": "linux.systemdunitdependency",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "systemdunitdependency": "linux.systemdunitdependency"
+    },
+    "object": {
+      "unit": "object.unit"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "dependency": [
+        "string"
+      ],
+      "unit": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "unit"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "unit": "unit"
+    },
+    "state_field_map": {
+      "dependency": "dependency",
+      "unit": "unit"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "linux.systemdunitdependency.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability linux.systemdunitdependency."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/linux-definitions-schema.xsd",
+    "item": "systemdunitdependency_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#linux",
+    "object": "systemdunitdependency_object",
+    "state": "systemdunitdependency_state",
+    "test": "systemdunitdependency_test"
+  },
+  "specification_version": "0.4.0"
+}

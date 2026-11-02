@@ -1,0 +1,10 @@
+[
+  {
+    "conclusion": "success",
+    "databaseId": 41430440503,
+    "headSha": "e3ac52753569e861cc1e0df1a458ecdc023ec1ad",
+    "name": "Offline metadata and source preservation",
+    "status": "completed",
+    "url": "https://github.com/vanderpol/scap-ng-vscode/actions/runs/41430440503"
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "capability": "junos.show",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "show": "junos.show"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "subcommand": [
+        "string"
+      ],
+      "value": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "subcommand"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "subcommand": "subcommand"
+    },
+    "state_field_map": {
+      "subcommand": "subcommand",
+      "value": "value"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "junos.show.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability junos.show."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/junos-definitions-schema.xsd",
+    "item": "show_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#junos",
+    "object": "show_object",
+    "state": "show_state",
+    "test": "show_test"
+  },
+  "specification_version": "0.4.0"
+}

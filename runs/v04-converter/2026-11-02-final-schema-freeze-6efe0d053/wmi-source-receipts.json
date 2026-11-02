@@ -1,0 +1,26 @@
+[
+  {
+    "id": "wmi-identity",
+    "url": "https://learn.microsoft.com/en-us/archive/msdn-magazine/2000/may/windows-management-instrumentation-administering-windows-and-applications-across-your-enterprise",
+    "retrieved_at": "2026-11-02T10:20:27.680653+00:00",
+    "sha256": "6fc1811c8709819b1f8c83ecce9ec26e56036a54d4417c48ff2c5377a0646d10",
+    "bytes": 87709,
+    "status": "retrieved"
+  },
+  {
+    "id": "wmi-interface",
+    "url": "https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-wmi/7a50647a-5311-41c2-8f4f-83bcfb497877",
+    "retrieved_at": "2026-11-02T10:20:27.624358+00:00",
+    "sha256": "5fd7f82b1c810f0f419e76e3adf0b69f71fa3357824a2fc7fda9aa309667714c",
+    "bytes": 43620,
+    "status": "retrieved"
+  },
+  {
+    "id": "wmi-path-rules",
+    "url": "https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-object-path-requirements",
+    "retrieved_at": "2026-11-02T10:20:27.680602+00:00",
+    "sha256": "8286b43b2ce3ca61f07be397507b999b49975769b1463664c8ed95e3f976b450",
+    "bytes": 47996,
+    "status": "retrieved"
+  }
+]

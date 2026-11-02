@@ -1,0 +1,16 @@
+test_broken_references_cycles_and_blocked_semantics_fail_closed (__main__.DirectConverterAcceptance.test_broken_references_cycles_and_blocked_semantics_fail_closed) ... ok
+test_component_collision_and_wrong_catalog_never_use_global_ids (__main__.DirectConverterAcceptance.test_component_collision_and_wrong_catalog_never_use_global_ids) ... ok
+test_direct_filters_shared_identity_and_invalid_sets (__main__.DirectConverterAcceptance.test_direct_filters_shared_identity_and_invalid_sets) ... ok
+test_documented_integer_comparator_extension_is_source_verified (__main__.DirectConverterAcceptance.test_documented_integer_comparator_extension_is_source_verified) ... ok
+test_legacy_selector_and_invalid_predicate_fail_public_gates (__main__.DirectConverterAcceptance.test_legacy_selector_and_invalid_predicate_fail_public_gates) ... ok
+test_original_rules_profile_and_source_closure (__main__.DirectConverterAcceptance.test_original_rules_profile_and_source_closure) ... ok
+test_pinned_nested_registry_set_and_synthetic_filter_placement (__main__.DirectConverterAcceptance.test_pinned_nested_registry_set_and_synthetic_filter_placement) ... ok
+test_public_cli_validator_compiler_and_independent_consumer (__main__.DirectConverterAcceptance.test_public_cli_validator_compiler_and_independent_consumer) ... ok
+test_rejects_conditional_and_competing_check_choices (__main__.DirectConverterAcceptance.test_rejects_conditional_and_competing_check_choices) ... ok
+test_rule_identity_independence_and_stale_trace (__main__.DirectConverterAcceptance.test_rule_identity_independence_and_stale_trace) ... ok
+test_semantically_wrong_valid_authoring_fails_original_comparison (__main__.DirectConverterAcceptance.test_semantically_wrong_valid_authoring_fails_original_comparison) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 70.150s
+
+OK

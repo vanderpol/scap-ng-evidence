@@ -1,0 +1,12 @@
+test_item_presence_exemption_field_absence_and_optional_spelling (__main__.OwnerProducerContract.test_item_presence_exemption_field_absence_and_optional_spelling) ... ok
+test_names_are_bounded_readable_source_ids_external_and_collisions_rejected (__main__.OwnerProducerContract.test_names_are_bounded_readable_source_ids_external_and_collisions_rejected) ... ok
+test_no_editor_suggestion_can_supply_missing_source_comparison_counts (__main__.OwnerProducerContract.test_no_editor_suggestion_can_supply_missing_source_comparison_counts) ... ok
+test_original_windows_two_rule_schema_generated_contract_compile_and_fresh_proof (__main__.OwnerProducerContract.test_original_windows_two_rule_schema_generated_contract_compile_and_fresh_proof) ... ok
+test_pinned_rhel_definition_new_authoring_proof_and_invocation_context (__main__.OwnerProducerContract.test_pinned_rhel_definition_new_authoring_proof_and_invocation_context) ... ok
+test_record_members_inherit_without_losing_correlation_or_exceptions (__main__.OwnerProducerContract.test_record_members_inherit_without_losing_correlation_or_exceptions) ... ok
+test_source_pair_materialized_and_equal_local_pair_removed_without_boundary_loss (__main__.OwnerProducerContract.test_source_pair_materialized_and_equal_local_pair_removed_without_boundary_loss) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 2.260s
+
+OK

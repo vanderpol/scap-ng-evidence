@@ -1,0 +1,12 @@
+test_cmdlet_module_version_is_quoted_semantic_version_not_unconstrained_text (__main__.OwnerIdentityContext.test_cmdlet_module_version_is_quoted_semantic_version_not_unconstrained_text) ... ok
+test_current_assessment_and_local_ids_fail_closed_in_schema_and_compiler (__main__.OwnerIdentityContext.test_current_assessment_and_local_ids_fail_closed_in_schema_and_compiler) ... ok
+test_dependency_resolution_has_no_target_intrinsic_purpose (__main__.OwnerIdentityContext.test_dependency_resolution_has_no_target_intrinsic_purpose) ... ok
+test_intrinsic_purpose_rejected_even_by_direct_program_api (__main__.OwnerIdentityContext.test_intrinsic_purpose_rejected_even_by_direct_program_api) ... ok
+test_library_rejects_duplicate_assessment_ids_across_private_benchmarks (__main__.OwnerIdentityContext.test_library_rejects_duplicate_assessment_ids_across_private_benchmarks) ... ok
+test_same_target_keeps_class_across_typed_and_explicit_invocation_contexts (__main__.OwnerIdentityContext.test_same_target_keeps_class_across_typed_and_explicit_invocation_contexts) ... ok
+test_source_naming_retains_distinguishing_words_and_is_order_independent (__main__.OwnerIdentityContext.test_source_naming_retains_distinguishing_words_and_is_order_independent) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.954s
+
+OK

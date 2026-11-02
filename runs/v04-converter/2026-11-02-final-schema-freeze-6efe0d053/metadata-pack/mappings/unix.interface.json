@@ -1,0 +1,93 @@
+{
+  "capability": "unix.interface",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "interface": "unix.interface"
+    },
+    "fields": {
+      "broadcast_addr": "broadcast_addr",
+      "flag": "flag",
+      "hardware_addr": "hardware_addr",
+      "inet_addr": "inet_addr",
+      "name": "name",
+      "netmask": "netmask",
+      "type": "type"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "broadcast_addr": [
+        "string"
+      ],
+      "flag": [
+        "string"
+      ],
+      "hardware_addr": [
+        "string"
+      ],
+      "inet_addr": [
+        "string"
+      ],
+      "name": [
+        "string"
+      ],
+      "netmask": [
+        "string"
+      ],
+      "type": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "name"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "name": "name"
+    },
+    "state_field_map": {
+      "broadcast_addr": "broadcast_addr",
+      "flag": "flag",
+      "hardware_addr": "hardware_addr",
+      "inet_addr": "inet_addr",
+      "name": "name",
+      "netmask": "netmask",
+      "type": "type"
+    },
+    "state_value_enums": {
+      "type": [
+        "ARPHRD_ETHER",
+        "ARPHRD_FDDI",
+        "ARPHRD_LOOPBACK",
+        "ARPHRD_VOID",
+        "ARPHRD_PPP",
+        "ARPHRD_SLIP",
+        "ARPHRD_PRONET"
+      ]
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "unix.interface.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability unix.interface."
+    },
+    {
+      "id": "unix.interface.type_literal",
+      "rule": "Literal interface type values SHALL use the source OVAL ARPHRD vocabulary; the source empty-string enumeration is only a serialization allowance for variable references and is not a native literal value."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/unix-definitions-schema.xsd",
+    "item": "interface_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#unix",
+    "object": "interface_object",
+    "state": "interface_state",
+    "test": "interface_test"
+  },
+  "specification_version": "0.4.0"
+}

@@ -1,0 +1,64 @@
+{
+  "capability": "panos.config",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "config": "panos.config"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "value_of": [
+        "string",
+        "boolean",
+        "integer",
+        "float",
+        "binary",
+        "version",
+        "ipv4",
+        "ipv6",
+        "rpm_evr",
+        "debian_evr",
+        "fileset_revision",
+        "ios_version"
+      ],
+      "xpath": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "xpath"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "xpath": "xpath"
+    },
+    "state_field_map": {
+      "value_of": "value_of",
+      "xpath": "xpath"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "panos.config.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability panos.config."
+    },
+    {
+      "id": "panos.config.xpath_equal",
+      "rule": "xpath uses equality semantics and identifies a PAN-OS configuration XPath."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/panos-definitions-schema.xsd",
+    "item": "config_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#panos",
+    "object": "config_object",
+    "state": "config_state",
+    "test": "config_test"
+  },
+  "specification_version": "0.4.0"
+}

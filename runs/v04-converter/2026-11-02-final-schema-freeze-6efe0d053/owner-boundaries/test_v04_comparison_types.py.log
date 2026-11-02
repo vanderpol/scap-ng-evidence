@@ -1,0 +1,11 @@
+test_capability_literal_and_compatible_explicit_integer_agree_without_ast_changes (__main__.ComparisonTypes.test_capability_literal_and_compatible_explicit_integer_agree_without_ast_changes) ... ok
+test_conflicting_tags_text_and_boolean_do_not_coerce_to_integer (__main__.ComparisonTypes.test_conflicting_tags_text_and_boolean_do_not_coerce_to_integer) ... ok
+test_declared_numeric_regex_result_is_distinct_from_raw_configuration_text (__main__.ComparisonTypes.test_declared_numeric_regex_result_is_distinct_from_raw_configuration_text) ... ok
+test_input_reference_resolution_and_declared_type_without_binding_inference (__main__.ComparisonTypes.test_input_reference_resolution_and_declared_type_without_binding_inference) ... ok
+test_reporting_editor_suggestion_is_not_a_compiler_missing_field_default (__main__.ComparisonTypes.test_reporting_editor_suggestion_is_not_a_compiler_missing_field_default) ... ok
+test_unknown_field_rejected_even_when_bare_generic_schema_would_accept_it (__main__.ComparisonTypes.test_unknown_field_rejected_even_when_bare_generic_schema_would_accept_it) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.823s
+
+OK

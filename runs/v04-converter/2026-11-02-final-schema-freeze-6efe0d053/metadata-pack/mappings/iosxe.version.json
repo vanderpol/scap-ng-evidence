@@ -1,0 +1,59 @@
+{
+  "capability": "iosxe.version",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-08",
+  "migration_crosswalk": {
+    "capability": {
+      "version": "iosxe.version"
+    },
+    "object": {
+      "version_object": "omitted_native_singleton_system_source"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "major_release": [
+        "integer"
+      ],
+      "rebuild": [
+        "integer"
+      ],
+      "release": [
+        "integer"
+      ],
+      "train": [
+        "string"
+      ],
+      "version_string": [
+        "string"
+      ]
+    },
+    "post_alignment_ready": true,
+    "state_field_map": {
+      "major_release": "major_release",
+      "rebuild": "rebuild",
+      "release": "release",
+      "train": "train",
+      "version_string": "version_string"
+    },
+    "test_source": {
+      "kind": "none"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "iosxe.version.singleton_source",
+      "rule": "The capability evaluates the current IOS-XE software version directly; native content SHALL NOT introduce a meaningless singleton Object."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/iosxe-definitions-schema.xsd",
+    "item": "version_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe",
+    "object": "version_object",
+    "state": "version_state",
+    "test": "version_test"
+  },
+  "specification_version": "0.4.0"
+}

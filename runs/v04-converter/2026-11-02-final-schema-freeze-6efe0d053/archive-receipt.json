@@ -1,0 +1,9 @@
+{
+  "archive": "final-schema-freeze-evidence.zip",
+  "bytes": 658609,
+  "sha256": "b523d7a6087e455a70c0fd1070e6a2dc0c065c6348202d975e79dd0eb4422122",
+  "zip_members": 337,
+  "payloads": 336,
+  "source_commit": "6efe0d053e79d513339f7999c52d214886b6d201",
+  "editor_commit": "e3ac52753569e861cc1e0df1a458ecdc023ec1ad"
+}

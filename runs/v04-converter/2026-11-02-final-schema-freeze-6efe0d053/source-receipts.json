@@ -1,0 +1,226 @@
+[
+  {
+    "id": "env",
+    "url": "https://learn.microsoft.com/en-us/dotnet/api/system.environment.getenvironmentvariable?view=net-10.0",
+    "retrieved_at": "2026-11-02T10:16:52.485656+00:00",
+    "sha256": "fc9f52abfbf0296e362f43cfa197872f439df4a84a469910d3b2de32c8939e38",
+    "bytes": 118429,
+    "status": "retrieved"
+  },
+  {
+    "id": "posix-env",
+    "url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/getenv.html",
+    "retrieved_at": "2026-11-02T10:16:52.930899+00:00",
+    "sha256": "deadaa32e051bee7c6521bb16dfd355e08036c0aba6ecc46565484033b39e7b8",
+    "bytes": 15226,
+    "status": "retrieved"
+  },
+  {
+    "id": "win-env",
+    "url": "https://learn.microsoft.com/en-us/windows/win32/procthread/environment-variables",
+    "retrieved_at": "2026-11-02T10:16:52.520095+00:00",
+    "sha256": "b6c211006aab1c54c9dea02167e836d0b8c6eba48dac236b037265b2c92ee31b",
+    "bytes": 51684,
+    "status": "retrieved"
+  },
+  {
+    "id": "iis-appcmd",
+    "url": "https://learn.microsoft.com/en-us/iis/get-started/getting-started-with-iis/getting-started-with-appcmdexe",
+    "retrieved_at": "2026-11-02T10:16:52.484658+00:00",
+    "sha256": "8515155594a41cb4cd9c00e06750d5b2531b7890a928fb7f4a9b3a2379310e6d",
+    "bytes": 97555,
+    "status": "retrieved"
+  },
+  {
+    "id": "iis-case",
+    "url": "https://learn.microsoft.com/en-us/iis/web-development-reference/native-code-api-reference/iapphostpropertyschema-iscasesensitive-property",
+    "retrieved_at": "2026-11-02T10:16:52.390275+00:00",
+    "sha256": "11d89983ff30c034b3f1125960c2e09725eb1af58ee373e0b43f21e7a94ac3ad",
+    "bytes": 48787,
+    "status": "retrieved"
+  },
+  {
+    "id": "iis-attribute",
+    "url": "https://learn.microsoft.com/en-us/dotnet/api/microsoft.web.administration.configurationattributeschemacollection.item?view=iis-dotnet",
+    "retrieved_at": "2026-11-02T10:16:52.485115+00:00",
+    "sha256": "4dc4d87e09d5c9a640a15a130f0e80ac77c26774bcec778744376102e071a430",
+    "bytes": 54287,
+    "status": "retrieved"
+  },
+  {
+    "id": "iis-config",
+    "url": "https://learn.microsoft.com/en-us/iis/get-started/planning-your-iis-architecture/introduction-to-applicationhostconfig",
+    "retrieved_at": "2026-11-02T10:16:52.514083+00:00",
+    "sha256": "80c4d7b4018c75ddd40eb536264c16d3c023e59c1b6b0315fdd50b95b5cbdb98",
+    "bytes": 65907,
+    "status": "retrieved"
+  },
+  {
+    "id": "iis-section",
+    "url": "https://learn.microsoft.com/en-us/openspecs/windows_protocols/mc-iisa/b8ca90fd-7c8c-4e8f-9ecc-3ecf640db266",
+    "retrieved_at": "2026-11-02T10:16:52.388903+00:00",
+    "sha256": "1e285ec4e3b237a5c4d9748fe4baf29051c28c590f491795f242a651673d3f3f",
+    "bytes": 38901,
+    "status": "retrieved"
+  },
+  {
+    "id": "ps-case",
+    "url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_case-sensitivity?view=powershell-7.6",
+    "retrieved_at": "2026-11-02T10:16:52.700003+00:00",
+    "sha256": "e380d51e165c5987feeb3ed4b960a6d3624e01b6d9ebef778edd4dd2c4426a7d",
+    "bytes": 62872,
+    "status": "retrieved"
+  },
+  {
+    "id": "ps-modules",
+    "url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/import-module?view=powershell-7.6",
+    "retrieved_at": "2026-11-02T10:16:52.859604+00:00",
+    "sha256": "183c8341efc12481bb904806e7a212c84b131eca5494e14c5b43f98d939a3737",
+    "bytes": 171507,
+    "status": "retrieved"
+  },
+  {
+    "id": "ps-select",
+    "url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/select-object?view=powershell-7.6",
+    "retrieved_at": "2026-11-02T10:16:52.779989+00:00",
+    "sha256": "02ae2b96540b37e54348b8f3a3c722bc178d98936d742c6e3ffb7f90bcc7496b",
+    "bytes": 111965,
+    "status": "retrieved"
+  },
+  {
+    "id": "win-files",
+    "url": "https://learn.microsoft.com/en-us/windows/wsl/case-sensitivity",
+    "retrieved_at": "2026-11-02T10:16:52.772241+00:00",
+    "sha256": "730268eb6aba326785ecfcabf431473884b40bc0c0428a72cb87e46a4fee685e",
+    "bytes": 62920,
+    "status": "retrieved"
+  },
+  {
+    "id": "win-paths",
+    "url": "https://learn.microsoft.com/en-us/windows/win32/fileio/naming-a-file",
+    "retrieved_at": "2026-11-02T10:16:52.745275+00:00",
+    "sha256": "8e7f3450a6c465fe75882e3bedf357a455fd456d96973e9dd1babc650c031f1d",
+    "bytes": 67904,
+    "status": "retrieved"
+  },
+  {
+    "id": "sid",
+    "url": "https://learn.microsoft.com/en-us/windows/win32/api/securitybaseapi/nf-securitybaseapi-equalsid",
+    "retrieved_at": "2026-11-02T10:16:52.799156+00:00",
+    "sha256": "3e804b338700ca2909fc81b44632975a83eacd9ca6dbd7a37417558f9bfa1346",
+    "bytes": 52365,
+    "status": "retrieved"
+  },
+  {
+    "id": "sid-strings",
+    "url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/sid-strings",
+    "retrieved_at": "2026-11-02T10:16:52.784586+00:00",
+    "sha256": "5aacfc28e25f690fe24205620c7e095d3e0775ebdcd838cf595304551445c68e",
+    "bytes": 60952,
+    "status": "retrieved"
+  },
+  {
+    "id": "sid-parse",
+    "url": "https://learn.microsoft.com/en-us/windows/win32/api/sddl/nf-sddl-convertstringsidtosidw",
+    "retrieved_at": "2026-11-02T10:16:52.911738+00:00",
+    "sha256": "703c7ab56dcb3bb6360be55f20336158407966b7fe2fa351c61075ad21e2a6bf",
+    "bytes": 53770,
+    "status": "retrieved"
+  },
+  {
+    "id": "account",
+    "url": "https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-lookupaccountnamew",
+    "retrieved_at": "2026-11-02T10:16:52.913286+00:00",
+    "sha256": "334d4533902c549fc9879b0ec759bc3afdca2090eabce72483a6dc933349446f",
+    "bytes": 56488,
+    "status": "retrieved"
+  },
+  {
+    "id": "registry",
+    "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/structure-of-the-registry",
+    "retrieved_at": "2026-11-02T10:16:52.937829+00:00",
+    "sha256": "bb830e03a6ba9a77594df609bd4460610b5bfe07856d4addb0ee519177d6aa4f",
+    "bytes": 49136,
+    "status": "retrieved"
+  },
+  {
+    "id": "registry-value",
+    "url": "https://learn.microsoft.com/en-us/dotnet/api/microsoft.win32.registry.getvalue?view=net-10.0",
+    "retrieved_at": "2026-11-02T10:16:53.146753+00:00",
+    "sha256": "53e1679c5eb6878e3d5061f5363998a2400b4203b1cb6610b831622b5d16a821",
+    "bytes": 75138,
+    "status": "retrieved"
+  },
+  {
+    "id": "ntuser",
+    "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/registry-hives",
+    "retrieved_at": "2026-11-02T10:16:52.978376+00:00",
+    "sha256": "02ff59d34960c7891f890615007039011d997a4288f4a2819b93ea0f9695157d",
+    "bytes": 50037,
+    "status": "retrieved"
+  },
+  {
+    "id": "service",
+    "url": "https://learn.microsoft.com/en-us/windows/win32/api/winsvc/nf-winsvc-openservicew",
+    "retrieved_at": "2026-11-02T10:16:52.994153+00:00",
+    "sha256": "dc76c62c544f773dfb192b3b5ea3891d0f87625ba4f8f3a5d7a978cd99dd9ba3",
+    "bytes": 55746,
+    "status": "retrieved"
+  },
+  {
+    "id": "rights",
+    "url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/privilege-constants",
+    "retrieved_at": "2026-11-02T10:16:53.025308+00:00",
+    "sha256": "496782d92984830a403c428cf31086e71b3581b389d19245e840005e6772c7bc",
+    "bytes": 64398,
+    "status": "retrieved"
+  },
+  {
+    "id": "account-rights",
+    "url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/account-rights-constants",
+    "retrieved_at": "2026-11-02T10:16:53.127438+00:00",
+    "sha256": "b3c76c615a62211456d6ee920e3fd4b5708ee95967751ba1fdf9bc1a761669b3",
+    "bytes": 54026,
+    "status": "retrieved"
+  },
+  {
+    "id": "wmi-path",
+    "url": "https://learn.microsoft.com/en-us/windows/win32/wmisdk/describing-the-location-of-a-wmi-object",
+    "retrieved_at": "2026-11-02T10:16:53.186001+00:00",
+    "sha256": "d6b922a82f8e58a04ae6fc60e540ae4eaec8d07510285768253b0c4805c0db8b",
+    "bytes": 52681,
+    "status": "retrieved"
+  },
+  {
+    "id": "wmi-query",
+    "url": "https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-wmi/6c8a38f4-4ee1-47cb-99f1-b42718a575ce",
+    "retrieved_at": "2026-11-02T10:16:53.073137+00:00",
+    "sha256": "cc5a43e42e0ee3612f8b58702edaf4fb2d8aa6a4bab04624c3e876ca57b71075",
+    "bytes": 37748,
+    "status": "retrieved"
+  },
+  {
+    "id": "wmi-grammar",
+    "url": "https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-wmi/cf0410f3-541f-477a-848f-9133a1272725",
+    "retrieved_at": "2026-11-02T10:16:53.186476+00:00",
+    "sha256": "640af81f13f72bc06d3bddf8b5c120d62aa00291671ef2d47075bbd6109d1328",
+    "bytes": 53858,
+    "status": "retrieved"
+  },
+  {
+    "id": "wua",
+    "url": "https://learn.microsoft.com/en-us/windows/win32/api/wuapi/nf-wuapi-iupdatesearcher-search",
+    "retrieved_at": "2026-11-02T10:16:53.202186+00:00",
+    "sha256": "ca5d57d234075f62677c03c16747156dec7c2ba0d52c22c006a7b631d44941fb",
+    "bytes": 61418,
+    "status": "retrieved"
+  },
+  {
+    "id": "wua-superseded",
+    "url": "https://learn.microsoft.com/en-us/windows/win32/api/wuapi/nf-wuapi-iupdatesearcher-get_includepotentiallysupersededupdates",
+    "retrieved_at": "2026-11-02T10:16:53.194920+00:00",
+    "sha256": "51393de9d7a372184759963fd875ae5760b009e353e17fe75729f2be932debd4",
+    "bytes": 52027,
+    "status": "retrieved"
+  }
+]
