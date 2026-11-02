@@ -1,0 +1,17 @@
+{
+  "evidence_id": "2026-11-02-native-result-A-download-receipt",
+  "evidence_kind": "repository/audit evidence",
+  "created_at": "2026-11-02T02:07:14.130723+00:00",
+  "source_repository": "https://github.com/vanderpol/scap-ng",
+  "source_commit": "606ffe1cf91149c2561a56eb8e0130b21f132046",
+  "generating_tool": "verify-download.py in evidence285f1f5 packet",
+  "command": "curl immutable raw commit URL; python verify-download.py",
+  "input_evidence_commit": "285f1f5de3ba9c427c07b2798bf15604f8ec0589",
+  "validation_status": "PASS:SHA256,size,CRC,exact333members,all332payload hashes,fresh extraction",
+  "known_limitations": [
+    "integrity receipt, not scanner conformance",
+    "full schema-family NO_GO for15 selector/API contracts"
+  ],
+  "output_root": "runs/v04-converter/2026-11-02-native-result-A-download-receipt",
+  "output_files": 3
+}
