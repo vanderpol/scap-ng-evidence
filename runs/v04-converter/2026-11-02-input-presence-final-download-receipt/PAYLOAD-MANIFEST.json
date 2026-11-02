@@ -1,0 +1,19 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 930,
+      "sha256": "cf9da553ca40a596faaf37dec23d58ab3b5e8f7b412b67594f84bfa617c103ad"
+    },
+    {
+      "path": "download-receipt.json",
+      "bytes": 968,
+      "sha256": "b42b3e424fcb0f490580152c287949ba0b7b61ab9b4018c406b90ef59013bab2"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 1189,
+      "sha256": "dd10502aa5040e3cad5d41ef95a0e4b82dc67cca3223f2e5f4ea1f53ce27523a"
+    }
+  ]
+}

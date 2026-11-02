@@ -1,0 +1,23 @@
+{
+  "evidence_id": "2026-11-02-input-presence-final-download-receipt",
+  "kind": "repository/audit evidence",
+  "created_at": "2026-11-02T00:57:34.780233+00:00",
+  "source_repository": "vanderpol/scap-ng",
+  "source_commit": "e34c1b92a61d9cfdf1c1734e54c086aea3aa898b",
+  "generating_tool": "curl --fail --location plus Python hashlib/zipfile fresh extraction and manifest/inventory verification",
+  "generating_tool_commit": "verification commands retained in final qualification manifest at evidence7fd89602a048eb0ecf4704056766b129c02c6020",
+  "external_input": "Pinned remote ZIP URL and SHA256 in download-receipt.json",
+  "output_root": "runs/v04-converter/2026-11-02-input-presence-final-download-receipt",
+  "file_count": 4,
+  "validation_status": "PASS",
+  "checks": [
+    "Published ZIP bytes and SHA256",
+    "ZIP CRC and safe unique256-member exact inventory",
+    "All255 payload digests",
+    "25 adopted case results and all final source/editor hosted successes inside downloaded copy"
+  ],
+  "limitations": [
+    "Supplied bindings/results; no scanner/provider/VS Code host proof",
+    "Full schema-family freeze NO_GO; no freeze/merge/release/corpus/proof rebaseline"
+  ]
+}

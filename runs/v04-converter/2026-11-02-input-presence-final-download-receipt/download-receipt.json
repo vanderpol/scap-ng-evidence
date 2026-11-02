@@ -1,0 +1,19 @@
+{
+  "source_commit": "e34c1b92a61d9cfdf1c1734e54c086aea3aa898b",
+  "editor_commit": "f6413ecc632acf41aeb1aba7f8cdf549366c268c",
+  "evidence_commit": "7fd89602a048eb0ecf4704056766b129c02c6020",
+  "url": "https://raw.githubusercontent.com/vanderpol/scap-ng-evidence/7fd89602a048eb0ecf4704056766b129c02c6020/runs/v04-converter/2026-11-02-input-presence-source-paths-e34c1b92a/final-input-guard-evidence.zip",
+  "bytes": 564144,
+  "sha256": "35a99cb01439120c33601c4d63db82b6e40ee8420c9a00ef0d92948040f61102",
+  "zip_crc": "PASS",
+  "exact_inventory": "PASS",
+  "safe_unique_members": 256,
+  "payload_digests_verified": 255,
+  "adopted_review_cases_passed": 25,
+  "guard_test_methods": 24,
+  "schema_test_identities": 79,
+  "source_ci_runs_all_pass": 12,
+  "editor_ci": 41367742815,
+  "schema_freeze_readiness": "NO_GO",
+  "sole_new_owner_decision": "Native require_* Result vocabulary/pointers (recommended A) vs retained state_* keys with explicit native mapping (B)."
+}
