@@ -1,5 +1,7 @@
 # SCAP-NG 0.4 native library normalized-review candidate
 
+> **HISTORICAL ARCHIVE — NOT CURRENT 0.4 AUTHORING CONTENT (November 2, 2026).** This October 30 checkpoint predates the approved grouped `require.item_requirement` authoring syntax. Original YAML is intentionally preserved and may contain older per-field cardinalities, `local` paths and generated names. Do not copy these examples into new Assessments or assume current schema acceptance. Use the [current canonical examples](https://github.com/vanderpol/scap-ng/tree/main/examples). See [evidence publication remediation #1](https://github.com/vanderpol/scap-ng-evidence/issues/1).
+
 Separate, non-normative review delivery for [source issue #261](https://github.com/vanderpol/scap-ng/issues/261), O2/O4/O7/O8, and [editor issue #3](https://github.com/vanderpol/scap-ng-vscode/issues/3). No final release/tag, schema change, source-proof promotion, scanner-runtime claim or project-license assertion.
 
 ## Download and open
