@@ -1,0 +1,171 @@
+{
+  "source_commit": "606ffe1cf91149c2561a56eb8e0130b21f132046",
+  "editor_commit": "72a0db5572691f5294ffeca11b8c9fdb24f33cf8",
+  "metadata_profile": {
+    "schemaVersion": "0.4.0",
+    "sourceCommit": "606ffe1cf91149c2561a56eb8e0130b21f132046",
+    "manifestSha256": "6ca57355f416538ceecd0b4ca6a2f966b6f801da0cbbfd60a9dcd77279831452"
+  },
+  "focused_tests": 21,
+  "schema_gate_tests": 100,
+  "maintained_scripts": 49,
+  "schema_count": 34,
+  "references_checked": 242,
+  "compatible_datatypes": "retained",
+  "schema_freeze_readiness": "NO_GO:15 selector/API contract documentation gaps, no new vote",
+  "native_result_contract": "CLOSED:owner-adopted A",
+  "scanner_executed": false,
+  "truth_recomputed": false,
+  "prior_evidence_preserved": "4fbde68f4623dc106ce13dd996aab4c623b05e79",
+  "evidence_id": "2026-11-02-native-result-A-606ffe1cf",
+  "evidence_kind": "repository/audit evidence with bounded language-contract tests; no scanner conformance",
+  "created_at": "2026-11-02T01:57:17.138351+00:00",
+  "source_repository": "https://github.com/vanderpol/scap-ng",
+  "generating_tools": [
+    "tools/test_v04_result_contract.py",
+    "tools/test_v04_schema_draft.py",
+    "tools/audit_v04_schema_freeze_readiness.py",
+    "tools/build_v04_editor_metadata_pack.py"
+  ],
+  "generating_tool_commit": "606ffe1cf91149c2561a56eb8e0130b21f132046",
+  "commands": [
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python tools/test_v04_result_contract.py -v",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python tools/test_v04_schema_draft.py",
+    "49 maintained scripts listed in maintained-scripts.json, invoked separately with PYTHONPATH=tools:.",
+    "PYTHONPATH=tools python tools/audit_v04_schema_freeze_readiness.py --output <new-json>",
+    "PYTHONPATH=tools python tools/build_v04_editor_metadata_pack.py --output <new-pack>",
+    "npm run lint; npm test; SCAP_NG_METADATA_PACK=<pack> SCAP_NG_SOURCE_ROOT=<source> npm run test:integration; npm --cache <writable-cache> run package"
+  ],
+  "python_packages": {
+    "jsonschema": "4.26.0",
+    "referencing": "0.37.0",
+    "PyYAML": "6.0.3"
+  },
+  "external_input_provenance": "source-backed-example/provenance.json and preserved-source-review-manifest.json; synthetic supplied observations are not collector evidence",
+  "output_root": "runs/v04-converter/2026-11-02-native-result-A-606ffe1cf",
+  "limitations": [
+    "15 selector/API language contracts need documentation under approved Decision22",
+    "no live scanner/provider/Variable evaluation",
+    "no VS Code host/UI qualification",
+    "no freeze/merge/release/corpus generation/proof rebaseline"
+  ],
+  "migrated_evidence": false,
+  "hosted_source_runs": [
+    {
+      "conclusion": "success",
+      "databaseId": 41374766095,
+      "headSha": "606ffe1cf91149c2561a56eb8e0130b21f132046",
+      "name": "0.4 independent JSON authoring schema and reference gate",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41374766095"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41374766104,
+      "headSha": "606ffe1cf91149c2561a56eb8e0130b21f132046",
+      "name": "Native SCAP-NG schema validation",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41374766104"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41374766174,
+      "headSha": "606ffe1cf91149c2561a56eb8e0130b21f132046",
+      "name": "0.4 schema and converter contract synchronization",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41374766174"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41374766116,
+      "headSha": "606ffe1cf91149c2561a56eb8e0130b21f132046",
+      "name": "Commit issue reference",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41374766116"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41374766150,
+      "headSha": "606ffe1cf91149c2561a56eb8e0130b21f132046",
+      "name": "0.4.0 toolchain clean-extract smoke",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41374766150"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41374766209,
+      "headSha": "606ffe1cf91149c2561a56eb8e0130b21f132046",
+      "name": "0.4.0 canonical authoring fast checks",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41374766209"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41374766176,
+      "headSha": "606ffe1cf91149c2561a56eb8e0130b21f132046",
+      "name": "Markdown navigation and duplication audit",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41374766176"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41374766108,
+      "headSha": "606ffe1cf91149c2561a56eb8e0130b21f132046",
+      "name": "Current RHEL9 full source review",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41374766108"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41374766316,
+      "headSha": "606ffe1cf91149c2561a56eb8e0130b21f132046",
+      "name": "SCAP-NG 0.4 draft schema checks",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41374766316"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41374766181,
+      "headSha": "606ffe1cf91149c2561a56eb8e0130b21f132046",
+      "name": "Current-design regression contracts",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41374766181"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41374766138,
+      "headSha": "606ffe1cf91149c2561a56eb8e0130b21f132046",
+      "name": "Representative Board conversion regression",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41374766138"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41374760849,
+      "headSha": "606ffe1cf91149c2561a56eb8e0130b21f132046",
+      "name": "Commit issue reference",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41374760849"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41374761065,
+      "headSha": "606ffe1cf91149c2561a56eb8e0130b21f132046",
+      "name": "SCAP-NG 0.4 draft schema checks",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng/actions/runs/41374761065"
+    }
+  ],
+  "hosted_editor_runs": [
+    {
+      "conclusion": "success",
+      "databaseId": 41374844854,
+      "headSha": "72a0db5572691f5294ffeca11b8c9fdb24f33cf8",
+      "name": "Offline metadata and source preservation",
+      "status": "completed",
+      "url": "https://github.com/vanderpol/scap-ng-vscode/actions/runs/41374844854"
+    }
+  ],
+  "validation_status": "PASS:all bounded local checks and exact-head hosted runs",
+  "payload_file_count": 332
+}

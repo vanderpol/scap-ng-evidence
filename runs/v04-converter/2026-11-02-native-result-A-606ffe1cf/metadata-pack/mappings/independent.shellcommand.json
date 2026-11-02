@@ -1,0 +1,184 @@
+{
+  "capability": "independent.shellcommand",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-08",
+  "migration_crosswalk": {
+    "capability": {
+      "shellcommand": "independent.shellcommand"
+    },
+    "materialized_defaults": {
+      "behaviors.error_if_exit_status_not_0": false,
+      "behaviors.error_if_stderr_exists": false
+    },
+    "object": {
+      "command": "object.command",
+      "pattern": "object.pattern",
+      "shell": "object.shell"
+    },
+    "source_defect_corrections": {
+      "EntityStateShellType_missing_pwsh": "Native State shell vocabulary includes pwsh because the source Object supports pwsh and collected shell identity must remain testable.",
+      "command_state_datatype": "OVAL 5.12.3 shellcommand_state declares command as AnySimple while shellcommand_item collects a string and source documentation requires the command to be echoed verbatim. Native NG uses the collected string datatype so State and Item remain aligned.",
+      "stdout_line_state_datatype": "OVAL 5.12.3 shellcommand State stdout_line uses AnySimple comparison datatypes, while its collected Item stdout_line is always string. The State comparison datatype governs an explicit OVAL cast at evaluation; Item evidence preserves string. The 0.3 native capability keeps these separate."
+    }
+  },
+  "native": {
+    "collection_parameter_source_map": {
+      "command": "command",
+      "pattern": "pattern",
+      "shell": "shell"
+    },
+    "collection_parameter_source_operations": {
+      "command": [
+        "equals",
+        "case insensitive equals"
+      ],
+      "pattern": [
+        "equals",
+        "pattern match"
+      ],
+      "shell": [
+        "equals",
+        "case insensitive equals"
+      ]
+    },
+    "collection_parameters": {
+      "command": {
+        "allow_variable": true,
+        "description": "Single command or one-line shell command supplied by the Assessment.",
+        "required": true,
+        "type": "string"
+      },
+      "error_if_exit_status_not_0": {
+        "description": "Treat non-zero command exit status as collection error; OVAL default false is materialized.",
+        "required": true,
+        "type": "boolean"
+      },
+      "error_if_stderr_exists": {
+        "description": "Treat any stderr output as collection error; OVAL default false is materialized.",
+        "required": true,
+        "type": "boolean"
+      },
+      "pattern": {
+        "allow_variable": true,
+        "description": "Optional regular expression used to retain matching stdout lines.",
+        "required": false,
+        "type": "string"
+      },
+      "shell": {
+        "allow_variable": true,
+        "description": "Shell/interpreter used to execute the command.",
+        "enum": [
+          "sh",
+          "bash",
+          "csh",
+          "ksh",
+          "zsh",
+          "cmd",
+          "powershell",
+          "pwsh"
+        ],
+        "required": true,
+        "type": "string"
+      }
+    },
+    "field_datatypes": {
+      "command": [
+        "string"
+      ],
+      "exit_status": [
+        "integer"
+      ],
+      "pattern": [
+        "string"
+      ],
+      "shell": [
+        "string"
+      ],
+      "stderr_line": [
+        "string"
+      ],
+      "stdout_line": [
+        "string"
+      ],
+      "subexpression": [
+        "string",
+        "boolean",
+        "integer",
+        "float",
+        "binary",
+        "version",
+        "ipv4",
+        "ipv6",
+        "rpm_evr",
+        "debian_evr",
+        "fileset_revision",
+        "ios_version"
+      ]
+    },
+    "post_alignment_ready": true,
+    "state_field_datatypes": {
+      "stdout_line": [
+        "string",
+        "boolean",
+        "integer",
+        "float",
+        "binary",
+        "version",
+        "ipv4",
+        "ipv6",
+        "rpm_evr",
+        "debian_evr",
+        "fileset_revision",
+        "ios_version"
+      ]
+    },
+    "state_field_map": {
+      "command": "command",
+      "exit_status": "exit_status",
+      "pattern": "pattern",
+      "shell": "shell",
+      "stderr_line": "stderr_line",
+      "stdout_line": "stdout_line",
+      "subexpression": "subexpression"
+    },
+    "state_value_enums": {
+      "shell": [
+        "sh",
+        "bash",
+        "csh",
+        "ksh",
+        "zsh",
+        "cmd",
+        "powershell",
+        "pwsh"
+      ]
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "independent.shellcommand.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability independent.shellcommand."
+    },
+    {
+      "id": "independent.shellcommand.pattern_semantics",
+      "rule": "When object.pattern is present it is a regular expression applied to stdout lines; matching output lines and capture subexpressions remain separately observable."
+    },
+    {
+      "id": "independent.shellcommand.trusted_content",
+      "rule": "Execution of publisher-supplied commands is trust-sensitive. Package/signature verification policy SHALL be enforced outside the command string itself and scanners SHOULD avoid executing unsigned or untrusted content according to deployment policy."
+    },
+    {
+      "id": "independent.shellcommand.not_generic_escape_hatch",
+      "rule": "This capability represents command-oriented assessment. It SHALL NOT replace native scanner capabilities when doing so would discard meaningful native collection semantics such as controlled filesystem traversal, structured evidence, or bounded collection."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#independent",
+    "object": "shellcommand_object",
+    "state": "shellcommand_state",
+    "test": "shellcommand_test"
+  },
+  "specification_version": "0.4.0"
+}

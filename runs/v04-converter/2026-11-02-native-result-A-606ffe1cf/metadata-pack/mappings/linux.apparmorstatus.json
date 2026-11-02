@@ -1,0 +1,67 @@
+{
+  "capability": "linux.apparmorstatus",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "apparmorstatus": "linux.apparmorstatus"
+    },
+    "object": {
+      "apparmorstatus_object": "omitted_native_singleton_system_source"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "complain_mode_processes_count": [
+        "integer"
+      ],
+      "complain_mode_profiles_count": [
+        "integer"
+      ],
+      "enforce_mode_processes_count": [
+        "integer"
+      ],
+      "enforce_mode_profiles_count": [
+        "integer"
+      ],
+      "loaded_profiles_count": [
+        "integer"
+      ],
+      "processes_with_profiles_count": [
+        "integer"
+      ],
+      "unconfined_processes_with_profiles_count": [
+        "integer"
+      ]
+    },
+    "post_alignment_ready": true,
+    "state_field_map": {
+      "complain_mode_processes_count": "complain_mode_processes_count",
+      "complain_mode_profiles_count": "complain_mode_profiles_count",
+      "enforce_mode_processes_count": "enforce_mode_processes_count",
+      "enforce_mode_profiles_count": "enforce_mode_profiles_count",
+      "loaded_profiles_count": "loaded_profiles_count",
+      "processes_with_profiles_count": "processes_with_profiles_count",
+      "unconfined_processes_with_profiles_count": "unconfined_processes_with_profiles_count"
+    },
+    "test_source": {
+      "kind": "none"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "linux.apparmorstatus.singleton_source",
+      "rule": "The capability evaluates the current AppArmor status directly; native content SHALL NOT introduce a meaningless singleton Object."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/linux-definitions-schema.xsd",
+    "item": "apparmorstatus_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#linux",
+    "object": "apparmorstatus_object",
+    "state": "apparmorstatus_state",
+    "test": "apparmorstatus_test"
+  },
+  "specification_version": "0.4.0"
+}

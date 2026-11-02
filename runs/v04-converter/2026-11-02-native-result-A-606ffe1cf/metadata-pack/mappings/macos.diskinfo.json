@@ -1,0 +1,89 @@
+{
+  "capability": "macos.diskinfo",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "diskinfo": "macos.diskinfo"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "apfs_uid": [
+        "string"
+      ],
+      "device_identifier": [
+        "string"
+      ],
+      "device_location": [
+        "string"
+      ],
+      "encrypted": [
+        "boolean"
+      ],
+      "file_system_personality": [
+        "string"
+      ],
+      "file_vault": [
+        "boolean"
+      ],
+      "mount_point": [
+        "string"
+      ],
+      "read_only": [
+        "boolean"
+      ],
+      "removable_media": [
+        "string"
+      ],
+      "smart_status": [
+        "string"
+      ],
+      "solid_state": [
+        "boolean"
+      ],
+      "volume_name": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "device_identifier"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "device_identifier": "device_identifier"
+    },
+    "state_field_map": {
+      "apfs_uid": "apfs_uid",
+      "device_identifier": "device_identifier",
+      "device_location": "device_location",
+      "encrypted": "encrypted",
+      "file_system_personality": "file_system_personality",
+      "file_vault": "file_vault",
+      "mount_point": "mount_point",
+      "read_only": "read_only",
+      "removable_media": "removable_media",
+      "smart_status": "smart_status",
+      "solid_state": "solid_state",
+      "volume_name": "volume_name"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "macos.diskinfo.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability macos.diskinfo."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+    "item": "diskinfo_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#macos",
+    "object": "diskinfo_object",
+    "state": "diskinfo_state",
+    "test": "diskinfo_test"
+  },
+  "specification_version": "0.4.0"
+}

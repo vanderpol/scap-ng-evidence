@@ -1,0 +1,9 @@
+{
+  "source_path": "docs/examples/owner-contract-20261031/windows-server-2025-shows-on-lock-screen-sv-278080-assessment.json",
+  "source_sha256": "35bbd3a0e686baa2f5cde6e8b426101bfe4229b20ea1d7fd296e1e9e3e8113f6",
+  "source_copy_sha256": "35bbd3a0e686baa2f5cde6e8b426101bfe4229b20ea1d7fd296e1e9e3e8113f6",
+  "rule": "SV-278080",
+  "observations": "synthetic supplied unit-review evidence only",
+  "scanner_executed": false,
+  "truth_recomputed": false
+}

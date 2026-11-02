@@ -1,0 +1,106 @@
+{
+  "capability": "linux.rpminfo",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "behaviors": {
+      "filepaths": "object.include_file_paths"
+    },
+    "capability": {
+      "rpminfo": "linux.rpminfo"
+    },
+    "materialized_defaults": {
+      "behaviors.filepaths": false
+    },
+    "object": {
+      "behaviors.filepaths": "object.include_file_paths",
+      "name": "object.package_name"
+    },
+    "state": {
+      "arch": "architecture",
+      "filepath": "full_path",
+      "name": "package_name",
+      "signature_keyid": "signature_key_id"
+    }
+  },
+  "native": {
+    "collection_parameters": {
+      "include_file_paths": {
+        "description": "Whether collection includes file paths owned by the installed package. Importers materialize the OVAL filepaths default as false.",
+        "required": true,
+        "type": "boolean"
+      }
+    },
+    "field_datatypes": {
+      "architecture": [
+        "string"
+      ],
+      "epoch": [
+        "string",
+        "integer"
+      ],
+      "evr": [
+        "rpm_evr"
+      ],
+      "extended_name": [
+        "string"
+      ],
+      "full_path": [
+        "string"
+      ],
+      "package_name": [
+        "string"
+      ],
+      "release": [
+        "string",
+        "version"
+      ],
+      "signature_key_id": [
+        "string"
+      ],
+      "version": [
+        "string",
+        "version"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "package_name"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "name": "package_name"
+    },
+    "state_field_map": {
+      "arch": "architecture",
+      "epoch": "epoch",
+      "evr": "evr",
+      "extended_name": "extended_name",
+      "filepath": "full_path",
+      "name": "package_name",
+      "release": "release",
+      "signature_keyid": "signature_key_id",
+      "version": "version"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "linux.rpminfo.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability linux.rpminfo."
+    },
+    {
+      "id": "linux.rpminfo.filepaths_collection",
+      "rule": "A full_path State can only be evaluated from an Object collection that requested package file paths, or from equivalent complete reused collection evidence."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/linux-definitions-schema.xsd",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#linux",
+    "object": "rpminfo_object",
+    "state": "rpminfo_state",
+    "test": "rpminfo_test"
+  },
+  "specification_version": "0.4.0"
+}

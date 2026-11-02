@@ -1,0 +1,146 @@
+{
+  "$id": "https://scap-ng.dev/schema/v0.4.0/scan-result.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Run-level index for one scanner execution. Detailed Benchmark and Assessment results remain normalized package members referenced by identity/path.",
+  "properties": {
+    "scan_result": {
+      "additionalProperties": false,
+      "properties": {
+        "assessment_result_refs": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "benchmark_results": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "benchmark_id": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "benchmark_result_ref": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "benchmark_version": {
+                "type": [
+                  "string",
+                  "integer",
+                  "null"
+                ]
+              },
+              "profile_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "summary": {
+                "type": "object"
+              },
+              "tailoring_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "target_ref": {
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "benchmark_result_ref",
+              "benchmark_id",
+              "target_ref"
+            ],
+            "type": "object"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "completed_at": {
+          "format": "date-time",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "result_schema_version": {
+          "const": "0.4.0"
+        },
+        "run_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "scanner": {
+          "type": "object"
+        },
+        "signature_status": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "started_at": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "targets": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "addresses": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "hostname": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "id": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "identifiers": {
+                "items": {
+                  "type": "object"
+                },
+                "type": "array"
+              }
+            },
+            "required": [
+              "id"
+            ],
+            "type": "object"
+          },
+          "minItems": 1,
+          "type": "array"
+        }
+      },
+      "required": [
+        "result_schema_version",
+        "run_id",
+        "started_at",
+        "scanner",
+        "targets",
+        "benchmark_results"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "scan_result"
+  ],
+  "title": "SCAP-NG Scan Result draft v0.4.0 strawman",
+  "type": "object",
+  "x-last-modified": "2026-10-06",
+  "x-scap-ng-version": "0.4.0"
+}

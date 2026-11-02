@@ -1,0 +1,75 @@
+{
+  "$id": "https://scap-ng.dev/schema/v0.4.0/item-materialization.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "available_count": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "collections": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "available_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "included_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "object_ref": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "omitted_count": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "object_ref",
+          "available_count",
+          "included_count",
+          "omitted_count"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "consumed_item_refs": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "included_count": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "omitted_count": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "scope": {
+      "enum": [
+        "all",
+        "consumed"
+      ]
+    }
+  },
+  "required": [
+    "scope",
+    "available_count",
+    "included_count",
+    "omitted_count",
+    "consumed_item_refs",
+    "collections"
+  ],
+  "type": "object",
+  "x-last-modified": "2026-10-06",
+  "x-scap-ng-version": "0.4.0"
+}

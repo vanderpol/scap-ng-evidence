@@ -1,0 +1,10 @@
+[
+  {
+    "id": "supplied-registry-collection",
+    "capability": "windows.registry",
+    "status": "complete",
+    "item_refs": [
+      "supplied-registry-item"
+    ]
+  }
+]

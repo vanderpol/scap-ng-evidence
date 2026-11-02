@@ -1,0 +1,118 @@
+{
+  "capability": "macos.pwpolicy",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "pwpolicy512": "macos.pwpolicy"
+    },
+    "object": {
+      "authenticator": "object.authenticator",
+      "authenticator_password": "object.authenticator_password",
+      "directory_node": "object.directory_node",
+      "username": "object.username",
+      "xpath": "object.xpath"
+    },
+    "structural_simplifications": {
+      "authenticator/authenticator_password xsi:nil": "native null means no directory-node authentication",
+      "directory_node xsi:nil": "native null selects default directory node",
+      "username xsi:nil": "native null selects global policy"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "authenticator": [
+        "string"
+      ],
+      "authenticator_password": [
+        "string"
+      ],
+      "directory_node": [
+        "string"
+      ],
+      "username": [
+        "string"
+      ],
+      "value_of": [
+        "string",
+        "boolean",
+        "integer",
+        "float",
+        "binary",
+        "version",
+        "ipv4",
+        "ipv6",
+        "rpm_evr",
+        "debian_evr",
+        "fileset_revision",
+        "ios_version"
+      ],
+      "xpath": [
+        "string"
+      ]
+    },
+    "nullable_selectors": [
+      "username",
+      "authenticator",
+      "authenticator_password",
+      "directory_node"
+    ],
+    "object_selector_alternatives": [
+      [
+        "username",
+        "authenticator",
+        "authenticator_password",
+        "directory_node",
+        "xpath"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "authenticator": "authenticator",
+      "authenticator_password": "authenticator_password",
+      "directory_node": "directory_node",
+      "username": "username",
+      "xpath": "xpath"
+    },
+    "state_field_map": {
+      "authenticator": "authenticator",
+      "authenticator_password": "authenticator_password",
+      "directory_node": "directory_node",
+      "username": "username",
+      "value_of": "value_of",
+      "xpath": "xpath"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "macos.pwpolicy.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability macos.pwpolicy."
+    },
+    {
+      "id": "macos.pwpolicy.auth_pair",
+      "rule": "authenticator and authenticator_password SHALL either both be null or both supply values."
+    },
+    {
+      "id": "macos.pwpolicy.password_equal",
+      "rule": "authenticator_password uses equality semantics only."
+    },
+    {
+      "id": "macos.pwpolicy.directory_node_equal",
+      "rule": "directory_node uses equality semantics only."
+    },
+    {
+      "id": "macos.pwpolicy.xpath_equal",
+      "rule": "xpath uses equality semantics and represents an XPath 1.0 expression."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+    "item": "pwpolicy512_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#macos",
+    "object": "pwpolicy512_object",
+    "state": "pwpolicy512_state",
+    "test": "pwpolicy512_test"
+  },
+  "specification_version": "0.4.0"
+}

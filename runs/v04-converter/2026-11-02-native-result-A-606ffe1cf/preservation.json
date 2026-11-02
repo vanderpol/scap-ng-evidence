@@ -1,0 +1,26 @@
+{
+  "parent": "e34c1b92a61d9cfdf1c1734e54c086aea3aa898b",
+  "preserved_result_payloads": [
+    {
+      "path": "tests/fixtures/v04-native-results/pre-migration-schemas/entity-result.schema.json",
+      "sha256": "965863e9ac565a2c416d535a67617c3d2eec4647265fb7bf01e1b356d981ad66",
+      "equal_to_parent": true
+    },
+    {
+      "path": "tests/fixtures/v04-native-results/pre-migration-schemas/test-result.schema.json",
+      "sha256": "066161ba55ba9f9e9d3e27513098bc1b88bb3d5d11f2d2114fce93b5cea50597",
+      "equal_to_parent": true
+    },
+    {
+      "path": "tests/fixtures/v04-native-results/pre-migration-schemas/collection-result.schema.json",
+      "sha256": "ee6b292933d5dc090a2b2171ab3127dfb16a7ab29ba48530ddbc398492a0b91f",
+      "equal_to_parent": true
+    },
+    {
+      "path": "tests/fixtures/v04-native-results/pre-migration-schemas/state-result.schema.json",
+      "sha256": "8e5df53ce63eaf97d48117ea7086ca1457db5aa6a53b5389b2cf52c70000f16a",
+      "equal_to_parent": true
+    }
+  ],
+  "historical_schemas_mappings_and_hash_floor_unchanged": true
+}

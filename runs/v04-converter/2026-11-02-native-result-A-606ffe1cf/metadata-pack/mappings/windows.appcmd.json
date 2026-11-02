@@ -1,0 +1,86 @@
+{
+  "capability": "windows.appcmd",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "appcmd": "windows.appcmd"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "identifier": [
+        "string"
+      ],
+      "identifier_type": [
+        "string"
+      ],
+      "parameter": [
+        "string"
+      ],
+      "result": [
+        "string",
+        "boolean",
+        "integer",
+        "float",
+        "binary",
+        "version",
+        "ipv4",
+        "ipv6",
+        "rpm_evr",
+        "debian_evr",
+        "fileset_revision",
+        "ios_version"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "identifier_type",
+        "identifier",
+        "parameter"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "identifier": "identifier",
+      "identifier_type": "identifier_type",
+      "parameter": "parameter"
+    },
+    "selector_value_enums": {
+      "identifier_type": [
+        "Site",
+        "VDir",
+        "Apppool"
+      ]
+    },
+    "state_field_map": {
+      "identifier": "identifier",
+      "identifier_type": "identifier_type",
+      "parameter": "parameter",
+      "result": "result"
+    },
+    "state_value_enums": {
+      "identifier_type": [
+        "Site",
+        "VDir",
+        "Apppool"
+      ]
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "windows.appcmd.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability windows.appcmd."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+    "item": "appcmd_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#windows",
+    "object": "appcmd_object",
+    "state": "appcmd_state",
+    "test": "appcmd_test"
+  },
+  "specification_version": "0.4.0"
+}

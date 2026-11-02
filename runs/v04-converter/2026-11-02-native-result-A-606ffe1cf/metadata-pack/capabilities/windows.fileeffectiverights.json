@@ -1,0 +1,1825 @@
+{
+  "$defs": {
+    "collected_item": {
+      "allOf": [
+        {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/collected-item.schema.json"
+        },
+        {
+          "properties": {
+            "capability": {
+              "const": "windows.fileeffectiverights"
+            },
+            "fields": {
+              "additionalProperties": false,
+              "properties": {
+                "access_system_security": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "boolean"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "directory": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "file_append_data": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "boolean"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "file_delete_child": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "boolean"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "file_execute": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "boolean"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "file_read_attributes": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "boolean"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "file_read_data": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "boolean"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "file_read_ea": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "boolean"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "file_write_attributes": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "boolean"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "file_write_data": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "boolean"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "file_write_ea": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "boolean"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "full_path": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "generic_all": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "boolean"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "generic_execute": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "boolean"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "generic_read": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "boolean"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "generic_write": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "boolean"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "name": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "standard_delete": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "boolean"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "standard_read_control": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "boolean"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "standard_synchronize": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "boolean"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "standard_write_dac": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "boolean"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "standard_write_owner": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "boolean"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "trustee_name": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "trustee_sid": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                }
+              },
+              "type": "object"
+            }
+          },
+          "type": "object"
+        }
+      ]
+    },
+    "native_set_expression": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "operator": {
+                "const": "difference"
+              }
+            },
+            "required": [
+              "operator"
+            ]
+          },
+          "then": {
+            "properties": {
+              "operands": {
+                "maxItems": 2
+              }
+            }
+          }
+        }
+      ],
+      "properties": {
+        "operands": {
+          "items": {
+            "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.fileeffectiverights.schema.json#/$defs/native_set_operand"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "operator": {
+          "default": "union",
+          "description": "Explicit new-authoring selection for set operator; applies only in present set. Preserve source-effective values and visible overrides; no runtime fallback.",
+          "enum": [
+            "union",
+            "intersection",
+            "difference"
+          ],
+          "title": "Set operator",
+          "x-scap-ng-authoring": {
+            "aggressive_preview": false,
+            "authority": "https://github.com/vanderpol/scap-ng/issues/269",
+            "context": "present_set",
+            "control_id": "set_operator",
+            "group": "collection",
+            "hide_when_default": true,
+            "new_authoring_only": true,
+            "oval_source": [
+              {
+                "attribute": "set_operator",
+                "declaration_context": [
+                  "set"
+                ],
+                "declaration_kind": "attribute",
+                "documentation": "",
+                "omission": "Use effective default after occurrence/restriction resolution; not native editor authority",
+                "origin": "XSD_DECLARED_DEFAULT",
+                "oval_qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5}set/@set_operator",
+                "reachability_limit": "QName dependency census; occurrence-specific overrides require review",
+                "source_default": "UNION",
+                "source_line": 454,
+                "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+                "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+                "source_type": "oval-def:SetOperatorEnumeration",
+                "source_xpath": "/xsd:schema/xsd:element[6]/xsd:complexType/xsd:attribute"
+              }
+            ],
+            "preserve_overrides": true,
+            "representation": "value",
+            "serialize_explicitly": true,
+            "version": 1
+          }
+        }
+      },
+      "required": [
+        "operator",
+        "operands"
+      ],
+      "type": "object"
+    },
+    "native_set_operand": {
+      "oneOf": [
+        {
+          "additionalProperties": false,
+          "properties": {
+            "filters": {
+              "items": {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/state_filter"
+              },
+              "type": "array"
+            },
+            "object": {
+              "oneOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/object_reference"
+                },
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.fileeffectiverights.schema.json#/$defs/object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "object",
+            "filters"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "set": {
+              "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.fileeffectiverights.schema.json#/$defs/native_set_expression"
+            }
+          },
+          "required": [
+            "set"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "object": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "for_each"
+            ]
+          },
+          "then": {
+            "allOf": [
+              {
+                "anyOf": [
+                  {
+                    "required": [
+                      "full_path",
+                      "trustee_sid"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "directory",
+                      "name",
+                      "trustee_sid"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "not": {
+              "required": [
+                "set"
+              ]
+            },
+            "required": []
+          }
+        },
+        {
+          "if": {
+            "anyOf": [
+              {
+                "required": [
+                  "full_path"
+                ]
+              },
+              {
+                "required": [
+                  "directory"
+                ]
+              }
+            ]
+          },
+          "then": {
+            "required": [
+              "filesystem"
+            ]
+          }
+        },
+        {
+          "not": {
+            "required": [
+              "set",
+              "filters"
+            ]
+          }
+        }
+      ],
+      "description": "windows.fileeffectiverights native flat Object; legal selector and acquisition keys are capability-defined. Generic select/collect wrappers are invalid.",
+      "oneOf": [
+        {
+          "not": {
+            "anyOf": [
+              {
+                "required": [
+                  "directory"
+                ]
+              },
+              {
+                "required": [
+                  "name"
+                ]
+              },
+              {
+                "required": [
+                  "set"
+                ]
+              }
+            ]
+          },
+          "required": [
+            "full_path",
+            "trustee_sid"
+          ]
+        },
+        {
+          "not": {
+            "anyOf": [
+              {
+                "required": [
+                  "full_path"
+                ]
+              },
+              {
+                "required": [
+                  "set"
+                ]
+              }
+            ]
+          },
+          "required": [
+            "directory",
+            "name",
+            "trustee_sid"
+          ]
+        },
+        {
+          "not": {
+            "anyOf": [
+              {
+                "required": [
+                  "directory"
+                ]
+              },
+              {
+                "required": [
+                  "for_each"
+                ]
+              },
+              {
+                "required": [
+                  "full_path"
+                ]
+              },
+              {
+                "required": [
+                  "name"
+                ]
+              },
+              {
+                "required": [
+                  "trustee_sid"
+                ]
+              }
+            ]
+          },
+          "required": [
+            "set"
+          ]
+        }
+      ],
+      "properties": {
+        "capability": {
+          "const": "windows.fileeffectiverights",
+          "description": "Collector capability for a shared or Variable-owned Object. Inline Test Objects inherit it from their Test; do not repeat it there."
+        },
+        "directory": {
+          "description": "Explicit new-authoring selection for selector operator; applies only in selector comparison. Preserve source-effective values and visible overrides; no runtime fallback.",
+          "oneOf": [
+            {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/object_entity_base"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ],
+              "description": "0.4 native Object selector: directory (type checked)"
+            },
+            {
+              "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/foreach_selector_binding"
+            }
+          ],
+          "title": "Selector operator",
+          "x-scap-ng-authoring": {
+            "aggressive_preview": false,
+            "authority": "https://github.com/vanderpol/scap-ng/issues/269",
+            "context": "selector_comparison",
+            "control_id": "selector_operator",
+            "default_key": "equals",
+            "group": "comparison",
+            "hide_scope": "choice_only_arguments_remain_visible",
+            "hide_when_default": true,
+            "new_authoring_only": true,
+            "oval_source": [
+              {
+                "attribute": "operation",
+                "declaration_context": [
+                  "EntityAttributeGroup"
+                ],
+                "declaration_kind": "attribute",
+                "documentation": "The optional operation attribute determines how the individual entities should be evaluated (the default operation is 'equals').",
+                "omission": "Use effective default after occurrence/restriction resolution; not native editor authority",
+                "origin": "XSD_DECLARED_DEFAULT",
+                "oval_qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5}EntityAttributeGroup/@operation",
+                "reachability_limit": "QName dependency census; occurrence-specific overrides require review",
+                "source_default": "equals",
+                "source_line": 1380,
+                "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+                "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+                "source_type": "oval:OperationEnumeration",
+                "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:attribute[2]"
+              }
+            ],
+            "preserve_overrides": true,
+            "representation": "key",
+            "serialize_explicitly": true,
+            "version": 1
+          }
+        },
+        "filesystem": {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/filesystem_scope"
+        },
+        "filters": {
+          "description": "Ordered observed-Item Filters applied after acquisition and before Test matching.",
+          "items": {
+            "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/state_filter"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "for_each": {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/foreach_binding"
+        },
+        "full_path": {
+          "description": "Explicit new-authoring selection for selector operator; applies only in selector comparison. Preserve source-effective values and visible overrides; no runtime fallback.",
+          "oneOf": [
+            {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/object_entity_base"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ],
+              "description": "0.4 native Object selector: full_path (type checked)"
+            },
+            {
+              "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/foreach_selector_binding"
+            }
+          ],
+          "title": "Selector operator",
+          "x-scap-ng-authoring": {
+            "aggressive_preview": false,
+            "authority": "https://github.com/vanderpol/scap-ng/issues/269",
+            "context": "selector_comparison",
+            "control_id": "selector_operator",
+            "default_key": "equals",
+            "group": "comparison",
+            "hide_scope": "choice_only_arguments_remain_visible",
+            "hide_when_default": true,
+            "new_authoring_only": true,
+            "oval_source": [
+              {
+                "attribute": "operation",
+                "declaration_context": [
+                  "EntityAttributeGroup"
+                ],
+                "declaration_kind": "attribute",
+                "documentation": "The optional operation attribute determines how the individual entities should be evaluated (the default operation is 'equals').",
+                "omission": "Use effective default after occurrence/restriction resolution; not native editor authority",
+                "origin": "XSD_DECLARED_DEFAULT",
+                "oval_qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5}EntityAttributeGroup/@operation",
+                "reachability_limit": "QName dependency census; occurrence-specific overrides require review",
+                "source_default": "equals",
+                "source_line": 1380,
+                "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+                "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+                "source_type": "oval:OperationEnumeration",
+                "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:attribute[2]"
+              }
+            ],
+            "preserve_overrides": true,
+            "representation": "key",
+            "serialize_explicitly": true,
+            "version": 1
+          }
+        },
+        "name": {
+          "description": "Explicit new-authoring selection for selector operator; applies only in selector comparison. Preserve source-effective values and visible overrides; no runtime fallback.",
+          "oneOf": [
+            {
+              "oneOf": [
+                {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/object_entity_base"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ]
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ],
+                  "description": "0.4 native Object selector: name (type checked)"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            {
+              "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/foreach_selector_binding"
+            }
+          ],
+          "title": "Selector operator",
+          "x-scap-ng-authoring": {
+            "aggressive_preview": false,
+            "authority": "https://github.com/vanderpol/scap-ng/issues/269",
+            "context": "selector_comparison",
+            "control_id": "selector_operator",
+            "default_key": "equals",
+            "group": "comparison",
+            "hide_scope": "choice_only_arguments_remain_visible",
+            "hide_when_default": true,
+            "new_authoring_only": true,
+            "oval_source": [
+              {
+                "attribute": "operation",
+                "declaration_context": [
+                  "EntityAttributeGroup"
+                ],
+                "declaration_kind": "attribute",
+                "documentation": "The optional operation attribute determines how the individual entities should be evaluated (the default operation is 'equals').",
+                "omission": "Use effective default after occurrence/restriction resolution; not native editor authority",
+                "origin": "XSD_DECLARED_DEFAULT",
+                "oval_qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5}EntityAttributeGroup/@operation",
+                "reachability_limit": "QName dependency census; occurrence-specific overrides require review",
+                "source_default": "equals",
+                "source_line": 1380,
+                "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+                "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+                "source_type": "oval:OperationEnumeration",
+                "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:attribute[2]"
+              }
+            ],
+            "preserve_overrides": true,
+            "representation": "key",
+            "serialize_explicitly": true,
+            "version": 1
+          }
+        },
+        "object_title": {
+          "description": "Human-readable name of this collection source. It does not select targets or change collection results.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "set": {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.fileeffectiverights.schema.json#/$defs/native_set_expression",
+          "description": "Acquire a collection through explicit Object Set operands and ordered per-operand filters. Set membership is distinct from Test truth aggregation."
+        },
+        "traversal": {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/windows_file_traversal",
+          "description": "Optional downward traversal for a compatible directory or hierarchy selector. Omit it to disable recursion; when present serialize depth and platform-specific traversal kind explicitly."
+        },
+        "trustee_sid": {
+          "description": "Explicit new-authoring selection for selector operator; applies only in selector comparison. Preserve source-effective values and visible overrides; no runtime fallback.",
+          "oneOf": [
+            {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/object_entity_base"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ],
+              "description": "0.4 native Object selector: trustee_sid (type checked)"
+            },
+            {
+              "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/foreach_selector_binding"
+            }
+          ],
+          "title": "Selector operator",
+          "x-scap-ng-authoring": {
+            "aggressive_preview": false,
+            "authority": "https://github.com/vanderpol/scap-ng/issues/269",
+            "context": "selector_comparison",
+            "control_id": "selector_operator",
+            "default_key": "equals",
+            "group": "comparison",
+            "hide_scope": "choice_only_arguments_remain_visible",
+            "hide_when_default": true,
+            "new_authoring_only": true,
+            "oval_source": [
+              {
+                "attribute": "operation",
+                "declaration_context": [
+                  "EntityAttributeGroup"
+                ],
+                "declaration_kind": "attribute",
+                "documentation": "The optional operation attribute determines how the individual entities should be evaluated (the default operation is 'equals').",
+                "omission": "Use effective default after occurrence/restriction resolution; not native editor authority",
+                "origin": "XSD_DECLARED_DEFAULT",
+                "oval_qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5}EntityAttributeGroup/@operation",
+                "reachability_limit": "QName dependency census; occurrence-specific overrides require review",
+                "source_default": "equals",
+                "source_line": 1380,
+                "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+                "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+                "source_type": "oval:OperationEnumeration",
+                "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:attribute[2]"
+              }
+            ],
+            "preserve_overrides": true,
+            "representation": "key",
+            "serialize_explicitly": true,
+            "version": 1
+          }
+        }
+      },
+      "required": [],
+      "type": "object"
+    },
+    "state_expression": {
+      "oneOf": [
+        {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.fileeffectiverights.schema.json#/$defs/state_predicate"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "and": {
+              "items": {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.fileeffectiverights.schema.json#/$defs/state_expression"
+              },
+              "minItems": 1,
+              "type": "array"
+            }
+          },
+          "required": [
+            "and"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "or": {
+              "items": {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.fileeffectiverights.schema.json#/$defs/state_expression"
+              },
+              "minItems": 1,
+              "type": "array"
+            }
+          },
+          "required": [
+            "or"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "one": {
+              "items": {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.fileeffectiverights.schema.json#/$defs/state_expression"
+              },
+              "minItems": 1,
+              "type": "array"
+            }
+          },
+          "required": [
+            "one"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "xor": {
+              "items": {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.fileeffectiverights.schema.json#/$defs/state_expression"
+              },
+              "minItems": 1,
+              "type": "array"
+            }
+          },
+          "required": [
+            "xor"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "state_predicate": {
+      "oneOf": [
+        {
+          "additionalProperties": false,
+          "properties": {
+            "access_system_security": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "access_system_security"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "directory": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "directory"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "file_append_data": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "file_append_data"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "file_delete_child": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "file_delete_child"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "file_execute": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "file_execute"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "file_read_attributes": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "file_read_attributes"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "file_read_data": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "file_read_data"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "file_read_ea": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "file_read_ea"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "file_write_attributes": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "file_write_attributes"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "file_write_data": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "file_write_data"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "file_write_ea": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "file_write_ea"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "full_path": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "full_path"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "generic_all": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "generic_all"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "generic_execute": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "generic_execute"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "generic_read": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "generic_read"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "generic_write": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "generic_write"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "name"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "standard_delete": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "standard_delete"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "standard_read_control": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "standard_read_control"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "standard_synchronize": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "standard_synchronize"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "standard_write_dac": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "standard_write_dac"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "standard_write_owner": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "standard_write_owner"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "trustee_name": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "trustee_name"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "trustee_sid": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "trustee_sid"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "test": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "states": {
+                "minItems": 2,
+                "type": "array"
+              }
+            },
+            "required": [
+              "states"
+            ]
+          },
+          "then": {
+            "required": [
+              "states_match"
+            ]
+          }
+        },
+        {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/test"
+        }
+      ],
+      "not": {
+        "anyOf": [
+          {
+            "required": [
+              "existence"
+            ]
+          },
+          {
+            "required": [
+              "match"
+            ]
+          }
+        ]
+      },
+      "properties": {
+        "capability": {
+          "const": "windows.fileeffectiverights"
+        },
+        "object": {
+          "oneOf": [
+            {
+              "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/object_reference"
+            },
+            {
+              "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.fileeffectiverights.schema.json#/$defs/object"
+            }
+          ]
+        },
+        "reported_elements": {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/reported-elements.schema.json"
+        },
+        "require": {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/test/properties/require"
+        },
+        "test_title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "capability",
+        "object",
+        "reported_elements",
+        "require",
+        "test_title"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/windows.fileeffectiverights.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "DRAFT: SCAP-NG 0.4 generated native capability contract. One authored Test/Object/State grammar; derived from reviewed source OVAL 5.12.3 mappings.",
+  "title": "Generated SCAP-NG capability fragment: windows.fileeffectiverights",
+  "x-authoring-gate": "Draft structural generation only; source enumeration and cross-field semantics require additional validation before 0.4 freeze.",
+  "x-semantic-validator-rules": [
+    {
+      "id": "windows.fileeffectiverights.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability windows.fileeffectiverights."
+    },
+    {
+      "id": "windows.fileeffectiverights.full_path_no_traversal",
+      "rule": "Traversal is not permitted when full_path selection is used."
+    },
+    {
+      "id": "windows.fileeffectiverights.pattern_directory_no_traversal",
+      "rule": "Traversal is not permitted when directory uses non-equality pattern-style selection."
+    },
+    {
+      "id": "windows.fileeffectiverights.literal_name_characters",
+      "rule": "Literal file names must not contain Windows path separator or reserved filename characters; match expressions are exempt."
+    },
+    {
+      "id": "windows.fileeffectiverights.trustee_sid",
+      "rule": "The Object identifies trustees by SID; deprecated trustee-name-based fileeffectiverights is not imported as this capability."
+    }
+  ],
+  "x-specification-version": "0.4.0"
+}

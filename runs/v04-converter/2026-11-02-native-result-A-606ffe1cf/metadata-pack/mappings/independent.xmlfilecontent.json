@@ -1,0 +1,140 @@
+{
+  "capability": "independent.xmlfilecontent",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "behaviors": {
+      "item_creation": "object.item_creation"
+    },
+    "capability": {
+      "xmlfilecontent": "independent.xmlfilecontent"
+    },
+    "materialized_defaults": {
+      "behaviors.item_creation": "all_object_elements_fullfilled"
+    },
+    "object": {
+      "filename": "object.name",
+      "filepath": "object.full_path",
+      "path": "object.directory",
+      "xpath": "object.xpath"
+    },
+    "removed_source_fields": {
+      "windows_view": "deprecated_not_native"
+    },
+    "traversal": {
+      "max_depth_-1": "max_depth_unlimited",
+      "recurse.directories": "directories",
+      "recurse.symlinks": "symlinks",
+      "recurse.symlinks and directories": "symlinks_and_directories",
+      "recurse_direction.down": "implicit_downward_traversal",
+      "recurse_direction.none": "no_traversal",
+      "recurse_direction.up": "migration_error_deprecated",
+      "recurse_file_system.all": "all",
+      "recurse_file_system.defined": "same",
+      "recurse_file_system.local": "local"
+    }
+  },
+  "native": {
+    "collection_parameters": {
+      "item_creation": {
+        "description": "Controls XML item creation. Importers materialize the OVAL default all_object_elements_fullfilled.",
+        "enum": [
+          "all_object_elements_fullfilled",
+          "filepath_exists"
+        ],
+        "required": true,
+        "type": "string"
+      }
+    },
+    "field_datatypes": {
+      "directory": [
+        "string"
+      ],
+      "full_path": [
+        "string"
+      ],
+      "name": [
+        "string"
+      ],
+      "value_of": [
+        "string",
+        "boolean",
+        "integer",
+        "float",
+        "binary",
+        "version",
+        "ipv4",
+        "ipv6",
+        "rpm_evr",
+        "debian_evr",
+        "fileset_revision",
+        "ios_version"
+      ],
+      "xpath": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "full_path",
+        "xpath"
+      ],
+      [
+        "directory",
+        "name",
+        "xpath"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "filename": "name",
+      "filepath": "full_path",
+      "path": "directory",
+      "xpath": "xpath"
+    },
+    "state_field_map": {
+      "filename": "name",
+      "filepath": "full_path",
+      "path": "directory",
+      "value_of": "value_of",
+      "xpath": "xpath"
+    },
+    "traversal_definition": "file_traversal"
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "independent.xmlfilecontent.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability independent.xmlfilecontent."
+    },
+    {
+      "id": "independent.xmlfilecontent.xpath_equal",
+      "rule": "The xpath Object selector uses equality semantics and represents an XPath 1.0 expression."
+    },
+    {
+      "id": "independent.xmlfilecontent.xpath_text_values",
+      "rule": "XPath evaluation must produce zero or more text values; non-text result shapes are collection errors."
+    },
+    {
+      "id": "independent.xmlfilecontent.full_path_no_traversal",
+      "rule": "Traversal is not permitted when full_path selection is used."
+    },
+    {
+      "id": "independent.xmlfilecontent.pattern_directory_no_traversal",
+      "rule": "Traversal is not permitted when directory uses non-equality pattern-style selection."
+    },
+    {
+      "id": "independent.xmlfilecontent.materialized_item_creation",
+      "rule": "Direct native Objects explicitly carry item_creation; importers SHALL materialize the OVAL default all_object_elements_fullfilled."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+    "item": "xmlfilecontent_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#independent",
+    "object": "xmlfilecontent_object",
+    "state": "xmlfilecontent_state",
+    "test": "xmlfilecontent_test"
+  },
+  "specification_version": "0.4.0"
+}

@@ -1,0 +1,127 @@
+{
+  "capability": "windows.service",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "service": "windows.service"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "controls_accepted": [
+        "string"
+      ],
+      "current_state": [
+        "string"
+      ],
+      "dependencies": [
+        "string"
+      ],
+      "description": [
+        "string"
+      ],
+      "display_name": [
+        "string"
+      ],
+      "path": [
+        "string"
+      ],
+      "pid": [
+        "integer"
+      ],
+      "service_flag": [
+        "boolean"
+      ],
+      "service_name": [
+        "string"
+      ],
+      "service_type": [
+        "string"
+      ],
+      "start_name": [
+        "string"
+      ],
+      "start_type": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "service_name"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "service_name": "service_name"
+    },
+    "state_field_map": {
+      "controls_accepted": "controls_accepted",
+      "current_state": "current_state",
+      "dependencies": "dependencies",
+      "description": "description",
+      "display_name": "display_name",
+      "path": "path",
+      "pid": "pid",
+      "service_flag": "service_flag",
+      "service_name": "service_name",
+      "service_type": "service_type",
+      "start_name": "start_name",
+      "start_type": "start_type"
+    },
+    "state_value_enums": {
+      "controls_accepted": [
+        "SERVICE_ACCEPT_NETBINDCHANGE",
+        "SERVICE_ACCEPT_PARAMCHANGE",
+        "SERVICE_ACCEPT_PAUSE_CONTINUE",
+        "SERVICE_ACCEPT_PRESHUTDOWN",
+        "SERVICE_ACCEPT_SHUTDOWN",
+        "SERVICE_ACCEPT_STOP",
+        "SERVICE_ACCEPT_HARDWAREPROFILECHANGE",
+        "SERVICE_ACCEPT_POWEREVENT",
+        "SERVICE_ACCEPT_SESSIONCHANGE",
+        "SERVICE_ACCEPT_TIMECHANGE",
+        "SERVICE_ACCEPT_TRIGGEREVENT"
+      ],
+      "current_state": [
+        "SERVICE_CONTINUE_PENDING",
+        "SERVICE_PAUSE_PENDING",
+        "SERVICE_PAUSED",
+        "SERVICE_RUNNING",
+        "SERVICE_START_PENDING",
+        "SERVICE_STOP_PENDING",
+        "SERVICE_STOPPED"
+      ],
+      "service_type": [
+        "SERVICE_FILE_SYSTEM_DRIVER",
+        "SERVICE_KERNEL_DRIVER",
+        "SERVICE_WIN32_OWN_PROCESS",
+        "SERVICE_WIN32_SHARE_PROCESS",
+        "SERVICE_INTERACTIVE_PROCESS"
+      ],
+      "start_type": [
+        "SERVICE_AUTO_START",
+        "SERVICE_BOOT_START",
+        "SERVICE_DEMAND_START",
+        "SERVICE_DISABLED",
+        "SERVICE_SYSTEM_START"
+      ]
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "windows.service.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability windows.service."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+    "item": "service_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#windows",
+    "object": "service_object",
+    "state": "service_state",
+    "test": "service_test"
+  },
+  "specification_version": "0.4.0"
+}

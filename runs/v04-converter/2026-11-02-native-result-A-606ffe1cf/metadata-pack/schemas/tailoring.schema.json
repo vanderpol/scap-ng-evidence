@@ -1,0 +1,213 @@
+{
+  "$id": "https://scap-ng.dev/schema/v0.4.0/tailoring.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "External local-policy modification bound to an exact Benchmark publication. Pre-alpha strawman; policy-resolution semantics are defined in the specification.",
+  "properties": {
+    "tailoring": {
+      "additionalProperties": false,
+      "properties": {
+        "benchmark": {
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "version": {
+              "type": [
+                "string",
+                "integer"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "version"
+          ],
+          "type": "object"
+        },
+        "check_selectors": {
+          "additionalProperties": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "description": "Rule ID to published Assessment/check selector.",
+          "type": "object"
+        },
+        "disabled_rules": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "enabled_rules": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "extends": {
+          "description": "Optional parent Tailoring identity/path; cycles are semantically invalid.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "group_operations": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "group": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "justification": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "selected": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "group",
+              "selected"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "id": {
+          "description": "Stable logical identity of this Tailoring artifact.",
+          "minLength": 1,
+          "type": "string"
+        },
+        "profile": {
+          "description": "Optional publisher Profile resolved before this Tailoring.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "provenance": {
+          "additionalProperties": true,
+          "properties": {
+            "authorization_reference": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "authorization_status": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "authorized_at": {
+              "format": "date-time",
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "authorized_by": {
+              "type": [
+                "string",
+                "object",
+                "null"
+              ]
+            },
+            "created_at": {
+              "format": "date-time",
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "created_by": {
+              "type": [
+                "string",
+                "object",
+                "null"
+              ]
+            },
+            "modified_at": {
+              "format": "date-time",
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "modified_by": {
+              "type": [
+                "string",
+                "object",
+                "null"
+              ]
+            },
+            "organization": {
+              "type": [
+                "string",
+                "object",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "organization",
+            "created_by",
+            "created_at",
+            "modified_by",
+            "modified_at",
+            "authorized_by",
+            "authorized_at",
+            "authorization_reference",
+            "authorization_status"
+          ],
+          "type": "object"
+        },
+        "purpose": {
+          "description": "Human-readable reason the Tailoring exists.",
+          "minLength": 1,
+          "type": "string"
+        },
+        "version": {
+          "description": "Tailoring version/revision.",
+          "type": [
+            "integer",
+            "string"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "version",
+        "purpose",
+        "benchmark",
+        "profile",
+        "extends",
+        "enabled_rules",
+        "disabled_rules",
+        "group_operations",
+        "check_selectors",
+        "provenance"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "tailoring"
+  ],
+  "title": "SCAP-NG Tailoring v0.4.0 strawman",
+  "type": "object",
+  "x-last-modified": "2026-10-06",
+  "x-scap-ng-version": "0.4.0"
+}

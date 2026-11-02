@@ -1,0 +1,55 @@
+{
+  "source_commit": "73888301e2969a5c1a6e7f1ad989979338eeb2b0",
+  "source_inputs": [
+    {
+      "path": "tests/fixtures/v04-direct-prototype/server2025-signed.zip",
+      "sha256": "2f46264b5fa21c8a033236121794ebe372314bf7458dac0aca4f81179fe7ece0",
+      "rules": [
+        "xccdf_mil.disa.stig_rule_SV-278139r1182083_rule",
+        "xccdf_mil.disa.stig_rule_SV-278080r1180946_rule"
+      ]
+    },
+    {
+      "path": "tests/fixtures/v04-independent-validation/SV-257851.xml",
+      "sha256": "e8f90bbaca3c86da93c18d66d4a0e3cf68eb2da6c34f7e851d8b98f6993b3565",
+      "definition": "oval:mil.disa.stig.rhel9os:def:257851"
+    }
+  ],
+  "source_run": "runs/v04-converter/2026-10-31-owner-contract-reconciliation-bounded",
+  "status": "BOUNDED_STATIC_SOURCE_PROOFS_NOT_SCANNER_RUNTIME",
+  "authoring_files": [
+    {
+      "path": "linux-home-mount-nosuid-assessment.json",
+      "sha256": "6c54c661e799f2a35b862e5e541f10ed430d7f06a6c78e3c5aac33b616444eaa",
+      "assessment": "linux-home-mount-nosuid-assessment"
+    },
+    {
+      "path": "linux-home-mount-nosuid-assessment.yaml",
+      "sha256": "6a6519e7c7b30ebede613ac3703eb0e3bf1e0cbe3c8add1e816a68c6d7bc102b",
+      "assessment": "linux-home-mount-nosuid-assessment"
+    },
+    {
+      "path": "windows-server-2025-control-permissions-sv-278139-assessment.json",
+      "sha256": "05ca7f5e1df4c390949676e85e5ee55283d82957b748360e5ddb44c80c1982cd",
+      "assessment": "windows-server-2025-control-permissions-sv-278139-assessment"
+    },
+    {
+      "path": "windows-server-2025-control-permissions-sv-278139-assessment.yaml",
+      "sha256": "70cedba557b7b9e1ee14e5a30957035ca6a9920e6733e31f399ff8b6dbc2594a",
+      "assessment": "windows-server-2025-control-permissions-sv-278139-assessment"
+    },
+    {
+      "path": "windows-server-2025-shows-on-lock-screen-sv-278080-assessment.json",
+      "sha256": "35bbd3a0e686baa2f5cde6e8b426101bfe4229b20ea1d7fd296e1e9e3e8113f6",
+      "assessment": "windows-server-2025-shows-on-lock-screen-sv-278080-assessment"
+    },
+    {
+      "path": "windows-server-2025-shows-on-lock-screen-sv-278080-assessment.yaml",
+      "sha256": "3aa9b893596aa8c9b5e68d81dca18a91725437b6050c26bcc47e257c1b6bb19d",
+      "assessment": "windows-server-2025-shows-on-lock-screen-sv-278080-assessment"
+    }
+  ],
+  "no_global_promotion": true,
+  "existing_library_regenerated": false,
+  "scanner_evaluated": false
+}

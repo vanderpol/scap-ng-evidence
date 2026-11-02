@@ -1,0 +1,48 @@
+{
+  "capability": "macos.gatekeeper",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "gatekeeper": "macos.gatekeeper"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "enabled": [
+        "boolean"
+      ],
+      "require_developer_id": [
+        "boolean"
+      ],
+      "unlabeled": [
+        "string"
+      ]
+    },
+    "post_alignment_ready": true,
+    "state_field_map": {
+      "enabled": "enabled",
+      "require_developer_id": "require_developer_id",
+      "unlabeled": "unlabeled"
+    },
+    "test_source": {
+      "kind": "none"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "macos.gatekeeper.implicit_source",
+      "rule": "The capability evaluates the current system Gatekeeper configuration directly; native content omits the empty legacy Object."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+    "item": "gatekeeper_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#macos",
+    "object": "gatekeeper_object",
+    "state": "gatekeeper_state",
+    "test": "gatekeeper_test"
+  },
+  "specification_version": "0.4.0"
+}

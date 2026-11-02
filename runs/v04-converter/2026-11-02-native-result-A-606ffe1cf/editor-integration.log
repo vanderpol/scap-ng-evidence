@@ -1,0 +1,17 @@
+
+> scap-ng-vscode-metadata@0.0.1 test:integration
+> npm run build && node --test test/integration/*.test.mjs
+
+
+> scap-ng-vscode-metadata@0.0.1 build
+> tsc
+
+✔ test/integration/pinned-pack.test.mjs (3038.898515ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3058.463201

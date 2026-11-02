@@ -1,0 +1,49 @@
+{
+  "capability": "macos.nvram",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "nvram512": "macos.nvram"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "value": [
+        "binary"
+      ],
+      "variable": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "variable"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "variable": "variable"
+    },
+    "state_field_map": {
+      "value": "value",
+      "variable": "variable"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "macos.nvram.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability macos.nvram."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+    "item": "nvram512_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#macos",
+    "object": "nvram512_object",
+    "state": "nvram512_state",
+    "test": "nvram512_test"
+  },
+  "specification_version": "0.4.0"
+}

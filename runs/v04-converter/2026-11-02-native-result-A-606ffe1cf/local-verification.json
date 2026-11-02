@@ -1,0 +1,21 @@
+{
+  "source_commit": "606ffe1cf91149c2561a56eb8e0130b21f132046",
+  "schema_gate_tests": 100,
+  "focused_result_tests": 21,
+  "maintained_scripts": 49,
+  "maintained_failures": [],
+  "audit_contracts": [
+    {
+      "id": "LC-SELECTOR-CASE",
+      "status": "OPEN",
+      "owner_decision_needed": false
+    },
+    {
+      "id": "LC-NATIVE-RESULTS",
+      "status": "CLOSED",
+      "owner_decision_needed": false
+    }
+  ],
+  "source_clean": true,
+  "editor_clean": true
+}

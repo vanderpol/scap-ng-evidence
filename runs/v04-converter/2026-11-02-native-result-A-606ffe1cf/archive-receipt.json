@@ -1,0 +1,9 @@
+{
+  "archive": "native-result-A-evidence.zip",
+  "bytes": 624601,
+  "sha256": "cf0a88c56481e6fe98535b6a60be98c1a145616cc4824fd39621b6c484033b14",
+  "zip_members": 333,
+  "payloads": 332,
+  "source_commit": "606ffe1cf91149c2561a56eb8e0130b21f132046",
+  "editor_commit": "72a0db5572691f5294ffeca11b8c9fdb24f33cf8"
+}

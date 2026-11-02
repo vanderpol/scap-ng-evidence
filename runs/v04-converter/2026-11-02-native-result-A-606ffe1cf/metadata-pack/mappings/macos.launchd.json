@@ -1,0 +1,53 @@
+{
+  "capability": "macos.launchd",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "launchd": "macos.launchd"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "label": [
+        "string"
+      ],
+      "pid": [
+        "integer"
+      ],
+      "status": [
+        "integer"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "label"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "label": "label"
+    },
+    "state_field_map": {
+      "label": "label",
+      "pid": "pid",
+      "status": "status"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "macos.launchd.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability macos.launchd."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+    "item": "launchd_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#macos",
+    "object": "launchd_object",
+    "state": "launchd_state",
+    "test": "launchd_test"
+  },
+  "specification_version": "0.4.0"
+}

@@ -1,0 +1,725 @@
+{
+  "$id": "https://scap-ng.dev/schema/v0.4.0/assessment-result.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Detailed execution result for one Assessment invocation, including Test outcomes, collected Items, bindings, completeness, and diagnostics. Pre-alpha strawman.",
+  "properties": {
+    "assessment_result": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "mode": {
+                "const": "manual"
+              },
+              "outcome": {
+                "enum": [
+                  "true",
+                  "false",
+                  "error",
+                  "unknown",
+                  "not_applicable"
+                ]
+              }
+            },
+            "required": [
+              "mode",
+              "outcome"
+            ]
+          },
+          "then": {
+            "properties": {
+              "manual_response": {
+                "required": [
+                  "outcome",
+                  "completed_at",
+                  "response_source",
+                  "evaluator"
+                ],
+                "type": "object"
+              }
+            },
+            "required": [
+              "manual_response"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "mode": {
+                "const": "automated"
+              }
+            },
+            "required": [
+              "mode"
+            ]
+          },
+          "then": {
+            "required": [
+              "evidence_retention"
+            ]
+          }
+        }
+      ],
+      "properties": {
+        "assessment": {
+          "additionalProperties": false,
+          "properties": {
+            "digest": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "id": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "version": {
+              "type": [
+                "integer",
+                "string"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "version"
+          ],
+          "type": "object"
+        },
+        "binding_set_id": {
+          "description": "Optional deterministic identifier/digest for the complete effective input-binding set of this invocation.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "class": {
+          "$ref": "result-types.schema.json#/$defs/assessment_class"
+        },
+        "consumed_organizational_inputs": {
+          "description": "Organizational Input bindings consumed by this Assessment execution.",
+          "items": {
+            "additionalProperties": false,
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "redacted": {
+                      "const": true
+                    }
+                  },
+                  "required": [
+                    "redacted"
+                  ]
+                },
+                "then": {
+                  "not": {
+                    "required": [
+                      "value"
+                    ]
+                  }
+                }
+              }
+            ],
+            "properties": {
+              "input": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "materialized": {
+                "type": "boolean"
+              },
+              "organizational_input_ref": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "redacted": {
+                "type": "boolean"
+              },
+              "state_slot": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "validation_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "value": {}
+            },
+            "required": [
+              "input",
+              "organizational_input_ref",
+              "materialized"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "dependent_assessments": {
+          "description": "Assessment-result dependencies consumed by this Assessment invocation.",
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "alias": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "assessment": {
+                "additionalProperties": false,
+                "properties": {
+                  "digest": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "id": {
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "version": {
+                    "type": [
+                      "string",
+                      "integer"
+                    ]
+                  }
+                },
+                "required": [
+                  "id",
+                  "version"
+                ],
+                "type": "object"
+              },
+              "execution_id": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "outcome": {
+                "enum": [
+                  "true",
+                  "false",
+                  "error",
+                  "unknown",
+                  "not_evaluated",
+                  "not_applicable"
+                ],
+                "type": "string"
+              },
+              "purpose": {
+                "enum": [
+                  "assessment",
+                  "applicability",
+                  null
+                ],
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "reused": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "alias",
+              "assessment",
+              "execution_id",
+              "outcome",
+              "purpose",
+              "reused"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "diagnostics": {
+          "items": {
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "evidence": {
+          "items": {
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "evidence_complete": {
+          "type": "boolean"
+        },
+        "evidence_retention": {
+          "additionalProperties": false,
+          "allOf": [
+            {
+              "else": {
+                "not": {
+                  "anyOf": [
+                    {
+                      "required": [
+                        "override_reason"
+                      ]
+                    },
+                    {
+                      "required": [
+                        "operator_ref"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "if": {
+                "properties": {
+                  "source": {
+                    "const": "operator_override"
+                  }
+                },
+                "required": [
+                  "source"
+                ]
+              },
+              "then": {
+                "required": [
+                  "override_reason"
+                ]
+              }
+            }
+          ],
+          "description": "Effective application/run-controlled retained Item limit, never an evaluation threshold and never a reason to fork Benchmark/Assessment content. An operator override changes reporting volume only, subject to separately enforced resource limits and reported_elements/redaction.",
+          "properties": {
+            "maximum_items": {
+              "description": "Maximum retained Test-local per-Item records per Test. Null requests no item-count cap, still subject to scanner resource safety controls and content redaction.",
+              "minimum": 0,
+              "type": [
+                "integer",
+                "null"
+              ]
+            },
+            "operator_ref": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "override_reason": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "scope": {
+              "const": "per_test"
+            },
+            "source": {
+              "enum": [
+                "scanner_configuration",
+                "run_request",
+                "operator_override"
+              ]
+            }
+          },
+          "required": [
+            "scope",
+            "maximum_items",
+            "source"
+          ],
+          "type": "object"
+        },
+        "evidence_summary": {
+          "$ref": "result-types.schema.json#/$defs/bounded_evidence"
+        },
+        "execution_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "expression_execution": {
+          "$ref": "expression-invocation.schema.json"
+        },
+        "field_uses": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "item_ref": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "relationship": {
+                "enum": [
+                  "direct",
+                  "variable",
+                  "filter",
+                  "selection"
+                ]
+              },
+              "required_elements": {
+                "items": {
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "type": "array",
+                "uniqueItems": true
+              },
+              "test_ref": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "used_elements": {
+                "items": {
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "type": "array",
+                "uniqueItems": true
+              }
+            },
+            "required": [
+              "test_ref",
+              "item_ref",
+              "used_elements",
+              "required_elements",
+              "relationship"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "input_bindings": {
+          "description": "Effective named Assessment inputs for this invocation. Distinct effective bindings require distinct execution identities.",
+          "items": {
+            "additionalProperties": false,
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "redacted": {
+                      "const": true
+                    }
+                  },
+                  "required": [
+                    "redacted"
+                  ]
+                },
+                "then": {
+                  "not": {
+                    "required": [
+                      "value"
+                    ]
+                  }
+                }
+              }
+            ],
+            "properties": {
+              "input": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "redacted": {
+                "type": "boolean"
+              },
+              "source": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "source_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "value": {}
+            },
+            "required": [
+              "input",
+              "source"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "item_materialization": {
+          "$ref": "item-materialization.schema.json"
+        },
+        "item_report": {
+          "$ref": "item-report.schema.json#/properties/item_report"
+        },
+        "items": {
+          "description": "Optional additional collected Items needed by collection/variable results but not represented under a Test. The canonical retained Items for Test interpretation are embedded in tests[].per_item_results[].item; duplicate copies here SHOULD NOT be emitted.",
+          "items": {
+            "$ref": "collected-item.schema.json"
+          },
+          "type": "array"
+        },
+        "logical_complete": {
+          "type": "boolean"
+        },
+        "manual_response": {
+          "additionalProperties": false,
+          "description": "Required provenance for a completed manual Assessment result.",
+          "properties": {
+            "comments": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "completed_at": {
+              "format": "date-time",
+              "type": "string"
+            },
+            "evaluator": {
+              "additionalProperties": false,
+              "properties": {
+                "contact": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "email": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "phone": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "uri": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  },
+                  "type": [
+                    "object",
+                    "null"
+                  ]
+                },
+                "display_name": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "id": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "scheme": {
+                      "minLength": 1,
+                      "type": "string"
+                    },
+                    "value": {
+                      "minLength": 1,
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "scheme",
+                    "value"
+                  ],
+                  "type": "object"
+                },
+                "identity_source": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "organization": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "organizational_unit": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "role": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "id"
+              ],
+              "type": "object"
+            },
+            "evidence_refs": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "outcome": {
+              "enum": [
+                "true",
+                "false",
+                "error",
+                "unknown",
+                "not_evaluated",
+                "not_applicable"
+              ],
+              "type": "string"
+            },
+            "response_source": {
+              "enum": [
+                "direct",
+                "imported",
+                "delegated"
+              ],
+              "type": "string"
+            },
+            "review": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "started_at": {
+              "format": "date-time",
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "mode": {
+          "enum": [
+            "automated",
+            "manual"
+          ]
+        },
+        "objects": {
+          "description": "Runtime Object/collection-execution records. Terminology is under active alignment with OVAL.",
+          "items": {
+            "$ref": "collection-result.schema.json"
+          },
+          "type": "array"
+        },
+        "outcome": {
+          "$ref": "result-types.schema.json#/$defs/technical_outcome"
+        },
+        "population_complete": {
+          "type": "boolean"
+        },
+        "purpose": {
+          "$ref": "result-types.schema.json#/$defs/assessment_purpose"
+        },
+        "reason": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "additionalProperties": false,
+              "properties": {
+                "code": {
+                  "enum": [
+                    "unsupported_organizational_input",
+                    "missing_organizational_input",
+                    "invalid_organizational_input"
+                  ],
+                  "type": "string"
+                },
+                "input": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "message": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "state_slot": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "code"
+              ],
+              "type": "object"
+            }
+          ]
+        },
+        "result_schema_version": {
+          "const": "0.4.0"
+        },
+        "summary": {
+          "description": "Required concise deterministic standalone explanation of the technical Assessment outcome, including decisive failure, incomplete collection, error, or applicability cause where relevant. Consistent with Test results, diagnostics and retained evidence; independent of any Benchmark Rule.",
+          "minLength": 1,
+          "pattern": "\\S",
+          "type": "string"
+        },
+        "target_ref": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "tests": {
+          "description": "Test-centered technical results. Retained system Item values and State comparisons are adjacent to the Test verdict. Standalone Assessment scans do not require a Benchmark.",
+          "items": {
+            "$ref": "test-result.schema.json"
+          },
+          "type": "array"
+        },
+        "variables": {
+          "items": {
+            "$ref": "variable-result.schema.json"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "result_schema_version",
+        "execution_id",
+        "assessment",
+        "purpose",
+        "class",
+        "outcome",
+        "summary",
+        "logical_complete",
+        "population_complete",
+        "evidence_complete",
+        "tests",
+        "objects",
+        "variables",
+        "diagnostics",
+        "mode",
+        "target_ref",
+        "expression_execution",
+        "field_uses",
+        "dependent_assessments"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "assessment_result"
+  ],
+  "title": "SCAP-NG Assessment Result draft v0.4.0 strawman",
+  "type": "object",
+  "x-last-modified": "2026-10-22",
+  "x-scap-ng-version": "0.4.0"
+}

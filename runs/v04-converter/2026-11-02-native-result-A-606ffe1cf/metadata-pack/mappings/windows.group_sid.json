@@ -1,0 +1,65 @@
+{
+  "capability": "windows.group_sid",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "group_sid": "windows.group_sid"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "group": [
+        "string"
+      ],
+      "group_sid": [
+        "string"
+      ],
+      "subgroup": [
+        "string"
+      ],
+      "subgroup_sid": [
+        "string"
+      ],
+      "user": [
+        "string"
+      ],
+      "user_sid": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "group_sid"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "group_sid": "group_sid"
+    },
+    "state_field_map": {
+      "group": "group",
+      "group_sid": "group_sid",
+      "subgroup": "subgroup",
+      "subgroup_sid": "subgroup_sid",
+      "user": "user",
+      "user_sid": "user_sid"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "windows.group_sid.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability windows.group_sid."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+    "item": "group_sid_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#windows",
+    "object": "group_sid_object",
+    "state": "group_sid_state",
+    "test": "group_sid_test"
+  },
+  "specification_version": "0.4.0"
+}

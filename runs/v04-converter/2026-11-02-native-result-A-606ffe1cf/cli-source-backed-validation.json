@@ -1,0 +1,8 @@
+{
+  "status": "NATIVE_040_RESULT_SOURCE_AND_EVIDENCE_VALID",
+  "test": "verifies-prevent-enabling-screen-slide-show-is-set-enabled-test",
+  "requirement_nodes": 5,
+  "retained_items": 1,
+  "scanner_executed": false,
+  "truth_recomputed": false
+}

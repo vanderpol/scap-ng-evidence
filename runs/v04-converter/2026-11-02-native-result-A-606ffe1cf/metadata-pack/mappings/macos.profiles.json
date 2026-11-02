@@ -1,0 +1,47 @@
+{
+  "capability": "macos.profiles",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "profiles": "macos.profiles"
+    },
+    "object": {
+      "profiles_object": "omitted_native_singleton_system_source"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "dep_enrolled": [
+        "boolean"
+      ],
+      "mdm_enrolled": [
+        "boolean"
+      ]
+    },
+    "post_alignment_ready": true,
+    "state_field_map": {
+      "dep_enrolled": "dep_enrolled",
+      "mdm_enrolled": "mdm_enrolled"
+    },
+    "test_source": {
+      "kind": "none"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "macos.profiles.singleton_source",
+      "rule": "The capability evaluates current system profile-enrollment state directly; native content omits the empty legacy Object."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+    "item": "profiles_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#macos",
+    "object": "profiles_object",
+    "state": "profiles_state",
+    "test": "profiles_test"
+  },
+  "specification_version": "0.4.0"
+}

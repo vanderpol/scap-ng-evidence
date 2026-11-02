@@ -1,0 +1,654 @@
+{
+  "capability": "windows.auditeventpolicysubcategories",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "audit_values": {
+      "": "variable_reference_artifact_not_native_value",
+      "AUDIT_FAILURE": "AUDIT_FAILURE",
+      "AUDIT_NONE": "AUDIT_NONE",
+      "AUDIT_SUCCESS": "AUDIT_SUCCESS",
+      "AUDIT_SUCCESS_FAILURE": "AUDIT_SUCCESS_FAILURE"
+    },
+    "capability": {
+      "auditeventpolicysubcategories": "windows.auditeventpolicysubcategories"
+    },
+    "deprecated_state_fields": {
+      "kerberos_ticket_events": "migration_error_deprecated"
+    },
+    "object": {
+      "auditeventpolicysubcategories_object": "omitted_native_singleton_system_source"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "account_lockout": [
+        "string"
+      ],
+      "application_generated": [
+        "string"
+      ],
+      "application_group_management": [
+        "string"
+      ],
+      "audit_detailedtracking_tokenrightadjusted": [
+        "string"
+      ],
+      "audit_policy_change": [
+        "string"
+      ],
+      "authentication_policy_change": [
+        "string"
+      ],
+      "authorization_policy_change": [
+        "string"
+      ],
+      "central_access_policy_staging": [
+        "string"
+      ],
+      "certification_services": [
+        "string"
+      ],
+      "computer_account_management": [
+        "string"
+      ],
+      "credential_validation": [
+        "string"
+      ],
+      "detailed_directory_service_replication": [
+        "string"
+      ],
+      "detailed_file_share": [
+        "string"
+      ],
+      "directory_service_access": [
+        "string"
+      ],
+      "directory_service_changes": [
+        "string"
+      ],
+      "directory_service_replication": [
+        "string"
+      ],
+      "distribution_group_management": [
+        "string"
+      ],
+      "dpapi_activity": [
+        "string"
+      ],
+      "file_share": [
+        "string"
+      ],
+      "file_system": [
+        "string"
+      ],
+      "filtering_platform_connection": [
+        "string"
+      ],
+      "filtering_platform_packet_drop": [
+        "string"
+      ],
+      "filtering_platform_policy_change": [
+        "string"
+      ],
+      "group_membership": [
+        "string"
+      ],
+      "handle_manipulation": [
+        "string"
+      ],
+      "ipsec_driver": [
+        "string"
+      ],
+      "ipsec_extended_mode": [
+        "string"
+      ],
+      "ipsec_main_mode": [
+        "string"
+      ],
+      "ipsec_quick_mode": [
+        "string"
+      ],
+      "kerberos_authentication_service": [
+        "string"
+      ],
+      "kerberos_service_ticket_operations": [
+        "string"
+      ],
+      "kernel_object": [
+        "string"
+      ],
+      "logoff": [
+        "string"
+      ],
+      "logon": [
+        "string"
+      ],
+      "logon_claims": [
+        "string"
+      ],
+      "mpssvc_rule_level_policy_change": [
+        "string"
+      ],
+      "network_policy_server": [
+        "string"
+      ],
+      "non_sensitive_privilege_use": [
+        "string"
+      ],
+      "other_account_logon_events": [
+        "string"
+      ],
+      "other_account_management_events": [
+        "string"
+      ],
+      "other_logon_logoff_events": [
+        "string"
+      ],
+      "other_object_access_events": [
+        "string"
+      ],
+      "other_policy_change_events": [
+        "string"
+      ],
+      "other_privilege_use_events": [
+        "string"
+      ],
+      "other_system_events": [
+        "string"
+      ],
+      "pnp_activity": [
+        "string"
+      ],
+      "process_creation": [
+        "string"
+      ],
+      "process_termination": [
+        "string"
+      ],
+      "registry": [
+        "string"
+      ],
+      "removable_storage": [
+        "string"
+      ],
+      "rpc_events": [
+        "string"
+      ],
+      "sam": [
+        "string"
+      ],
+      "security_group_management": [
+        "string"
+      ],
+      "security_state_change": [
+        "string"
+      ],
+      "security_system_extension": [
+        "string"
+      ],
+      "sensitive_privilege_use": [
+        "string"
+      ],
+      "special_logon": [
+        "string"
+      ],
+      "system_integrity": [
+        "string"
+      ],
+      "user_account_management": [
+        "string"
+      ],
+      "user_device_claims": [
+        "string"
+      ]
+    },
+    "post_alignment_ready": true,
+    "state_field_map": {
+      "account_lockout": "account_lockout",
+      "application_generated": "application_generated",
+      "application_group_management": "application_group_management",
+      "audit_detailedtracking_tokenrightadjusted": "audit_detailedtracking_tokenrightadjusted",
+      "audit_policy_change": "audit_policy_change",
+      "authentication_policy_change": "authentication_policy_change",
+      "authorization_policy_change": "authorization_policy_change",
+      "central_access_policy_staging": "central_access_policy_staging",
+      "certification_services": "certification_services",
+      "computer_account_management": "computer_account_management",
+      "credential_validation": "credential_validation",
+      "detailed_directory_service_replication": "detailed_directory_service_replication",
+      "detailed_file_share": "detailed_file_share",
+      "directory_service_access": "directory_service_access",
+      "directory_service_changes": "directory_service_changes",
+      "directory_service_replication": "directory_service_replication",
+      "distribution_group_management": "distribution_group_management",
+      "dpapi_activity": "dpapi_activity",
+      "file_share": "file_share",
+      "file_system": "file_system",
+      "filtering_platform_connection": "filtering_platform_connection",
+      "filtering_platform_packet_drop": "filtering_platform_packet_drop",
+      "filtering_platform_policy_change": "filtering_platform_policy_change",
+      "group_membership": "group_membership",
+      "handle_manipulation": "handle_manipulation",
+      "ipsec_driver": "ipsec_driver",
+      "ipsec_extended_mode": "ipsec_extended_mode",
+      "ipsec_main_mode": "ipsec_main_mode",
+      "ipsec_quick_mode": "ipsec_quick_mode",
+      "kerberos_authentication_service": "kerberos_authentication_service",
+      "kerberos_service_ticket_operations": "kerberos_service_ticket_operations",
+      "kernel_object": "kernel_object",
+      "logoff": "logoff",
+      "logon": "logon",
+      "logon_claims": "logon_claims",
+      "mpssvc_rule_level_policy_change": "mpssvc_rule_level_policy_change",
+      "network_policy_server": "network_policy_server",
+      "non_sensitive_privilege_use": "non_sensitive_privilege_use",
+      "other_account_logon_events": "other_account_logon_events",
+      "other_account_management_events": "other_account_management_events",
+      "other_logon_logoff_events": "other_logon_logoff_events",
+      "other_object_access_events": "other_object_access_events",
+      "other_policy_change_events": "other_policy_change_events",
+      "other_privilege_use_events": "other_privilege_use_events",
+      "other_system_events": "other_system_events",
+      "pnp_activity": "pnp_activity",
+      "process_creation": "process_creation",
+      "process_termination": "process_termination",
+      "registry": "registry",
+      "removable_storage": "removable_storage",
+      "rpc_events": "rpc_events",
+      "sam": "sam",
+      "security_group_management": "security_group_management",
+      "security_state_change": "security_state_change",
+      "security_system_extension": "security_system_extension",
+      "sensitive_privilege_use": "sensitive_privilege_use",
+      "special_logon": "special_logon",
+      "system_integrity": "system_integrity",
+      "user_account_management": "user_account_management",
+      "user_device_claims": "user_device_claims"
+    },
+    "state_value_enums": {
+      "account_lockout": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "application_generated": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "application_group_management": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "audit_detailedtracking_tokenrightadjusted": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "audit_policy_change": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "authentication_policy_change": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "authorization_policy_change": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "central_access_policy_staging": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "certification_services": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "computer_account_management": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "credential_validation": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "detailed_directory_service_replication": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "detailed_file_share": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "directory_service_access": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "directory_service_changes": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "directory_service_replication": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "distribution_group_management": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "dpapi_activity": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "file_share": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "file_system": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "filtering_platform_connection": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "filtering_platform_packet_drop": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "filtering_platform_policy_change": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "group_membership": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "handle_manipulation": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "ipsec_driver": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "ipsec_extended_mode": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "ipsec_main_mode": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "ipsec_quick_mode": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "kerberos_authentication_service": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "kerberos_service_ticket_operations": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "kernel_object": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "logoff": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "logon": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "logon_claims": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "mpssvc_rule_level_policy_change": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "network_policy_server": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "non_sensitive_privilege_use": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "other_account_logon_events": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "other_account_management_events": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "other_logon_logoff_events": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "other_object_access_events": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "other_policy_change_events": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "other_privilege_use_events": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "other_system_events": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "pnp_activity": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "process_creation": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "process_termination": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "registry": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "removable_storage": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "rpc_events": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "sam": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "security_group_management": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "security_state_change": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "security_system_extension": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "sensitive_privilege_use": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "special_logon": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "system_integrity": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "user_account_management": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ],
+      "user_device_claims": [
+        "AUDIT_FAILURE",
+        "AUDIT_NONE",
+        "AUDIT_SUCCESS",
+        "AUDIT_SUCCESS_FAILURE"
+      ]
+    },
+    "test_source": {
+      "kind": "none"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "windows.auditeventpolicysubcategories.singleton_source",
+      "rule": "The capability evaluates the current Windows system audit-policy subcategories directly; native content SHALL NOT introduce a meaningless singleton Object."
+    },
+    {
+      "id": "windows.auditeventpolicysubcategories.supported_fields",
+      "rule": "Deprecated OVAL state entity kerberos_ticket_events is not a native field; all other mapped OVAL 5.12.3 audit subcategory entities remain independently testable."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#windows",
+    "object": "auditeventpolicysubcategories_object",
+    "state": "auditeventpolicysubcategories_state",
+    "test": "auditeventpolicysubcategories_test"
+  },
+  "specification_version": "0.4.0"
+}
