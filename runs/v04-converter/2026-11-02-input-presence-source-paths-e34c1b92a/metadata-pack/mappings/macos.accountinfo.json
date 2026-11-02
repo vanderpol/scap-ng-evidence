@@ -1,0 +1,73 @@
+{
+  "capability": "macos.accountinfo",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "accountinfo": "macos.accountinfo"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "generated_uid": [
+        "string"
+      ],
+      "gid": [
+        "integer"
+      ],
+      "home_dir": [
+        "string"
+      ],
+      "login_shell": [
+        "string"
+      ],
+      "password": [
+        "string"
+      ],
+      "realname": [
+        "string"
+      ],
+      "uid": [
+        "integer"
+      ],
+      "username": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "username"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "username": "username"
+    },
+    "state_field_map": {
+      "generated_uid": "generated_uid",
+      "gid": "gid",
+      "home_dir": "home_dir",
+      "login_shell": "login_shell",
+      "password": "password",
+      "realname": "realname",
+      "uid": "uid",
+      "username": "username"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "macos.accountinfo.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability macos.accountinfo."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+    "item": "accountinfo_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#macos",
+    "object": "accountinfo_object",
+    "state": "accountinfo_state",
+    "test": "accountinfo_test"
+  },
+  "specification_version": "0.4.0"
+}

@@ -1,0 +1,38 @@
+{
+  "evidence_id": "2026-11-02-input-presence-source-paths-e34c1b92a",
+  "kind": "bounded language-conformance and repository/audit evidence",
+  "created_at": "2026-11-02T00:56:08.151310+00:00",
+  "source_repository": "vanderpol/scap-ng",
+  "source_commit": "e34c1b92a61d9cfdf1c1734e54c086aea3aa898b",
+  "editor_repository": "vanderpol/scap-ng-vscode",
+  "editor_commit": "f6413ecc632acf41aeb1aba7f8cdf549366c268c",
+  "generating_tool": "tools/test_v04_input_presence.py and tools/build_v04_editor_metadata_pack.py",
+  "generating_tool_commit": "e34c1b92a61d9cfdf1c1734e54c086aea3aa898b",
+  "commands": [
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python run-review-cases.py",
+    "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tools python -m unittest -v test_v04_input_presence test_v04_owner_conditional_plan test_v04_canonical_result_plan test_v04_package_consumer",
+    "python tools/build_v04_editor_metadata_pack.py --output <new-directory>",
+    "SCAP_NG_METADATA_PACK=<final-pack> SCAP_NG_SOURCE_ROOT=<source-e34> npm run test:integration"
+  ],
+  "input_pins": "Original design and25 cases:evidenceb2c633a; initial full qualification:evidence493d0c8; preserved program hashes againstsource37b614858. Same frozen original sources/proofs.",
+  "output_root": "runs/v04-converter/2026-11-02-input-presence-source-paths-e34c1b92a",
+  "validation_status": "PASS: final guard and exact source paths; full schema freeze remains NO_GO",
+  "checks": {
+    "adopted_cases": 25,
+    "guard_test_methods": 24,
+    "focused_regression_methods": 49,
+    "maintained_scripts_covered_by_hosted_gates": 49,
+    "schema_gate_test_identities": 79,
+    "source_hosted_runs_all_pass": 12,
+    "editor_ci": 41367742815,
+    "all233_metadata_resource_bytes_retained": true,
+    "preexisting_programs_retained": 5,
+    "frozen_capability_fingerprints_retained": 100
+  },
+  "supersedes": "Only nested-logical-guard source-location observations in5ecc8f74e; prior493d0c8 archive unchanged and linked through prior-download-receipt.json. No source proof rebaseline.",
+  "limitations": [
+    "Supplied bindings/results only; no collector/provider/Test execution or VS Code host/UI proof.",
+    "NO_GO full schema freeze:15 selector/API contract dispositions need documentation; one owner A/B decision remains for native Result wire vocabulary/pointers.",
+    "Compatible field datatype retained. No merge/freeze/tag/release/corpus generation or proof rebaseline."
+  ]
+}

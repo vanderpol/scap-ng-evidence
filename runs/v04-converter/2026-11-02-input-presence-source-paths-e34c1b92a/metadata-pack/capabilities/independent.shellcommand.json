@@ -1,0 +1,902 @@
+{
+  "$defs": {
+    "collected_item": {
+      "allOf": [
+        {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/collected-item.schema.json"
+        },
+        {
+          "properties": {
+            "capability": {
+              "const": "independent.shellcommand"
+            },
+            "fields": {
+              "additionalProperties": false,
+              "properties": {
+                "command": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "exit_status": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "integer"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "pattern": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "shell": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "stderr_line": {
+                  "items": {
+                    "allOf": [
+                      {
+                        "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                      },
+                      {
+                        "properties": {
+                          "datatype": {
+                            "enum": [
+                              "string"
+                            ],
+                            "type": "string"
+                          }
+                        },
+                        "type": "object"
+                      }
+                    ]
+                  },
+                  "type": "array"
+                },
+                "stdout_line": {
+                  "items": {
+                    "allOf": [
+                      {
+                        "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                      },
+                      {
+                        "properties": {
+                          "datatype": {
+                            "enum": [
+                              "string"
+                            ],
+                            "type": "string"
+                          }
+                        },
+                        "type": "object"
+                      }
+                    ]
+                  },
+                  "type": "array"
+                },
+                "subexpression": {
+                  "items": {
+                    "allOf": [
+                      {
+                        "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                      },
+                      {
+                        "properties": {
+                          "datatype": {
+                            "enum": [
+                              "binary",
+                              "boolean",
+                              "debian_evr",
+                              "fileset_revision",
+                              "float",
+                              "integer",
+                              "ios_version",
+                              "ipv4",
+                              "ipv6",
+                              "rpm_evr",
+                              "string",
+                              "version"
+                            ],
+                            "type": "string"
+                          }
+                        },
+                        "type": "object"
+                      }
+                    ]
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "type": "object"
+        }
+      ]
+    },
+    "native_set_expression": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "operator": {
+                "const": "difference"
+              }
+            },
+            "required": [
+              "operator"
+            ]
+          },
+          "then": {
+            "properties": {
+              "operands": {
+                "maxItems": 2
+              }
+            }
+          }
+        }
+      ],
+      "properties": {
+        "operands": {
+          "items": {
+            "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.shellcommand.schema.json#/$defs/native_set_operand"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "operator": {
+          "default": "union",
+          "description": "Explicit new-authoring selection for set operator; applies only in present set. Preserve source-effective values and visible overrides; no runtime fallback.",
+          "enum": [
+            "union",
+            "intersection",
+            "difference"
+          ],
+          "title": "Set operator",
+          "x-scap-ng-authoring": {
+            "aggressive_preview": false,
+            "authority": "https://github.com/vanderpol/scap-ng/issues/269",
+            "context": "present_set",
+            "control_id": "set_operator",
+            "group": "collection",
+            "hide_when_default": true,
+            "new_authoring_only": true,
+            "oval_source": [
+              {
+                "attribute": "set_operator",
+                "declaration_context": [
+                  "set"
+                ],
+                "declaration_kind": "attribute",
+                "documentation": "",
+                "omission": "Use effective default after occurrence/restriction resolution; not native editor authority",
+                "origin": "XSD_DECLARED_DEFAULT",
+                "oval_qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5}set/@set_operator",
+                "reachability_limit": "QName dependency census; occurrence-specific overrides require review",
+                "source_default": "UNION",
+                "source_line": 454,
+                "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+                "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+                "source_type": "oval-def:SetOperatorEnumeration",
+                "source_xpath": "/xsd:schema/xsd:element[6]/xsd:complexType/xsd:attribute"
+              }
+            ],
+            "preserve_overrides": true,
+            "representation": "value",
+            "serialize_explicitly": true,
+            "version": 1
+          }
+        }
+      },
+      "required": [
+        "operator",
+        "operands"
+      ],
+      "type": "object"
+    },
+    "native_set_operand": {
+      "oneOf": [
+        {
+          "additionalProperties": false,
+          "properties": {
+            "filters": {
+              "items": {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/state_filter"
+              },
+              "type": "array"
+            },
+            "object": {
+              "oneOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/object_reference"
+                },
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.shellcommand.schema.json#/$defs/object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "object",
+            "filters"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "set": {
+              "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.shellcommand.schema.json#/$defs/native_set_expression"
+            }
+          },
+          "required": [
+            "set"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "object": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "for_each"
+            ]
+          },
+          "then": false
+        },
+        {
+          "not": {
+            "required": [
+              "set",
+              "filters"
+            ]
+          }
+        }
+      ],
+      "description": "independent.shellcommand native flat Object; legal selector and acquisition keys are capability-defined. Generic select/collect wrappers are invalid.",
+      "oneOf": [
+        {
+          "not": {
+            "required": [
+              "set"
+            ]
+          },
+          "required": [
+            "command",
+            "error_if_exit_status_not_0",
+            "error_if_stderr_exists",
+            "shell"
+          ]
+        },
+        {
+          "not": {
+            "anyOf": [
+              {
+                "required": [
+                  "command"
+                ]
+              },
+              {
+                "required": [
+                  "error_if_exit_status_not_0"
+                ]
+              },
+              {
+                "required": [
+                  "error_if_stderr_exists"
+                ]
+              },
+              {
+                "required": [
+                  "for_each"
+                ]
+              },
+              {
+                "required": [
+                  "pattern"
+                ]
+              },
+              {
+                "required": [
+                  "shell"
+                ]
+              }
+            ]
+          },
+          "required": [
+            "set"
+          ]
+        }
+      ],
+      "properties": {
+        "capability": {
+          "const": "independent.shellcommand",
+          "description": "Collector capability for a shared or Variable-owned Object. Inline Test Objects inherit it from their Test; do not repeat it there."
+        },
+        "command": {
+          "description": "Single command or one-line shell command supplied by the Assessment.",
+          "oneOf": [
+            {
+              "description": "Single command or one-line shell command supplied by the Assessment.",
+              "type": "string"
+            },
+            {
+              "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/variable_reference"
+            }
+          ]
+        },
+        "error_if_exit_status_not_0": {
+          "default": false,
+          "description": "Treat non-zero command exit status as collection error; OVAL default false is materialized. 'error_if_exit_status_not_0' enables the OVAL interpeter to set the corresponding shellcommand system-characteristicsobject with a flag of 'error' if exit_status is not set to 0. The default is false. New authoring saves this selection explicitly. Source conversion preserves actual/effective values; this is acquisition behavior, not a Test result.",
+          "title": "Collection error if exit status not 0",
+          "type": "boolean",
+          "x-scap-ng-authoring": {
+            "aggressive_preview": false,
+            "authority": "https://github.com/vanderpol/scap-ng/issues/269",
+            "context": "capability_object",
+            "control_id": "collection_error_if_exit_status_not_0",
+            "group": "acquisition",
+            "hide_when_default": true,
+            "new_authoring_only": true,
+            "oval_source": [
+              {
+                "attribute": "error_if_exit_status_not_0",
+                "declaration_context": [
+                  "ShellCommandBehaviors"
+                ],
+                "declaration_kind": "attribute",
+                "documentation": "'error_if_exit_status_not_0' enables the OVAL interpeter to set the corresponding shellcommand system-characteristicsobject with a flag of 'error' if exit_status is not set to 0. The default is false.",
+                "omission": "Use effective default after occurrence/restriction resolution; not native editor authority",
+                "origin": "XSD_DECLARED_DEFAULT",
+                "oval_qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5#independent}ShellCommandBehaviors/@error_if_exit_status_not_0",
+                "reachability_limit": "QName dependency census; occurrence-specific overrides require review",
+                "source_default": "false",
+                "source_line": 1159,
+                "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+                "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+                "source_type": "xsd:boolean",
+                "source_xpath": "/xsd:schema/xsd:complexType[2]/xsd:attribute[1]"
+              }
+            ],
+            "preserve_overrides": true,
+            "representation": "value",
+            "serialize_explicitly": true,
+            "version": 1
+          }
+        },
+        "error_if_stderr_exists": {
+          "default": false,
+          "description": "Treat any stderr output as collection error; OVAL default false is materialized. 'error_if_stderr_exists' enables the OVAL interpeter to set the corresponding shellcommand system-characteristics object with a flag of 'error' if data is returned to stderr. The default is false. New authoring saves this selection explicitly. Source conversion preserves actual/effective values; this is acquisition behavior, not a Test result.",
+          "title": "Collection error if stderr exists",
+          "type": "boolean",
+          "x-scap-ng-authoring": {
+            "aggressive_preview": false,
+            "authority": "https://github.com/vanderpol/scap-ng/issues/269",
+            "context": "capability_object",
+            "control_id": "collection_error_if_stderr_exists",
+            "group": "acquisition",
+            "hide_when_default": true,
+            "new_authoring_only": true,
+            "oval_source": [
+              {
+                "attribute": "error_if_stderr_exists",
+                "declaration_context": [
+                  "ShellCommandBehaviors"
+                ],
+                "declaration_kind": "attribute",
+                "documentation": "'error_if_stderr_exists' enables the OVAL interpeter to set the corresponding shellcommand system-characteristics object with a flag of 'error' if data is returned to stderr. The default is false.",
+                "omission": "Use effective default after occurrence/restriction resolution; not native editor authority",
+                "origin": "XSD_DECLARED_DEFAULT",
+                "oval_qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5#independent}ShellCommandBehaviors/@error_if_stderr_exists",
+                "reachability_limit": "QName dependency census; occurrence-specific overrides require review",
+                "source_default": "false",
+                "source_line": 1164,
+                "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+                "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+                "source_type": "xsd:boolean",
+                "source_xpath": "/xsd:schema/xsd:complexType[2]/xsd:attribute[2]"
+              }
+            ],
+            "preserve_overrides": true,
+            "representation": "value",
+            "serialize_explicitly": true,
+            "version": 1
+          }
+        },
+        "filters": {
+          "description": "Ordered observed-Item Filters applied after acquisition and before Test matching.",
+          "items": {
+            "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/state_filter"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "for_each": {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/foreach_binding"
+        },
+        "object_title": {
+          "description": "Human-readable name of this collection source. It does not select targets or change collection results.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pattern": {
+          "description": "Optional regular expression used to retain matching stdout lines.",
+          "oneOf": [
+            {
+              "description": "Optional regular expression used to retain matching stdout lines.",
+              "type": "string"
+            },
+            {
+              "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/variable_reference"
+            }
+          ]
+        },
+        "set": {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.shellcommand.schema.json#/$defs/native_set_expression",
+          "description": "Acquire a collection through explicit Object Set operands and ordered per-operand filters. Set membership is distinct from Test truth aggregation."
+        },
+        "shell": {
+          "description": "Shell/interpreter used to execute the command.",
+          "oneOf": [
+            {
+              "description": "Shell/interpreter used to execute the command.",
+              "enum": [
+                "sh",
+                "bash",
+                "csh",
+                "ksh",
+                "zsh",
+                "cmd",
+                "powershell",
+                "pwsh"
+              ],
+              "type": "string"
+            },
+            {
+              "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/variable_reference"
+            }
+          ]
+        }
+      },
+      "required": [],
+      "type": "object"
+    },
+    "state_expression": {
+      "oneOf": [
+        {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.shellcommand.schema.json#/$defs/state_predicate"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "and": {
+              "items": {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.shellcommand.schema.json#/$defs/state_expression"
+              },
+              "minItems": 1,
+              "type": "array"
+            }
+          },
+          "required": [
+            "and"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "or": {
+              "items": {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.shellcommand.schema.json#/$defs/state_expression"
+              },
+              "minItems": 1,
+              "type": "array"
+            }
+          },
+          "required": [
+            "or"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "one": {
+              "items": {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.shellcommand.schema.json#/$defs/state_expression"
+              },
+              "minItems": 1,
+              "type": "array"
+            }
+          },
+          "required": [
+            "one"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "xor": {
+              "items": {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.shellcommand.schema.json#/$defs/state_expression"
+              },
+              "minItems": 1,
+              "type": "array"
+            }
+          },
+          "required": [
+            "xor"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "state_predicate": {
+      "oneOf": [
+        {
+          "additionalProperties": false,
+          "properties": {
+            "command": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "command"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "exit_status": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "integer"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "exit_status"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "pattern": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "pattern"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "shell": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "shell"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "stderr_line": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "stderr_line"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "stdout_line": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "binary",
+                        "boolean",
+                        "debian_evr",
+                        "fileset_revision",
+                        "float",
+                        "integer",
+                        "ios_version",
+                        "ipv4",
+                        "ipv6",
+                        "rpm_evr",
+                        "string",
+                        "version"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "stdout_line"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "subexpression": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "binary",
+                        "boolean",
+                        "debian_evr",
+                        "fileset_revision",
+                        "float",
+                        "integer",
+                        "ios_version",
+                        "ipv4",
+                        "ipv6",
+                        "rpm_evr",
+                        "string",
+                        "version"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "subexpression"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "test": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "states": {
+                "minItems": 2,
+                "type": "array"
+              }
+            },
+            "required": [
+              "states"
+            ]
+          },
+          "then": {
+            "required": [
+              "states_match"
+            ]
+          }
+        },
+        {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/test"
+        }
+      ],
+      "not": {
+        "anyOf": [
+          {
+            "required": [
+              "existence"
+            ]
+          },
+          {
+            "required": [
+              "match"
+            ]
+          }
+        ]
+      },
+      "properties": {
+        "capability": {
+          "const": "independent.shellcommand"
+        },
+        "object": {
+          "oneOf": [
+            {
+              "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/object_reference"
+            },
+            {
+              "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.shellcommand.schema.json#/$defs/object"
+            }
+          ]
+        },
+        "reported_elements": {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/reported-elements.schema.json"
+        },
+        "require": {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/test/properties/require"
+        },
+        "test_title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "capability",
+        "object",
+        "reported_elements",
+        "require",
+        "test_title"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.shellcommand.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "DRAFT: SCAP-NG 0.4 generated native capability contract. One authored Test/Object/State grammar; derived from reviewed source OVAL 5.12.3 mappings.",
+  "title": "Generated SCAP-NG capability fragment: independent.shellcommand",
+  "x-authoring-gate": "Draft structural generation only; source enumeration and cross-field semantics require additional validation before 0.4 freeze.",
+  "x-semantic-validator-rules": [
+    {
+      "id": "independent.shellcommand.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability independent.shellcommand."
+    },
+    {
+      "id": "independent.shellcommand.pattern_semantics",
+      "rule": "When object.pattern is present it is a regular expression applied to stdout lines; matching output lines and capture subexpressions remain separately observable."
+    },
+    {
+      "id": "independent.shellcommand.trusted_content",
+      "rule": "Execution of publisher-supplied commands is trust-sensitive. Package/signature verification policy SHALL be enforced outside the command string itself and scanners SHOULD avoid executing unsigned or untrusted content according to deployment policy."
+    },
+    {
+      "id": "independent.shellcommand.not_generic_escape_hatch",
+      "rule": "This capability represents command-oriented assessment. It SHALL NOT replace native scanner capabilities when doing so would discard meaningful native collection semantics such as controlled filesystem traversal, structured evidence, or bounded collection."
+    }
+  ],
+  "x-specification-version": "0.4.0"
+}

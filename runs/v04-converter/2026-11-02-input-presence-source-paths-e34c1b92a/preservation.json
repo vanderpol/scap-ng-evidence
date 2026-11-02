@@ -1,0 +1,45 @@
+{
+  "source_commit": "e34c1b92a61d9cfdf1c1734e54c086aea3aa898b",
+  "unchanged_trees": {
+    "tests": "429056708c6dc7b638b9f98ba4f5503debefcc57",
+    "third_party": "fcf12a1b38d8271cb94119bedbb5896d5581a0e3",
+    "schema/v0.1.0": "8df2f26c80b0b56554723d1101ef3f3fc5d76835",
+    "schema/v0.2.0": "4230ab59a227fabde25e17fe33642a0c628d7e11",
+    "schema/v0.3.0": "711121c44034b2e125b199d93c11e657a4a34101",
+    "docs/examples/owner-contract-20261031": "f8ab66acbb73e7432e98a7964beda488cd67a6c2",
+    "docs/examples/conformance-remediation-20261101": "b977959631e42a18561219c1d7dbe1c1e33b22d7"
+  },
+  "old_programs": [
+    {
+      "path": "docs/examples/owner-contract-20261031/linux-home-mount-nosuid-assessment.json",
+      "source_sha256": "6c54c661e799f2a35b862e5e541f10ed430d7f06a6c78e3c5aac33b616444eaa",
+      "program_sha256": "78a63fdf01a9145d96459385825a08b4e56b8b4f41b899e8f447567db40fe44f",
+      "bytes": 1140
+    },
+    {
+      "path": "docs/examples/owner-contract-20261031/windows-server-2025-control-permissions-sv-278139-assessment.json",
+      "source_sha256": "05ca7f5e1df4c390949676e85e5ee55283d82957b748360e5ddb44c80c1982cd",
+      "program_sha256": "15862f617d7503a0ccc5d3c4aac5a557a658e003fec172ee7bceae92ad1c53db",
+      "bytes": 2009
+    },
+    {
+      "path": "docs/examples/owner-contract-20261031/windows-server-2025-shows-on-lock-screen-sv-278080-assessment.json",
+      "source_sha256": "35bbd3a0e686baa2f5cde6e8b426101bfe4229b20ea1d7fd296e1e9e3e8113f6",
+      "program_sha256": "16e73a5517ee51d7866d16939980f59f3cbdf4422dc9bfb735acee257cd161d1",
+      "bytes": 1415
+    },
+    {
+      "path": "docs/examples/conformance-remediation-20261101/windows-server-2025-control-permissions-sv-278139-assessment.yaml",
+      "source_sha256": "174c93d5e86c0a9478c66507efd1db8deec588cd65c35582738c075d5a563d3c",
+      "program_sha256": "49efb931558ec21344ef762ba120515052719fcd935b2887581a9afbff1d492d",
+      "bytes": 1932
+    },
+    {
+      "path": "docs/examples/conformance-remediation-20261101/windows-server-2025-shows-on-lock-screen-sv-278080-assessment.yaml",
+      "source_sha256": "1a0033280fdfc8defe57104b37268af90860b4b81ce28685f8db5445e7aedca6",
+      "program_sha256": "ebb44a2d4d258780bf167a02b1a6d9fe85e0be94ac1fd4216c7518361e7c7538",
+      "bytes": 1371
+    }
+  ],
+  "all233_metadata_resources_identical_to_5ecc": true
+}

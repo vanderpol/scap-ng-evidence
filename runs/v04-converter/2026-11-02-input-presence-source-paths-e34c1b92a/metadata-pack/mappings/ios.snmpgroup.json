@@ -1,0 +1,74 @@
+{
+  "capability": "ios.snmpgroup",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "snmpgroup": "ios.snmpgroup"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "ipv4_acl": [
+        "string"
+      ],
+      "ipv6_acl": [
+        "string"
+      ],
+      "name": [
+        "string"
+      ],
+      "notify_view": [
+        "string"
+      ],
+      "read_view": [
+        "string"
+      ],
+      "snmpv3_sec_level": [
+        "string"
+      ],
+      "version": [
+        "string"
+      ],
+      "write_view": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "name"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "name": "name"
+    },
+    "shared_semantic_model": "cisco.snmpgroup",
+    "state_field_map": {
+      "ipv4_acl": "ipv4_acl",
+      "ipv6_acl": "ipv6_acl",
+      "name": "name",
+      "notify_view": "notify_view",
+      "read_view": "read_view",
+      "snmpv3_sec_level": "snmpv3_sec_level",
+      "version": "version",
+      "write_view": "write_view"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "ios.snmpgroup.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability ios.snmpgroup."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/ios-definitions-schema.xsd",
+    "item": "snmpgroup_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#ios",
+    "object": "snmpgroup_object",
+    "state": "snmpgroup_state",
+    "test": "snmpgroup_test"
+  },
+  "specification_version": "0.4.0"
+}

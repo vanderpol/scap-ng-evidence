@@ -1,0 +1,54 @@
+{
+  "capability": "iosxe.section",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "section": "iosxe.section"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "config_line": [
+        "string"
+      ],
+      "section_command": [
+        "string"
+      ],
+      "section_config_lines": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "section_command"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "section_command": "section_command"
+    },
+    "shared_semantic_model": "cisco.section",
+    "state_field_map": {
+      "config_line": "config_line",
+      "section_command": "section_command",
+      "section_config_lines": "section_config_lines"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "iosxe.section.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability iosxe.section."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/iosxe-definitions-schema.xsd",
+    "item": "section_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe",
+    "object": "section_object",
+    "state": "section_state",
+    "test": "section_test"
+  },
+  "specification_version": "0.4.0"
+}

@@ -1,0 +1,439 @@
+{
+  "$defs": {
+    "collected_item": {
+      "allOf": [
+        {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/collected-item.schema.json"
+        },
+        {
+          "properties": {
+            "capability": {
+              "const": "asa.version"
+            },
+            "fields": {
+              "additionalProperties": false,
+              "properties": {
+                "asa_build": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "integer"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "asa_major_release": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "version"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "asa_minor_release": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "version"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "asa_release": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                }
+              },
+              "type": "object"
+            }
+          },
+          "type": "object"
+        }
+      ]
+    },
+    "native_set_expression": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "operator": {
+                "const": "difference"
+              }
+            },
+            "required": [
+              "operator"
+            ]
+          },
+          "then": {
+            "properties": {
+              "operands": {
+                "maxItems": 2
+              }
+            }
+          }
+        }
+      ],
+      "properties": {
+        "operands": {
+          "items": {
+            "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/asa.version.schema.json#/$defs/native_set_operand"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "operator": {
+          "enum": [
+            "union",
+            "intersection",
+            "difference"
+          ]
+        }
+      },
+      "required": [
+        "operator",
+        "operands"
+      ],
+      "type": "object"
+    },
+    "native_set_operand": {
+      "oneOf": [
+        {
+          "additionalProperties": false,
+          "properties": {
+            "filters": {
+              "items": {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/state_filter"
+              },
+              "type": "array"
+            },
+            "object": {
+              "oneOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/object_reference"
+                },
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/asa.version.schema.json#/$defs/object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "object",
+            "filters"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "set": {
+              "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/asa.version.schema.json#/$defs/native_set_expression"
+            }
+          },
+          "required": [
+            "set"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "state_expression": {
+      "oneOf": [
+        {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/asa.version.schema.json#/$defs/state_predicate"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "and": {
+              "items": {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/asa.version.schema.json#/$defs/state_expression"
+              },
+              "minItems": 1,
+              "type": "array"
+            }
+          },
+          "required": [
+            "and"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "or": {
+              "items": {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/asa.version.schema.json#/$defs/state_expression"
+              },
+              "minItems": 1,
+              "type": "array"
+            }
+          },
+          "required": [
+            "or"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "one": {
+              "items": {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/asa.version.schema.json#/$defs/state_expression"
+              },
+              "minItems": 1,
+              "type": "array"
+            }
+          },
+          "required": [
+            "one"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "xor": {
+              "items": {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/asa.version.schema.json#/$defs/state_expression"
+              },
+              "minItems": 1,
+              "type": "array"
+            }
+          },
+          "required": [
+            "xor"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "state_predicate": {
+      "oneOf": [
+        {
+          "additionalProperties": false,
+          "properties": {
+            "asa_build": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "integer"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "asa_build"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "asa_major_release": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "version"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "asa_major_release"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "asa_minor_release": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "version"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "asa_minor_release"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "asa_release": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "asa_release"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "test": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "states": {
+                "minItems": 2,
+                "type": "array"
+              }
+            },
+            "required": [
+              "states"
+            ]
+          },
+          "then": {
+            "required": [
+              "states_match"
+            ]
+          }
+        },
+        {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/test"
+        }
+      ],
+      "not": {
+        "anyOf": [
+          {
+            "required": [
+              "existence"
+            ]
+          },
+          {
+            "required": [
+              "match"
+            ]
+          }
+        ]
+      },
+      "properties": {
+        "capability": {
+          "const": "asa.version"
+        },
+        "reported_elements": {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/reported-elements.schema.json"
+        },
+        "require": {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/test/properties/require"
+        },
+        "test_title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "capability",
+        "reported_elements",
+        "require",
+        "test_title"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/asa.version.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "DRAFT: SCAP-NG 0.4 generated native capability contract. One authored Test/Object/State grammar; derived from reviewed source OVAL 5.12.3 mappings.",
+  "title": "Generated SCAP-NG capability fragment: asa.version",
+  "x-authoring-gate": "Draft structural generation only; source enumeration and cross-field semantics require additional validation before 0.4 freeze.",
+  "x-semantic-validator-rules": [
+    {
+      "id": "asa.version.singleton_source",
+      "rule": "The capability evaluates the current ASA software version directly; native content SHALL NOT introduce a meaningless singleton Object."
+    }
+  ],
+  "x-specification-version": "0.4.0"
+}

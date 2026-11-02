@@ -1,0 +1,16 @@
+{
+  "source_commit": "5ecc8f74eb44d9a1b935de4d1fc6f0f74d16c63a",
+  "editor_commit": "90ec19a8bef0291cb71d03e4a6cbb598accbb50b",
+  "evidence_commit": "493d0c8dbc271c76bd0b2b0d6b4d39ff4b1ca0c9",
+  "url": "https://raw.githubusercontent.com/vanderpol/scap-ng-evidence/493d0c8dbc271c76bd0b2b0d6b4d39ff4b1ca0c9/runs/v04-converter/2026-11-01-input-presence-5ecc8f74e/input-presence-qualification.zip",
+  "bytes": 597614,
+  "sha256": "bafb25859ba2048b8b926b37b69e21d55ef92586e2b0ed615d08ba1b1f180adb",
+  "zip_crc": "PASS",
+  "exact_inventory": "PASS",
+  "safe_unique_members": 367,
+  "payload_digests_verified": 366,
+  "adopted_cases": 25,
+  "source_ci_runs_all_pass": 13,
+  "editor_ci_run": 41361289594,
+  "full_schema_freeze_readiness": "NO_GO"
+}

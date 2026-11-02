@@ -1,0 +1,80 @@
+{
+  "capability": "windows.user_sid",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "user_sid55": "windows.user_sid"
+    },
+    "source_item_alias": {
+      "user_sid55_state": "user_sid_item"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "comment": [
+        "string"
+      ],
+      "enabled": [
+        "boolean"
+      ],
+      "full_name": [
+        "string"
+      ],
+      "group": [
+        "string"
+      ],
+      "group_sid": [
+        "string"
+      ],
+      "last_logon": [
+        "integer"
+      ],
+      "password_age_days": [
+        "integer"
+      ],
+      "user": [
+        "string"
+      ],
+      "user_sid": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "user_sid"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "user_sid": "user_sid"
+    },
+    "state_field_map": {
+      "comment": "comment",
+      "enabled": "enabled",
+      "full_name": "full_name",
+      "group": "group",
+      "group_sid": "group_sid",
+      "last_logon": "last_logon",
+      "password_age_days": "password_age_days",
+      "user": "user",
+      "user_sid": "user_sid"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "windows.user_sid.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability windows.user_sid."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/windows-definitions-schema.xsd",
+    "item": "user_sid_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#windows",
+    "object": "user_sid55_object",
+    "state": "user_sid55_state",
+    "test": "user_sid55_test"
+  },
+  "specification_version": "0.4.0"
+}

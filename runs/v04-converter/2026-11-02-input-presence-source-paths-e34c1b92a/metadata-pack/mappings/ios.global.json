@@ -1,0 +1,46 @@
+{
+  "capability": "ios.global",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "global": "ios.global"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "global_command": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "global_command"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "global_command": "global_command"
+    },
+    "shared_semantic_model": "cisco.global",
+    "state_field_map": {
+      "global_command": "global_command"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "ios.global.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability ios.global."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/ios-definitions-schema.xsd",
+    "item": "global_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#ios",
+    "object": "global_object",
+    "state": "global_state",
+    "test": "global_test"
+  },
+  "specification_version": "0.4.0"
+}

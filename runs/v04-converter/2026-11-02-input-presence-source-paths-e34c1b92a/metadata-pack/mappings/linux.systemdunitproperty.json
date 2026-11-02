@@ -1,0 +1,65 @@
+{
+  "capability": "linux.systemdunitproperty",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "systemdunitproperty": "linux.systemdunitproperty"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "property": [
+        "string"
+      ],
+      "unit": [
+        "string"
+      ],
+      "value": [
+        "string",
+        "boolean",
+        "integer",
+        "float",
+        "binary",
+        "version",
+        "ipv4",
+        "ipv6",
+        "rpm_evr",
+        "debian_evr",
+        "fileset_revision",
+        "ios_version"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "unit",
+        "property"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "property": "property",
+      "unit": "unit"
+    },
+    "state_field_map": {
+      "property": "property",
+      "unit": "unit",
+      "value": "value"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "linux.systemdunitproperty.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability linux.systemdunitproperty."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/linux-definitions-schema.xsd",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#linux",
+    "object": "systemdunitproperty_object",
+    "state": "systemdunitproperty_state",
+    "test": "systemdunitproperty_test"
+  },
+  "specification_version": "0.4.0"
+}

@@ -1,0 +1,47 @@
+{
+  "$defs": {
+    "test": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/test"
+        }
+      ],
+      "properties": {
+        "capability": {
+          "const": "independent.unknown"
+        },
+        "reported_elements": {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/reported-elements.schema.json"
+        },
+        "require": {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/test/properties/require"
+        },
+        "test_title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "capability",
+        "require",
+        "test_title"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.unknown.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "DRAFT: SCAP-NG 0.4 generated native capability contract. One authored Test/Object/State grammar; derived from reviewed source OVAL 5.12.3 mappings.",
+  "title": "Generated SCAP-NG capability fragment: independent.unknown",
+  "x-fixed-result": "unknown",
+  "x-semantic-validator-rules": [
+    {
+      "id": "independent.unknown.fixed_result",
+      "rule": "Evaluation always yields unknown. The authored Test carries no Object, State, existence/match control, or runtime result field."
+    }
+  ],
+  "x-specification-version": "0.4.0"
+}

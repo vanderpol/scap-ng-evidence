@@ -1,0 +1,160 @@
+{
+  "review_cases": [
+    {
+      "case": 1,
+      "name": "omitted optional",
+      "status": "PASS"
+    },
+    {
+      "case": 2,
+      "name": "provided integer",
+      "status": "PASS"
+    },
+    {
+      "case": 3,
+      "name": "provided empty",
+      "status": "PASS"
+    },
+    {
+      "case": 4,
+      "name": "invalid empty",
+      "status": "PASS"
+    },
+    {
+      "case": 5,
+      "name": "provided false",
+      "status": "PASS"
+    },
+    {
+      "case": 6,
+      "name": "provided empty text",
+      "status": "PASS"
+    },
+    {
+      "case": 7,
+      "name": "omitted required",
+      "status": "PASS"
+    },
+    {
+      "case": 8,
+      "name": "type conflict",
+      "status": "PASS"
+    },
+    {
+      "case": 9,
+      "name": "unknown provision",
+      "status": "PASS"
+    },
+    {
+      "case": 10,
+      "name": "provider failure",
+      "status": "PASS"
+    },
+    {
+      "case": 11,
+      "name": "pending provision",
+      "status": "PASS"
+    },
+    {
+      "case": 12,
+      "name": "dangling guard Input",
+      "status": "PASS"
+    },
+    {
+      "case": 13,
+      "name": "wrong-kind guard reference",
+      "status": "PASS"
+    },
+    {
+      "case": 14,
+      "name": "guard in general and/not",
+      "status": "PASS"
+    },
+    {
+      "case": 15,
+      "name": "guarded direct Test use",
+      "status": "PASS"
+    },
+    {
+      "case": 16,
+      "name": "unguarded same Test elsewhere",
+      "status": "PASS"
+    },
+    {
+      "case": 17,
+      "name": "guarded Variable-to-Object chain",
+      "status": "PASS"
+    },
+    {
+      "case": 18,
+      "name": "two optional Inputs with one guard",
+      "status": "PASS"
+    },
+    {
+      "case": 19,
+      "name": "nested two positive guards",
+      "status": "PASS"
+    },
+    {
+      "case": 20,
+      "name": "false first guard then unrelated else_if consumer",
+      "status": "PASS"
+    },
+    {
+      "case": 21,
+      "name": "unselected branch has missing static reference",
+      "status": "PASS"
+    },
+    {
+      "case": 22,
+      "name": "unselected branch has valid guarded dependency",
+      "status": "PASS"
+    },
+    {
+      "case": 23,
+      "name": "selected then produces false/error",
+      "status": "PASS"
+    },
+    {
+      "case": 24,
+      "name": "cache from another binding invocation",
+      "status": "PASS"
+    },
+    {
+      "case": 25,
+      "name": "invalid required Input on unselected branch",
+      "status": "PASS"
+    }
+  ],
+  "adopted_cases_passed": 25,
+  "test_methods": 24,
+  "test_method_results": {
+    "test_01_to_11_adopted_binding_vectors": "PASS",
+    "test_12_dangling_guard_input": "PASS",
+    "test_13_wrong_kind_guard": "PASS",
+    "test_14_general_boolean_and_not_do_not_authorize_consumption": "PASS",
+    "test_15_guarded_direct_use_public_direct_and_independent": "PASS",
+    "test_16_guarded_use_does_not_authorize_same_test_elsewhere": "PASS",
+    "test_17_transitive_variable_object_chain_is_guarded_and_lazy": "PASS",
+    "test_18_two_optional_inputs_one_guard_rejects": "PASS",
+    "test_19_nested_positive_guards_authorize_both": "PASS",
+    "test_20_false_guard_does_not_authorize_else_if": "PASS",
+    "test_21_unselected_branch_still_closes_references": "PASS",
+    "test_22_unselected_valid_consumer_never_reads_supplied_outcome": "PASS",
+    "test_23_selected_false_and_error_never_fall_back": "PASS",
+    "test_24_cache_identity_includes_invocation_and_binding": "PASS",
+    "test_25_invalid_required_binding_errors_even_when_consumer_unselected": "PASS",
+    "test_binding_trace_schema_preserves_reasons_and_rejects_missing_provenance": "PASS",
+    "test_else_if_and_boolean_selected_paths_keep_guards_and_trace_order": "PASS",
+    "test_explicit_states_immutable_snapshot_and_constraints": "PASS",
+    "test_independent_complete_package_and_version_tamper": "PASS",
+    "test_invalid_binding_precedence_is_independent_of_input_name_order": "PASS",
+    "test_literal_record_data_is_not_a_reference_and_direct_selector_inputs_stay_unsupported": "PASS",
+    "test_old_instruction_version_rejects_presence_and_datatype_stays_compatible": "PASS",
+    "test_pinned_source_derived_example_has_distinct_policy_identity": "PASS",
+    "test_presence_program_paths_resolve_against_authored_logical_tree": "PASS"
+  },
+  "errors": 0,
+  "failures": 0,
+  "scope": "static public/direct/independent package and supplied-binding harness; not scanner/provider/UI execution"
+}

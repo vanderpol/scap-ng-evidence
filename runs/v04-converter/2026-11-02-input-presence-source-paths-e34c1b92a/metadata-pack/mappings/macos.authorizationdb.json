@@ -1,0 +1,66 @@
+{
+  "capability": "macos.authorizationdb",
+  "format": "scap-ng-capability-mapping-0.2",
+  "last_modified": "2026-10-06",
+  "migration_crosswalk": {
+    "capability": {
+      "authorizationdb": "macos.authorizationdb"
+    }
+  },
+  "native": {
+    "field_datatypes": {
+      "right_name": [
+        "string"
+      ],
+      "value_of": [
+        "string",
+        "boolean",
+        "integer",
+        "float",
+        "binary",
+        "version",
+        "ipv4",
+        "ipv6",
+        "rpm_evr",
+        "debian_evr",
+        "fileset_revision",
+        "ios_version"
+      ],
+      "xpath": [
+        "string"
+      ]
+    },
+    "object_selector_alternatives": [
+      [
+        "right_name",
+        "xpath"
+      ]
+    ],
+    "post_alignment_ready": true,
+    "selector_map": {
+      "right_name": "right_name",
+      "xpath": "xpath"
+    },
+    "state_field_map": {
+      "right_name": "right_name",
+      "value_of": "value_of",
+      "xpath": "xpath"
+    }
+  },
+  "semantic_validator_rules": [
+    {
+      "id": "macos.authorizationdb.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability macos.authorizationdb."
+    }
+  ],
+  "source": {
+    "definitions_schema": "third_party/scap-1.4-schemas/oval_5.12.3/macos-definitions-schema.xsd",
+    "item": "authorizationdb_item",
+    "language": "OVAL 5.12.3",
+    "namespace": "http://oval.mitre.org/XMLSchema/oval-definitions-5#macos",
+    "object": "authorizationdb_object",
+    "state": "authorizationdb_state",
+    "test": "authorizationdb_test"
+  },
+  "specification_version": "0.4.0"
+}

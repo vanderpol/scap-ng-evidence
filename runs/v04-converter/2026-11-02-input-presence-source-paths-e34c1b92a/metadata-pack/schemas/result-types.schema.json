@@ -1,0 +1,253 @@
+{
+  "$defs": {
+    "assessment_class": {
+      "description": "Defines what technical truth means. Policy-facing pass/fail interpretation belongs to the consuming Rule.",
+      "enum": [
+        "compliance",
+        "vulnerability",
+        "patch",
+        "inventory",
+        "miscellaneous"
+      ],
+      "type": "string"
+    },
+    "assessment_purpose": {
+      "enum": [
+        "assessment",
+        "applicability"
+      ],
+      "type": "string"
+    },
+    "bounded_evidence": {
+      "additionalProperties": false,
+      "properties": {
+        "actual_failures": {
+          "oneOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "enum": [
+                "unknown"
+              ],
+              "type": "string"
+            }
+          ]
+        },
+        "maximum": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "observed_failures": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "returned": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "stop_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "truncated_population": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "observed_failures",
+        "actual_failures",
+        "maximum",
+        "returned",
+        "truncated_population"
+      ],
+      "type": "object"
+    },
+    "completeness": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_complete": {
+          "type": "boolean"
+        },
+        "logical_complete": {
+          "type": "boolean"
+        },
+        "population_complete": {
+          "type": "boolean"
+        },
+        "stop_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "logical_complete",
+        "population_complete",
+        "evidence_complete"
+      ],
+      "type": "object"
+    },
+    "technical_outcome": {
+      "description": "Six-state technical Assessment/Test outcome. Informational is deliberately not a seventh technical truth value.",
+      "enum": [
+        "true",
+        "false",
+        "error",
+        "unknown",
+        "not_evaluated",
+        "not_applicable"
+      ],
+      "type": "string"
+    },
+    "typed_value": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "does_not_exist",
+                  "error",
+                  "not_collected"
+                ]
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "not": {
+              "required": [
+                "value"
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "redacted": {
+                "const": true
+              }
+            },
+            "required": [
+              "redacted"
+            ]
+          },
+          "then": {
+            "not": {
+              "required": [
+                "value"
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "allOf": [
+              {
+                "properties": {
+                  "datatype": {
+                    "const": "record"
+                  }
+                },
+                "required": [
+                  "datatype"
+                ]
+              },
+              {
+                "not": {
+                  "properties": {
+                    "redacted": {
+                      "const": true
+                    }
+                  },
+                  "required": [
+                    "redacted"
+                  ]
+                }
+              },
+              {
+                "not": {
+                  "properties": {
+                    "status": {
+                      "enum": [
+                        "does_not_exist",
+                        "error",
+                        "not_collected"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "status"
+                  ]
+                }
+              }
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "additionalProperties": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/$defs/typed_value"
+                    },
+                    {
+                      "items": {
+                        "$ref": "#/$defs/typed_value"
+                      },
+                      "type": "array"
+                    }
+                  ]
+                },
+                "type": "object"
+              }
+            },
+            "required": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "description": "A typed scalar or record result value. Multi-valued entities/Variables are represented by arrays of typed_value rather than by an implicit multi-value scalar.",
+      "properties": {
+        "datatype": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "redacted": {
+          "description": "When true, the value has been intentionally omitted from emitted results/evidence. A redacted typed value SHALL NOT carry a value property.",
+          "type": "boolean"
+        },
+        "status": {
+          "enum": [
+            "exists",
+            "does_not_exist",
+            "error",
+            "not_collected"
+          ]
+        },
+        "value": {}
+      },
+      "required": [
+        "datatype",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Reusable structural types for SCAP-NG result schemas. Runtime truth/aggregation semantics are defined by the specification and conformance tests, not by JSON Schema alone.",
+  "title": "Draft shared result types 0.4.0",
+  "x-last-modified": "2026-10-06",
+  "x-scap-ng-version": "0.4.0"
+}

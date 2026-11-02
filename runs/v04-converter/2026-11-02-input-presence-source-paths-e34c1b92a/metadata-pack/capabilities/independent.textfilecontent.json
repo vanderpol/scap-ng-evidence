@@ -1,0 +1,1379 @@
+{
+  "$defs": {
+    "collected_item": {
+      "allOf": [
+        {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/collected-item.schema.json"
+        },
+        {
+          "properties": {
+            "capability": {
+              "const": "independent.textfilecontent"
+            },
+            "fields": {
+              "additionalProperties": false,
+              "properties": {
+                "directory": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "full_path": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "instance": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "integer"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "name": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "pattern": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                },
+                "subexpression": {
+                  "items": {
+                    "allOf": [
+                      {
+                        "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                      },
+                      {
+                        "properties": {
+                          "datatype": {
+                            "enum": [
+                              "binary",
+                              "boolean",
+                              "debian_evr",
+                              "fileset_revision",
+                              "float",
+                              "integer",
+                              "ios_version",
+                              "ipv4",
+                              "ipv6",
+                              "rpm_evr",
+                              "string",
+                              "version"
+                            ],
+                            "type": "string"
+                          }
+                        },
+                        "type": "object"
+                      }
+                    ]
+                  },
+                  "type": "array"
+                },
+                "text": {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/result-types.schema.json#/$defs/typed_value"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "binary",
+                            "boolean",
+                            "debian_evr",
+                            "fileset_revision",
+                            "float",
+                            "integer",
+                            "ios_version",
+                            "ipv4",
+                            "ipv6",
+                            "rpm_evr",
+                            "string",
+                            "version"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ]
+                }
+              },
+              "type": "object"
+            }
+          },
+          "type": "object"
+        }
+      ]
+    },
+    "native_set_expression": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "operator": {
+                "const": "difference"
+              }
+            },
+            "required": [
+              "operator"
+            ]
+          },
+          "then": {
+            "properties": {
+              "operands": {
+                "maxItems": 2
+              }
+            }
+          }
+        }
+      ],
+      "properties": {
+        "operands": {
+          "items": {
+            "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.textfilecontent.schema.json#/$defs/native_set_operand"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "operator": {
+          "default": "union",
+          "description": "Explicit new-authoring selection for set operator; applies only in present set. Preserve source-effective values and visible overrides; no runtime fallback.",
+          "enum": [
+            "union",
+            "intersection",
+            "difference"
+          ],
+          "title": "Set operator",
+          "x-scap-ng-authoring": {
+            "aggressive_preview": false,
+            "authority": "https://github.com/vanderpol/scap-ng/issues/269",
+            "context": "present_set",
+            "control_id": "set_operator",
+            "group": "collection",
+            "hide_when_default": true,
+            "new_authoring_only": true,
+            "oval_source": [
+              {
+                "attribute": "set_operator",
+                "declaration_context": [
+                  "set"
+                ],
+                "declaration_kind": "attribute",
+                "documentation": "",
+                "omission": "Use effective default after occurrence/restriction resolution; not native editor authority",
+                "origin": "XSD_DECLARED_DEFAULT",
+                "oval_qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5}set/@set_operator",
+                "reachability_limit": "QName dependency census; occurrence-specific overrides require review",
+                "source_default": "UNION",
+                "source_line": 454,
+                "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+                "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+                "source_type": "oval-def:SetOperatorEnumeration",
+                "source_xpath": "/xsd:schema/xsd:element[6]/xsd:complexType/xsd:attribute"
+              }
+            ],
+            "preserve_overrides": true,
+            "representation": "value",
+            "serialize_explicitly": true,
+            "version": 1
+          }
+        }
+      },
+      "required": [
+        "operator",
+        "operands"
+      ],
+      "type": "object"
+    },
+    "native_set_operand": {
+      "oneOf": [
+        {
+          "additionalProperties": false,
+          "properties": {
+            "filters": {
+              "items": {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/state_filter"
+              },
+              "type": "array"
+            },
+            "object": {
+              "oneOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/object_reference"
+                },
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.textfilecontent.schema.json#/$defs/object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "object",
+            "filters"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "set": {
+              "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.textfilecontent.schema.json#/$defs/native_set_expression"
+            }
+          },
+          "required": [
+            "set"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "object": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "for_each"
+            ]
+          },
+          "then": {
+            "allOf": [
+              {
+                "anyOf": [
+                  {
+                    "required": [
+                      "full_path",
+                      "instance",
+                      "pattern"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "directory",
+                      "instance",
+                      "name",
+                      "pattern"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "not": {
+              "required": [
+                "set"
+              ]
+            },
+            "required": []
+          }
+        },
+        {
+          "if": {
+            "anyOf": [
+              {
+                "required": [
+                  "full_path"
+                ]
+              },
+              {
+                "required": [
+                  "directory"
+                ]
+              }
+            ]
+          },
+          "then": {
+            "required": [
+              "filesystem"
+            ]
+          }
+        },
+        {
+          "not": {
+            "required": [
+              "set",
+              "filters"
+            ]
+          }
+        }
+      ],
+      "description": "independent.textfilecontent native flat Object; legal selector and acquisition keys are capability-defined. Generic select/collect wrappers are invalid.",
+      "oneOf": [
+        {
+          "not": {
+            "anyOf": [
+              {
+                "required": [
+                  "directory"
+                ]
+              },
+              {
+                "required": [
+                  "name"
+                ]
+              },
+              {
+                "required": [
+                  "set"
+                ]
+              }
+            ]
+          },
+          "required": [
+            "full_path",
+            "ignore_case",
+            "instance",
+            "item_creation",
+            "multiline",
+            "pattern",
+            "singleline"
+          ]
+        },
+        {
+          "not": {
+            "anyOf": [
+              {
+                "required": [
+                  "full_path"
+                ]
+              },
+              {
+                "required": [
+                  "set"
+                ]
+              }
+            ]
+          },
+          "required": [
+            "directory",
+            "ignore_case",
+            "instance",
+            "item_creation",
+            "multiline",
+            "name",
+            "pattern",
+            "singleline"
+          ]
+        },
+        {
+          "not": {
+            "anyOf": [
+              {
+                "required": [
+                  "directory"
+                ]
+              },
+              {
+                "required": [
+                  "for_each"
+                ]
+              },
+              {
+                "required": [
+                  "full_path"
+                ]
+              },
+              {
+                "required": [
+                  "ignore_case"
+                ]
+              },
+              {
+                "required": [
+                  "instance"
+                ]
+              },
+              {
+                "required": [
+                  "item_creation"
+                ]
+              },
+              {
+                "required": [
+                  "multiline"
+                ]
+              },
+              {
+                "required": [
+                  "name"
+                ]
+              },
+              {
+                "required": [
+                  "pattern"
+                ]
+              },
+              {
+                "required": [
+                  "singleline"
+                ]
+              }
+            ]
+          },
+          "required": [
+            "set"
+          ]
+        }
+      ],
+      "properties": {
+        "capability": {
+          "const": "independent.textfilecontent",
+          "description": "Collector capability for a shared or Variable-owned Object. Inline Test Objects inherit it from their Test; do not repeat it there."
+        },
+        "directory": {
+          "description": "Explicit new-authoring selection for selector operator; applies only in selector comparison. Preserve source-effective values and visible overrides; no runtime fallback.",
+          "oneOf": [
+            {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/object_entity_base"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ],
+              "description": "0.4 native Object selector: directory (type checked)"
+            },
+            {
+              "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/foreach_selector_binding"
+            }
+          ],
+          "title": "Selector operator",
+          "x-scap-ng-authoring": {
+            "aggressive_preview": false,
+            "authority": "https://github.com/vanderpol/scap-ng/issues/269",
+            "context": "selector_comparison",
+            "control_id": "selector_operator",
+            "default_key": "equals",
+            "group": "comparison",
+            "hide_scope": "choice_only_arguments_remain_visible",
+            "hide_when_default": true,
+            "new_authoring_only": true,
+            "oval_source": [
+              {
+                "attribute": "operation",
+                "declaration_context": [
+                  "EntityAttributeGroup"
+                ],
+                "declaration_kind": "attribute",
+                "documentation": "The optional operation attribute determines how the individual entities should be evaluated (the default operation is 'equals').",
+                "omission": "Use effective default after occurrence/restriction resolution; not native editor authority",
+                "origin": "XSD_DECLARED_DEFAULT",
+                "oval_qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5}EntityAttributeGroup/@operation",
+                "reachability_limit": "QName dependency census; occurrence-specific overrides require review",
+                "source_default": "equals",
+                "source_line": 1380,
+                "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+                "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+                "source_type": "oval:OperationEnumeration",
+                "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:attribute[2]"
+              }
+            ],
+            "preserve_overrides": true,
+            "representation": "key",
+            "serialize_explicitly": true,
+            "version": 1
+          }
+        },
+        "filesystem": {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/filesystem_scope"
+        },
+        "filters": {
+          "description": "Ordered observed-Item Filters applied after acquisition and before Test matching.",
+          "items": {
+            "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/state_filter"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "for_each": {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/foreach_binding"
+        },
+        "full_path": {
+          "description": "Explicit new-authoring selection for selector operator; applies only in selector comparison. Preserve source-effective values and visible overrides; no runtime fallback.",
+          "oneOf": [
+            {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/object_entity_base"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ],
+              "description": "0.4 native Object selector: full_path (type checked)"
+            },
+            {
+              "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/foreach_selector_binding"
+            }
+          ],
+          "title": "Selector operator",
+          "x-scap-ng-authoring": {
+            "aggressive_preview": false,
+            "authority": "https://github.com/vanderpol/scap-ng/issues/269",
+            "context": "selector_comparison",
+            "control_id": "selector_operator",
+            "default_key": "equals",
+            "group": "comparison",
+            "hide_scope": "choice_only_arguments_remain_visible",
+            "hide_when_default": true,
+            "new_authoring_only": true,
+            "oval_source": [
+              {
+                "attribute": "operation",
+                "declaration_context": [
+                  "EntityAttributeGroup"
+                ],
+                "declaration_kind": "attribute",
+                "documentation": "The optional operation attribute determines how the individual entities should be evaluated (the default operation is 'equals').",
+                "omission": "Use effective default after occurrence/restriction resolution; not native editor authority",
+                "origin": "XSD_DECLARED_DEFAULT",
+                "oval_qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5}EntityAttributeGroup/@operation",
+                "reachability_limit": "QName dependency census; occurrence-specific overrides require review",
+                "source_default": "equals",
+                "source_line": 1380,
+                "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+                "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+                "source_type": "oval:OperationEnumeration",
+                "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:attribute[2]"
+              }
+            ],
+            "preserve_overrides": true,
+            "representation": "key",
+            "serialize_explicitly": true,
+            "version": 1
+          }
+        },
+        "ignore_case": {
+          "default": false,
+          "description": "OVAL textfilecontent54 ignore_case behavior; importers materialize the default false. 'ignore_case' indicates whether case should be considered when matching system values against the regular expression provided by the pattern entity. This behavior is intended to align with the Perl regular expression 'i' modifier: if true, case will be ignored. If false, case will not be ignored. The default is false. New authoring saves this selection explicitly. Source conversion preserves actual/effective values; this is acquisition behavior, not a Test result.",
+          "title": "Collection ignore case",
+          "type": "boolean",
+          "x-scap-ng-authoring": {
+            "aggressive_preview": false,
+            "authority": "https://github.com/vanderpol/scap-ng/issues/269",
+            "context": "capability_object",
+            "control_id": "collection_ignore_case",
+            "group": "acquisition",
+            "hide_when_default": true,
+            "new_authoring_only": true,
+            "oval_source": [
+              {
+                "attribute": "ignore_case",
+                "declaration_context": [
+                  "Textfilecontent54Behaviors"
+                ],
+                "declaration_kind": "attribute",
+                "documentation": "'ignore_case' indicates whether case should be considered when matching system values against the regular expression provided by the pattern entity. This behavior is intended to align with the Perl regular expression 'i' modifier: if true, case will be ignored. If false, case will not be ignored. The default is false.",
+                "omission": "Use effective default after occurrence/restriction resolution; not native editor authority",
+                "origin": "XSD_DECLARED_DEFAULT",
+                "oval_qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5#independent}Textfilecontent54Behaviors/@ignore_case",
+                "reachability_limit": "QName dependency census; occurrence-specific overrides require review",
+                "source_default": "false",
+                "source_line": 2128,
+                "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+                "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+                "source_type": "xsd:boolean",
+                "source_xpath": "/xsd:schema/xsd:complexType[4]/xsd:complexContent/xsd:extension/xsd:attribute[1]"
+              }
+            ],
+            "preserve_overrides": true,
+            "representation": "value",
+            "serialize_explicitly": true,
+            "version": 1
+          }
+        },
+        "instance": {
+          "description": "Explicit new-authoring selection for selector operator; applies only in selector comparison. Preserve source-effective values and visible overrides; no runtime fallback.",
+          "oneOf": [
+            {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/object_entity_base"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "integer"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ],
+              "description": "0.4 native Object selector: instance (type checked)"
+            },
+            {
+              "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/foreach_selector_binding"
+            }
+          ],
+          "title": "Selector operator",
+          "x-scap-ng-authoring": {
+            "aggressive_preview": false,
+            "authority": "https://github.com/vanderpol/scap-ng/issues/269",
+            "context": "selector_comparison",
+            "control_id": "selector_operator",
+            "default_key": "equals",
+            "group": "comparison",
+            "hide_scope": "choice_only_arguments_remain_visible",
+            "hide_when_default": true,
+            "new_authoring_only": true,
+            "oval_source": [
+              {
+                "attribute": "operation",
+                "declaration_context": [
+                  "EntityAttributeGroup"
+                ],
+                "declaration_kind": "attribute",
+                "documentation": "The optional operation attribute determines how the individual entities should be evaluated (the default operation is 'equals').",
+                "omission": "Use effective default after occurrence/restriction resolution; not native editor authority",
+                "origin": "XSD_DECLARED_DEFAULT",
+                "oval_qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5}EntityAttributeGroup/@operation",
+                "reachability_limit": "QName dependency census; occurrence-specific overrides require review",
+                "source_default": "equals",
+                "source_line": 1380,
+                "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+                "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+                "source_type": "oval:OperationEnumeration",
+                "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:attribute[2]"
+              }
+            ],
+            "preserve_overrides": true,
+            "representation": "key",
+            "serialize_explicitly": true,
+            "version": 1
+          }
+        },
+        "item_creation": {
+          "default": "all_object_elements_fullfilled",
+          "description": "OVAL textfilecontent54 item_creation behavior, preserving the source vocabulary. For 'all_object_elements_fullfilled', items are only created when the entire object requirements are met (filepath, pattern, instance). In other words, items are created only when both a designated file exists and the specified pattern matches at least once within its contents. For 'filepath_exists', items are created for each filepath on the system that matches the filepath/path/filname object requirement, whether or not there are any matches to the specified pattern. This option can be used to prevent false negatives in instances where text files exist that match the filepath object requirements, but do not contain the required pattern inside the file, which would otherwise prevent item creation. If the 'item_creation' behavior causes collection of an OVAL item with status of 'exists', the associated system_characteristics object(s) will reflect the existence of that collected item. New authoring saves this selection explicitly. Source conversion preserves actual/effective values; this is acquisition behavior, not a Test result.",
+          "enum": [
+            "all_object_elements_fullfilled",
+            "filepath_exists"
+          ],
+          "title": "Collection item creation all object elements fullfilled",
+          "type": "string",
+          "x-scap-ng-authoring": {
+            "aggressive_preview": false,
+            "authority": "https://github.com/vanderpol/scap-ng/issues/269",
+            "context": "capability_object",
+            "control_id": "collection_item_creation_all_object_elements_fullfilled",
+            "group": "acquisition",
+            "hide_when_default": true,
+            "new_authoring_only": true,
+            "oval_source": [
+              {
+                "attribute": "item_creation",
+                "declaration_context": [
+                  "Textfilecontent54Behaviors"
+                ],
+                "declaration_kind": "attribute",
+                "documentation": "For 'all_object_elements_fullfilled', items are only created when the entire object requirements are met (filepath, pattern, instance). In other words, items are created only when both a designated file exists and the specified pattern matches at least once within its contents. For 'filepath_exists', items are created for each filepath on the system that matches the filepath/path/filname object requirement, whether or not there are any matches to the specified pattern. This option can be used to prevent false negatives in instances where text files exist that match the filepath object requirements, but do not contain the required pattern inside the file, which would otherwise prevent item creation. If the 'item_creation' behavior causes collection of an OVAL item with status of 'exists', the associated system_characteristics object(s) will reflect the existence of that collected item.",
+                "omission": "Use effective default after occurrence/restriction resolution; not native editor authority",
+                "origin": "XSD_DECLARED_DEFAULT",
+                "oval_qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5#independent}Textfilecontent54Behaviors/@item_creation",
+                "reachability_limit": "QName dependency census; occurrence-specific overrides require review",
+                "source_default": "all_object_elements_fullfilled",
+                "source_line": 2143,
+                "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+                "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+                "source_type": null,
+                "source_xpath": "/xsd:schema/xsd:complexType[4]/xsd:complexContent/xsd:extension/xsd:attribute[4]"
+              }
+            ],
+            "preserve_overrides": true,
+            "representation": "value",
+            "serialize_explicitly": true,
+            "version": 1
+          }
+        },
+        "multiline": {
+          "default": true,
+          "description": "OVAL textfilecontent54 multiline behavior; importers materialize the default true. 'multiline' enables multiple line semantics in the regular expression provided by the pattern entity. This behavior is intended to align with the Perl regular expression 'm' modifier: if true, the '^' and '$' metacharacters will match both at the beginning/end of a string, and immediately after/before newline characters. If false, they will match only at the beginning/end of a string. The default is true. New authoring saves this selection explicitly. Source conversion preserves actual/effective values; this is acquisition behavior, not a Test result.",
+          "title": "Collection multiline",
+          "type": "boolean",
+          "x-scap-ng-authoring": {
+            "aggressive_preview": false,
+            "authority": "https://github.com/vanderpol/scap-ng/issues/269",
+            "context": "capability_object",
+            "control_id": "collection_multiline",
+            "group": "acquisition",
+            "hide_when_default": true,
+            "new_authoring_only": true,
+            "oval_source": [
+              {
+                "attribute": "multiline",
+                "declaration_context": [
+                  "Textfilecontent54Behaviors"
+                ],
+                "declaration_kind": "attribute",
+                "documentation": "'multiline' enables multiple line semantics in the regular expression provided by the pattern entity. This behavior is intended to align with the Perl regular expression 'm' modifier: if true, the '^' and '$' metacharacters will match both at the beginning/end of a string, and immediately after/before newline characters. If false, they will match only at the beginning/end of a string. The default is true.",
+                "omission": "Use effective default after occurrence/restriction resolution; not native editor authority",
+                "origin": "XSD_DECLARED_DEFAULT",
+                "oval_qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5#independent}Textfilecontent54Behaviors/@multiline",
+                "reachability_limit": "QName dependency census; occurrence-specific overrides require review",
+                "source_default": "true",
+                "source_line": 2133,
+                "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+                "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+                "source_type": "xsd:boolean",
+                "source_xpath": "/xsd:schema/xsd:complexType[4]/xsd:complexContent/xsd:extension/xsd:attribute[2]"
+              }
+            ],
+            "preserve_overrides": true,
+            "representation": "value",
+            "serialize_explicitly": true,
+            "version": 1
+          }
+        },
+        "name": {
+          "description": "Explicit new-authoring selection for selector operator; applies only in selector comparison. Preserve source-effective values and visible overrides; no runtime fallback.",
+          "oneOf": [
+            {
+              "oneOf": [
+                {
+                  "allOf": [
+                    {
+                      "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/object_entity_base"
+                    },
+                    {
+                      "properties": {
+                        "datatype": {
+                          "enum": [
+                            "string"
+                          ]
+                        }
+                      },
+                      "type": "object"
+                    }
+                  ],
+                  "description": "0.4 native Object selector: name (type checked)"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            {
+              "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/foreach_selector_binding"
+            }
+          ],
+          "title": "Selector operator",
+          "x-scap-ng-authoring": {
+            "aggressive_preview": false,
+            "authority": "https://github.com/vanderpol/scap-ng/issues/269",
+            "context": "selector_comparison",
+            "control_id": "selector_operator",
+            "default_key": "equals",
+            "group": "comparison",
+            "hide_scope": "choice_only_arguments_remain_visible",
+            "hide_when_default": true,
+            "new_authoring_only": true,
+            "oval_source": [
+              {
+                "attribute": "operation",
+                "declaration_context": [
+                  "EntityAttributeGroup"
+                ],
+                "declaration_kind": "attribute",
+                "documentation": "The optional operation attribute determines how the individual entities should be evaluated (the default operation is 'equals').",
+                "omission": "Use effective default after occurrence/restriction resolution; not native editor authority",
+                "origin": "XSD_DECLARED_DEFAULT",
+                "oval_qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5}EntityAttributeGroup/@operation",
+                "reachability_limit": "QName dependency census; occurrence-specific overrides require review",
+                "source_default": "equals",
+                "source_line": 1380,
+                "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+                "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+                "source_type": "oval:OperationEnumeration",
+                "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:attribute[2]"
+              }
+            ],
+            "preserve_overrides": true,
+            "representation": "key",
+            "serialize_explicitly": true,
+            "version": 1
+          }
+        },
+        "object_title": {
+          "description": "Human-readable name of this collection source. It does not select targets or change collection results.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pattern": {
+          "description": "Explicit new-authoring selection for selector operator; applies only in selector comparison. Preserve source-effective values and visible overrides; no runtime fallback.",
+          "oneOf": [
+            {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/object_entity_base"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ],
+              "description": "0.4 native Object selector: pattern (type checked)"
+            },
+            {
+              "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/foreach_selector_binding"
+            }
+          ],
+          "title": "Selector operator",
+          "x-scap-ng-authoring": {
+            "aggressive_preview": false,
+            "authority": "https://github.com/vanderpol/scap-ng/issues/269",
+            "context": "selector_comparison",
+            "control_id": "selector_operator",
+            "default_key": "equals",
+            "group": "comparison",
+            "hide_scope": "choice_only_arguments_remain_visible",
+            "hide_when_default": true,
+            "new_authoring_only": true,
+            "oval_source": [
+              {
+                "attribute": "operation",
+                "declaration_context": [
+                  "EntityAttributeGroup"
+                ],
+                "declaration_kind": "attribute",
+                "documentation": "The optional operation attribute determines how the individual entities should be evaluated (the default operation is 'equals').",
+                "omission": "Use effective default after occurrence/restriction resolution; not native editor authority",
+                "origin": "XSD_DECLARED_DEFAULT",
+                "oval_qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5}EntityAttributeGroup/@operation",
+                "reachability_limit": "QName dependency census; occurrence-specific overrides require review",
+                "source_default": "equals",
+                "source_line": 1380,
+                "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/oval-definitions-schema.xsd",
+                "source_sha256": "06b79e8683d6b9dcaad3ab074a456588ed82c4edd2e8fff209def10aa0a366cc",
+                "source_type": "oval:OperationEnumeration",
+                "source_xpath": "/xsd:schema/xsd:attributeGroup/xsd:attribute[2]"
+              }
+            ],
+            "preserve_overrides": true,
+            "representation": "key",
+            "serialize_explicitly": true,
+            "version": 1
+          }
+        },
+        "set": {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.textfilecontent.schema.json#/$defs/native_set_expression",
+          "description": "Acquire a collection through explicit Object Set operands and ordered per-operand filters. Set membership is distinct from Test truth aggregation."
+        },
+        "singleline": {
+          "default": false,
+          "description": "OVAL textfilecontent54 singleline behavior; importers materialize the default false. 'singleline' enables single line semantics in the regular expression provided by the pattern entity. This behavior is intended to align with the Perl regular expression 's' modifier: if true, the '.' metacharacter will match newlines. If false, it will not. The default is false. New authoring saves this selection explicitly. Source conversion preserves actual/effective values; this is acquisition behavior, not a Test result.",
+          "title": "Collection singleline",
+          "type": "boolean",
+          "x-scap-ng-authoring": {
+            "aggressive_preview": false,
+            "authority": "https://github.com/vanderpol/scap-ng/issues/269",
+            "context": "capability_object",
+            "control_id": "collection_singleline",
+            "group": "acquisition",
+            "hide_when_default": true,
+            "new_authoring_only": true,
+            "oval_source": [
+              {
+                "attribute": "singleline",
+                "declaration_context": [
+                  "Textfilecontent54Behaviors"
+                ],
+                "declaration_kind": "attribute",
+                "documentation": "'singleline' enables single line semantics in the regular expression provided by the pattern entity. This behavior is intended to align with the Perl regular expression 's' modifier: if true, the '.' metacharacter will match newlines. If false, it will not. The default is false.",
+                "omission": "Use effective default after occurrence/restriction resolution; not native editor authority",
+                "origin": "XSD_DECLARED_DEFAULT",
+                "oval_qname": "{http://oval.mitre.org/XMLSchema/oval-definitions-5#independent}Textfilecontent54Behaviors/@singleline",
+                "reachability_limit": "QName dependency census; occurrence-specific overrides require review",
+                "source_default": "false",
+                "source_line": 2138,
+                "source_path": "third_party/scap-1.4-schemas/oval_5.12.3/independent-definitions-schema.xsd",
+                "source_sha256": "fdb8ab59e6f7c72c4c96666c84ce73603c6172d1cba6d3b2e168bb77ef6df566",
+                "source_type": "xsd:boolean",
+                "source_xpath": "/xsd:schema/xsd:complexType[4]/xsd:complexContent/xsd:extension/xsd:attribute[3]"
+              }
+            ],
+            "preserve_overrides": true,
+            "representation": "value",
+            "serialize_explicitly": true,
+            "version": 1
+          }
+        },
+        "traversal": {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/file_traversal",
+          "description": "Optional downward traversal for a compatible directory or hierarchy selector. Omit it to disable recursion; when present serialize depth and platform-specific traversal kind explicitly."
+        }
+      },
+      "required": [],
+      "type": "object"
+    },
+    "state_expression": {
+      "oneOf": [
+        {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.textfilecontent.schema.json#/$defs/state_predicate"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "and": {
+              "items": {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.textfilecontent.schema.json#/$defs/state_expression"
+              },
+              "minItems": 1,
+              "type": "array"
+            }
+          },
+          "required": [
+            "and"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "or": {
+              "items": {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.textfilecontent.schema.json#/$defs/state_expression"
+              },
+              "minItems": 1,
+              "type": "array"
+            }
+          },
+          "required": [
+            "or"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "one": {
+              "items": {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.textfilecontent.schema.json#/$defs/state_expression"
+              },
+              "minItems": 1,
+              "type": "array"
+            }
+          },
+          "required": [
+            "one"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "xor": {
+              "items": {
+                "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.textfilecontent.schema.json#/$defs/state_expression"
+              },
+              "minItems": 1,
+              "type": "array"
+            }
+          },
+          "required": [
+            "xor"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "state_predicate": {
+      "oneOf": [
+        {
+          "additionalProperties": false,
+          "properties": {
+            "directory": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "directory"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "full_path": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "full_path"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "instance": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "integer"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "instance"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "name"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "pattern": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "pattern"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "subexpression": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "binary",
+                        "boolean",
+                        "debian_evr",
+                        "fileset_revision",
+                        "float",
+                        "integer",
+                        "ios_version",
+                        "ipv4",
+                        "ipv6",
+                        "rpm_evr",
+                        "string",
+                        "version"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "subexpression"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "text": {
+              "allOf": [
+                {
+                  "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/scalar_field_predicate"
+                },
+                {
+                  "properties": {
+                    "datatype": {
+                      "enum": [
+                        "binary",
+                        "boolean",
+                        "debian_evr",
+                        "fileset_revision",
+                        "float",
+                        "integer",
+                        "ios_version",
+                        "ipv4",
+                        "ipv6",
+                        "rpm_evr",
+                        "string",
+                        "version"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                }
+              ]
+            }
+          },
+          "required": [
+            "text"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "test": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "states": {
+                "minItems": 2,
+                "type": "array"
+              }
+            },
+            "required": [
+              "states"
+            ]
+          },
+          "then": {
+            "required": [
+              "states_match"
+            ]
+          }
+        },
+        {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/test"
+        }
+      ],
+      "not": {
+        "anyOf": [
+          {
+            "required": [
+              "existence"
+            ]
+          },
+          {
+            "required": [
+              "match"
+            ]
+          }
+        ]
+      },
+      "properties": {
+        "capability": {
+          "const": "independent.textfilecontent"
+        },
+        "object": {
+          "oneOf": [
+            {
+              "$ref": "https://scap-ng.dev/schema/v0.4.0/capability-common.schema.json#/$defs/object_reference"
+            },
+            {
+              "$ref": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.textfilecontent.schema.json#/$defs/object"
+            }
+          ]
+        },
+        "reported_elements": {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/reported-elements.schema.json"
+        },
+        "require": {
+          "$ref": "https://scap-ng.dev/schema/v0.4.0/assessment-language.schema.json#/$defs/test/properties/require"
+        },
+        "test_title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "capability",
+        "object",
+        "reported_elements",
+        "require",
+        "test_title"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://scap-ng.dev/schema/v0.4.0/generated/capabilities/independent.textfilecontent.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "DRAFT: SCAP-NG 0.4 generated native capability contract. One authored Test/Object/State grammar; derived from reviewed source OVAL 5.12.3 mappings.",
+  "title": "Generated SCAP-NG capability fragment: independent.textfilecontent",
+  "x-authoring-gate": "Draft structural generation only; source enumeration and cross-field semantics require additional validation before 0.4 freeze.",
+  "x-semantic-validator-rules": [
+    {
+      "id": "independent.textfilecontent.filter_state_capability",
+      "rule": "Every Set filter State reference must resolve to capability independent.textfilecontent."
+    },
+    {
+      "id": "independent.textfilecontent.pattern_operation",
+      "rule": "The Object pattern selector must use the match comparison operation."
+    },
+    {
+      "id": "independent.textfilecontent.full_path_no_traversal",
+      "rule": "Traversal is not permitted when full_path selection is used."
+    },
+    {
+      "id": "independent.textfilecontent.pattern_directory_no_traversal",
+      "rule": "Traversal is not permitted when directory uses non-equality pattern-style selection."
+    }
+  ],
+  "x-specification-version": "0.4.0"
+}
