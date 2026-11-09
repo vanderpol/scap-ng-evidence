@@ -1,0 +1,34 @@
+{
+  "base_commit": "7dc17f0982cdb5b17281f8f8e4373dbd87f86f58",
+  "gate_commit": "053eeeb3b33e3ee5f683604fd66ae8c833450cd0",
+  "command": [
+    "python",
+    "tools/test_publication_boundary.py"
+  ],
+  "environment": {
+    "SCAP_NG_PUBLICATION_GATE_ROOT": "/workspace/work/publication40-tools"
+  },
+  "python": "3.12.14",
+  "exit_code": 0,
+  "tests": 3,
+  "skips": 0,
+  "log": "test_every_current_main_publication_sink_is_guarded_in_the_proposal (__main__.EvidencePublicationBoundary.test_every_current_main_publication_sink_is_guarded_in_the_proposal) ... ok\ntest_full65_release_fails_closed_before_download_and_preserves_original_body (__main__.EvidencePublicationBoundary.test_full65_release_fails_closed_before_download_and_preserves_original_body) ... ok\ntest_historical_65_payload_proof_trees_are_identical (__main__.EvidencePublicationBoundary.test_historical_65_payload_proof_trees_are_identical) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.595s\n\nOK\n",
+  "scope": "Proposed worktree; exact-head CI and server controls remain separate.",
+  "historical_runs_and_proofs": "Unchanged Git tree identities, no corpus blob transfer or reflow required for the new tests.",
+  "release_upload_network_operations_executed": 0,
+  "completion": "OPEN_FOR_FINAL_DEPLOYMENT_VERIFICATION; administrative access does not block supported work.",
+  "interpretation_correction": {
+    "reason": "Owner clarification of administrative access limitation; prior command/results/log hashes are preserved.",
+    "administrative_endpoint": "GET /repos/vanderpol/scap-ng-evidence/actions/permissions/workflow",
+    "fields_not_inspected": [
+      "default_workflow_permissions",
+      "can_approve_pull_request_reviews"
+    ],
+    "status": "ACCESS_LIMITATION_ONLY",
+    "configuration_defect_demonstrated": false,
+    "historical_workflow_bypass_demonstrated": false,
+    "blocks_development": false,
+    "blocks_qualified_testing": false,
+    "issue40": "OPEN_FOR_FINAL_DEPLOYMENT_VERIFICATION"
+  }
+}

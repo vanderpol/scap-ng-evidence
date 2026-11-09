@@ -4,6 +4,8 @@ Reproducibility and evidence artifacts for the SCAP-NG project. The current pre-
 
 **No full 65-benchmark package in this repository is presently qualified as the current November 2, 2026, 0.4 authoring library.** Earlier experimental conversion packages have been retired from public navigation; do not use historical generated YAML as an authoring baseline.
 
+Current-native publication requires the shared [Tools publication gate](https://github.com/vanderpol/scap-ng-tools/pull/41). The legacy full-65 release workflow is fail-closed before downloading or reflowing content. Historical payloads/proofs remain unchanged. Final deployment verification is pending; administrative API inspection limits do not establish a defect or block supported development/testing.
+
 ## Repository purpose
 
 This repository is for reviewable evidence and receipts associated with published claims, not for distributing obsolete draft authoring libraries. Historical conversion source and research records are retained separately in the private research repository.

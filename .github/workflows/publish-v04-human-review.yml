@@ -16,6 +16,13 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 80
     steps:
+      - name: Configure the exact shared publication gate
+        uses: vanderpol/scap-ng-tools/.github/actions/configure-gate@053eeeb3b33e3ee5f683604fd66ae8c833450cd0
+      - name: Refuse unqualified historical full-65 publication before download or reflow
+        shell: bash
+        run: |
+          # SCAP-NG publication boundary: historical body retained, direct publication denied.
+          python -I -B -c 'import os,sys; sys.path.insert(0,os.environ["SCAPNG_PUBLICATION_GATE_SRC"]); from scap_ng_tools.publication.gate import main; sys.argv=["publication","deny-legacy-publication"]; main()' || exit $?
       - name: Check out the exact reviewed source implementation
         uses: actions/checkout@v4
         with:
@@ -64,6 +71,8 @@ jobs:
           GH_REPO: ${{ github.repository }}
         shell: bash
         run: |
+          # SCAP-NG publication boundary: historical body retained, direct publication denied.
+          python -I -B -c 'import os,sys; sys.path.insert(0,os.environ["SCAPNG_PUBLICATION_GATE_SRC"]); from scap_ng_tools.publication.gate import main; sys.argv=["publication","deny-legacy-publication"]; main()' || exit $?
           set -euo pipefail
           tag='v04-human-readable-review-20261030-ab5cddd'
           gh release create "$tag" \
