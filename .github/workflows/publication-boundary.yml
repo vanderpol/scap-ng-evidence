@@ -12,12 +12,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
           persist-credentials: false
           filter: blob:none
           sparse-checkout: |
             .github
             tools
             docs/issue40
+      - name: Verify the exact reviewed head
+        env:
+          REVIEW_HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: test "$(git rev-parse HEAD)" = "$REVIEW_HEAD"
       - uses: actions/checkout@v4
         with:
           repository: vanderpol/scap-ng-tools
