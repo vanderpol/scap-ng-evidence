@@ -1,0 +1,20 @@
+{
+  "base_commit": "7dc17f0982cdb5b17281f8f8e4373dbd87f86f58",
+  "gate_commit": "053eeeb3b33e3ee5f683604fd66ae8c833450cd0",
+  "command": [
+    "python",
+    "tools/test_publication_boundary.py"
+  ],
+  "environment": {
+    "SCAP_NG_PUBLICATION_GATE_ROOT": "/workspace/work/publication40-tools"
+  },
+  "python": "3.12.14",
+  "exit_code": 0,
+  "tests": 3,
+  "skips": 0,
+  "log": "test_every_current_main_publication_sink_is_guarded_in_the_proposal (__main__.EvidencePublicationBoundary.test_every_current_main_publication_sink_is_guarded_in_the_proposal) ... ok\ntest_full65_release_fails_closed_before_download_and_preserves_original_body (__main__.EvidencePublicationBoundary.test_full65_release_fails_closed_before_download_and_preserves_original_body) ... ok\ntest_historical_65_payload_proof_trees_are_identical (__main__.EvidencePublicationBoundary.test_historical_65_payload_proof_trees_are_identical) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.595s\n\nOK\n",
+  "scope": "Proposed worktree; exact-head CI and server controls remain separate.",
+  "historical_runs_and_proofs": "Unchanged Git tree identities, no corpus blob transfer or reflow required for the new tests.",
+  "release_upload_network_operations_executed": 0,
+  "completion": "NOT_COMPLETE: review/deployment and inaccessible server/old-ref controls remain blockers."
+}

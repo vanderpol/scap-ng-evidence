@@ -1,0 +1,11 @@
+{
+  "baseline_commit": "7dc17f0982cdb5b17281f8f8e4373dbd87f86f58",
+  "baseline_workflow_ast_sha256": "86ecc51107cbf9729efd669f2291aeed2b5a01aaabc648cba00fc0dbc08a51a1",
+  "gate_commit": "053eeeb3b33e3ee5f683604fd66ae8c833450cd0",
+  "historical_trees": {
+    "runs": "b05f2b75dce97bc1273a114f045c39406f59b3bb",
+    "manifests": "0a0b263c0d5e90f8f6afe0b9d71fd23f50201364",
+    "summaries": "9490b53453c88fb5983f7433d2aa50277cfea879"
+  },
+  "source": "Workflow direct release guarded; original bodies retained. Early denial prevents a routine full-65 download/reflow. No release or upload is executed by this integration."
+}
