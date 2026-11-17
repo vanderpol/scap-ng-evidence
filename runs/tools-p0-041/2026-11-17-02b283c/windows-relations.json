@@ -1,0 +1,241 @@
+{
+  "diagnostic_complete": true,
+  "format": "issue59-relation-source-witnesses/1",
+  "scanner_equivalence": false,
+  "schema_sha256": "88fc59791f9cb5055d2a8dc27bb458bcf6699b5820061ce68af1a355bd33a84f",
+  "schema_valid": false,
+  "source_rules": [
+    {
+      "source_rule": "xccdf_mil.disa.stig_rule_SV-224867r958388_rule",
+      "witnesses": [
+        {
+          "file": "authoring/direct-slice/assessments/windows-server-2016-have-three-or-less-sv-224867-assessment.json",
+          "kind": "assessment",
+          "relations": [
+            {
+              "parent_excerpt": "{'allowed': [3, 5, 10, 50], 'relation': {'operator': 'less_than_or_equal', 'value': 3}}",
+              "path": "assessment/inputs/account-lockout-threshold-input/constraints",
+              "relation": {
+                "operator": "less_than_or_equal",
+                "value": 3
+              },
+              "siblings": [
+                "allowed",
+                "relation"
+              ]
+            }
+          ],
+          "schema_errors": [
+            {
+              "message": "Additional properties are not allowed ('relation' was unexpected)",
+              "path": [
+                "assessment",
+                "inputs",
+                "account-lockout-threshold-input",
+                "constraints"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "authoring/direct-slice/rules/windows-server-2016-have-attempts-three-or-less-sv-224867-rule.json",
+          "kind": "rule",
+          "relations": [],
+          "schema_errors": []
+        },
+        {
+          "file": "authoring/direct-slice/assessments/windows-server-2016-have-or-less-sv-224867-manual-0-assessment.json",
+          "kind": "assessment",
+          "relations": [],
+          "schema_errors": []
+        }
+      ]
+    },
+    {
+      "source_rule": "xccdf_mil.disa.stig_rule_SV-224868r958388_rule",
+      "witnesses": [
+        {
+          "file": "authoring/direct-slice/assessments/windows-server-2016-have-or-greater-sv-224868-assessment.json",
+          "kind": "assessment",
+          "relations": [
+            {
+              "parent_excerpt": "{'allowed': [900, 3600, 86400], 'relation': {'operator': 'greater_than_or_equal', 'value': 900}}",
+              "path": "assessment/inputs/reset-account-lockout-counter-after-input/constraints",
+              "relation": {
+                "operator": "greater_than_or_equal",
+                "value": 900
+              },
+              "siblings": [
+                "allowed",
+                "relation"
+              ]
+            }
+          ],
+          "schema_errors": [
+            {
+              "message": "Additional properties are not allowed ('relation' was unexpected)",
+              "path": [
+                "assessment",
+                "inputs",
+                "reset-account-lockout-counter-after-input",
+                "constraints"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "authoring/direct-slice/rules/windows-server-2016-have-15-minutes-or-greater-sv-224868-rule.json",
+          "kind": "rule",
+          "relations": [],
+          "schema_errors": []
+        },
+        {
+          "file": "authoring/direct-slice/assessments/windows-server-2016-have-greater-sv-224868-manual-0-assessment.json",
+          "kind": "assessment",
+          "relations": [],
+          "schema_errors": []
+        }
+      ]
+    },
+    {
+      "source_rule": "xccdf_mil.disa.stig_rule_SV-224869r982201_rule",
+      "witnesses": [
+        {
+          "file": "authoring/direct-slice/assessments/windows-server-2016-passwords-remembered-sv-224869-assessment.json",
+          "kind": "assessment",
+          "relations": [
+            {
+              "parent_excerpt": "{'allowed': [5, 24], 'relation': {'operator': 'greater_than_or_equal', 'value': 24}}",
+              "path": "assessment/inputs/enforce-password-history-input/constraints",
+              "relation": {
+                "operator": "greater_than_or_equal",
+                "value": 24
+              },
+              "siblings": [
+                "allowed",
+                "relation"
+              ]
+            }
+          ],
+          "schema_errors": [
+            {
+              "message": "Additional properties are not allowed ('relation' was unexpected)",
+              "path": [
+                "assessment",
+                "inputs",
+                "enforce-password-history-input",
+                "constraints"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "authoring/direct-slice/rules/windows-server-2016-password-remembered-sv-224869-rule.json",
+          "kind": "rule",
+          "relations": [],
+          "schema_errors": []
+        },
+        {
+          "file": "authoring/direct-slice/assessments/windows-server-2016-remembered-sv-224869-manual-0-assessment.json",
+          "kind": "assessment",
+          "relations": [],
+          "schema_errors": []
+        }
+      ]
+    },
+    {
+      "source_rule": "xccdf_mil.disa.stig_rule_SV-224870r982200_rule",
+      "witnesses": [
+        {
+          "file": "authoring/direct-slice/assessments/windows-server-2016-age-60-days-or-less-sv-224870-assessment.json",
+          "kind": "assessment",
+          "relations": [
+            {
+              "parent_excerpt": "{'allowed': [5184000, 7776000], 'relation': {'operator': 'less_than_or_equal', 'value': 5184000}}",
+              "path": "assessment/inputs/maximum-password-age-input/constraints",
+              "relation": {
+                "operator": "less_than_or_equal",
+                "value": 5184000
+              },
+              "siblings": [
+                "allowed",
+                "relation"
+              ]
+            }
+          ],
+          "schema_errors": [
+            {
+              "message": "Additional properties are not allowed ('relation' was unexpected)",
+              "path": [
+                "assessment",
+                "inputs",
+                "maximum-password-age-input",
+                "constraints"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "authoring/direct-slice/rules/windows-server-2016-maximum-age-60-days-or-less-sv-224870-rule.json",
+          "kind": "rule",
+          "relations": [],
+          "schema_errors": []
+        },
+        {
+          "file": "authoring/direct-slice/assessments/windows-server-2016-days-or-less-sv-224870-manual-0-assessment.json",
+          "kind": "assessment",
+          "relations": [],
+          "schema_errors": []
+        }
+      ]
+    },
+    {
+      "source_rule": "xccdf_mil.disa.stig_rule_SV-224871r982188_rule",
+      "witnesses": [
+        {
+          "file": "authoring/direct-slice/assessments/windows-server-2016-age-at-least-one-day-sv-224871-assessment.json",
+          "kind": "assessment",
+          "relations": [
+            {
+              "parent_excerpt": "{'allowed': [86400, 172800, 432000], 'relation': {'operator': 'greater_than_or_equal', 'value': 86400}}",
+              "path": "assessment/inputs/minimum-password-age-input/constraints",
+              "relation": {
+                "operator": "greater_than_or_equal",
+                "value": 86400
+              },
+              "siblings": [
+                "allowed",
+                "relation"
+              ]
+            }
+          ],
+          "schema_errors": [
+            {
+              "message": "Additional properties are not allowed ('relation' was unexpected)",
+              "path": [
+                "assessment",
+                "inputs",
+                "minimum-password-age-input",
+                "constraints"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "authoring/direct-slice/rules/windows-server-2016-minimum-age-at-least-one-day-sv-224871-rule.json",
+          "kind": "rule",
+          "relations": [],
+          "schema_errors": []
+        },
+        {
+          "file": "authoring/direct-slice/assessments/windows-server-2016-least-one-day-sv-224871-manual-0-assessment.json",
+          "kind": "assessment",
+          "relations": [],
+          "schema_errors": []
+        }
+      ]
+    }
+  ],
+  "source_zip": "U_MS_Windows_Server_2016_V2R8_STIG_SCAP_1-4_Benchmark-enhancedV19-signed.zip",
+  "source_zip_sha256": "76cf6a14fefd077136d9a23a6ba4a30c82a0b254adc8cf2abd88592dc30776a8"
+}

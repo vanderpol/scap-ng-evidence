@@ -1,0 +1,90 @@
+[
+  {
+    "code": "pinned_source_variable_datatype_normalized",
+    "declared_datatype": "binary",
+    "native_result_datatype": "boolean",
+    "normalized_visitor_node_sha256": "9d61a4436e68c4f40d88a7ab143fac20e1bd4ca50f9d0e4187cc6788af0c6182",
+    "original_node_sha256": "340c7b394dd72fe14e0b370fcb07509010dd0f627eea3ab35cabffa1990d8715",
+    "qualification": "OWNER_ACCEPTED_SOURCE_COMPATIBILITY_NOT_ORIGINAL_OVAL_EQUIVALENCE",
+    "source_path": "SCAP_1.4/OVAL_Test_Content/agnostic/oval-def_criterion.xml",
+    "source_sha256": "943136ebe4c6a9fd014a6dda43d1be126c801130dc1e7867165e56434d232f38",
+    "source_variable": "oval:org.mitre.oval.test:var:524"
+  },
+  {
+    "code": "pinned_source_variable_datatype_normalized",
+    "declared_datatype": "binary",
+    "native_result_datatype": "boolean",
+    "normalized_visitor_node_sha256": "62f76f92abc7cdc13b45057f60fa0e92ca7700a680f9890856e1ffcf5033411f",
+    "original_node_sha256": "797a6b14b5e3f0a03798e10a40f3147f67cb1c8792c9ce6e474b743a53c630a5",
+    "qualification": "OWNER_ACCEPTED_SOURCE_COMPATIBILITY_NOT_ORIGINAL_OVAL_EQUIVALENCE",
+    "source_path": "SCAP_1.4/OVAL_Test_Content/agnostic/oval-def_criterion.xml",
+    "source_sha256": "943136ebe4c6a9fd014a6dda43d1be126c801130dc1e7867165e56434d232f38",
+    "source_variable": "oval:org.mitre.oval.test:var:712"
+  },
+  {
+    "code": "pinned_source_variable_datatype_normalized",
+    "declared_datatype": "binary",
+    "native_result_datatype": "boolean",
+    "normalized_visitor_node_sha256": "ee1cbe7d01af907b70973463a85e1633dd64ee427d743efb328b653bfa3e1996",
+    "original_node_sha256": "c1f9ffa626b2ebcb0331bf9ea1883182c0aaae8a16c516603e994cef7254443a",
+    "qualification": "OWNER_ACCEPTED_SOURCE_COMPATIBILITY_NOT_ORIGINAL_OVAL_EQUIVALENCE",
+    "source_path": "SCAP_1.4/OVAL_Test_Content/agnostic/oval-def_extend_definition.xml",
+    "source_sha256": "ed488025fedd372fbfc0bf0930139e6ab50cd0343dc04d016b0a185fba6c42be",
+    "source_variable": "oval:org.mitre.oval.test:var:945"
+  },
+  {
+    "code": "pinned_source_variable_datatype_normalized",
+    "declared_datatype": "int",
+    "native_result_datatype": "string",
+    "normalized_visitor_node_sha256": "d184ca7a98865980ab748b82549374729a06d4c2a159a811752c1a6a26e3f994",
+    "original_node_sha256": "2d7a1914c1819119495e087f6f7c344c97d935ffa709981befea3edf72ee1812",
+    "qualification": "OWNER_ACCEPTED_SOURCE_COMPATIBILITY_NOT_ORIGINAL_OVAL_EQUIVALENCE",
+    "source_path": "SCAP_1.4/OVAL_Test_Content/agnostic/oval-def_merge.xml",
+    "source_sha256": "e9cf10371c2d41a3c92087a93f62f597043828d0914a21c5ab4314f03fd8a6ef",
+    "source_variable": "oval:navy.navwar.niwcatlantic.scc:var:1"
+  },
+  {
+    "code": "pinned_source_variable_datatype_normalized",
+    "declared_datatype": "int",
+    "native_result_datatype": "string",
+    "normalized_visitor_node_sha256": "2051d65c8e977a580eeaf6ea3fae869a5a4a6f2741b0fa2d91d1c8f9395990c1",
+    "original_node_sha256": "90f00fbecc76cfbf55925b7cff02a5da05e56c37afe762a633051b788a79ebd9",
+    "qualification": "OWNER_ACCEPTED_SOURCE_COMPATIBILITY_NOT_ORIGINAL_OVAL_EQUIVALENCE",
+    "source_path": "SCAP_1.4/OVAL_Test_Content/agnostic/oval-def_merge.xml",
+    "source_sha256": "e9cf10371c2d41a3c92087a93f62f597043828d0914a21c5ab4314f03fd8a6ef",
+    "source_variable": "oval:navy.navwar.niwcatlantic.scc:var:101"
+  },
+  {
+    "code": "pinned_source_variable_datatype_normalized",
+    "declared_datatype": "int",
+    "native_result_datatype": "string",
+    "normalized_visitor_node_sha256": "315dbd76769007d44bad946afdeccd59509546fa0467e108b239a2bc2ed90253",
+    "original_node_sha256": "855170f4e91749508bcbe4d42c0976ed33b613da7480ebaa1a728300c0d81ebd",
+    "qualification": "OWNER_ACCEPTED_SOURCE_COMPATIBILITY_NOT_ORIGINAL_OVAL_EQUIVALENCE",
+    "source_path": "SCAP_1.4/OVAL_Test_Content/agnostic/oval-def_merge.xml",
+    "source_sha256": "e9cf10371c2d41a3c92087a93f62f597043828d0914a21c5ab4314f03fd8a6ef",
+    "source_variable": "oval:navy.navwar.niwcatlantic.scc:var:2"
+  },
+  {
+    "code": "pinned_source_variable_datatype_normalized",
+    "declared_datatype": "int",
+    "native_result_datatype": "string",
+    "normalized_visitor_node_sha256": "1a31e289b68600d8d3eaa939b7db0c3c75e9d9286e2b85d78fa00d27b2a4c867",
+    "original_node_sha256": "5c4fbe73a57653aaf53bd699d299f928cac520194db92bc06ca0b6e600b705fa",
+    "qualification": "OWNER_ACCEPTED_SOURCE_COMPATIBILITY_NOT_ORIGINAL_OVAL_EQUIVALENCE",
+    "source_path": "SCAP_1.4/OVAL_Test_Content/agnostic/oval-def_merge.xml",
+    "source_sha256": "e9cf10371c2d41a3c92087a93f62f597043828d0914a21c5ab4314f03fd8a6ef",
+    "source_variable": "oval:navy.navwar.niwcatlantic.scc:var:3"
+  },
+  {
+    "code": "pinned_source_variable_datatype_normalized",
+    "declared_datatype": "int",
+    "native_result_datatype": "string",
+    "normalized_visitor_node_sha256": "a1f0d0262cf6e2e0c703d9a174fcbf4c2fe506c48e5c4c7c15dba13968e5d4ca",
+    "original_node_sha256": "5700191a434d154fc62c686945a41c3f965bef943ddcb09e46e892bff8d06dab",
+    "qualification": "OWNER_ACCEPTED_SOURCE_COMPATIBILITY_NOT_ORIGINAL_OVAL_EQUIVALENCE",
+    "source_path": "SCAP_1.4/OVAL_Test_Content/agnostic/oval-def_merge.xml",
+    "source_sha256": "e9cf10371c2d41a3c92087a93f62f597043828d0914a21c5ab4314f03fd8a6ef",
+    "source_variable": "oval:navy.navwar.niwcatlantic.scc:var:4"
+  }
+]

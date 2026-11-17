@@ -1,0 +1,17 @@
+{
+  "definition_results_sha256": "0bd714864bcc0a17a303c89a9886eeeca716b788de32d28b5534e49f6e79831e",
+  "execution_proof": "NOT_ESTABLISHED_BY_COMPARISON_ONLY",
+  "expectations_sha256": "9a9961fc8bcdf30d2d01e9178c0b59befc5e871724c48d6fe38fd9443906ce7c",
+  "expected_definitions": 46,
+  "observed_agnostic_definitions": 46,
+  "problems": [],
+  "qualification_policy": "OWNER_ACCEPTED_SOURCE_COMPATIBILITY_NOT_ORIGINAL_OVAL_EQUIVALENCE",
+  "source_commit": "e3538595c5083b9c34d937a81d319234df9bbfaa",
+  "source_expected_counts": {
+    "false": 1,
+    "true": 44,
+    "unknown": 1
+  },
+  "status": "PASS",
+  "verified_expected_outcomes": 46
+}

@@ -1,0 +1,16 @@
+{
+  "previous_canonical": "4c2713b051203fe8e93570adc1ccc65b50129ae2",
+  "current_canonical": "5ee55288b369da26f308f40813e545b78dff2753",
+  "resources": 145,
+  "unchanged": 144,
+  "old_flat_family": "65ad62d207e39488eba670d0ab9cad740e66bbec1f4fc19737582363e2165a54",
+  "changed": [
+    {
+      "path": "schema/benchmark.schema.json",
+      "old_sha256": "ca7c7501762639e348fdbb7f520a73497622525d818ad4c868c773088c0ba90d",
+      "new_sha256": "30b6af1e35132a08a629d9c17e726e2151ac28f2fb103a037a7a3382689b65ba",
+      "semantic_delta": "Remove native Profile extends; disabled_rules and independent parameters are unchanged."
+    }
+  ],
+  "applicability_and_results": "byte-identical"
+}
