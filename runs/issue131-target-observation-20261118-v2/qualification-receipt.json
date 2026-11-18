@@ -1,0 +1,77 @@
+{
+  "format": "scap-ng-ri/ubuntu-scope-qualified-receipt/2",
+  "holds": [
+    "unsupported SSH/text acquisition remains explicit ERROR or UNKNOWN",
+    "permission-restricted shadow acquisition remains UNKNOWN",
+    "final symlink no-follow authority remains held"
+  ],
+  "host_observation": {
+    "authority": "unverified:non-root-process",
+    "evidence_trust": "restricted-process-observation",
+    "kernel": {
+      "machine": "x86_64",
+      "release": "7.0.0-1014-aws"
+    },
+    "os_release": {
+      "id": "ubuntu",
+      "pretty_name": "Ubuntu 24.04.5 LTS",
+      "version_id": "24.04"
+    },
+    "scope": "current process mount/user/pid/net/uts namespaces"
+  },
+  "package_manifest_sha256": "55025a34ef11ef66b75341b07fcdecbdc628342919522e62151b08bec98d4de6",
+  "pins": {
+    "converter_commit": "df2deb1a514cdd0babbccdf2d240fba4e9811d6d",
+    "flat_schema_family_sha256": "88fc59791f9cb5055d2a8dc27bb458bcf6699b5820061ce68af1a355bd33a84f",
+    "ri_commit": "075fd50cd0f3e77fbfac0487c58723c4b086d295",
+    "schema_commit": "5ee55288b369da26f308f40813e545b78dff2753",
+    "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329",
+    "source_benchmark_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-xccdf.xml",
+    "source_commit": "8c8e5dff860af6b1290ee9273a282db24278f8d5",
+    "source_member": "U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-signed.xml",
+    "source_xml_sha256": "eac6f7a6a1e80c52d02c508d939eb09aa09b7fe6eaeb060b8aa21e095719c940",
+    "source_zip_sha256": "40229cd7a41e6ff4a8cfb675523f767292d1460edbc68fe9ba5258c530c8b4a7"
+  },
+  "qualification": "diagnostic_only_non_root; no host-wide compliance claim",
+  "resource_receipt": {
+    "elapsed_seconds": 1.4,
+    "peak_rss_kb": 178224,
+    "tmp_free_gib_before_after": 19.64
+  },
+  "results": {
+    "assessment_manifest_count": 23,
+    "assessments_executed": 12,
+    "assessments_not_executed": 11,
+    "output_sha256": {
+      "benchmark-result.json": "397c19125ae7cb2caccd5f01ad160a78ba9c4c99a2eba55939fd682bceb3e845",
+      "execution-ledger.json": "498020b8d6b559fee56c61f23dd347801450df619a68dc71a3624bebfd952ec5",
+      "oval-mil-disa-stig-ubuntu2404os-def-1-assessment-result.json": "52d342d89d753488f9f1bbb39306d5ed4824b194b56e66312a1f0835f6c8d5ee",
+      "scan-result.json": "7452b90e43d53921c1beeb86892d7dd135079b9b4a498cd0c1aae6b5572286ae",
+      "ubuntu-24-04-lts-disable-key-sequence-sv-270712-assessment-result.json": "6f3e42e6679bae9659811f4bedd2b7a7c5a67254a0400f558ff365651ce72c06",
+      "ubuntu-24-04-lts-display-via-ssh-logon-sv-270691-assessment-result.json": "ace85c20cbf321f43e7ce0409d4eb0c190ef9c43fb77f0985f0e56a4f2ccbca9",
+      "ubuntu-24-04-lts-during-transmission-sv-270667-assessment-result.json": "f47f12528f442749fc131cf0885e289ac4e3b971b5835528be26f98799f8b5fe",
+      "ubuntu-24-04-lts-during-transmission-sv-270668-assessment-result.json": "2a6fe6e558899c0d695f549f0772949a7d565aca6ec1e5005302c3c5a36bf9d7",
+      "ubuntu-24-04-lts-library-less-permissive-sv-270696-assessment-result.json": "f84b2888ddae38fee763fc214ed2e604b48bfd8a349aa108a408de78f7cb01e9",
+      "ubuntu-24-04-lts-not-have-installed-sv-270645-assessment-result.json": "e3d94e48c77ddd3e773445a383d703e81582859da24b4602f312cb8564ba3840",
+      "ubuntu-24-04-lts-not-have-installed-sv-270646-assessment-result.json": "63a0cbe0e69f423bf38fb7c6405f755f011e8fac995b02ad086a2d8840552caf",
+      "ubuntu-24-04-lts-not-have-installed-sv-270647-assessment-result.json": "41bb747cf181aac0805956956f3f269113ccc845057b761f03deda31a10ef014",
+      "ubuntu-24-04-lts-not-have-installed-sv-270648-assessment-result.json": "24f4765eff400ea92cc7e8c0dd22969d7daa5276988a8f43565e6e3ace54b66f",
+      "ubuntu-24-04-lts-prevent-root-account-sv-270724-assessment-result.json": "a477bc7cfe42b629ef6a1390b8eaab618d2ca0defc3e9f1f42f9cb375ae92dbd",
+      "ubuntu-24-04-lts-ssh-exchange-algorithms-sv-270669-assessment-result.json": "a457b7c540e84122f90b2dd48f6de37152b3bb6c659afaf8e072910ba501846e"
+    },
+    "rule_count": 11,
+    "rule_summary": {
+      "error": 2,
+      "fail": 1,
+      "not_applicable": 0,
+      "not_evaluated": 0,
+      "pass": 5,
+      "total": 11,
+      "unknown": 3
+    },
+    "zero_item_tests": 10
+  },
+  "run_id": "run-29832c35feec7aaec46b2dca7b679a00",
+  "source_crosswalk_rules": 11,
+  "target_ref": "ubuntu24-diagnostic-target"
+}
