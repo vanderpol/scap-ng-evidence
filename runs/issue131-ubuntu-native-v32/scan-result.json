@@ -1,0 +1,55 @@
+{
+  "scan_result": {
+    "assessment_result_refs": [
+      "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+      "assessment-f0ae7f253a41f37b17ed90741dc4f591",
+      "assessment-28437ee770c1d93512795a8ba8126cac",
+      "assessment-2c9ad1b8037d22ed116bc4a0d937099f",
+      "assessment-250997da540e6dc793627ec70768db78",
+      "assessment-50256e05bdd3445238b0be4e24d09bd3",
+      "assessment-863a58034d9197f12c4f90253391cc3f",
+      "assessment-abbd27a8a770ab4c3de74b858b3293cb",
+      "assessment-95e4458309d35b1f86be0706a1e40fc6",
+      "assessment-5e38a1d843a86c9df40c3478ae3039ea",
+      "assessment-a513bfbcd29052aa63387ad4adf09883",
+      "assessment-6e3ec1b8f7b169550a7760ee39d842ca",
+      "assessment-a4ae9b5c56c08585a1e2e8d692f2c68f",
+      "assessment-33e9b4cd6004919009c7da88b2d538c2",
+      "assessment-691b61fc6cc9caf779452a3163eb8d50",
+      "assessment-e051884351408ef1a1ca67d3311f6cdc",
+      "assessment-8f4a22d890fa74556ff74b92997093f5"
+    ],
+    "benchmark_results": [
+      {
+        "benchmark_id": "direct-slice",
+        "benchmark_result_ref": "run-6c78d5064d8c33438743c5a94172d04d",
+        "benchmark_version": "001.005.007",
+        "profile_id": "",
+        "summary": {
+          "error": 2,
+          "fail": 1,
+          "not_applicable": 0,
+          "not_evaluated": 0,
+          "pass": 10,
+          "total": 16,
+          "unknown": 3
+        },
+        "tailoring_id": null,
+        "target_ref": "ubuntu24-native-v32"
+      }
+    ],
+    "completed_at": "2026-11-18T16:36:16.384843554Z",
+    "result_schema_version": "0.4.1",
+    "run_id": "run-6c78d5064d8c33438743c5a94172d04d",
+    "scanner": {
+      "name": "scap-ng-ri",
+      "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329"
+    },
+    "started_at": "2026-11-18T16:36:16.263645435Z",
+    "targets": [
+      {
+        "id": "ubuntu24-native-v32"
+      }
+    ]
+  }
+}
