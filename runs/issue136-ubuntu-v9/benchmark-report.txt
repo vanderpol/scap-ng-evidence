@@ -1,0 +1,506 @@
+SCAP-NG SCAN REPORT
+===================
+
+TARGET / SCAN
+-------------
+Hostname             redacted-host
+Target ID            ubuntu-24.04-nonroot
+Operating system (observed sidecar) linux
+Architecture         unknown
+Kernel               unknown
+Collection authority unverified:non-root-process
+Collection scope     current process mount/user/pid/net/uts namespaces
+Evidence trust       restricted-process-observation
+Scan started         2026-11-18T14:40:16.845218245Z
+Scan completed       2026-11-18T14:40:16.974778495Z
+Total elapsed        0.13s
+Scan ID              run-93c7b41d4b6fd5766b728de0756d2bbd
+
+BENCHMARK / APPLICABILITY
+--------------------------
+Benchmark            direct-slice
+Benchmark version    001.005.007
+Platform             Source Benchmark platform restriction (fixture-platform)
+Profile              disable-slow-rules-profile
+Source digest        991e1ee8ec7c4917b63ea6a3d957c46c02d377559378530d7b4d133d7b8efca7
+Qualification        CROSS-PLATFORM DIAGNOSTIC ONLY — COMPLIANCE SCORE UNAVAILABLE
+Qualification reason platform identity is not qualified by the RI
+
+EXECUTIVE SUMMARY
+------------------
+11 Rules: 5 pass, 1 fail, 5 unknown, 0 error, 0 not evaluated, 0 not applicable.
+Compliance score: unavailable (diagnostic only)
+Pass 5 | Fail 1 | Unknown 5 | Error 0 | Not applicable 0 | Not evaluated 0
+Shared Assessment executions: 12 (consuming Rules link to one execution)
+
+TIME / PERFORMANCE
+------------------
+Slowest Rules (measured intervals; concurrent durations are not additive)
+  <0.01s   UNKNOWN      ubuntu-24-04-lts-configure-during-transmission-sv-270667-rule — Ubuntu 24.04 LTS must configure the SSH daemon to use FIPS 140-3 approved ciphers to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.
+  <0.01s   FAIL         ubuntu-24-04-lts-configure-during-transmission-sv-270668-rule — Ubuntu 24.04 LTS must configure the SSH daemon to use Message Authentication Codes (MACs) employing FIPS 140-3 approved cryptographic hashes to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.
+  <0.01s   PASS         ubuntu-24-04-lts-disable-x86-delete-key-sequence-sv-270712-rule — Ubuntu 24.04 LTS must disable the x86 Ctrl-Alt-Delete key sequence.
+Slowest Assessments (each shared invocation counted once)
+  0.11s    TRUE         ubuntu-24-04-lts-not-have-installed-sv-270645-assessment — Ubuntu 24.04 LTS must not have the "systemd-timesyncd" package installed.
+  0.11s    TRUE         ubuntu-24-04-lts-not-have-installed-sv-270646-assessment — Ubuntu 24.04 LTS must not have the "ntp" package installed.
+  0.07s    UNKNOWN      ubuntu-24-04-lts-display-via-ssh-logon-sv-270691-assessment — Ubuntu 24.04 LTS must display the Standard Mandatory DOD Notice and Consent Banner before granting access to via an SSH logon.
+
+RULE RESULTS
+------------
+OUTCOME          SEVERITY DURATION     RULE ID                  TITLE
+---------------- -------- ------------ ------------------------ -----
+UNKNOWN          medium   <0.01s       ubuntu-24-04-lts-configure-during-transmission-sv-270667-rule Ubuntu 24.04 LTS must configure the SSH daemon to use FIPS 140-3 approved ciphers to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.
+FAIL             medium   <0.01s       ubuntu-24-04-lts-configure-during-transmission-sv-270668-rule Ubuntu 24.04 LTS must configure the SSH daemon to use Message Authentication Codes (MACs) employing FIPS 140-3 approved cryptographic hashes to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.
+PASS             high     <0.01s       ubuntu-24-04-lts-disable-x86-delete-key-sequence-sv-270712-rule Ubuntu 24.04 LTS must disable the x86 Ctrl-Alt-Delete key sequence.
+UNKNOWN          medium   <0.01s       ubuntu-24-04-lts-display-access-via-ssh-logon-sv-270691-rule Ubuntu 24.04 LTS must display the Standard Mandatory DOD Notice and Consent Banner before granting access to via an SSH logon.
+UNKNOWN          medium   <0.01s       ubuntu-24-04-lts-library-0755-or-less-permissive-sv-270696-rule Ubuntu 24.04 LTS library files must have mode 0755 or less permissive.
+PASS             low      <0.01s       ubuntu-24-04-lts-not-have-ntp-package-installed-sv-270646-rule Ubuntu 24.04 LTS must not have the "ntp" package installed.
+PASS             low      <0.01s       ubuntu-24-04-lts-not-have-package-installed-sv-270645-rule Ubuntu 24.04 LTS must not have the "systemd-timesyncd" package installed.
+PASS             high     <0.01s       ubuntu-24-04-lts-not-have-package-installed-sv-270647-rule Ubuntu 24.04 LTS must not have the telnet package installed.
+PASS             high     <0.01s       ubuntu-24-04-lts-not-have-package-installed-sv-270648-rule Ubuntu 24.04 LTS must not have the rsh-server package installed.
+UNKNOWN          medium   <0.01s       ubuntu-24-04-lts-prevent-login-root-account-sv-270724-rule Ubuntu 24.04 LTS must prevent direct login to the root account.
+UNKNOWN          medium   <0.01s       ubuntu-24-04-lts-ssh-server-exchange-algorithms-sv-270669-rule Ubuntu 24.04 LTS SSH server must be configured to use only FIPS 140-3 validated key exchange algorithms.
+
+FINDINGS AND EVIDENCE (FAILURE / UNKNOWN FIRST)
+-----------------------------------------------
+[FAIL] ubuntu-24-04-lts-configure-during-transmission-sv-270668-rule — Ubuntu 24.04 LTS must configure the SSH daemon to use Message Authentication Codes (MACs) employing FIPS 140-3 approved cryptographic hashes to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-18T14:40:16.974646201Z
+Rule completed     2026-11-18T14:40:16.97465681Z
+Assessment         ubuntu-24-04-lts-during-transmission-sv-270668-assessment — Ubuntu 24.04 LTS must configure the SSH daemon to use Message Authentication Codes (MACs) employing FIPS 140-3 approved cryptographic hashes to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.
+Why                Assessment evaluated false.
+Finding            Assessment evaluated false.
+Assessment result  FALSE (Assessment evaluated false.)
+Assessment duration 0.01s
+Assessment started  2026-11-18T14:40:16.854809858Z
+Assessment completed 2026-11-18T14:40:16.867256599Z
+
+EVALUATE TREE
+  /tests/etc-ssh-sshd-config-macs-use-cryptographic-hash-algorithms-test → Test etc-ssh-sshd-config-macs-use-cryptographic-hash-algorithms-test — FALSE
+
+EVALUATE → TEST
+  etc-ssh-sshd-config-macs-use-cryptographic-hash-algorithms-test — /etc/ssh/sshd_config: MACs use FIPS 140-3 validated cryptographic hash algorithms
+  Technical result   FALSE
+  Reason             item existence cardinality false
+  Items observed    0
+  Items retained    0
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-b3fa435a48816a0f86ef38ea92599865/object/etc-ssh-sshd-config-macs-use-cryptographic-hash-algorithms-test
+  Capability         independent.textfilecontent
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+[UNKNOWN] ubuntu-24-04-lts-configure-during-transmission-sv-270667-rule — Ubuntu 24.04 LTS must configure the SSH daemon to use FIPS 140-3 approved ciphers to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-18T14:40:16.974569644Z
+Rule completed     2026-11-18T14:40:16.974611833Z
+Assessment         ubuntu-24-04-lts-during-transmission-sv-270667-assessment — Ubuntu 24.04 LTS must configure the SSH daemon to use FIPS 140-3 approved ciphers to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.
+Why                Assessment evidence was incomplete or inconclusive: collection failed: acquisition not complete: unsupported
+Finding            Assessment evidence was incomplete or inconclusive: collection failed: acquisition not complete: unsupported
+Assessment result  ERROR (Assessment execution reported an acquisition or evaluation error.)
+Assessment duration <0.01s
+Assessment started  2026-11-18T14:40:16.85478932Z
+Assessment completed 2026-11-18T14:40:16.858756351Z
+
+EVALUATE TREE
+  /tests/etc-ssh-sshd-config-ciphers-dod-approved-ciphers-test → Test etc-ssh-sshd-config-ciphers-dod-approved-ciphers-test — ERROR
+
+EVALUATE → TEST
+  etc-ssh-sshd-config-ciphers-dod-approved-ciphers-test — /etc/ssh/sshd_config:Ciphers == DoD-approved ciphers
+  Technical result   ERROR
+  Reason             collection failed: acquisition not complete: unsupported
+  Items observed    0
+  Items retained    0
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-e9691dd4f337bb97bc122b08d6677332/object/etc-ssh-sshd-config-ciphers-dod-approved-ciphers-test
+  Capability         independent.textfilecontent
+  Status             error
+  Logical complete   false
+  Population complete false
+  Collection note    collection_failed
+
+[UNKNOWN] ubuntu-24-04-lts-display-access-via-ssh-logon-sv-270691-rule — Ubuntu 24.04 LTS must display the Standard Mandatory DOD Notice and Consent Banner before granting access to via an SSH logon.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-18T14:40:16.974680574Z
+Rule completed     2026-11-18T14:40:16.974695509Z
+Assessment         ubuntu-24-04-lts-display-via-ssh-logon-sv-270691-assessment — Ubuntu 24.04 LTS must display the Standard Mandatory DOD Notice and Consent Banner before granting access to via an SSH logon.
+Why                Assessment evidence was incomplete or inconclusive: Assessment execution diagnostic: missing_field_held
+Finding            Assessment evidence was incomplete or inconclusive: Assessment execution diagnostic: missing_field_held
+Assessment result  UNKNOWN (Assessment evidence was incomplete or inconclusive.)
+Assessment duration 0.07s
+Assessment started  2026-11-18T14:40:16.853094829Z
+Assessment completed 2026-11-18T14:40:16.923361046Z
+
+EVALUATE TREE
+  /tests/sshd-server-b-congiured-use-banner-file-etc-issue-net-test → Test sshd-server-b-congiured-use-banner-file-etc-issue-net-test — UNKNOWN
+  /tests/ubuntu-display-standard-local-or-remote-connection-system-test → Test ubuntu-display-standard-local-or-remote-connection-system-test — TRUE
+  /evaluate → Test  — UNKNOWN
+
+EVALUATE → TEST
+  sshd-server-b-congiured-use-banner-file-etc-issue-net-test — SSHD server must b congiured to use banner file /etc/issue.net
+  Technical result   UNKNOWN
+  Reason             Assessment execution diagnostic: missing field held
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-9df6e12c6d65a449e2b3a0b667fa7785/object/sshd-server-b-congiured-use-banner-file-etc-issue-net-test
+  Capability         independent.shellcommand
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/sshd-server-b-congiured-use-banner-file-etc-issue-net-test/require — UNKNOWN
+  Decisive reason    Assessment execution diagnostic: missing field held
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-070ba835c05324d896f15ba580abc9c4
+  Capability         independent.shellcommand
+  Status             exists
+  command              "/usr/sbin/sshd -dd 2>&1 | awk '/filename/ {print $4}' | tr -d '\\r' | tr '\\n' ' ' | xargs grep -iH 'banner'" [string; exists]
+  exit_status          123 [integer; exists]
+  shell                "bash" [string; exists]
+  stderr_line          <absent> [; ]
+  Evidence provenance collector="linux.shellcommand.exec.v1" observed_at="2026-11-18T14:40:16.919214596Z" scope="authorized-local-process" target_ref="ubuntu-24.04-nonroot"
+
+EVALUATE → TEST
+  ubuntu-display-standard-local-or-remote-connection-system-test — Ubuntu must display the Standard Mandatory DOD Notice and Consent Banner before granting any local or remote connection to the system.
+  Technical result   TRUE
+  Reason             All required observed fields matched their expected values.
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-9df6e12c6d65a449e2b3a0b667fa7785/object/ubuntu-display-standard-local-or-remote-connection-system-test
+  Capability         independent.textfilecontent
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/ubuntu-display-standard-local-or-remote-connection-system-test/require — TRUE
+  Decisive reason    All required observed fields matched their expected values.
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-677f2c0a0192637b758cd1ee44e4f2e6
+  Capability         independent.textfilecontent
+  Status             exists
+  directory            "/etc" [string; exists]
+  full_path            "/etc/issue.net" [string; exists]
+  instance             1 [integer; exists]
+  name                 "issue.net" [string; exists]
+  pattern              ".+" [string; exists]
+  text                 "You are accessing a U.S. Government (USG) Information System (IS) that is \nprovided for USG-authorized use only. By using this IS (which includes any \ndevice attached to this IS), you consent to the following conditions:\n-The USG routinely intercepts and monitors communications on this IS for \npurposes including, but not limited to, penetration testing, COMSEC monitoring, \nnetwork operations and defense, personnel misconduct (PM), law enforcement \n(LE), and counterintelligence (CI) investigations.\n-At any time, the USG may inspect and seize data stored on this IS.\n-Communications using, or data stored on, this IS are not private, are subject \nto routine monitoring, interception, and search, and may be disclosed or used \nfor any USG-authorized purpose.\n-This IS includes security measures (e.g., authentication and access controls) \nto protect USG interests--not for your personal benefit or privacy.\n-Notwithstanding the above, using this IS does not constitute consent to PM, LE \nor CI investigative searching or monitoring of the content of privileged \ncommunications, or work product, related to personal representation or services \nby attorneys, psychotherapists, or clergy, and their assistants. Such \ncommunications and work product are private and confidential. See User \nAgreement for details.\n" [string; exists]
+  Evidence provenance collector="linux.independent-textfilecontent.literal.v3" observed_at="2026-11-18T14:40:16.881823028Z" target_ref="ubuntu-24.04-nonroot"
+
+[UNKNOWN] ubuntu-24-04-lts-library-0755-or-less-permissive-sv-270696-rule — Ubuntu 24.04 LTS library files must have mode 0755 or less permissive.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-18T14:40:16.97470108Z
+Rule completed     2026-11-18T14:40:16.974724877Z
+Assessment         ubuntu-24-04-lts-library-less-permissive-sv-270696-assessment — Ubuntu 24.04 LTS library files must have mode 0755 or less permissive.
+Why                Assessment evidence was incomplete or inconclusive: collection incomplete: acquisition not complete: unsupported
+Finding            Assessment evidence was incomplete or inconclusive: collection incomplete: acquisition not complete: unsupported
+Assessment result  UNKNOWN (Assessment evidence was incomplete or inconclusive.)
+Assessment duration 0.03s
+Assessment started  2026-11-18T14:40:16.855743826Z
+Assessment completed 2026-11-18T14:40:16.888506827Z
+
+EVALUATE TREE
+  /tests/system-library-files-have-permissive-gwrite-should-false-test → Test system-library-files-have-permissive-gwrite-should-false-test — UNKNOWN
+  /tests/system-library-files-have-permissive-owrite-should-false-test → Test system-library-files-have-permissive-owrite-should-false-test — UNKNOWN
+  /evaluate → Test  — UNKNOWN
+
+EVALUATE → TEST
+  system-library-files-have-permissive-gwrite-should-false-test — System Library files have mode 755 or less permissive (gwrite should be = false)
+  Technical result   UNKNOWN
+  Reason             collection incomplete: acquisition not complete: unsupported
+  Items observed    0
+  Items retained    0
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-0f5a94cb6b4c757f53f93d8bb8c55720/object/system-library-files-have-permissive-gwrite-should-false-test
+  Capability         unix.file
+  Status             not_collected
+  Logical complete   false
+  Population complete false
+  Collection note    collection_incomplete
+
+EVALUATE → TEST
+  system-library-files-have-permissive-owrite-should-false-test — System Library files have mode 755 or less permissive (owrite should be = false)
+  Technical result   UNKNOWN
+  Reason             collection incomplete: acquisition not complete: unsupported
+  Items observed    0
+  Items retained    0
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-0f5a94cb6b4c757f53f93d8bb8c55720/object/system-library-files-have-permissive-owrite-should-false-test
+  Capability         unix.file
+  Status             not_collected
+  Logical complete   false
+  Population complete false
+  Collection note    collection_incomplete
+
+[UNKNOWN] ubuntu-24-04-lts-prevent-login-root-account-sv-270724-rule — Ubuntu 24.04 LTS must prevent direct login to the root account.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-18T14:40:16.974739577Z
+Rule completed     2026-11-18T14:40:16.974747025Z
+Assessment         ubuntu-24-04-lts-prevent-root-account-sv-270724-assessment — Ubuntu 24.04 LTS must prevent direct login to the root account.
+Why                Assessment evidence was incomplete or inconclusive: collection incomplete: acquisition not complete: permission_denied
+Finding            Assessment evidence was incomplete or inconclusive: collection incomplete: acquisition not complete: permission_denied
+Assessment result  UNKNOWN (Assessment evidence was incomplete or inconclusive.)
+Assessment duration <0.01s
+Assessment started  2026-11-18T14:40:16.923394287Z
+Assessment completed 2026-11-18T14:40:16.931833265Z
+
+EVALUATE TREE
+  /tests/root-account-is-locked-test → Test root-account-is-locked-test — UNKNOWN
+
+EVALUATE → TEST
+  root-account-is-locked-test — root account is locked
+  Technical result   UNKNOWN
+  Reason             collection incomplete: acquisition not complete: permission denied
+  Items observed    0
+  Items retained    0
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-6a27872a93f82069a49112cd4948196d/object/root-account-is-locked-test
+  Capability         unix.shadow
+  Status             error
+  Logical complete   false
+  Population complete false
+  Collection note    collection_incomplete
+
+[UNKNOWN] ubuntu-24-04-lts-ssh-server-exchange-algorithms-sv-270669-rule — Ubuntu 24.04 LTS SSH server must be configured to use only FIPS 140-3 validated key exchange algorithms.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-18T14:40:16.974662484Z
+Rule completed     2026-11-18T14:40:16.974674415Z
+Assessment         ubuntu-24-04-lts-ssh-exchange-algorithms-sv-270669-assessment — Ubuntu 24.04 LTS SSH server must be configured to use only FIPS 140-3 validated key exchange algorithms.
+Why                Assessment evidence was incomplete or inconclusive: collection failed: acquisition not complete: unsupported
+Finding            Assessment evidence was incomplete or inconclusive: collection failed: acquisition not complete: unsupported
+Assessment result  ERROR (Assessment execution reported an acquisition or evaluation error.)
+Assessment duration <0.01s
+Assessment started  2026-11-18T14:40:16.931856045Z
+Assessment completed 2026-11-18T14:40:16.933229267Z
+
+EVALUATE TREE
+  /tests/sshd-config-kexalgorithms-uses-fips-validated-algorithms-test → Test sshd-config-kexalgorithms-uses-fips-validated-algorithms-test — ERROR
+
+EVALUATE → TEST
+  sshd-config-kexalgorithms-uses-fips-validated-algorithms-test — sshd_config: KexAlgorithms uses FIPS-validated algorithms
+  Technical result   ERROR
+  Reason             collection failed: acquisition not complete: unsupported
+  Items observed    0
+  Items retained    0
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-5ebc98620a09cc13383c23bd4d3e2457/object/sshd-config-kexalgorithms-uses-fips-validated-algorithms-test
+  Capability         independent.textfilecontent
+  Status             error
+  Logical complete   false
+  Population complete false
+  Collection note    collection_failed
+
+[PASS] ubuntu-24-04-lts-disable-x86-delete-key-sequence-sv-270712-rule — Ubuntu 24.04 LTS must disable the x86 Ctrl-Alt-Delete key sequence.
+Severity           high
+Rule duration      <0.01s
+Rule started       2026-11-18T14:40:16.974728335Z
+Rule completed     2026-11-18T14:40:16.974735608Z
+Assessment         ubuntu-24-04-lts-disable-key-sequence-sv-270712-assessment — Ubuntu 24.04 LTS must disable the x86 Ctrl-Alt-Delete key sequence.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration <0.01s
+Assessment started  2026-11-18T14:40:16.850663878Z
+Assessment completed 2026-11-18T14:40:16.854790318Z
+
+EVALUATE TREE
+  /tests/the-ctrl-alt-del-target-unit-is-masked-test → Test the-ctrl-alt-del-target-unit-is-masked-test — TRUE
+
+EVALUATE → TEST
+  the-ctrl-alt-del-target-unit-is-masked-test — The ctrl-alt-del.target unit is masked.
+  Technical result   TRUE
+  Reason             All required observed fields matched their expected values.
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-5b1506c3e9806dd941ad14ae5bca0f11/object/the-ctrl-alt-del-target-unit-is-masked-test
+  Capability         unix.symlink
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/the-ctrl-alt-del-target-unit-is-masked-test/require — TRUE
+  Decisive reason    All required observed fields matched their expected values.
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+  canonical_path           equals       string "/dev/null" (exists)  string "/dev/null" (exists)  TRUE
+    Explanation         All required observed fields matched their expected values.
+
+COLLECTED ITEM 1
+  Identity           item-d21e83df36352d77f0d1d813fbecae54
+  Capability         unix.symlink
+  Status             exists
+  canonical_path       "/dev/null" [string; exists]
+  full_path            "/etc/systemd/system/ctrl-alt-del.target" [string; exists]
+  Evidence provenance collector="linux.unix-symlink.lstat.v2" observed_at="2026-11-18T14:40:16.851278767Z" target_ref="ubuntu-24.04-nonroot"
+
+[PASS] ubuntu-24-04-lts-not-have-ntp-package-installed-sv-270646-rule — Ubuntu 24.04 LTS must not have the "ntp" package installed.
+Severity           low
+Rule duration      <0.01s
+Rule started       2026-11-18T14:40:16.974171612Z
+Rule completed     2026-11-18T14:40:16.974512991Z
+Assessment         ubuntu-24-04-lts-not-have-installed-sv-270646-assessment — Ubuntu 24.04 LTS must not have the "ntp" package installed.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration 0.11s
+Assessment started  2026-11-18T14:40:16.867287926Z
+Assessment completed 2026-11-18T14:40:16.972523283Z
+
+EVALUATE TREE
+  /tests/ntp-package-is-not-installed-test → Test ntp-package-is-not-installed-test — TRUE
+
+EVALUATE → TEST
+  ntp-package-is-not-installed-test — ntp package is not installed
+  Technical result   TRUE
+  Reason             item existence satisfied
+  Items observed    0
+  Items retained    0
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-fd1cb8e93a6342efc718b7cff53f096f/object/ntp-package-is-not-installed-test
+  Capability         linux.dpkginfo
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+[PASS] ubuntu-24-04-lts-not-have-package-installed-sv-270645-rule — Ubuntu 24.04 LTS must not have the "systemd-timesyncd" package installed.
+Severity           low
+Rule duration      <0.01s
+Rule started       2026-11-18T14:40:16.974142341Z
+Rule completed     2026-11-18T14:40:16.974151829Z
+Assessment         ubuntu-24-04-lts-not-have-installed-sv-270645-assessment — Ubuntu 24.04 LTS must not have the "systemd-timesyncd" package installed.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration 0.11s
+Assessment started  2026-11-18T14:40:16.858790133Z
+Assessment completed 2026-11-18T14:40:16.966785706Z
+
+EVALUATE TREE
+  /tests/systemd-timesyncd-package-is-not-installed-test → Test systemd-timesyncd-package-is-not-installed-test — TRUE
+
+EVALUATE → TEST
+  systemd-timesyncd-package-is-not-installed-test — systemd-timesyncd package is not installed
+  Technical result   TRUE
+  Reason             item existence satisfied
+  Items observed    0
+  Items retained    0
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-761006878557d8bc4676e53fb4e386b6/object/systemd-timesyncd-package-is-not-installed-test
+  Capability         linux.dpkginfo
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+[PASS] ubuntu-24-04-lts-not-have-package-installed-sv-270647-rule — Ubuntu 24.04 LTS must not have the telnet package installed.
+Severity           high
+Rule duration      <0.01s
+Rule started       2026-11-18T14:40:16.974524257Z
+Rule completed     2026-11-18T14:40:16.974536398Z
+Assessment         ubuntu-24-04-lts-not-have-installed-sv-270647-assessment — Ubuntu 24.04 LTS must not have the telnet package installed.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration 0.03s
+Assessment started  2026-11-18T14:40:16.888553123Z
+Assessment completed 2026-11-18T14:40:16.915391254Z
+
+EVALUATE TREE
+  /tests/telnetd-package-is-not-installed-test → Test telnetd-package-is-not-installed-test — TRUE
+
+EVALUATE → TEST
+  telnetd-package-is-not-installed-test — Telnetd package is not installed
+  Technical result   TRUE
+  Reason             item existence satisfied
+  Items observed    0
+  Items retained    0
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-04d1f3f3ce7ab48170ec84b73a8a2fea/object/telnetd-package-is-not-installed-test
+  Capability         linux.dpkginfo
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+[PASS] ubuntu-24-04-lts-not-have-package-installed-sv-270648-rule — Ubuntu 24.04 LTS must not have the rsh-server package installed.
+Severity           high
+Rule duration      <0.01s
+Rule started       2026-11-18T14:40:16.974540066Z
+Rule completed     2026-11-18T14:40:16.974547595Z
+Assessment         ubuntu-24-04-lts-not-have-installed-sv-270648-assessment — Ubuntu 24.04 LTS must not have the rsh-server package installed.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration 0.02s
+Assessment started  2026-11-18T14:40:16.915411181Z
+Assessment completed 2026-11-18T14:40:16.939311552Z
+
+EVALUATE TREE
+  /tests/package-rsh-server-is-not-installed-test → Test package-rsh-server-is-not-installed-test — TRUE
+
+EVALUATE → TEST
+  package-rsh-server-is-not-installed-test — package rsh-server is not installed
+  Technical result   TRUE
+  Reason             item existence satisfied
+  Items observed    0
+  Items retained    0
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-f3d1fe7cfeca817dd60f7b44f9d04176/object/package-rsh-server-is-not-installed-test
+  Capability         linux.dpkginfo
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+PASSING RULES
+-------------
+  ubuntu-24-04-lts-disable-x86-delete-key-sequence-sv-270712-rule  <0.01s  Ubuntu 24.04 LTS must disable the x86 Ctrl-Alt-Delete key sequence.
+  ubuntu-24-04-lts-not-have-ntp-package-installed-sv-270646-rule  <0.01s  Ubuntu 24.04 LTS must not have the "ntp" package installed.
+  ubuntu-24-04-lts-not-have-package-installed-sv-270645-rule  <0.01s  Ubuntu 24.04 LTS must not have the "systemd-timesyncd" package installed.
+  ubuntu-24-04-lts-not-have-package-installed-sv-270647-rule  <0.01s  Ubuntu 24.04 LTS must not have the telnet package installed.
+  ubuntu-24-04-lts-not-have-package-installed-sv-270648-rule  <0.01s  Ubuntu 24.04 LTS must not have the rsh-server package installed.
+
+HISTORY / BASELINE
+-------------------
+No comparable history available. Historical comparison is shown only for a verified compatible baseline.
+
+ENDNOTES
+---------
+This report is read-only and does not rerun evaluation. Technical Assessment/Test outcomes (TRUE/FALSE/UNKNOWN/ERROR) remain distinct from policy Rule dispositions (PASS/FAIL/etc.). Collected Items are bounded retained evidence; observed and retained counts remain separate. Per-Rule and per-Assessment timings are measured sidecar context until the upstream canonical timing contract is approved.
