@@ -1,0 +1,85 @@
+{
+  "after": {
+    "rule_outcomes": {
+      "error": 2,
+      "fail": 1,
+      "pass": 5,
+      "unknown": 3
+    },
+    "run": "scan-v11"
+  },
+  "baseline": {
+    "rule_outcomes": {
+      "fail": 1,
+      "pass": 5,
+      "unknown": 5
+    },
+    "run": "scan-v9"
+  },
+  "decision": "A technical Assessment error remains Rule error; incomplete or inconclusive evidence remains Rule unknown.",
+  "execution": {
+    "authority": "unprivileged/non-authoritative",
+    "canonical_results_validated": true,
+    "items_observed": 4,
+    "reports": [
+      "benchmark-report.html",
+      "benchmark-report.txt"
+    ],
+    "target": "ubuntu-24.04-nonroot"
+  },
+  "format": "scap-ng-ri/issue131-rule-error-propagation/1",
+  "pins": {
+    "canonical_schema_commit": "5ee55288b369da26f308f40813e545b78dff2753",
+    "converter_commit": "df2deb1a514cdd0babbccdf2d240fba4e9811d6d",
+    "package_manifest_sha256": "7bfdf6e9787009bc61cbce1b9f3a51727fefb309d00550dba9bacbd537a41da1",
+    "ri_commit": "7c59cc8630e642fedec610da6bfc7d4e1cdc6b49",
+    "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329"
+  },
+  "source": {
+    "commit": "8c8e5dff860af6b1290ee9273a282db24278f8d5",
+    "selected_rules": 11,
+    "xml_sha256": "eac6f7a6a1e80c52d02c508d939eb09aa09b7fe6eaeb060b8aa21e095719c940",
+    "zip_sha256": "40229cd7a41e6ff4a8cfb675523f767292d1460edbc68fe9ba5258c530c8b4a7"
+  },
+  "test_receipt": {
+    "commands": [
+      "go test -count=1 ./...",
+      "go test -race -count=1 ./benchmark -run TestRuleOutcome...",
+      "go vet ./benchmark ./cmd/ri-benchmark"
+    ],
+    "go": "go1.27.4"
+  },
+  "transitions": [
+    {
+      "after": "error",
+      "after_reason": {
+        "code": "collection_error",
+        "message": "Assessment execution reported an acquisition or evaluation error: collection failed: acquisition not complete: unsupported"
+      },
+      "before": "unknown",
+      "before_reason": {
+        "code": "collection_error",
+        "message": "Assessment evidence was incomplete or inconclusive: collection failed: acquisition not complete: unsupported"
+      },
+      "rule_id": "ubuntu-24-04-lts-configure-during-transmission-sv-270667-rule"
+    },
+    {
+      "after": "error",
+      "after_reason": {
+        "code": "collection_error",
+        "message": "Assessment execution reported an acquisition or evaluation error: collection failed: acquisition not complete: unsupported"
+      },
+      "before": "unknown",
+      "before_reason": {
+        "code": "collection_error",
+        "message": "Assessment evidence was incomplete or inconclusive: collection failed: acquisition not complete: unsupported"
+      },
+      "rule_id": "ubuntu-24-04-lts-ssh-server-exchange-algorithms-sv-270669-rule"
+    }
+  ],
+  "unchanged_unknowns": [
+    "ubuntu-24-04-lts-display-access-via-ssh-logon-sv-270691-rule",
+    "ubuntu-24-04-lts-library-0755-or-less-permissive-sv-270696-rule",
+    "ubuntu-24-04-lts-prevent-login-root-account-sv-270724-rule"
+  ]
+}
