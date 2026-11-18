@@ -1,0 +1,838 @@
+{
+  "benchmark_id": "direct-slice",
+  "benchmark_version": {
+    "value": "001.005.007"
+  },
+  "build_provenance": {
+    "applicability_assembly": {
+      "assessments": [
+        {
+          "id": "oval-mil-disa-stig-ubuntu2404os-def-1-assessment",
+          "source_sha256": "073b49b7c1b33e4a39e4a04d4929a91090eb89bfecc5c83d07d8ba6d1f70e672"
+        }
+      ],
+      "condition_maps": [
+        {
+          "assessment": "oval-mil-disa-stig-ubuntu2404os-def-1-assessment",
+          "condition": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition"
+        }
+      ],
+      "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329",
+      "tool": "tools/assemble_applicability_package.py"
+    },
+    "converter_commit": "df2deb1a514cdd0babbccdf2d240fba4e9811d6d",
+    "flat_schema_family_sha256": "88fc59791f9cb5055d2a8dc27bb458bcf6699b5820061ce68af1a355bd33a84f",
+    "package_adapter_normalizations": [
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-accept-management-pam-framework-sv-270673-rule"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-accept-piv-credentials-sv-270672-rule"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-configure-during-transmission-sv-270667-rule"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-configure-during-transmission-sv-270668-rule"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-disable-x86-delete-key-sequence-sv-270712-rule"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-display-access-via-ssh-logon-sv-270691-rule"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-library-0755-or-less-permissive-sv-270696-rule"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-not-have-ntp-package-installed-sv-270646-rule"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-not-have-package-installed-sv-270645-rule"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-not-have-package-installed-sv-270647-rule"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-not-have-package-installed-sv-270648-rule"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-prevent-login-root-account-sv-270724-rule"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-so-that-is-owned-by-root-sv-270759-rule"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-ssh-server-exchange-algorithms-sv-270669-rule"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-use-apparmor-sv-270660-rule"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-use-ssh-transmitted-information-sv-270666-rule"
+      }
+    ],
+    "ri_commit": "8e27886fe0a1d8652978d374480b222f5535f24a",
+    "schema_commit": "5ee55288b369da26f308f40813e545b78dff2753",
+    "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329",
+    "source": "scap-ng-tools direct-slice",
+    "source_benchmark_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-xccdf.xml",
+    "source_commit": "8c8e5dff860af6b1290ee9273a282db24278f8d5",
+    "source_crosswalk": [
+      {
+        "assessment": "ubuntu-24-04-lts-accept-pam-framework-sv-270673-assessment",
+        "component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+        "definition": "oval:mil.disa.stig.ubuntu2404os:def:270673",
+        "definition_sha256": "bc58bce0f0763fa8b7d1e0ae4b9f22180e61b5f70d87b995f8f5254a7864a4ec",
+        "native_rule": "ubuntu-24-04-lts-accept-management-pam-framework-sv-270673-rule",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-270673r1067164_rule",
+        "source_rule_sha256": "070934970991a0fabfbb121007badf265a0667f8ae5802cdac62c37dcc4faac0"
+      },
+      {
+        "assessment": "ubuntu-24-04-lts-accept-piv-credentials-sv-270672-assessment",
+        "component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+        "definition": "oval:mil.disa.stig.ubuntu2404os:def:270672",
+        "definition_sha256": "dea1ca94fd2e8d93ea1ba1c8b8b411d4eece872fb9c4e560ce9d99570adce724",
+        "native_rule": "ubuntu-24-04-lts-accept-piv-credentials-sv-270672-rule",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-270672r1067161_rule",
+        "source_rule_sha256": "5a3e965ca17e366949f78151a562df081662cff9e00b38f3061d351db5729983"
+      },
+      {
+        "assessment": "ubuntu-24-04-lts-during-transmission-sv-270667-assessment",
+        "component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+        "definition": "oval:mil.disa.stig.ubuntu2404os:def:270667",
+        "definition_sha256": "0b759df426be5e004066d85a5c94dae6f22d102d5c6cfc4cf11fc8fde4dfe64b",
+        "native_rule": "ubuntu-24-04-lts-configure-during-transmission-sv-270667-rule",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-270667r1067107_rule",
+        "source_rule_sha256": "818f7d9e7ef30cccad2449775ba61c792138681ee748cc9661fd7f31508a4a56"
+      },
+      {
+        "assessment": "ubuntu-24-04-lts-during-transmission-sv-270668-assessment",
+        "component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+        "definition": "oval:mil.disa.stig.ubuntu2404os:def:270668",
+        "definition_sha256": "9224ec125495ed5b9869631277cef04686f96a20b1823d37aa93f7bb9ba70d25",
+        "native_rule": "ubuntu-24-04-lts-configure-during-transmission-sv-270668-rule",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-270668r1067110_rule",
+        "source_rule_sha256": "db8ef8fb5963dfa259079888b71d55ce466494a14caadebc9a6623da5563abbe"
+      },
+      {
+        "assessment": "ubuntu-24-04-lts-disable-key-sequence-sv-270712-assessment",
+        "component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+        "definition": "oval:mil.disa.stig.ubuntu2404os:def:270712",
+        "definition_sha256": "afc42b2fff79149082a34fdc65ebd39b16f372e4d9903a8b6580c8ab555cb61f",
+        "native_rule": "ubuntu-24-04-lts-disable-x86-delete-key-sequence-sv-270712-rule",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-270712r1068363_rule",
+        "source_rule_sha256": "668dcdb9b2d8a42d03bd149e4ef8fcca0cad160ca4f5aa61c67b0a79a7ea1804"
+      },
+      {
+        "assessment": "ubuntu-24-04-lts-display-via-ssh-logon-sv-270691-assessment",
+        "component": "scap_navy.navwar.niwcatlantic.scc_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval2.xml",
+        "definition": "oval:navy.navwar.niwcatlantic.scc.ubuntu:def:270691",
+        "definition_sha256": "cbedf3afff2a7fbff2bf2c19aa9291faa6dd233644944738a43a474453b54993",
+        "native_rule": "ubuntu-24-04-lts-display-access-via-ssh-logon-sv-270691-rule",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-270691r1066562_rule",
+        "source_rule_sha256": "73eb9dccbd0d57ab10d05261130f970ea74b13bd5063817ac1c7c3a899da9e5d"
+      },
+      {
+        "assessment": "ubuntu-24-04-lts-library-less-permissive-sv-270696-assessment",
+        "component": "scap_navy.navwar.niwcatlantic.scc_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval2.xml",
+        "definition": "oval:navy.navwar.niwcatlantic.scc.linux:def:270696",
+        "definition_sha256": "d93e531e06ca15586c54dc1d801f06f0eaa36cdae497308a54aed0dabb15cc1d",
+        "native_rule": "ubuntu-24-04-lts-library-0755-or-less-permissive-sv-270696-rule",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-270696r1107306_rule",
+        "source_rule_sha256": "ffe049beb9e63ff50a517e9392c7c0691b7badc0c07836c85fc2dba3e35c08b9"
+      },
+      {
+        "assessment": "ubuntu-24-04-lts-not-have-installed-sv-270646-assessment",
+        "component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+        "definition": "oval:mil.disa.stig.ubuntu2404os:def:270646",
+        "definition_sha256": "7ab822c0c9c5cdef4bf563f478c904f1cac0900fda976dffa07130803fe3361a",
+        "native_rule": "ubuntu-24-04-lts-not-have-ntp-package-installed-sv-270646-rule",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-270646r1068358_rule",
+        "source_rule_sha256": "56f8c5410710126e34f7e54a99a341ffebdd55d8014cc0d46269c5227506f1e8"
+      },
+      {
+        "assessment": "ubuntu-24-04-lts-not-have-installed-sv-270645-assessment",
+        "component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+        "definition": "oval:mil.disa.stig.ubuntu2404os:def:270645",
+        "definition_sha256": "bc37564eaa50187d6fda6faaac5afe9f144cf62b0493e92060a03094062d917d",
+        "native_rule": "ubuntu-24-04-lts-not-have-package-installed-sv-270645-rule",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-270645r1068357_rule",
+        "source_rule_sha256": "29a9d60679f05e20beaf2f45cd12028229ae19804d732d67467a0711b63ed75a"
+      },
+      {
+        "assessment": "ubuntu-24-04-lts-not-have-installed-sv-270647-assessment",
+        "component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+        "definition": "oval:mil.disa.stig.ubuntu2404os:def:270647",
+        "definition_sha256": "e72d0eb2bd0e6cd1da60327b2fbefef088554495c7c43e5ad1fd025f81a343e0",
+        "native_rule": "ubuntu-24-04-lts-not-have-package-installed-sv-270647-rule",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-270647r1066430_rule",
+        "source_rule_sha256": "738a6fd6e0efb1ccc5b2b27df41c735a68f2225600f59d2d7c71f5cbf898a919"
+      },
+      {
+        "assessment": "ubuntu-24-04-lts-not-have-installed-sv-270648-assessment",
+        "component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+        "definition": "oval:mil.disa.stig.ubuntu2404os:def:270648",
+        "definition_sha256": "bf67e04eacdc2f1e89a23c3524c712694a3194329313a86e813eedb0f0e78b6f",
+        "native_rule": "ubuntu-24-04-lts-not-have-package-installed-sv-270648-rule",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-270648r1066433_rule",
+        "source_rule_sha256": "d5027255f50406d2c277505edcd52f778a67599b8aefa2d33a38ab2c66c4ff85"
+      },
+      {
+        "assessment": "ubuntu-24-04-lts-prevent-root-account-sv-270724-assessment",
+        "component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+        "definition": "oval:mil.disa.stig.ubuntu2404os:def:270724",
+        "definition_sha256": "27c1ebd56eb0ce65066d849421c710de0c80d315a7ab23e8029e3eb9255b306b",
+        "native_rule": "ubuntu-24-04-lts-prevent-login-root-account-sv-270724-rule",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-270724r1066661_rule",
+        "source_rule_sha256": "67b6b4b9fdfe7648173287153fbb5c8096da7b94faccea80409a913e5ac92d75"
+      },
+      {
+        "assessment": "ubuntu-24-04-lts-so-that-is-owned-by-root-sv-270759-assessment",
+        "component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+        "definition": "oval:mil.disa.stig.ubuntu2404os:def:270759",
+        "definition_sha256": "554c3653b750a58b9307feda95ce0a37a5f2630ede1e9340044ed23686d256d6",
+        "native_rule": "ubuntu-24-04-lts-so-that-is-owned-by-root-sv-270759-rule",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-270759r1068367_rule",
+        "source_rule_sha256": "11a07f7aa6e107a352ca932a791329e5a37ec0c8946387521e7dd92a54a1abff"
+      },
+      {
+        "assessment": "ubuntu-24-04-lts-ssh-exchange-algorithms-sv-270669-assessment",
+        "component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+        "definition": "oval:mil.disa.stig.ubuntu2404os:def:270669",
+        "definition_sha256": "48b284033baa438c5269c1e68c3c200ca33eea90ca4813051947c6e8e737c50f",
+        "native_rule": "ubuntu-24-04-lts-ssh-server-exchange-algorithms-sv-270669-rule",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-270669r1134804_rule",
+        "source_rule_sha256": "5512485ffe921acf83e9d5114ad992f82e534ae772b852d056bdd1733b527a44"
+      },
+      {
+        "assessment": "ubuntu-24-04-lts-use-apparmor-sv-270660-assessment",
+        "component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+        "definition": "oval:mil.disa.stig.ubuntu2404os:def:270660",
+        "definition_sha256": "69b717158a45c67dee8ff6e24ba257938047aaef995d1c44a760d81acadf9f11",
+        "native_rule": "ubuntu-24-04-lts-use-apparmor-sv-270660-rule",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-270660r1066469_rule",
+        "source_rule_sha256": "c12a77e06156d0104cf228f5b5c1df4b9a9bfcd9c63982f5c106f16f3070cd35"
+      },
+      {
+        "assessment": "ubuntu-24-04-lts-use-ssh-information-sv-270666-assessment",
+        "component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+        "definition": "oval:mil.disa.stig.ubuntu2404os:def:270666",
+        "definition_sha256": "d39a3daa302ec31923af724285ce850afbf1e29879bfbef11930d07da047e946",
+        "native_rule": "ubuntu-24-04-lts-use-ssh-transmitted-information-sv-270666-rule",
+        "source_rule": "xccdf_mil.disa.stig_rule_SV-270666r1066487_rule",
+        "source_rule_sha256": "19b456d5c30638f4a14dc21a699513a4f6f53897f919c2dc0ccec8f6e227e765"
+      }
+    ],
+    "source_member": "U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-signed.xml",
+    "source_rule_inventory": {
+      "omitted_count": 178,
+      "omitted_source_rules": [
+        "xccdf_mil.disa.stig_rule_SV-270649r1067136_rule",
+        "xccdf_mil.disa.stig_rule_SV-270650r1155241_rule",
+        "xccdf_mil.disa.stig_rule_SV-270651r1068395_rule",
+        "xccdf_mil.disa.stig_rule_SV-270652r1067138_rule",
+        "xccdf_mil.disa.stig_rule_SV-270653r1067141_rule",
+        "xccdf_mil.disa.stig_rule_SV-270654r1067143_rule",
+        "xccdf_mil.disa.stig_rule_SV-270655r1067145_rule",
+        "xccdf_mil.disa.stig_rule_SV-270656r1067148_rule",
+        "xccdf_mil.disa.stig_rule_SV-270657r1066460_rule",
+        "xccdf_mil.disa.stig_rule_SV-270658r1067151_rule",
+        "xccdf_mil.disa.stig_rule_SV-270659r1066466_rule",
+        "xccdf_mil.disa.stig_rule_SV-270661r1067175_rule",
+        "xccdf_mil.disa.stig_rule_SV-270662r1067156_rule",
+        "xccdf_mil.disa.stig_rule_SV-270663r1066478_rule",
+        "xccdf_mil.disa.stig_rule_SV-270664r1068359_rule",
+        "xccdf_mil.disa.stig_rule_SV-270665r1067133_rule",
+        "xccdf_mil.disa.stig_rule_SV-270670r1067115_rule",
+        "xccdf_mil.disa.stig_rule_SV-270671r1155244_rule",
+        "xccdf_mil.disa.stig_rule_SV-270674r1067167_rule",
+        "xccdf_mil.disa.stig_rule_SV-270675r1137691_rule",
+        "xccdf_mil.disa.stig_rule_SV-270676r1155245_rule",
+        "xccdf_mil.disa.stig_rule_SV-270677r1101774_rule",
+        "xccdf_mil.disa.stig_rule_SV-270678r1101791_rule",
+        "xccdf_mil.disa.stig_rule_SV-270679r1107295_rule",
+        "xccdf_mil.disa.stig_rule_SV-270680r1066529_rule",
+        "xccdf_mil.disa.stig_rule_SV-270681r1134806_rule",
+        "xccdf_mil.disa.stig_rule_SV-270682r1066535_rule",
+        "xccdf_mil.disa.stig_rule_SV-270683r1066538_rule",
+        "xccdf_mil.disa.stig_rule_SV-270684r1066541_rule",
+        "xccdf_mil.disa.stig_rule_SV-270685r1066544_rule",
+        "xccdf_mil.disa.stig_rule_SV-270686r1066547_rule",
+        "xccdf_mil.disa.stig_rule_SV-270687r1066550_rule",
+        "xccdf_mil.disa.stig_rule_SV-270688r1066553_rule",
+        "xccdf_mil.disa.stig_rule_SV-270689r1066556_rule",
+        "xccdf_mil.disa.stig_rule_SV-270690r1067126_rule",
+        "xccdf_mil.disa.stig_rule_SV-270692r1066565_rule",
+        "xccdf_mil.disa.stig_rule_SV-270693r1066568_rule",
+        "xccdf_mil.disa.stig_rule_SV-270694r1066571_rule",
+        "xccdf_mil.disa.stig_rule_SV-270695r1066574_rule",
+        "xccdf_mil.disa.stig_rule_SV-270697r1107308_rule",
+        "xccdf_mil.disa.stig_rule_SV-270698r1101751_rule",
+        "xccdf_mil.disa.stig_rule_SV-270699r1107310_rule",
+        "xccdf_mil.disa.stig_rule_SV-270700r1066589_rule",
+        "xccdf_mil.disa.stig_rule_SV-270701r1066592_rule",
+        "xccdf_mil.disa.stig_rule_SV-270702r1066595_rule",
+        "xccdf_mil.disa.stig_rule_SV-270703r1066598_rule",
+        "xccdf_mil.disa.stig_rule_SV-270704r1066601_rule",
+        "xccdf_mil.disa.stig_rule_SV-270705r1066604_rule",
+        "xccdf_mil.disa.stig_rule_SV-270706r1068361_rule",
+        "xccdf_mil.disa.stig_rule_SV-270707r1101786_rule",
+        "xccdf_mil.disa.stig_rule_SV-270708r1208697_rule",
+        "xccdf_mil.disa.stig_rule_SV-270709r1208698_rule",
+        "xccdf_mil.disa.stig_rule_SV-270711r1184069_rule",
+        "xccdf_mil.disa.stig_rule_SV-270713r1066628_rule",
+        "xccdf_mil.disa.stig_rule_SV-270714r1208699_rule",
+        "xccdf_mil.disa.stig_rule_SV-270715r1066634_rule",
+        "xccdf_mil.disa.stig_rule_SV-270716r1066637_rule",
+        "xccdf_mil.disa.stig_rule_SV-270717r1208700_rule",
+        "xccdf_mil.disa.stig_rule_SV-270718r1134811_rule",
+        "xccdf_mil.disa.stig_rule_SV-270719r1067172_rule",
+        "xccdf_mil.disa.stig_rule_SV-270720r1066649_rule",
+        "xccdf_mil.disa.stig_rule_SV-270721r1066652_rule",
+        "xccdf_mil.disa.stig_rule_SV-270722r1067130_rule",
+        "xccdf_mil.disa.stig_rule_SV-270723r1066658_rule",
+        "xccdf_mil.disa.stig_rule_SV-270725r1101789_rule",
+        "xccdf_mil.disa.stig_rule_SV-270726r1066667_rule",
+        "xccdf_mil.disa.stig_rule_SV-270727r1066670_rule",
+        "xccdf_mil.disa.stig_rule_SV-270728r1066673_rule",
+        "xccdf_mil.disa.stig_rule_SV-270729r1066676_rule",
+        "xccdf_mil.disa.stig_rule_SV-270730r1066679_rule",
+        "xccdf_mil.disa.stig_rule_SV-270731r1066682_rule",
+        "xccdf_mil.disa.stig_rule_SV-270732r1066685_rule",
+        "xccdf_mil.disa.stig_rule_SV-270733r1066688_rule",
+        "xccdf_mil.disa.stig_rule_SV-270734r1155240_rule",
+        "xccdf_mil.disa.stig_rule_SV-270735r1066694_rule",
+        "xccdf_mil.disa.stig_rule_SV-270736r1066697_rule",
+        "xccdf_mil.disa.stig_rule_SV-270737r1067178_rule",
+        "xccdf_mil.disa.stig_rule_SV-270738r1066703_rule",
+        "xccdf_mil.disa.stig_rule_SV-270739r1067124_rule",
+        "xccdf_mil.disa.stig_rule_SV-270740r1066709_rule",
+        "xccdf_mil.disa.stig_rule_SV-270741r1066712_rule",
+        "xccdf_mil.disa.stig_rule_SV-270742r1066715_rule",
+        "xccdf_mil.disa.stig_rule_SV-270743r1208702_rule",
+        "xccdf_mil.disa.stig_rule_SV-270744r1137699_rule",
+        "xccdf_mil.disa.stig_rule_SV-270745r1066724_rule",
+        "xccdf_mil.disa.stig_rule_SV-270746r1155242_rule",
+        "xccdf_mil.disa.stig_rule_SV-270747r1066730_rule",
+        "xccdf_mil.disa.stig_rule_SV-270748r1066733_rule",
+        "xccdf_mil.disa.stig_rule_SV-270749r1137695_rule",
+        "xccdf_mil.disa.stig_rule_SV-270750r1137695_rule",
+        "xccdf_mil.disa.stig_rule_SV-270751r1066742_rule",
+        "xccdf_mil.disa.stig_rule_SV-270752r1068365_rule",
+        "xccdf_mil.disa.stig_rule_SV-270753r1066748_rule",
+        "xccdf_mil.disa.stig_rule_SV-270754r1066751_rule",
+        "xccdf_mil.disa.stig_rule_SV-270755r1066754_rule",
+        "xccdf_mil.disa.stig_rule_SV-270756r1134814_rule",
+        "xccdf_mil.disa.stig_rule_SV-270757r1184072_rule",
+        "xccdf_mil.disa.stig_rule_SV-270758r1066763_rule",
+        "xccdf_mil.disa.stig_rule_SV-270760r1066769_rule",
+        "xccdf_mil.disa.stig_rule_SV-270761r1184074_rule",
+        "xccdf_mil.disa.stig_rule_SV-270762r1184076_rule",
+        "xccdf_mil.disa.stig_rule_SV-270763r1184078_rule",
+        "xccdf_mil.disa.stig_rule_SV-270764r1184080_rule",
+        "xccdf_mil.disa.stig_rule_SV-270765r1066784_rule",
+        "xccdf_mil.disa.stig_rule_SV-270766r1066787_rule",
+        "xccdf_mil.disa.stig_rule_SV-270767r1066790_rule",
+        "xccdf_mil.disa.stig_rule_SV-270768r1066793_rule",
+        "xccdf_mil.disa.stig_rule_SV-270769r1066796_rule",
+        "xccdf_mil.disa.stig_rule_SV-270770r1066799_rule",
+        "xccdf_mil.disa.stig_rule_SV-270771r1066802_rule",
+        "xccdf_mil.disa.stig_rule_SV-270772r1066805_rule",
+        "xccdf_mil.disa.stig_rule_SV-270773r1066808_rule",
+        "xccdf_mil.disa.stig_rule_SV-270775r1068369_rule",
+        "xccdf_mil.disa.stig_rule_SV-270776r1066817_rule",
+        "xccdf_mil.disa.stig_rule_SV-270777r1066820_rule",
+        "xccdf_mil.disa.stig_rule_SV-270778r1066823_rule",
+        "xccdf_mil.disa.stig_rule_SV-270779r1066826_rule",
+        "xccdf_mil.disa.stig_rule_SV-270780r1066829_rule",
+        "xccdf_mil.disa.stig_rule_SV-270781r1066832_rule",
+        "xccdf_mil.disa.stig_rule_SV-270782r1066835_rule",
+        "xccdf_mil.disa.stig_rule_SV-270783r1066838_rule",
+        "xccdf_mil.disa.stig_rule_SV-270784r1068371_rule",
+        "xccdf_mil.disa.stig_rule_SV-270785r1068373_rule",
+        "xccdf_mil.disa.stig_rule_SV-270786r1068375_rule",
+        "xccdf_mil.disa.stig_rule_SV-270787r1068378_rule",
+        "xccdf_mil.disa.stig_rule_SV-270788r1066853_rule",
+        "xccdf_mil.disa.stig_rule_SV-270789r1066856_rule",
+        "xccdf_mil.disa.stig_rule_SV-270790r1068380_rule",
+        "xccdf_mil.disa.stig_rule_SV-270791r1066862_rule",
+        "xccdf_mil.disa.stig_rule_SV-270792r1066865_rule",
+        "xccdf_mil.disa.stig_rule_SV-270793r1066868_rule",
+        "xccdf_mil.disa.stig_rule_SV-270794r1066871_rule",
+        "xccdf_mil.disa.stig_rule_SV-270795r1066874_rule",
+        "xccdf_mil.disa.stig_rule_SV-270796r1066877_rule",
+        "xccdf_mil.disa.stig_rule_SV-270797r1066880_rule",
+        "xccdf_mil.disa.stig_rule_SV-270798r1068382_rule",
+        "xccdf_mil.disa.stig_rule_SV-270799r1066886_rule",
+        "xccdf_mil.disa.stig_rule_SV-270800r1066889_rule",
+        "xccdf_mil.disa.stig_rule_SV-270801r1066892_rule",
+        "xccdf_mil.disa.stig_rule_SV-270802r1066895_rule",
+        "xccdf_mil.disa.stig_rule_SV-270803r1066898_rule",
+        "xccdf_mil.disa.stig_rule_SV-270804r1066901_rule",
+        "xccdf_mil.disa.stig_rule_SV-270805r1068384_rule",
+        "xccdf_mil.disa.stig_rule_SV-270806r1068386_rule",
+        "xccdf_mil.disa.stig_rule_SV-270807r1066910_rule",
+        "xccdf_mil.disa.stig_rule_SV-270808r1067100_rule",
+        "xccdf_mil.disa.stig_rule_SV-270809r1068388_rule",
+        "xccdf_mil.disa.stig_rule_SV-270810r1066919_rule",
+        "xccdf_mil.disa.stig_rule_SV-270811r1066922_rule",
+        "xccdf_mil.disa.stig_rule_SV-270812r1066925_rule",
+        "xccdf_mil.disa.stig_rule_SV-270813r1066928_rule",
+        "xccdf_mil.disa.stig_rule_SV-270814r1066931_rule",
+        "xccdf_mil.disa.stig_rule_SV-270815r1066934_rule",
+        "xccdf_mil.disa.stig_rule_SV-270816r1066937_rule",
+        "xccdf_mil.disa.stig_rule_SV-270817r1066940_rule",
+        "xccdf_mil.disa.stig_rule_SV-270818r1066943_rule",
+        "xccdf_mil.disa.stig_rule_SV-270819r1068390_rule",
+        "xccdf_mil.disa.stig_rule_SV-270820r1066949_rule",
+        "xccdf_mil.disa.stig_rule_SV-270821r1134818_rule",
+        "xccdf_mil.disa.stig_rule_SV-270822r1134821_rule",
+        "xccdf_mil.disa.stig_rule_SV-270823r1134824_rule",
+        "xccdf_mil.disa.stig_rule_SV-270824r1066961_rule",
+        "xccdf_mil.disa.stig_rule_SV-270825r1066964_rule",
+        "xccdf_mil.disa.stig_rule_SV-270826r1066967_rule",
+        "xccdf_mil.disa.stig_rule_SV-270827r1066970_rule",
+        "xccdf_mil.disa.stig_rule_SV-270828r1066973_rule",
+        "xccdf_mil.disa.stig_rule_SV-270829r1066976_rule",
+        "xccdf_mil.disa.stig_rule_SV-270830r1068397_rule",
+        "xccdf_mil.disa.stig_rule_SV-270831r1135002_rule",
+        "xccdf_mil.disa.stig_rule_SV-270832r1068399_rule",
+        "xccdf_mil.disa.stig_rule_SV-274868r1107313_rule",
+        "xccdf_mil.disa.stig_rule_SV-274869r1107312_rule",
+        "xccdf_mil.disa.stig_rule_SV-274870r1155243_rule",
+        "xccdf_mil.disa.stig_rule_SV-274871r1107302_rule",
+        "xccdf_mil.disa.stig_rule_SV-274872r1107297_rule",
+        "xccdf_mil.disa.stig_rule_SV-274873r1107300_rule",
+        "xccdf_mil.disa.stig_rule_SV-278917r1155246_rule",
+        "xccdf_mil.disa.stig_rule_SV-279938r1156367_rule"
+      ],
+      "selected_count": 16,
+      "total_count": 194
+    },
+    "source_xml_sha256": "eac6f7a6a1e80c52d02c508d939eb09aa09b7fe6eaeb060b8aa21e095719c940",
+    "source_zip_sha256": "40229cd7a41e6ff4a8cfb675523f767292d1460edbc68fe9ba5258c530c8b4a7"
+  },
+  "entrypoint": "benchmark.json",
+  "format": "scap-ng-package-manifest",
+  "format_version": "0.4.1",
+  "integrity": {
+    "algorithm": "sha-256",
+    "unexpected_members": "reject"
+  },
+  "objects": {
+    "applicability_catalog:fixture-applicability": {
+      "path": "applicability.json",
+      "sha256": "3c49f5adfd1a8988b9c61e5d4eb27d5eca2e40196fb7d7203156bebda0fa3c6c",
+      "size": 5374,
+      "type": "applicability_catalog",
+      "version": "0.4.1"
+    },
+    "assessment:oval-mil-disa-stig-ubuntu2404os-def-1-assessment": {
+      "path": "assessments/oval-mil-disa-stig-ubuntu2404os-def-1-assessment.json",
+      "sha256": "073b49b7c1b33e4a39e4a04d4929a91090eb89bfecc5c83d07d8ba6d1f70e672",
+      "size": 1777,
+      "type": "assessment",
+      "version": 2
+    },
+    "assessment:ubuntu-24-04-lts-accept-framework-sv-270673-manual-0-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-accept-framework-sv-270673-manual-0-assessment.json",
+      "sha256": "92a52661856909080fbab37c1d0975ebe90dac60cdb5408d631fe876aa887eec",
+      "size": 1736,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-accept-pam-framework-sv-270673-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-accept-pam-framework-sv-270673-assessment.json",
+      "sha256": "d31d50f05fabd0735dc82e370919d075ced213fc6b6bfe56526077f92e88faa8",
+      "size": 1159,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-accept-piv-credentials-sv-270672-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-accept-piv-credentials-sv-270672-assessment.json",
+      "sha256": "f332273eec7250781c6867ed49fd439eae7cb6539b7f8a69c70671e203e02f4f",
+      "size": 1094,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-accept-sv-270672-manual-0-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-accept-sv-270672-manual-0-assessment.json",
+      "sha256": "b772e70ea06c60c99b4f1191c4f8e2e2f20944cb171c4c53a0a4b211751f2d8a",
+      "size": 1682,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-disable-key-sequence-sv-270712-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-disable-key-sequence-sv-270712-assessment.json",
+      "sha256": "e55fcf60018ae6515640f3ee0e8619452d72809c137f67cc93d9e6f3e1b980d7",
+      "size": 1429,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-disable-sequence-sv-270712-manual-0-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-disable-sequence-sv-270712-manual-0-assessment.json",
+      "sha256": "c36f931ba0c14df14ee7a8ed0cf31a8781f17c7719499ddcf203bd9588b11568",
+      "size": 1702,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-display-logon-sv-270691-manual-0-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-display-logon-sv-270691-manual-0-assessment.json",
+      "sha256": "47156cdb189bd5c393e56c8874046c50c630be6ce077e364cb63edeba2c39b43",
+      "size": 3443,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-display-via-ssh-logon-sv-270691-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-display-via-ssh-logon-sv-270691-assessment.json",
+      "sha256": "1e1c1792487bcf512c96311a4e86e51c341efb5d0fee2bff52229447a6f12a79",
+      "size": 5219,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-during-transmission-sv-270667-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-during-transmission-sv-270667-assessment.json",
+      "sha256": "648db95ca0a85d76f76b74e0c5fe7290504b76b114c10aa34a088087b3493dd9",
+      "size": 5042,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-during-transmission-sv-270668-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-during-transmission-sv-270668-assessment.json",
+      "sha256": "45916b384b31e7bdd2c7024a52244a6ba3ae18b375599b0884a68306f88575cc",
+      "size": 2488,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-library-less-permissive-sv-270696-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-library-less-permissive-sv-270696-assessment.json",
+      "sha256": "4778df8538e301615196717a7d88cb8565bf254597eb67dc6e2bcc3dd537eb0b",
+      "size": 4128,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-library-sv-270696-manual-0-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-library-sv-270696-manual-0-assessment.json",
+      "sha256": "cf811db2d8b6a6a94003742bf4cdb4f90a7786b98479d83319c5d1271e9fa90b",
+      "size": 1773,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-not-have-installed-sv-270645-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-not-have-installed-sv-270645-assessment.json",
+      "sha256": "a68facb44a3fee1d4ceab6c29e862ea4c97cfda4e078099f1dad9f5b109514b3",
+      "size": 1108,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-not-have-installed-sv-270646-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-not-have-installed-sv-270646-assessment.json",
+      "sha256": "a6059594706da3bd31517db1d21f53e20a4fdf86d23b5eb825f8214bd7805dc4",
+      "size": 1038,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-not-have-installed-sv-270647-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-not-have-installed-sv-270647-assessment.json",
+      "sha256": "c6ac733197c0f76877116007d1cc556c41f6c5820180e21ed8a7832bbc97a70f",
+      "size": 1053,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-not-have-installed-sv-270648-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-not-have-installed-sv-270648-assessment.json",
+      "sha256": "ade69722e17538b8da19dd6c89510fbc0fea04fd79074a3f670670c1bd465172",
+      "size": 1069,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-not-have-sv-270645-manual-0-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-not-have-sv-270645-manual-0-assessment.json",
+      "sha256": "ed1589b7406972655b7ad662b568d12d3fe6f78d573710074a374068874f55b3",
+      "size": 1544,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-not-have-sv-270646-manual-0-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-not-have-sv-270646-manual-0-assessment.json",
+      "sha256": "cd97071ca180a61f3405b601c3c8e23ed15e86ff82b5800579a51af3569e2bd7",
+      "size": 1488,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-not-have-sv-270647-manual-0-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-not-have-sv-270647-manual-0-assessment.json",
+      "sha256": "00a1b745d37051aece02eb2add54db98f4a54147ea1b750a878bffd259d787ff",
+      "size": 1513,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-not-have-sv-270648-manual-0-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-not-have-sv-270648-manual-0-assessment.json",
+      "sha256": "08fe05231bebb0154b59f8dd0bf199ba3ebadc363b959ab0f5f2796bc4e80b5a",
+      "size": 1504,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-prevent-account-sv-270724-manual-0-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-prevent-account-sv-270724-manual-0-assessment.json",
+      "sha256": "dca0db71f9dbbb487466b79921f4458a77e5e4313ff39373cd643b2d5291e9fc",
+      "size": 1612,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-prevent-root-account-sv-270724-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-prevent-root-account-sv-270724-assessment.json",
+      "sha256": "a80abf52333725c51d6a0fa54a4c9dbe0fcb1da88f2ea2a1d2f3d8592473a3b9",
+      "size": 1333,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-so-that-by-root-sv-270759-manual-0-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-so-that-by-root-sv-270759-manual-0-assessment.json",
+      "sha256": "3ed8c96f772076aff79d4a219393d438e0e6e4b918c5ca4a9a7cf38a91e9d447",
+      "size": 1604,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-so-that-is-owned-by-root-sv-270759-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-so-that-is-owned-by-root-sv-270759-assessment.json",
+      "sha256": "0d47f4f29cefe63bce7294045485e062695b9f522322a4fb950db5bae41159fd",
+      "size": 1467,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-ssh-algorithms-sv-270669-manual-0-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-ssh-algorithms-sv-270669-manual-0-assessment.json",
+      "sha256": "938e3d39cc56dd180278c239a0e7e9b21579331bba1f7c55bdd310f76249c84d",
+      "size": 1999,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-ssh-exchange-algorithms-sv-270669-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-ssh-exchange-algorithms-sv-270669-assessment.json",
+      "sha256": "f51d8647eb511a954adb070b8cbc0800e0eec495293b3b271bc5fee148652e95",
+      "size": 3413,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-transmission-sv-270667-manual-0-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-transmission-sv-270667-manual-0-assessment.json",
+      "sha256": "675bf759161f46d7e2a70211ee1f0bd145b7efc6fdd74057be0b0ce3547b281a",
+      "size": 1973,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-transmission-sv-270668-manual-0-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-transmission-sv-270668-manual-0-assessment.json",
+      "sha256": "a0166e44dfba0ca16ac0be3c501d54b4dd3ad9b4f9a1fefed5773fa91f02dac2",
+      "size": 2016,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-use-apparmor-sv-270660-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-use-apparmor-sv-270660-assessment.json",
+      "sha256": "3580a739f79102afa84ae5243eb253bb081152a35c21489e013f9c22df1ff3ec",
+      "size": 2375,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-use-apparmor-sv-270660-manual-0-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-use-apparmor-sv-270660-manual-0-assessment.json",
+      "sha256": "5f4ad807238bab71c9cfc7e3f29bc1d6880d9dd573d751a64d06622acaa6a5c2",
+      "size": 1615,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-use-ssh-information-sv-270666-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-use-ssh-information-sv-270666-assessment.json",
+      "sha256": "c1ebad716b21942da89d4ec4a8f1936e637c96d6fc825b82899733af7892a44e",
+      "size": 2392,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:ubuntu-24-04-lts-use-ssh-sv-270666-manual-0-assessment": {
+      "path": "assessments/ubuntu-24-04-lts-use-ssh-sv-270666-manual-0-assessment.json",
+      "sha256": "792cee68ab80e43428c2d54126d8ed77906a2e23e99cc5aee236d0403763296d",
+      "size": 1606,
+      "type": "assessment",
+      "version": 1
+    },
+    "benchmark": {
+      "path": "benchmark.json",
+      "sha256": "807b67ce772087c165bb7d4956a62888ca9a0a1b196e5e66bb451e17bdb33980",
+      "size": 20844,
+      "type": "benchmark",
+      "version": {
+        "value": "001.005.007"
+      }
+    },
+    "rule:ubuntu-24-04-lts-accept-management-pam-framework-sv-270673-rule": {
+      "path": "rules/ubuntu-24-04-lts-accept-management-pam-framework-sv-270673-rule.json",
+      "sha256": "441789e71532905a2bbe3be652797124878de6e30906274cd8754213b53f9201",
+      "size": 1574,
+      "type": "rule",
+      "version": "UBTU-24-100910"
+    },
+    "rule:ubuntu-24-04-lts-accept-piv-credentials-sv-270672-rule": {
+      "path": "rules/ubuntu-24-04-lts-accept-piv-credentials-sv-270672-rule.json",
+      "sha256": "9b76b53880a751d46e56a8a4262d2809a78bdc6890de96768101bce930e4b560",
+      "size": 1490,
+      "type": "rule",
+      "version": "UBTU-24-100900"
+    },
+    "rule:ubuntu-24-04-lts-configure-during-transmission-sv-270667-rule": {
+      "path": "rules/ubuntu-24-04-lts-configure-during-transmission-sv-270667-rule.json",
+      "sha256": "4d8c28bf3a4a7fdd814a1d6df85126c79163bb3eda8b8972f55082dad522bc83",
+      "size": 2460,
+      "type": "rule",
+      "version": "UBTU-24-100820"
+    },
+    "rule:ubuntu-24-04-lts-configure-during-transmission-sv-270668-rule": {
+      "path": "rules/ubuntu-24-04-lts-configure-during-transmission-sv-270668-rule.json",
+      "sha256": "bc56bc58f1c2b9655690829bc11809f3256832939968e2321f1b4acc8bfe8911",
+      "size": 2513,
+      "type": "rule",
+      "version": "UBTU-24-100830"
+    },
+    "rule:ubuntu-24-04-lts-disable-x86-delete-key-sequence-sv-270712-rule": {
+      "path": "rules/ubuntu-24-04-lts-disable-x86-delete-key-sequence-sv-270712-rule.json",
+      "sha256": "19b90665771dab302b2b4c3d61b75ae2094c66d2215c86a6fa246d603e740492",
+      "size": 1374,
+      "type": "rule",
+      "version": "UBTU-24-300026"
+    },
+    "rule:ubuntu-24-04-lts-display-access-via-ssh-logon-sv-270691-rule": {
+      "path": "rules/ubuntu-24-04-lts-display-access-via-ssh-logon-sv-270691-rule.json",
+      "sha256": "86e575d91230f278e02628ed94abc954cc32e7d470da9b8a3039ffb360622a35",
+      "size": 3414,
+      "type": "rule",
+      "version": "UBTU-24-200640"
+    },
+    "rule:ubuntu-24-04-lts-library-0755-or-less-permissive-sv-270696-rule": {
+      "path": "rules/ubuntu-24-04-lts-library-0755-or-less-permissive-sv-270696-rule.json",
+      "sha256": "d2ab5e534926b01790d3c46023d9509b2b00f5c3d7f0e2a492534fae8ad0fb0e",
+      "size": 1755,
+      "type": "rule",
+      "version": "UBTU-24-300006"
+    },
+    "rule:ubuntu-24-04-lts-not-have-ntp-package-installed-sv-270646-rule": {
+      "path": "rules/ubuntu-24-04-lts-not-have-ntp-package-installed-sv-270646-rule.json",
+      "sha256": "5118ea3138b77cc23989b795aee48fadbcac42857cd44c8929dcdc520e622d4d",
+      "size": 1572,
+      "type": "rule",
+      "version": "UBTU-24-100020"
+    },
+    "rule:ubuntu-24-04-lts-not-have-package-installed-sv-270645-rule": {
+      "path": "rules/ubuntu-24-04-lts-not-have-package-installed-sv-270645-rule.json",
+      "sha256": "8689c3a03b03eab6caf6b793627576e7349a0fe28a6724fc47b1496c691e4e80",
+      "size": 1582,
+      "type": "rule",
+      "version": "UBTU-24-100010"
+    },
+    "rule:ubuntu-24-04-lts-not-have-package-installed-sv-270647-rule": {
+      "path": "rules/ubuntu-24-04-lts-not-have-package-installed-sv-270647-rule.json",
+      "sha256": "571999aaec4bb9f1570bc9183c89c2fe46d70a7178e3623db77bb88b095ef7d5",
+      "size": 2001,
+      "type": "rule",
+      "version": "UBTU-24-100030"
+    },
+    "rule:ubuntu-24-04-lts-not-have-package-installed-sv-270648-rule": {
+      "path": "rules/ubuntu-24-04-lts-not-have-package-installed-sv-270648-rule.json",
+      "sha256": "8b65d6285b7f0e337858e2d2cb0fce5b25eac8241a165d66d65637e519755f06",
+      "size": 1911,
+      "type": "rule",
+      "version": "UBTU-24-100040"
+    },
+    "rule:ubuntu-24-04-lts-prevent-login-root-account-sv-270724-rule": {
+      "path": "rules/ubuntu-24-04-lts-prevent-login-root-account-sv-270724-rule.json",
+      "sha256": "9488aab93eb08e63ba26a9a177a8c4e58a59b0d2fe8a4ffb0536e684f8db1dbf",
+      "size": 2449,
+      "type": "rule",
+      "version": "UBTU-24-400110"
+    },
+    "rule:ubuntu-24-04-lts-so-that-is-owned-by-root-sv-270759-rule": {
+      "path": "rules/ubuntu-24-04-lts-so-that-is-owned-by-root-sv-270759-rule.json",
+      "sha256": "b5f9c7255a3bd49ac43f049ffec7ce67b63d593d35e0ef835a62d31b021e1bd8",
+      "size": 1791,
+      "type": "rule",
+      "version": "UBTU-24-700040"
+    },
+    "rule:ubuntu-24-04-lts-ssh-server-exchange-algorithms-sv-270669-rule": {
+      "path": "rules/ubuntu-24-04-lts-ssh-server-exchange-algorithms-sv-270669-rule.json",
+      "sha256": "452c0529bf6eb405f3361b6009e7bdebbdc998052065878dddd913651deba5e1",
+      "size": 1419,
+      "type": "rule",
+      "version": "UBTU-24-100840"
+    },
+    "rule:ubuntu-24-04-lts-use-apparmor-sv-270660-rule": {
+      "path": "rules/ubuntu-24-04-lts-use-apparmor-sv-270660-rule.json",
+      "sha256": "4f2d1e06de95baa77086647b8f06e67cb45884497b9fe0e71c16a4d19d51e75a",
+      "size": 2130,
+      "type": "rule",
+      "version": "UBTU-24-100510"
+    },
+    "rule:ubuntu-24-04-lts-use-ssh-transmitted-information-sv-270666-rule": {
+      "path": "rules/ubuntu-24-04-lts-use-ssh-transmitted-information-sv-270666-rule.json",
+      "sha256": "bf38a05919020a39a7e19d0695b4cbab1be59a08d8ac3a30c4a474e14cdff8db",
+      "size": 2156,
+      "type": "rule",
+      "version": "UBTU-24-100810"
+    }
+  },
+  "signature": {
+    "certificate_path": null,
+    "format": null,
+    "path": null,
+    "trust": "source-pinned-unverified"
+  }
+}
