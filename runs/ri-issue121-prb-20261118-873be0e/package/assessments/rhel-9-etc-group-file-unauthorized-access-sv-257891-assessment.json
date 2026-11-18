@@ -1,0 +1,69 @@
+{
+  "assessment_document": {
+    "assessment": {
+      "assessment_title": "RHEL 9 /etc/group file must have mode 0644 or less permissive to prevent unauthorized access.",
+      "class": "compliance",
+      "evaluate": {
+        "test": "the-etc-group-file-has-mode-0644-or-less-permissive-test"
+      },
+      "id": "rhel-9-etc-group-file-unauthorized-access-sv-257891-assessment",
+      "mode": "automated",
+      "specification": {
+        "id": "scap-ng.pre-alpha.assessment",
+        "version": "0.4.1"
+      },
+      "tests": {
+        "the-etc-group-file-has-mode-0644-or-less-permissive-test": {
+          "capability": "unix.file",
+          "object": {
+            "filepath": {
+              "equals": "/etc/group"
+            },
+            "filesystem": "all"
+          },
+          "reported_elements": "all",
+          "require": {
+            "field_requirement": {
+              "values_found": "one_or_more",
+              "values_matching": "every"
+            },
+            "fields": {
+              "group_execute": {
+                "equals": false
+              },
+              "group_write": {
+                "equals": false
+              },
+              "other_execute": {
+                "equals": false
+              },
+              "other_write": {
+                "equals": false
+              },
+              "owner_execute": {
+                "equals": false
+              },
+              "setgid": {
+                "equals": false
+              },
+              "setuid": {
+                "equals": false
+              },
+              "sticky": {
+                "equals": false
+              }
+            },
+            "item_requirement": {
+              "items_found": "zero_or_more",
+              "items_satisfying": "every"
+            }
+          },
+          "test_title": "The /etc/group file has mode 0644 or less permissive"
+        }
+      },
+      "version": 1
+    }
+  },
+  "bindings": {},
+  "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329"
+}

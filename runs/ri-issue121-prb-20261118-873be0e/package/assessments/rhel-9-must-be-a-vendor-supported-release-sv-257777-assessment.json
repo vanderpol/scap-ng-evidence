@@ -1,0 +1,86 @@
+{
+  "assessment_document": {
+    "assessment": {
+      "assessment_title": "RHEL 9 must be a vendor-supported release.",
+      "class": "compliance",
+      "evaluate": {
+        "test": "the-rhel-9-minor-version-is-supported-test"
+      },
+      "id": "rhel-9-must-be-a-vendor-supported-release-sv-257777-assessment",
+      "mode": "automated",
+      "specification": {
+        "id": "scap-ng.pre-alpha.assessment",
+        "version": "0.4.1"
+      },
+      "tests": {
+        "the-rhel-9-minor-version-is-supported-test": {
+          "capability": "independent.textfilecontent",
+          "object": {
+            "directory": {
+              "equals": "/etc"
+            },
+            "filesystem": "all",
+            "ignore_case": false,
+            "instance": {
+              "greater_than_or_equal": 1
+            },
+            "item_creation": "all_object_elements_fullfilled",
+            "multiline": true,
+            "name": {
+              "equals": "redhat-release"
+            },
+            "pattern": {
+              "matches_regex": "^\\s*Red Hat Enterprise Linux release 9\\.(\\d+)"
+            },
+            "singleline": false
+          },
+          "reported_elements": "all",
+          "require": {
+            "field_requirement": {
+              "values_found": "one_or_more",
+              "values_matching": "every"
+            },
+            "item_requirement": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every"
+            },
+            "or": [
+              {
+                "fields": {
+                  "subexpression": {
+                    "equals": 7
+                  }
+                }
+              },
+              {
+                "fields": {
+                  "subexpression": {
+                    "equals": 8
+                  }
+                }
+              },
+              {
+                "fields": {
+                  "subexpression": {
+                    "equals": 9
+                  }
+                }
+              },
+              {
+                "fields": {
+                  "subexpression": {
+                    "equals": 10
+                  }
+                }
+              }
+            ]
+          },
+          "test_title": "The RHEL 9 minor version is supported."
+        }
+      },
+      "version": 1
+    }
+  },
+  "bindings": {},
+  "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329"
+}

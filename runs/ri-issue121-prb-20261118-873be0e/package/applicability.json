@@ -1,0 +1,361 @@
+{
+  "applicability": {
+    "id": "fixture-applicability",
+    "conditions": {
+      "platform-cpe-o-almalinux-almalinux-9-condition": {
+        "source": {
+          "kind": "cpe_platform",
+          "id": "cpe:/o:almalinux:almalinux:9",
+          "sha256": "1f89ad6bffc26d8a5a054b4d5330577243565b5d238e2f9535f284910a9d8ecb",
+          "idref": "cpe:/o:almalinux:almalinux:9"
+        }
+      },
+      "platform-cpe-o-rocky-rocky-9-condition": {
+        "source": {
+          "kind": "cpe_platform",
+          "id": "cpe:/o:rocky:rocky:9",
+          "sha256": "a7c7629995ec96e119bc5ab17a69b8c5689612b98407b1954bd9fb98801a384b",
+          "idref": "cpe:/o:rocky:rocky:9"
+        }
+      },
+      "platform-cpe-o-redhat-enterprise-linux-9-0-condition": {
+        "source": {
+          "kind": "cpe_platform",
+          "id": "cpe:/o:redhat:enterprise_linux:9.0",
+          "sha256": "e6f2b8c89d6cebb10f253742f01f5498b0a8aa4eebd0bd0b8f5c5d5b5ae99ae6",
+          "idref": "cpe:/o:redhat:enterprise_linux:9.0"
+        }
+      },
+      "platform-xccdf-mil-disa-stig-platform-rhel-9-notfips-condition": {
+        "source": {
+          "kind": "xccdf_platform",
+          "id": "xccdf_mil.disa.stig_platform_RHEL_9_NotFIPS",
+          "sha256": "82852128a0630b99104cbf2df2f9924a9d1ec6102575871702d3dfc8415c41c9",
+          "idref": "#xccdf_mil.disa.stig_platform_RHEL_9_NotFIPS",
+          "cpe_expression": {
+            "operator": "AND",
+            "negate": true,
+            "operands": [
+              {
+                "fact_ref": {
+                  "href": "U_RHEL_9_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-oval.xml",
+                  "id-ref": "oval:mil.disa.stig.defs:def:258230",
+                  "system": "http://oval.mitre.org/XMLSchema/oval-definitions-5"
+                }
+              }
+            ]
+          },
+          "expression_sha256": "02f2302711f5c4dc8a4d537b9e41c4e70e3cec63353b7e9ae0159a44bf2b62b2"
+        }
+      },
+      "platform-xccdf-mil-disa-stig-platform-linuxbios-condition": {
+        "source": {
+          "kind": "xccdf_platform",
+          "id": "xccdf_mil.disa.stig_platform_LinuxBIOS",
+          "sha256": "87eff3afc0ebaa13004da534b6006242c605cd3b584e1ae07fa6c917ff369204",
+          "idref": "#xccdf_mil.disa.stig_platform_LinuxBIOS",
+          "cpe_expression": {
+            "operator": "AND",
+            "negate": false,
+            "operands": [
+              {
+                "fact_ref": {
+                  "href": "U_RHEL_9_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-oval.xml",
+                  "id-ref": "oval:mil.disa.stig.linux:def:100007",
+                  "system": "http://oval.mitre.org/XMLSchema/oval-definitions-5"
+                }
+              }
+            ]
+          },
+          "expression_sha256": "0610120b34d3fc4388c136e39fb282fca8f028fba13f9e2255b622f5c8b919bb"
+        }
+      },
+      "platform-xccdf-mil-disa-stig-platform-linuxkerneldumps-condition": {
+        "source": {
+          "kind": "xccdf_platform",
+          "id": "xccdf_mil.disa.stig_platform_LinuxKernelDumps",
+          "sha256": "b7738c0be1c280f4a4c007d2be0e29c05f3dfb0c352c2c885f93bf07fce73d43",
+          "idref": "#xccdf_mil.disa.stig_platform_LinuxKernelDumps",
+          "cpe_expression": {
+            "operator": "AND",
+            "negate": true,
+            "operands": [
+              {
+                "fact_ref": {
+                  "href": "U_RHEL_9_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-oval.xml",
+                  "id-ref": "oval:mil.disa.stig.defs:def:230311",
+                  "system": "http://oval.mitre.org/XMLSchema/oval-definitions-5"
+                }
+              }
+            ]
+          },
+          "expression_sha256": "10dbbbe39fb0379984cfd04dd36ddc16cafeb44febcdb3d2ec81591ea24c0eb9"
+        }
+      },
+      "platform-xccdf-mil-disa-stig-platform-linuxnonfsmounts-condition": {
+        "source": {
+          "kind": "xccdf_platform",
+          "id": "xccdf_mil.disa.stig_platform_LinuxNoNFSMounts",
+          "sha256": "6883538b214af041a7d8fd311222ec0c674ecac630300f88d2623bedeb48b520",
+          "idref": "#xccdf_mil.disa.stig_platform_LinuxNoNFSMounts",
+          "cpe_expression": {
+            "operator": "AND",
+            "negate": true,
+            "operands": [
+              {
+                "fact_ref": {
+                  "href": "U_RHEL_9_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-oval.xml",
+                  "id-ref": "oval:mil.disa.stig.defs:def:25785400",
+                  "system": "http://oval.mitre.org/XMLSchema/oval-definitions-5"
+                }
+              }
+            ]
+          },
+          "expression_sha256": "800193d6120595a1a72e8bca0dd734b8645fbc7427b7a67f9e2dc72b6a52da46"
+        }
+      },
+      "platform-xccdf-mil-disa-stig-platform-linuxtftp-condition": {
+        "source": {
+          "kind": "xccdf_platform",
+          "id": "xccdf_mil.disa.stig_platform_LinuxTFTP",
+          "sha256": "9bba47d30a286a68a6de98763f138fcb46a239c7d3f1efac9b80e2b89cc4318a",
+          "idref": "#xccdf_mil.disa.stig_platform_LinuxTFTP",
+          "cpe_expression": {
+            "operator": "AND",
+            "negate": false,
+            "operands": [
+              {
+                "fact_ref": {
+                  "href": "U_RHEL_9_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-oval.xml",
+                  "id-ref": "oval:mil.disa.stig.defs:def:25795200",
+                  "system": "http://oval.mitre.org/XMLSchema/oval-definitions-5"
+                }
+              }
+            ]
+          },
+          "expression_sha256": "b8243ed49e9614ec35424cb5b1a47e019a13a4dd58d9d5147b2aa9a12ce121ea"
+        }
+      },
+      "platform-xccdf-mil-disa-stig-platform-linuxautofs-condition": {
+        "source": {
+          "kind": "xccdf_platform",
+          "id": "xccdf_mil.disa.stig_platform_LinuxAutofs",
+          "sha256": "74eeaff507d3df4c8994529a2be67d75231005c2801f50bd34cd662d52608c09",
+          "idref": "#xccdf_mil.disa.stig_platform_LinuxAutofs",
+          "cpe_expression": {
+            "operator": "AND",
+            "negate": false,
+            "operands": [
+              {
+                "fact_ref": {
+                  "href": "U_RHEL_9_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-oval.xml",
+                  "id-ref": "oval:mil.disa.stig.defs:def:25784900",
+                  "system": "http://oval.mitre.org/XMLSchema/oval-definitions-5"
+                }
+              }
+            ]
+          },
+          "expression_sha256": "d64e951f7c97111eebabf0f64d8fb43448b938cfffb28599ebabbe1fadfa7957"
+        }
+      },
+      "platform-xccdf-mil-disa-stig-platform-linuxnfsmounts-condition": {
+        "source": {
+          "kind": "xccdf_platform",
+          "id": "xccdf_mil.disa.stig_platform_LinuxNFSMounts",
+          "sha256": "9ecb3dd863a467a0ed21f31ecebb4b5ae4465f60d8077fb9430417b675d21773",
+          "idref": "#xccdf_mil.disa.stig_platform_LinuxNFSMounts",
+          "cpe_expression": {
+            "operator": "AND",
+            "negate": false,
+            "operands": [
+              {
+                "fact_ref": {
+                  "href": "U_RHEL_9_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-oval.xml",
+                  "id-ref": "oval:mil.disa.stig.defs:def:25785400",
+                  "system": "http://oval.mitre.org/XMLSchema/oval-definitions-5"
+                }
+              }
+            ]
+          },
+          "expression_sha256": "820c1c5aa940f24bc692d3dce211340cf31669083680f5afed41db6cf839c7f7"
+        }
+      },
+      "platform-xccdf-mil-disa-stig-platform-linuxuefi-condition": {
+        "source": {
+          "kind": "xccdf_platform",
+          "id": "xccdf_mil.disa.stig_platform_LinuxUEFI",
+          "sha256": "b0a466e1a93e46d801e22c9d5cec536508a9f35e35d5ad522c24c9bcace3ccd2",
+          "idref": "#xccdf_mil.disa.stig_platform_LinuxUEFI",
+          "cpe_expression": {
+            "operator": "AND",
+            "negate": false,
+            "operands": [
+              {
+                "fact_ref": {
+                  "href": "U_RHEL_9_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-oval.xml",
+                  "id-ref": "oval:mil.disa.stig.linux:def:100006",
+                  "system": "http://oval.mitre.org/XMLSchema/oval-definitions-5"
+                }
+              }
+            ]
+          },
+          "expression_sha256": "ca61ba91ab8ca02108cc68624769f7650dc2c15fd68b15c9dd1fa0480c409435"
+        }
+      },
+      "platform-xccdf-mil-disa-stig-platform-linuxpostfix-condition": {
+        "source": {
+          "kind": "xccdf_platform",
+          "id": "xccdf_mil.disa.stig_platform_LinuxPostfix",
+          "sha256": "e2c13106b0040fb7284365d1824eb7cf41df5a25c7b1190f814bd70c6ec1f78a",
+          "idref": "#xccdf_mil.disa.stig_platform_LinuxPostfix",
+          "cpe_expression": {
+            "operator": "AND",
+            "negate": false,
+            "operands": [
+              {
+                "fact_ref": {
+                  "href": "U_RHEL_9_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-oval.xml",
+                  "id-ref": "oval:mil.disa.stig.defs:def:25795100",
+                  "system": "http://oval.mitre.org/XMLSchema/oval-definitions-5"
+                }
+              }
+            ]
+          },
+          "expression_sha256": "3c9cd18da48c2e49b937fdca9148b0adb794ce46de535d9126731eabcec3f8fb"
+        }
+      },
+      "platform-xccdf-mil-disa-stig-platform-linuxipv6enabled-condition": {
+        "source": {
+          "kind": "xccdf_platform",
+          "id": "xccdf_mil.disa.stig_platform_LinuxIPv6enabled",
+          "sha256": "6434a2133bb2a2040ea1c57b2d07dc9d953b69c4dc5247fe95d0bc6055ddb5a9",
+          "idref": "#xccdf_mil.disa.stig_platform_LinuxIPv6enabled",
+          "cpe_expression": {
+            "operator": "AND",
+            "negate": true,
+            "operands": [
+              {
+                "fact_ref": {
+                  "href": "U_RHEL_9_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-oval.xml",
+                  "id-ref": "oval:mil.disa.stig.linux:def:100012",
+                  "system": "http://oval.mitre.org/XMLSchema/oval-definitions-5"
+                }
+              }
+            ]
+          },
+          "expression_sha256": "547533718d9f2e2c9046080a80694262a821d71a692dad7d88745a4a096a580a"
+        }
+      },
+      "platform-xccdf-mil-disa-stig-platform-linuxgnome-condition": {
+        "source": {
+          "kind": "xccdf_platform",
+          "id": "xccdf_mil.disa.stig_platform_LinuxGnome",
+          "sha256": "53f1d60bc9fd8905761ccbec65af2f834200f4b751e9af51261dc8581e59914b",
+          "idref": "#xccdf_mil.disa.stig_platform_LinuxGnome",
+          "cpe_expression": {
+            "operator": "AND",
+            "negate": false,
+            "operands": [
+              {
+                "fact_ref": {
+                  "href": "U_RHEL_9_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-oval.xml",
+                  "id-ref": "oval:mil.disa.stig.linux:def:100005",
+                  "system": "http://oval.mitre.org/XMLSchema/oval-definitions-5"
+                }
+              }
+            ]
+          },
+          "expression_sha256": "d0a65afc4436f2b0b65467ba801acd51074a5b307285143fb44cbd20d92742ad"
+        }
+      },
+      "platform-xccdf-navy-navwar-niwcatlantic-scc-plat-fd1788d70f78-condition": {
+        "source": {
+          "kind": "xccdf_platform",
+          "id": "xccdf_navy.navwar.niwcatlantic.scc_platform_LinuxGnome",
+          "sha256": "fd1788d70f78a2299f2dfd23501f49bef415e3a65f399e70e9aea6a04b9b5cce",
+          "idref": "#xccdf_navy.navwar.niwcatlantic.scc_platform_LinuxGnome",
+          "cpe_expression": {
+            "operator": "AND",
+            "negate": false,
+            "operands": [
+              {
+                "fact_ref": {
+                  "href": "U_RHEL_9_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-oval2.xml",
+                  "id-ref": "oval:navy.navwar.niwcatlantic.scc.linux:def:101",
+                  "system": "http://oval.mitre.org/XMLSchema/oval-definitions-5"
+                }
+              }
+            ]
+          },
+          "expression_sha256": "4d5829cd1fc2da9b3f5d5c8bbe18c292fa693d5078f97c89f15387d0339c8758"
+        }
+      },
+      "platform-xccdf-navy-navwar-niwcatlantic-scc-plat-f7405439992b-condition": {
+        "source": {
+          "kind": "xccdf_platform",
+          "id": "xccdf_navy.navwar.niwcatlantic.scc_platform_isNotVirtualMachine2",
+          "sha256": "f7405439992b205f4b8f3fc795e9ed826c36ab17e1f8e3e385a18ba43cfc0af6",
+          "idref": "#xccdf_navy.navwar.niwcatlantic.scc_platform_isNotVirtualMachine2",
+          "cpe_expression": {
+            "operator": "AND",
+            "negate": false,
+            "operands": [
+              {
+                "fact_ref": {
+                  "href": "U_RHEL_9_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-oval2.xml",
+                  "id-ref": "oval:navy.navwar.niwcatlantic.scc.rhel9os:def:201",
+                  "system": "http://oval.mitre.org/XMLSchema/oval-definitions-5"
+                }
+              }
+            ]
+          },
+          "expression_sha256": "215c10a6cb2c0eb944a9204114bdb795168f02cd9898a1e5ef24b0d15dd1ee61"
+        }
+      },
+      "platform-xccdf-mil-disa-stig-platform-linuxlibreswan-condition": {
+        "source": {
+          "kind": "xccdf_platform",
+          "id": "xccdf_mil.disa.stig_platform_LinuxLibreswan",
+          "sha256": "93c4dd4f1fcc32d0b7691119b4122a2dca7861e627ee8b61d78b702a45626ff1",
+          "idref": "#xccdf_mil.disa.stig_platform_LinuxLibreswan",
+          "cpe_expression": {
+            "operator": "AND",
+            "negate": false,
+            "operands": [
+              {
+                "fact_ref": {
+                  "href": "U_RHEL_9_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-oval.xml",
+                  "id-ref": "oval:mil.disa.stig.defs:def:25823200",
+                  "system": "http://oval.mitre.org/XMLSchema/oval-definitions-5"
+                }
+              }
+            ]
+          },
+          "expression_sha256": "e047952570ab11a05ed73301eab518d096f6dbfaf63e3a9985393523be250a7b"
+        }
+      },
+      "platform-xccdf-mil-disa-stig-platform-linuxbind-condition": {
+        "source": {
+          "kind": "xccdf_platform",
+          "id": "xccdf_mil.disa.stig_platform_LinuxBIND",
+          "sha256": "3c6983fe9c71962ce014f9ab4471a63e2e9dba60b7220aeed31e291c620698a6",
+          "idref": "#xccdf_mil.disa.stig_platform_LinuxBIND",
+          "cpe_expression": {
+            "operator": "AND",
+            "negate": false,
+            "operands": [
+              {
+                "fact_ref": {
+                  "href": "U_RHEL_9_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-oval.xml",
+                  "id-ref": "oval:mil.disa.stig.defs:def:25824200",
+                  "system": "http://oval.mitre.org/XMLSchema/oval-definitions-5"
+                }
+              }
+            ]
+          },
+          "expression_sha256": "8c1945a03584bf47e731f73ba0497e66b6b1053388495de49d1f7aa694421e4a"
+        }
+      }
+    }
+  }
+}

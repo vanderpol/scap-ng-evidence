@@ -1,0 +1,43 @@
+{
+  "assessment_document": {
+    "assessment": {
+      "assessment_title": "RHEL 9 must disable virtual system calls.",
+      "class": "compliance",
+      "evidence_guidance": "Retain the completed source OCIL evidence and reviewer notes.",
+      "id": "rhel-9-disable-virtual-calls-sv-257792-manual-0-assessment",
+      "mode": "manual",
+      "procedure": "Manual alternative preserved from the original OCIL check. Follow the source procedure; this Assessment does not execute OCIL.\n\nVerify the current GRUB 2 configuration disables virtual system calls with the following command:\n\n$ sudo grubby --info=ALL | grep args | grep -v 'vsyscall=none'\n\nIf any output is returned, this is a finding.\n\nCheck that virtual system calls are disabled by default to persist in kernel updates with the following command: \n\n$ sudo grep vsyscall /etc/default/grub\n\nGRUB_CMDLINE_LINUX=\"vsyscall=none\"\n\nIf \"vsyscall\" is not set to \"none\", is missing or commented out, and is not documented with the information system security officer (ISSO) as an operational requirement, this is a finding.",
+      "references": [],
+      "response": {
+        "allow_comment": true,
+        "allow_evidence": true,
+        "choices": [
+          {
+            "label": "Pass",
+            "outcome": "true",
+            "value": "true"
+          },
+          {
+            "label": "Fail",
+            "outcome": "false",
+            "value": "false"
+          },
+          {
+            "label": "Not applicable",
+            "outcome": "not_applicable",
+            "value": "not_applicable"
+          },
+          {
+            "label": "Unable to determine",
+            "outcome": "unknown",
+            "value": "unknown"
+          }
+        ],
+        "type": "ocil-manual"
+      },
+      "version": 1
+    }
+  },
+  "bindings": {},
+  "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329"
+}

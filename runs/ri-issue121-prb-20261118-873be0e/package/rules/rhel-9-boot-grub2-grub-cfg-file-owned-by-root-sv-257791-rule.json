@@ -1,0 +1,24 @@
+{
+  "rule": {
+    "id": "rhel-9-boot-grub2-grub-cfg-file-owned-by-root-sv-257791-rule",
+    "version": "RHEL-09-212030",
+    "title": "RHEL 9 /boot/grub2/grub.cfg file must be owned by root.",
+    "severity": "medium",
+    "role": "full",
+    "weight": 10.0,
+    "discussion": "<VulnDiscussion>The \" /boot/grub2/grub.cfg\" file stores sensitive system configuration. Protection of this file is critical for system security.</VulnDiscussion><FalsePositives></FalsePositives><FalseNegatives></FalseNegatives><Documentable>false</Documentable><Mitigations></Mitigations><SeverityOverrideGuidance></SeverityOverrideGuidance><PotentialImpacts></PotentialImpacts><ThirdPartyTools></ThirdPartyTools><MitigationControl></MitigationControl><Responsibility></Responsibility><IAControls></IAControls>",
+    "requires": [],
+    "conflicts": [],
+    "parameters": {},
+    "organizational_input_requirements": {},
+    "assessment_choices": {
+      "automated": {
+        "assessment": "rhel-9-boot-grub2-grub-file-owned-by-root-sv-257791-assessment"
+      },
+      "manual": {
+        "assessment": "rhel-9-boot-grub2-grub-by-root-sv-257791-manual-0-assessment"
+      }
+    },
+    "default_assessment_choice": "automated"
+  }
+}

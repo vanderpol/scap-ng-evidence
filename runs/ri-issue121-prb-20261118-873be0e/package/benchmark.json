@@ -1,0 +1,710 @@
+{
+  "benchmark": {
+    "applicability_catalog": "fixture-applicability",
+    "assessment_specifications": [
+      {
+        "id": "scap-ng.pre-alpha.assessment",
+        "version": "0.4.1"
+      }
+    ],
+    "default_selection": true,
+    "description": [
+      {
+        "language": "en",
+        "text": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DOD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil."
+      }
+    ],
+    "front_matter": [],
+    "groups": [
+      {
+        "groups": [],
+        "id": "srg-os-000480-gpos-00227-group",
+        "rules": [
+          "rhel-9-must-be-a-vendor-supported-release-sv-257777-rule",
+          "rhel-9-disable-ability-of-boot-process-sv-257788-rule",
+          "rhel-9-boot-grub2-grub-cfg-group-owned-by-root-sv-257790-rule",
+          "rhel-9-boot-grub2-grub-cfg-file-owned-by-root-sv-257791-rule",
+          "rhel-9-must-disable-virtual-system-calls-sv-257792-rule",
+          "rhel-9-not-have-sendmail-package-installed-sv-257827-rule",
+          "rhel-9-etc-group-file-have-unauthorized-access-sv-257891-rule",
+          "rhel-9-etc-group-file-must-be-owned-by-root-sv-257898-rule"
+        ],
+        "title": "SRG-OS-000480-GPOS-00227"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000023-gpos-00006-group",
+        "rules": [
+          "rhel-9-display-standard-command-line-user-logon-sv-257779-rule"
+        ],
+        "title": "SRG-OS-000023-GPOS-00006"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000269-gpos-00103-group",
+        "rules": [],
+        "title": "SRG-OS-000269-GPOS-00103"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000324-gpos-00125-group",
+        "rules": [],
+        "title": "SRG-OS-000324-GPOS-00125"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000080-gpos-00048-group",
+        "rules": [
+          "rhel-9-require-unique-user-and-maintenance-modes-sv-257789-rule"
+        ],
+        "title": "SRG-OS-000080-GPOS-00048"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000433-gpos-00192-group",
+        "rules": [],
+        "title": "SRG-OS-000433-GPOS-00192"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000433-gpos-00193-group",
+        "rules": [],
+        "title": "SRG-OS-000433-GPOS-00193"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000037-gpos-00015-group",
+        "rules": [],
+        "title": "SRG-OS-000037-GPOS-00015"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000132-gpos-00067-group",
+        "rules": [],
+        "title": "SRG-OS-000132-GPOS-00067"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000312-gpos-00123-group",
+        "rules": [],
+        "title": "SRG-OS-000312-GPOS-00123"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000095-gpos-00049-group",
+        "rules": [
+          "rhel-9-not-have-nfs-utils-package-installed-sv-257828-rule",
+          "rhel-9-must-not-have-the-ypserv-package-installed-sv-257829-rule"
+        ],
+        "title": "SRG-OS-000095-GPOS-00049"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000366-gpos-00153-group",
+        "rules": [
+          "rhel-9-subscription-manager-package-installed-sv-257825-rule"
+        ],
+        "title": "SRG-OS-000366-GPOS-00153"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000437-gpos-00194-group",
+        "rules": [],
+        "title": "SRG-OS-000437-GPOS-00194"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000074-gpos-00042-group",
+        "rules": [
+          "rhel-9-not-have-file-server-package-installed-sv-257826-rule"
+        ],
+        "title": "SRG-OS-000074-GPOS-00042"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000105-gpos-00052-group",
+        "rules": [],
+        "title": "SRG-OS-000105-GPOS-00052"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000363-gpos-00150-group",
+        "rules": [],
+        "title": "SRG-OS-000363-GPOS-00150"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000341-gpos-00132-group",
+        "rules": [],
+        "title": "SRG-OS-000341-GPOS-00132"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000114-gpos-00059-group",
+        "rules": [],
+        "title": "SRG-OS-000114-GPOS-00059"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000368-gpos-00154-group",
+        "rules": [],
+        "title": "SRG-OS-000368-GPOS-00154"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000405-gpos-00184-group",
+        "rules": [],
+        "title": "SRG-OS-000405-GPOS-00184"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000259-gpos-00100-group",
+        "rules": [],
+        "title": "SRG-OS-000259-GPOS-00100"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000206-gpos-00084-group",
+        "rules": [
+          "rhel-9-var-log-directory-0755-or-less-permissive-sv-257885-rule"
+        ],
+        "title": "SRG-OS-000206-GPOS-00084"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000256-gpos-00097-group",
+        "rules": [],
+        "title": "SRG-OS-000256-GPOS-00097"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000138-gpos-00069-group",
+        "rules": [],
+        "title": "SRG-OS-000138-GPOS-00069"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000096-gpos-00050-group",
+        "rules": [],
+        "title": "SRG-OS-000096-GPOS-00050"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000420-gpos-00186-group",
+        "rules": [],
+        "title": "SRG-OS-000420-GPOS-00186"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000355-gpos-00143-group",
+        "rules": [],
+        "title": "SRG-OS-000355-GPOS-00143"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000046-gpos-00022-group",
+        "rules": [],
+        "title": "SRG-OS-000046-GPOS-00022"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000423-gpos-00187-group",
+        "rules": [],
+        "title": "SRG-OS-000423-GPOS-00187"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000032-gpos-00013-group",
+        "rules": [],
+        "title": "SRG-OS-000032-GPOS-00013"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000106-gpos-00053-group",
+        "rules": [],
+        "title": "SRG-OS-000106-GPOS-00053"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000109-gpos-00056-group",
+        "rules": [],
+        "title": "SRG-OS-000109-GPOS-00056"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000125-gpos-00065-group",
+        "rules": [],
+        "title": "SRG-OS-000125-GPOS-00065"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000250-gpos-00093-group",
+        "rules": [],
+        "title": "SRG-OS-000250-GPOS-00093"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000480-gpos-00229-group",
+        "rules": [],
+        "title": "SRG-OS-000480-GPOS-00229"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000163-gpos-00072-group",
+        "rules": [],
+        "title": "SRG-OS-000163-GPOS-00072"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000126-gpos-00066-group",
+        "rules": [],
+        "title": "SRG-OS-000126-GPOS-00066"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000364-gpos-00151-group",
+        "rules": [],
+        "title": "SRG-OS-000364-GPOS-00151"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000028-gpos-00009-group",
+        "rules": [],
+        "title": "SRG-OS-000028-GPOS-00009"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000029-gpos-00010-group",
+        "rules": [],
+        "title": "SRG-OS-000029-GPOS-00010"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000031-gpos-00012-group",
+        "rules": [],
+        "title": "SRG-OS-000031-GPOS-00012"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000378-gpos-00163-group",
+        "rules": [],
+        "title": "SRG-OS-000378-GPOS-00163"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000062-gpos-00031-group",
+        "rules": [],
+        "title": "SRG-OS-000062-GPOS-00031"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000299-gpos-00117-group",
+        "rules": [],
+        "title": "SRG-OS-000299-GPOS-00117"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000076-gpos-00044-group",
+        "rules": [],
+        "title": "SRG-OS-000076-GPOS-00044"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000104-gpos-00051-group",
+        "rules": [],
+        "title": "SRG-OS-000104-GPOS-00051"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000123-gpos-00064-group",
+        "rules": [],
+        "title": "SRG-OS-000123-GPOS-00064"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000118-gpos-00060-group",
+        "rules": [],
+        "title": "SRG-OS-000118-GPOS-00060"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000329-gpos-00128-group",
+        "rules": [],
+        "title": "SRG-OS-000329-GPOS-00128"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000021-gpos-00005-group",
+        "rules": [],
+        "title": "SRG-OS-000021-GPOS-00005"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000027-gpos-00008-group",
+        "rules": [],
+        "title": "SRG-OS-000027-GPOS-00008"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000480-gpos-00226-group",
+        "rules": [],
+        "title": "SRG-OS-000480-GPOS-00226"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000480-gpos-00228-group",
+        "rules": [],
+        "title": "SRG-OS-000480-GPOS-00228"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000445-gpos-00199-group",
+        "rules": [],
+        "title": "SRG-OS-000445-GPOS-00199"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000373-gpos-00156-group",
+        "rules": [],
+        "title": "SRG-OS-000373-GPOS-00156"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000370-gpos-00155-group",
+        "rules": [],
+        "title": "SRG-OS-000370-GPOS-00155"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000069-gpos-00037-group",
+        "rules": [],
+        "title": "SRG-OS-000069-GPOS-00037"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000073-gpos-00041-group",
+        "rules": [],
+        "title": "SRG-OS-000073-GPOS-00041"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000072-gpos-00040-group",
+        "rules": [],
+        "title": "SRG-OS-000072-GPOS-00040"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000070-gpos-00038-group",
+        "rules": [],
+        "title": "SRG-OS-000070-GPOS-00038"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000071-gpos-00039-group",
+        "rules": [],
+        "title": "SRG-OS-000071-GPOS-00039"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000075-gpos-00043-group",
+        "rules": [],
+        "title": "SRG-OS-000075-GPOS-00043"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000078-gpos-00046-group",
+        "rules": [],
+        "title": "SRG-OS-000078-GPOS-00046"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000266-gpos-00101-group",
+        "rules": [],
+        "title": "SRG-OS-000266-GPOS-00101"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000480-gpos-00225-group",
+        "rules": [],
+        "title": "SRG-OS-000480-GPOS-00225"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000375-gpos-00160-group",
+        "rules": [],
+        "title": "SRG-OS-000375-GPOS-00160"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000067-gpos-00035-group",
+        "rules": [],
+        "title": "SRG-OS-000067-GPOS-00035"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000066-gpos-00034-group",
+        "rules": [],
+        "title": "SRG-OS-000066-GPOS-00034"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000068-gpos-00036-group",
+        "rules": [],
+        "title": "SRG-OS-000068-GPOS-00036"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000383-gpos-00166-group",
+        "rules": [],
+        "title": "SRG-OS-000383-GPOS-00166"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000479-gpos-00224-group",
+        "rules": [],
+        "title": "SRG-OS-000479-GPOS-00224"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000342-gpos-00133-group",
+        "rules": [],
+        "title": "SRG-OS-000342-GPOS-00133"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000047-gpos-00023-group",
+        "rules": [],
+        "title": "SRG-OS-000047-GPOS-00023"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000343-gpos-00134-group",
+        "rules": [],
+        "title": "SRG-OS-000343-GPOS-00134"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000039-gpos-00017-group",
+        "rules": [],
+        "title": "SRG-OS-000039-GPOS-00017"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000057-gpos-00027-group",
+        "rules": [],
+        "title": "SRG-OS-000057-GPOS-00027"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000051-gpos-00024-group",
+        "rules": [],
+        "title": "SRG-OS-000051-GPOS-00024"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000255-gpos-00096-group",
+        "rules": [],
+        "title": "SRG-OS-000255-GPOS-00096"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000063-gpos-00032-group",
+        "rules": [],
+        "title": "SRG-OS-000063-GPOS-00032"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000254-gpos-00095-group",
+        "rules": [],
+        "title": "SRG-OS-000254-GPOS-00095"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000326-gpos-00126-group",
+        "rules": [],
+        "title": "SRG-OS-000326-GPOS-00126"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000477-gpos-00222-group",
+        "rules": [],
+        "title": "SRG-OS-000477-GPOS-00222"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000004-gpos-00004-group",
+        "rules": [],
+        "title": "SRG-OS-000004-GPOS-00004"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000392-gpos-00172-group",
+        "rules": [],
+        "title": "SRG-OS-000392-GPOS-00172"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000462-gpos-00206-group",
+        "rules": [],
+        "title": "SRG-OS-000462-GPOS-00206"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000033-gpos-00014-group",
+        "rules": [],
+        "title": "SRG-OS-000033-GPOS-00014"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000396-gpos-00176-group",
+        "rules": [],
+        "title": "SRG-OS-000396-GPOS-00176"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000304-gpos-00121-group",
+        "rules": [],
+        "title": "SRG-OS-000304-GPOS-00121"
+      },
+      {
+        "groups": [],
+        "id": "srg-os-000471-gpos-00215-group",
+        "rules": [],
+        "title": "SRG-OS-000471-GPOS-00215"
+      }
+    ],
+    "id": "direct-slice",
+    "language": "en",
+    "metadata": {
+      "omitted_rule_count": 430,
+      "prototype_subset": true
+    },
+    "ng_schema_version": "0.4.1",
+    "notices": [],
+    "parameters": [],
+    "platform": {
+      "applicability": {
+        "any_of": [
+          {
+            "condition": "platform-cpe-o-almalinux-almalinux-9-condition"
+          },
+          {
+            "condition": "platform-cpe-o-rocky-rocky-9-condition"
+          },
+          {
+            "condition": "platform-cpe-o-redhat-enterprise-linux-9-0-condition"
+          }
+        ]
+      },
+      "id": "fixture-platform",
+      "title": "Source Benchmark platform restriction"
+    },
+    "profiles": [
+      {
+        "disabled_rules": [],
+        "id": "i-mission-critical-classified-profile",
+        "title": "I - Mission Critical Classified"
+      },
+      {
+        "disabled_rules": [],
+        "id": "i-mission-critical-public-profile",
+        "title": "I - Mission Critical Public"
+      },
+      {
+        "disabled_rules": [],
+        "id": "i-mission-critical-sensitive-profile",
+        "title": "I - Mission Critical Sensitive"
+      },
+      {
+        "disabled_rules": [],
+        "id": "ii-mission-support-classified-profile",
+        "title": "II - Mission Support Classified"
+      },
+      {
+        "disabled_rules": [],
+        "id": "ii-mission-support-public-profile",
+        "title": "II - Mission Support Public"
+      },
+      {
+        "disabled_rules": [],
+        "id": "ii-mission-support-sensitive-profile",
+        "title": "II - Mission Support Sensitive"
+      },
+      {
+        "disabled_rules": [],
+        "id": "iii-administrative-classified-profile",
+        "title": "III - Administrative Classified"
+      },
+      {
+        "disabled_rules": [],
+        "id": "iii-administrative-public-profile",
+        "title": "III - Administrative Public"
+      },
+      {
+        "disabled_rules": [],
+        "id": "iii-administrative-sensitive-profile",
+        "title": "III - Administrative Sensitive"
+      },
+      {
+        "disabled_rules": [
+          "rhel-9-display-standard-command-line-user-logon-sv-257779-rule",
+          "rhel-9-disable-ability-of-boot-process-sv-257788-rule",
+          "rhel-9-must-disable-virtual-system-calls-sv-257792-rule",
+          "rhel-9-boot-grub2-grub-cfg-group-owned-by-root-sv-257790-rule",
+          "rhel-9-boot-grub2-grub-cfg-file-owned-by-root-sv-257791-rule",
+          "rhel-9-var-log-directory-0755-or-less-permissive-sv-257885-rule",
+          "rhel-9-etc-group-file-have-unauthorized-access-sv-257891-rule",
+          "rhel-9-etc-group-file-must-be-owned-by-root-sv-257898-rule",
+          "rhel-9-subscription-manager-package-installed-sv-257825-rule",
+          "rhel-9-not-have-sendmail-package-installed-sv-257827-rule",
+          "rhel-9-not-have-nfs-utils-package-installed-sv-257828-rule",
+          "rhel-9-must-not-have-the-ypserv-package-installed-sv-257829-rule"
+        ],
+        "id": "cat-i-only-profile",
+        "title": "CAT I Only"
+      },
+      {
+        "disabled_rules": [],
+        "id": "disable-slow-rules-profile",
+        "title": "Disable Slow Rules"
+      }
+    ],
+    "rear_matter": [],
+    "references": [],
+    "rules": [
+      "rhel-9-must-be-a-vendor-supported-release-sv-257777-rule",
+      "rhel-9-display-standard-command-line-user-logon-sv-257779-rule",
+      "rhel-9-disable-ability-of-boot-process-sv-257788-rule",
+      "rhel-9-require-unique-user-and-maintenance-modes-sv-257789-rule",
+      "rhel-9-must-disable-virtual-system-calls-sv-257792-rule",
+      "rhel-9-boot-grub2-grub-cfg-group-owned-by-root-sv-257790-rule",
+      "rhel-9-boot-grub2-grub-cfg-file-owned-by-root-sv-257791-rule",
+      "rhel-9-var-log-directory-0755-or-less-permissive-sv-257885-rule",
+      "rhel-9-etc-group-file-have-unauthorized-access-sv-257891-rule",
+      "rhel-9-etc-group-file-must-be-owned-by-root-sv-257898-rule",
+      "rhel-9-subscription-manager-package-installed-sv-257825-rule",
+      "rhel-9-not-have-file-server-package-installed-sv-257826-rule",
+      "rhel-9-not-have-sendmail-package-installed-sv-257827-rule",
+      "rhel-9-not-have-nfs-utils-package-installed-sv-257828-rule",
+      "rhel-9-must-not-have-the-ypserv-package-installed-sv-257829-rule"
+    ],
+    "scoring": [],
+    "status": [
+      {
+        "date": "2026-08-26",
+        "value": "accepted"
+      }
+    ],
+    "text_blocks": [],
+    "title": [
+      {
+        "language": "en",
+        "text": "[AUTOMATED PROTOTYPE SUBSET] Red Hat Enterprise Linux 9 STIG SCAP Benchmark - NIWC Enhanced with Manual Questions"
+      }
+    ],
+    "use_case": "compliance",
+    "version": {
+      "value": "002.009.013"
+    }
+  }
+}

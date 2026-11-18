@@ -1,0 +1,24 @@
+{
+  "rule": {
+    "id": "rhel-9-must-be-a-vendor-supported-release-sv-257777-rule",
+    "version": "RHEL-09-211010",
+    "title": "RHEL 9 must be a vendor-supported release.",
+    "severity": "high",
+    "role": "full",
+    "weight": 10.0,
+    "discussion": "<VulnDiscussion>An operating system release is considered \"supported\" if the vendor continues to provide security patches for the product. With an unsupported release, it will not be possible to resolve security issues discovered in the system software.\n\nEnd Of Life dates for Red Hat Linux 9 releases are as follows:\nCurrent end of Full Support for Red Hat Linux 9 is 31 May 2027.\nCurrent end of Maintenance Support for Red Hat Linux 9 is 31 May 3032.\nCurrent end of Extended Life Cycle Support (ELS) for Red Hat Linux 9 is 31 May 2035.</VulnDiscussion><FalsePositives></FalsePositives><FalseNegatives></FalseNegatives><Documentable>false</Documentable><Mitigations></Mitigations><SeverityOverrideGuidance></SeverityOverrideGuidance><PotentialImpacts></PotentialImpacts><ThirdPartyTools></ThirdPartyTools><MitigationControl></MitigationControl><Responsibility></Responsibility><IAControls></IAControls>",
+    "requires": [],
+    "conflicts": [],
+    "parameters": {},
+    "organizational_input_requirements": {},
+    "assessment_choices": {
+      "automated": {
+        "assessment": "rhel-9-must-be-a-vendor-supported-release-sv-257777-assessment"
+      },
+      "manual": {
+        "assessment": "rhel-9-vendor-supported-release-sv-257777-manual-0-assessment"
+      }
+    },
+    "default_assessment_choice": "automated"
+  }
+}

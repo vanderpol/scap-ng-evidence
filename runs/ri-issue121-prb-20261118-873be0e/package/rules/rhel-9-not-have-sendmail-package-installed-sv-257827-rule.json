@@ -1,0 +1,24 @@
+{
+  "rule": {
+    "id": "rhel-9-not-have-sendmail-package-installed-sv-257827-rule",
+    "version": "RHEL-09-215020",
+    "title": "RHEL 9 must not have the sendmail package installed.",
+    "severity": "medium",
+    "role": "full",
+    "weight": 10.0,
+    "discussion": "<VulnDiscussion>The sendmail software was not developed with security in mind, and its design prevents it from being effectively contained by SELinux. Postfix must be used instead.\n\nSatisfies: SRG-OS-000480-GPOS-00227, SRG-OS-000095-GPOS-00049</VulnDiscussion><FalsePositives></FalsePositives><FalseNegatives></FalseNegatives><Documentable>false</Documentable><Mitigations></Mitigations><SeverityOverrideGuidance></SeverityOverrideGuidance><PotentialImpacts></PotentialImpacts><ThirdPartyTools></ThirdPartyTools><MitigationControl></MitigationControl><Responsibility></Responsibility><IAControls></IAControls>",
+    "requires": [],
+    "conflicts": [],
+    "parameters": {},
+    "organizational_input_requirements": {},
+    "assessment_choices": {
+      "automated": {
+        "assessment": "rhel-9-not-have-sendmail-package-installed-sv-257827-assessment"
+      },
+      "manual": {
+        "assessment": "rhel-9-not-have-sendmail-sv-257827-manual-0-assessment"
+      }
+    },
+    "default_assessment_choice": "automated"
+  }
+}

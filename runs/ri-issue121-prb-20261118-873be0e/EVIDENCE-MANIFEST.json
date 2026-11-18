@@ -1,0 +1,159 @@
+{
+  "benchmark_lane": {
+    "compliance_assessments_scheduled": 0,
+    "policy_outcome": "15 ERROR due to unmapped CPE applicability Assessments; no CPE bypass",
+    "report_html": "benchmark/benchmark-report.html",
+    "report_text": "benchmark/benchmark-report.txt",
+    "result_path": "benchmark/benchmark-result.json",
+    "summary": {
+      "error": 15,
+      "fail": 0,
+      "not_applicable": 0,
+      "not_evaluated": 0,
+      "pass": 0,
+      "total": 15,
+      "unknown": 0
+    }
+  },
+  "canonical_commit": "5ee55288b369da26f308f40813e545b78dff2753",
+  "commands": [
+    "python3 tools/package_canonical_benchmark.py ...",
+    "python3 tools/build_rhel9_rule_crosswalk.py ...",
+    "ri-benchmark --package package --workers 4 --queue 8 --timeout 120s --report both --progress off --target ubuntu-diagnostic",
+    "ri-core --target ubuntu-diagnostic --snapshot rhel9-prb-technical-20261118 --timeout 30s package/assessments/<file>.json"
+  ],
+  "created_at": "2026-11-18T12:40:56Z",
+  "diagnostic_lane": [
+    {
+      "assessment_id": "rhel-9-must-be-a-vendor-supported-release-sv-257777-assessment",
+      "assessment_outcome": "unknown",
+      "capability": "independent.textfilecontent",
+      "completeness": {
+        "evidence_complete": false,
+        "logical_complete": true,
+        "population_complete": false
+      },
+      "diagnostic": "require_logical_form_held",
+      "file": "diagnostics/independent-textfilecontent.json",
+      "items_observed": 0,
+      "provenance": {
+        "acquisition_status": "success",
+        "observation_scope": "textfile-tree",
+        "trust": "scoped:nofollow-directory"
+      },
+      "reason": null,
+      "test_id": "the-rhel-9-minor-version-is-supported-test",
+      "test_outcome": "unknown"
+    },
+    {
+      "assessment_id": "rhel-9-subscription-package-installed-sv-257825-assessment",
+      "assessment_outcome": "false",
+      "capability": "linux.rpminfo",
+      "completeness": {
+        "evidence_complete": true,
+        "logical_complete": true,
+        "population_complete": true
+      },
+      "diagnostic": null,
+      "file": "diagnostics/linux-rpminfo.json",
+      "items_observed": 0,
+      "provenance": {
+        "acquisition_status": "success",
+        "observation_scope": "local-rpm-database",
+        "trust": "scoped:rpm-package-absence"
+      },
+      "reason": "item_existence_cardinality_false",
+      "test_id": "subscription-manager-package-is-installed-test",
+      "test_outcome": "false"
+    },
+    {
+      "assessment_id": "rhel-9-boot-grub2-grub-file-owned-by-root-sv-257791-assessment",
+      "assessment_outcome": "false",
+      "capability": "unix.file",
+      "completeness": {
+        "evidence_complete": true,
+        "logical_complete": true,
+        "population_complete": true
+      },
+      "diagnostic": null,
+      "file": "diagnostics/unix-file.json",
+      "items_observed": 0,
+      "provenance": {
+        "acquisition_status": "success",
+        "observation_scope": "exact-path",
+        "trust": "authoritative:exact-path-absence"
+      },
+      "reason": "item_existence_cardinality_false",
+      "test_id": "boot-grub2-grub-cfg-file-is-owned-by-root-test",
+      "test_outcome": "false"
+    }
+  ],
+  "environment": {
+    "architecture": "x86_64",
+    "kernel": "Linux 7.0.0-1014-aws",
+    "os": "Ubuntu 24.04.5 LTS",
+    "privilege": "unprivileged process; no sudo"
+  },
+  "evidence_id": "ri-issue121-prb-20261118-ubuntu-873be0e",
+  "format": "scap-ng-ri-issue121-prb-evidence/1",
+  "kind": "production migration evidence",
+  "limitations": [
+    "RHEL9 package executed on Ubuntu 24.04 is diagnostic only, not RHEL9 compliance qualification.",
+    "CPE applicability conditions with no Assessment mapping remain ERROR and compliance Assessments are not scheduled.",
+    "ri-core output is internal compact technical preview, not canonical Rule/Benchmark Result.",
+    "No independent OVAL/SCC equivalence claim.",
+    "The textfilecontent diagnostic is UNKNOWN with require_logical_form_held and incomplete population/evidence; no result was fabricated."
+  ],
+  "package": {
+    "files": 48,
+    "manifest_objects": 47,
+    "manifest_sha256": "6aed5908093626bdf46a7718ea7a2195615457a0773c44ea85f38507e5581a44",
+    "path": "package",
+    "rules": 15
+  },
+  "provenance_comparison": {
+    "path": "provenance-comparison.json",
+    "sha256": "95cf4bcdad0afcf7409817c7b31cda89afa38105fff4bed578326fcd4e750a0c"
+  },
+  "repository": "vanderpol/scap-ng-ri",
+  "ri_commit": "873be0ee4b5d9eb5cc746911f3932b69871f9b70",
+  "source": {
+    "converter_commit": "df2deb1a514cdd0babbccdf2d240fba4e9811d6d",
+    "flat_schema_family_sha256": "88fc59791f9cb5055d2a8dc27bb458bcf6699b5820061ce68af1a355bd33a84f",
+    "ri_commit": "873be0ee4b5d9eb5cc746911f3932b69871f9b70",
+    "schema_commit": "5ee55288b369da26f308f40813e545b78dff2753",
+    "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329",
+    "source": "scap-ng-tools direct-slice",
+    "source_benchmark_component": "scap_mil.disa.stig_comp_U_RHEL_9_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-xccdf.xml",
+    "source_commit": "8c8e5dff860af6b1290ee9273a282db24278f8d5",
+    "source_member": "U_RHEL_9_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-signed.xml",
+    "source_xml_sha256": "bc0f1c04e3371f52121a71ba3c8fc47095bdfe5356c90992ca232341d25538e4",
+    "source_zip_sha256": "70aa6a16221df2c53b094b11b48b16aca1f6d7147c11123b655659ca7711dbb5"
+  },
+  "source_crosswalk": {
+    "path": "crosswalk/rhel9-rule-crosswalk.json",
+    "sha256": "71da40839832d97f6d15876c20f959f9f115338a5476e223f0f14b5ce258e08a",
+    "summary": {
+      "counts": {
+        "converter_blocked": 116,
+        "excluded": 27,
+        "not_packaged": 287,
+        "packaged_automated": 15
+      },
+      "duplicate_emitted_sv_ids": 0,
+      "format": "scap-ng-ri-rhel9-rule-crosswalk-summary/1",
+      "package_rules": 15,
+      "source_rules": 445
+    }
+  },
+  "tools_converter_commit": "df2deb1a514cdd0babbccdf2d240fba4e9811d6d",
+  "validation": {
+    "go_test_benchmark": "PASS",
+    "go_test_race_benchmark": "PASS",
+    "go_test_resultview_cmd_ri_core": "PASS",
+    "go_vet": "PASS",
+    "hosted_ci": "FAIL/no-step logs unavailable",
+    "package_loader_and_canonical_result_validation": "PASS",
+    "package_manifest_members_sha256_size": "PASS"
+  }
+}

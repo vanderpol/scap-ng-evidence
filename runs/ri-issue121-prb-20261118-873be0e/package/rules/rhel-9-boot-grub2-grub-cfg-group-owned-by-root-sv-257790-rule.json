@@ -1,0 +1,24 @@
+{
+  "rule": {
+    "id": "rhel-9-boot-grub2-grub-cfg-group-owned-by-root-sv-257790-rule",
+    "version": "RHEL-09-212025",
+    "title": "RHEL 9 /boot/grub2/grub.cfg file must be group-owned by root.",
+    "severity": "medium",
+    "role": "full",
+    "weight": 10.0,
+    "discussion": "<VulnDiscussion>The \"root\" group is a highly privileged group. Furthermore, the group-owner of this file should not have any access privileges anyway.</VulnDiscussion><FalsePositives></FalsePositives><FalseNegatives></FalseNegatives><Documentable>false</Documentable><Mitigations></Mitigations><SeverityOverrideGuidance></SeverityOverrideGuidance><PotentialImpacts></PotentialImpacts><ThirdPartyTools></ThirdPartyTools><MitigationControl></MitigationControl><Responsibility></Responsibility><IAControls></IAControls>",
+    "requires": [],
+    "conflicts": [],
+    "parameters": {},
+    "organizational_input_requirements": {},
+    "assessment_choices": {
+      "automated": {
+        "assessment": "rhel-9-boot-grub2-grub-group-owned-by-root-sv-257790-assessment"
+      },
+      "manual": {
+        "assessment": "rhel-9-boot-grub2-grub-by-root-sv-257790-manual-0-assessment"
+      }
+    },
+    "default_assessment_choice": "automated"
+  }
+}

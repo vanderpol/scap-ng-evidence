@@ -1,0 +1,108 @@
+{
+  "assessment_document": {
+    "assessment": {
+      "assessment_title": "RHEL 9 must disable the ability of systemd to spawn an interactive boot process.",
+      "class": "compliance",
+      "evaluate": {
+        "and": [
+          {
+            "not": {
+              "test": "bls-options-contain-systemd-confirm-spawn-test"
+            }
+          },
+          {
+            "not": {
+              "test": "grub-cmdline-linux-arguments-contain-systemd-confirm-spawn-test"
+            }
+          }
+        ]
+      },
+      "id": "rhel-9-disable-ability-of-boot-process-sv-257788-assessment",
+      "mode": "automated",
+      "specification": {
+        "id": "scap-ng.pre-alpha.assessment",
+        "version": "0.4.1"
+      },
+      "tests": {
+        "bls-options-contain-systemd-confirm-spawn-test": {
+          "capability": "independent.textfilecontent",
+          "object": {
+            "directory": {
+              "equals": "/boot/loader/entries"
+            },
+            "filesystem": "all",
+            "ignore_case": false,
+            "instance": {
+              "greater_than_or_equal": 1
+            },
+            "item_creation": "all_object_elements_fullfilled",
+            "multiline": true,
+            "name": {
+              "matches_regex": "^.*\\.conf$"
+            },
+            "pattern": {
+              "matches_regex": "^options\\s+(.*)$"
+            },
+            "singleline": false
+          },
+          "reported_elements": "all",
+          "require": {
+            "field_requirement": {
+              "values_found": "one_or_more",
+              "values_matching": "every"
+            },
+            "fields": {
+              "subexpression": {
+                "matches_regex": "(^|\\s)systemd\\.confirm_spawn(\\s|$)"
+              }
+            },
+            "item_requirement": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every"
+            }
+          },
+          "test_title": "BLS options contain systemd.confirm_spawn"
+        },
+        "grub-cmdline-linux-arguments-contain-systemd-confirm-spawn-test": {
+          "capability": "independent.textfilecontent",
+          "object": {
+            "filesystem": "all",
+            "full_path": {
+              "equals": "/etc/default/grub"
+            },
+            "ignore_case": false,
+            "instance": {
+              "greater_than_or_equal": 1
+            },
+            "item_creation": "all_object_elements_fullfilled",
+            "multiline": true,
+            "pattern": {
+              "matches_regex": "^GRUB_CMDLINE_LINUX=\"(.*)\""
+            },
+            "singleline": false
+          },
+          "reported_elements": "all",
+          "require": {
+            "field_requirement": {
+              "values_found": "one_or_more",
+              "values_matching": "every"
+            },
+            "fields": {
+              "subexpression": {
+                "matches_regex": "(^|\\s)systemd\\.confirm_spawn(\\s|$)"
+              }
+            },
+            "item_requirement": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every"
+            }
+          },
+          "test_title": "The GRUB_CMDLINE_LINUX arguments in /etc/default/grub contain systemd.confirm_spawn"
+        }
+      },
+      "version": 1
+    }
+  },
+  "bindings": {},
+  "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329"
+}

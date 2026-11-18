@@ -1,0 +1,48 @@
+{
+  "assessment_document": {
+    "assessment": {
+      "assessment_title": "RHEL 9 /boot/grub2/grub.cfg file must be group-owned by root.",
+      "class": "compliance",
+      "evaluate": {
+        "test": "boot-grub2-grub-cfg-file-is-group-owned-by-root-test"
+      },
+      "id": "rhel-9-boot-grub2-grub-group-owned-by-root-sv-257790-assessment",
+      "mode": "automated",
+      "specification": {
+        "id": "scap-ng.pre-alpha.assessment",
+        "version": "0.4.1"
+      },
+      "tests": {
+        "boot-grub2-grub-cfg-file-is-group-owned-by-root-test": {
+          "capability": "unix.file",
+          "object": {
+            "filepath": {
+              "equals": "/boot/grub2/grub.cfg"
+            },
+            "filesystem": "all"
+          },
+          "reported_elements": "all",
+          "require": {
+            "field_requirement": {
+              "values_found": "one_or_more",
+              "values_matching": "every"
+            },
+            "fields": {
+              "owner_gid": {
+                "equals": 0
+              }
+            },
+            "item_requirement": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every"
+            }
+          },
+          "test_title": "/boot/grub2/grub.cfg file is group-owned by root"
+        }
+      },
+      "version": 1
+    }
+  },
+  "bindings": {},
+  "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329"
+}

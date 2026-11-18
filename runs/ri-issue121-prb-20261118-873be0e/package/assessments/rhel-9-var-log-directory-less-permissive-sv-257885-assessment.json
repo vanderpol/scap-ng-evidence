@@ -1,0 +1,61 @@
+{
+  "assessment_document": {
+    "assessment": {
+      "assessment_title": "RHEL 9 /var/log directory must have mode 0755 or less permissive.",
+      "class": "compliance",
+      "evaluate": {
+        "test": "var-log-directory-has-mode-0755-or-less-permissive-test"
+      },
+      "id": "rhel-9-var-log-directory-less-permissive-sv-257885-assessment",
+      "mode": "automated",
+      "specification": {
+        "id": "scap-ng.pre-alpha.assessment",
+        "version": "0.4.1"
+      },
+      "tests": {
+        "var-log-directory-has-mode-0755-or-less-permissive-test": {
+          "capability": "unix.file",
+          "object": {
+            "filename": null,
+            "filesystem": "all",
+            "path": {
+              "equals": "/var/log"
+            }
+          },
+          "reported_elements": "all",
+          "require": {
+            "field_requirement": {
+              "values_found": "one_or_more",
+              "values_matching": "every"
+            },
+            "fields": {
+              "group_write": {
+                "equals": false
+              },
+              "other_write": {
+                "equals": false
+              },
+              "setgid": {
+                "equals": false
+              },
+              "setuid": {
+                "equals": false
+              },
+              "sticky": {
+                "equals": false
+              }
+            },
+            "item_requirement": {
+              "items_found": "one_or_more",
+              "items_satisfying": "every"
+            }
+          },
+          "test_title": "/var/log directory has mode 0755 or less permissive."
+        }
+      },
+      "version": 1
+    }
+  },
+  "bindings": {},
+  "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329"
+}

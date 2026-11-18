@@ -1,0 +1,24 @@
+{
+  "rule": {
+    "id": "rhel-9-disable-ability-of-boot-process-sv-257788-rule",
+    "version": "RHEL-09-212015",
+    "title": "RHEL 9 must disable the ability of systemd to spawn an interactive boot process.",
+    "severity": "medium",
+    "role": "full",
+    "weight": 10.0,
+    "discussion": "<VulnDiscussion>Using interactive or recovery boot, the console user could disable auditing, firewalls, or other services, weakening system security.</VulnDiscussion><FalsePositives></FalsePositives><FalseNegatives></FalseNegatives><Documentable>false</Documentable><Mitigations></Mitigations><SeverityOverrideGuidance></SeverityOverrideGuidance><PotentialImpacts></PotentialImpacts><ThirdPartyTools></ThirdPartyTools><MitigationControl></MitigationControl><Responsibility></Responsibility><IAControls></IAControls>",
+    "requires": [],
+    "conflicts": [],
+    "parameters": {},
+    "organizational_input_requirements": {},
+    "assessment_choices": {
+      "automated": {
+        "assessment": "rhel-9-disable-ability-of-boot-process-sv-257788-assessment"
+      },
+      "manual": {
+        "assessment": "rhel-9-disable-ability-of-process-sv-257788-manual-0-assessment"
+      }
+    },
+    "default_assessment_choice": "automated"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "benchmark_semantics_equal": true,
+  "format": "ri-issue121-prb-provenance-comparison/1",
+  "member_content_changes": [],
+  "new_manifest_sha256": "6aed5908093626bdf46a7718ea7a2195615457a0773c44ea85f38507e5581a44",
+  "old_manifest_sha256": "39a05132c9c2a8f4ebfac08bf0dba3aa7077036b590e0ae6808d2f1717fc02d6",
+  "provenance_differences": {
+    "ri_commit": {
+      "new": "873be0ee4b5d9eb5cc746911f3932b69871f9b70",
+      "old": "6c24c67b104c65a8d9a6861d4818433b04ae301d"
+    }
+  },
+  "rule_object_count_equal": true
+}

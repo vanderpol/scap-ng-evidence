@@ -1,0 +1,24 @@
+{
+  "rule": {
+    "id": "rhel-9-etc-group-file-have-unauthorized-access-sv-257891-rule",
+    "version": "RHEL-09-232055",
+    "title": "RHEL 9 /etc/group file must have mode 0644 or less permissive to prevent unauthorized access.",
+    "severity": "medium",
+    "role": "full",
+    "weight": 10.0,
+    "discussion": "<VulnDiscussion>The \"/etc/group\" file contains information regarding groups that are configured on the system. Protection of this file is important for system security.</VulnDiscussion><FalsePositives></FalsePositives><FalseNegatives></FalseNegatives><Documentable>false</Documentable><Mitigations></Mitigations><SeverityOverrideGuidance></SeverityOverrideGuidance><PotentialImpacts></PotentialImpacts><ThirdPartyTools></ThirdPartyTools><MitigationControl></MitigationControl><Responsibility></Responsibility><IAControls></IAControls>",
+    "requires": [],
+    "conflicts": [],
+    "parameters": {},
+    "organizational_input_requirements": {},
+    "assessment_choices": {
+      "automated": {
+        "assessment": "rhel-9-etc-group-file-unauthorized-access-sv-257891-assessment"
+      },
+      "manual": {
+        "assessment": "rhel-9-etc-group-file-access-sv-257891-manual-0-assessment"
+      }
+    },
+    "default_assessment_choice": "automated"
+  }
+}

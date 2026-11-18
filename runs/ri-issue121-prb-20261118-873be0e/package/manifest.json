@@ -1,0 +1,365 @@
+{
+  "benchmark_id": "direct-slice",
+  "benchmark_version": {
+    "value": "002.009.013"
+  },
+  "build_provenance": {
+    "converter_commit": "df2deb1a514cdd0babbccdf2d240fba4e9811d6d",
+    "flat_schema_family_sha256": "88fc59791f9cb5055d2a8dc27bb458bcf6699b5820061ce68af1a355bd33a84f",
+    "ri_commit": "873be0ee4b5d9eb5cc746911f3932b69871f9b70",
+    "schema_commit": "5ee55288b369da26f308f40813e545b78dff2753",
+    "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329",
+    "source": "scap-ng-tools direct-slice",
+    "source_benchmark_component": "scap_mil.disa.stig_comp_U_RHEL_9_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-xccdf.xml",
+    "source_commit": "8c8e5dff860af6b1290ee9273a282db24278f8d5",
+    "source_member": "U_RHEL_9_V2R9_STIG_SCAP_1-4_Benchmark-enhancedV13-signed.xml",
+    "source_xml_sha256": "bc0f1c04e3371f52121a71ba3c8fc47095bdfe5356c90992ca232341d25538e4",
+    "source_zip_sha256": "70aa6a16221df2c53b094b11b48b16aca1f6d7147c11123b655659ca7711dbb5"
+  },
+  "entrypoint": "benchmark.json",
+  "format": "scap-ng-package-manifest",
+  "format_version": "0.4.1",
+  "integrity": {
+    "algorithm": "sha-256",
+    "unexpected_members": "reject"
+  },
+  "objects": {
+    "applicability_catalog:fixture-applicability": {
+      "path": "applicability.json",
+      "sha256": "825ea517ea49780de069c479967c73f2e54dce94e329df89da2c6dc74c5df5dd",
+      "size": 14936,
+      "type": "applicability_catalog",
+      "version": "0.4.1"
+    },
+    "assessment:rhel-9-boot-grub2-grub-by-root-sv-257790-manual-0-assessment": {
+      "path": "assessments/rhel-9-boot-grub2-grub-by-root-sv-257790-manual-0-assessment.json",
+      "sha256": "7fd52d0eb2167033543e14c037169beae13d7160fc07f1b6fd832cbc79a3b704",
+      "size": 1605,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-boot-grub2-grub-by-root-sv-257791-manual-0-assessment": {
+      "path": "assessments/rhel-9-boot-grub2-grub-by-root-sv-257791-manual-0-assessment.json",
+      "sha256": "173128262a7eccadf82fd139738d3de06af4b9f0b3793189c46e2f2e64cdb8b8",
+      "size": 1589,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-boot-grub2-grub-file-owned-by-root-sv-257791-assessment": {
+      "path": "assessments/rhel-9-boot-grub2-grub-file-owned-by-root-sv-257791-assessment.json",
+      "sha256": "283928ea8035e4a2443d1a6c273f842feae5fb9fcde9ac288acd712dbe736c3a",
+      "size": 1425,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-boot-grub2-grub-group-owned-by-root-sv-257790-assessment": {
+      "path": "assessments/rhel-9-boot-grub2-grub-group-owned-by-root-sv-257790-assessment.json",
+      "sha256": "38463fa8c69899935e680a41838a07465125e5a5eb477295ecf1dbb4dbd5df06",
+      "size": 1450,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-disable-ability-of-boot-process-sv-257788-assessment": {
+      "path": "assessments/rhel-9-disable-ability-of-boot-process-sv-257788-assessment.json",
+      "sha256": "832a6f81606cb97a40918fe445b5f63a3f35a3c9b9a2eb74b44a263f81d74346",
+      "size": 3426,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-disable-ability-of-process-sv-257788-manual-0-assessment": {
+      "path": "assessments/rhel-9-disable-ability-of-process-sv-257788-manual-0-assessment.json",
+      "sha256": "abcadd918cd2b74b89608723d24dec522da4e9bfb45e00870b50ef659045cade",
+      "size": 1686,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-disable-virtual-calls-sv-257792-manual-0-assessment": {
+      "path": "assessments/rhel-9-disable-virtual-calls-sv-257792-manual-0-assessment.json",
+      "sha256": "824b6e0de7cd8c8f4020ddf10e7dfb4ce6208e43982423e1a555c8034278a279",
+      "size": 1924,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-display-standard-line-user-logon-sv-257779-assessment": {
+      "path": "assessments/rhel-9-display-standard-line-user-logon-sv-257779-assessment.json",
+      "sha256": "c466c79ec6aedb4b1948d12bba3581ce3822d929c26413c85d4341c05ad08d65",
+      "size": 3659,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-display-standard-logon-sv-257779-manual-0-assessment": {
+      "path": "assessments/rhel-9-display-standard-logon-sv-257779-manual-0-assessment.json",
+      "sha256": "c7c18f08012693ca3d13c935d8e17cba371fb9476b6bcd668bd904fee1cc73aa",
+      "size": 3249,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-etc-group-file-access-sv-257891-manual-0-assessment": {
+      "path": "assessments/rhel-9-etc-group-file-access-sv-257891-manual-0-assessment.json",
+      "sha256": "f57cbf41df19df3971eff1e212757bd737d01b93a69a95b48e722b42ad7c4500",
+      "size": 1607,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-etc-group-file-by-root-sv-257898-manual-0-assessment": {
+      "path": "assessments/rhel-9-etc-group-file-by-root-sv-257898-manual-0-assessment.json",
+      "sha256": "257f818000d1f5341bd1c45a083b82e18ace45ac600667970661321c98958407",
+      "size": 1538,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-etc-group-file-must-be-owned-by-root-sv-257898-assessment": {
+      "path": "assessments/rhel-9-etc-group-file-must-be-owned-by-root-sv-257898-assessment.json",
+      "sha256": "150bf491fae346136f79daca86bd359e648bca63485c0ecfb749753b235367bb",
+      "size": 1377,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-etc-group-file-unauthorized-access-sv-257891-assessment": {
+      "path": "assessments/rhel-9-etc-group-file-unauthorized-access-sv-257891-assessment.json",
+      "sha256": "c72aca21c78ebfc4f287fb381033788bff3601a8a91431443efd397c8698be79",
+      "size": 2041,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-must-be-a-vendor-supported-release-sv-257777-assessment": {
+      "path": "assessments/rhel-9-must-be-a-vendor-supported-release-sv-257777-assessment.json",
+      "sha256": "54a2c210ad056382dae3ae6b2556a37cba613166b71b4e502514da83e9689605",
+      "size": 2441,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-must-disable-virtual-system-calls-sv-257792-assessment": {
+      "path": "assessments/rhel-9-must-disable-virtual-system-calls-sv-257792-assessment.json",
+      "sha256": "7111d04d8fbcd698556598b40f97852e890735fb9e10d303bedcad706c8561dc",
+      "size": 3257,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-not-have-file-installed-sv-257826-manual-0-assessment": {
+      "path": "assessments/rhel-9-not-have-file-installed-sv-257826-manual-0-assessment.json",
+      "sha256": "7cb72e89d2ccd367ad3faa37df1b87ac8c96c460964d8d9959a9cb21a37a3bff",
+      "size": 1549,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-not-have-file-package-installed-sv-257826-assessment": {
+      "path": "assessments/rhel-9-not-have-file-package-installed-sv-257826-assessment.json",
+      "sha256": "bd8acdc4b7cab5183e47b740ac0f5cca8fe9f57a3d39221f4b2d67fa115bba06",
+      "size": 1207,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-not-have-nfs-utils-package-installed-sv-257828-assessment": {
+      "path": "assessments/rhel-9-not-have-nfs-utils-package-installed-sv-257828-assessment.json",
+      "sha256": "ad51bcb22e60df3d3f3ad1a3990558416056c13539de3132d3195372401af4a1",
+      "size": 1134,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-not-have-nfs-utils-sv-257828-manual-0-assessment": {
+      "path": "assessments/rhel-9-not-have-nfs-utils-sv-257828-manual-0-assessment.json",
+      "sha256": "f6507342a6f24179179d98e0cc9f922dcd35b29c1d8e5d186de558482b8dffdb",
+      "size": 1544,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-not-have-sendmail-package-installed-sv-257827-assessment": {
+      "path": "assessments/rhel-9-not-have-sendmail-package-installed-sv-257827-assessment.json",
+      "sha256": "2d601d6f839fe248898f2db4fc94e2af501fed634875b5f902138d657e5e46bb",
+      "size": 1104,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-not-have-sendmail-sv-257827-manual-0-assessment": {
+      "path": "assessments/rhel-9-not-have-sendmail-sv-257827-manual-0-assessment.json",
+      "sha256": "b1e48005a4e5b533889f65be687d6fd8e9606895a3790cd5ffb135b406f1c387",
+      "size": 1539,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-not-have-ypserv-installed-sv-257829-manual-0-assessment": {
+      "path": "assessments/rhel-9-not-have-ypserv-installed-sv-257829-manual-0-assessment.json",
+      "sha256": "8b960f0e64a38ef24f7a11c4060430d868c1d138855e4f96917bcffcdf195479",
+      "size": 1539,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-not-have-ypserv-package-installed-sv-257829-assessment": {
+      "path": "assessments/rhel-9-not-have-ypserv-package-installed-sv-257829-assessment.json",
+      "sha256": "c89f8bb9a7cd68a24d75c92dd5e244dee4fcc25182632506347b73b68aec0e90",
+      "size": 1104,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-require-unique-maintenance-modes-sv-257789-assessment": {
+      "path": "assessments/rhel-9-require-unique-maintenance-modes-sv-257789-assessment.json",
+      "sha256": "9271263740974b6050f6c60aa6c069af07cc721267f28eeb66f0da4ca115927a",
+      "size": 1955,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-require-unique-modes-sv-257789-manual-0-assessment": {
+      "path": "assessments/rhel-9-require-unique-modes-sv-257789-manual-0-assessment.json",
+      "sha256": "a030f46ee82b3360a018e446b4c8946f8d4862b0631c027e13fc7b057a2d616a",
+      "size": 1772,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-subscription-installed-sv-257825-manual-0-assessment": {
+      "path": "assessments/rhel-9-subscription-installed-sv-257825-manual-0-assessment.json",
+      "sha256": "b516af95ef45bc4a9c7be3faa78a2533be45081300c2ec8f56bf49bf6ef496ff",
+      "size": 1717,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-subscription-package-installed-sv-257825-assessment": {
+      "path": "assessments/rhel-9-subscription-package-installed-sv-257825-assessment.json",
+      "sha256": "d167d6a3510208229a0b454cc378870cecd671025c3073e783165c027578e720",
+      "size": 1144,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-var-log-directory-less-permissive-sv-257885-assessment": {
+      "path": "assessments/rhel-9-var-log-directory-less-permissive-sv-257885-assessment.json",
+      "sha256": "6ec5b4d35615ce90b1fad7383a4cd477eef16b89703a4f041101aeec328ff97e",
+      "size": 1787,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-var-log-directory-sv-257885-manual-0-assessment": {
+      "path": "assessments/rhel-9-var-log-directory-sv-257885-manual-0-assessment.json",
+      "sha256": "d25090d924622f8e3cc6cce3f1b0f762a18565239f586540c65185f2968df7a4",
+      "size": 1582,
+      "type": "assessment",
+      "version": 1
+    },
+    "assessment:rhel-9-vendor-supported-release-sv-257777-manual-0-assessment": {
+      "path": "assessments/rhel-9-vendor-supported-release-sv-257777-manual-0-assessment.json",
+      "sha256": "82d42471d55d005067476173279f256f278342b02795ccf18e3c9261fee8fac5",
+      "size": 1549,
+      "type": "assessment",
+      "version": 1
+    },
+    "benchmark": {
+      "path": "benchmark.json",
+      "sha256": "e2ed7e97b827afad0be1deae761985c8a9abd9cd73ff4f00e98ca2caa23ddb8d",
+      "size": 20156,
+      "type": "benchmark",
+      "version": {
+        "value": "002.009.013"
+      }
+    },
+    "rule:rhel-9-boot-grub2-grub-cfg-file-owned-by-root-sv-257791-rule": {
+      "path": "rules/rhel-9-boot-grub2-grub-cfg-file-owned-by-root-sv-257791-rule.json",
+      "sha256": "7a8a18094e6c8376e9c3efa266864ec5fe2aaf4f962abd0c3d2c7ed096852e76",
+      "size": 1215,
+      "type": "rule",
+      "version": "RHEL-09-212030"
+    },
+    "rule:rhel-9-boot-grub2-grub-cfg-group-owned-by-root-sv-257790-rule": {
+      "path": "rules/rhel-9-boot-grub2-grub-cfg-group-owned-by-root-sv-257790-rule.json",
+      "sha256": "658c22d14f4c4fa1ccdeb8fed6340f66a655df3e9cce2cdafd47dc148d8989cf",
+      "size": 1229,
+      "type": "rule",
+      "version": "RHEL-09-212025"
+    },
+    "rule:rhel-9-disable-ability-of-boot-process-sv-257788-rule": {
+      "path": "rules/rhel-9-disable-ability-of-boot-process-sv-257788-rule.json",
+      "sha256": "2f8b3c6a5278d96bc80d9198b6b8afa60ff1c6d91a4d4b3e5a14581779d3dd5c",
+      "size": 1236,
+      "type": "rule",
+      "version": "RHEL-09-212015"
+    },
+    "rule:rhel-9-display-standard-command-line-user-logon-sv-257779-rule": {
+      "path": "rules/rhel-9-display-standard-command-line-user-logon-sv-257779-rule.json",
+      "sha256": "5bdad7144d22ad9903d377b5b1f7b064c73b6e6c7b7101f89c5b9dc4f1b38015",
+      "size": 1687,
+      "type": "rule",
+      "version": "RHEL-09-211020"
+    },
+    "rule:rhel-9-etc-group-file-have-unauthorized-access-sv-257891-rule": {
+      "path": "rules/rhel-9-etc-group-file-have-unauthorized-access-sv-257891-rule.json",
+      "sha256": "b102abbcb69461465b42fa05a6c9efb1c3a8e9943d2436306cc542c46b10701e",
+      "size": 1276,
+      "type": "rule",
+      "version": "RHEL-09-232055"
+    },
+    "rule:rhel-9-etc-group-file-must-be-owned-by-root-sv-257898-rule": {
+      "path": "rules/rhel-9-etc-group-file-must-be-owned-by-root-sv-257898-rule.json",
+      "sha256": "ce8ef90f1eaadd9f819256a97b2f54a4bdc4b126c365294b8825438941fb98e5",
+      "size": 1228,
+      "type": "rule",
+      "version": "RHEL-09-232090"
+    },
+    "rule:rhel-9-must-be-a-vendor-supported-release-sv-257777-rule": {
+      "path": "rules/rhel-9-must-be-a-vendor-supported-release-sv-257777-rule.json",
+      "sha256": "33db17420e66362d34f2aa61c4dc3bd2e6757ceba01221eed88830d0afa2d429",
+      "size": 1595,
+      "type": "rule",
+      "version": "RHEL-09-211010"
+    },
+    "rule:rhel-9-must-disable-virtual-system-calls-sv-257792-rule": {
+      "path": "rules/rhel-9-must-disable-virtual-system-calls-sv-257792-rule.json",
+      "sha256": "5fa2d95ee14db1138ca1a6a588e51df8a9be82a8833b9e19238032885a8d7fba",
+      "size": 2381,
+      "type": "rule",
+      "version": "RHEL-09-212035"
+    },
+    "rule:rhel-9-must-not-have-the-ypserv-package-installed-sv-257829-rule": {
+      "path": "rules/rhel-9-must-not-have-the-ypserv-package-installed-sv-257829-rule.json",
+      "sha256": "7a2c92e98e22efd1687c224d12d3deb042eec618dcfea43fe543c1d3e31adcae",
+      "size": 1375,
+      "type": "rule",
+      "version": "RHEL-09-215030"
+    },
+    "rule:rhel-9-not-have-file-server-package-installed-sv-257826-rule": {
+      "path": "rules/rhel-9-not-have-file-server-package-installed-sv-257826-rule.json",
+      "sha256": "cae5875bf8ad3f9dad0ddd04805defdeac9ede54b0593a4c27affc92092bb2e5",
+      "size": 1878,
+      "type": "rule",
+      "version": "RHEL-09-215015"
+    },
+    "rule:rhel-9-not-have-nfs-utils-package-installed-sv-257828-rule": {
+      "path": "rules/rhel-9-not-have-nfs-utils-package-installed-sv-257828-rule.json",
+      "sha256": "9f72f7e070cfe2e19bde9ddbd093ab4c9658c0dbf7b981a02d89f6321258816e",
+      "size": 1425,
+      "type": "rule",
+      "version": "RHEL-09-215025"
+    },
+    "rule:rhel-9-not-have-sendmail-package-installed-sv-257827-rule": {
+      "path": "rules/rhel-9-not-have-sendmail-package-installed-sv-257827-rule.json",
+      "sha256": "014e654159b28b71f84d1de5ca81d1c4a23b3fd08daf9c21fe419ddab946dfe6",
+      "size": 1303,
+      "type": "rule",
+      "version": "RHEL-09-215020"
+    },
+    "rule:rhel-9-require-unique-user-and-maintenance-modes-sv-257789-rule": {
+      "path": "rules/rhel-9-require-unique-user-and-maintenance-modes-sv-257789-rule.json",
+      "sha256": "fa190fde56f7d1b072e5687beb09a7a6cb595e5199a04dfcd211ee9eac3b6874",
+      "size": 1214,
+      "type": "rule",
+      "version": "RHEL-09-212020"
+    },
+    "rule:rhel-9-subscription-manager-package-installed-sv-257825-rule": {
+      "path": "rules/rhel-9-subscription-manager-package-installed-sv-257825-rule.json",
+      "sha256": "c00caeb5ae2178e5f8c8c8ad5722933fda734e1d7f7cc4d5756a7331ded471c0",
+      "size": 1476,
+      "type": "rule",
+      "version": "RHEL-09-215010"
+    },
+    "rule:rhel-9-var-log-directory-0755-or-less-permissive-sv-257885-rule": {
+      "path": "rules/rhel-9-var-log-directory-0755-or-less-permissive-sv-257885-rule.json",
+      "sha256": "1a8f009acca0e5f641de242e89f62c3ad0e2375806559d9f6379787d87f3cb99",
+      "size": 1756,
+      "type": "rule",
+      "version": "RHEL-09-232025"
+    }
+  },
+  "signature": {
+    "certificate_path": null,
+    "format": null,
+    "path": null,
+    "trust": "source-pinned-unverified"
+  }
+}

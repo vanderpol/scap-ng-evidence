@@ -1,0 +1,58 @@
+{
+  "assessment_document": {
+    "assessment": {
+      "assessment_title": "RHEL 9 must require a unique superusers name upon booting into single-user and maintenance modes.",
+      "class": "compliance",
+      "evaluate": {
+        "test": "verify-boot-loader-password-set-root-admin-or-adminstrator-test"
+      },
+      "id": "rhel-9-require-unique-maintenance-modes-sv-257789-assessment",
+      "mode": "automated",
+      "specification": {
+        "id": "scap-ng.pre-alpha.assessment",
+        "version": "0.4.1"
+      },
+      "tests": {
+        "verify-boot-loader-password-set-root-admin-or-adminstrator-test": {
+          "capability": "independent.textfilecontent",
+          "object": {
+            "filesystem": "all",
+            "full_path": {
+              "equals": "/etc/grub2.cfg"
+            },
+            "ignore_case": false,
+            "instance": {
+              "greater_than_or_equal": 1
+            },
+            "item_creation": "all_object_elements_fullfilled",
+            "multiline": true,
+            "pattern": {
+              "matches_regex": "^\\n*[\\s#]*set\\s+superusers=\"(root|admin|administrator)\""
+            },
+            "singleline": false
+          },
+          "reported_elements": "all",
+          "require": {
+            "field_requirement": {
+              "values_found": "one_or_more",
+              "values_matching": "every"
+            },
+            "fields": {
+              "subexpression": {
+                "matches_regex": "^(root|admin|administrator)$"
+              }
+            },
+            "item_requirement": {
+              "items_found": "none",
+              "items_satisfying": "every"
+            }
+          },
+          "test_title": "Verify the boot loader password is not set to root, admin, or adminstrator."
+        }
+      },
+      "version": 1
+    }
+  },
+  "bindings": {},
+  "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329"
+}

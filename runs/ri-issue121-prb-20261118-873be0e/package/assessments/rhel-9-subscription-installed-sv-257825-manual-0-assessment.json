@@ -1,0 +1,43 @@
+{
+  "assessment_document": {
+    "assessment": {
+      "assessment_title": "RHEL 9 subscription-manager package must be installed.",
+      "class": "compliance",
+      "evidence_guidance": "Retain the completed source OCIL evidence and reviewer notes.",
+      "id": "rhel-9-subscription-installed-sv-257825-manual-0-assessment",
+      "mode": "manual",
+      "procedure": "Manual alternative preserved from the original OCIL check. Follow the source procedure; this Assessment does not execute OCIL.\n\nNote: If the system is not an internet connected system, this requirement is not applicable.\n\nVerify that RHEL 9 subscription-manager package is installed with the following command:\n\n$ dnf list --installed subscription-manager\n\nExample output:\n\nsubscription-manager.x86_64          1.29.26-3.el9_0\n\nIf the \"subscription-manager\" package is not installed, this is a finding.",
+      "references": [],
+      "response": {
+        "allow_comment": true,
+        "allow_evidence": true,
+        "choices": [
+          {
+            "label": "Pass",
+            "outcome": "true",
+            "value": "true"
+          },
+          {
+            "label": "Fail",
+            "outcome": "false",
+            "value": "false"
+          },
+          {
+            "label": "Not applicable",
+            "outcome": "not_applicable",
+            "value": "not_applicable"
+          },
+          {
+            "label": "Unable to determine",
+            "outcome": "unknown",
+            "value": "unknown"
+          }
+        ],
+        "type": "ocil-manual"
+      },
+      "version": 1
+    }
+  },
+  "bindings": {},
+  "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329"
+}

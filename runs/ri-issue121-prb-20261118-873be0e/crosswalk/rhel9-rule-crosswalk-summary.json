@@ -1,0 +1,12 @@
+{
+  "counts": {
+    "converter_blocked": 116,
+    "excluded": 27,
+    "not_packaged": 287,
+    "packaged_automated": 15
+  },
+  "duplicate_emitted_sv_ids": 0,
+  "format": "scap-ng-ri-rhel9-rule-crosswalk-summary/1",
+  "package_rules": 15,
+  "source_rules": 445
+}

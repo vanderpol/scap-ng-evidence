@@ -1,0 +1,24 @@
+{
+  "rule": {
+    "id": "rhel-9-must-not-have-the-ypserv-package-installed-sv-257829-rule",
+    "version": "RHEL-09-215030",
+    "title": "RHEL 9 must not have the ypserv package installed.",
+    "severity": "medium",
+    "role": "full",
+    "weight": 10.0,
+    "discussion": "<VulnDiscussion>The NIS service provides an unencrypted authentication service, which does not provide for the confidentiality and integrity of user passwords or the remote session.\n\nRemoving the \"ypserv\" package decreases the risk of the accidental (or intentional) activation of NIS or NIS+ services.</VulnDiscussion><FalsePositives></FalsePositives><FalseNegatives></FalseNegatives><Documentable>false</Documentable><Mitigations></Mitigations><SeverityOverrideGuidance></SeverityOverrideGuidance><PotentialImpacts></PotentialImpacts><ThirdPartyTools></ThirdPartyTools><MitigationControl></MitigationControl><Responsibility></Responsibility><IAControls></IAControls>",
+    "requires": [],
+    "conflicts": [],
+    "parameters": {},
+    "organizational_input_requirements": {},
+    "assessment_choices": {
+      "automated": {
+        "assessment": "rhel-9-not-have-ypserv-package-installed-sv-257829-assessment"
+      },
+      "manual": {
+        "assessment": "rhel-9-not-have-ypserv-installed-sv-257829-manual-0-assessment"
+      }
+    },
+    "default_assessment_choice": "automated"
+  }
+}

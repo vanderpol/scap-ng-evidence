@@ -1,0 +1,24 @@
+{
+  "rule": {
+    "id": "rhel-9-require-unique-user-and-maintenance-modes-sv-257789-rule",
+    "version": "RHEL-09-212020",
+    "title": "RHEL 9 must require a unique superusers name upon booting into single-user and maintenance modes.",
+    "severity": "high",
+    "role": "full",
+    "weight": 10.0,
+    "discussion": "<VulnDiscussion>Having a nondefault grub superuser username makes password-guessing attacks less effective.</VulnDiscussion><FalsePositives></FalsePositives><FalseNegatives></FalseNegatives><Documentable>false</Documentable><Mitigations></Mitigations><SeverityOverrideGuidance></SeverityOverrideGuidance><PotentialImpacts></PotentialImpacts><ThirdPartyTools></ThirdPartyTools><MitigationControl></MitigationControl><Responsibility></Responsibility><IAControls></IAControls>",
+    "requires": [],
+    "conflicts": [],
+    "parameters": {},
+    "organizational_input_requirements": {},
+    "assessment_choices": {
+      "automated": {
+        "assessment": "rhel-9-require-unique-maintenance-modes-sv-257789-assessment"
+      },
+      "manual": {
+        "assessment": "rhel-9-require-unique-modes-sv-257789-manual-0-assessment"
+      }
+    },
+    "default_assessment_choice": "automated"
+  }
+}

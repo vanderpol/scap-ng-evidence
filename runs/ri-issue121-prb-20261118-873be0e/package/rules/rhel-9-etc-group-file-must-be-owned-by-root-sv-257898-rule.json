@@ -1,0 +1,24 @@
+{
+  "rule": {
+    "id": "rhel-9-etc-group-file-must-be-owned-by-root-sv-257898-rule",
+    "version": "RHEL-09-232090",
+    "title": "RHEL 9 /etc/group file must be owned by root.",
+    "severity": "medium",
+    "role": "full",
+    "weight": 10.0,
+    "discussion": "<VulnDiscussion>The \"/etc/group\" file contains information regarding groups that are configured on the system. Protection of this file is important for system security.</VulnDiscussion><FalsePositives></FalsePositives><FalseNegatives></FalseNegatives><Documentable>false</Documentable><Mitigations></Mitigations><SeverityOverrideGuidance></SeverityOverrideGuidance><PotentialImpacts></PotentialImpacts><ThirdPartyTools></ThirdPartyTools><MitigationControl></MitigationControl><Responsibility></Responsibility><IAControls></IAControls>",
+    "requires": [],
+    "conflicts": [],
+    "parameters": {},
+    "organizational_input_requirements": {},
+    "assessment_choices": {
+      "automated": {
+        "assessment": "rhel-9-etc-group-file-must-be-owned-by-root-sv-257898-assessment"
+      },
+      "manual": {
+        "assessment": "rhel-9-etc-group-file-by-root-sv-257898-manual-0-assessment"
+      }
+    },
+    "default_assessment_choice": "automated"
+  }
+}

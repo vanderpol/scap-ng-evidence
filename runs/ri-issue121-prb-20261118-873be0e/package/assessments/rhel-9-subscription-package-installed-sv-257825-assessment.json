@@ -1,0 +1,38 @@
+{
+  "assessment_document": {
+    "assessment": {
+      "assessment_title": "RHEL 9 subscription-manager package must be installed.",
+      "class": "compliance",
+      "evaluate": {
+        "test": "subscription-manager-package-is-installed-test"
+      },
+      "id": "rhel-9-subscription-package-installed-sv-257825-assessment",
+      "mode": "automated",
+      "specification": {
+        "id": "scap-ng.pre-alpha.assessment",
+        "version": "0.4.1"
+      },
+      "tests": {
+        "subscription-manager-package-is-installed-test": {
+          "capability": "linux.rpminfo",
+          "object": {
+            "include_file_paths": false,
+            "package_name": {
+              "equals": "subscription-manager"
+            }
+          },
+          "reported_elements": "all",
+          "require": {
+            "item_requirement": {
+              "items_found": "one_or_more"
+            }
+          },
+          "test_title": "subscription-manager package is installed"
+        }
+      },
+      "version": 1
+    }
+  },
+  "bindings": {},
+  "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329"
+}

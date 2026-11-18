@@ -1,0 +1,1085 @@
+{
+  "benchmark_result": {
+    "benchmark": {
+      "id": "direct-slice",
+      "package_digest": "b325df5efa6c214915861720ff95fff5f08de3482f40b93d51f64efc1eae9ccd",
+      "version": "002.009.013"
+    },
+    "completed_at": "2026-11-18T12:40:33.712580263Z",
+    "effective_policy": {
+      "check_selectors": {},
+      "disabled_rules": [],
+      "organizational_inputs": {},
+      "parameters": {},
+      "profile": "",
+      "selected_rules": [
+        "rhel-9-must-be-a-vendor-supported-release-sv-257777-rule",
+        "rhel-9-display-standard-command-line-user-logon-sv-257779-rule",
+        "rhel-9-disable-ability-of-boot-process-sv-257788-rule",
+        "rhel-9-require-unique-user-and-maintenance-modes-sv-257789-rule",
+        "rhel-9-must-disable-virtual-system-calls-sv-257792-rule",
+        "rhel-9-boot-grub2-grub-cfg-group-owned-by-root-sv-257790-rule",
+        "rhel-9-boot-grub2-grub-cfg-file-owned-by-root-sv-257791-rule",
+        "rhel-9-var-log-directory-0755-or-less-permissive-sv-257885-rule",
+        "rhel-9-etc-group-file-have-unauthorized-access-sv-257891-rule",
+        "rhel-9-etc-group-file-must-be-owned-by-root-sv-257898-rule",
+        "rhel-9-subscription-manager-package-installed-sv-257825-rule",
+        "rhel-9-not-have-file-server-package-installed-sv-257826-rule",
+        "rhel-9-not-have-sendmail-package-installed-sv-257827-rule",
+        "rhel-9-not-have-nfs-utils-package-installed-sv-257828-rule",
+        "rhel-9-must-not-have-the-ypserv-package-installed-sv-257829-rule"
+      ],
+      "tailoring": null
+    },
+    "result_schema_version": "0.4.1",
+    "rule_results": [
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "id": "platform-cpe-o-almalinux-almalinux-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:almalinux:almalinux:9",
+                  "idref": "cpe:/o:almalinux:almalinux:9",
+                  "kind": "cpe_platform",
+                  "sha256": "1f89ad6bffc26d8a5a054b4d5330577243565b5d238e2f9535f284910a9d8ecb"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-rocky-rocky-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:rocky:rocky:9",
+                  "idref": "cpe:/o:rocky:rocky:9",
+                  "kind": "cpe_platform",
+                  "sha256": "a7c7629995ec96e119bc5ab17a69b8c5689612b98407b1954bd9fb98801a384b"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-redhat-enterprise-linux-9-0-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "idref": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "kind": "cpe_platform",
+                  "sha256": "e6f2b8c89d6cebb10f253742f01f5498b0a8aa4eebd0bd0b8f5c5d5b5ae99ae6"
+                }
+              }
+            }
+          ],
+          "outcome": "error"
+        },
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "rhel-9-must-be-a-vendor-supported-release-sv-257777-rule/not-evaluated",
+            "message": "Rule applicability evaluation failed: applicability condition has no Assessment",
+            "outcome": "error",
+            "target_instance": null
+          }
+        ],
+        "outcome": "error",
+        "parameters": {},
+        "reason": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "rule_id": "rhel-9-must-be-a-vendor-supported-release-sv-257777-rule",
+        "severity": "high",
+        "summary": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "title": "RHEL 9 must be a vendor-supported release.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "id": "platform-cpe-o-almalinux-almalinux-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:almalinux:almalinux:9",
+                  "idref": "cpe:/o:almalinux:almalinux:9",
+                  "kind": "cpe_platform",
+                  "sha256": "1f89ad6bffc26d8a5a054b4d5330577243565b5d238e2f9535f284910a9d8ecb"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-rocky-rocky-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:rocky:rocky:9",
+                  "idref": "cpe:/o:rocky:rocky:9",
+                  "kind": "cpe_platform",
+                  "sha256": "a7c7629995ec96e119bc5ab17a69b8c5689612b98407b1954bd9fb98801a384b"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-redhat-enterprise-linux-9-0-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "idref": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "kind": "cpe_platform",
+                  "sha256": "e6f2b8c89d6cebb10f253742f01f5498b0a8aa4eebd0bd0b8f5c5d5b5ae99ae6"
+                }
+              }
+            }
+          ],
+          "outcome": "error"
+        },
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "rhel-9-display-standard-command-line-user-logon-sv-257779-rule/not-evaluated",
+            "message": "Rule applicability evaluation failed: applicability condition has no Assessment",
+            "outcome": "error",
+            "target_instance": null
+          }
+        ],
+        "outcome": "error",
+        "parameters": {},
+        "reason": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "rule_id": "rhel-9-display-standard-command-line-user-logon-sv-257779-rule",
+        "severity": "medium",
+        "summary": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "title": "RHEL 9 must display the Standard Mandatory DOD Notice and Consent Banner before granting local or remote access to the system via a command line user logon.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "id": "platform-cpe-o-almalinux-almalinux-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:almalinux:almalinux:9",
+                  "idref": "cpe:/o:almalinux:almalinux:9",
+                  "kind": "cpe_platform",
+                  "sha256": "1f89ad6bffc26d8a5a054b4d5330577243565b5d238e2f9535f284910a9d8ecb"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-rocky-rocky-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:rocky:rocky:9",
+                  "idref": "cpe:/o:rocky:rocky:9",
+                  "kind": "cpe_platform",
+                  "sha256": "a7c7629995ec96e119bc5ab17a69b8c5689612b98407b1954bd9fb98801a384b"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-redhat-enterprise-linux-9-0-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "idref": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "kind": "cpe_platform",
+                  "sha256": "e6f2b8c89d6cebb10f253742f01f5498b0a8aa4eebd0bd0b8f5c5d5b5ae99ae6"
+                }
+              }
+            }
+          ],
+          "outcome": "error"
+        },
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "rhel-9-disable-ability-of-boot-process-sv-257788-rule/not-evaluated",
+            "message": "Rule applicability evaluation failed: applicability condition has no Assessment",
+            "outcome": "error",
+            "target_instance": null
+          }
+        ],
+        "outcome": "error",
+        "parameters": {},
+        "reason": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "rule_id": "rhel-9-disable-ability-of-boot-process-sv-257788-rule",
+        "severity": "medium",
+        "summary": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "title": "RHEL 9 must disable the ability of systemd to spawn an interactive boot process.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "id": "platform-cpe-o-almalinux-almalinux-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:almalinux:almalinux:9",
+                  "idref": "cpe:/o:almalinux:almalinux:9",
+                  "kind": "cpe_platform",
+                  "sha256": "1f89ad6bffc26d8a5a054b4d5330577243565b5d238e2f9535f284910a9d8ecb"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-rocky-rocky-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:rocky:rocky:9",
+                  "idref": "cpe:/o:rocky:rocky:9",
+                  "kind": "cpe_platform",
+                  "sha256": "a7c7629995ec96e119bc5ab17a69b8c5689612b98407b1954bd9fb98801a384b"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-redhat-enterprise-linux-9-0-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "idref": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "kind": "cpe_platform",
+                  "sha256": "e6f2b8c89d6cebb10f253742f01f5498b0a8aa4eebd0bd0b8f5c5d5b5ae99ae6"
+                }
+              }
+            }
+          ],
+          "outcome": "error"
+        },
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "rhel-9-require-unique-user-and-maintenance-modes-sv-257789-rule/not-evaluated",
+            "message": "Rule applicability evaluation failed: applicability condition has no Assessment",
+            "outcome": "error",
+            "target_instance": null
+          }
+        ],
+        "outcome": "error",
+        "parameters": {},
+        "reason": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "rule_id": "rhel-9-require-unique-user-and-maintenance-modes-sv-257789-rule",
+        "severity": "high",
+        "summary": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "title": "RHEL 9 must require a unique superusers name upon booting into single-user and maintenance modes.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "id": "platform-cpe-o-almalinux-almalinux-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:almalinux:almalinux:9",
+                  "idref": "cpe:/o:almalinux:almalinux:9",
+                  "kind": "cpe_platform",
+                  "sha256": "1f89ad6bffc26d8a5a054b4d5330577243565b5d238e2f9535f284910a9d8ecb"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-rocky-rocky-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:rocky:rocky:9",
+                  "idref": "cpe:/o:rocky:rocky:9",
+                  "kind": "cpe_platform",
+                  "sha256": "a7c7629995ec96e119bc5ab17a69b8c5689612b98407b1954bd9fb98801a384b"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-redhat-enterprise-linux-9-0-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "idref": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "kind": "cpe_platform",
+                  "sha256": "e6f2b8c89d6cebb10f253742f01f5498b0a8aa4eebd0bd0b8f5c5d5b5ae99ae6"
+                }
+              }
+            }
+          ],
+          "outcome": "error"
+        },
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "rhel-9-must-disable-virtual-system-calls-sv-257792-rule/not-evaluated",
+            "message": "Rule applicability evaluation failed: applicability condition has no Assessment",
+            "outcome": "error",
+            "target_instance": null
+          }
+        ],
+        "outcome": "error",
+        "parameters": {},
+        "reason": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "rule_id": "rhel-9-must-disable-virtual-system-calls-sv-257792-rule",
+        "severity": "medium",
+        "summary": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "title": "RHEL 9 must disable virtual system calls.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "id": "platform-cpe-o-almalinux-almalinux-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:almalinux:almalinux:9",
+                  "idref": "cpe:/o:almalinux:almalinux:9",
+                  "kind": "cpe_platform",
+                  "sha256": "1f89ad6bffc26d8a5a054b4d5330577243565b5d238e2f9535f284910a9d8ecb"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-rocky-rocky-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:rocky:rocky:9",
+                  "idref": "cpe:/o:rocky:rocky:9",
+                  "kind": "cpe_platform",
+                  "sha256": "a7c7629995ec96e119bc5ab17a69b8c5689612b98407b1954bd9fb98801a384b"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-redhat-enterprise-linux-9-0-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "idref": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "kind": "cpe_platform",
+                  "sha256": "e6f2b8c89d6cebb10f253742f01f5498b0a8aa4eebd0bd0b8f5c5d5b5ae99ae6"
+                }
+              }
+            }
+          ],
+          "outcome": "error"
+        },
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "rhel-9-boot-grub2-grub-cfg-group-owned-by-root-sv-257790-rule/not-evaluated",
+            "message": "Rule applicability evaluation failed: applicability condition has no Assessment",
+            "outcome": "error",
+            "target_instance": null
+          }
+        ],
+        "outcome": "error",
+        "parameters": {},
+        "reason": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "rule_id": "rhel-9-boot-grub2-grub-cfg-group-owned-by-root-sv-257790-rule",
+        "severity": "medium",
+        "summary": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "title": "RHEL 9 /boot/grub2/grub.cfg file must be group-owned by root.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "id": "platform-cpe-o-almalinux-almalinux-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:almalinux:almalinux:9",
+                  "idref": "cpe:/o:almalinux:almalinux:9",
+                  "kind": "cpe_platform",
+                  "sha256": "1f89ad6bffc26d8a5a054b4d5330577243565b5d238e2f9535f284910a9d8ecb"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-rocky-rocky-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:rocky:rocky:9",
+                  "idref": "cpe:/o:rocky:rocky:9",
+                  "kind": "cpe_platform",
+                  "sha256": "a7c7629995ec96e119bc5ab17a69b8c5689612b98407b1954bd9fb98801a384b"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-redhat-enterprise-linux-9-0-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "idref": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "kind": "cpe_platform",
+                  "sha256": "e6f2b8c89d6cebb10f253742f01f5498b0a8aa4eebd0bd0b8f5c5d5b5ae99ae6"
+                }
+              }
+            }
+          ],
+          "outcome": "error"
+        },
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "rhel-9-boot-grub2-grub-cfg-file-owned-by-root-sv-257791-rule/not-evaluated",
+            "message": "Rule applicability evaluation failed: applicability condition has no Assessment",
+            "outcome": "error",
+            "target_instance": null
+          }
+        ],
+        "outcome": "error",
+        "parameters": {},
+        "reason": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "rule_id": "rhel-9-boot-grub2-grub-cfg-file-owned-by-root-sv-257791-rule",
+        "severity": "medium",
+        "summary": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "title": "RHEL 9 /boot/grub2/grub.cfg file must be owned by root.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "id": "platform-cpe-o-almalinux-almalinux-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:almalinux:almalinux:9",
+                  "idref": "cpe:/o:almalinux:almalinux:9",
+                  "kind": "cpe_platform",
+                  "sha256": "1f89ad6bffc26d8a5a054b4d5330577243565b5d238e2f9535f284910a9d8ecb"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-rocky-rocky-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:rocky:rocky:9",
+                  "idref": "cpe:/o:rocky:rocky:9",
+                  "kind": "cpe_platform",
+                  "sha256": "a7c7629995ec96e119bc5ab17a69b8c5689612b98407b1954bd9fb98801a384b"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-redhat-enterprise-linux-9-0-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "idref": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "kind": "cpe_platform",
+                  "sha256": "e6f2b8c89d6cebb10f253742f01f5498b0a8aa4eebd0bd0b8f5c5d5b5ae99ae6"
+                }
+              }
+            }
+          ],
+          "outcome": "error"
+        },
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "rhel-9-var-log-directory-0755-or-less-permissive-sv-257885-rule/not-evaluated",
+            "message": "Rule applicability evaluation failed: applicability condition has no Assessment",
+            "outcome": "error",
+            "target_instance": null
+          }
+        ],
+        "outcome": "error",
+        "parameters": {},
+        "reason": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "rule_id": "rhel-9-var-log-directory-0755-or-less-permissive-sv-257885-rule",
+        "severity": "medium",
+        "summary": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "title": "RHEL 9 /var/log directory must have mode 0755 or less permissive.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "id": "platform-cpe-o-almalinux-almalinux-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:almalinux:almalinux:9",
+                  "idref": "cpe:/o:almalinux:almalinux:9",
+                  "kind": "cpe_platform",
+                  "sha256": "1f89ad6bffc26d8a5a054b4d5330577243565b5d238e2f9535f284910a9d8ecb"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-rocky-rocky-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:rocky:rocky:9",
+                  "idref": "cpe:/o:rocky:rocky:9",
+                  "kind": "cpe_platform",
+                  "sha256": "a7c7629995ec96e119bc5ab17a69b8c5689612b98407b1954bd9fb98801a384b"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-redhat-enterprise-linux-9-0-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "idref": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "kind": "cpe_platform",
+                  "sha256": "e6f2b8c89d6cebb10f253742f01f5498b0a8aa4eebd0bd0b8f5c5d5b5ae99ae6"
+                }
+              }
+            }
+          ],
+          "outcome": "error"
+        },
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "rhel-9-etc-group-file-have-unauthorized-access-sv-257891-rule/not-evaluated",
+            "message": "Rule applicability evaluation failed: applicability condition has no Assessment",
+            "outcome": "error",
+            "target_instance": null
+          }
+        ],
+        "outcome": "error",
+        "parameters": {},
+        "reason": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "rule_id": "rhel-9-etc-group-file-have-unauthorized-access-sv-257891-rule",
+        "severity": "medium",
+        "summary": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "title": "RHEL 9 /etc/group file must have mode 0644 or less permissive to prevent unauthorized access.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "id": "platform-cpe-o-almalinux-almalinux-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:almalinux:almalinux:9",
+                  "idref": "cpe:/o:almalinux:almalinux:9",
+                  "kind": "cpe_platform",
+                  "sha256": "1f89ad6bffc26d8a5a054b4d5330577243565b5d238e2f9535f284910a9d8ecb"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-rocky-rocky-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:rocky:rocky:9",
+                  "idref": "cpe:/o:rocky:rocky:9",
+                  "kind": "cpe_platform",
+                  "sha256": "a7c7629995ec96e119bc5ab17a69b8c5689612b98407b1954bd9fb98801a384b"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-redhat-enterprise-linux-9-0-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "idref": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "kind": "cpe_platform",
+                  "sha256": "e6f2b8c89d6cebb10f253742f01f5498b0a8aa4eebd0bd0b8f5c5d5b5ae99ae6"
+                }
+              }
+            }
+          ],
+          "outcome": "error"
+        },
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "rhel-9-etc-group-file-must-be-owned-by-root-sv-257898-rule/not-evaluated",
+            "message": "Rule applicability evaluation failed: applicability condition has no Assessment",
+            "outcome": "error",
+            "target_instance": null
+          }
+        ],
+        "outcome": "error",
+        "parameters": {},
+        "reason": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "rule_id": "rhel-9-etc-group-file-must-be-owned-by-root-sv-257898-rule",
+        "severity": "medium",
+        "summary": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "title": "RHEL 9 /etc/group file must be owned by root.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "id": "platform-cpe-o-almalinux-almalinux-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:almalinux:almalinux:9",
+                  "idref": "cpe:/o:almalinux:almalinux:9",
+                  "kind": "cpe_platform",
+                  "sha256": "1f89ad6bffc26d8a5a054b4d5330577243565b5d238e2f9535f284910a9d8ecb"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-rocky-rocky-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:rocky:rocky:9",
+                  "idref": "cpe:/o:rocky:rocky:9",
+                  "kind": "cpe_platform",
+                  "sha256": "a7c7629995ec96e119bc5ab17a69b8c5689612b98407b1954bd9fb98801a384b"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-redhat-enterprise-linux-9-0-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "idref": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "kind": "cpe_platform",
+                  "sha256": "e6f2b8c89d6cebb10f253742f01f5498b0a8aa4eebd0bd0b8f5c5d5b5ae99ae6"
+                }
+              }
+            }
+          ],
+          "outcome": "error"
+        },
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "rhel-9-subscription-manager-package-installed-sv-257825-rule/not-evaluated",
+            "message": "Rule applicability evaluation failed: applicability condition has no Assessment",
+            "outcome": "error",
+            "target_instance": null
+          }
+        ],
+        "outcome": "error",
+        "parameters": {},
+        "reason": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "rule_id": "rhel-9-subscription-manager-package-installed-sv-257825-rule",
+        "severity": "medium",
+        "summary": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "title": "RHEL 9 subscription-manager package must be installed.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "id": "platform-cpe-o-almalinux-almalinux-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:almalinux:almalinux:9",
+                  "idref": "cpe:/o:almalinux:almalinux:9",
+                  "kind": "cpe_platform",
+                  "sha256": "1f89ad6bffc26d8a5a054b4d5330577243565b5d238e2f9535f284910a9d8ecb"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-rocky-rocky-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:rocky:rocky:9",
+                  "idref": "cpe:/o:rocky:rocky:9",
+                  "kind": "cpe_platform",
+                  "sha256": "a7c7629995ec96e119bc5ab17a69b8c5689612b98407b1954bd9fb98801a384b"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-redhat-enterprise-linux-9-0-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "idref": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "kind": "cpe_platform",
+                  "sha256": "e6f2b8c89d6cebb10f253742f01f5498b0a8aa4eebd0bd0b8f5c5d5b5ae99ae6"
+                }
+              }
+            }
+          ],
+          "outcome": "error"
+        },
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "rhel-9-not-have-file-server-package-installed-sv-257826-rule/not-evaluated",
+            "message": "Rule applicability evaluation failed: applicability condition has no Assessment",
+            "outcome": "error",
+            "target_instance": null
+          }
+        ],
+        "outcome": "error",
+        "parameters": {},
+        "reason": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "rule_id": "rhel-9-not-have-file-server-package-installed-sv-257826-rule",
+        "severity": "high",
+        "summary": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "title": "RHEL 9 must not have a File Transfer Protocol (FTP) server package installed.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "id": "platform-cpe-o-almalinux-almalinux-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:almalinux:almalinux:9",
+                  "idref": "cpe:/o:almalinux:almalinux:9",
+                  "kind": "cpe_platform",
+                  "sha256": "1f89ad6bffc26d8a5a054b4d5330577243565b5d238e2f9535f284910a9d8ecb"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-rocky-rocky-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:rocky:rocky:9",
+                  "idref": "cpe:/o:rocky:rocky:9",
+                  "kind": "cpe_platform",
+                  "sha256": "a7c7629995ec96e119bc5ab17a69b8c5689612b98407b1954bd9fb98801a384b"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-redhat-enterprise-linux-9-0-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "idref": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "kind": "cpe_platform",
+                  "sha256": "e6f2b8c89d6cebb10f253742f01f5498b0a8aa4eebd0bd0b8f5c5d5b5ae99ae6"
+                }
+              }
+            }
+          ],
+          "outcome": "error"
+        },
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "rhel-9-not-have-sendmail-package-installed-sv-257827-rule/not-evaluated",
+            "message": "Rule applicability evaluation failed: applicability condition has no Assessment",
+            "outcome": "error",
+            "target_instance": null
+          }
+        ],
+        "outcome": "error",
+        "parameters": {},
+        "reason": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "rule_id": "rhel-9-not-have-sendmail-package-installed-sv-257827-rule",
+        "severity": "medium",
+        "summary": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "title": "RHEL 9 must not have the sendmail package installed.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "id": "platform-cpe-o-almalinux-almalinux-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:almalinux:almalinux:9",
+                  "idref": "cpe:/o:almalinux:almalinux:9",
+                  "kind": "cpe_platform",
+                  "sha256": "1f89ad6bffc26d8a5a054b4d5330577243565b5d238e2f9535f284910a9d8ecb"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-rocky-rocky-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:rocky:rocky:9",
+                  "idref": "cpe:/o:rocky:rocky:9",
+                  "kind": "cpe_platform",
+                  "sha256": "a7c7629995ec96e119bc5ab17a69b8c5689612b98407b1954bd9fb98801a384b"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-redhat-enterprise-linux-9-0-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "idref": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "kind": "cpe_platform",
+                  "sha256": "e6f2b8c89d6cebb10f253742f01f5498b0a8aa4eebd0bd0b8f5c5d5b5ae99ae6"
+                }
+              }
+            }
+          ],
+          "outcome": "error"
+        },
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "rhel-9-not-have-nfs-utils-package-installed-sv-257828-rule/not-evaluated",
+            "message": "Rule applicability evaluation failed: applicability condition has no Assessment",
+            "outcome": "error",
+            "target_instance": null
+          }
+        ],
+        "outcome": "error",
+        "parameters": {},
+        "reason": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "rule_id": "rhel-9-not-have-nfs-utils-package-installed-sv-257828-rule",
+        "severity": "medium",
+        "summary": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "title": "RHEL 9 must not have the nfs-utils package installed.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "id": "platform-cpe-o-almalinux-almalinux-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:almalinux:almalinux:9",
+                  "idref": "cpe:/o:almalinux:almalinux:9",
+                  "kind": "cpe_platform",
+                  "sha256": "1f89ad6bffc26d8a5a054b4d5330577243565b5d238e2f9535f284910a9d8ecb"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-rocky-rocky-9-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:rocky:rocky:9",
+                  "idref": "cpe:/o:rocky:rocky:9",
+                  "kind": "cpe_platform",
+                  "sha256": "a7c7629995ec96e119bc5ab17a69b8c5689612b98407b1954bd9fb98801a384b"
+                }
+              }
+            },
+            {
+              "id": "platform-cpe-o-redhat-enterprise-linux-9-0-condition",
+              "outcome": "error",
+              "reason": {
+                "message": "applicability condition has no Assessment",
+                "source": {
+                  "id": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "idref": "cpe:/o:redhat:enterprise_linux:9.0",
+                  "kind": "cpe_platform",
+                  "sha256": "e6f2b8c89d6cebb10f253742f01f5498b0a8aa4eebd0bd0b8f5c5d5b5ae99ae6"
+                }
+              }
+            }
+          ],
+          "outcome": "error"
+        },
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "rhel-9-must-not-have-the-ypserv-package-installed-sv-257829-rule/not-evaluated",
+            "message": "Rule applicability evaluation failed: applicability condition has no Assessment",
+            "outcome": "error",
+            "target_instance": null
+          }
+        ],
+        "outcome": "error",
+        "parameters": {},
+        "reason": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "rule_id": "rhel-9-must-not-have-the-ypserv-package-installed-sv-257829-rule",
+        "severity": "medium",
+        "summary": "Rule applicability evaluation failed: applicability condition has no Assessment",
+        "title": "RHEL 9 must not have the ypserv package installed.",
+        "weight": 10
+      }
+    ],
+    "run_id": "run-a2fd142b1634d239a5012f00081160d2",
+    "started_at": "2026-11-18T12:40:33.711943116Z",
+    "summary": {
+      "error": 15,
+      "fail": 0,
+      "not_applicable": 0,
+      "not_evaluated": 0,
+      "pass": 0,
+      "total": 15,
+      "unknown": 0
+    },
+    "target_ref": "ubuntu-diagnostic"
+  }
+}

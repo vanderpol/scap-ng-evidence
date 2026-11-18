@@ -1,0 +1,40 @@
+{
+  "assessment_document": {
+    "assessment": {
+      "assessment_title": "RHEL 9 must not have the nfs-utils package installed.",
+      "class": "compliance",
+      "evaluate": {
+        "not": {
+          "test": "nfs-utils-package-is-installed-test"
+        }
+      },
+      "id": "rhel-9-not-have-nfs-utils-package-installed-sv-257828-assessment",
+      "mode": "automated",
+      "specification": {
+        "id": "scap-ng.pre-alpha.assessment",
+        "version": "0.4.1"
+      },
+      "tests": {
+        "nfs-utils-package-is-installed-test": {
+          "capability": "linux.rpminfo",
+          "object": {
+            "include_file_paths": false,
+            "package_name": {
+              "equals": "nfs-utils"
+            }
+          },
+          "reported_elements": "all",
+          "require": {
+            "item_requirement": {
+              "items_found": "one_or_more"
+            }
+          },
+          "test_title": "nfs-utils package is installed"
+        }
+      },
+      "version": 1
+    }
+  },
+  "bindings": {},
+  "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329"
+}

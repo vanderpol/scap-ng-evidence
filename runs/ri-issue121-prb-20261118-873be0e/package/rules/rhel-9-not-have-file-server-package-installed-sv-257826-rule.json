@@ -1,0 +1,24 @@
+{
+  "rule": {
+    "id": "rhel-9-not-have-file-server-package-installed-sv-257826-rule",
+    "version": "RHEL-09-215015",
+    "title": "RHEL 9 must not have a File Transfer Protocol (FTP) server package installed.",
+    "severity": "high",
+    "role": "full",
+    "weight": 10.0,
+    "discussion": "<VulnDiscussion>The FTP service provides an unencrypted remote access that does not provide for the confidentiality and integrity of user passwords or the remote session. If a privileged user were to log on using this service, the privileged user password could be compromised. SSH or other encrypted file transfer methods must be used in place of this service.\n\nRemoving the \"vsftpd\" package decreases the risk of accidental activation.\n\nIf FTP is required for operational support (such as transmission of router configurations), its use must be documented with the information systems security manager (ISSM), restricted to only authorized personnel, and have access control rules established.\n\nSatisfies: SRG-OS-000074-GPOS-00042, SRG-OS-000095-GPOS-00049, SRG-OS-000480-GPOS-00227</VulnDiscussion><FalsePositives></FalsePositives><FalseNegatives></FalseNegatives><Documentable>false</Documentable><Mitigations></Mitigations><SeverityOverrideGuidance></SeverityOverrideGuidance><PotentialImpacts></PotentialImpacts><ThirdPartyTools></ThirdPartyTools><MitigationControl></MitigationControl><Responsibility></Responsibility><IAControls></IAControls>",
+    "requires": [],
+    "conflicts": [],
+    "parameters": {},
+    "organizational_input_requirements": {},
+    "assessment_choices": {
+      "automated": {
+        "assessment": "rhel-9-not-have-file-package-installed-sv-257826-assessment"
+      },
+      "manual": {
+        "assessment": "rhel-9-not-have-file-installed-sv-257826-manual-0-assessment"
+      }
+    },
+    "default_assessment_choice": "automated"
+  }
+}

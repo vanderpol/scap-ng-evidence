@@ -1,0 +1,37 @@
+{
+  "scan_result": {
+    "assessment_result_refs": [],
+    "benchmark_results": [
+      {
+        "benchmark_id": "direct-slice",
+        "benchmark_result_ref": "run-a2fd142b1634d239a5012f00081160d2",
+        "benchmark_version": "002.009.013",
+        "profile_id": "",
+        "summary": {
+          "error": 15,
+          "fail": 0,
+          "not_applicable": 0,
+          "not_evaluated": 0,
+          "pass": 0,
+          "total": 15,
+          "unknown": 0
+        },
+        "tailoring_id": null,
+        "target_ref": "ubuntu-diagnostic"
+      }
+    ],
+    "completed_at": "2026-11-18T12:40:33.712580263Z",
+    "result_schema_version": "0.4.1",
+    "run_id": "run-a2fd142b1634d239a5012f00081160d2",
+    "scanner": {
+      "name": "scap-ng-ri",
+      "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329"
+    },
+    "started_at": "2026-11-18T12:40:33.711943116Z",
+    "targets": [
+      {
+        "id": "ubuntu-diagnostic"
+      }
+    ]
+  }
+}

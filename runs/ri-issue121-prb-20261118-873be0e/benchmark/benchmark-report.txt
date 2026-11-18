@@ -1,0 +1,194 @@
+SCAP-NG SCAN REPORT
+===================
+
+TARGET / SCAN
+-------------
+Hostname             redacted-host
+Target ID            ubuntu-diagnostic
+Operating system (observed sidecar) linux
+Architecture         unknown
+Kernel               unknown
+Collection authority unverified:non-root-process
+Collection scope     current process mount/user/pid/net/uts namespaces
+Evidence trust       restricted-process-observation
+Scan started         2026-11-18T12:40:33.711943116Z
+Scan completed       2026-11-18T12:40:33.712580263Z
+Total elapsed        <0.01s
+Scan ID              run-a2fd142b1634d239a5012f00081160d2
+
+BENCHMARK / APPLICABILITY
+--------------------------
+Benchmark            direct-slice
+Benchmark version    002.009.013
+Platform             Source Benchmark platform restriction (fixture-platform)
+Profile              default
+Source digest        b325df5efa6c214915861720ff95fff5f08de3482f40b93d51f64efc1eae9ccd
+Qualification        CROSS-PLATFORM DIAGNOSTIC ONLY — COMPLIANCE SCORE UNAVAILABLE
+Qualification reason platform identity is not qualified by the RI
+
+EXECUTIVE SUMMARY
+------------------
+15 Rules: 0 pass, 0 fail, 0 unknown, 15 error, 0 not evaluated, 0 not applicable.
+Compliance score: unavailable (diagnostic only)
+Pass 0 | Fail 0 | Unknown 0 | Error 15 | Not applicable 0 | Not evaluated 0
+
+TIME / PERFORMANCE
+------------------
+Slowest Rules (measured intervals; concurrent durations are not additive)
+  No per-Rule timing was recorded; unstarted checks are not shown as 0.00 s.
+Slowest Assessments (each shared invocation counted once)
+  No Assessment timing was recorded.
+
+RULE RESULTS
+------------
+OUTCOME          SEVERITY DURATION     RULE ID                  TITLE
+---------------- -------- ------------ ------------------------ -----
+ERROR            medium   not recorded rhel-9-boot-grub2-grub-cfg-file-owned-by-root-sv-257791-rule RHEL 9 /boot/grub2/grub.cfg file must be owned by root.
+ERROR            medium   not recorded rhel-9-boot-grub2-grub-cfg-group-owned-by-root-sv-257790-rule RHEL 9 /boot/grub2/grub.cfg file must be group-owned by root.
+ERROR            medium   not recorded rhel-9-disable-ability-of-boot-process-sv-257788-rule RHEL 9 must disable the ability of systemd to spawn an interactive boot process.
+ERROR            medium   not recorded rhel-9-display-standard-command-line-user-logon-sv-257779-rule RHEL 9 must display the Standard Mandatory DOD Notice and Consent Banner before granting local or remote access to the system via a command line user logon.
+ERROR            medium   not recorded rhel-9-etc-group-file-have-unauthorized-access-sv-257891-rule RHEL 9 /etc/group file must have mode 0644 or less permissive to prevent unauthorized access.
+ERROR            medium   not recorded rhel-9-etc-group-file-must-be-owned-by-root-sv-257898-rule RHEL 9 /etc/group file must be owned by root.
+ERROR            high     not recorded rhel-9-must-be-a-vendor-supported-release-sv-257777-rule RHEL 9 must be a vendor-supported release.
+ERROR            medium   not recorded rhel-9-must-disable-virtual-system-calls-sv-257792-rule RHEL 9 must disable virtual system calls.
+ERROR            medium   not recorded rhel-9-must-not-have-the-ypserv-package-installed-sv-257829-rule RHEL 9 must not have the ypserv package installed.
+ERROR            high     not recorded rhel-9-not-have-file-server-package-installed-sv-257826-rule RHEL 9 must not have a File Transfer Protocol (FTP) server package installed.
+ERROR            medium   not recorded rhel-9-not-have-nfs-utils-package-installed-sv-257828-rule RHEL 9 must not have the nfs-utils package installed.
+ERROR            medium   not recorded rhel-9-not-have-sendmail-package-installed-sv-257827-rule RHEL 9 must not have the sendmail package installed.
+ERROR            high     not recorded rhel-9-require-unique-user-and-maintenance-modes-sv-257789-rule RHEL 9 must require a unique superusers name upon booting into single-user and maintenance modes.
+ERROR            medium   not recorded rhel-9-subscription-manager-package-installed-sv-257825-rule RHEL 9 subscription-manager package must be installed.
+ERROR            medium   not recorded rhel-9-var-log-directory-0755-or-less-permissive-sv-257885-rule RHEL 9 /var/log directory must have mode 0755 or less permissive.
+
+FINDINGS AND EVIDENCE (FAILURE / UNKNOWN FIRST)
+-----------------------------------------------
+[ERROR] rhel-9-boot-grub2-grub-cfg-file-owned-by-root-sv-257791-rule — RHEL 9 /boot/grub2/grub.cfg file must be owned by root.
+Severity           medium
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule applicability evaluation failed: applicability condition has no Assessment
+Finding            Rule applicability evaluation failed: applicability condition has no Assessment
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[ERROR] rhel-9-boot-grub2-grub-cfg-group-owned-by-root-sv-257790-rule — RHEL 9 /boot/grub2/grub.cfg file must be group-owned by root.
+Severity           medium
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule applicability evaluation failed: applicability condition has no Assessment
+Finding            Rule applicability evaluation failed: applicability condition has no Assessment
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[ERROR] rhel-9-disable-ability-of-boot-process-sv-257788-rule — RHEL 9 must disable the ability of systemd to spawn an interactive boot process.
+Severity           medium
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule applicability evaluation failed: applicability condition has no Assessment
+Finding            Rule applicability evaluation failed: applicability condition has no Assessment
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[ERROR] rhel-9-display-standard-command-line-user-logon-sv-257779-rule — RHEL 9 must display the Standard Mandatory DOD Notice and Consent Banner before granting local or remote access to the system via a command line user logon.
+Severity           medium
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule applicability evaluation failed: applicability condition has no Assessment
+Finding            Rule applicability evaluation failed: applicability condition has no Assessment
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[ERROR] rhel-9-etc-group-file-have-unauthorized-access-sv-257891-rule — RHEL 9 /etc/group file must have mode 0644 or less permissive to prevent unauthorized access.
+Severity           medium
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule applicability evaluation failed: applicability condition has no Assessment
+Finding            Rule applicability evaluation failed: applicability condition has no Assessment
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[ERROR] rhel-9-etc-group-file-must-be-owned-by-root-sv-257898-rule — RHEL 9 /etc/group file must be owned by root.
+Severity           medium
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule applicability evaluation failed: applicability condition has no Assessment
+Finding            Rule applicability evaluation failed: applicability condition has no Assessment
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[ERROR] rhel-9-must-be-a-vendor-supported-release-sv-257777-rule — RHEL 9 must be a vendor-supported release.
+Severity           high
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule applicability evaluation failed: applicability condition has no Assessment
+Finding            Rule applicability evaluation failed: applicability condition has no Assessment
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[ERROR] rhel-9-must-disable-virtual-system-calls-sv-257792-rule — RHEL 9 must disable virtual system calls.
+Severity           medium
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule applicability evaluation failed: applicability condition has no Assessment
+Finding            Rule applicability evaluation failed: applicability condition has no Assessment
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[ERROR] rhel-9-must-not-have-the-ypserv-package-installed-sv-257829-rule — RHEL 9 must not have the ypserv package installed.
+Severity           medium
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule applicability evaluation failed: applicability condition has no Assessment
+Finding            Rule applicability evaluation failed: applicability condition has no Assessment
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[ERROR] rhel-9-not-have-file-server-package-installed-sv-257826-rule — RHEL 9 must not have a File Transfer Protocol (FTP) server package installed.
+Severity           high
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule applicability evaluation failed: applicability condition has no Assessment
+Finding            Rule applicability evaluation failed: applicability condition has no Assessment
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[ERROR] rhel-9-not-have-nfs-utils-package-installed-sv-257828-rule — RHEL 9 must not have the nfs-utils package installed.
+Severity           medium
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule applicability evaluation failed: applicability condition has no Assessment
+Finding            Rule applicability evaluation failed: applicability condition has no Assessment
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[ERROR] rhel-9-not-have-sendmail-package-installed-sv-257827-rule — RHEL 9 must not have the sendmail package installed.
+Severity           medium
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule applicability evaluation failed: applicability condition has no Assessment
+Finding            Rule applicability evaluation failed: applicability condition has no Assessment
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[ERROR] rhel-9-require-unique-user-and-maintenance-modes-sv-257789-rule — RHEL 9 must require a unique superusers name upon booting into single-user and maintenance modes.
+Severity           high
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule applicability evaluation failed: applicability condition has no Assessment
+Finding            Rule applicability evaluation failed: applicability condition has no Assessment
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[ERROR] rhel-9-subscription-manager-package-installed-sv-257825-rule — RHEL 9 subscription-manager package must be installed.
+Severity           medium
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule applicability evaluation failed: applicability condition has no Assessment
+Finding            Rule applicability evaluation failed: applicability condition has no Assessment
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[ERROR] rhel-9-var-log-directory-0755-or-less-permissive-sv-257885-rule — RHEL 9 /var/log directory must have mode 0755 or less permissive.
+Severity           medium
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule applicability evaluation failed: applicability condition has no Assessment
+Finding            Rule applicability evaluation failed: applicability condition has no Assessment
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+PASSING RULES
+-------------
+  No passing Rules were recorded.
+
+HISTORY / BASELINE
+-------------------
+No comparable history available. Historical comparison is shown only for a verified compatible baseline.
+
+ENDNOTES
+---------
+This report is read-only and does not rerun evaluation. Technical Assessment/Test outcomes (TRUE/FALSE/UNKNOWN/ERROR) remain distinct from policy Rule dispositions (PASS/FAIL/etc.). Collected Items are bounded retained evidence; observed and retained counts remain separate. Per-Rule and per-Assessment timings are measured sidecar context until the upstream canonical timing contract is approved.
