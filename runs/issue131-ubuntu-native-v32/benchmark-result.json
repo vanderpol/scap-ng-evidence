@@ -1,0 +1,859 @@
+{
+  "benchmark_result": {
+    "benchmark": {
+      "id": "direct-slice",
+      "package_digest": "a4edc0ce8a8037c188a25adfc2f490cf7999499dc2139e76b1a5a43613688b3a",
+      "version": "001.005.007"
+    },
+    "completed_at": "2026-11-18T16:36:16.384843554Z",
+    "effective_policy": {
+      "check_selectors": {},
+      "disabled_rules": [],
+      "organizational_inputs": {},
+      "parameters": {},
+      "profile": "",
+      "selected_rules": [
+        "ubuntu-24-04-lts-not-have-package-installed-sv-270645-rule",
+        "ubuntu-24-04-lts-not-have-ntp-package-installed-sv-270646-rule",
+        "ubuntu-24-04-lts-not-have-package-installed-sv-270647-rule",
+        "ubuntu-24-04-lts-not-have-package-installed-sv-270648-rule",
+        "ubuntu-24-04-lts-configure-during-transmission-sv-270667-rule",
+        "ubuntu-24-04-lts-configure-during-transmission-sv-270668-rule",
+        "ubuntu-24-04-lts-ssh-server-exchange-algorithms-sv-270669-rule",
+        "ubuntu-24-04-lts-display-access-via-ssh-logon-sv-270691-rule",
+        "ubuntu-24-04-lts-library-0755-or-less-permissive-sv-270696-rule",
+        "ubuntu-24-04-lts-disable-x86-delete-key-sequence-sv-270712-rule",
+        "ubuntu-24-04-lts-prevent-login-root-account-sv-270724-rule",
+        "ubuntu-24-04-lts-accept-management-pam-framework-sv-270673-rule",
+        "ubuntu-24-04-lts-accept-piv-credentials-sv-270672-rule",
+        "ubuntu-24-04-lts-so-that-is-owned-by-root-sv-270759-rule",
+        "ubuntu-24-04-lts-use-apparmor-sv-270660-rule",
+        "ubuntu-24-04-lts-use-ssh-transmitted-information-sv-270666-rule"
+      ],
+      "tailoring": null
+    },
+    "result_schema_version": "0.4.1",
+    "rule_results": [
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "assessment_result_ref": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "a68facb44a3fee1d4ceab6c29e862ea4c97cfda4e078099f1dad9f5b109514b3",
+          "id": "ubuntu-24-04-lts-not-have-installed-sv-270645-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-95e4458309d35b1f86be0706a1e40fc6",
+            "assessment_result_ref": "assessment-95e4458309d35b1f86be0706a1e40fc6",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-not-have-installed-sv-270645-assessment/ubuntu-24-04-lts-not-have-package-installed-sv-270645-rule",
+            "message": "Assessment evaluated true.",
+            "outcome": "pass",
+            "target_instance": "ubuntu24-native-v32"
+          }
+        ],
+        "outcome": "pass",
+        "parameters": {},
+        "rule_id": "ubuntu-24-04-lts-not-have-package-installed-sv-270645-rule",
+        "severity": "low",
+        "summary": "Assessment evaluated true.",
+        "title": "Ubuntu 24.04 LTS must not have the \"systemd-timesyncd\" package installed.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "assessment_result_ref": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "a6059594706da3bd31517db1d21f53e20a4fdf86d23b5eb825f8214bd7805dc4",
+          "id": "ubuntu-24-04-lts-not-have-installed-sv-270646-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-5e38a1d843a86c9df40c3478ae3039ea",
+            "assessment_result_ref": "assessment-5e38a1d843a86c9df40c3478ae3039ea",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-not-have-installed-sv-270646-assessment/ubuntu-24-04-lts-not-have-ntp-package-installed-sv-270646-rule",
+            "message": "Assessment evaluated true.",
+            "outcome": "pass",
+            "target_instance": "ubuntu24-native-v32"
+          }
+        ],
+        "outcome": "pass",
+        "parameters": {},
+        "rule_id": "ubuntu-24-04-lts-not-have-ntp-package-installed-sv-270646-rule",
+        "severity": "low",
+        "summary": "Assessment evaluated true.",
+        "title": "Ubuntu 24.04 LTS must not have the \"ntp\" package installed.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "assessment_result_ref": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "c6ac733197c0f76877116007d1cc556c41f6c5820180e21ed8a7832bbc97a70f",
+          "id": "ubuntu-24-04-lts-not-have-installed-sv-270647-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-a513bfbcd29052aa63387ad4adf09883",
+            "assessment_result_ref": "assessment-a513bfbcd29052aa63387ad4adf09883",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-not-have-installed-sv-270647-assessment/ubuntu-24-04-lts-not-have-package-installed-sv-270647-rule",
+            "message": "Assessment evaluated true.",
+            "outcome": "pass",
+            "target_instance": "ubuntu24-native-v32"
+          }
+        ],
+        "outcome": "pass",
+        "parameters": {},
+        "rule_id": "ubuntu-24-04-lts-not-have-package-installed-sv-270647-rule",
+        "severity": "high",
+        "summary": "Assessment evaluated true.",
+        "title": "Ubuntu 24.04 LTS must not have the telnet package installed.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "assessment_result_ref": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "ade69722e17538b8da19dd6c89510fbc0fea04fd79074a3f670670c1bd465172",
+          "id": "ubuntu-24-04-lts-not-have-installed-sv-270648-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-6e3ec1b8f7b169550a7760ee39d842ca",
+            "assessment_result_ref": "assessment-6e3ec1b8f7b169550a7760ee39d842ca",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-not-have-installed-sv-270648-assessment/ubuntu-24-04-lts-not-have-package-installed-sv-270648-rule",
+            "message": "Assessment evaluated true.",
+            "outcome": "pass",
+            "target_instance": "ubuntu24-native-v32"
+          }
+        ],
+        "outcome": "pass",
+        "parameters": {},
+        "rule_id": "ubuntu-24-04-lts-not-have-package-installed-sv-270648-rule",
+        "severity": "high",
+        "summary": "Assessment evaluated true.",
+        "title": "Ubuntu 24.04 LTS must not have the rsh-server package installed.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "assessment_result_ref": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "648db95ca0a85d76f76b74e0c5fe7290504b76b114c10aa34a088087b3493dd9",
+          "id": "ubuntu-24-04-lts-during-transmission-sv-270667-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-50256e05bdd3445238b0be4e24d09bd3",
+            "assessment_result_ref": "assessment-50256e05bdd3445238b0be4e24d09bd3",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-during-transmission-sv-270667-assessment/ubuntu-24-04-lts-configure-during-transmission-sv-270667-rule",
+            "message": "Assessment execution reported an acquisition or evaluation error: collection failed: acquisition not complete: unsupported",
+            "outcome": "error",
+            "target_instance": "ubuntu24-native-v32"
+          }
+        ],
+        "outcome": "error",
+        "parameters": {},
+        "reason": {
+          "code": "collection_error",
+          "message": "Assessment execution reported an acquisition or evaluation error: collection failed: acquisition not complete: unsupported"
+        },
+        "rule_id": "ubuntu-24-04-lts-configure-during-transmission-sv-270667-rule",
+        "severity": "medium",
+        "summary": "Assessment execution reported an acquisition or evaluation error: collection failed: acquisition not complete: unsupported",
+        "title": "Ubuntu 24.04 LTS must configure the SSH daemon to use FIPS 140-3 approved ciphers to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "assessment_result_ref": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "45916b384b31e7bdd2c7024a52244a6ba3ae18b375599b0884a68306f88575cc",
+          "id": "ubuntu-24-04-lts-during-transmission-sv-270668-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-863a58034d9197f12c4f90253391cc3f",
+            "assessment_result_ref": "assessment-863a58034d9197f12c4f90253391cc3f",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-during-transmission-sv-270668-assessment/ubuntu-24-04-lts-configure-during-transmission-sv-270668-rule",
+            "message": "Assessment evaluated false.",
+            "outcome": "fail",
+            "target_instance": "ubuntu24-native-v32"
+          }
+        ],
+        "outcome": "fail",
+        "parameters": {},
+        "reason": {
+          "code": "value_mismatch",
+          "message": "Assessment evaluated false."
+        },
+        "rule_id": "ubuntu-24-04-lts-configure-during-transmission-sv-270668-rule",
+        "severity": "medium",
+        "summary": "Assessment evaluated false.",
+        "title": "Ubuntu 24.04 LTS must configure the SSH daemon to use Message Authentication Codes (MACs) employing FIPS 140-3 approved cryptographic hashes to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "assessment_result_ref": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "f51d8647eb511a954adb070b8cbc0800e0eec495293b3b271bc5fee148652e95",
+          "id": "ubuntu-24-04-lts-ssh-exchange-algorithms-sv-270669-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-691b61fc6cc9caf779452a3163eb8d50",
+            "assessment_result_ref": "assessment-691b61fc6cc9caf779452a3163eb8d50",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-ssh-exchange-algorithms-sv-270669-assessment/ubuntu-24-04-lts-ssh-server-exchange-algorithms-sv-270669-rule",
+            "message": "Assessment execution reported an acquisition or evaluation error: collection failed: acquisition not complete: unsupported",
+            "outcome": "error",
+            "target_instance": "ubuntu24-native-v32"
+          }
+        ],
+        "outcome": "error",
+        "parameters": {},
+        "reason": {
+          "code": "collection_error",
+          "message": "Assessment execution reported an acquisition or evaluation error: collection failed: acquisition not complete: unsupported"
+        },
+        "rule_id": "ubuntu-24-04-lts-ssh-server-exchange-algorithms-sv-270669-rule",
+        "severity": "medium",
+        "summary": "Assessment execution reported an acquisition or evaluation error: collection failed: acquisition not complete: unsupported",
+        "title": "Ubuntu 24.04 LTS SSH server must be configured to use only FIPS 140-3 validated key exchange algorithms.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "assessment_result_ref": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "1e1c1792487bcf512c96311a4e86e51c341efb5d0fee2bff52229447a6f12a79",
+          "id": "ubuntu-24-04-lts-display-via-ssh-logon-sv-270691-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-250997da540e6dc793627ec70768db78",
+            "assessment_result_ref": "assessment-250997da540e6dc793627ec70768db78",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-display-via-ssh-logon-sv-270691-assessment/ubuntu-24-04-lts-display-access-via-ssh-logon-sv-270691-rule",
+            "message": "Assessment evidence was incomplete or inconclusive: Assessment execution diagnostic: missing_field_held",
+            "outcome": "unknown",
+            "target_instance": "ubuntu24-native-v32"
+          }
+        ],
+        "outcome": "unknown",
+        "parameters": {},
+        "reason": {
+          "code": "collection_error",
+          "message": "Assessment evidence was incomplete or inconclusive: Assessment execution diagnostic: missing_field_held"
+        },
+        "rule_id": "ubuntu-24-04-lts-display-access-via-ssh-logon-sv-270691-rule",
+        "severity": "medium",
+        "summary": "Assessment evidence was incomplete or inconclusive: Assessment execution diagnostic: missing_field_held",
+        "title": "Ubuntu 24.04 LTS must display the Standard Mandatory DOD Notice and Consent Banner before granting access to via an SSH logon.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "assessment_result_ref": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "4778df8538e301615196717a7d88cb8565bf254597eb67dc6e2bcc3dd537eb0b",
+          "id": "ubuntu-24-04-lts-library-less-permissive-sv-270696-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-abbd27a8a770ab4c3de74b858b3293cb",
+            "assessment_result_ref": "assessment-abbd27a8a770ab4c3de74b858b3293cb",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-library-less-permissive-sv-270696-assessment/ubuntu-24-04-lts-library-0755-or-less-permissive-sv-270696-rule",
+            "message": "Assessment evidence was incomplete or inconclusive: collection incomplete: acquisition not complete: unsupported",
+            "outcome": "unknown",
+            "target_instance": "ubuntu24-native-v32"
+          }
+        ],
+        "outcome": "unknown",
+        "parameters": {},
+        "reason": {
+          "code": "collection_error",
+          "message": "Assessment evidence was incomplete or inconclusive: collection incomplete: acquisition not complete: unsupported"
+        },
+        "rule_id": "ubuntu-24-04-lts-library-0755-or-less-permissive-sv-270696-rule",
+        "severity": "medium",
+        "summary": "Assessment evidence was incomplete or inconclusive: collection incomplete: acquisition not complete: unsupported",
+        "title": "Ubuntu 24.04 LTS library files must have mode 0755 or less permissive.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "assessment_result_ref": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "e55fcf60018ae6515640f3ee0e8619452d72809c137f67cc93d9e6f3e1b980d7",
+          "id": "ubuntu-24-04-lts-disable-key-sequence-sv-270712-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-2c9ad1b8037d22ed116bc4a0d937099f",
+            "assessment_result_ref": "assessment-2c9ad1b8037d22ed116bc4a0d937099f",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-disable-key-sequence-sv-270712-assessment/ubuntu-24-04-lts-disable-x86-delete-key-sequence-sv-270712-rule",
+            "message": "Assessment evaluated true.",
+            "outcome": "pass",
+            "target_instance": "ubuntu24-native-v32"
+          }
+        ],
+        "outcome": "pass",
+        "parameters": {},
+        "rule_id": "ubuntu-24-04-lts-disable-x86-delete-key-sequence-sv-270712-rule",
+        "severity": "high",
+        "summary": "Assessment evaluated true.",
+        "title": "Ubuntu 24.04 LTS must disable the x86 Ctrl-Alt-Delete key sequence.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "assessment_result_ref": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "a80abf52333725c51d6a0fa54a4c9dbe0fcb1da88f2ea2a1d2f3d8592473a3b9",
+          "id": "ubuntu-24-04-lts-prevent-root-account-sv-270724-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-a4ae9b5c56c08585a1e2e8d692f2c68f",
+            "assessment_result_ref": "assessment-a4ae9b5c56c08585a1e2e8d692f2c68f",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-prevent-root-account-sv-270724-assessment/ubuntu-24-04-lts-prevent-login-root-account-sv-270724-rule",
+            "message": "Assessment evidence was incomplete or inconclusive: collection incomplete: acquisition not complete: permission_denied",
+            "outcome": "unknown",
+            "target_instance": "ubuntu24-native-v32"
+          }
+        ],
+        "outcome": "unknown",
+        "parameters": {},
+        "reason": {
+          "code": "collection_error",
+          "message": "Assessment evidence was incomplete or inconclusive: collection incomplete: acquisition not complete: permission_denied"
+        },
+        "rule_id": "ubuntu-24-04-lts-prevent-login-root-account-sv-270724-rule",
+        "severity": "medium",
+        "summary": "Assessment evidence was incomplete or inconclusive: collection incomplete: acquisition not complete: permission_denied",
+        "title": "Ubuntu 24.04 LTS must prevent direct login to the root account.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "assessment_result_ref": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "d31d50f05fabd0735dc82e370919d075ced213fc6b6bfe56526077f92e88faa8",
+          "id": "ubuntu-24-04-lts-accept-pam-framework-sv-270673-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-f0ae7f253a41f37b17ed90741dc4f591",
+            "assessment_result_ref": "assessment-f0ae7f253a41f37b17ed90741dc4f591",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-accept-pam-framework-sv-270673-assessment/ubuntu-24-04-lts-accept-management-pam-framework-sv-270673-rule",
+            "message": "Assessment evaluated true.",
+            "outcome": "pass",
+            "target_instance": "ubuntu24-native-v32"
+          }
+        ],
+        "outcome": "pass",
+        "parameters": {},
+        "rule_id": "ubuntu-24-04-lts-accept-management-pam-framework-sv-270673-rule",
+        "severity": "medium",
+        "summary": "Assessment evaluated true.",
+        "title": "Ubuntu 24.04 LTS must accept Personal Identity Verification (PIV) credentials managed through the Privileged Access Management (PAM)  framework.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "assessment_result_ref": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "f332273eec7250781c6867ed49fd439eae7cb6539b7f8a69c70671e203e02f4f",
+          "id": "ubuntu-24-04-lts-accept-piv-credentials-sv-270672-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-28437ee770c1d93512795a8ba8126cac",
+            "assessment_result_ref": "assessment-28437ee770c1d93512795a8ba8126cac",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-accept-piv-credentials-sv-270672-assessment/ubuntu-24-04-lts-accept-piv-credentials-sv-270672-rule",
+            "message": "Assessment evaluated true.",
+            "outcome": "pass",
+            "target_instance": "ubuntu24-native-v32"
+          }
+        ],
+        "outcome": "pass",
+        "parameters": {},
+        "rule_id": "ubuntu-24-04-lts-accept-piv-credentials-sv-270672-rule",
+        "severity": "medium",
+        "summary": "Assessment evaluated true.",
+        "title": "Ubuntu 24.04 LTS must accept Personal Identity Verification (PIV) credentials.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "assessment_result_ref": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "0d47f4f29cefe63bce7294045485e062695b9f522322a4fb950db5bae41159fd",
+          "id": "ubuntu-24-04-lts-so-that-is-owned-by-root-sv-270759-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-33e9b4cd6004919009c7da88b2d538c2",
+            "assessment_result_ref": "assessment-33e9b4cd6004919009c7da88b2d538c2",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-so-that-is-owned-by-root-sv-270759-assessment/ubuntu-24-04-lts-so-that-is-owned-by-root-sv-270759-rule",
+            "message": "Assessment evaluated true.",
+            "outcome": "pass",
+            "target_instance": "ubuntu24-native-v32"
+          }
+        ],
+        "outcome": "pass",
+        "parameters": {},
+        "rule_id": "ubuntu-24-04-lts-so-that-is-owned-by-root-sv-270759-rule",
+        "severity": "medium",
+        "summary": "Assessment evaluated true.",
+        "title": "Ubuntu 24.04 LTS must be configured so that the \"journalctl\" command is owned by \"root\".",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "assessment_result_ref": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "3580a739f79102afa84ae5243eb253bb081152a35c21489e013f9c22df1ff3ec",
+          "id": "ubuntu-24-04-lts-use-apparmor-sv-270660-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-e051884351408ef1a1ca67d3311f6cdc",
+            "assessment_result_ref": "assessment-e051884351408ef1a1ca67d3311f6cdc",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-use-apparmor-sv-270660-assessment/ubuntu-24-04-lts-use-apparmor-sv-270660-rule",
+            "message": "Assessment evaluated true.",
+            "outcome": "pass",
+            "target_instance": "ubuntu24-native-v32"
+          }
+        ],
+        "outcome": "pass",
+        "parameters": {},
+        "rule_id": "ubuntu-24-04-lts-use-apparmor-sv-270660-rule",
+        "severity": "medium",
+        "summary": "Assessment evaluated true.",
+        "title": "Ubuntu 24.04 LTS must be configured to use AppArmor.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "assessment_result_ref": "assessment-5db8bcf4326bf928ce303134f3f79ea0",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "c1ebad716b21942da89d4ec4a8f1936e637c96d6fc825b82899733af7892a44e",
+          "id": "ubuntu-24-04-lts-use-ssh-information-sv-270666-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-8f4a22d890fa74556ff74b92997093f5",
+            "assessment_result_ref": "assessment-8f4a22d890fa74556ff74b92997093f5",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-use-ssh-information-sv-270666-assessment/ubuntu-24-04-lts-use-ssh-transmitted-information-sv-270666-rule",
+            "message": "Assessment evaluated true.",
+            "outcome": "pass",
+            "target_instance": "ubuntu24-native-v32"
+          }
+        ],
+        "outcome": "pass",
+        "parameters": {},
+        "rule_id": "ubuntu-24-04-lts-use-ssh-transmitted-information-sv-270666-rule",
+        "severity": "high",
+        "summary": "Assessment evaluated true.",
+        "title": "Ubuntu 24.04 LTS must use SSH to protect the confidentiality and integrity of transmitted information.",
+        "weight": 10
+      }
+    ],
+    "run_id": "run-6c78d5064d8c33438743c5a94172d04d",
+    "started_at": "2026-11-18T16:36:16.263645435Z",
+    "summary": {
+      "error": 2,
+      "fail": 1,
+      "not_applicable": 0,
+      "not_evaluated": 0,
+      "pass": 10,
+      "total": 16,
+      "unknown": 3
+    },
+    "target_ref": "ubuntu24-native-v32"
+  }
+}
