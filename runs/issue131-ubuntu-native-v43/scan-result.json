@@ -1,0 +1,60 @@
+{
+  "scan_result": {
+    "assessment_result_refs": [
+      "assessment-4a18a10645f699166e15687ef4c5d547",
+      "assessment-a651714ffca8cb84237aebad3d3aed6f",
+      "assessment-e76bd023b39561b57f291ddf260e5064",
+      "assessment-a2fef73b7eb68fd73319e804c641e2c3",
+      "assessment-608b0f2c511080fd1c00639398855751",
+      "assessment-c15f878716e1beec83a931e89e336ee0",
+      "assessment-8c27601877dc72019f8f9938cd56ac64",
+      "assessment-72b343ab247c9230db1517d22e2c8518",
+      "assessment-4faeb982e9acebdf347fc80bfa8b5579",
+      "assessment-054a63f449f2049ef41c9d702575c76b",
+      "assessment-f148ced8731731d6c605b2af82ec0bbe",
+      "assessment-d2f661db5a661957fe209408146c48e3",
+      "assessment-bd0728c4cbac771d8a2d2e0046e634fa",
+      "assessment-877e79e840b7bfbe27c1d17128445011",
+      "assessment-81674ac3fb54aed0ed5b4c1833323def",
+      "assessment-fe003bc907eaede8b0267c8fb5809dee",
+      "assessment-5f9efc4f40f446ebbdcebad62af8b636",
+      "assessment-e9d25f126a18daec547110bfba8e9bc3",
+      "assessment-68af8e2915e4fa86a5842b6c201dce91",
+      "assessment-a0e28dc652842ca28349fe36448d467a",
+      "assessment-669fea8ac51be2643eddd4e36ce6de92",
+      "assessment-75ef3711e951946a59c81af3188c9990"
+    ],
+    "benchmark_results": [
+      {
+        "benchmark_id": "direct-slice",
+        "benchmark_result_ref": "run-0a643a98e24b40a312bb79f48abacace",
+        "benchmark_version": "001.005.007",
+        "profile_id": "",
+        "summary": {
+          "error": 2,
+          "fail": 1,
+          "not_applicable": 0,
+          "not_evaluated": 0,
+          "pass": 15,
+          "total": 21,
+          "unknown": 3
+        },
+        "tailoring_id": null,
+        "target_ref": "ubuntu24-native-v43"
+      }
+    ],
+    "completed_at": "2026-11-18T16:42:21.958934275Z",
+    "result_schema_version": "0.4.1",
+    "run_id": "run-0a643a98e24b40a312bb79f48abacace",
+    "scanner": {
+      "name": "scap-ng-ri",
+      "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329"
+    },
+    "started_at": "2026-11-18T16:42:21.764925103Z",
+    "targets": [
+      {
+        "id": "ubuntu24-native-v43"
+      }
+    ]
+  }
+}
