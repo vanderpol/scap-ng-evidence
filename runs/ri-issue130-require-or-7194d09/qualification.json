@@ -1,0 +1,100 @@
+{
+  "acceptance": {
+    "field_cardinality": {
+      "values_found": "one_or_more",
+      "values_matching": "every"
+    },
+    "item_cardinality": {
+      "items_found": "one_or_more",
+      "items_satisfying": "every"
+    },
+    "require_shape": "direct field branches only; four integer equals predicates 7, 8, 9, 10",
+    "resource_bound": "MaxRequireBranches=64 and one shared MaxComparisons budget across all branches; existing MaxItems=1024 and MaxValuesPerField=1024 retained.",
+    "streaming_source_parity": "PASS: focused evaluate/source_test.go direct OR cases match supplied outcomes and cardinality, including complete empty population; incomplete and read failures remain diagnostics.",
+    "supplied_item_results": [
+      {
+        "outcome": "true",
+        "reason": "cardinality_requirements_satisfied",
+        "value": 7
+      },
+      {
+        "outcome": "true",
+        "reason": "cardinality_requirements_satisfied",
+        "value": 8
+      },
+      {
+        "outcome": "true",
+        "reason": "cardinality_requirements_satisfied",
+        "value": 9
+      },
+      {
+        "outcome": "true",
+        "reason": "cardinality_requirements_satisfied",
+        "value": 10
+      },
+      {
+        "outcome": "false",
+        "reason": "field_comparison_false",
+        "value": 6
+      },
+      {
+        "outcome": "false",
+        "reason": "field_comparison_false",
+        "value": 11
+      },
+      {
+        "collection": "complete-zero-item",
+        "outcome": "false",
+        "reason": "item_existence_cardinality_false"
+      }
+    ]
+  },
+  "canonical": {
+    "assessment_id": "rhel-9-must-be-a-vendor-supported-release-sv-257777-assessment",
+    "assessment_sha256": "54a2c210ad056382dae3ae6b2556a37cba613166b71b4e502514da83e9689605",
+    "converter_commit": "df2deb1a514cdd0babbccdf2d240fba4e9811d6d",
+    "package_manifest_sha256": "6aed5908093626bdf46a7718ea7a2195615457a0773c44ea85f38507e5581a44",
+    "published_assessment": "https://raw.githubusercontent.com/vanderpol/scap-ng-evidence/main/runs/ri-issue121-prb-20261118-873be0e/package/assessments/rhel-9-must-be-a-vendor-supported-release-sv-257777-assessment.json",
+    "schema_commit": "5ee55288b369da26f308f40813e545b78dff2753",
+    "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329",
+    "test_id": "the-rhel-9-minor-version-is-supported-test"
+  },
+  "created_at": "2026-11-18T13:00:00Z",
+  "external_artifacts": {
+    "supplied_summary_sha256": "c34fb572535c99b7e28fb88df1308e6d7e6a2b5ff419d8ac6b8de6eaf99efd73",
+    "ubuntu_diagnostic_sha256": "b2b714949d97197b28e976f82d06e29e1393b5ac647773f06a39d63d9482292e"
+  },
+  "format": "scap-ng-ri-issue130-require-or-qualification/1",
+  "implementation_limits": [
+    "Nested OR, mixed fields/logical branches, and non-field branch forms remain explicit require_logical_form_held diagnostics.",
+    "The real Ubuntu diagnostic observes exact-path absence. It does not fabricate a subexpression Item or claim RHEL9 compliance.",
+    "The receipt summarizes external /tmp evidence by hash; generated binaries and raw evidence are not committed."
+  ],
+  "repository_ri_main_commit": "7194d09d74c14782abf60e434a28c0ca1e5aaf88",
+  "ri_source_commit": "5aa56eb1b6e37fc20f50226c20dc9d52dfff4a49",
+  "verification": {
+    "binary_sha256": {
+      "ri-core": "d75a0d5ac322077171b899e76ecf1d7981ff7b570838357b4e2231248ef2c3da",
+      "ri-evaluate": "089247d413b3ebbea50b97f2c1c485cb527fdb5882c921304b79588e84bf3847"
+    },
+    "disk_free_gib_before_and_after": 20,
+    "go_test_all": "PASS: go test -count=1 ./...",
+    "go_test_race": "PASS: go test -race -count=1 ./evaluate ./runtimecore",
+    "go_version": "go1.27.4 linux/amd64",
+    "go_vet": "PASS: go vet ./evaluate ./runtimecore",
+    "machine_summary_sha256": "c34fb572535c99b7e28fb88df1308e6d7e6a2b5ff419d8ac6b8de6eaf99efd73",
+    "ubuntu_diagnostic": {
+      "command": "ri-core --target ubuntu-diagnostic --snapshot issue130-ubuntu --timeout 30s <SV-257777-assessment.json>",
+      "completeness": {
+        "evidence_complete": true,
+        "logical_complete": true,
+        "population_complete": true
+      },
+      "items_observed": 0,
+      "note": "Ubuntu has no matching RHEL /etc/redhat-release Item; this is a diagnostic, not RHEL compliance qualification.",
+      "outcome": "false",
+      "reason": "item_existence_cardinality_false",
+      "sha256": "b2b714949d97197b28e976f82d06e29e1393b5ac647773f06a39d63d9482292e"
+    }
+  }
+}
