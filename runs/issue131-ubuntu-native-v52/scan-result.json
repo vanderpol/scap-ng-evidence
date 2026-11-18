@@ -1,0 +1,65 @@
+{
+  "scan_result": {
+    "assessment_result_refs": [
+      "assessment-9d777b5e8cc77dcc0fb351a1cc201cce",
+      "assessment-6394eea828f697b945ede2cdb5bac609",
+      "assessment-00950a3e450d0df5f125599180977011",
+      "assessment-d81bacb94f68efd4ca4a95a8a8215e69",
+      "assessment-3fa9da7732836e96eeb1f1402c03d583",
+      "assessment-0f10eaa4597f84c2a19daad2d8a09936",
+      "assessment-78e89b86cf92d2f404f86bb8251f47a3",
+      "assessment-896dc9de37f729fa98ccebd7d5ae52c2",
+      "assessment-fc0a607cfe0a07631e45c6f189732f46",
+      "assessment-c9c95985fa49ecf8fd5a4c9b50761430",
+      "assessment-1ba23e2c5134698c7786d3bda6fe16c3",
+      "assessment-d280104c8ae765aac7fe911a59b4d5bb",
+      "assessment-52f40e563048433e2ff6d5c295919bf3",
+      "assessment-ca9d24039729b664f006172dc6f1e5c8",
+      "assessment-e04487ad228903241f966491b64c3505",
+      "assessment-a4aa9594f2d62bf9f132536dae4917bc",
+      "assessment-e8500a8628d9a2da0cb4f8df6acb03a1",
+      "assessment-48af34508b47b45a866407b312064dcb",
+      "assessment-be9f42efe7f04e6b436bff77c40f1198",
+      "assessment-8c93e1df5754368d1515a682ad7f953b",
+      "assessment-48847375380f075dd405be891c325624",
+      "assessment-21ad7312c2f7cec8aa266e86da9fe630",
+      "assessment-2eee94f7d216d87dbec00db220dba705",
+      "assessment-d9af726decff25b13aaf5ad6ff0e5a33",
+      "assessment-2f5435dfd4e9fe72fae3c69f2bcdcb7c",
+      "assessment-6d05af9ea6f64a671a3c01f4de58734a",
+      "assessment-b0994446a002df08cd96a759bc334ce5"
+    ],
+    "benchmark_results": [
+      {
+        "benchmark_id": "direct-slice",
+        "benchmark_result_ref": "run-6299cd6d46a80619f42e9aef5171a822",
+        "benchmark_version": "001.005.007",
+        "profile_id": "",
+        "summary": {
+          "error": 2,
+          "fail": 1,
+          "not_applicable": 0,
+          "not_evaluated": 0,
+          "pass": 18,
+          "total": 26,
+          "unknown": 5
+        },
+        "tailoring_id": null,
+        "target_ref": "ubuntu24-native-v52"
+      }
+    ],
+    "completed_at": "2026-11-18T16:43:25.593318379Z",
+    "result_schema_version": "0.4.1",
+    "run_id": "run-6299cd6d46a80619f42e9aef5171a822",
+    "scanner": {
+      "name": "scap-ng-ri",
+      "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329"
+    },
+    "started_at": "2026-11-18T16:43:25.291298597Z",
+    "targets": [
+      {
+        "id": "ubuntu24-native-v52"
+      }
+    ]
+  }
+}
