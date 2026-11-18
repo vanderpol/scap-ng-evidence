@@ -1,0 +1,50 @@
+{
+  "scan_result": {
+    "assessment_result_refs": [
+      "assessment-108e82098c125fadfd4c63bcff5973af",
+      "assessment-15e17810ae3f5269b0bb61a0851cb6af",
+      "assessment-386a9d0033151eb0edd3b9bee6eab5ad",
+      "assessment-3126b7325dc29597c853bc6154e8fe57",
+      "assessment-cadba415d32d0d809c4ec49db848c9e4",
+      "assessment-3b5731f32219e5991f631dbe9d9ce111",
+      "assessment-fc9926e20a98b70015a64107e4291ff4",
+      "assessment-d7431b0564422eec716f35c6b49bd952",
+      "assessment-bfd10ee41375b856d67c47c0fb0e92cb",
+      "assessment-3f91a59cdfcdd762f22d50d428aab998",
+      "assessment-6b70510aef71ed10615ea1fcda4c1bba",
+      "assessment-8722bc2baffd49e117d0fa69dfb9d376"
+    ],
+    "benchmark_results": [
+      {
+        "benchmark_id": "direct-slice",
+        "benchmark_result_ref": "run-315f7e11d2749f7ee2751bceb787d589",
+        "benchmark_version": "001.005.007",
+        "profile_id": "disable-slow-rules-profile",
+        "summary": {
+          "error": 2,
+          "fail": 1,
+          "not_applicable": 0,
+          "not_evaluated": 0,
+          "pass": 5,
+          "total": 11,
+          "unknown": 3
+        },
+        "tailoring_id": null,
+        "target_ref": "ubuntu-24.04-nonroot"
+      }
+    ],
+    "completed_at": "2026-11-18T15:04:52.867173729Z",
+    "result_schema_version": "0.4.1",
+    "run_id": "run-315f7e11d2749f7ee2751bceb787d589",
+    "scanner": {
+      "name": "scap-ng-ri",
+      "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329"
+    },
+    "started_at": "2026-11-18T15:04:52.738319046Z",
+    "targets": [
+      {
+        "id": "ubuntu-24.04-nonroot"
+      }
+    ]
+  }
+}
