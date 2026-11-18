@@ -1,0 +1,359 @@
+{
+  "artifacts": {
+    "benchmark-report.html": "c38d75c3d98020c6cb1d3b99693a2d8c3f8be4f6450e64e2c8cd4b2234881dd1",
+    "benchmark-report.txt": "4c124861cab8ce5ce82f997be0ffbe43cf75256b6873b714dbd0b9b671ce4296",
+    "benchmark-result.json": "835d24910abb383640b1ef5bdb79050481d454fdde504361925d0e8451f0a9fc",
+    "execution-ledger.json": "cdd2e814dccf8bfac63db8f72fa6524a6966d3737526107608a0529090a76c89",
+    "scan-result.json": "b41a5c609b40a6f615cd228d588e239a00e08f5948d558cca2da24aa699d648e",
+    "target-observation.json": "ee49b6cdedc8f327dcbd89b2c33f265ce03b7c4d0d105d6c9be6f01fe3b23bfc"
+  },
+  "canonical": {
+    "flat_schema_family_sha256": "88fc59791f9cb5055d2a8dc27bb458bcf6699b5820061ce68af1a355bd33a84f",
+    "schema_commit": "5ee55288b369da26f308f40813e545b78dff2753",
+    "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329"
+  },
+  "converter": {
+    "commit": "df2deb1a514cdd0babbccdf2d240fba4e9811d6d"
+  },
+  "execution": {
+    "assessment_result_count": 17,
+    "command": "ri-benchmark --package <package> --output-dir <run> --target ubuntu24-native-v32 --report both --progress off --timeout 90s",
+    "new_rules": [
+      {
+        "applicability": "applicable",
+        "assessment_id": "ubuntu-24-04-lts-accept-pam-framework-sv-270673-assessment",
+        "id": "ubuntu-24-04-lts-accept-management-pam-framework-sv-270673-rule",
+        "outcome": "pass",
+        "package_member_sha256": "441789e71532905a2bbe3be652797124878de6e30906274cd8754213b53f9201",
+        "reason": "Assessment evaluated true.",
+        "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270673",
+        "source_definition_sha256": "bc58bce0f0763fa8b7d1e0ae4b9f22180e61b5f70d87b995f8f5254a7864a4ec",
+        "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270673r1067164_rule",
+        "source_rule_sha256": "070934970991a0fabfbb121007badf265a0667f8ae5802cdac62c37dcc4faac0",
+        "tests": [
+          {
+            "id": "package-libpam-pkcs11-is-installed-test",
+            "items_found": "one_or_more",
+            "items_observed": 1,
+            "items_returned": 1,
+            "items_satisfying": "every",
+            "outcome": "true",
+            "reason": "item_existence_satisfied"
+          }
+        ],
+        "title": "Ubuntu 24.04 LTS must accept Personal Identity Verification (PIV) credentials managed through the Privileged Access Management (PAM) \u00a0framework."
+      },
+      {
+        "applicability": "applicable",
+        "assessment_id": "ubuntu-24-04-lts-accept-piv-credentials-sv-270672-assessment",
+        "id": "ubuntu-24-04-lts-accept-piv-credentials-sv-270672-rule",
+        "outcome": "pass",
+        "package_member_sha256": "9b76b53880a751d46e56a8a4262d2809a78bdc6890de96768101bce930e4b560",
+        "reason": "Assessment evaluated true.",
+        "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270672",
+        "source_definition_sha256": "dea1ca94fd2e8d93ea1ba1c8b8b411d4eece872fb9c4e560ce9d99570adce724",
+        "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270672r1067161_rule",
+        "source_rule_sha256": "5a3e965ca17e366949f78151a562df081662cff9e00b38f3061d351db5729983",
+        "tests": [
+          {
+            "id": "package-opensc-pkcs11-is-installed-test",
+            "items_found": "one_or_more",
+            "items_observed": 1,
+            "items_returned": 1,
+            "items_satisfying": "every",
+            "outcome": "true",
+            "reason": "item_existence_satisfied"
+          }
+        ],
+        "title": "Ubuntu 24.04 LTS must accept Personal Identity Verification (PIV) credentials."
+      },
+      {
+        "applicability": "applicable",
+        "assessment_id": "ubuntu-24-04-lts-so-that-is-owned-by-root-sv-270759-assessment",
+        "id": "ubuntu-24-04-lts-so-that-is-owned-by-root-sv-270759-rule",
+        "outcome": "pass",
+        "package_member_sha256": "b5f9c7255a3bd49ac43f049ffec7ce67b63d593d35e0ef835a62d31b021e1bd8",
+        "reason": "Assessment evaluated true.",
+        "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270759",
+        "source_definition_sha256": "554c3653b750a58b9307feda95ce0a37a5f2630ede1e9340044ed23686d256d6",
+        "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270759r1068367_rule",
+        "source_rule_sha256": "11a07f7aa6e107a352ca932a791329e5a37ec0c8946387521e7dd92a54a1abff",
+        "tests": [
+          {
+            "id": "usr-bin-journalctl-command-is-owned-by-root-test",
+            "items_found": "one_or_more",
+            "items_observed": 1,
+            "items_returned": 1,
+            "items_satisfying": "every",
+            "outcome": "true",
+            "reason": "all_required_fields_equal"
+          }
+        ],
+        "title": "Ubuntu 24.04 LTS must be configured so that the \"journalctl\" command is owned by \"root\"."
+      },
+      {
+        "applicability": "applicable",
+        "assessment_id": "ubuntu-24-04-lts-use-apparmor-sv-270660-assessment",
+        "id": "ubuntu-24-04-lts-use-apparmor-sv-270660-rule",
+        "outcome": "pass",
+        "package_member_sha256": "4f2d1e06de95baa77086647b8f06e67cb45884497b9fe0e71c16a4d19d51e75a",
+        "reason": "Assessment evaluated true.",
+        "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270660",
+        "source_definition_sha256": "69b717158a45c67dee8ff6e24ba257938047aaef995d1c44a760d81acadf9f11",
+        "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270660r1066469_rule",
+        "source_rule_sha256": "c12a77e06156d0104cf228f5b5c1df4b9a9bfcd9c63982f5c106f16f3070cd35",
+        "tests": [
+          {
+            "id": "apparmor-service-is-active-test",
+            "items_found": "one_or_more",
+            "items_observed": 1,
+            "items_returned": 1,
+            "items_satisfying": "every",
+            "outcome": "true",
+            "reason": "all_required_fields_equal"
+          },
+          {
+            "id": "apparmor-service-is-enabled-test",
+            "items_found": "one_or_more",
+            "items_observed": 1,
+            "items_returned": 1,
+            "items_satisfying": "every",
+            "outcome": "true",
+            "reason": "all_required_fields_equal"
+          }
+        ],
+        "title": "Ubuntu 24.04 LTS must be configured to use AppArmor."
+      },
+      {
+        "applicability": "applicable",
+        "assessment_id": "ubuntu-24-04-lts-use-ssh-information-sv-270666-assessment",
+        "id": "ubuntu-24-04-lts-use-ssh-transmitted-information-sv-270666-rule",
+        "outcome": "pass",
+        "package_member_sha256": "bf38a05919020a39a7e19d0695b4cbab1be59a08d8ac3a30c4a474e14cdff8db",
+        "reason": "Assessment evaluated true.",
+        "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270666",
+        "source_definition_sha256": "d39a3daa302ec31923af724285ce850afbf1e29879bfbef11930d07da047e946",
+        "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270666r1066487_rule",
+        "source_rule_sha256": "19b456d5c30638f4a14dc21a699513a4f6f53897f919c2dc0ccec8f6e227e765",
+        "tests": [
+          {
+            "id": "ssh-service-is-active-test",
+            "items_found": "one_or_more",
+            "items_observed": 1,
+            "items_returned": 1,
+            "items_satisfying": "every",
+            "outcome": "true",
+            "reason": "all_required_fields_equal"
+          },
+          {
+            "id": "ssh-service-is-enabled-test",
+            "items_found": "one_or_more",
+            "items_observed": 1,
+            "items_returned": 1,
+            "items_satisfying": "every",
+            "outcome": "true",
+            "reason": "all_required_fields_equal"
+          }
+        ],
+        "title": "Ubuntu 24.04 LTS must use SSH to protect the confidentiality and integrity of transmitted information."
+      }
+    ],
+    "output_dir": "/tmp/ubuntu24-native-run-v32-1795019775",
+    "rules": {
+      "error": 2,
+      "fail": 1,
+      "not_applicable": 0,
+      "not_evaluated": 0,
+      "pass": 10,
+      "total": 16,
+      "unknown": 3
+    },
+    "timing": {
+      "max_rss_kib": 54904,
+      "wall_seconds": 0.66
+    }
+  },
+  "format": "scap-ng-ri/ubuntu-native-cohort-receipt/v1",
+  "generated_at": "2026-11-18",
+  "holds": [
+    "Non-root namespace-scoped observation is diagnostic only; no host-wide compliance score.",
+    "SSH PCRE2-style content remains ERROR/held; no regex rewriting was introduced.",
+    "Final symlink and shadow authority restrictions remain unchanged.",
+    "The package adapter normalization is source-preserving for empty applicability only; Tools should receive a coordinated source-side correction."
+  ],
+  "package": {
+    "adapter_normalization": "empty Rule applicability array omitted; non-empty arrays remain held",
+    "adapter_normalization_count": 16,
+    "manifest_sha256": "be2a52b161d4d1142ebde37bff26729dea567dcc81a378ebccfa532bbd0ed49f",
+    "member_count": 51,
+    "normalization_hashes": [
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-accept-management-pam-framework-sv-270673-rule",
+        "post_normalization_sha256": "441789e71532905a2bbe3be652797124878de6e30906274cd8754213b53f9201",
+        "pre_normalization_sha256": "78d4ae24af5a8fdef346affa73438ffdf33b9d143093fbd7cdaf9871052c506d"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-accept-piv-credentials-sv-270672-rule",
+        "post_normalization_sha256": "9b76b53880a751d46e56a8a4262d2809a78bdc6890de96768101bce930e4b560",
+        "pre_normalization_sha256": "7a95763a994af18283872280463f91348ce14c17989837187ecdbc3d0c68a77b"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-configure-during-transmission-sv-270667-rule",
+        "post_normalization_sha256": "4d8c28bf3a4a7fdd814a1d6df85126c79163bb3eda8b8972f55082dad522bc83",
+        "pre_normalization_sha256": "d172ba528a8c79f6f6219d275b50fd9ba858d96ceca357936f261dc478f868b6"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-configure-during-transmission-sv-270668-rule",
+        "post_normalization_sha256": "bc56bc58f1c2b9655690829bc11809f3256832939968e2321f1b4acc8bfe8911",
+        "pre_normalization_sha256": "953697c4b0a72a0c83f21c2728f0524b951e1b8da356ca74038def7788f142d4"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-disable-x86-delete-key-sequence-sv-270712-rule",
+        "post_normalization_sha256": "19b90665771dab302b2b4c3d61b75ae2094c66d2215c86a6fa246d603e740492",
+        "pre_normalization_sha256": "b30b8729ba9dcfad06d68d4ef2c94999b6ba6253032c6d60057716623fb696f4"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-display-access-via-ssh-logon-sv-270691-rule",
+        "post_normalization_sha256": "86e575d91230f278e02628ed94abc954cc32e7d470da9b8a3039ffb360622a35",
+        "pre_normalization_sha256": "272646bd23737fe8922ff9bf8b008365794c92aa277635e98a71631118560b03"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-library-0755-or-less-permissive-sv-270696-rule",
+        "post_normalization_sha256": "d2ab5e534926b01790d3c46023d9509b2b00f5c3d7f0e2a492534fae8ad0fb0e",
+        "pre_normalization_sha256": "2aaecb264d342acf3f978b94eca9ddaec6a15dec7e7fa92b13e0418099671c26"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-not-have-ntp-package-installed-sv-270646-rule",
+        "post_normalization_sha256": "5118ea3138b77cc23989b795aee48fadbcac42857cd44c8929dcdc520e622d4d",
+        "pre_normalization_sha256": "b7d85c12dee44a2b72b8fb1a365e3689a52e8b7dcea5cce715f98eb7f0fc3508"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-not-have-package-installed-sv-270645-rule",
+        "post_normalization_sha256": "8689c3a03b03eab6caf6b793627576e7349a0fe28a6724fc47b1496c691e4e80",
+        "pre_normalization_sha256": "23cfdb0c8ea009d6fa858fa13619741f9e1004caac222d97a4ba91c8b04a0d69"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-not-have-package-installed-sv-270647-rule",
+        "post_normalization_sha256": "571999aaec4bb9f1570bc9183c89c2fe46d70a7178e3623db77bb88b095ef7d5",
+        "pre_normalization_sha256": "a2e66bb08fbcd040381c00b5260436d2ecdcf2225363d269c85bfb9f4a11aaca"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-not-have-package-installed-sv-270648-rule",
+        "post_normalization_sha256": "8b65d6285b7f0e337858e2d2cb0fce5b25eac8241a165d66d65637e519755f06",
+        "pre_normalization_sha256": "e27360b3f694229ccfc45bf17eefac4313f779aafa6e137dd46499fe9febd17b"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-prevent-login-root-account-sv-270724-rule",
+        "post_normalization_sha256": "9488aab93eb08e63ba26a9a177a8c4e58a59b0d2fe8a4ffb0536e684f8db1dbf",
+        "pre_normalization_sha256": "ddaca6d9355fcbc2f53673907c3bf0ca8d4373d8e0125bc459c972e8d1a4f148"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-so-that-is-owned-by-root-sv-270759-rule",
+        "post_normalization_sha256": "b5f9c7255a3bd49ac43f049ffec7ce67b63d593d35e0ef835a62d31b021e1bd8",
+        "pre_normalization_sha256": "ddd9d4d129a670650db258be60ad3dec2549c9058b38dfd1b98b2b230ab21ea1"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-ssh-server-exchange-algorithms-sv-270669-rule",
+        "post_normalization_sha256": "452c0529bf6eb405f3361b6009e7bdebbdc998052065878dddd913651deba5e1",
+        "pre_normalization_sha256": "b112e74b9436fa8e8d2e26bc51873dbcdebdcaebecb4cafc4e958719aae57fa8"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-use-apparmor-sv-270660-rule",
+        "post_normalization_sha256": "4f2d1e06de95baa77086647b8f06e67cb45884497b9fe0e71c16a4d19d51e75a",
+        "pre_normalization_sha256": "015b26619820cdb49d98301fe598ffddf5643e81d4918d067bb681223bd1a5f5"
+      },
+      {
+        "changes": [
+          "rule.applicability:empty-array-omitted"
+        ],
+        "native_rule": "ubuntu-24-04-lts-use-ssh-transmitted-information-sv-270666-rule",
+        "post_normalization_sha256": "bf38a05919020a39a7e19d0695b4cbab1be59a08d8ac3a30c4a474e14cdff8db",
+        "pre_normalization_sha256": "9ebc5860ccb7f4f629912b581478c1e30e293ac5ebeafa7f31efebb183e29548"
+      }
+    ],
+    "package_digest": "a4edc0ce8a8037c188a25adfc2f490cf7999499dc2139e76b1a5a43613688b3a"
+  },
+  "published": {
+    "archive": "https://github.com/vanderpol/scap-ng-evidence/blob/main/runs/issue131-ubuntu-native-v32/evidence.tar.gz",
+    "html": "https://github.com/vanderpol/scap-ng-evidence/blob/main/runs/issue131-ubuntu-native-v32/benchmark-report.html",
+    "root": "https://github.com/vanderpol/scap-ng-evidence/tree/main/runs/issue131-ubuntu-native-v32",
+    "sha256sums": "https://github.com/vanderpol/scap-ng-evidence/blob/main/runs/issue131-ubuntu-native-v32/SHA256SUMS",
+    "text": "https://github.com/vanderpol/scap-ng-evidence/blob/main/runs/issue131-ubuntu-native-v32/benchmark-report.txt"
+  },
+  "ri": {
+    "binary_sha256": "fbb1db879f41b7c34ac1da53a17fd258626f2dd5e624a3d8f7a1dcf38a70fdd6",
+    "branch": "codex/ubuntu-slice-adapter",
+    "commit": "a8b90055e0fc704786945460d1689793a137654d",
+    "toolchain": "go1.27.0 linux/amd64"
+  },
+  "scope": "diagnostic non-root execution; not host-wide compliance qualification",
+  "source": {
+    "commit": "8c8e5dff860af6b1290ee9273a282db24278f8d5",
+    "omitted_rules": 178,
+    "selected_rules": 16,
+    "trace_sha256": "4597ddb49ba018c52d6da382f88e3fa47eee8f9fd587623cdd54b0957e9bd92d",
+    "xml_sha256": "eac6f7a6a1e80c52d02c508d939eb09aa09b7fe6eaeb060b8aa21e095719c940",
+    "zip_sha256": "40229cd7a41e6ff4a8cfb675523f767292d1460edbc68fe9ba5258c530c8b4a7"
+  },
+  "target": {
+    "architecture": "x86_64",
+    "authority": "unverified:non-root-process",
+    "evidence_trust": "restricted-process-observation",
+    "os_id": "ubuntu",
+    "pretty_name": "Ubuntu 24.04.5 LTS",
+    "privilege": "non-root; effective capability set empty",
+    "scope": "current process mount/user/pid/net/uts namespaces",
+    "version_id": "24.04"
+  },
+  "verification": {
+    "go_race": "PASS: go test -race -count=1 ./benchmark ./runtimecore ./cmd/ri-benchmark",
+    "go_test": "PASS: go test -count=1 ./...",
+    "go_vet": "PASS: go vet ./...",
+    "python_tests": "PASS: python3 -m unittest discover -s tools -p test_*.py (38 tests)"
+  }
+}
