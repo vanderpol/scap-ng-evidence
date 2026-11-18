@@ -1,0 +1,1812 @@
+{
+  "schema": "scap-ng-ri/execution-ledger/1",
+  "run_id": "run-7d38eab452afce1a608211a1556a9f65",
+  "target_ref": "ubuntu24-native-v62",
+  "package_digest": "c097d0ab103e7b5754e7d8e53e6f7bd93894ccc3457b8ab7c5bd689765fb75ca",
+  "source": {
+    "source_commit": "8c8e5dff860af6b1290ee9273a282db24278f8d5",
+    "source_zip_sha256": "40229cd7a41e6ff4a8cfb675523f767292d1460edbc68fe9ba5258c530c8b4a7",
+    "source_xml_sha256": "eac6f7a6a1e80c52d02c508d939eb09aa09b7fe6eaeb060b8aa21e095719c940",
+    "source_member": "U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-signed.xml",
+    "source_benchmark_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-xccdf.xml",
+    "converter_commit": "df2deb1a514cdd0babbccdf2d240fba4e9811d6d",
+    "schema_commit": "5ee55288b369da26f308f40813e545b78dff2753",
+    "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329",
+    "flat_schema_family_sha256": "88fc59791f9cb5055d2a8dc27bb458bcf6699b5820061ce68af1a355bd33a84f",
+    "ri_commit": "a8b90055e0fc704786945460d1689793a137654d",
+    "source_inventory_status": "complete-selected-and-omitted-ledger",
+    "selected_source_rule_count": 29,
+    "omitted_source_rule_count": 165,
+    "omitted_source_rule_ids": [
+      "xccdf_mil.disa.stig_rule_SV-270649r1067136_rule",
+      "xccdf_mil.disa.stig_rule_SV-270650r1155241_rule",
+      "xccdf_mil.disa.stig_rule_SV-270651r1068395_rule",
+      "xccdf_mil.disa.stig_rule_SV-270652r1067138_rule",
+      "xccdf_mil.disa.stig_rule_SV-270653r1067141_rule",
+      "xccdf_mil.disa.stig_rule_SV-270656r1067148_rule",
+      "xccdf_mil.disa.stig_rule_SV-270657r1066460_rule",
+      "xccdf_mil.disa.stig_rule_SV-270658r1067151_rule",
+      "xccdf_mil.disa.stig_rule_SV-270662r1067156_rule",
+      "xccdf_mil.disa.stig_rule_SV-270663r1066478_rule",
+      "xccdf_mil.disa.stig_rule_SV-270670r1067115_rule",
+      "xccdf_mil.disa.stig_rule_SV-270671r1155244_rule",
+      "xccdf_mil.disa.stig_rule_SV-270674r1067167_rule",
+      "xccdf_mil.disa.stig_rule_SV-270675r1137691_rule",
+      "xccdf_mil.disa.stig_rule_SV-270676r1155245_rule",
+      "xccdf_mil.disa.stig_rule_SV-270677r1101774_rule",
+      "xccdf_mil.disa.stig_rule_SV-270678r1101791_rule",
+      "xccdf_mil.disa.stig_rule_SV-270679r1107295_rule",
+      "xccdf_mil.disa.stig_rule_SV-270680r1066529_rule",
+      "xccdf_mil.disa.stig_rule_SV-270681r1134806_rule",
+      "xccdf_mil.disa.stig_rule_SV-270682r1066535_rule",
+      "xccdf_mil.disa.stig_rule_SV-270683r1066538_rule",
+      "xccdf_mil.disa.stig_rule_SV-270684r1066541_rule",
+      "xccdf_mil.disa.stig_rule_SV-270685r1066544_rule",
+      "xccdf_mil.disa.stig_rule_SV-270686r1066547_rule",
+      "xccdf_mil.disa.stig_rule_SV-270687r1066550_rule",
+      "xccdf_mil.disa.stig_rule_SV-270688r1066553_rule",
+      "xccdf_mil.disa.stig_rule_SV-270689r1066556_rule",
+      "xccdf_mil.disa.stig_rule_SV-270690r1067126_rule",
+      "xccdf_mil.disa.stig_rule_SV-270692r1066565_rule",
+      "xccdf_mil.disa.stig_rule_SV-270693r1066568_rule",
+      "xccdf_mil.disa.stig_rule_SV-270694r1066571_rule",
+      "xccdf_mil.disa.stig_rule_SV-270695r1066574_rule",
+      "xccdf_mil.disa.stig_rule_SV-270697r1107308_rule",
+      "xccdf_mil.disa.stig_rule_SV-270698r1101751_rule",
+      "xccdf_mil.disa.stig_rule_SV-270699r1107310_rule",
+      "xccdf_mil.disa.stig_rule_SV-270700r1066589_rule",
+      "xccdf_mil.disa.stig_rule_SV-270701r1066592_rule",
+      "xccdf_mil.disa.stig_rule_SV-270702r1066595_rule",
+      "xccdf_mil.disa.stig_rule_SV-270703r1066598_rule",
+      "xccdf_mil.disa.stig_rule_SV-270704r1066601_rule",
+      "xccdf_mil.disa.stig_rule_SV-270705r1066604_rule",
+      "xccdf_mil.disa.stig_rule_SV-270706r1068361_rule",
+      "xccdf_mil.disa.stig_rule_SV-270707r1101786_rule",
+      "xccdf_mil.disa.stig_rule_SV-270708r1208697_rule",
+      "xccdf_mil.disa.stig_rule_SV-270709r1208698_rule",
+      "xccdf_mil.disa.stig_rule_SV-270711r1184069_rule",
+      "xccdf_mil.disa.stig_rule_SV-270713r1066628_rule",
+      "xccdf_mil.disa.stig_rule_SV-270714r1208699_rule",
+      "xccdf_mil.disa.stig_rule_SV-270715r1066634_rule",
+      "xccdf_mil.disa.stig_rule_SV-270716r1066637_rule",
+      "xccdf_mil.disa.stig_rule_SV-270717r1208700_rule",
+      "xccdf_mil.disa.stig_rule_SV-270718r1134811_rule",
+      "xccdf_mil.disa.stig_rule_SV-270719r1067172_rule",
+      "xccdf_mil.disa.stig_rule_SV-270720r1066649_rule",
+      "xccdf_mil.disa.stig_rule_SV-270721r1066652_rule",
+      "xccdf_mil.disa.stig_rule_SV-270722r1067130_rule",
+      "xccdf_mil.disa.stig_rule_SV-270723r1066658_rule",
+      "xccdf_mil.disa.stig_rule_SV-270725r1101789_rule",
+      "xccdf_mil.disa.stig_rule_SV-270726r1066667_rule",
+      "xccdf_mil.disa.stig_rule_SV-270727r1066670_rule",
+      "xccdf_mil.disa.stig_rule_SV-270728r1066673_rule",
+      "xccdf_mil.disa.stig_rule_SV-270729r1066676_rule",
+      "xccdf_mil.disa.stig_rule_SV-270730r1066679_rule",
+      "xccdf_mil.disa.stig_rule_SV-270731r1066682_rule",
+      "xccdf_mil.disa.stig_rule_SV-270732r1066685_rule",
+      "xccdf_mil.disa.stig_rule_SV-270733r1066688_rule",
+      "xccdf_mil.disa.stig_rule_SV-270734r1155240_rule",
+      "xccdf_mil.disa.stig_rule_SV-270735r1066694_rule",
+      "xccdf_mil.disa.stig_rule_SV-270736r1066697_rule",
+      "xccdf_mil.disa.stig_rule_SV-270737r1067178_rule",
+      "xccdf_mil.disa.stig_rule_SV-270738r1066703_rule",
+      "xccdf_mil.disa.stig_rule_SV-270739r1067124_rule",
+      "xccdf_mil.disa.stig_rule_SV-270740r1066709_rule",
+      "xccdf_mil.disa.stig_rule_SV-270741r1066712_rule",
+      "xccdf_mil.disa.stig_rule_SV-270742r1066715_rule",
+      "xccdf_mil.disa.stig_rule_SV-270743r1208702_rule",
+      "xccdf_mil.disa.stig_rule_SV-270744r1137699_rule",
+      "xccdf_mil.disa.stig_rule_SV-270745r1066724_rule",
+      "xccdf_mil.disa.stig_rule_SV-270746r1155242_rule",
+      "xccdf_mil.disa.stig_rule_SV-270747r1066730_rule",
+      "xccdf_mil.disa.stig_rule_SV-270748r1066733_rule",
+      "xccdf_mil.disa.stig_rule_SV-270749r1137695_rule",
+      "xccdf_mil.disa.stig_rule_SV-270750r1137695_rule",
+      "xccdf_mil.disa.stig_rule_SV-270751r1066742_rule",
+      "xccdf_mil.disa.stig_rule_SV-270752r1068365_rule",
+      "xccdf_mil.disa.stig_rule_SV-270753r1066748_rule",
+      "xccdf_mil.disa.stig_rule_SV-270754r1066751_rule",
+      "xccdf_mil.disa.stig_rule_SV-270755r1066754_rule",
+      "xccdf_mil.disa.stig_rule_SV-270756r1134814_rule",
+      "xccdf_mil.disa.stig_rule_SV-270757r1184072_rule",
+      "xccdf_mil.disa.stig_rule_SV-270761r1184074_rule",
+      "xccdf_mil.disa.stig_rule_SV-270762r1184076_rule",
+      "xccdf_mil.disa.stig_rule_SV-270763r1184078_rule",
+      "xccdf_mil.disa.stig_rule_SV-270764r1184080_rule",
+      "xccdf_mil.disa.stig_rule_SV-270765r1066784_rule",
+      "xccdf_mil.disa.stig_rule_SV-270771r1066802_rule",
+      "xccdf_mil.disa.stig_rule_SV-270772r1066805_rule",
+      "xccdf_mil.disa.stig_rule_SV-270773r1066808_rule",
+      "xccdf_mil.disa.stig_rule_SV-270775r1068369_rule",
+      "xccdf_mil.disa.stig_rule_SV-270776r1066817_rule",
+      "xccdf_mil.disa.stig_rule_SV-270777r1066820_rule",
+      "xccdf_mil.disa.stig_rule_SV-270778r1066823_rule",
+      "xccdf_mil.disa.stig_rule_SV-270779r1066826_rule",
+      "xccdf_mil.disa.stig_rule_SV-270780r1066829_rule",
+      "xccdf_mil.disa.stig_rule_SV-270781r1066832_rule",
+      "xccdf_mil.disa.stig_rule_SV-270782r1066835_rule",
+      "xccdf_mil.disa.stig_rule_SV-270783r1066838_rule",
+      "xccdf_mil.disa.stig_rule_SV-270784r1068371_rule",
+      "xccdf_mil.disa.stig_rule_SV-270785r1068373_rule",
+      "xccdf_mil.disa.stig_rule_SV-270786r1068375_rule",
+      "xccdf_mil.disa.stig_rule_SV-270787r1068378_rule",
+      "xccdf_mil.disa.stig_rule_SV-270788r1066853_rule",
+      "xccdf_mil.disa.stig_rule_SV-270789r1066856_rule",
+      "xccdf_mil.disa.stig_rule_SV-270790r1068380_rule",
+      "xccdf_mil.disa.stig_rule_SV-270791r1066862_rule",
+      "xccdf_mil.disa.stig_rule_SV-270792r1066865_rule",
+      "xccdf_mil.disa.stig_rule_SV-270793r1066868_rule",
+      "xccdf_mil.disa.stig_rule_SV-270794r1066871_rule",
+      "xccdf_mil.disa.stig_rule_SV-270795r1066874_rule",
+      "xccdf_mil.disa.stig_rule_SV-270796r1066877_rule",
+      "xccdf_mil.disa.stig_rule_SV-270797r1066880_rule",
+      "xccdf_mil.disa.stig_rule_SV-270798r1068382_rule",
+      "xccdf_mil.disa.stig_rule_SV-270799r1066886_rule",
+      "xccdf_mil.disa.stig_rule_SV-270800r1066889_rule",
+      "xccdf_mil.disa.stig_rule_SV-270801r1066892_rule",
+      "xccdf_mil.disa.stig_rule_SV-270802r1066895_rule",
+      "xccdf_mil.disa.stig_rule_SV-270803r1066898_rule",
+      "xccdf_mil.disa.stig_rule_SV-270804r1066901_rule",
+      "xccdf_mil.disa.stig_rule_SV-270805r1068384_rule",
+      "xccdf_mil.disa.stig_rule_SV-270806r1068386_rule",
+      "xccdf_mil.disa.stig_rule_SV-270807r1066910_rule",
+      "xccdf_mil.disa.stig_rule_SV-270808r1067100_rule",
+      "xccdf_mil.disa.stig_rule_SV-270809r1068388_rule",
+      "xccdf_mil.disa.stig_rule_SV-270810r1066919_rule",
+      "xccdf_mil.disa.stig_rule_SV-270811r1066922_rule",
+      "xccdf_mil.disa.stig_rule_SV-270812r1066925_rule",
+      "xccdf_mil.disa.stig_rule_SV-270813r1066928_rule",
+      "xccdf_mil.disa.stig_rule_SV-270814r1066931_rule",
+      "xccdf_mil.disa.stig_rule_SV-270815r1066934_rule",
+      "xccdf_mil.disa.stig_rule_SV-270816r1066937_rule",
+      "xccdf_mil.disa.stig_rule_SV-270817r1066940_rule",
+      "xccdf_mil.disa.stig_rule_SV-270818r1066943_rule",
+      "xccdf_mil.disa.stig_rule_SV-270819r1068390_rule",
+      "xccdf_mil.disa.stig_rule_SV-270820r1066949_rule",
+      "xccdf_mil.disa.stig_rule_SV-270821r1134818_rule",
+      "xccdf_mil.disa.stig_rule_SV-270822r1134821_rule",
+      "xccdf_mil.disa.stig_rule_SV-270823r1134824_rule",
+      "xccdf_mil.disa.stig_rule_SV-270824r1066961_rule",
+      "xccdf_mil.disa.stig_rule_SV-270825r1066964_rule",
+      "xccdf_mil.disa.stig_rule_SV-270826r1066967_rule",
+      "xccdf_mil.disa.stig_rule_SV-270827r1066970_rule",
+      "xccdf_mil.disa.stig_rule_SV-270828r1066973_rule",
+      "xccdf_mil.disa.stig_rule_SV-270829r1066976_rule",
+      "xccdf_mil.disa.stig_rule_SV-270830r1068397_rule",
+      "xccdf_mil.disa.stig_rule_SV-270831r1135002_rule",
+      "xccdf_mil.disa.stig_rule_SV-270832r1068399_rule",
+      "xccdf_mil.disa.stig_rule_SV-274868r1107313_rule",
+      "xccdf_mil.disa.stig_rule_SV-274869r1107312_rule",
+      "xccdf_mil.disa.stig_rule_SV-274870r1155243_rule",
+      "xccdf_mil.disa.stig_rule_SV-274871r1107302_rule",
+      "xccdf_mil.disa.stig_rule_SV-274872r1107297_rule",
+      "xccdf_mil.disa.stig_rule_SV-274873r1107300_rule",
+      "xccdf_mil.disa.stig_rule_SV-278917r1155246_rule",
+      "xccdf_mil.disa.stig_rule_SV-279938r1156367_rule"
+    ]
+  },
+  "summary": {
+    "error": 2,
+    "fail": 2,
+    "not_applicable": 0,
+    "not_evaluated": 0,
+    "pass": 20,
+    "total": 29,
+    "unknown": 5
+  },
+  "rules": [
+    {
+      "id": "ubuntu-24-04-lts-accept-management-pam-framework-sv-270673-rule",
+      "source_version": "UBTU-24-100910",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must accept Personal Identity Verification (PIV) credentials managed through the Privileged Access Management (PAM)  framework.",
+      "severity": "medium",
+      "package_member": "rules/ubuntu-24-04-lts-accept-management-pam-framework-sv-270673-rule.json",
+      "package_member_sha256": "441789e71532905a2bbe3be652797124878de6e30906274cd8754213b53f9201",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270673r1067164_rule",
+      "source_rule_sha256": "070934970991a0fabfbb121007badf265a0667f8ae5802cdac62c37dcc4faac0",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270673",
+      "source_definition_sha256": "bc58bce0f0763fa8b7d1e0ae4b9f22180e61b5f70d87b995f8f5254a7864a4ec",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "pass",
+      "reason": "Assessment evaluated true.",
+      "assessment_id": "ubuntu-24-04-lts-accept-pam-framework-sv-270673-assessment",
+      "assessment_execution_ids": [
+        "assessment-34b1393a38e3f2202d228a946a1fc210"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-accept-piv-credentials-sv-270672-rule",
+      "source_version": "UBTU-24-100900",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must accept Personal Identity Verification (PIV) credentials.",
+      "severity": "medium",
+      "package_member": "rules/ubuntu-24-04-lts-accept-piv-credentials-sv-270672-rule.json",
+      "package_member_sha256": "9b76b53880a751d46e56a8a4262d2809a78bdc6890de96768101bce930e4b560",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270672r1067161_rule",
+      "source_rule_sha256": "5a3e965ca17e366949f78151a562df081662cff9e00b38f3061d351db5729983",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270672",
+      "source_definition_sha256": "dea1ca94fd2e8d93ea1ba1c8b8b411d4eece872fb9c4e560ce9d99570adce724",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "pass",
+      "reason": "Assessment evaluated true.",
+      "assessment_id": "ubuntu-24-04-lts-accept-piv-credentials-sv-270672-assessment",
+      "assessment_execution_ids": [
+        "assessment-09194805c104554693009aee3ff60a5f"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-configure-during-transmission-sv-270667-rule",
+      "source_version": "UBTU-24-100820",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must configure the SSH daemon to use FIPS 140-3 approved ciphers to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.",
+      "severity": "medium",
+      "package_member": "rules/ubuntu-24-04-lts-configure-during-transmission-sv-270667-rule.json",
+      "package_member_sha256": "4d8c28bf3a4a7fdd814a1d6df85126c79163bb3eda8b8972f55082dad522bc83",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270667r1067107_rule",
+      "source_rule_sha256": "818f7d9e7ef30cccad2449775ba61c792138681ee748cc9661fd7f31508a4a56",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270667",
+      "source_definition_sha256": "0b759df426be5e004066d85a5c94dae6f22d102d5c6cfc4cf11fc8fde4dfe64b",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "error",
+      "reason": "Assessment execution reported an acquisition or evaluation error: collection failed: acquisition not complete: unsupported",
+      "assessment_id": "ubuntu-24-04-lts-during-transmission-sv-270667-assessment",
+      "assessment_execution_ids": [
+        "assessment-c35a02bac88c1eeae202e221d11edcc1"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-configure-during-transmission-sv-270668-rule",
+      "source_version": "UBTU-24-100830",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must configure the SSH daemon to use Message Authentication Codes (MACs) employing FIPS 140-3 approved cryptographic hashes to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.",
+      "severity": "medium",
+      "package_member": "rules/ubuntu-24-04-lts-configure-during-transmission-sv-270668-rule.json",
+      "package_member_sha256": "bc56bc58f1c2b9655690829bc11809f3256832939968e2321f1b4acc8bfe8911",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270668r1067110_rule",
+      "source_rule_sha256": "db8ef8fb5963dfa259079888b71d55ce466494a14caadebc9a6623da5563abbe",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270668",
+      "source_definition_sha256": "9224ec125495ed5b9869631277cef04686f96a20b1823d37aa93f7bb9ba70d25",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "fail",
+      "reason": "Assessment evaluated false.",
+      "assessment_id": "ubuntu-24-04-lts-during-transmission-sv-270668-assessment",
+      "assessment_execution_ids": [
+        "assessment-92f3fe41c5db7aa10fbb1324112e10f0"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-configure-file-owned-by-syslog-sv-270769-rule",
+      "source_version": "UBTU-24-700140",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must configure /var/log/syslog file to be owned by syslog.",
+      "severity": "medium",
+      "package_member": "rules/ubuntu-24-04-lts-configure-file-owned-by-syslog-sv-270769-rule.json",
+      "package_member_sha256": "86017c5a111a3e05041d2ea679ad52ae767e496207b05434fa8fd8d4381152bd",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270769r1066796_rule",
+      "source_rule_sha256": "86300a44e16e5f37192bd7edbef5caa04f35a082efbe6da8d73a3c0008da672d",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270769",
+      "source_definition_sha256": "d2ca9f6d93be8b87fce0243c0cdc029b6a85ac3e81894d1ea94d40f88aa2ec59",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "unknown",
+      "reason": "Assessment evidence was incomplete or inconclusive: Assessment execution diagnostic: variable_collected_field_type_unresolved",
+      "assessment_id": "ubuntu-24-04-lts-file-owned-by-syslog-sv-270769-assessment",
+      "assessment_execution_ids": [
+        "assessment-53abbd070ff519167372f69b785c5a5f"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-configure-group-owned-by-adm-sv-270768-rule",
+      "source_version": "UBTU-24-700130",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must configure the /var/log/syslog file to be group-owned by adm.",
+      "severity": "medium",
+      "package_member": "rules/ubuntu-24-04-lts-configure-group-owned-by-adm-sv-270768-rule.json",
+      "package_member_sha256": "3595834134c86c7801790c2a039997f2ec5b64806017de863d7a6a58232047f5",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270768r1066793_rule",
+      "source_rule_sha256": "f97abf7b3994883b573a32dd6c5d10d2b2691c912812a5d6feb1cae7835f983d",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270768",
+      "source_definition_sha256": "4e7fd103365d776a73acea3b80ee892bd425a12ac9c4f9db2265525b232d176f",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "unknown",
+      "reason": "Assessment evidence was incomplete or inconclusive: Assessment execution diagnostic: variable_collected_field_type_unresolved",
+      "assessment_id": "ubuntu-24-04-lts-file-group-owned-by-adm-sv-270768-assessment",
+      "assessment_execution_ids": [
+        "assessment-59b5dc2ef62bea3fc1e6b477cab87a36"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-configure-or-less-permissive-sv-270767-rule",
+      "source_version": "UBTU-24-700120",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must configure the /var/log directory to have mode \"0755\" or less permissive.",
+      "severity": "medium",
+      "package_member": "rules/ubuntu-24-04-lts-configure-or-less-permissive-sv-270767-rule.json",
+      "package_member_sha256": "55ab6292833a019e480b2ac153a174dc26429fd816255a4ad66f83c81b6b9d1e",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270767r1066790_rule",
+      "source_rule_sha256": "81715c02e7fb73ad1b41b827da5c2c83f5203f2cdb4d78e11b95cd235bcf1ef1",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270767",
+      "source_definition_sha256": "787b99e3d453bbd833ba09ba7d2dbcee9644292c58c11df61776166ee497f006",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "fail",
+      "reason": "The file \"/var/log\" (Item \"item-c89a4abf09928a402fbd7b454c990e69\") has field \"group_write\" with observed value true; the required equals comparison with expected value false evaluated FALSE.",
+      "assessment_id": "ubuntu-24-04-lts-0755-or-less-permissive-sv-270767-assessment",
+      "assessment_execution_ids": [
+        "assessment-5d79ce84ea2ee9ad8f780e879a7c6498"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-configure-or-less-permissive-sv-270770-rule",
+      "source_version": "UBTU-24-700150",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must configure /var/log/syslog file with mode \"0640\" or less permissive.",
+      "severity": "medium",
+      "package_member": "rules/ubuntu-24-04-lts-configure-or-less-permissive-sv-270770-rule.json",
+      "package_member_sha256": "751fc95a2c3741ef9606c3c040ce89ca16c5b8df7a02ced6b701145bb2cb63ce",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270770r1066799_rule",
+      "source_rule_sha256": "053cba65065e1f3ff67c0bc156018753452310890c4f6bdd1fff1e190d34771a",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270770",
+      "source_definition_sha256": "74ed96f1b4996133730fff7475bade0cd57d47a5659af674738767fa0269f1bf",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "pass",
+      "reason": "Assessment evaluated true.",
+      "assessment_id": "ubuntu-24-04-lts-0640-or-less-permissive-sv-270770-assessment",
+      "assessment_execution_ids": [
+        "assessment-ea657754230320d00c699f5dc1f7e3fe"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-configure-owned-by-root-sv-270766-rule",
+      "source_version": "UBTU-24-700110",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must configure the /var/log directory to be owned by root.",
+      "severity": "medium",
+      "package_member": "rules/ubuntu-24-04-lts-configure-owned-by-root-sv-270766-rule.json",
+      "package_member_sha256": "ff2414502fe451cd42f3699782b9d58b96a2dad85b09c9050c1e2f3a763ab348",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270766r1066787_rule",
+      "source_rule_sha256": "8aee052189b312ca761a2400a68a1dbb053daa7823700fea7db42c6d54147d5c",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270766",
+      "source_definition_sha256": "4660f53b5f71349b5639b2b7222e4e60bbbf7f971801369f14c59e09f1d988b6",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "pass",
+      "reason": "Assessment evaluated true.",
+      "assessment_id": "ubuntu-24-04-lts-directory-owned-by-root-sv-270766-assessment",
+      "assessment_execution_ids": [
+        "assessment-f9dc96626e1bd027054b7a3b691d4de1"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-disable-x86-delete-key-sequence-sv-270712-rule",
+      "source_version": "UBTU-24-300026",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must disable the x86 Ctrl-Alt-Delete key sequence.",
+      "severity": "high",
+      "package_member": "rules/ubuntu-24-04-lts-disable-x86-delete-key-sequence-sv-270712-rule.json",
+      "package_member_sha256": "19b90665771dab302b2b4c3d61b75ae2094c66d2215c86a6fa246d603e740492",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270712r1068363_rule",
+      "source_rule_sha256": "668dcdb9b2d8a42d03bd149e4ef8fcca0cad160ca4f5aa61c67b0a79a7ea1804",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270712",
+      "source_definition_sha256": "afc42b2fff79149082a34fdc65ebd39b16f372e4d9903a8b6580c8ab555cb61f",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "pass",
+      "reason": "Assessment evaluated true.",
+      "assessment_id": "ubuntu-24-04-lts-disable-key-sequence-sv-270712-assessment",
+      "assessment_execution_ids": [
+        "assessment-c94dba04af3a3e4d16c73e14f097d2d7"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-display-access-via-ssh-logon-sv-270691-rule",
+      "source_version": "UBTU-24-200640",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must display the Standard Mandatory DOD Notice and Consent Banner before granting access to via an SSH logon.",
+      "severity": "medium",
+      "package_member": "rules/ubuntu-24-04-lts-display-access-via-ssh-logon-sv-270691-rule.json",
+      "package_member_sha256": "86e575d91230f278e02628ed94abc954cc32e7d470da9b8a3039ffb360622a35",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270691r1066562_rule",
+      "source_rule_sha256": "73eb9dccbd0d57ab10d05261130f970ea74b13bd5063817ac1c7c3a899da9e5d",
+      "source_definition_id": "oval:navy.navwar.niwcatlantic.scc.ubuntu:def:270691",
+      "source_definition_sha256": "cbedf3afff2a7fbff2bf2c19aa9291faa6dd233644944738a43a474453b54993",
+      "source_component": "scap_navy.navwar.niwcatlantic.scc_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval2.xml",
+      "outcome": "unknown",
+      "reason": "Assessment evidence was incomplete or inconclusive: Assessment execution diagnostic: missing_field_held",
+      "assessment_id": "ubuntu-24-04-lts-display-via-ssh-logon-sv-270691-assessment",
+      "assessment_execution_ids": [
+        "assessment-268d01fd410a0ed520ba5340e806ad39"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-enable-and-firewall-ufw-sv-270655-rule",
+      "source_version": "UBTU-24-100310",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must enable and run the Uncomplicated Firewall (ufw).",
+      "severity": "medium",
+      "package_member": "rules/ubuntu-24-04-lts-enable-and-firewall-ufw-sv-270655-rule.json",
+      "package_member_sha256": "656988282af3d836d5dcb1d4c4b014dfdb770ea21a8099298fa91036a80a3c76",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270655r1067145_rule",
+      "source_rule_sha256": "1c1234511d96384d6c421a4bcd0368f991dd3b8cb54b610a5bddb3d299cf7ae1",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270655",
+      "source_definition_sha256": "540db6f69b63860101e58226c252ebc11aaffda8cba03cae00d6dd9be76cf0f7",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "pass",
+      "reason": "Assessment evaluated true.",
+      "assessment_id": "ubuntu-24-04-lts-enable-firewall-ufw-sv-270655-assessment",
+      "assessment_execution_ids": [
+        "assessment-83fd52f7e8cc9c58d87079d5f41bfdc5"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-have-chrony-package-installed-sv-270664-rule",
+      "source_version": "UBTU-24-100700",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must have the \"chrony\" package installed.",
+      "severity": "low",
+      "package_member": "rules/ubuntu-24-04-lts-have-chrony-package-installed-sv-270664-rule.json",
+      "package_member_sha256": "dcc9ea789a483f225fb57e05db1cbb0d13edb2719bfa110afe82429113a014d3",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270664r1068359_rule",
+      "source_rule_sha256": "65949b18e5a109d427f3fa9c8f57486f9b0fcf020f3d62e381dacd53d8c6f854",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270664",
+      "source_definition_sha256": "bab46b3be4bf345e2f384c808d28ee4c91ea4892f5f1514134f6687188ba3b9c",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "pass",
+      "reason": "Assessment evaluated true.",
+      "assessment_id": "ubuntu-24-04-lts-have-package-installed-sv-270664-assessment",
+      "assessment_execution_ids": [
+        "assessment-312b657971ee0fa877099bccaaf20853"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-have-libpam-package-installed-sv-270661-rule",
+      "source_version": "UBTU-24-100600",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must have the \"libpam-pwquality\" package installed.",
+      "severity": "medium",
+      "package_member": "rules/ubuntu-24-04-lts-have-libpam-package-installed-sv-270661-rule.json",
+      "package_member_sha256": "c4cb0877bd43e31c52befeb5c23f73959f0477943e5d8452149dd5bd60167181",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270661r1067175_rule",
+      "source_rule_sha256": "9b9e43e48a5c70ebdc3b382ac43ae9b63b50aaf312b83b1aa71dd8382eb1a4a5",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270661",
+      "source_definition_sha256": "64b6c0f042048dac7b82f2c2ddc116c7210cbb8451c1bbdc2027302074075c76",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "pass",
+      "reason": "Assessment evaluated true.",
+      "assessment_id": "ubuntu-24-04-lts-have-package-installed-sv-270661-assessment",
+      "assessment_execution_ids": [
+        "assessment-bb6aaa24271e78125ff4bf9e3283d603"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-have-remote-access-methods-sv-270654-rule",
+      "source_version": "UBTU-24-100300",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must have an application firewall installed in order to control remote access methods.",
+      "severity": "medium",
+      "package_member": "rules/ubuntu-24-04-lts-have-remote-access-methods-sv-270654-rule.json",
+      "package_member_sha256": "8e48c7945cc1458cf69fc6388bf9f5218ae774c836ecbd79f04a5150ce919595",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270654r1067143_rule",
+      "source_rule_sha256": "882c53694c020a1904d40fcddb8f87e34cb3a43226394e45bef1e60a4dc56511",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270654",
+      "source_definition_sha256": "0a5b0fd1bf1ecf41f97c08cb4ddad78cbc40a39713b9ee2b298a70abd38f27b6",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "pass",
+      "reason": "Assessment evaluated true.",
+      "assessment_id": "ubuntu-24-04-lts-have-access-methods-sv-270654-assessment",
+      "assessment_execution_ids": [
+        "assessment-dc2604425e177bf72640ae4cd50397a3"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-library-0755-or-less-permissive-sv-270696-rule",
+      "source_version": "UBTU-24-300006",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS library files must have mode 0755 or less permissive.",
+      "severity": "medium",
+      "package_member": "rules/ubuntu-24-04-lts-library-0755-or-less-permissive-sv-270696-rule.json",
+      "package_member_sha256": "d2ab5e534926b01790d3c46023d9509b2b00f5c3d7f0e2a492534fae8ad0fb0e",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270696r1107306_rule",
+      "source_rule_sha256": "ffe049beb9e63ff50a517e9392c7c0691b7badc0c07836c85fc2dba3e35c08b9",
+      "source_definition_id": "oval:navy.navwar.niwcatlantic.scc.linux:def:270696",
+      "source_definition_sha256": "d93e531e06ca15586c54dc1d801f06f0eaa36cdae497308a54aed0dabb15cc1d",
+      "source_component": "scap_navy.navwar.niwcatlantic.scc_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval2.xml",
+      "outcome": "unknown",
+      "reason": "Assessment evidence was incomplete or inconclusive: collection incomplete: acquisition not complete: unsupported",
+      "assessment_id": "ubuntu-24-04-lts-library-less-permissive-sv-270696-assessment",
+      "assessment_execution_ids": [
+        "assessment-4eef011d39bc3a31508e133d4783dc06"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-must-have-apparmor-installed-sv-270659-rule",
+      "source_version": "UBTU-24-100500",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must have AppArmor installed.",
+      "severity": "medium",
+      "package_member": "rules/ubuntu-24-04-lts-must-have-apparmor-installed-sv-270659-rule.json",
+      "package_member_sha256": "59bfd2db9ea0b19919658bd35f015b9c8414932bcea103fdd976115263307f77",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270659r1066466_rule",
+      "source_rule_sha256": "7f7367900c8494e55b996312d26dcce89eeda6bc05adf2992625fccdc296c466",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270659",
+      "source_definition_sha256": "b0a831364e1c6ff94c1641c1539d0282898bf45e975b54a5868260e0569c4ec6",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "pass",
+      "reason": "Assessment evaluated true.",
+      "assessment_id": "ubuntu-24-04-lts-have-apparmor-installed-sv-270659-assessment",
+      "assessment_execution_ids": [
+        "assessment-7de414e9c8c27d0eef8157da39c09a0f"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-must-have-ssh-installed-sv-270665-rule",
+      "source_version": "UBTU-24-100800",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must have SSH installed.",
+      "severity": "high",
+      "package_member": "rules/ubuntu-24-04-lts-must-have-ssh-installed-sv-270665-rule.json",
+      "package_member_sha256": "d9fbe2e9b10bf445ad179edf42bca1cdab6a812c56f970b0666bfd16ebcf3f33",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270665r1067133_rule",
+      "source_rule_sha256": "a992826193b3c228b554c9e0df70354b6147fd18edc72e7c5dd1531b49c8b7cb",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270665",
+      "source_definition_sha256": "b7bd58acf17d0d8d39b78617ea66176b700f6020249594605b9f4da1e3d5304a",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "pass",
+      "reason": "Assessment evaluated true.",
+      "assessment_id": "ubuntu-24-04-lts-must-have-ssh-installed-sv-270665-assessment",
+      "assessment_execution_ids": [
+        "assessment-574e20726a74f80429596afdcaab8845"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-not-have-ntp-package-installed-sv-270646-rule",
+      "source_version": "UBTU-24-100020",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must not have the \"ntp\" package installed.",
+      "severity": "low",
+      "package_member": "rules/ubuntu-24-04-lts-not-have-ntp-package-installed-sv-270646-rule.json",
+      "package_member_sha256": "5118ea3138b77cc23989b795aee48fadbcac42857cd44c8929dcdc520e622d4d",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270646r1068358_rule",
+      "source_rule_sha256": "56f8c5410710126e34f7e54a99a341ffebdd55d8014cc0d46269c5227506f1e8",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270646",
+      "source_definition_sha256": "7ab822c0c9c5cdef4bf563f478c904f1cac0900fda976dffa07130803fe3361a",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "pass",
+      "reason": "Assessment evaluated true.",
+      "assessment_id": "ubuntu-24-04-lts-not-have-installed-sv-270646-assessment",
+      "assessment_execution_ids": [
+        "assessment-06e70e8038f5f72570be08705b4ca89c"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-not-have-package-installed-sv-270645-rule",
+      "source_version": "UBTU-24-100010",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must not have the \"systemd-timesyncd\" package installed.",
+      "severity": "low",
+      "package_member": "rules/ubuntu-24-04-lts-not-have-package-installed-sv-270645-rule.json",
+      "package_member_sha256": "8689c3a03b03eab6caf6b793627576e7349a0fe28a6724fc47b1496c691e4e80",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270645r1068357_rule",
+      "source_rule_sha256": "29a9d60679f05e20beaf2f45cd12028229ae19804d732d67467a0711b63ed75a",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270645",
+      "source_definition_sha256": "bc37564eaa50187d6fda6faaac5afe9f144cf62b0493e92060a03094062d917d",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "pass",
+      "reason": "Assessment evaluated true.",
+      "assessment_id": "ubuntu-24-04-lts-not-have-installed-sv-270645-assessment",
+      "assessment_execution_ids": [
+        "assessment-3f51c159cd3f22e5468c969a83cb730b"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-not-have-package-installed-sv-270647-rule",
+      "source_version": "UBTU-24-100030",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must not have the telnet package installed.",
+      "severity": "high",
+      "package_member": "rules/ubuntu-24-04-lts-not-have-package-installed-sv-270647-rule.json",
+      "package_member_sha256": "571999aaec4bb9f1570bc9183c89c2fe46d70a7178e3623db77bb88b095ef7d5",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270647r1066430_rule",
+      "source_rule_sha256": "738a6fd6e0efb1ccc5b2b27df41c735a68f2225600f59d2d7c71f5cbf898a919",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270647",
+      "source_definition_sha256": "e72d0eb2bd0e6cd1da60327b2fbefef088554495c7c43e5ad1fd025f81a343e0",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "pass",
+      "reason": "Assessment evaluated true.",
+      "assessment_id": "ubuntu-24-04-lts-not-have-installed-sv-270647-assessment",
+      "assessment_execution_ids": [
+        "assessment-cad4fd25d0473edd51df7612873c1cae"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-not-have-package-installed-sv-270648-rule",
+      "source_version": "UBTU-24-100040",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must not have the rsh-server package installed.",
+      "severity": "high",
+      "package_member": "rules/ubuntu-24-04-lts-not-have-package-installed-sv-270648-rule.json",
+      "package_member_sha256": "8b65d6285b7f0e337858e2d2cb0fce5b25eac8241a165d66d65637e519755f06",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270648r1066433_rule",
+      "source_rule_sha256": "d5027255f50406d2c277505edcd52f778a67599b8aefa2d33a38ab2c66c4ff85",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270648",
+      "source_definition_sha256": "bf67e04eacdc2f1e89a23c3524c712694a3194329313a86e813eedb0f0e78b6f",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "pass",
+      "reason": "Assessment evaluated true.",
+      "assessment_id": "ubuntu-24-04-lts-not-have-installed-sv-270648-assessment",
+      "assessment_execution_ids": [
+        "assessment-02ba89d5e56de5870a197ed080be6cdc"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-prevent-login-root-account-sv-270724-rule",
+      "source_version": "UBTU-24-400110",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must prevent direct login to the root account.",
+      "severity": "medium",
+      "package_member": "rules/ubuntu-24-04-lts-prevent-login-root-account-sv-270724-rule.json",
+      "package_member_sha256": "9488aab93eb08e63ba26a9a177a8c4e58a59b0d2fe8a4ffb0536e684f8db1dbf",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270724r1066661_rule",
+      "source_rule_sha256": "67b6b4b9fdfe7648173287153fbb5c8096da7b94faccea80409a913e5ac92d75",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270724",
+      "source_definition_sha256": "27c1ebd56eb0ce65066d849421c710de0c80d315a7ab23e8029e3eb9255b306b",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "unknown",
+      "reason": "Assessment evidence was incomplete or inconclusive: collection incomplete: acquisition not complete: permission_denied",
+      "assessment_id": "ubuntu-24-04-lts-prevent-root-account-sv-270724-assessment",
+      "assessment_execution_ids": [
+        "assessment-57d74d8acf5f024dc6804d56c7ac4320"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-so-that-by-unauthorized-users-sv-270758-rule",
+      "source_version": "UBTU-24-700030",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must be configured so that the \"journalctl\" command is not accessible by unauthorized users.",
+      "severity": "medium",
+      "package_member": "rules/ubuntu-24-04-lts-so-that-by-unauthorized-users-sv-270758-rule.json",
+      "package_member_sha256": "cc419e4740575894713dbfd58ced2cddd989bf8e80ebd479ac6ad4f8ddaa2436",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270758r1066763_rule",
+      "source_rule_sha256": "eaf607e991120bc8b630aab2e0cb576cf179165b335dc77cf8fe3ea6c0c18a74",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270758",
+      "source_definition_sha256": "2509e788c826eab2c674aa6a6b7d687c9ea297f281102513dcc4debf45f80e59",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "pass",
+      "reason": "Assessment evaluated true.",
+      "assessment_id": "ubuntu-24-04-lts-so-that-users-sv-270758-assessment",
+      "assessment_execution_ids": [
+        "assessment-9eb3780707a467a1072cbd30ab90b5b8"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-so-that-is-group-owned-by-root-sv-270760-rule",
+      "source_version": "UBTU-24-700050",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must be configured so that the \"journalctl\" command is group-owned by \"root\".",
+      "severity": "medium",
+      "package_member": "rules/ubuntu-24-04-lts-so-that-is-group-owned-by-root-sv-270760-rule.json",
+      "package_member_sha256": "fc167ef6905326d569b29773bd3698c9d192602410fd68a1b3467497fd7cb9b5",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270760r1066769_rule",
+      "source_rule_sha256": "7f86580fdc44af9bfa68e82b104dcc0f1adfd60ed3a528e0247e8faeb84f2afe",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270760",
+      "source_definition_sha256": "61ba576b110f0628631c59f14f4098969293b126d86786c3de6adbbe413fcce0",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "pass",
+      "reason": "Assessment evaluated true.",
+      "assessment_id": "ubuntu-24-04-lts-so-that-owned-by-root-sv-270760-assessment",
+      "assessment_execution_ids": [
+        "assessment-ebded615faa7c9fc5dd376a5399aca06"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-so-that-is-owned-by-root-sv-270759-rule",
+      "source_version": "UBTU-24-700040",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must be configured so that the \"journalctl\" command is owned by \"root\".",
+      "severity": "medium",
+      "package_member": "rules/ubuntu-24-04-lts-so-that-is-owned-by-root-sv-270759-rule.json",
+      "package_member_sha256": "b5f9c7255a3bd49ac43f049ffec7ce67b63d593d35e0ef835a62d31b021e1bd8",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270759r1068367_rule",
+      "source_rule_sha256": "11a07f7aa6e107a352ca932a791329e5a37ec0c8946387521e7dd92a54a1abff",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270759",
+      "source_definition_sha256": "554c3653b750a58b9307feda95ce0a37a5f2630ede1e9340044ed23686d256d6",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "pass",
+      "reason": "Assessment evaluated true.",
+      "assessment_id": "ubuntu-24-04-lts-so-that-is-owned-by-root-sv-270759-assessment",
+      "assessment_execution_ids": [
+        "assessment-d1988c88d5e73daecd6238492b6b1719"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-ssh-server-exchange-algorithms-sv-270669-rule",
+      "source_version": "UBTU-24-100840",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS SSH server must be configured to use only FIPS 140-3 validated key exchange algorithms.",
+      "severity": "medium",
+      "package_member": "rules/ubuntu-24-04-lts-ssh-server-exchange-algorithms-sv-270669-rule.json",
+      "package_member_sha256": "452c0529bf6eb405f3361b6009e7bdebbdc998052065878dddd913651deba5e1",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270669r1134804_rule",
+      "source_rule_sha256": "5512485ffe921acf83e9d5114ad992f82e534ae772b852d056bdd1733b527a44",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270669",
+      "source_definition_sha256": "48b284033baa438c5269c1e68c3c200ca33eea90ca4813051947c6e8e737c50f",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "error",
+      "reason": "Assessment execution reported an acquisition or evaluation error: collection failed: acquisition not complete: unsupported",
+      "assessment_id": "ubuntu-24-04-lts-ssh-exchange-algorithms-sv-270669-assessment",
+      "assessment_execution_ids": [
+        "assessment-88c4fbe51e5865dd1afd9defb5da1794"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-use-apparmor-sv-270660-rule",
+      "source_version": "UBTU-24-100510",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must be configured to use AppArmor.",
+      "severity": "medium",
+      "package_member": "rules/ubuntu-24-04-lts-use-apparmor-sv-270660-rule.json",
+      "package_member_sha256": "4f2d1e06de95baa77086647b8f06e67cb45884497b9fe0e71c16a4d19d51e75a",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270660r1066469_rule",
+      "source_rule_sha256": "c12a77e06156d0104cf228f5b5c1df4b9a9bfcd9c63982f5c106f16f3070cd35",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270660",
+      "source_definition_sha256": "69b717158a45c67dee8ff6e24ba257938047aaef995d1c44a760d81acadf9f11",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "pass",
+      "reason": "Assessment evaluated true.",
+      "assessment_id": "ubuntu-24-04-lts-use-apparmor-sv-270660-assessment",
+      "assessment_execution_ids": [
+        "assessment-371a16d14324e629107cd3b077a4d96e"
+      ],
+      "applicability": "applicable"
+    },
+    {
+      "id": "ubuntu-24-04-lts-use-ssh-transmitted-information-sv-270666-rule",
+      "source_version": "UBTU-24-100810",
+      "source_identity_status": "source-rule-hash-pinned; package-member-hash-pinned",
+      "title": "Ubuntu 24.04 LTS must use SSH to protect the confidentiality and integrity of transmitted information.",
+      "severity": "high",
+      "package_member": "rules/ubuntu-24-04-lts-use-ssh-transmitted-information-sv-270666-rule.json",
+      "package_member_sha256": "bf38a05919020a39a7e19d0695b4cbab1be59a08d8ac3a30c4a474e14cdff8db",
+      "source_rule_id": "xccdf_mil.disa.stig_rule_SV-270666r1066487_rule",
+      "source_rule_sha256": "19b456d5c30638f4a14dc21a699513a4f6f53897f919c2dc0ccec8f6e227e765",
+      "source_definition_id": "oval:mil.disa.stig.ubuntu2404os:def:270666",
+      "source_definition_sha256": "d39a3daa302ec31923af724285ce850afbf1e29879bfbef11930d07da047e946",
+      "source_component": "scap_mil.disa.stig_comp_U_CAN_Ubuntu_24-04_LTS_V1R5_STIG_SCAP_1-4_Benchmark-enhancedV7-oval.xml",
+      "outcome": "pass",
+      "reason": "Assessment evaluated true.",
+      "assessment_id": "ubuntu-24-04-lts-use-ssh-information-sv-270666-assessment",
+      "assessment_execution_ids": [
+        "assessment-3060dad9866d5b0a300ad54036cdf5d1"
+      ],
+      "applicability": "applicable"
+    }
+  ],
+  "assessments": [
+    {
+      "id": "oval-mil-disa-stig-ubuntu2404os-def-1-assessment",
+      "status": "executed",
+      "source_identity_status": "source-assessment-hash-pinned; native-package-member-hash-pinned",
+      "source_assessment_sha256": "073b49b7c1b33e4a39e4a04d4929a91090eb89bfecc5c83d07d8ba6d1f70e672",
+      "package_member": "assessments/oval-mil-disa-stig-ubuntu2404os-def-1-assessment.json",
+      "package_member_sha256": "073b49b7c1b33e4a39e4a04d4929a91090eb89bfecc5c83d07d8ba6d1f70e672",
+      "outcome": "true",
+      "execution_id": "assessment-55c23aadf22b04e262fb7ddd972200be",
+      "summary": "Assessment evaluated true with complete evidence.",
+      "logical_complete": true,
+      "population_complete": true,
+      "evidence_complete": true,
+      "tests": [
+        {
+          "id": "ubuntu-24-04-is-installed-test",
+          "title": "Ubuntu 24.04 is installed",
+          "outcome": "true",
+          "reason": "all_required_fields_equal",
+          "items_found": "one_or_more",
+          "items_observed": 1,
+          "items_returned": 1,
+          "items_satisfying": "every"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-0640-or-less-permissive-sv-270770-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-0640-or-less-permissive-sv-270770-assessment.json",
+      "package_member_sha256": "47314b43756f6ae86205a3053b852e494853833a120e6c6f60c848f0e9d4ac01",
+      "outcome": "true",
+      "execution_id": "assessment-ea657754230320d00c699f5dc1f7e3fe",
+      "summary": "Assessment evaluated true with complete evidence.",
+      "logical_complete": true,
+      "population_complete": true,
+      "evidence_complete": true,
+      "tests": [
+        {
+          "id": "mode-of-var-log-syslog-file-is-0640-or-less-permissive-test",
+          "title": "Mode of /var/log/syslog file is 0640 or less permissive",
+          "outcome": "true",
+          "reason": "all_required_fields_equal",
+          "items_found": "one_or_more",
+          "items_observed": 1,
+          "items_returned": 1,
+          "items_satisfying": "every"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-0755-or-less-permissive-sv-270767-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-0755-or-less-permissive-sv-270767-assessment.json",
+      "package_member_sha256": "a0d153132d4c8e17c0b0eae2b51db00b4e3c21be258036212735fa16b99895b0",
+      "outcome": "false",
+      "execution_id": "assessment-5d79ce84ea2ee9ad8f780e879a7c6498",
+      "summary": "The file \"/var/log\" (Item \"item-c89a4abf09928a402fbd7b454c990e69\") has field \"group_write\" with observed value true; the required equals comparison with expected value false evaluated FALSE.",
+      "logical_complete": true,
+      "population_complete": true,
+      "evidence_complete": true,
+      "tests": [
+        {
+          "id": "var-log-directory-has-mode-0755-or-less-permissive-test",
+          "title": "/var/log directory has mode 0755 or less permissive.",
+          "outcome": "false",
+          "reason": "The file \"/var/log\" (Item \"item-c89a4abf09928a402fbd7b454c990e69\") has field \"group_write\" with observed value true; the required equals comparison with expected value false evaluated FALSE.",
+          "items_found": "one_or_more",
+          "items_observed": 1,
+          "items_returned": 1,
+          "items_satisfying": "every"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-accept-framework-sv-270673-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-accept-framework-sv-270673-manual-0-assessment.json",
+      "package_member_sha256": "92a52661856909080fbab37c1d0975ebe90dac60cdb5408d631fe876aa887eec"
+    },
+    {
+      "id": "ubuntu-24-04-lts-accept-pam-framework-sv-270673-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-accept-pam-framework-sv-270673-assessment.json",
+      "package_member_sha256": "d31d50f05fabd0735dc82e370919d075ced213fc6b6bfe56526077f92e88faa8",
+      "outcome": "true",
+      "execution_id": "assessment-34b1393a38e3f2202d228a946a1fc210",
+      "summary": "Assessment evaluated true with complete evidence.",
+      "logical_complete": true,
+      "population_complete": true,
+      "evidence_complete": true,
+      "tests": [
+        {
+          "id": "package-libpam-pkcs11-is-installed-test",
+          "title": "package libpam-pkcs11 is installed",
+          "outcome": "true",
+          "reason": "item_existence_satisfied",
+          "items_found": "one_or_more",
+          "items_observed": 1,
+          "items_returned": 1,
+          "items_satisfying": "every"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-accept-piv-credentials-sv-270672-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-accept-piv-credentials-sv-270672-assessment.json",
+      "package_member_sha256": "f332273eec7250781c6867ed49fd439eae7cb6539b7f8a69c70671e203e02f4f",
+      "outcome": "true",
+      "execution_id": "assessment-09194805c104554693009aee3ff60a5f",
+      "summary": "Assessment evaluated true with complete evidence.",
+      "logical_complete": true,
+      "population_complete": true,
+      "evidence_complete": true,
+      "tests": [
+        {
+          "id": "package-opensc-pkcs11-is-installed-test",
+          "title": "package opensc-pkcs11 is installed",
+          "outcome": "true",
+          "reason": "item_existence_satisfied",
+          "items_found": "one_or_more",
+          "items_observed": 1,
+          "items_returned": 1,
+          "items_satisfying": "every"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-accept-sv-270672-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-accept-sv-270672-manual-0-assessment.json",
+      "package_member_sha256": "b772e70ea06c60c99b4f1191c4f8e2e2f20944cb171c4c53a0a4b211751f2d8a"
+    },
+    {
+      "id": "ubuntu-24-04-lts-directory-owned-by-root-sv-270766-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-directory-owned-by-root-sv-270766-assessment.json",
+      "package_member_sha256": "9c72ced6a972e0aa25ca63a1c288feb20b8be1086c612486125329acd16a5e58",
+      "outcome": "true",
+      "execution_id": "assessment-f9dc96626e1bd027054b7a3b691d4de1",
+      "summary": "Assessment evaluated true with complete evidence.",
+      "logical_complete": true,
+      "population_complete": true,
+      "evidence_complete": true,
+      "tests": [
+        {
+          "id": "var-log-directory-is-owned-by-root-test",
+          "title": "/var/log directory is owned by root",
+          "outcome": "true",
+          "reason": "all_required_fields_equal",
+          "items_found": "one_or_more",
+          "items_observed": 1,
+          "items_returned": 1,
+          "items_satisfying": "every"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-disable-key-sequence-sv-270712-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-disable-key-sequence-sv-270712-assessment.json",
+      "package_member_sha256": "e55fcf60018ae6515640f3ee0e8619452d72809c137f67cc93d9e6f3e1b980d7",
+      "outcome": "true",
+      "execution_id": "assessment-c94dba04af3a3e4d16c73e14f097d2d7",
+      "summary": "Assessment evaluated true with complete evidence.",
+      "logical_complete": true,
+      "population_complete": true,
+      "evidence_complete": true,
+      "tests": [
+        {
+          "id": "the-ctrl-alt-del-target-unit-is-masked-test",
+          "title": "The ctrl-alt-del.target unit is masked.",
+          "outcome": "true",
+          "reason": "all_required_fields_equal",
+          "items_found": "one_or_more",
+          "items_observed": 1,
+          "items_returned": 1,
+          "items_satisfying": "every"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-disable-sequence-sv-270712-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-disable-sequence-sv-270712-manual-0-assessment.json",
+      "package_member_sha256": "c36f931ba0c14df14ee7a8ed0cf31a8781f17c7719499ddcf203bd9588b11568"
+    },
+    {
+      "id": "ubuntu-24-04-lts-display-logon-sv-270691-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-display-logon-sv-270691-manual-0-assessment.json",
+      "package_member_sha256": "47156cdb189bd5c393e56c8874046c50c630be6ce077e364cb63edeba2c39b43"
+    },
+    {
+      "id": "ubuntu-24-04-lts-display-via-ssh-logon-sv-270691-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-display-via-ssh-logon-sv-270691-assessment.json",
+      "package_member_sha256": "1e1c1792487bcf512c96311a4e86e51c341efb5d0fee2bff52229447a6f12a79",
+      "outcome": "unknown",
+      "execution_id": "assessment-268d01fd410a0ed520ba5340e806ad39",
+      "summary": "Assessment evidence was incomplete or inconclusive.",
+      "logical_complete": true,
+      "population_complete": true,
+      "evidence_complete": true,
+      "tests": [
+        {
+          "id": "sshd-server-b-congiured-use-banner-file-etc-issue-net-test",
+          "title": "SSHD server must b congiured to use banner file /etc/issue.net",
+          "outcome": "unknown",
+          "reason": "Assessment execution diagnostic: missing_field_held",
+          "items_found": "one_or_more",
+          "items_observed": 1,
+          "items_returned": 1,
+          "items_satisfying": "every"
+        },
+        {
+          "id": "ubuntu-display-standard-local-or-remote-connection-system-test",
+          "title": "Ubuntu must display the Standard Mandatory DOD Notice and Consent Banner before granting any local or remote connection to the system.",
+          "outcome": "true",
+          "reason": "all_required_fields_equal",
+          "items_found": "one_or_more",
+          "items_observed": 1,
+          "items_returned": 1,
+          "items_satisfying": "every"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-during-transmission-sv-270667-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-during-transmission-sv-270667-assessment.json",
+      "package_member_sha256": "648db95ca0a85d76f76b74e0c5fe7290504b76b114c10aa34a088087b3493dd9",
+      "outcome": "error",
+      "execution_id": "assessment-c35a02bac88c1eeae202e221d11edcc1",
+      "summary": "Assessment execution reported an acquisition or evaluation error.",
+      "logical_complete": false,
+      "population_complete": false,
+      "evidence_complete": false,
+      "tests": [
+        {
+          "id": "etc-ssh-sshd-config-ciphers-dod-approved-ciphers-test",
+          "title": "/etc/ssh/sshd_config:Ciphers == DoD-approved ciphers",
+          "outcome": "error",
+          "reason": "collection failed: acquisition not complete: unsupported",
+          "items_found": "none",
+          "items_observed": 0,
+          "items_returned": 0,
+          "items_satisfying": "every",
+          "evidence_refs": [
+            "assessment-c35a02bac88c1eeae202e221d11edcc1/object/etc-ssh-sshd-config-ciphers-dod-approved-ciphers-test"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-during-transmission-sv-270668-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-during-transmission-sv-270668-assessment.json",
+      "package_member_sha256": "45916b384b31e7bdd2c7024a52244a6ba3ae18b375599b0884a68306f88575cc",
+      "outcome": "false",
+      "execution_id": "assessment-92f3fe41c5db7aa10fbb1324112e10f0",
+      "summary": "Assessment evaluated false.",
+      "logical_complete": true,
+      "population_complete": true,
+      "evidence_complete": true,
+      "tests": [
+        {
+          "id": "etc-ssh-sshd-config-macs-use-cryptographic-hash-algorithms-test",
+          "title": "/etc/ssh/sshd_config: MACs use FIPS 140-3 validated cryptographic hash algorithms",
+          "outcome": "false",
+          "reason": "item_existence_cardinality_false",
+          "items_found": "none",
+          "items_observed": 0,
+          "items_returned": 0,
+          "items_satisfying": "every"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-enable-firewall-ufw-sv-270655-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-enable-firewall-ufw-sv-270655-assessment.json",
+      "package_member_sha256": "8fd85ab19931d56df936afbd113d6807c256b33d823c6a5ad45ed0b137a585dc",
+      "outcome": "true",
+      "execution_id": "assessment-83fd52f7e8cc9c58d87079d5f41bfdc5",
+      "summary": "Assessment evaluated true with complete evidence.",
+      "logical_complete": true,
+      "population_complete": true,
+      "evidence_complete": true,
+      "tests": [
+        {
+          "id": "ufw-service-is-active-test",
+          "title": "ufw.service is active",
+          "outcome": "true",
+          "reason": "all_required_fields_equal",
+          "items_found": "one_or_more",
+          "items_observed": 1,
+          "items_returned": 1,
+          "items_satisfying": "every"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-enable-ufw-sv-270655-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-enable-ufw-sv-270655-manual-0-assessment.json",
+      "package_member_sha256": "1cbc25159be1a2b6a0e1960eb0fd62c9d1650334b1e5b568c7e6ec63f50c2b4a"
+    },
+    {
+      "id": "ubuntu-24-04-lts-file-group-owned-by-adm-sv-270768-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-file-group-owned-by-adm-sv-270768-assessment.json",
+      "package_member_sha256": "bb14bc88e9ae707e0b1ed809689f52e74447ad4a3bb233fafc0e3fbbf35d0e0e",
+      "outcome": "unknown",
+      "execution_id": "assessment-59b5dc2ef62bea3fc1e6b477cab87a36",
+      "summary": "Assessment evidence was incomplete or inconclusive.",
+      "logical_complete": true,
+      "population_complete": true,
+      "evidence_complete": true,
+      "tests": [
+        {
+          "id": "var-log-syslog-file-is-group-owned-by-adm-test",
+          "title": "/var/log/syslog file is group-owned by adm",
+          "outcome": "unknown",
+          "reason": "Assessment execution diagnostic: variable_collected_field_type_unresolved",
+          "items_found": "one_or_more",
+          "items_observed": 1,
+          "items_returned": 0,
+          "items_satisfying": "every",
+          "truncated": true
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-file-owned-by-syslog-sv-270769-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-file-owned-by-syslog-sv-270769-assessment.json",
+      "package_member_sha256": "ad5849adb9bd144fe5997e7565f99788c32d985e57572f91e231736fbd4f7500",
+      "outcome": "unknown",
+      "execution_id": "assessment-53abbd070ff519167372f69b785c5a5f",
+      "summary": "Assessment evidence was incomplete or inconclusive.",
+      "logical_complete": true,
+      "population_complete": true,
+      "evidence_complete": true,
+      "tests": [
+        {
+          "id": "var-log-syslog-file-must-be-owned-by-syslog-test",
+          "title": "/var/log/syslog file must be owned by syslog",
+          "outcome": "unknown",
+          "reason": "Assessment execution diagnostic: variable_collected_field_type_unresolved",
+          "items_found": "one_or_more",
+          "items_observed": 5,
+          "items_returned": 0,
+          "items_satisfying": "every",
+          "truncated": true
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-have-access-methods-sv-270654-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-have-access-methods-sv-270654-assessment.json",
+      "package_member_sha256": "926054b58af6eecd5157608e48ee89d81e7d2720b145bbc3eef96d0f1cce893c",
+      "outcome": "true",
+      "execution_id": "assessment-dc2604425e177bf72640ae4cd50397a3",
+      "summary": "Assessment evaluated true with complete evidence.",
+      "logical_complete": true,
+      "population_complete": true,
+      "evidence_complete": true,
+      "tests": [
+        {
+          "id": "package-ufw-is-installed-test",
+          "title": "package ufw is installed",
+          "outcome": "true",
+          "reason": "item_existence_satisfied",
+          "items_found": "one_or_more",
+          "items_observed": 1,
+          "items_returned": 1,
+          "items_satisfying": "every"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-have-apparmor-installed-sv-270659-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-have-apparmor-installed-sv-270659-assessment.json",
+      "package_member_sha256": "0167b7be8c0ca73d0db336f5c31ed0c359132893b59b91b926554b4099073511",
+      "outcome": "true",
+      "execution_id": "assessment-7de414e9c8c27d0eef8157da39c09a0f",
+      "summary": "Assessment evaluated true with complete evidence.",
+      "logical_complete": true,
+      "population_complete": true,
+      "evidence_complete": true,
+      "tests": [
+        {
+          "id": "package-apparmor-is-installed-test",
+          "title": "package apparmor is installed",
+          "outcome": "true",
+          "reason": "item_existence_satisfied",
+          "items_found": "one_or_more",
+          "items_observed": 1,
+          "items_returned": 1,
+          "items_satisfying": "every"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-have-installed-sv-270659-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-have-installed-sv-270659-manual-0-assessment.json",
+      "package_member_sha256": "9751ba9b443e2cc33acb9ec6c2a5bb786bbd0068e6b2abba8314f28ced7f9d05"
+    },
+    {
+      "id": "ubuntu-24-04-lts-have-installed-sv-270661-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-have-installed-sv-270661-manual-0-assessment.json",
+      "package_member_sha256": "97747425349643295e20b728ffbdbb28c146a24803415f1136e74dd9ecd07b4d"
+    },
+    {
+      "id": "ubuntu-24-04-lts-have-installed-sv-270664-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-have-installed-sv-270664-manual-0-assessment.json",
+      "package_member_sha256": "c4378c6fb92f8a9c2f7b46a84a826f3f78f83a5c42a53f9ba0f1541e917b6c4a"
+    },
+    {
+      "id": "ubuntu-24-04-lts-have-methods-sv-270654-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-have-methods-sv-270654-manual-0-assessment.json",
+      "package_member_sha256": "990ca4c26c54f7ddbff5068a094bc1b8faaec6ddd6bda3d0a525c090baae0c3e"
+    },
+    {
+      "id": "ubuntu-24-04-lts-have-package-installed-sv-270661-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-have-package-installed-sv-270661-assessment.json",
+      "package_member_sha256": "9f8b6fc2ae2083f6ee93c74796b6ebae6359f30fb342c7503c6561608e58d56d",
+      "outcome": "true",
+      "execution_id": "assessment-bb6aaa24271e78125ff4bf9e3283d603",
+      "summary": "Assessment evaluated true with complete evidence.",
+      "logical_complete": true,
+      "population_complete": true,
+      "evidence_complete": true,
+      "tests": [
+        {
+          "id": "package-libpam-pwquality-is-installed-test",
+          "title": "package libpam-pwquality is installed",
+          "outcome": "true",
+          "reason": "item_existence_satisfied",
+          "items_found": "one_or_more",
+          "items_observed": 1,
+          "items_returned": 1,
+          "items_satisfying": "every"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-have-package-installed-sv-270664-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-have-package-installed-sv-270664-assessment.json",
+      "package_member_sha256": "3ea6fa46ffeacbac4f0df810f8b662d05548ebc586916f6b1be88347f1a4f632",
+      "outcome": "true",
+      "execution_id": "assessment-312b657971ee0fa877099bccaaf20853",
+      "summary": "Assessment evaluated true with complete evidence.",
+      "logical_complete": true,
+      "population_complete": true,
+      "evidence_complete": true,
+      "tests": [
+        {
+          "id": "the-chrony-package-is-installed-test",
+          "title": "The chrony package is installed",
+          "outcome": "true",
+          "reason": "item_existence_satisfied",
+          "items_found": "one_or_more",
+          "items_observed": 1,
+          "items_returned": 1,
+          "items_satisfying": "every"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-have-ssh-sv-270665-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-have-ssh-sv-270665-manual-0-assessment.json",
+      "package_member_sha256": "84b1a22200650cb70730f792239d7a7ae901ad652963736c228bb86f895f54f7"
+    },
+    {
+      "id": "ubuntu-24-04-lts-less-permissive-sv-270767-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-less-permissive-sv-270767-manual-0-assessment.json",
+      "package_member_sha256": "9948b8aff2068c74133e6628b4dd464620429f2b8617be54b81b49813fe57fe0"
+    },
+    {
+      "id": "ubuntu-24-04-lts-less-permissive-sv-270770-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-less-permissive-sv-270770-manual-0-assessment.json",
+      "package_member_sha256": "bd639ec2377bda84218e3feec55591829e2e58e290570b80b4b925faf9dddc08"
+    },
+    {
+      "id": "ubuntu-24-04-lts-library-less-permissive-sv-270696-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-library-less-permissive-sv-270696-assessment.json",
+      "package_member_sha256": "4778df8538e301615196717a7d88cb8565bf254597eb67dc6e2bcc3dd537eb0b",
+      "outcome": "unknown",
+      "execution_id": "assessment-4eef011d39bc3a31508e133d4783dc06",
+      "summary": "Assessment evidence was incomplete or inconclusive.",
+      "logical_complete": false,
+      "population_complete": false,
+      "evidence_complete": false,
+      "tests": [
+        {
+          "id": "system-library-files-have-permissive-gwrite-should-false-test",
+          "title": "System Library files have mode 755 or less permissive (gwrite should be = false)",
+          "outcome": "unknown",
+          "reason": "collection incomplete: acquisition not complete: unsupported",
+          "items_found": "none",
+          "items_observed": 0,
+          "items_returned": 0,
+          "items_satisfying": "every"
+        },
+        {
+          "id": "system-library-files-have-permissive-owrite-should-false-test",
+          "title": "System Library files have mode 755 or less permissive (owrite should be = false)",
+          "outcome": "unknown",
+          "reason": "collection incomplete: acquisition not complete: unsupported",
+          "items_found": "none",
+          "items_observed": 0,
+          "items_returned": 0,
+          "items_satisfying": "every"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-library-sv-270696-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-library-sv-270696-manual-0-assessment.json",
+      "package_member_sha256": "cf811db2d8b6a6a94003742bf4cdb4f90a7786b98479d83319c5d1271e9fa90b"
+    },
+    {
+      "id": "ubuntu-24-04-lts-must-have-ssh-installed-sv-270665-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-must-have-ssh-installed-sv-270665-assessment.json",
+      "package_member_sha256": "72925386f124621bd05e05a82434a0b31c5394fb5eb0ebcb483dbc9e43b87edf",
+      "outcome": "true",
+      "execution_id": "assessment-574e20726a74f80429596afdcaab8845",
+      "summary": "Assessment evaluated true with complete evidence.",
+      "logical_complete": true,
+      "population_complete": true,
+      "evidence_complete": true,
+      "tests": [
+        {
+          "id": "package-ssh-is-installed-test",
+          "title": "package ssh is installed",
+          "outcome": "true",
+          "reason": "item_existence_satisfied",
+          "items_found": "one_or_more",
+          "items_observed": 1,
+          "items_returned": 1,
+          "items_satisfying": "every"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-not-have-installed-sv-270645-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-not-have-installed-sv-270645-assessment.json",
+      "package_member_sha256": "a68facb44a3fee1d4ceab6c29e862ea4c97cfda4e078099f1dad9f5b109514b3",
+      "outcome": "true",
+      "execution_id": "assessment-3f51c159cd3f22e5468c969a83cb730b",
+      "summary": "Assessment evaluated true with complete evidence.",
+      "logical_complete": true,
+      "population_complete": true,
+      "evidence_complete": true,
+      "tests": [
+        {
+          "id": "systemd-timesyncd-package-is-not-installed-test",
+          "title": "systemd-timesyncd package is not installed",
+          "outcome": "true",
+          "reason": "item_existence_satisfied",
+          "items_found": "none",
+          "items_observed": 0,
+          "items_returned": 0,
+          "items_satisfying": "every"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-not-have-installed-sv-270646-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-not-have-installed-sv-270646-assessment.json",
+      "package_member_sha256": "a6059594706da3bd31517db1d21f53e20a4fdf86d23b5eb825f8214bd7805dc4",
+      "outcome": "true",
+      "execution_id": "assessment-06e70e8038f5f72570be08705b4ca89c",
+      "summary": "Assessment evaluated true with complete evidence.",
+      "logical_complete": true,
+      "population_complete": true,
+      "evidence_complete": true,
+      "tests": [
+        {
+          "id": "ntp-package-is-not-installed-test",
+          "title": "ntp package is not installed",
+          "outcome": "true",
+          "reason": "item_existence_satisfied",
+          "items_found": "none",
+          "items_observed": 0,
+          "items_returned": 0,
+          "items_satisfying": "every"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-not-have-installed-sv-270647-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-not-have-installed-sv-270647-assessment.json",
+      "package_member_sha256": "c6ac733197c0f76877116007d1cc556c41f6c5820180e21ed8a7832bbc97a70f",
+      "outcome": "true",
+      "execution_id": "assessment-cad4fd25d0473edd51df7612873c1cae",
+      "summary": "Assessment evaluated true with complete evidence.",
+      "logical_complete": true,
+      "population_complete": true,
+      "evidence_complete": true,
+      "tests": [
+        {
+          "id": "telnetd-package-is-not-installed-test",
+          "title": "Telnetd package is not installed",
+          "outcome": "true",
+          "reason": "item_existence_satisfied",
+          "items_found": "none",
+          "items_observed": 0,
+          "items_returned": 0,
+          "items_satisfying": "every"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-not-have-installed-sv-270648-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-not-have-installed-sv-270648-assessment.json",
+      "package_member_sha256": "ade69722e17538b8da19dd6c89510fbc0fea04fd79074a3f670670c1bd465172",
+      "outcome": "true",
+      "execution_id": "assessment-02ba89d5e56de5870a197ed080be6cdc",
+      "summary": "Assessment evaluated true with complete evidence.",
+      "logical_complete": true,
+      "population_complete": true,
+      "evidence_complete": true,
+      "tests": [
+        {
+          "id": "package-rsh-server-is-not-installed-test",
+          "title": "package rsh-server is not installed",
+          "outcome": "true",
+          "reason": "item_existence_satisfied",
+          "items_found": "none",
+          "items_observed": 0,
+          "items_returned": 0,
+          "items_satisfying": "every"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-not-have-sv-270645-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-not-have-sv-270645-manual-0-assessment.json",
+      "package_member_sha256": "ed1589b7406972655b7ad662b568d12d3fe6f78d573710074a374068874f55b3"
+    },
+    {
+      "id": "ubuntu-24-04-lts-not-have-sv-270646-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-not-have-sv-270646-manual-0-assessment.json",
+      "package_member_sha256": "cd97071ca180a61f3405b601c3c8e23ed15e86ff82b5800579a51af3569e2bd7"
+    },
+    {
+      "id": "ubuntu-24-04-lts-not-have-sv-270647-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-not-have-sv-270647-manual-0-assessment.json",
+      "package_member_sha256": "00a1b745d37051aece02eb2add54db98f4a54147ea1b750a878bffd259d787ff"
+    },
+    {
+      "id": "ubuntu-24-04-lts-not-have-sv-270648-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-not-have-sv-270648-manual-0-assessment.json",
+      "package_member_sha256": "08fe05231bebb0154b59f8dd0bf199ba3ebadc363b959ab0f5f2796bc4e80b5a"
+    },
+    {
+      "id": "ubuntu-24-04-lts-owned-by-adm-sv-270768-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-owned-by-adm-sv-270768-manual-0-assessment.json",
+      "package_member_sha256": "d24dbe1eecfafe2afded3ab37bc31784bf1f4783fe2c0bf16600fad82c33166a"
+    },
+    {
+      "id": "ubuntu-24-04-lts-owned-by-root-sv-270766-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-owned-by-root-sv-270766-manual-0-assessment.json",
+      "package_member_sha256": "92319c5b4610fee93ff1278add7d68e66260c3a180c309082c9a70a6a738f849"
+    },
+    {
+      "id": "ubuntu-24-04-lts-owned-by-syslog-sv-270769-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-owned-by-syslog-sv-270769-manual-0-assessment.json",
+      "package_member_sha256": "e5bde69bc80242c7240861dad405136a0f066c6ac5d634e2d18c8ab5c9635844"
+    },
+    {
+      "id": "ubuntu-24-04-lts-prevent-account-sv-270724-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-prevent-account-sv-270724-manual-0-assessment.json",
+      "package_member_sha256": "dca0db71f9dbbb487466b79921f4458a77e5e4313ff39373cd643b2d5291e9fc"
+    },
+    {
+      "id": "ubuntu-24-04-lts-prevent-root-account-sv-270724-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-prevent-root-account-sv-270724-assessment.json",
+      "package_member_sha256": "a80abf52333725c51d6a0fa54a4c9dbe0fcb1da88f2ea2a1d2f3d8592473a3b9",
+      "outcome": "unknown",
+      "execution_id": "assessment-57d74d8acf5f024dc6804d56c7ac4320",
+      "summary": "Assessment evidence was incomplete or inconclusive.",
+      "logical_complete": false,
+      "population_complete": false,
+      "evidence_complete": false,
+      "tests": [
+        {
+          "id": "root-account-is-locked-test",
+          "title": "root account is locked",
+          "outcome": "unknown",
+          "reason": "collection incomplete: acquisition not complete: permission_denied",
+          "items_found": "none",
+          "items_observed": 0,
+          "items_returned": 0,
+          "items_satisfying": "every"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-so-that-by-root-sv-270759-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-so-that-by-root-sv-270759-manual-0-assessment.json",
+      "package_member_sha256": "3ed8c96f772076aff79d4a219393d438e0e6e4b918c5ca4a9a7cf38a91e9d447"
+    },
+    {
+      "id": "ubuntu-24-04-lts-so-that-by-root-sv-270760-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-so-that-by-root-sv-270760-manual-0-assessment.json",
+      "package_member_sha256": "831b5f084ab597cd0af5d4c6732e8488d5df726e8c7b8aedd92b4dfd8eae412b"
+    },
+    {
+      "id": "ubuntu-24-04-lts-so-that-is-owned-by-root-sv-270759-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-so-that-is-owned-by-root-sv-270759-assessment.json",
+      "package_member_sha256": "0d47f4f29cefe63bce7294045485e062695b9f522322a4fb950db5bae41159fd",
+      "outcome": "true",
+      "execution_id": "assessment-d1988c88d5e73daecd6238492b6b1719",
+      "summary": "Assessment evaluated true with complete evidence.",
+      "logical_complete": true,
+      "population_complete": true,
+      "evidence_complete": true,
+      "tests": [
+        {
+          "id": "usr-bin-journalctl-command-is-owned-by-root-test",
+          "title": "/usr/bin/journalctl command is owned by root",
+          "outcome": "true",
+          "reason": "all_required_fields_equal",
+          "items_found": "one_or_more",
+          "items_observed": 1,
+          "items_returned": 1,
+          "items_satisfying": "every"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-so-that-owned-by-root-sv-270760-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-so-that-owned-by-root-sv-270760-assessment.json",
+      "package_member_sha256": "a4806ae3302b13e36ce0e78773d286ca298e7433cb271c19f118e2812d977ace",
+      "outcome": "true",
+      "execution_id": "assessment-ebded615faa7c9fc5dd376a5399aca06",
+      "summary": "Assessment evaluated true with complete evidence.",
+      "logical_complete": true,
+      "population_complete": true,
+      "evidence_complete": true,
+      "tests": [
+        {
+          "id": "usr-bin-journalctl-is-group-owned-by-root-test",
+          "title": "/usr/bin/journalctl is group-owned by root",
+          "outcome": "true",
+          "reason": "all_required_fields_equal",
+          "items_found": "one_or_more",
+          "items_observed": 1,
+          "items_returned": 1,
+          "items_satisfying": "every"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-so-that-users-sv-270758-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-so-that-users-sv-270758-assessment.json",
+      "package_member_sha256": "2d22a7c55a944597fce1dd29c02aad41f57d59eec85871ed4e89415c5c0055ce",
+      "outcome": "true",
+      "execution_id": "assessment-9eb3780707a467a1072cbd30ab90b5b8",
+      "summary": "Assessment evaluated true with complete evidence.",
+      "logical_complete": true,
+      "population_complete": true,
+      "evidence_complete": true,
+      "tests": [
+        {
+          "id": "usr-bin-journalctl-command-has-mode-0740-or-less-permissive-test",
+          "title": "/usr/bin/journalctl command has mode 0740 or less permissive",
+          "outcome": "true",
+          "reason": "all_required_fields_equal",
+          "items_found": "one_or_more",
+          "items_observed": 1,
+          "items_returned": 1,
+          "items_satisfying": "every"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-so-that-users-sv-270758-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-so-that-users-sv-270758-manual-0-assessment.json",
+      "package_member_sha256": "e0ffb8b6f7471107cdc1ba397d8995a2037f7e2256dba7487600ccf4ea99f19e"
+    },
+    {
+      "id": "ubuntu-24-04-lts-ssh-algorithms-sv-270669-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-ssh-algorithms-sv-270669-manual-0-assessment.json",
+      "package_member_sha256": "938e3d39cc56dd180278c239a0e7e9b21579331bba1f7c55bdd310f76249c84d"
+    },
+    {
+      "id": "ubuntu-24-04-lts-ssh-exchange-algorithms-sv-270669-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-ssh-exchange-algorithms-sv-270669-assessment.json",
+      "package_member_sha256": "f51d8647eb511a954adb070b8cbc0800e0eec495293b3b271bc5fee148652e95",
+      "outcome": "error",
+      "execution_id": "assessment-88c4fbe51e5865dd1afd9defb5da1794",
+      "summary": "Assessment execution reported an acquisition or evaluation error.",
+      "logical_complete": false,
+      "population_complete": false,
+      "evidence_complete": false,
+      "tests": [
+        {
+          "id": "sshd-config-kexalgorithms-uses-fips-validated-algorithms-test",
+          "title": "sshd_config: KexAlgorithms uses FIPS-validated algorithms",
+          "outcome": "error",
+          "reason": "collection failed: acquisition not complete: unsupported",
+          "items_found": "none",
+          "items_observed": 0,
+          "items_returned": 0,
+          "items_satisfying": "every",
+          "evidence_refs": [
+            "assessment-88c4fbe51e5865dd1afd9defb5da1794/object/sshd-config-kexalgorithms-uses-fips-validated-algorithms-test"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-transmission-sv-270667-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-transmission-sv-270667-manual-0-assessment.json",
+      "package_member_sha256": "675bf759161f46d7e2a70211ee1f0bd145b7efc6fdd74057be0b0ce3547b281a"
+    },
+    {
+      "id": "ubuntu-24-04-lts-transmission-sv-270668-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-transmission-sv-270668-manual-0-assessment.json",
+      "package_member_sha256": "a0166e44dfba0ca16ac0be3c501d54b4dd3ad9b4f9a1fefed5773fa91f02dac2"
+    },
+    {
+      "id": "ubuntu-24-04-lts-use-apparmor-sv-270660-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-use-apparmor-sv-270660-assessment.json",
+      "package_member_sha256": "3580a739f79102afa84ae5243eb253bb081152a35c21489e013f9c22df1ff3ec",
+      "outcome": "true",
+      "execution_id": "assessment-371a16d14324e629107cd3b077a4d96e",
+      "summary": "Assessment evaluated true with complete evidence.",
+      "logical_complete": true,
+      "population_complete": true,
+      "evidence_complete": true,
+      "tests": [
+        {
+          "id": "apparmor-service-is-active-test",
+          "title": "apparmor.service is active",
+          "outcome": "true",
+          "reason": "all_required_fields_equal",
+          "items_found": "one_or_more",
+          "items_observed": 1,
+          "items_returned": 1,
+          "items_satisfying": "every"
+        },
+        {
+          "id": "apparmor-service-is-enabled-test",
+          "title": "apparmor.service is enabled",
+          "outcome": "true",
+          "reason": "all_required_fields_equal",
+          "items_found": "one_or_more",
+          "items_observed": 1,
+          "items_returned": 1,
+          "items_satisfying": "every"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-use-apparmor-sv-270660-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-use-apparmor-sv-270660-manual-0-assessment.json",
+      "package_member_sha256": "5f4ad807238bab71c9cfc7e3f29bc1d6880d9dd573d751a64d06622acaa6a5c2"
+    },
+    {
+      "id": "ubuntu-24-04-lts-use-ssh-information-sv-270666-assessment",
+      "status": "executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-use-ssh-information-sv-270666-assessment.json",
+      "package_member_sha256": "c1ebad716b21942da89d4ec4a8f1936e637c96d6fc825b82899733af7892a44e",
+      "outcome": "true",
+      "execution_id": "assessment-3060dad9866d5b0a300ad54036cdf5d1",
+      "summary": "Assessment evaluated true with complete evidence.",
+      "logical_complete": true,
+      "population_complete": true,
+      "evidence_complete": true,
+      "tests": [
+        {
+          "id": "ssh-service-is-active-test",
+          "title": "ssh.service is active",
+          "outcome": "true",
+          "reason": "all_required_fields_equal",
+          "items_found": "one_or_more",
+          "items_observed": 1,
+          "items_returned": 1,
+          "items_satisfying": "every"
+        },
+        {
+          "id": "ssh-service-is-enabled-test",
+          "title": "ssh.service is enabled",
+          "outcome": "true",
+          "reason": "all_required_fields_equal",
+          "items_found": "one_or_more",
+          "items_observed": 1,
+          "items_returned": 1,
+          "items_satisfying": "every"
+        }
+      ]
+    },
+    {
+      "id": "ubuntu-24-04-lts-use-ssh-sv-270666-manual-0-assessment",
+      "status": "not_executed",
+      "source_identity_status": "package-member-pinned; source-assessment-hash-not-retained",
+      "package_member": "assessments/ubuntu-24-04-lts-use-ssh-sv-270666-manual-0-assessment.json",
+      "package_member_sha256": "792cee68ab80e43428c2d54126d8ed77906a2e23e99cc5aee236d0403763296d"
+    }
+  ]
+}
