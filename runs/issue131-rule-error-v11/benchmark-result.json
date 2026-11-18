@@ -1,0 +1,609 @@
+{
+  "benchmark_result": {
+    "benchmark": {
+      "id": "direct-slice",
+      "package_digest": "698c6c2d03d0ebdaca7d8e004472734945a04d5d2adda1dd9dc2ecb3ca09659a",
+      "version": "001.005.007"
+    },
+    "completed_at": "2026-11-18T15:04:52.867173729Z",
+    "effective_policy": {
+      "check_selectors": {},
+      "disabled_rules": [],
+      "organizational_inputs": {},
+      "parameters": {},
+      "profile": "disable-slow-rules-profile",
+      "selected_rules": [
+        "ubuntu-24-04-lts-not-have-package-installed-sv-270645-rule",
+        "ubuntu-24-04-lts-not-have-ntp-package-installed-sv-270646-rule",
+        "ubuntu-24-04-lts-not-have-package-installed-sv-270647-rule",
+        "ubuntu-24-04-lts-not-have-package-installed-sv-270648-rule",
+        "ubuntu-24-04-lts-configure-during-transmission-sv-270667-rule",
+        "ubuntu-24-04-lts-configure-during-transmission-sv-270668-rule",
+        "ubuntu-24-04-lts-ssh-server-exchange-algorithms-sv-270669-rule",
+        "ubuntu-24-04-lts-display-access-via-ssh-logon-sv-270691-rule",
+        "ubuntu-24-04-lts-library-0755-or-less-permissive-sv-270696-rule",
+        "ubuntu-24-04-lts-disable-x86-delete-key-sequence-sv-270712-rule",
+        "ubuntu-24-04-lts-prevent-login-root-account-sv-270724-rule"
+      ],
+      "tailoring": null
+    },
+    "result_schema_version": "0.4.1",
+    "rule_results": [
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-108e82098c125fadfd4c63bcff5973af",
+              "assessment_result_ref": "assessment-108e82098c125fadfd4c63bcff5973af",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "a68facb44a3fee1d4ceab6c29e862ea4c97cfda4e078099f1dad9f5b109514b3",
+          "id": "ubuntu-24-04-lts-not-have-installed-sv-270645-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-fc9926e20a98b70015a64107e4291ff4",
+            "assessment_result_ref": "assessment-fc9926e20a98b70015a64107e4291ff4",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-not-have-installed-sv-270645-assessment/ubuntu-24-04-lts-not-have-package-installed-sv-270645-rule",
+            "message": "Assessment evaluated true.",
+            "outcome": "pass",
+            "target_instance": "ubuntu-24.04-nonroot"
+          }
+        ],
+        "outcome": "pass",
+        "parameters": {},
+        "rule_id": "ubuntu-24-04-lts-not-have-package-installed-sv-270645-rule",
+        "severity": "low",
+        "summary": "Assessment evaluated true.",
+        "title": "Ubuntu 24.04 LTS must not have the \"systemd-timesyncd\" package installed.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-108e82098c125fadfd4c63bcff5973af",
+              "assessment_result_ref": "assessment-108e82098c125fadfd4c63bcff5973af",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "a6059594706da3bd31517db1d21f53e20a4fdf86d23b5eb825f8214bd7805dc4",
+          "id": "ubuntu-24-04-lts-not-have-installed-sv-270646-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-d7431b0564422eec716f35c6b49bd952",
+            "assessment_result_ref": "assessment-d7431b0564422eec716f35c6b49bd952",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-not-have-installed-sv-270646-assessment/ubuntu-24-04-lts-not-have-ntp-package-installed-sv-270646-rule",
+            "message": "Assessment evaluated true.",
+            "outcome": "pass",
+            "target_instance": "ubuntu-24.04-nonroot"
+          }
+        ],
+        "outcome": "pass",
+        "parameters": {},
+        "rule_id": "ubuntu-24-04-lts-not-have-ntp-package-installed-sv-270646-rule",
+        "severity": "low",
+        "summary": "Assessment evaluated true.",
+        "title": "Ubuntu 24.04 LTS must not have the \"ntp\" package installed.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-108e82098c125fadfd4c63bcff5973af",
+              "assessment_result_ref": "assessment-108e82098c125fadfd4c63bcff5973af",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "c6ac733197c0f76877116007d1cc556c41f6c5820180e21ed8a7832bbc97a70f",
+          "id": "ubuntu-24-04-lts-not-have-installed-sv-270647-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-bfd10ee41375b856d67c47c0fb0e92cb",
+            "assessment_result_ref": "assessment-bfd10ee41375b856d67c47c0fb0e92cb",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-not-have-installed-sv-270647-assessment/ubuntu-24-04-lts-not-have-package-installed-sv-270647-rule",
+            "message": "Assessment evaluated true.",
+            "outcome": "pass",
+            "target_instance": "ubuntu-24.04-nonroot"
+          }
+        ],
+        "outcome": "pass",
+        "parameters": {},
+        "rule_id": "ubuntu-24-04-lts-not-have-package-installed-sv-270647-rule",
+        "severity": "high",
+        "summary": "Assessment evaluated true.",
+        "title": "Ubuntu 24.04 LTS must not have the telnet package installed.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-108e82098c125fadfd4c63bcff5973af",
+              "assessment_result_ref": "assessment-108e82098c125fadfd4c63bcff5973af",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "ade69722e17538b8da19dd6c89510fbc0fea04fd79074a3f670670c1bd465172",
+          "id": "ubuntu-24-04-lts-not-have-installed-sv-270648-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-3f91a59cdfcdd762f22d50d428aab998",
+            "assessment_result_ref": "assessment-3f91a59cdfcdd762f22d50d428aab998",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-not-have-installed-sv-270648-assessment/ubuntu-24-04-lts-not-have-package-installed-sv-270648-rule",
+            "message": "Assessment evaluated true.",
+            "outcome": "pass",
+            "target_instance": "ubuntu-24.04-nonroot"
+          }
+        ],
+        "outcome": "pass",
+        "parameters": {},
+        "rule_id": "ubuntu-24-04-lts-not-have-package-installed-sv-270648-rule",
+        "severity": "high",
+        "summary": "Assessment evaluated true.",
+        "title": "Ubuntu 24.04 LTS must not have the rsh-server package installed.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-108e82098c125fadfd4c63bcff5973af",
+              "assessment_result_ref": "assessment-108e82098c125fadfd4c63bcff5973af",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "648db95ca0a85d76f76b74e0c5fe7290504b76b114c10aa34a088087b3493dd9",
+          "id": "ubuntu-24-04-lts-during-transmission-sv-270667-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-3126b7325dc29597c853bc6154e8fe57",
+            "assessment_result_ref": "assessment-3126b7325dc29597c853bc6154e8fe57",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-during-transmission-sv-270667-assessment/ubuntu-24-04-lts-configure-during-transmission-sv-270667-rule",
+            "message": "Assessment execution reported an acquisition or evaluation error: collection failed: acquisition not complete: unsupported",
+            "outcome": "error",
+            "target_instance": "ubuntu-24.04-nonroot"
+          }
+        ],
+        "outcome": "error",
+        "parameters": {},
+        "reason": {
+          "code": "collection_error",
+          "message": "Assessment execution reported an acquisition or evaluation error: collection failed: acquisition not complete: unsupported"
+        },
+        "rule_id": "ubuntu-24-04-lts-configure-during-transmission-sv-270667-rule",
+        "severity": "medium",
+        "summary": "Assessment execution reported an acquisition or evaluation error: collection failed: acquisition not complete: unsupported",
+        "title": "Ubuntu 24.04 LTS must configure the SSH daemon to use FIPS 140-3 approved ciphers to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-108e82098c125fadfd4c63bcff5973af",
+              "assessment_result_ref": "assessment-108e82098c125fadfd4c63bcff5973af",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "45916b384b31e7bdd2c7024a52244a6ba3ae18b375599b0884a68306f88575cc",
+          "id": "ubuntu-24-04-lts-during-transmission-sv-270668-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-cadba415d32d0d809c4ec49db848c9e4",
+            "assessment_result_ref": "assessment-cadba415d32d0d809c4ec49db848c9e4",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-during-transmission-sv-270668-assessment/ubuntu-24-04-lts-configure-during-transmission-sv-270668-rule",
+            "message": "Assessment evaluated false.",
+            "outcome": "fail",
+            "target_instance": "ubuntu-24.04-nonroot"
+          }
+        ],
+        "outcome": "fail",
+        "parameters": {},
+        "reason": {
+          "code": "value_mismatch",
+          "message": "Assessment evaluated false."
+        },
+        "rule_id": "ubuntu-24-04-lts-configure-during-transmission-sv-270668-rule",
+        "severity": "medium",
+        "summary": "Assessment evaluated false.",
+        "title": "Ubuntu 24.04 LTS must configure the SSH daemon to use Message Authentication Codes (MACs) employing FIPS 140-3 approved cryptographic hashes to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-108e82098c125fadfd4c63bcff5973af",
+              "assessment_result_ref": "assessment-108e82098c125fadfd4c63bcff5973af",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "f51d8647eb511a954adb070b8cbc0800e0eec495293b3b271bc5fee148652e95",
+          "id": "ubuntu-24-04-lts-ssh-exchange-algorithms-sv-270669-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-8722bc2baffd49e117d0fa69dfb9d376",
+            "assessment_result_ref": "assessment-8722bc2baffd49e117d0fa69dfb9d376",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-ssh-exchange-algorithms-sv-270669-assessment/ubuntu-24-04-lts-ssh-server-exchange-algorithms-sv-270669-rule",
+            "message": "Assessment execution reported an acquisition or evaluation error: collection failed: acquisition not complete: unsupported",
+            "outcome": "error",
+            "target_instance": "ubuntu-24.04-nonroot"
+          }
+        ],
+        "outcome": "error",
+        "parameters": {},
+        "reason": {
+          "code": "collection_error",
+          "message": "Assessment execution reported an acquisition or evaluation error: collection failed: acquisition not complete: unsupported"
+        },
+        "rule_id": "ubuntu-24-04-lts-ssh-server-exchange-algorithms-sv-270669-rule",
+        "severity": "medium",
+        "summary": "Assessment execution reported an acquisition or evaluation error: collection failed: acquisition not complete: unsupported",
+        "title": "Ubuntu 24.04 LTS SSH server must be configured to use only FIPS 140-3 validated key exchange algorithms.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-108e82098c125fadfd4c63bcff5973af",
+              "assessment_result_ref": "assessment-108e82098c125fadfd4c63bcff5973af",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "1e1c1792487bcf512c96311a4e86e51c341efb5d0fee2bff52229447a6f12a79",
+          "id": "ubuntu-24-04-lts-display-via-ssh-logon-sv-270691-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-386a9d0033151eb0edd3b9bee6eab5ad",
+            "assessment_result_ref": "assessment-386a9d0033151eb0edd3b9bee6eab5ad",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-display-via-ssh-logon-sv-270691-assessment/ubuntu-24-04-lts-display-access-via-ssh-logon-sv-270691-rule",
+            "message": "Assessment evidence was incomplete or inconclusive: Assessment execution diagnostic: missing_field_held",
+            "outcome": "unknown",
+            "target_instance": "ubuntu-24.04-nonroot"
+          }
+        ],
+        "outcome": "unknown",
+        "parameters": {},
+        "reason": {
+          "code": "collection_error",
+          "message": "Assessment evidence was incomplete or inconclusive: Assessment execution diagnostic: missing_field_held"
+        },
+        "rule_id": "ubuntu-24-04-lts-display-access-via-ssh-logon-sv-270691-rule",
+        "severity": "medium",
+        "summary": "Assessment evidence was incomplete or inconclusive: Assessment execution diagnostic: missing_field_held",
+        "title": "Ubuntu 24.04 LTS must display the Standard Mandatory DOD Notice and Consent Banner before granting access to via an SSH logon.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-108e82098c125fadfd4c63bcff5973af",
+              "assessment_result_ref": "assessment-108e82098c125fadfd4c63bcff5973af",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "4778df8538e301615196717a7d88cb8565bf254597eb67dc6e2bcc3dd537eb0b",
+          "id": "ubuntu-24-04-lts-library-less-permissive-sv-270696-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-3b5731f32219e5991f631dbe9d9ce111",
+            "assessment_result_ref": "assessment-3b5731f32219e5991f631dbe9d9ce111",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-library-less-permissive-sv-270696-assessment/ubuntu-24-04-lts-library-0755-or-less-permissive-sv-270696-rule",
+            "message": "Assessment evidence was incomplete or inconclusive: collection incomplete: acquisition not complete: unsupported",
+            "outcome": "unknown",
+            "target_instance": "ubuntu-24.04-nonroot"
+          }
+        ],
+        "outcome": "unknown",
+        "parameters": {},
+        "reason": {
+          "code": "collection_error",
+          "message": "Assessment evidence was incomplete or inconclusive: collection incomplete: acquisition not complete: unsupported"
+        },
+        "rule_id": "ubuntu-24-04-lts-library-0755-or-less-permissive-sv-270696-rule",
+        "severity": "medium",
+        "summary": "Assessment evidence was incomplete or inconclusive: collection incomplete: acquisition not complete: unsupported",
+        "title": "Ubuntu 24.04 LTS library files must have mode 0755 or less permissive.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-108e82098c125fadfd4c63bcff5973af",
+              "assessment_result_ref": "assessment-108e82098c125fadfd4c63bcff5973af",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "e55fcf60018ae6515640f3ee0e8619452d72809c137f67cc93d9e6f3e1b980d7",
+          "id": "ubuntu-24-04-lts-disable-key-sequence-sv-270712-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-15e17810ae3f5269b0bb61a0851cb6af",
+            "assessment_result_ref": "assessment-15e17810ae3f5269b0bb61a0851cb6af",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-disable-key-sequence-sv-270712-assessment/ubuntu-24-04-lts-disable-x86-delete-key-sequence-sv-270712-rule",
+            "message": "Assessment evaluated true.",
+            "outcome": "pass",
+            "target_instance": "ubuntu-24.04-nonroot"
+          }
+        ],
+        "outcome": "pass",
+        "parameters": {},
+        "rule_id": "ubuntu-24-04-lts-disable-x86-delete-key-sequence-sv-270712-rule",
+        "severity": "high",
+        "summary": "Assessment evaluated true.",
+        "title": "Ubuntu 24.04 LTS must disable the x86 Ctrl-Alt-Delete key sequence.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-108e82098c125fadfd4c63bcff5973af",
+              "assessment_result_ref": "assessment-108e82098c125fadfd4c63bcff5973af",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "a80abf52333725c51d6a0fa54a4c9dbe0fcb1da88f2ea2a1d2f3d8592473a3b9",
+          "id": "ubuntu-24-04-lts-prevent-root-account-sv-270724-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-6b70510aef71ed10615ea1fcda4c1bba",
+            "assessment_result_ref": "assessment-6b70510aef71ed10615ea1fcda4c1bba",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-prevent-root-account-sv-270724-assessment/ubuntu-24-04-lts-prevent-login-root-account-sv-270724-rule",
+            "message": "Assessment evidence was incomplete or inconclusive: collection incomplete: acquisition not complete: permission_denied",
+            "outcome": "unknown",
+            "target_instance": "ubuntu-24.04-nonroot"
+          }
+        ],
+        "outcome": "unknown",
+        "parameters": {},
+        "reason": {
+          "code": "collection_error",
+          "message": "Assessment evidence was incomplete or inconclusive: collection incomplete: acquisition not complete: permission_denied"
+        },
+        "rule_id": "ubuntu-24-04-lts-prevent-login-root-account-sv-270724-rule",
+        "severity": "medium",
+        "summary": "Assessment evidence was incomplete or inconclusive: collection incomplete: acquisition not complete: permission_denied",
+        "title": "Ubuntu 24.04 LTS must prevent direct login to the root account.",
+        "weight": 10
+      }
+    ],
+    "run_id": "run-315f7e11d2749f7ee2751bceb787d589",
+    "started_at": "2026-11-18T15:04:52.738319046Z",
+    "summary": {
+      "error": 2,
+      "fail": 1,
+      "not_applicable": 0,
+      "not_evaluated": 0,
+      "pass": 5,
+      "total": 11,
+      "unknown": 3
+    },
+    "target_ref": "ubuntu-24.04-nonroot"
+  }
+}
