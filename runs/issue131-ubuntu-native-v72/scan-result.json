@@ -1,0 +1,72 @@
+{
+  "scan_result": {
+    "assessment_result_refs": [
+      "assessment-6699e849f3f0228af8d58cdd8febbb37",
+      "assessment-8f0bf7fba52f65022171e5080a6f87c9",
+      "assessment-55ddc50edf64c2a61770517ab7201fe6",
+      "assessment-be3114456232d49a39193c9f0b2c1a15",
+      "assessment-001aa42be0362d6a296ec3674edd8db5",
+      "assessment-79d8463d922c2d64eae8e2121336ea28",
+      "assessment-4b1264b05630f644c9ac5f4fc59d60fb",
+      "assessment-cff9e2792edebf9aea711b97bca43b40",
+      "assessment-f0d95350b6193b5579d1004dde00d09e",
+      "assessment-2d2f8396dc4939174492668239610829",
+      "assessment-e544a3e3690969b79f75736a9901a679",
+      "assessment-0bd2c40ea113ab13593cd2b1ea24fb02",
+      "assessment-92abdddf4b0bc775a9e352ee4d0bac53",
+      "assessment-a1fd43fde5b014918c0be75f82d7378f",
+      "assessment-7c33d880cb50f278e951ef70aada0b2c",
+      "assessment-16958b14251ada8d9da14e26446f06ac",
+      "assessment-14b9b4bf59f5bafc6ac79a49b6df4aaa",
+      "assessment-a1914c4bd147839166b833dfc58eca60",
+      "assessment-4e49ac795dc89d583a0d1487348bc251",
+      "assessment-f7ad304d5dd25ddbdda90fb02799c4e6",
+      "assessment-8d562f801fd343488c56838c45a8aeae",
+      "assessment-538502ac0c1768a7defd7fb0f148722e",
+      "assessment-08a4b5bb54f1ccf6cd0ce54f5d8ba713",
+      "assessment-7b589fd5098a0411e2e5b9185b0258eb",
+      "assessment-0a0cfe4e1848c774b133da937fd7b879",
+      "assessment-853519e19d934f91d843451e8cecb97e",
+      "assessment-3a7798cb4a25288d3dbe762daa559ab7",
+      "assessment-47bd707b8979e14ec3210721bd60e0e7",
+      "assessment-05b824b384c573aae9901b6f4064af17",
+      "assessment-3a9dbe18c3135e46ca267e78d329e04b",
+      "assessment-fed3ada94c064e26ab3e9f24f44a51c3",
+      "assessment-0484fcf4e6e741ae7d24500e6fef0c3c",
+      "assessment-32e965049b36e90b9ead877b762a8ee4",
+      "assessment-51dfc7a93e80b0acdf6ffef934729084"
+    ],
+    "benchmark_results": [
+      {
+        "benchmark_id": "direct-slice",
+        "benchmark_result_ref": "run-d4a071a24d93122d18706f7bab1586c4",
+        "benchmark_version": "001.005.007",
+        "profile_id": "",
+        "summary": {
+          "error": 2,
+          "fail": 3,
+          "not_applicable": 0,
+          "not_evaluated": 0,
+          "pass": 23,
+          "total": 33,
+          "unknown": 5
+        },
+        "tailoring_id": null,
+        "target_ref": "ubuntu24-native-v72"
+      }
+    ],
+    "completed_at": "2026-11-18T16:48:19.615716034Z",
+    "result_schema_version": "0.4.1",
+    "run_id": "run-d4a071a24d93122d18706f7bab1586c4",
+    "scanner": {
+      "name": "scap-ng-ri",
+      "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329"
+    },
+    "started_at": "2026-11-18T16:48:19.227425254Z",
+    "targets": [
+      {
+        "id": "ubuntu24-native-v72"
+      }
+    ]
+  }
+}
