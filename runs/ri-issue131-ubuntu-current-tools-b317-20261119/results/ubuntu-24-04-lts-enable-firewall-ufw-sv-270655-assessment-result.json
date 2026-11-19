@@ -1,0 +1,178 @@
+{
+  "assessment_result": {
+    "assessment": {
+      "digest": "8fd85ab19931d56df936afbd113d6807c256b33d823c6a5ad45ed0b137a585dc",
+      "id": "ubuntu-24-04-lts-enable-firewall-ufw-sv-270655-assessment",
+      "version": 1
+    },
+    "class": "compliance",
+    "dependent_assessments": [],
+    "diagnostics": [],
+    "evidence_complete": true,
+    "evidence_retention": {
+      "maximum_items": 256,
+      "scope": "per_test",
+      "source": "scanner_configuration"
+    },
+    "execution_id": "assessment-9d8a584a7647bdce57ac6e599916aa7e",
+    "expression_execution": {
+      "assessment": "ubuntu-24-04-lts-enable-firewall-ufw-sv-270655-assessment",
+      "diagnostics": [],
+      "executed_tests": [
+        "ufw-service-is-active-test"
+      ],
+      "invocation_ref": "assessment-9d8a584a7647bdce57ac6e599916aa7e",
+      "outcome": "true",
+      "trace": [
+        {
+          "assessment": "ubuntu-24-04-lts-enable-firewall-ufw-sv-270655-assessment",
+          "kind": "test",
+          "outcome": "true",
+          "owner_invocation_ref": "assessment-9d8a584a7647bdce57ac6e599916aa7e",
+          "path": "/tests/ufw-service-is-active-test",
+          "reused": false,
+          "test": "ufw-service-is-active-test"
+        }
+      ]
+    },
+    "field_uses": [],
+    "logical_complete": true,
+    "mode": "automated",
+    "objects": [
+      {
+        "capability": "linux.systemdunitproperty",
+        "diagnostics": [],
+        "id": "assessment-9d8a584a7647bdce57ac6e599916aa7e/object/ufw-service-is-active-test",
+        "item_refs": [
+          "item-d028eb748ee3e71455e327fb6570ef1f"
+        ],
+        "logical_complete": true,
+        "object_title": null,
+        "population_complete": true,
+        "source_execution_ref": "assessment-9d8a584a7647bdce57ac6e599916aa7e",
+        "status": "complete",
+        "stop_reason": null
+      }
+    ],
+    "outcome": "true",
+    "population_complete": true,
+    "purpose": "assessment",
+    "result_schema_version": "0.4.1",
+    "summary": "Assessment evaluated true with complete evidence.",
+    "target_ref": "ubuntu-24.04-b317",
+    "tests": [
+      {
+        "evidence_refs": [],
+        "id": "ufw-service-is-active-test",
+        "invocation_ref": "assessment-9d8a584a7647bdce57ac6e599916aa7e",
+        "item_refs": [
+          "item-d028eb748ee3e71455e327fb6570ef1f"
+        ],
+        "item_summary": {
+          "actual_mismatches": 0,
+          "evaluated_items": 1,
+          "observed_mismatches": 0,
+          "returned_items": 1,
+          "truncated_evidence": false
+        },
+        "items_found": "one_or_more",
+        "items_observed": 1,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/ufw-service-is-active-test/object"
+        ],
+        "outcome": "true",
+        "per_item_results": [
+          {
+            "evidence_refs": [],
+            "item": {
+              "capability": "linux.systemdunitproperty",
+              "fields": {
+                "property": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "ActiveState"
+                },
+                "unit": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "ufw.service"
+                },
+                "value": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "active"
+                }
+              },
+              "id": "item-d028eb748ee3e71455e327fb6570ef1f",
+              "provenance": {
+                "collector": "linux.systemdunitproperty.systemctl-show.v1",
+                "observed_at": "2026-11-19T14:24:34.726219834Z",
+                "scope": "systemd-system-manager",
+                "target_ref": "ubuntu-24.04-b317"
+              },
+              "status": "exists"
+            },
+            "item_ref": "item-d028eb748ee3e71455e327fb6570ef1f",
+            "outcome": "true",
+            "reason": "all_required_fields_equal",
+            "require_results": [
+              {
+                "field_results": [],
+                "observation_complete": true,
+                "operator": "and",
+                "outcome": "true",
+                "reason": "require_and_satisfied",
+                "require_ref": "/tests/ufw-service-is-active-test/require",
+                "require_results": [
+                  {
+                    "field_results": [
+                      {
+                        "datatype": "string",
+                        "evidence_refs": [],
+                        "expected_values": [
+                          {
+                            "datatype": "string",
+                            "status": "exists",
+                            "value": "active"
+                          }
+                        ],
+                        "field": "value",
+                        "observation_complete": true,
+                        "observed_values": [
+                          {
+                            "datatype": "string",
+                            "status": "exists",
+                            "value": "active"
+                          }
+                        ],
+                        "operation": "equals",
+                        "outcome": "true",
+                        "reason": "all_required_fields_equal",
+                        "require_ref": "/tests/ufw-service-is-active-test/require/and/0",
+                        "requirement_ref": "/tests/ufw-service-is-active-test/require/and/0/fields/value",
+                        "values_found": "one_or_more",
+                        "values_matching": "every"
+                      }
+                    ],
+                    "observation_complete": true,
+                    "outcome": "true",
+                    "reason": "fields_satisfied",
+                    "require_ref": "/tests/ufw-service-is-active-test/require/and/0",
+                    "require_results": []
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "reason": "all_required_fields_equal",
+        "require_refs": [
+          "/tests/ufw-service-is-active-test/require"
+        ],
+        "test_title": "ufw.service is active"
+      }
+    ],
+    "variables": []
+  }
+}

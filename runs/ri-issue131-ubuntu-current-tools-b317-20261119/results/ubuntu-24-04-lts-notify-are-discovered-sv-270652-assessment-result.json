@@ -1,0 +1,101 @@
+{
+  "assessment_result": {
+    "assessment": {
+      "digest": "c1965134203b0342b648556ba5c60797f43738b4030038ceb21a4b0c9ece597f",
+      "id": "ubuntu-24-04-lts-notify-are-discovered-sv-270652-assessment",
+      "version": 1
+    },
+    "class": "compliance",
+    "dependent_assessments": [],
+    "diagnostics": [
+      {
+        "code": "collection_incomplete",
+        "message": "collection incomplete: acquisition not complete: unsupported"
+      }
+    ],
+    "evidence_complete": false,
+    "evidence_retention": {
+      "maximum_items": 256,
+      "scope": "per_test",
+      "source": "scanner_configuration"
+    },
+    "execution_id": "assessment-2d0ecc9cd23258a8a35fea3e70363e3e",
+    "expression_execution": {
+      "assessment": "ubuntu-24-04-lts-notify-are-discovered-sv-270652-assessment",
+      "diagnostics": [],
+      "executed_tests": [
+        "etc-default-aide-silentreports-no-test"
+      ],
+      "invocation_ref": "assessment-2d0ecc9cd23258a8a35fea3e70363e3e",
+      "outcome": "unknown",
+      "trace": [
+        {
+          "assessment": "ubuntu-24-04-lts-notify-are-discovered-sv-270652-assessment",
+          "kind": "test",
+          "outcome": "unknown",
+          "owner_invocation_ref": "assessment-2d0ecc9cd23258a8a35fea3e70363e3e",
+          "path": "/tests/etc-default-aide-silentreports-no-test",
+          "reused": false,
+          "test": "etc-default-aide-silentreports-no-test"
+        }
+      ]
+    },
+    "field_uses": [],
+    "logical_complete": false,
+    "mode": "automated",
+    "objects": [
+      {
+        "capability": "independent.textfilecontent",
+        "diagnostics": [
+          {
+            "code": "collection_incomplete",
+            "message": "collection incomplete: acquisition not complete: unsupported"
+          }
+        ],
+        "id": "assessment-2d0ecc9cd23258a8a35fea3e70363e3e/object/etc-default-aide-silentreports-no-test",
+        "item_refs": [],
+        "logical_complete": false,
+        "object_title": null,
+        "population_complete": false,
+        "source_execution_ref": "assessment-2d0ecc9cd23258a8a35fea3e70363e3e",
+        "status": "not_collected",
+        "stop_reason": "collection_incomplete"
+      }
+    ],
+    "outcome": "unknown",
+    "population_complete": false,
+    "purpose": "assessment",
+    "result_schema_version": "0.4.1",
+    "summary": "Assessment evidence was incomplete or inconclusive.",
+    "target_ref": "ubuntu-24.04-b317",
+    "tests": [
+      {
+        "evidence_refs": [],
+        "id": "etc-default-aide-silentreports-no-test",
+        "invocation_ref": "assessment-2d0ecc9cd23258a8a35fea3e70363e3e",
+        "item_refs": [],
+        "item_summary": {
+          "actual_mismatches": "unknown",
+          "evaluated_items": 0,
+          "observed_mismatches": 0,
+          "returned_items": 0,
+          "truncated_evidence": false
+        },
+        "items_found": "none",
+        "items_observed": 0,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/etc-default-aide-silentreports-no-test/object"
+        ],
+        "outcome": "unknown",
+        "per_item_results": [],
+        "reason": "collection incomplete: acquisition not complete: unsupported",
+        "require_refs": [
+          "/tests/etc-default-aide-silentreports-no-test/require"
+        ],
+        "test_title": "/etc/default/aide: SILENTREPORTS=no"
+      }
+    ],
+    "variables": []
+  }
+}

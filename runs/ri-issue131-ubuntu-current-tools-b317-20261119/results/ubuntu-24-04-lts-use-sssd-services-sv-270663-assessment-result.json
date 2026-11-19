@@ -1,0 +1,320 @@
+{
+  "assessment_result": {
+    "assessment": {
+      "digest": "68bf187c4aba52ce6b818dfdf6e477aa8709d8a0346826714328e8403091dd4f",
+      "id": "ubuntu-24-04-lts-use-sssd-services-sv-270663-assessment",
+      "version": 1
+    },
+    "class": "compliance",
+    "dependent_assessments": [],
+    "diagnostics": [],
+    "evidence_complete": true,
+    "evidence_retention": {
+      "maximum_items": 256,
+      "scope": "per_test",
+      "source": "scanner_configuration"
+    },
+    "execution_id": "assessment-96a4c17a221ce72cb2063639938a0d99",
+    "expression_execution": {
+      "assessment": "ubuntu-24-04-lts-use-sssd-services-sv-270663-assessment",
+      "diagnostics": [],
+      "executed_tests": [
+        "sssd-service-is-active-test",
+        "sssd-service-is-enabled-test"
+      ],
+      "invocation_ref": "assessment-96a4c17a221ce72cb2063639938a0d99",
+      "outcome": "true",
+      "trace": [
+        {
+          "assessment": "ubuntu-24-04-lts-use-sssd-services-sv-270663-assessment",
+          "kind": "test",
+          "outcome": "true",
+          "owner_invocation_ref": "assessment-96a4c17a221ce72cb2063639938a0d99",
+          "path": "/tests/sssd-service-is-active-test",
+          "reused": false,
+          "test": "sssd-service-is-active-test"
+        },
+        {
+          "assessment": "ubuntu-24-04-lts-use-sssd-services-sv-270663-assessment",
+          "kind": "test",
+          "outcome": "true",
+          "owner_invocation_ref": "assessment-96a4c17a221ce72cb2063639938a0d99",
+          "path": "/tests/sssd-service-is-enabled-test",
+          "reused": false,
+          "test": "sssd-service-is-enabled-test"
+        },
+        {
+          "kind": "logical",
+          "outcome": "true",
+          "owner_invocation_ref": "assessment-96a4c17a221ce72cb2063639938a0d99",
+          "path": "/evaluate",
+          "reason": "operator:and"
+        }
+      ]
+    },
+    "field_uses": [],
+    "logical_complete": true,
+    "mode": "automated",
+    "objects": [
+      {
+        "capability": "linux.systemdunitproperty",
+        "diagnostics": [],
+        "id": "assessment-96a4c17a221ce72cb2063639938a0d99/object/sssd-service-is-active-test",
+        "item_refs": [
+          "item-175c827752dd9caa6ddca5e7f551aac3"
+        ],
+        "logical_complete": true,
+        "object_title": null,
+        "population_complete": true,
+        "source_execution_ref": "assessment-96a4c17a221ce72cb2063639938a0d99",
+        "status": "complete",
+        "stop_reason": null
+      },
+      {
+        "capability": "linux.systemdunitproperty",
+        "diagnostics": [],
+        "id": "assessment-96a4c17a221ce72cb2063639938a0d99/object/sssd-service-is-enabled-test",
+        "item_refs": [
+          "item-07cf998b39ef570a52d390d806a0964e"
+        ],
+        "logical_complete": true,
+        "object_title": null,
+        "population_complete": true,
+        "source_execution_ref": "assessment-96a4c17a221ce72cb2063639938a0d99",
+        "status": "complete",
+        "stop_reason": null
+      }
+    ],
+    "outcome": "true",
+    "population_complete": true,
+    "purpose": "assessment",
+    "result_schema_version": "0.4.1",
+    "summary": "Assessment evaluated true with complete evidence.",
+    "target_ref": "ubuntu-24.04-b317",
+    "tests": [
+      {
+        "evidence_refs": [],
+        "id": "sssd-service-is-active-test",
+        "invocation_ref": "assessment-96a4c17a221ce72cb2063639938a0d99",
+        "item_refs": [
+          "item-175c827752dd9caa6ddca5e7f551aac3"
+        ],
+        "item_summary": {
+          "actual_mismatches": 0,
+          "evaluated_items": 1,
+          "observed_mismatches": 0,
+          "returned_items": 1,
+          "truncated_evidence": false
+        },
+        "items_found": "one_or_more",
+        "items_observed": 1,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/sssd-service-is-active-test/object"
+        ],
+        "outcome": "true",
+        "per_item_results": [
+          {
+            "evidence_refs": [],
+            "item": {
+              "capability": "linux.systemdunitproperty",
+              "fields": {
+                "property": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "ActiveState"
+                },
+                "unit": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "sssd.service"
+                },
+                "value": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "active"
+                }
+              },
+              "id": "item-175c827752dd9caa6ddca5e7f551aac3",
+              "provenance": {
+                "collector": "linux.systemdunitproperty.systemctl-show.v1",
+                "observed_at": "2026-11-19T14:24:34.878976406Z",
+                "scope": "systemd-system-manager",
+                "target_ref": "ubuntu-24.04-b317"
+              },
+              "status": "exists"
+            },
+            "item_ref": "item-175c827752dd9caa6ddca5e7f551aac3",
+            "outcome": "true",
+            "reason": "all_required_fields_equal",
+            "require_results": [
+              {
+                "field_results": [],
+                "observation_complete": true,
+                "operator": "and",
+                "outcome": "true",
+                "reason": "require_and_satisfied",
+                "require_ref": "/tests/sssd-service-is-active-test/require",
+                "require_results": [
+                  {
+                    "field_results": [
+                      {
+                        "datatype": "string",
+                        "evidence_refs": [],
+                        "expected_values": [
+                          {
+                            "datatype": "string",
+                            "status": "exists",
+                            "value": "active"
+                          }
+                        ],
+                        "field": "value",
+                        "observation_complete": true,
+                        "observed_values": [
+                          {
+                            "datatype": "string",
+                            "status": "exists",
+                            "value": "active"
+                          }
+                        ],
+                        "operation": "equals",
+                        "outcome": "true",
+                        "reason": "all_required_fields_equal",
+                        "require_ref": "/tests/sssd-service-is-active-test/require/and/0",
+                        "requirement_ref": "/tests/sssd-service-is-active-test/require/and/0/fields/value",
+                        "values_found": "one_or_more",
+                        "values_matching": "every"
+                      }
+                    ],
+                    "observation_complete": true,
+                    "outcome": "true",
+                    "reason": "fields_satisfied",
+                    "require_ref": "/tests/sssd-service-is-active-test/require/and/0",
+                    "require_results": []
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "reason": "all_required_fields_equal",
+        "require_refs": [
+          "/tests/sssd-service-is-active-test/require"
+        ],
+        "test_title": "sssd.service is active"
+      },
+      {
+        "evidence_refs": [],
+        "id": "sssd-service-is-enabled-test",
+        "invocation_ref": "assessment-96a4c17a221ce72cb2063639938a0d99",
+        "item_refs": [
+          "item-07cf998b39ef570a52d390d806a0964e"
+        ],
+        "item_summary": {
+          "actual_mismatches": 0,
+          "evaluated_items": 1,
+          "observed_mismatches": 0,
+          "returned_items": 1,
+          "truncated_evidence": false
+        },
+        "items_found": "one_or_more",
+        "items_observed": 1,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/sssd-service-is-enabled-test/object"
+        ],
+        "outcome": "true",
+        "per_item_results": [
+          {
+            "evidence_refs": [],
+            "item": {
+              "capability": "linux.systemdunitproperty",
+              "fields": {
+                "property": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "UnitFileState"
+                },
+                "unit": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "sssd.service"
+                },
+                "value": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "enabled"
+                }
+              },
+              "id": "item-07cf998b39ef570a52d390d806a0964e",
+              "provenance": {
+                "collector": "linux.systemdunitproperty.systemctl-show.v1",
+                "observed_at": "2026-11-19T14:24:34.87840222Z",
+                "scope": "systemd-system-manager",
+                "target_ref": "ubuntu-24.04-b317"
+              },
+              "status": "exists"
+            },
+            "item_ref": "item-07cf998b39ef570a52d390d806a0964e",
+            "outcome": "true",
+            "reason": "all_required_fields_equal",
+            "require_results": [
+              {
+                "field_results": [],
+                "observation_complete": true,
+                "operator": "and",
+                "outcome": "true",
+                "reason": "require_and_satisfied",
+                "require_ref": "/tests/sssd-service-is-enabled-test/require",
+                "require_results": [
+                  {
+                    "field_results": [
+                      {
+                        "datatype": "string",
+                        "evidence_refs": [],
+                        "expected_values": [
+                          {
+                            "datatype": "string",
+                            "status": "exists",
+                            "value": "enabled"
+                          }
+                        ],
+                        "field": "value",
+                        "observation_complete": true,
+                        "observed_values": [
+                          {
+                            "datatype": "string",
+                            "status": "exists",
+                            "value": "enabled"
+                          }
+                        ],
+                        "operation": "equals",
+                        "outcome": "true",
+                        "reason": "all_required_fields_equal",
+                        "require_ref": "/tests/sssd-service-is-enabled-test/require/and/0",
+                        "requirement_ref": "/tests/sssd-service-is-enabled-test/require/and/0/fields/value",
+                        "values_found": "one_or_more",
+                        "values_matching": "every"
+                      }
+                    ],
+                    "observation_complete": true,
+                    "outcome": "true",
+                    "reason": "fields_satisfied",
+                    "require_ref": "/tests/sssd-service-is-enabled-test/require/and/0",
+                    "require_results": []
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "reason": "all_required_fields_equal",
+        "require_refs": [
+          "/tests/sssd-service-is-enabled-test/require"
+        ],
+        "test_title": "sssd.service is enabled"
+      }
+    ],
+    "variables": []
+  }
+}

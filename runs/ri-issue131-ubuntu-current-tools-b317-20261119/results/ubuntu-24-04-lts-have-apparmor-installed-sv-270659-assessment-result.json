@@ -1,0 +1,154 @@
+{
+  "assessment_result": {
+    "assessment": {
+      "digest": "0167b7be8c0ca73d0db336f5c31ed0c359132893b59b91b926554b4099073511",
+      "id": "ubuntu-24-04-lts-have-apparmor-installed-sv-270659-assessment",
+      "version": 1
+    },
+    "class": "compliance",
+    "dependent_assessments": [],
+    "diagnostics": [],
+    "evidence_complete": true,
+    "evidence_retention": {
+      "maximum_items": 256,
+      "scope": "per_test",
+      "source": "scanner_configuration"
+    },
+    "execution_id": "assessment-a297582fc21f18895c2ab4582de2bc1a",
+    "expression_execution": {
+      "assessment": "ubuntu-24-04-lts-have-apparmor-installed-sv-270659-assessment",
+      "diagnostics": [],
+      "executed_tests": [
+        "package-apparmor-is-installed-test"
+      ],
+      "invocation_ref": "assessment-a297582fc21f18895c2ab4582de2bc1a",
+      "outcome": "true",
+      "trace": [
+        {
+          "assessment": "ubuntu-24-04-lts-have-apparmor-installed-sv-270659-assessment",
+          "kind": "test",
+          "outcome": "true",
+          "owner_invocation_ref": "assessment-a297582fc21f18895c2ab4582de2bc1a",
+          "path": "/tests/package-apparmor-is-installed-test",
+          "reused": false,
+          "test": "package-apparmor-is-installed-test"
+        }
+      ]
+    },
+    "field_uses": [],
+    "logical_complete": true,
+    "mode": "automated",
+    "objects": [
+      {
+        "capability": "linux.dpkginfo",
+        "diagnostics": [],
+        "id": "assessment-a297582fc21f18895c2ab4582de2bc1a/object/package-apparmor-is-installed-test",
+        "item_refs": [
+          "item-e2b65f5dc447ff6f3ec9e489725d3973"
+        ],
+        "logical_complete": true,
+        "object_title": null,
+        "population_complete": true,
+        "source_execution_ref": "assessment-a297582fc21f18895c2ab4582de2bc1a",
+        "status": "complete",
+        "stop_reason": null
+      }
+    ],
+    "outcome": "true",
+    "population_complete": true,
+    "purpose": "assessment",
+    "result_schema_version": "0.4.1",
+    "summary": "Assessment evaluated true with complete evidence.",
+    "target_ref": "ubuntu-24.04-b317",
+    "tests": [
+      {
+        "evidence_refs": [],
+        "id": "package-apparmor-is-installed-test",
+        "invocation_ref": "assessment-a297582fc21f18895c2ab4582de2bc1a",
+        "item_refs": [
+          "item-e2b65f5dc447ff6f3ec9e489725d3973"
+        ],
+        "item_summary": {
+          "actual_mismatches": 0,
+          "evaluated_items": 1,
+          "observed_mismatches": 0,
+          "returned_items": 1,
+          "truncated_evidence": false
+        },
+        "items_found": "one_or_more",
+        "items_observed": 1,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/package-apparmor-is-installed-test/object"
+        ],
+        "outcome": "true",
+        "per_item_results": [
+          {
+            "evidence_refs": [],
+            "item": {
+              "capability": "linux.dpkginfo",
+              "fields": {
+                "arch": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "amd64"
+                },
+                "epoch": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "0"
+                },
+                "evr": {
+                  "datatype": "debian_evr",
+                  "status": "exists",
+                  "value": "4.0.1really4.0.1-0ubuntu0.24.04.9"
+                },
+                "name": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "apparmor"
+                },
+                "release": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "0ubuntu0.24.04.9"
+                },
+                "version": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "4.0.1really4.0.1"
+                }
+              },
+              "id": "item-e2b65f5dc447ff6f3ec9e489725d3973",
+              "provenance": {
+                "collector": "linux.dpkginfo.fixed-query.v1",
+                "observed_at": "2026-11-19T14:24:34.744452925Z",
+                "scope": "local-dpkg-database",
+                "target_ref": "ubuntu-24.04-b317"
+              },
+              "status": "exists"
+            },
+            "item_ref": "item-e2b65f5dc447ff6f3ec9e489725d3973",
+            "outcome": "true",
+            "reason": "item_existence_satisfied",
+            "require_results": [
+              {
+                "field_results": [],
+                "observation_complete": true,
+                "outcome": "true",
+                "reason": "item_existence_satisfied",
+                "require_ref": "/tests/package-apparmor-is-installed-test/require"
+              }
+            ]
+          }
+        ],
+        "reason": "item_existence_satisfied",
+        "require_refs": [
+          "/tests/package-apparmor-is-installed-test/require"
+        ],
+        "test_title": "package apparmor is installed"
+      }
+    ],
+    "variables": []
+  }
+}

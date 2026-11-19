@@ -1,0 +1,154 @@
+{
+  "assessment_result": {
+    "assessment": {
+      "digest": "9f8b6fc2ae2083f6ee93c74796b6ebae6359f30fb342c7503c6561608e58d56d",
+      "id": "ubuntu-24-04-lts-have-package-installed-sv-270661-assessment",
+      "version": 1
+    },
+    "class": "compliance",
+    "dependent_assessments": [],
+    "diagnostics": [],
+    "evidence_complete": true,
+    "evidence_retention": {
+      "maximum_items": 256,
+      "scope": "per_test",
+      "source": "scanner_configuration"
+    },
+    "execution_id": "assessment-7fd8b5ce14898c5af3f26b7dc65e1a2b",
+    "expression_execution": {
+      "assessment": "ubuntu-24-04-lts-have-package-installed-sv-270661-assessment",
+      "diagnostics": [],
+      "executed_tests": [
+        "package-libpam-pwquality-is-installed-test"
+      ],
+      "invocation_ref": "assessment-7fd8b5ce14898c5af3f26b7dc65e1a2b",
+      "outcome": "true",
+      "trace": [
+        {
+          "assessment": "ubuntu-24-04-lts-have-package-installed-sv-270661-assessment",
+          "kind": "test",
+          "outcome": "true",
+          "owner_invocation_ref": "assessment-7fd8b5ce14898c5af3f26b7dc65e1a2b",
+          "path": "/tests/package-libpam-pwquality-is-installed-test",
+          "reused": false,
+          "test": "package-libpam-pwquality-is-installed-test"
+        }
+      ]
+    },
+    "field_uses": [],
+    "logical_complete": true,
+    "mode": "automated",
+    "objects": [
+      {
+        "capability": "linux.dpkginfo",
+        "diagnostics": [],
+        "id": "assessment-7fd8b5ce14898c5af3f26b7dc65e1a2b/object/package-libpam-pwquality-is-installed-test",
+        "item_refs": [
+          "item-5e660d4a93e452d0827d9ac44706af88"
+        ],
+        "logical_complete": true,
+        "object_title": null,
+        "population_complete": true,
+        "source_execution_ref": "assessment-7fd8b5ce14898c5af3f26b7dc65e1a2b",
+        "status": "complete",
+        "stop_reason": null
+      }
+    ],
+    "outcome": "true",
+    "population_complete": true,
+    "purpose": "assessment",
+    "result_schema_version": "0.4.1",
+    "summary": "Assessment evaluated true with complete evidence.",
+    "target_ref": "ubuntu-24.04-b317",
+    "tests": [
+      {
+        "evidence_refs": [],
+        "id": "package-libpam-pwquality-is-installed-test",
+        "invocation_ref": "assessment-7fd8b5ce14898c5af3f26b7dc65e1a2b",
+        "item_refs": [
+          "item-5e660d4a93e452d0827d9ac44706af88"
+        ],
+        "item_summary": {
+          "actual_mismatches": 0,
+          "evaluated_items": 1,
+          "observed_mismatches": 0,
+          "returned_items": 1,
+          "truncated_evidence": false
+        },
+        "items_found": "one_or_more",
+        "items_observed": 1,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/package-libpam-pwquality-is-installed-test/object"
+        ],
+        "outcome": "true",
+        "per_item_results": [
+          {
+            "evidence_refs": [],
+            "item": {
+              "capability": "linux.dpkginfo",
+              "fields": {
+                "arch": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "amd64"
+                },
+                "epoch": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "0"
+                },
+                "evr": {
+                  "datatype": "debian_evr",
+                  "status": "exists",
+                  "value": "1.4.5-3build1"
+                },
+                "name": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "libpam-pwquality"
+                },
+                "release": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "3build1"
+                },
+                "version": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "1.4.5"
+                }
+              },
+              "id": "item-5e660d4a93e452d0827d9ac44706af88",
+              "provenance": {
+                "collector": "linux.dpkginfo.fixed-query.v1",
+                "observed_at": "2026-11-19T14:24:34.774869375Z",
+                "scope": "local-dpkg-database",
+                "target_ref": "ubuntu-24.04-b317"
+              },
+              "status": "exists"
+            },
+            "item_ref": "item-5e660d4a93e452d0827d9ac44706af88",
+            "outcome": "true",
+            "reason": "item_existence_satisfied",
+            "require_results": [
+              {
+                "field_results": [],
+                "observation_complete": true,
+                "outcome": "true",
+                "reason": "item_existence_satisfied",
+                "require_ref": "/tests/package-libpam-pwquality-is-installed-test/require"
+              }
+            ]
+          }
+        ],
+        "reason": "item_existence_satisfied",
+        "require_refs": [
+          "/tests/package-libpam-pwquality-is-installed-test/require"
+        ],
+        "test_title": "package libpam-pwquality is installed"
+      }
+    ],
+    "variables": []
+  }
+}

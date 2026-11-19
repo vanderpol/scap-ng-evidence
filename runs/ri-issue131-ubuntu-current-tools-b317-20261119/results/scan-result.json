@@ -1,0 +1,59 @@
+{
+  "scan_result": {
+    "assessment_result_refs": [
+      "assessment-2bb6d50fbebf8eaee9a2f2fd5780c94f",
+      "assessment-a4344d42b73631875ceec6a1a0cbffc8",
+      "assessment-9d8a584a7647bdce57ac6e599916aa7e",
+      "assessment-204dbe959d02366eb78aeaf8671e6909",
+      "assessment-a297582fc21f18895c2ab4582de2bc1a",
+      "assessment-75b9b43589d10663621654ede85aed82",
+      "assessment-7fd8b5ce14898c5af3f26b7dc65e1a2b",
+      "assessment-6efb7cd9f2caccda6ea4f2d966cd8f94",
+      "assessment-3cdc0c72cef847bdc5fe16229a7d0aea",
+      "assessment-df9fa864488a8f669a0b9641bd132c19",
+      "assessment-543945f8480fed30d719d873cec771e4",
+      "assessment-19ca1845f1e9a6a8da27724524a5519e",
+      "assessment-40c87ad3c984016b6c0b271d06565c5f",
+      "assessment-24db95f7adf7dadaf627c7e1b5af0010",
+      "assessment-388b1e9feb44afb486e088f185976f14",
+      "assessment-2d0ecc9cd23258a8a35fea3e70363e3e",
+      "assessment-d492a2f872410bbbfb7aceb5ce35e932",
+      "assessment-2a23d1dafa371f82b9431d40a9a6b996",
+      "assessment-3081eb97b3d5ef3ac2fcac2c5884702a",
+      "assessment-17dfe6db6bde911df11c52063a0e96b8",
+      "assessment-96a4c17a221ce72cb2063639938a0d99"
+    ],
+    "benchmark_results": [
+      {
+        "benchmark_id": "direct-slice",
+        "benchmark_result_ref": "run-74c208edb6c33e5f2741354ce2664243",
+        "benchmark_version": "001.005.007",
+        "profile_id": "",
+        "summary": {
+          "error": 0,
+          "fail": 1,
+          "not_applicable": 0,
+          "not_evaluated": 0,
+          "pass": 17,
+          "total": 20,
+          "unknown": 2
+        },
+        "tailoring_id": null,
+        "target_ref": "ubuntu-24.04-b317"
+      }
+    ],
+    "completed_at": "2026-11-19T14:24:34.896167184Z",
+    "result_schema_version": "0.4.1",
+    "run_id": "run-74c208edb6c33e5f2741354ce2664243",
+    "scanner": {
+      "name": "scap-ng-ri",
+      "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329"
+    },
+    "started_at": "2026-11-19T14:24:34.701283668Z",
+    "targets": [
+      {
+        "id": "ubuntu-24.04-b317"
+      }
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "assessment_result": {
+    "assessment": {
+      "digest": "88d411c79182a1a1ca7de7481167d26d8f3e03c2735c760545b7952c69b096b5",
+      "id": "ubuntu-24-04-lts-use-file-functions-sv-270649-assessment",
+      "version": 1
+    },
+    "class": "compliance",
+    "dependent_assessments": [],
+    "diagnostics": [],
+    "evidence_complete": true,
+    "evidence_retention": {
+      "maximum_items": 256,
+      "scope": "per_test",
+      "source": "scanner_configuration"
+    },
+    "execution_id": "assessment-17dfe6db6bde911df11c52063a0e96b8",
+    "expression_execution": {
+      "assessment": "ubuntu-24-04-lts-use-file-functions-sv-270649-assessment",
+      "diagnostics": [],
+      "executed_tests": [
+        "package-aide-is-installed-test"
+      ],
+      "invocation_ref": "assessment-17dfe6db6bde911df11c52063a0e96b8",
+      "outcome": "false",
+      "trace": [
+        {
+          "assessment": "ubuntu-24-04-lts-use-file-functions-sv-270649-assessment",
+          "kind": "test",
+          "outcome": "false",
+          "owner_invocation_ref": "assessment-17dfe6db6bde911df11c52063a0e96b8",
+          "path": "/tests/package-aide-is-installed-test",
+          "reused": false,
+          "test": "package-aide-is-installed-test"
+        }
+      ]
+    },
+    "field_uses": [],
+    "logical_complete": true,
+    "mode": "automated",
+    "objects": [
+      {
+        "capability": "linux.dpkginfo",
+        "diagnostics": [],
+        "id": "assessment-17dfe6db6bde911df11c52063a0e96b8/object/package-aide-is-installed-test",
+        "item_refs": [],
+        "logical_complete": true,
+        "object_title": null,
+        "population_complete": true,
+        "source_execution_ref": "assessment-17dfe6db6bde911df11c52063a0e96b8",
+        "status": "complete",
+        "stop_reason": null
+      }
+    ],
+    "outcome": "false",
+    "population_complete": true,
+    "purpose": "assessment",
+    "result_schema_version": "0.4.1",
+    "summary": "Assessment evaluated false.",
+    "target_ref": "ubuntu-24.04-b317",
+    "tests": [
+      {
+        "evidence_refs": [],
+        "id": "package-aide-is-installed-test",
+        "invocation_ref": "assessment-17dfe6db6bde911df11c52063a0e96b8",
+        "item_refs": [],
+        "item_summary": {
+          "actual_mismatches": 0,
+          "evaluated_items": 0,
+          "observed_mismatches": 0,
+          "returned_items": 0,
+          "truncated_evidence": false
+        },
+        "items_found": "none",
+        "items_observed": 0,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/package-aide-is-installed-test/object"
+        ],
+        "outcome": "false",
+        "per_item_results": [],
+        "reason": "item_existence_cardinality_false",
+        "require_refs": [
+          "/tests/package-aide-is-installed-test/require"
+        ],
+        "test_title": "package aide is installed"
+      }
+    ],
+    "variables": []
+  }
+}

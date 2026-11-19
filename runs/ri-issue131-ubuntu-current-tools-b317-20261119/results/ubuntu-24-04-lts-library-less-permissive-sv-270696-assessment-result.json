@@ -1,0 +1,165 @@
+{
+  "assessment_result": {
+    "assessment": {
+      "digest": "4778df8538e301615196717a7d88cb8565bf254597eb67dc6e2bcc3dd537eb0b",
+      "id": "ubuntu-24-04-lts-library-less-permissive-sv-270696-assessment",
+      "version": 1
+    },
+    "class": "compliance",
+    "dependent_assessments": [],
+    "diagnostics": [
+      {
+        "code": "collection_incomplete",
+        "message": "collection incomplete: acquisition not complete: unsupported"
+      },
+      {
+        "code": "collection_incomplete",
+        "message": "collection incomplete: acquisition not complete: unsupported"
+      }
+    ],
+    "evidence_complete": false,
+    "evidence_retention": {
+      "maximum_items": 256,
+      "scope": "per_test",
+      "source": "scanner_configuration"
+    },
+    "execution_id": "assessment-df9fa864488a8f669a0b9641bd132c19",
+    "expression_execution": {
+      "assessment": "ubuntu-24-04-lts-library-less-permissive-sv-270696-assessment",
+      "diagnostics": [],
+      "executed_tests": [
+        "system-library-files-have-permissive-gwrite-should-false-test",
+        "system-library-files-have-permissive-owrite-should-false-test"
+      ],
+      "invocation_ref": "assessment-df9fa864488a8f669a0b9641bd132c19",
+      "outcome": "unknown",
+      "trace": [
+        {
+          "assessment": "ubuntu-24-04-lts-library-less-permissive-sv-270696-assessment",
+          "kind": "test",
+          "outcome": "unknown",
+          "owner_invocation_ref": "assessment-df9fa864488a8f669a0b9641bd132c19",
+          "path": "/tests/system-library-files-have-permissive-gwrite-should-false-test",
+          "reused": false,
+          "test": "system-library-files-have-permissive-gwrite-should-false-test"
+        },
+        {
+          "assessment": "ubuntu-24-04-lts-library-less-permissive-sv-270696-assessment",
+          "kind": "test",
+          "outcome": "unknown",
+          "owner_invocation_ref": "assessment-df9fa864488a8f669a0b9641bd132c19",
+          "path": "/tests/system-library-files-have-permissive-owrite-should-false-test",
+          "reused": false,
+          "test": "system-library-files-have-permissive-owrite-should-false-test"
+        },
+        {
+          "kind": "logical",
+          "outcome": "unknown",
+          "owner_invocation_ref": "assessment-df9fa864488a8f669a0b9641bd132c19",
+          "path": "/evaluate",
+          "reason": "operator:and"
+        }
+      ]
+    },
+    "field_uses": [],
+    "logical_complete": false,
+    "mode": "automated",
+    "objects": [
+      {
+        "capability": "unix.file",
+        "diagnostics": [
+          {
+            "code": "collection_incomplete",
+            "message": "collection incomplete: acquisition not complete: unsupported"
+          }
+        ],
+        "id": "assessment-df9fa864488a8f669a0b9641bd132c19/object/system-library-files-have-permissive-gwrite-should-false-test",
+        "item_refs": [],
+        "logical_complete": false,
+        "object_title": null,
+        "population_complete": false,
+        "source_execution_ref": "assessment-df9fa864488a8f669a0b9641bd132c19",
+        "status": "not_collected",
+        "stop_reason": "collection_incomplete"
+      },
+      {
+        "capability": "unix.file",
+        "diagnostics": [
+          {
+            "code": "collection_incomplete",
+            "message": "collection incomplete: acquisition not complete: unsupported"
+          }
+        ],
+        "id": "assessment-df9fa864488a8f669a0b9641bd132c19/object/system-library-files-have-permissive-owrite-should-false-test",
+        "item_refs": [],
+        "logical_complete": false,
+        "object_title": null,
+        "population_complete": false,
+        "source_execution_ref": "assessment-df9fa864488a8f669a0b9641bd132c19",
+        "status": "not_collected",
+        "stop_reason": "collection_incomplete"
+      }
+    ],
+    "outcome": "unknown",
+    "population_complete": false,
+    "purpose": "assessment",
+    "result_schema_version": "0.4.1",
+    "summary": "Assessment evidence was incomplete or inconclusive.",
+    "target_ref": "ubuntu-24.04-b317",
+    "tests": [
+      {
+        "evidence_refs": [],
+        "id": "system-library-files-have-permissive-gwrite-should-false-test",
+        "invocation_ref": "assessment-df9fa864488a8f669a0b9641bd132c19",
+        "item_refs": [],
+        "item_summary": {
+          "actual_mismatches": "unknown",
+          "evaluated_items": 0,
+          "observed_mismatches": 0,
+          "returned_items": 0,
+          "truncated_evidence": false
+        },
+        "items_found": "none",
+        "items_observed": 0,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/system-library-files-have-permissive-gwrite-should-false-test/object"
+        ],
+        "outcome": "unknown",
+        "per_item_results": [],
+        "reason": "collection incomplete: acquisition not complete: unsupported",
+        "require_refs": [
+          "/tests/system-library-files-have-permissive-gwrite-should-false-test/require"
+        ],
+        "test_title": "System Library files have mode 755 or less permissive (gwrite should be = false)"
+      },
+      {
+        "evidence_refs": [],
+        "id": "system-library-files-have-permissive-owrite-should-false-test",
+        "invocation_ref": "assessment-df9fa864488a8f669a0b9641bd132c19",
+        "item_refs": [],
+        "item_summary": {
+          "actual_mismatches": "unknown",
+          "evaluated_items": 0,
+          "observed_mismatches": 0,
+          "returned_items": 0,
+          "truncated_evidence": false
+        },
+        "items_found": "none",
+        "items_observed": 0,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/system-library-files-have-permissive-owrite-should-false-test/object"
+        ],
+        "outcome": "unknown",
+        "per_item_results": [],
+        "reason": "collection incomplete: acquisition not complete: unsupported",
+        "require_refs": [
+          "/tests/system-library-files-have-permissive-owrite-should-false-test/require"
+        ],
+        "test_title": "System Library files have mode 755 or less permissive (owrite should be = false)"
+      }
+    ],
+    "variables": []
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "assessment_result": {
+    "assessment": {
+      "digest": "57f64b79089b01b2b60369923094707b47ee1e5c85d3c8026f0c79a684934d21",
+      "id": "ubuntu-24-04-lts-produce-in-near-real-time-sv-270657-assessment",
+      "version": 1
+    },
+    "class": "compliance",
+    "dependent_assessments": [],
+    "diagnostics": [],
+    "evidence_complete": true,
+    "evidence_retention": {
+      "maximum_items": 256,
+      "scope": "per_test",
+      "source": "scanner_configuration"
+    },
+    "execution_id": "assessment-2a23d1dafa371f82b9431d40a9a6b996",
+    "expression_execution": {
+      "assessment": "ubuntu-24-04-lts-produce-in-near-real-time-sv-270657-assessment",
+      "diagnostics": [],
+      "executed_tests": [
+        "auditd-service-is-active-test",
+        "auditd-service-is-running-test"
+      ],
+      "invocation_ref": "assessment-2a23d1dafa371f82b9431d40a9a6b996",
+      "outcome": "true",
+      "trace": [
+        {
+          "assessment": "ubuntu-24-04-lts-produce-in-near-real-time-sv-270657-assessment",
+          "kind": "test",
+          "outcome": "true",
+          "owner_invocation_ref": "assessment-2a23d1dafa371f82b9431d40a9a6b996",
+          "path": "/tests/auditd-service-is-active-test",
+          "reused": false,
+          "test": "auditd-service-is-active-test"
+        },
+        {
+          "assessment": "ubuntu-24-04-lts-produce-in-near-real-time-sv-270657-assessment",
+          "kind": "test",
+          "outcome": "true",
+          "owner_invocation_ref": "assessment-2a23d1dafa371f82b9431d40a9a6b996",
+          "path": "/tests/auditd-service-is-running-test",
+          "reused": false,
+          "test": "auditd-service-is-running-test"
+        },
+        {
+          "kind": "logical",
+          "outcome": "true",
+          "owner_invocation_ref": "assessment-2a23d1dafa371f82b9431d40a9a6b996",
+          "path": "/evaluate",
+          "reason": "operator:and"
+        }
+      ]
+    },
+    "field_uses": [],
+    "logical_complete": true,
+    "mode": "automated",
+    "objects": [
+      {
+        "capability": "linux.systemdunitproperty",
+        "diagnostics": [],
+        "id": "assessment-2a23d1dafa371f82b9431d40a9a6b996/object/auditd-service-is-active-test",
+        "item_refs": [
+          "item-389e73253d73ff25c727661aa6795011"
+        ],
+        "logical_complete": true,
+        "object_title": null,
+        "population_complete": true,
+        "source_execution_ref": "assessment-2a23d1dafa371f82b9431d40a9a6b996",
+        "status": "complete",
+        "stop_reason": null
+      },
+      {
+        "capability": "linux.systemdunitproperty",
+        "diagnostics": [],
+        "id": "assessment-2a23d1dafa371f82b9431d40a9a6b996/object/auditd-service-is-running-test",
+        "item_refs": [
+          "item-3957580b523afd65ac9b84795f9a9495"
+        ],
+        "logical_complete": true,
+        "object_title": null,
+        "population_complete": true,
+        "source_execution_ref": "assessment-2a23d1dafa371f82b9431d40a9a6b996",
+        "status": "complete",
+        "stop_reason": null
+      }
+    ],
+    "outcome": "true",
+    "population_complete": true,
+    "purpose": "assessment",
+    "result_schema_version": "0.4.1",
+    "summary": "Assessment evaluated true with complete evidence.",
+    "target_ref": "ubuntu-24.04-b317",
+    "tests": [
+      {
+        "evidence_refs": [],
+        "id": "auditd-service-is-active-test",
+        "invocation_ref": "assessment-2a23d1dafa371f82b9431d40a9a6b996",
+        "item_refs": [
+          "item-389e73253d73ff25c727661aa6795011"
+        ],
+        "item_summary": {
+          "actual_mismatches": 0,
+          "evaluated_items": 1,
+          "observed_mismatches": 0,
+          "returned_items": 1,
+          "truncated_evidence": false
+        },
+        "items_found": "one_or_more",
+        "items_observed": 1,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/auditd-service-is-active-test/object"
+        ],
+        "outcome": "true",
+        "per_item_results": [
+          {
+            "evidence_refs": [],
+            "item": {
+              "capability": "linux.systemdunitproperty",
+              "fields": {
+                "property": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "ActiveState"
+                },
+                "unit": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "auditd.service"
+                },
+                "value": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "active"
+                }
+              },
+              "id": "item-389e73253d73ff25c727661aa6795011",
+              "provenance": {
+                "collector": "linux.systemdunitproperty.systemctl-show.v1",
+                "observed_at": "2026-11-19T14:24:34.856536654Z",
+                "scope": "systemd-system-manager",
+                "target_ref": "ubuntu-24.04-b317"
+              },
+              "status": "exists"
+            },
+            "item_ref": "item-389e73253d73ff25c727661aa6795011",
+            "outcome": "true",
+            "reason": "all_required_fields_equal",
+            "require_results": [
+              {
+                "field_results": [],
+                "observation_complete": true,
+                "operator": "and",
+                "outcome": "true",
+                "reason": "require_and_satisfied",
+                "require_ref": "/tests/auditd-service-is-active-test/require",
+                "require_results": [
+                  {
+                    "field_results": [
+                      {
+                        "datatype": "string",
+                        "evidence_refs": [],
+                        "expected_values": [
+                          {
+                            "datatype": "string",
+                            "status": "exists",
+                            "value": "active"
+                          }
+                        ],
+                        "field": "value",
+                        "observation_complete": true,
+                        "observed_values": [
+                          {
+                            "datatype": "string",
+                            "status": "exists",
+                            "value": "active"
+                          }
+                        ],
+                        "operation": "equals",
+                        "outcome": "true",
+                        "reason": "all_required_fields_equal",
+                        "require_ref": "/tests/auditd-service-is-active-test/require/and/0",
+                        "requirement_ref": "/tests/auditd-service-is-active-test/require/and/0/fields/value",
+                        "values_found": "one_or_more",
+                        "values_matching": "every"
+                      }
+                    ],
+                    "observation_complete": true,
+                    "outcome": "true",
+                    "reason": "fields_satisfied",
+                    "require_ref": "/tests/auditd-service-is-active-test/require/and/0",
+                    "require_results": []
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "reason": "all_required_fields_equal",
+        "require_refs": [
+          "/tests/auditd-service-is-active-test/require"
+        ],
+        "test_title": "auditd.service is active"
+      },
+      {
+        "evidence_refs": [],
+        "id": "auditd-service-is-running-test",
+        "invocation_ref": "assessment-2a23d1dafa371f82b9431d40a9a6b996",
+        "item_refs": [
+          "item-3957580b523afd65ac9b84795f9a9495"
+        ],
+        "item_summary": {
+          "actual_mismatches": 0,
+          "evaluated_items": 1,
+          "observed_mismatches": 0,
+          "returned_items": 1,
+          "truncated_evidence": false
+        },
+        "items_found": "one_or_more",
+        "items_observed": 1,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/auditd-service-is-running-test/object"
+        ],
+        "outcome": "true",
+        "per_item_results": [
+          {
+            "evidence_refs": [],
+            "item": {
+              "capability": "linux.systemdunitproperty",
+              "fields": {
+                "property": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "SubState"
+                },
+                "unit": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "auditd.service"
+                },
+                "value": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "running"
+                }
+              },
+              "id": "item-3957580b523afd65ac9b84795f9a9495",
+              "provenance": {
+                "collector": "linux.systemdunitproperty.systemctl-show.v1",
+                "observed_at": "2026-11-19T14:24:34.852187126Z",
+                "scope": "systemd-system-manager",
+                "target_ref": "ubuntu-24.04-b317"
+              },
+              "status": "exists"
+            },
+            "item_ref": "item-3957580b523afd65ac9b84795f9a9495",
+            "outcome": "true",
+            "reason": "all_required_fields_equal",
+            "require_results": [
+              {
+                "field_results": [],
+                "observation_complete": true,
+                "operator": "and",
+                "outcome": "true",
+                "reason": "require_and_satisfied",
+                "require_ref": "/tests/auditd-service-is-running-test/require",
+                "require_results": [
+                  {
+                    "field_results": [
+                      {
+                        "datatype": "string",
+                        "evidence_refs": [],
+                        "expected_values": [
+                          {
+                            "datatype": "string",
+                            "status": "exists",
+                            "value": "running"
+                          }
+                        ],
+                        "field": "value",
+                        "observation_complete": true,
+                        "observed_values": [
+                          {
+                            "datatype": "string",
+                            "status": "exists",
+                            "value": "running"
+                          }
+                        ],
+                        "operation": "equals",
+                        "outcome": "true",
+                        "reason": "all_required_fields_equal",
+                        "require_ref": "/tests/auditd-service-is-running-test/require/and/0",
+                        "requirement_ref": "/tests/auditd-service-is-running-test/require/and/0/fields/value",
+                        "values_found": "one_or_more",
+                        "values_matching": "every"
+                      }
+                    ],
+                    "observation_complete": true,
+                    "outcome": "true",
+                    "reason": "fields_satisfied",
+                    "require_ref": "/tests/auditd-service-is-running-test/require/and/0",
+                    "require_results": []
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "reason": "all_required_fields_equal",
+        "require_refs": [
+          "/tests/auditd-service-is-running-test/require"
+        ],
+        "test_title": "auditd.service is running"
+      }
+    ],
+    "variables": []
+  }
+}

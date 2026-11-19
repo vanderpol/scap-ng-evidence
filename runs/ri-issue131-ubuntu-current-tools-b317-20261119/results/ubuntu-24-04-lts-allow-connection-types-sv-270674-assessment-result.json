@@ -1,0 +1,154 @@
+{
+  "assessment_result": {
+    "assessment": {
+      "digest": "5035c1207c77d2c67e8d2f71c41826cffa436444e5b59282c010ef35c98c00d8",
+      "id": "ubuntu-24-04-lts-allow-connection-types-sv-270674-assessment",
+      "version": 1
+    },
+    "class": "compliance",
+    "dependent_assessments": [],
+    "diagnostics": [],
+    "evidence_complete": true,
+    "evidence_retention": {
+      "maximum_items": 256,
+      "scope": "per_test",
+      "source": "scanner_configuration"
+    },
+    "execution_id": "assessment-a4344d42b73631875ceec6a1a0cbffc8",
+    "expression_execution": {
+      "assessment": "ubuntu-24-04-lts-allow-connection-types-sv-270674-assessment",
+      "diagnostics": [],
+      "executed_tests": [
+        "package-vlock-is-installed-test"
+      ],
+      "invocation_ref": "assessment-a4344d42b73631875ceec6a1a0cbffc8",
+      "outcome": "true",
+      "trace": [
+        {
+          "assessment": "ubuntu-24-04-lts-allow-connection-types-sv-270674-assessment",
+          "kind": "test",
+          "outcome": "true",
+          "owner_invocation_ref": "assessment-a4344d42b73631875ceec6a1a0cbffc8",
+          "path": "/tests/package-vlock-is-installed-test",
+          "reused": false,
+          "test": "package-vlock-is-installed-test"
+        }
+      ]
+    },
+    "field_uses": [],
+    "logical_complete": true,
+    "mode": "automated",
+    "objects": [
+      {
+        "capability": "linux.dpkginfo",
+        "diagnostics": [],
+        "id": "assessment-a4344d42b73631875ceec6a1a0cbffc8/object/package-vlock-is-installed-test",
+        "item_refs": [
+          "item-31a394cddb8e3ed4b06eac9a0a09307a"
+        ],
+        "logical_complete": true,
+        "object_title": null,
+        "population_complete": true,
+        "source_execution_ref": "assessment-a4344d42b73631875ceec6a1a0cbffc8",
+        "status": "complete",
+        "stop_reason": null
+      }
+    ],
+    "outcome": "true",
+    "population_complete": true,
+    "purpose": "assessment",
+    "result_schema_version": "0.4.1",
+    "summary": "Assessment evaluated true with complete evidence.",
+    "target_ref": "ubuntu-24.04-b317",
+    "tests": [
+      {
+        "evidence_refs": [],
+        "id": "package-vlock-is-installed-test",
+        "invocation_ref": "assessment-a4344d42b73631875ceec6a1a0cbffc8",
+        "item_refs": [
+          "item-31a394cddb8e3ed4b06eac9a0a09307a"
+        ],
+        "item_summary": {
+          "actual_mismatches": 0,
+          "evaluated_items": 1,
+          "observed_mismatches": 0,
+          "returned_items": 1,
+          "truncated_evidence": false
+        },
+        "items_found": "one_or_more",
+        "items_observed": 1,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/package-vlock-is-installed-test/object"
+        ],
+        "outcome": "true",
+        "per_item_results": [
+          {
+            "evidence_refs": [],
+            "item": {
+              "capability": "linux.dpkginfo",
+              "fields": {
+                "arch": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "amd64"
+                },
+                "epoch": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "0"
+                },
+                "evr": {
+                  "datatype": "debian_evr",
+                  "status": "exists",
+                  "value": "2.2.2-11"
+                },
+                "name": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "vlock"
+                },
+                "release": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "11"
+                },
+                "version": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "2.2.2"
+                }
+              },
+              "id": "item-31a394cddb8e3ed4b06eac9a0a09307a",
+              "provenance": {
+                "collector": "linux.dpkginfo.fixed-query.v1",
+                "observed_at": "2026-11-19T14:24:34.770250268Z",
+                "scope": "local-dpkg-database",
+                "target_ref": "ubuntu-24.04-b317"
+              },
+              "status": "exists"
+            },
+            "item_ref": "item-31a394cddb8e3ed4b06eac9a0a09307a",
+            "outcome": "true",
+            "reason": "item_existence_satisfied",
+            "require_results": [
+              {
+                "field_results": [],
+                "observation_complete": true,
+                "outcome": "true",
+                "reason": "item_existence_satisfied",
+                "require_ref": "/tests/package-vlock-is-installed-test/require"
+              }
+            ]
+          }
+        ],
+        "reason": "item_existence_satisfied",
+        "require_refs": [
+          "/tests/package-vlock-is-installed-test/require"
+        ],
+        "test_title": "package vlock is installed"
+      }
+    ],
+    "variables": []
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "assessment_result": {
+    "assessment": {
+      "digest": "96dd7aad787b9f378d0a83ab4a8f7c056f45649e3d6497ed84c83a69f1436e29",
+      "id": "ubuntu-24-04-lts-have-package-installed-sv-270656-assessment",
+      "version": 1
+    },
+    "class": "compliance",
+    "dependent_assessments": [],
+    "diagnostics": [],
+    "evidence_complete": true,
+    "evidence_retention": {
+      "maximum_items": 256,
+      "scope": "per_test",
+      "source": "scanner_configuration"
+    },
+    "execution_id": "assessment-75b9b43589d10663621654ede85aed82",
+    "expression_execution": {
+      "assessment": "ubuntu-24-04-lts-have-package-installed-sv-270656-assessment",
+      "diagnostics": [],
+      "executed_tests": [
+        "package-auditd-is-installed-test"
+      ],
+      "invocation_ref": "assessment-75b9b43589d10663621654ede85aed82",
+      "outcome": "true",
+      "trace": [
+        {
+          "assessment": "ubuntu-24-04-lts-have-package-installed-sv-270656-assessment",
+          "kind": "test",
+          "outcome": "true",
+          "owner_invocation_ref": "assessment-75b9b43589d10663621654ede85aed82",
+          "path": "/tests/package-auditd-is-installed-test",
+          "reused": false,
+          "test": "package-auditd-is-installed-test"
+        }
+      ]
+    },
+    "field_uses": [],
+    "logical_complete": true,
+    "mode": "automated",
+    "objects": [
+      {
+        "capability": "linux.dpkginfo",
+        "diagnostics": [],
+        "id": "assessment-75b9b43589d10663621654ede85aed82/object/package-auditd-is-installed-test",
+        "item_refs": [
+          "item-e9216c203dc8e5ffeefb18868d61746b"
+        ],
+        "logical_complete": true,
+        "object_title": null,
+        "population_complete": true,
+        "source_execution_ref": "assessment-75b9b43589d10663621654ede85aed82",
+        "status": "complete",
+        "stop_reason": null
+      }
+    ],
+    "outcome": "true",
+    "population_complete": true,
+    "purpose": "assessment",
+    "result_schema_version": "0.4.1",
+    "summary": "Assessment evaluated true with complete evidence.",
+    "target_ref": "ubuntu-24.04-b317",
+    "tests": [
+      {
+        "evidence_refs": [],
+        "id": "package-auditd-is-installed-test",
+        "invocation_ref": "assessment-75b9b43589d10663621654ede85aed82",
+        "item_refs": [
+          "item-e9216c203dc8e5ffeefb18868d61746b"
+        ],
+        "item_summary": {
+          "actual_mismatches": 0,
+          "evaluated_items": 1,
+          "observed_mismatches": 0,
+          "returned_items": 1,
+          "truncated_evidence": false
+        },
+        "items_found": "one_or_more",
+        "items_observed": 1,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/package-auditd-is-installed-test/object"
+        ],
+        "outcome": "true",
+        "per_item_results": [
+          {
+            "evidence_refs": [],
+            "item": {
+              "capability": "linux.dpkginfo",
+              "fields": {
+                "arch": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "amd64"
+                },
+                "epoch": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "1"
+                },
+                "evr": {
+                  "datatype": "debian_evr",
+                  "status": "exists",
+                  "value": "1:3.1.2-2.1ubuntu0.1"
+                },
+                "name": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "auditd"
+                },
+                "release": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "2.1ubuntu0.1"
+                },
+                "version": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "3.1.2"
+                }
+              },
+              "id": "item-e9216c203dc8e5ffeefb18868d61746b",
+              "provenance": {
+                "collector": "linux.dpkginfo.fixed-query.v1",
+                "observed_at": "2026-11-19T14:24:34.763818963Z",
+                "scope": "local-dpkg-database",
+                "target_ref": "ubuntu-24.04-b317"
+              },
+              "status": "exists"
+            },
+            "item_ref": "item-e9216c203dc8e5ffeefb18868d61746b",
+            "outcome": "true",
+            "reason": "item_existence_satisfied",
+            "require_results": [
+              {
+                "field_results": [],
+                "observation_complete": true,
+                "outcome": "true",
+                "reason": "item_existence_satisfied",
+                "require_ref": "/tests/package-auditd-is-installed-test/require"
+              }
+            ]
+          }
+        ],
+        "reason": "item_existence_satisfied",
+        "require_refs": [
+          "/tests/package-auditd-is-installed-test/require"
+        ],
+        "test_title": "package auditd is installed"
+      }
+    ],
+    "variables": []
+  }
+}
