@@ -1,0 +1,101 @@
+{
+  "assessment_result": {
+    "assessment": {
+      "digest": "f51d8647eb511a954adb070b8cbc0800e0eec495293b3b271bc5fee148652e95",
+      "id": "ubuntu-24-04-lts-ssh-exchange-algorithms-sv-270669-assessment",
+      "version": 1
+    },
+    "class": "compliance",
+    "dependent_assessments": [],
+    "diagnostics": [
+      {
+        "code": "collection_incomplete",
+        "message": "collection incomplete: acquisition not complete: unsupported"
+      }
+    ],
+    "evidence_complete": false,
+    "evidence_retention": {
+      "maximum_items": 256,
+      "scope": "per_test",
+      "source": "scanner_configuration"
+    },
+    "execution_id": "assessment-53867b0ccdf493bfa7344c69194a3da7",
+    "expression_execution": {
+      "assessment": "ubuntu-24-04-lts-ssh-exchange-algorithms-sv-270669-assessment",
+      "diagnostics": [],
+      "executed_tests": [
+        "sshd-config-kexalgorithms-uses-fips-validated-algorithms-test"
+      ],
+      "invocation_ref": "assessment-53867b0ccdf493bfa7344c69194a3da7",
+      "outcome": "unknown",
+      "trace": [
+        {
+          "assessment": "ubuntu-24-04-lts-ssh-exchange-algorithms-sv-270669-assessment",
+          "kind": "test",
+          "outcome": "unknown",
+          "owner_invocation_ref": "assessment-53867b0ccdf493bfa7344c69194a3da7",
+          "path": "/tests/sshd-config-kexalgorithms-uses-fips-validated-algorithms-test",
+          "reused": false,
+          "test": "sshd-config-kexalgorithms-uses-fips-validated-algorithms-test"
+        }
+      ]
+    },
+    "field_uses": [],
+    "logical_complete": false,
+    "mode": "automated",
+    "objects": [
+      {
+        "capability": "independent.textfilecontent",
+        "diagnostics": [
+          {
+            "code": "collection_incomplete",
+            "message": "collection incomplete: acquisition not complete: unsupported"
+          }
+        ],
+        "id": "assessment-53867b0ccdf493bfa7344c69194a3da7/object/sshd-config-kexalgorithms-uses-fips-validated-algorithms-test",
+        "item_refs": [],
+        "logical_complete": false,
+        "object_title": null,
+        "population_complete": false,
+        "source_execution_ref": "assessment-53867b0ccdf493bfa7344c69194a3da7",
+        "status": "not_collected",
+        "stop_reason": "collection_incomplete"
+      }
+    ],
+    "outcome": "unknown",
+    "population_complete": false,
+    "purpose": "assessment",
+    "result_schema_version": "0.4.1",
+    "summary": "Assessment evidence was incomplete or inconclusive.",
+    "target_ref": "local-linux",
+    "tests": [
+      {
+        "evidence_refs": [],
+        "id": "sshd-config-kexalgorithms-uses-fips-validated-algorithms-test",
+        "invocation_ref": "assessment-53867b0ccdf493bfa7344c69194a3da7",
+        "item_refs": [],
+        "item_summary": {
+          "actual_mismatches": "unknown",
+          "evaluated_items": 0,
+          "observed_mismatches": 0,
+          "returned_items": 0,
+          "truncated_evidence": false
+        },
+        "items_found": "none",
+        "items_observed": 0,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/sshd-config-kexalgorithms-uses-fips-validated-algorithms-test/object"
+        ],
+        "outcome": "unknown",
+        "per_item_results": [],
+        "reason": "collection incomplete: acquisition not complete: unsupported",
+        "require_refs": [
+          "/tests/sshd-config-kexalgorithms-uses-fips-validated-algorithms-test/require"
+        ],
+        "test_title": "sshd_config: KexAlgorithms uses FIPS-validated algorithms"
+      }
+    ],
+    "variables": []
+  }
+}

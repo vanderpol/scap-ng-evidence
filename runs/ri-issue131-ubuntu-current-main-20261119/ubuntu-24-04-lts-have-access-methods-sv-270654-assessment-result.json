@@ -1,0 +1,154 @@
+{
+  "assessment_result": {
+    "assessment": {
+      "digest": "926054b58af6eecd5157608e48ee89d81e7d2720b145bbc3eef96d0f1cce893c",
+      "id": "ubuntu-24-04-lts-have-access-methods-sv-270654-assessment",
+      "version": 1
+    },
+    "class": "compliance",
+    "dependent_assessments": [],
+    "diagnostics": [],
+    "evidence_complete": true,
+    "evidence_retention": {
+      "maximum_items": 256,
+      "scope": "per_test",
+      "source": "scanner_configuration"
+    },
+    "execution_id": "assessment-aba33f1e069990f87f0a715528a5b8c7",
+    "expression_execution": {
+      "assessment": "ubuntu-24-04-lts-have-access-methods-sv-270654-assessment",
+      "diagnostics": [],
+      "executed_tests": [
+        "package-ufw-is-installed-test"
+      ],
+      "invocation_ref": "assessment-aba33f1e069990f87f0a715528a5b8c7",
+      "outcome": "true",
+      "trace": [
+        {
+          "assessment": "ubuntu-24-04-lts-have-access-methods-sv-270654-assessment",
+          "kind": "test",
+          "outcome": "true",
+          "owner_invocation_ref": "assessment-aba33f1e069990f87f0a715528a5b8c7",
+          "path": "/tests/package-ufw-is-installed-test",
+          "reused": false,
+          "test": "package-ufw-is-installed-test"
+        }
+      ]
+    },
+    "field_uses": [],
+    "logical_complete": true,
+    "mode": "automated",
+    "objects": [
+      {
+        "capability": "linux.dpkginfo",
+        "diagnostics": [],
+        "id": "assessment-aba33f1e069990f87f0a715528a5b8c7/object/package-ufw-is-installed-test",
+        "item_refs": [
+          "item-2b94afd4474816a726df4220da361077"
+        ],
+        "logical_complete": true,
+        "object_title": null,
+        "population_complete": true,
+        "source_execution_ref": "assessment-aba33f1e069990f87f0a715528a5b8c7",
+        "status": "complete",
+        "stop_reason": null
+      }
+    ],
+    "outcome": "true",
+    "population_complete": true,
+    "purpose": "assessment",
+    "result_schema_version": "0.4.1",
+    "summary": "Assessment evaluated true with complete evidence.",
+    "target_ref": "local-linux",
+    "tests": [
+      {
+        "evidence_refs": [],
+        "id": "package-ufw-is-installed-test",
+        "invocation_ref": "assessment-aba33f1e069990f87f0a715528a5b8c7",
+        "item_refs": [
+          "item-2b94afd4474816a726df4220da361077"
+        ],
+        "item_summary": {
+          "actual_mismatches": 0,
+          "evaluated_items": 1,
+          "observed_mismatches": 0,
+          "returned_items": 1,
+          "truncated_evidence": false
+        },
+        "items_found": "one_or_more",
+        "items_observed": 1,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/package-ufw-is-installed-test/object"
+        ],
+        "outcome": "true",
+        "per_item_results": [
+          {
+            "evidence_refs": [],
+            "item": {
+              "capability": "linux.dpkginfo",
+              "fields": {
+                "arch": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "all"
+                },
+                "epoch": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "0"
+                },
+                "evr": {
+                  "datatype": "debian_evr",
+                  "status": "exists",
+                  "value": "0.36.2-6"
+                },
+                "name": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "ufw"
+                },
+                "release": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "6"
+                },
+                "version": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "0.36.2"
+                }
+              },
+              "id": "item-2b94afd4474816a726df4220da361077",
+              "provenance": {
+                "collector": "linux.dpkginfo.fixed-query.v1",
+                "observed_at": "2026-11-19T13:56:17.853678087Z",
+                "scope": "local-dpkg-database",
+                "target_ref": "local-linux"
+              },
+              "status": "exists"
+            },
+            "item_ref": "item-2b94afd4474816a726df4220da361077",
+            "outcome": "true",
+            "reason": "item_existence_satisfied",
+            "require_results": [
+              {
+                "field_results": [],
+                "observation_complete": true,
+                "outcome": "true",
+                "reason": "item_existence_satisfied",
+                "require_ref": "/tests/package-ufw-is-installed-test/require"
+              }
+            ]
+          }
+        ],
+        "reason": "item_existence_satisfied",
+        "require_refs": [
+          "/tests/package-ufw-is-installed-test/require"
+        ],
+        "test_title": "package ufw is installed"
+      }
+    ],
+    "variables": []
+  }
+}

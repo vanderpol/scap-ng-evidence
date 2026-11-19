@@ -1,0 +1,431 @@
+{
+  "assessment_result": {
+    "assessment": {
+      "digest": "32a621f2568c41f9dae184c1e31c36bbbab3ff8b712a4bdf915e640e20c158f3",
+      "id": "ubuntu-24-04-lts-preserve-failure-events-sv-270653-assessment",
+      "version": 1
+    },
+    "class": "compliance",
+    "dependent_assessments": [],
+    "diagnostics": [],
+    "evidence_complete": true,
+    "evidence_retention": {
+      "maximum_items": 256,
+      "scope": "per_test",
+      "source": "scanner_configuration"
+    },
+    "execution_id": "assessment-467aa67b2b1eefeb6ef1915635f65146",
+    "expression_execution": {
+      "assessment": "ubuntu-24-04-lts-preserve-failure-events-sv-270653-assessment",
+      "diagnostics": [],
+      "executed_tests": [
+        "rsyslog-service-is-active-test",
+        "rsyslog-service-is-enabled-test",
+        "the-rsyslog-package-is-installed-test"
+      ],
+      "invocation_ref": "assessment-467aa67b2b1eefeb6ef1915635f65146",
+      "outcome": "true",
+      "trace": [
+        {
+          "assessment": "ubuntu-24-04-lts-preserve-failure-events-sv-270653-assessment",
+          "kind": "test",
+          "outcome": "true",
+          "owner_invocation_ref": "assessment-467aa67b2b1eefeb6ef1915635f65146",
+          "path": "/tests/rsyslog-service-is-active-test",
+          "reused": false,
+          "test": "rsyslog-service-is-active-test"
+        },
+        {
+          "assessment": "ubuntu-24-04-lts-preserve-failure-events-sv-270653-assessment",
+          "kind": "test",
+          "outcome": "true",
+          "owner_invocation_ref": "assessment-467aa67b2b1eefeb6ef1915635f65146",
+          "path": "/tests/rsyslog-service-is-enabled-test",
+          "reused": false,
+          "test": "rsyslog-service-is-enabled-test"
+        },
+        {
+          "assessment": "ubuntu-24-04-lts-preserve-failure-events-sv-270653-assessment",
+          "kind": "test",
+          "outcome": "true",
+          "owner_invocation_ref": "assessment-467aa67b2b1eefeb6ef1915635f65146",
+          "path": "/tests/the-rsyslog-package-is-installed-test",
+          "reused": false,
+          "test": "the-rsyslog-package-is-installed-test"
+        },
+        {
+          "kind": "logical",
+          "outcome": "true",
+          "owner_invocation_ref": "assessment-467aa67b2b1eefeb6ef1915635f65146",
+          "path": "/evaluate",
+          "reason": "operator:and"
+        }
+      ]
+    },
+    "field_uses": [],
+    "logical_complete": true,
+    "mode": "automated",
+    "objects": [
+      {
+        "capability": "linux.systemdunitproperty",
+        "diagnostics": [],
+        "id": "assessment-467aa67b2b1eefeb6ef1915635f65146/object/rsyslog-service-is-active-test",
+        "item_refs": [
+          "item-7c133dd7a77f64a69e0ca9a12ca38768"
+        ],
+        "logical_complete": true,
+        "object_title": null,
+        "population_complete": true,
+        "source_execution_ref": "assessment-467aa67b2b1eefeb6ef1915635f65146",
+        "status": "complete",
+        "stop_reason": null
+      },
+      {
+        "capability": "linux.systemdunitproperty",
+        "diagnostics": [],
+        "id": "assessment-467aa67b2b1eefeb6ef1915635f65146/object/rsyslog-service-is-enabled-test",
+        "item_refs": [
+          "item-05cbb8090c309df1ba9997b21e670fce"
+        ],
+        "logical_complete": true,
+        "object_title": null,
+        "population_complete": true,
+        "source_execution_ref": "assessment-467aa67b2b1eefeb6ef1915635f65146",
+        "status": "complete",
+        "stop_reason": null
+      },
+      {
+        "capability": "linux.dpkginfo",
+        "diagnostics": [],
+        "id": "assessment-467aa67b2b1eefeb6ef1915635f65146/object/the-rsyslog-package-is-installed-test",
+        "item_refs": [
+          "item-a14719b014a809286c83dc4069823b75"
+        ],
+        "logical_complete": true,
+        "object_title": null,
+        "population_complete": true,
+        "source_execution_ref": "assessment-467aa67b2b1eefeb6ef1915635f65146",
+        "status": "complete",
+        "stop_reason": null
+      }
+    ],
+    "outcome": "true",
+    "population_complete": true,
+    "purpose": "assessment",
+    "result_schema_version": "0.4.1",
+    "summary": "Assessment evaluated true with complete evidence.",
+    "target_ref": "local-linux",
+    "tests": [
+      {
+        "evidence_refs": [],
+        "id": "rsyslog-service-is-active-test",
+        "invocation_ref": "assessment-467aa67b2b1eefeb6ef1915635f65146",
+        "item_refs": [
+          "item-7c133dd7a77f64a69e0ca9a12ca38768"
+        ],
+        "item_summary": {
+          "actual_mismatches": 0,
+          "evaluated_items": 1,
+          "observed_mismatches": 0,
+          "returned_items": 1,
+          "truncated_evidence": false
+        },
+        "items_found": "one_or_more",
+        "items_observed": 1,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/rsyslog-service-is-active-test/object"
+        ],
+        "outcome": "true",
+        "per_item_results": [
+          {
+            "evidence_refs": [],
+            "item": {
+              "capability": "linux.systemdunitproperty",
+              "fields": {
+                "property": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "ActiveState"
+                },
+                "unit": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "rsyslog.service"
+                },
+                "value": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "active"
+                }
+              },
+              "id": "item-7c133dd7a77f64a69e0ca9a12ca38768",
+              "provenance": {
+                "collector": "linux.systemdunitproperty.systemctl-show.v1",
+                "observed_at": "2026-11-19T13:56:17.901228668Z",
+                "scope": "systemd-system-manager",
+                "target_ref": "local-linux"
+              },
+              "status": "exists"
+            },
+            "item_ref": "item-7c133dd7a77f64a69e0ca9a12ca38768",
+            "outcome": "true",
+            "reason": "all_required_fields_equal",
+            "require_results": [
+              {
+                "field_results": [],
+                "observation_complete": true,
+                "operator": "and",
+                "outcome": "true",
+                "reason": "require_and_satisfied",
+                "require_ref": "/tests/rsyslog-service-is-active-test/require",
+                "require_results": [
+                  {
+                    "field_results": [
+                      {
+                        "datatype": "string",
+                        "evidence_refs": [],
+                        "expected_values": [
+                          {
+                            "datatype": "string",
+                            "status": "exists",
+                            "value": "active"
+                          }
+                        ],
+                        "field": "value",
+                        "observation_complete": true,
+                        "observed_values": [
+                          {
+                            "datatype": "string",
+                            "status": "exists",
+                            "value": "active"
+                          }
+                        ],
+                        "operation": "equals",
+                        "outcome": "true",
+                        "reason": "all_required_fields_equal",
+                        "require_ref": "/tests/rsyslog-service-is-active-test/require/and/0",
+                        "requirement_ref": "/tests/rsyslog-service-is-active-test/require/and/0/fields/value",
+                        "values_found": "one_or_more",
+                        "values_matching": "every"
+                      }
+                    ],
+                    "observation_complete": true,
+                    "outcome": "true",
+                    "reason": "fields_satisfied",
+                    "require_ref": "/tests/rsyslog-service-is-active-test/require/and/0",
+                    "require_results": []
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "reason": "all_required_fields_equal",
+        "require_refs": [
+          "/tests/rsyslog-service-is-active-test/require"
+        ],
+        "test_title": "rsyslog.service is active"
+      },
+      {
+        "evidence_refs": [],
+        "id": "rsyslog-service-is-enabled-test",
+        "invocation_ref": "assessment-467aa67b2b1eefeb6ef1915635f65146",
+        "item_refs": [
+          "item-05cbb8090c309df1ba9997b21e670fce"
+        ],
+        "item_summary": {
+          "actual_mismatches": 0,
+          "evaluated_items": 1,
+          "observed_mismatches": 0,
+          "returned_items": 1,
+          "truncated_evidence": false
+        },
+        "items_found": "one_or_more",
+        "items_observed": 1,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/rsyslog-service-is-enabled-test/object"
+        ],
+        "outcome": "true",
+        "per_item_results": [
+          {
+            "evidence_refs": [],
+            "item": {
+              "capability": "linux.systemdunitproperty",
+              "fields": {
+                "property": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "UnitFileState"
+                },
+                "unit": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "rsyslog.service"
+                },
+                "value": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "enabled"
+                }
+              },
+              "id": "item-05cbb8090c309df1ba9997b21e670fce",
+              "provenance": {
+                "collector": "linux.systemdunitproperty.systemctl-show.v1",
+                "observed_at": "2026-11-19T13:56:17.901356888Z",
+                "scope": "systemd-system-manager",
+                "target_ref": "local-linux"
+              },
+              "status": "exists"
+            },
+            "item_ref": "item-05cbb8090c309df1ba9997b21e670fce",
+            "outcome": "true",
+            "reason": "all_required_fields_equal",
+            "require_results": [
+              {
+                "field_results": [],
+                "observation_complete": true,
+                "operator": "and",
+                "outcome": "true",
+                "reason": "require_and_satisfied",
+                "require_ref": "/tests/rsyslog-service-is-enabled-test/require",
+                "require_results": [
+                  {
+                    "field_results": [
+                      {
+                        "datatype": "string",
+                        "evidence_refs": [],
+                        "expected_values": [
+                          {
+                            "datatype": "string",
+                            "status": "exists",
+                            "value": "enabled"
+                          }
+                        ],
+                        "field": "value",
+                        "observation_complete": true,
+                        "observed_values": [
+                          {
+                            "datatype": "string",
+                            "status": "exists",
+                            "value": "enabled"
+                          }
+                        ],
+                        "operation": "equals",
+                        "outcome": "true",
+                        "reason": "all_required_fields_equal",
+                        "require_ref": "/tests/rsyslog-service-is-enabled-test/require/and/0",
+                        "requirement_ref": "/tests/rsyslog-service-is-enabled-test/require/and/0/fields/value",
+                        "values_found": "one_or_more",
+                        "values_matching": "every"
+                      }
+                    ],
+                    "observation_complete": true,
+                    "outcome": "true",
+                    "reason": "fields_satisfied",
+                    "require_ref": "/tests/rsyslog-service-is-enabled-test/require/and/0",
+                    "require_results": []
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "reason": "all_required_fields_equal",
+        "require_refs": [
+          "/tests/rsyslog-service-is-enabled-test/require"
+        ],
+        "test_title": "rsyslog.service is enabled"
+      },
+      {
+        "evidence_refs": [],
+        "id": "the-rsyslog-package-is-installed-test",
+        "invocation_ref": "assessment-467aa67b2b1eefeb6ef1915635f65146",
+        "item_refs": [
+          "item-a14719b014a809286c83dc4069823b75"
+        ],
+        "item_summary": {
+          "actual_mismatches": 0,
+          "evaluated_items": 1,
+          "observed_mismatches": 0,
+          "returned_items": 1,
+          "truncated_evidence": false
+        },
+        "items_found": "one_or_more",
+        "items_observed": 1,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/the-rsyslog-package-is-installed-test/object"
+        ],
+        "outcome": "true",
+        "per_item_results": [
+          {
+            "evidence_refs": [],
+            "item": {
+              "capability": "linux.dpkginfo",
+              "fields": {
+                "arch": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "amd64"
+                },
+                "epoch": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "0"
+                },
+                "evr": {
+                  "datatype": "debian_evr",
+                  "status": "exists",
+                  "value": "8.2312.0-3ubuntu9.4"
+                },
+                "name": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "rsyslog"
+                },
+                "release": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "3ubuntu9.4"
+                },
+                "version": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "8.2312.0"
+                }
+              },
+              "id": "item-a14719b014a809286c83dc4069823b75",
+              "provenance": {
+                "collector": "linux.dpkginfo.fixed-query.v1",
+                "observed_at": "2026-11-19T13:56:17.920737227Z",
+                "scope": "local-dpkg-database",
+                "target_ref": "local-linux"
+              },
+              "status": "exists"
+            },
+            "item_ref": "item-a14719b014a809286c83dc4069823b75",
+            "outcome": "true",
+            "reason": "item_existence_satisfied",
+            "require_results": [
+              {
+                "field_results": [],
+                "observation_complete": true,
+                "outcome": "true",
+                "reason": "item_existence_satisfied",
+                "require_ref": "/tests/the-rsyslog-package-is-installed-test/require"
+              }
+            ]
+          }
+        ],
+        "reason": "item_existence_satisfied",
+        "require_refs": [
+          "/tests/the-rsyslog-package-is-installed-test/require"
+        ],
+        "test_title": "The rsyslog package is installed."
+      }
+    ],
+    "variables": []
+  }
+}

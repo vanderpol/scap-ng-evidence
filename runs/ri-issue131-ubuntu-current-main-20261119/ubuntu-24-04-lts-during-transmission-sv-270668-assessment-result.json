@@ -1,0 +1,91 @@
+{
+  "assessment_result": {
+    "assessment": {
+      "digest": "45916b384b31e7bdd2c7024a52244a6ba3ae18b375599b0884a68306f88575cc",
+      "id": "ubuntu-24-04-lts-during-transmission-sv-270668-assessment",
+      "version": 1
+    },
+    "class": "compliance",
+    "dependent_assessments": [],
+    "diagnostics": [],
+    "evidence_complete": true,
+    "evidence_retention": {
+      "maximum_items": 256,
+      "scope": "per_test",
+      "source": "scanner_configuration"
+    },
+    "execution_id": "assessment-9ef72fa58851fed4ec056042a4a5c691",
+    "expression_execution": {
+      "assessment": "ubuntu-24-04-lts-during-transmission-sv-270668-assessment",
+      "diagnostics": [],
+      "executed_tests": [
+        "etc-ssh-sshd-config-macs-use-cryptographic-hash-algorithms-test"
+      ],
+      "invocation_ref": "assessment-9ef72fa58851fed4ec056042a4a5c691",
+      "outcome": "false",
+      "trace": [
+        {
+          "assessment": "ubuntu-24-04-lts-during-transmission-sv-270668-assessment",
+          "kind": "test",
+          "outcome": "false",
+          "owner_invocation_ref": "assessment-9ef72fa58851fed4ec056042a4a5c691",
+          "path": "/tests/etc-ssh-sshd-config-macs-use-cryptographic-hash-algorithms-test",
+          "reused": false,
+          "test": "etc-ssh-sshd-config-macs-use-cryptographic-hash-algorithms-test"
+        }
+      ]
+    },
+    "field_uses": [],
+    "logical_complete": true,
+    "mode": "automated",
+    "objects": [
+      {
+        "capability": "independent.textfilecontent",
+        "diagnostics": [],
+        "id": "assessment-9ef72fa58851fed4ec056042a4a5c691/object/etc-ssh-sshd-config-macs-use-cryptographic-hash-algorithms-test",
+        "item_refs": [],
+        "logical_complete": true,
+        "object_title": null,
+        "population_complete": true,
+        "source_execution_ref": "assessment-9ef72fa58851fed4ec056042a4a5c691",
+        "status": "complete",
+        "stop_reason": null
+      }
+    ],
+    "outcome": "false",
+    "population_complete": true,
+    "purpose": "assessment",
+    "result_schema_version": "0.4.1",
+    "summary": "Assessment evaluated false.",
+    "target_ref": "local-linux",
+    "tests": [
+      {
+        "evidence_refs": [],
+        "id": "etc-ssh-sshd-config-macs-use-cryptographic-hash-algorithms-test",
+        "invocation_ref": "assessment-9ef72fa58851fed4ec056042a4a5c691",
+        "item_refs": [],
+        "item_summary": {
+          "actual_mismatches": 0,
+          "evaluated_items": 0,
+          "observed_mismatches": 0,
+          "returned_items": 0,
+          "truncated_evidence": false
+        },
+        "items_found": "none",
+        "items_observed": 0,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/etc-ssh-sshd-config-macs-use-cryptographic-hash-algorithms-test/object"
+        ],
+        "outcome": "false",
+        "per_item_results": [],
+        "reason": "item_existence_cardinality_false",
+        "require_refs": [
+          "/tests/etc-ssh-sshd-config-macs-use-cryptographic-hash-algorithms-test/require"
+        ],
+        "test_title": "/etc/ssh/sshd_config: MACs use FIPS 140-3 validated cryptographic hash algorithms"
+      }
+    ],
+    "variables": []
+  }
+}

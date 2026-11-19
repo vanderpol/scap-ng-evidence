@@ -1,0 +1,320 @@
+{
+  "assessment_result": {
+    "assessment": {
+      "digest": "3580a739f79102afa84ae5243eb253bb081152a35c21489e013f9c22df1ff3ec",
+      "id": "ubuntu-24-04-lts-use-apparmor-sv-270660-assessment",
+      "version": 1
+    },
+    "class": "compliance",
+    "dependent_assessments": [],
+    "diagnostics": [],
+    "evidence_complete": true,
+    "evidence_retention": {
+      "maximum_items": 256,
+      "scope": "per_test",
+      "source": "scanner_configuration"
+    },
+    "execution_id": "assessment-62585c8825890fd977cecb804661d5a3",
+    "expression_execution": {
+      "assessment": "ubuntu-24-04-lts-use-apparmor-sv-270660-assessment",
+      "diagnostics": [],
+      "executed_tests": [
+        "apparmor-service-is-active-test",
+        "apparmor-service-is-enabled-test"
+      ],
+      "invocation_ref": "assessment-62585c8825890fd977cecb804661d5a3",
+      "outcome": "true",
+      "trace": [
+        {
+          "assessment": "ubuntu-24-04-lts-use-apparmor-sv-270660-assessment",
+          "kind": "test",
+          "outcome": "true",
+          "owner_invocation_ref": "assessment-62585c8825890fd977cecb804661d5a3",
+          "path": "/tests/apparmor-service-is-active-test",
+          "reused": false,
+          "test": "apparmor-service-is-active-test"
+        },
+        {
+          "assessment": "ubuntu-24-04-lts-use-apparmor-sv-270660-assessment",
+          "kind": "test",
+          "outcome": "true",
+          "owner_invocation_ref": "assessment-62585c8825890fd977cecb804661d5a3",
+          "path": "/tests/apparmor-service-is-enabled-test",
+          "reused": false,
+          "test": "apparmor-service-is-enabled-test"
+        },
+        {
+          "kind": "logical",
+          "outcome": "true",
+          "owner_invocation_ref": "assessment-62585c8825890fd977cecb804661d5a3",
+          "path": "/evaluate",
+          "reason": "operator:and"
+        }
+      ]
+    },
+    "field_uses": [],
+    "logical_complete": true,
+    "mode": "automated",
+    "objects": [
+      {
+        "capability": "linux.systemdunitproperty",
+        "diagnostics": [],
+        "id": "assessment-62585c8825890fd977cecb804661d5a3/object/apparmor-service-is-active-test",
+        "item_refs": [
+          "item-4e354bf7a57e9b8457e5b433f821476b"
+        ],
+        "logical_complete": true,
+        "object_title": null,
+        "population_complete": true,
+        "source_execution_ref": "assessment-62585c8825890fd977cecb804661d5a3",
+        "status": "complete",
+        "stop_reason": null
+      },
+      {
+        "capability": "linux.systemdunitproperty",
+        "diagnostics": [],
+        "id": "assessment-62585c8825890fd977cecb804661d5a3/object/apparmor-service-is-enabled-test",
+        "item_refs": [
+          "item-b3defcccec24a6e71dab26942360e113"
+        ],
+        "logical_complete": true,
+        "object_title": null,
+        "population_complete": true,
+        "source_execution_ref": "assessment-62585c8825890fd977cecb804661d5a3",
+        "status": "complete",
+        "stop_reason": null
+      }
+    ],
+    "outcome": "true",
+    "population_complete": true,
+    "purpose": "assessment",
+    "result_schema_version": "0.4.1",
+    "summary": "Assessment evaluated true with complete evidence.",
+    "target_ref": "local-linux",
+    "tests": [
+      {
+        "evidence_refs": [],
+        "id": "apparmor-service-is-active-test",
+        "invocation_ref": "assessment-62585c8825890fd977cecb804661d5a3",
+        "item_refs": [
+          "item-4e354bf7a57e9b8457e5b433f821476b"
+        ],
+        "item_summary": {
+          "actual_mismatches": 0,
+          "evaluated_items": 1,
+          "observed_mismatches": 0,
+          "returned_items": 1,
+          "truncated_evidence": false
+        },
+        "items_found": "one_or_more",
+        "items_observed": 1,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/apparmor-service-is-active-test/object"
+        ],
+        "outcome": "true",
+        "per_item_results": [
+          {
+            "evidence_refs": [],
+            "item": {
+              "capability": "linux.systemdunitproperty",
+              "fields": {
+                "property": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "ActiveState"
+                },
+                "unit": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "apparmor.service"
+                },
+                "value": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "active"
+                }
+              },
+              "id": "item-4e354bf7a57e9b8457e5b433f821476b",
+              "provenance": {
+                "collector": "linux.systemdunitproperty.systemctl-show.v1",
+                "observed_at": "2026-11-19T13:56:17.911204515Z",
+                "scope": "systemd-system-manager",
+                "target_ref": "local-linux"
+              },
+              "status": "exists"
+            },
+            "item_ref": "item-4e354bf7a57e9b8457e5b433f821476b",
+            "outcome": "true",
+            "reason": "all_required_fields_equal",
+            "require_results": [
+              {
+                "field_results": [],
+                "observation_complete": true,
+                "operator": "and",
+                "outcome": "true",
+                "reason": "require_and_satisfied",
+                "require_ref": "/tests/apparmor-service-is-active-test/require",
+                "require_results": [
+                  {
+                    "field_results": [
+                      {
+                        "datatype": "string",
+                        "evidence_refs": [],
+                        "expected_values": [
+                          {
+                            "datatype": "string",
+                            "status": "exists",
+                            "value": "active"
+                          }
+                        ],
+                        "field": "value",
+                        "observation_complete": true,
+                        "observed_values": [
+                          {
+                            "datatype": "string",
+                            "status": "exists",
+                            "value": "active"
+                          }
+                        ],
+                        "operation": "equals",
+                        "outcome": "true",
+                        "reason": "all_required_fields_equal",
+                        "require_ref": "/tests/apparmor-service-is-active-test/require/and/0",
+                        "requirement_ref": "/tests/apparmor-service-is-active-test/require/and/0/fields/value",
+                        "values_found": "one_or_more",
+                        "values_matching": "every"
+                      }
+                    ],
+                    "observation_complete": true,
+                    "outcome": "true",
+                    "reason": "fields_satisfied",
+                    "require_ref": "/tests/apparmor-service-is-active-test/require/and/0",
+                    "require_results": []
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "reason": "all_required_fields_equal",
+        "require_refs": [
+          "/tests/apparmor-service-is-active-test/require"
+        ],
+        "test_title": "apparmor.service is active"
+      },
+      {
+        "evidence_refs": [],
+        "id": "apparmor-service-is-enabled-test",
+        "invocation_ref": "assessment-62585c8825890fd977cecb804661d5a3",
+        "item_refs": [
+          "item-b3defcccec24a6e71dab26942360e113"
+        ],
+        "item_summary": {
+          "actual_mismatches": 0,
+          "evaluated_items": 1,
+          "observed_mismatches": 0,
+          "returned_items": 1,
+          "truncated_evidence": false
+        },
+        "items_found": "one_or_more",
+        "items_observed": 1,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/apparmor-service-is-enabled-test/object"
+        ],
+        "outcome": "true",
+        "per_item_results": [
+          {
+            "evidence_refs": [],
+            "item": {
+              "capability": "linux.systemdunitproperty",
+              "fields": {
+                "property": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "UnitFileState"
+                },
+                "unit": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "apparmor.service"
+                },
+                "value": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "enabled"
+                }
+              },
+              "id": "item-b3defcccec24a6e71dab26942360e113",
+              "provenance": {
+                "collector": "linux.systemdunitproperty.systemctl-show.v1",
+                "observed_at": "2026-11-19T13:56:17.908132563Z",
+                "scope": "systemd-system-manager",
+                "target_ref": "local-linux"
+              },
+              "status": "exists"
+            },
+            "item_ref": "item-b3defcccec24a6e71dab26942360e113",
+            "outcome": "true",
+            "reason": "all_required_fields_equal",
+            "require_results": [
+              {
+                "field_results": [],
+                "observation_complete": true,
+                "operator": "and",
+                "outcome": "true",
+                "reason": "require_and_satisfied",
+                "require_ref": "/tests/apparmor-service-is-enabled-test/require",
+                "require_results": [
+                  {
+                    "field_results": [
+                      {
+                        "datatype": "string",
+                        "evidence_refs": [],
+                        "expected_values": [
+                          {
+                            "datatype": "string",
+                            "status": "exists",
+                            "value": "enabled"
+                          }
+                        ],
+                        "field": "value",
+                        "observation_complete": true,
+                        "observed_values": [
+                          {
+                            "datatype": "string",
+                            "status": "exists",
+                            "value": "enabled"
+                          }
+                        ],
+                        "operation": "equals",
+                        "outcome": "true",
+                        "reason": "all_required_fields_equal",
+                        "require_ref": "/tests/apparmor-service-is-enabled-test/require/and/0",
+                        "requirement_ref": "/tests/apparmor-service-is-enabled-test/require/and/0/fields/value",
+                        "values_found": "one_or_more",
+                        "values_matching": "every"
+                      }
+                    ],
+                    "observation_complete": true,
+                    "outcome": "true",
+                    "reason": "fields_satisfied",
+                    "require_ref": "/tests/apparmor-service-is-enabled-test/require/and/0",
+                    "require_results": []
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "reason": "all_required_fields_equal",
+        "require_refs": [
+          "/tests/apparmor-service-is-enabled-test/require"
+        ],
+        "test_title": "apparmor.service is enabled"
+      }
+    ],
+    "variables": []
+  }
+}

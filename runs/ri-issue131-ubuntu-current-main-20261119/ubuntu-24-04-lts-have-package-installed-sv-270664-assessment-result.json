@@ -1,0 +1,154 @@
+{
+  "assessment_result": {
+    "assessment": {
+      "digest": "3ea6fa46ffeacbac4f0df810f8b662d05548ebc586916f6b1be88347f1a4f632",
+      "id": "ubuntu-24-04-lts-have-package-installed-sv-270664-assessment",
+      "version": 1
+    },
+    "class": "compliance",
+    "dependent_assessments": [],
+    "diagnostics": [],
+    "evidence_complete": true,
+    "evidence_retention": {
+      "maximum_items": 256,
+      "scope": "per_test",
+      "source": "scanner_configuration"
+    },
+    "execution_id": "assessment-2d6bd87f93ef46b0992fbdded7d01d00",
+    "expression_execution": {
+      "assessment": "ubuntu-24-04-lts-have-package-installed-sv-270664-assessment",
+      "diagnostics": [],
+      "executed_tests": [
+        "the-chrony-package-is-installed-test"
+      ],
+      "invocation_ref": "assessment-2d6bd87f93ef46b0992fbdded7d01d00",
+      "outcome": "true",
+      "trace": [
+        {
+          "assessment": "ubuntu-24-04-lts-have-package-installed-sv-270664-assessment",
+          "kind": "test",
+          "outcome": "true",
+          "owner_invocation_ref": "assessment-2d6bd87f93ef46b0992fbdded7d01d00",
+          "path": "/tests/the-chrony-package-is-installed-test",
+          "reused": false,
+          "test": "the-chrony-package-is-installed-test"
+        }
+      ]
+    },
+    "field_uses": [],
+    "logical_complete": true,
+    "mode": "automated",
+    "objects": [
+      {
+        "capability": "linux.dpkginfo",
+        "diagnostics": [],
+        "id": "assessment-2d6bd87f93ef46b0992fbdded7d01d00/object/the-chrony-package-is-installed-test",
+        "item_refs": [
+          "item-5eb490a9fbd49b14085b1434cc9488fe"
+        ],
+        "logical_complete": true,
+        "object_title": null,
+        "population_complete": true,
+        "source_execution_ref": "assessment-2d6bd87f93ef46b0992fbdded7d01d00",
+        "status": "complete",
+        "stop_reason": null
+      }
+    ],
+    "outcome": "true",
+    "population_complete": true,
+    "purpose": "assessment",
+    "result_schema_version": "0.4.1",
+    "summary": "Assessment evaluated true with complete evidence.",
+    "target_ref": "local-linux",
+    "tests": [
+      {
+        "evidence_refs": [],
+        "id": "the-chrony-package-is-installed-test",
+        "invocation_ref": "assessment-2d6bd87f93ef46b0992fbdded7d01d00",
+        "item_refs": [
+          "item-5eb490a9fbd49b14085b1434cc9488fe"
+        ],
+        "item_summary": {
+          "actual_mismatches": 0,
+          "evaluated_items": 1,
+          "observed_mismatches": 0,
+          "returned_items": 1,
+          "truncated_evidence": false
+        },
+        "items_found": "one_or_more",
+        "items_observed": 1,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/the-chrony-package-is-installed-test/object"
+        ],
+        "outcome": "true",
+        "per_item_results": [
+          {
+            "evidence_refs": [],
+            "item": {
+              "capability": "linux.dpkginfo",
+              "fields": {
+                "arch": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "amd64"
+                },
+                "epoch": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "0"
+                },
+                "evr": {
+                  "datatype": "debian_evr",
+                  "status": "exists",
+                  "value": "4.5-1ubuntu4.2"
+                },
+                "name": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "chrony"
+                },
+                "release": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "1ubuntu4.2"
+                },
+                "version": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "4.5"
+                }
+              },
+              "id": "item-5eb490a9fbd49b14085b1434cc9488fe",
+              "provenance": {
+                "collector": "linux.dpkginfo.fixed-query.v1",
+                "observed_at": "2026-11-19T13:56:17.848262279Z",
+                "scope": "local-dpkg-database",
+                "target_ref": "local-linux"
+              },
+              "status": "exists"
+            },
+            "item_ref": "item-5eb490a9fbd49b14085b1434cc9488fe",
+            "outcome": "true",
+            "reason": "item_existence_satisfied",
+            "require_results": [
+              {
+                "field_results": [],
+                "observation_complete": true,
+                "outcome": "true",
+                "reason": "item_existence_satisfied",
+                "require_ref": "/tests/the-chrony-package-is-installed-test/require"
+              }
+            ]
+          }
+        ],
+        "reason": "item_existence_satisfied",
+        "require_refs": [
+          "/tests/the-chrony-package-is-installed-test/require"
+        ],
+        "test_title": "The chrony package is installed"
+      }
+    ],
+    "variables": []
+  }
+}

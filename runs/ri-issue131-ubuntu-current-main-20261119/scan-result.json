@@ -1,0 +1,59 @@
+{
+  "scan_result": {
+    "assessment_result_refs": [
+      "assessment-6b1b4913ebaf0e7ba8d0da06d4331d9d",
+      "assessment-cbf7dceca4b17bac0601aacad26c28b3",
+      "assessment-9ef72fa58851fed4ec056042a4a5c691",
+      "assessment-335cb38ae6b1612ee43f47c804740808",
+      "assessment-2421c67adced779fdeb188b1382b8cb0",
+      "assessment-aba33f1e069990f87f0a715528a5b8c7",
+      "assessment-2d6bd87f93ef46b0992fbdded7d01d00",
+      "assessment-d77ca3615070e25930289a4531dbb20b",
+      "assessment-bb43da54f26274214aab176587eb9aa9",
+      "assessment-0cc6960434f071fd9b0f112db7ffc88f",
+      "assessment-746eadde378d1ac5f8b9c4130829aecb",
+      "assessment-10831ad4e14879e9808f40f53e923368",
+      "assessment-30bd0bd336aa58d29a8d74b17560735d",
+      "assessment-ca7b28be1481ef9435b9aff7798741dd",
+      "assessment-467aa67b2b1eefeb6ef1915635f65146",
+      "assessment-e48e53ad91b89ab64f3ab781bd5eec53",
+      "assessment-53867b0ccdf493bfa7344c69194a3da7",
+      "assessment-056645697b16ddcd7ee75ba2aea981a9",
+      "assessment-62585c8825890fd977cecb804661d5a3",
+      "assessment-cc1aa1f8c7475affa3c9f457e125c0bd",
+      "assessment-17762fc10d370316c9e53188c35e285f"
+    ],
+    "benchmark_results": [
+      {
+        "benchmark_id": "direct-slice",
+        "benchmark_result_ref": "run-3d197f414c9efe86b9d68a70358b7996",
+        "benchmark_version": "001.005.007",
+        "profile_id": "",
+        "summary": {
+          "error": 0,
+          "fail": 2,
+          "not_applicable": 0,
+          "not_evaluated": 0,
+          "pass": 13,
+          "total": 20,
+          "unknown": 5
+        },
+        "tailoring_id": null,
+        "target_ref": "local-linux"
+      }
+    ],
+    "completed_at": "2026-11-19T13:56:17.92863703Z",
+    "result_schema_version": "0.4.1",
+    "run_id": "run-3d197f414c9efe86b9d68a70358b7996",
+    "scanner": {
+      "name": "scap-ng-ri",
+      "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329"
+    },
+    "started_at": "2026-11-19T13:56:17.817661776Z",
+    "targets": [
+      {
+        "id": "local-linux"
+      }
+    ]
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "assessment_result": {
+    "assessment": {
+      "digest": "c1ebad716b21942da89d4ec4a8f1936e637c96d6fc825b82899733af7892a44e",
+      "id": "ubuntu-24-04-lts-use-ssh-information-sv-270666-assessment",
+      "version": 1
+    },
+    "class": "compliance",
+    "dependent_assessments": [],
+    "diagnostics": [],
+    "evidence_complete": true,
+    "evidence_retention": {
+      "maximum_items": 256,
+      "scope": "per_test",
+      "source": "scanner_configuration"
+    },
+    "execution_id": "assessment-cc1aa1f8c7475affa3c9f457e125c0bd",
+    "expression_execution": {
+      "assessment": "ubuntu-24-04-lts-use-ssh-information-sv-270666-assessment",
+      "diagnostics": [],
+      "executed_tests": [
+        "ssh-service-is-active-test",
+        "ssh-service-is-enabled-test"
+      ],
+      "invocation_ref": "assessment-cc1aa1f8c7475affa3c9f457e125c0bd",
+      "outcome": "true",
+      "trace": [
+        {
+          "assessment": "ubuntu-24-04-lts-use-ssh-information-sv-270666-assessment",
+          "kind": "test",
+          "outcome": "true",
+          "owner_invocation_ref": "assessment-cc1aa1f8c7475affa3c9f457e125c0bd",
+          "path": "/tests/ssh-service-is-active-test",
+          "reused": false,
+          "test": "ssh-service-is-active-test"
+        },
+        {
+          "assessment": "ubuntu-24-04-lts-use-ssh-information-sv-270666-assessment",
+          "kind": "test",
+          "outcome": "true",
+          "owner_invocation_ref": "assessment-cc1aa1f8c7475affa3c9f457e125c0bd",
+          "path": "/tests/ssh-service-is-enabled-test",
+          "reused": false,
+          "test": "ssh-service-is-enabled-test"
+        },
+        {
+          "kind": "logical",
+          "outcome": "true",
+          "owner_invocation_ref": "assessment-cc1aa1f8c7475affa3c9f457e125c0bd",
+          "path": "/evaluate",
+          "reason": "operator:and"
+        }
+      ]
+    },
+    "field_uses": [],
+    "logical_complete": true,
+    "mode": "automated",
+    "objects": [
+      {
+        "capability": "linux.systemdunitproperty",
+        "diagnostics": [],
+        "id": "assessment-cc1aa1f8c7475affa3c9f457e125c0bd/object/ssh-service-is-active-test",
+        "item_refs": [
+          "item-1ae193976a92585c56acd15c3e539af4"
+        ],
+        "logical_complete": true,
+        "object_title": null,
+        "population_complete": true,
+        "source_execution_ref": "assessment-cc1aa1f8c7475affa3c9f457e125c0bd",
+        "status": "complete",
+        "stop_reason": null
+      },
+      {
+        "capability": "linux.systemdunitproperty",
+        "diagnostics": [],
+        "id": "assessment-cc1aa1f8c7475affa3c9f457e125c0bd/object/ssh-service-is-enabled-test",
+        "item_refs": [
+          "item-e8a2a5954a18e2ee04726dd93ce807f3"
+        ],
+        "logical_complete": true,
+        "object_title": null,
+        "population_complete": true,
+        "source_execution_ref": "assessment-cc1aa1f8c7475affa3c9f457e125c0bd",
+        "status": "complete",
+        "stop_reason": null
+      }
+    ],
+    "outcome": "true",
+    "population_complete": true,
+    "purpose": "assessment",
+    "result_schema_version": "0.4.1",
+    "summary": "Assessment evaluated true with complete evidence.",
+    "target_ref": "local-linux",
+    "tests": [
+      {
+        "evidence_refs": [],
+        "id": "ssh-service-is-active-test",
+        "invocation_ref": "assessment-cc1aa1f8c7475affa3c9f457e125c0bd",
+        "item_refs": [
+          "item-1ae193976a92585c56acd15c3e539af4"
+        ],
+        "item_summary": {
+          "actual_mismatches": 0,
+          "evaluated_items": 1,
+          "observed_mismatches": 0,
+          "returned_items": 1,
+          "truncated_evidence": false
+        },
+        "items_found": "one_or_more",
+        "items_observed": 1,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/ssh-service-is-active-test/object"
+        ],
+        "outcome": "true",
+        "per_item_results": [
+          {
+            "evidence_refs": [],
+            "item": {
+              "capability": "linux.systemdunitproperty",
+              "fields": {
+                "property": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "ActiveState"
+                },
+                "unit": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "ssh.service"
+                },
+                "value": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "active"
+                }
+              },
+              "id": "item-1ae193976a92585c56acd15c3e539af4",
+              "provenance": {
+                "collector": "linux.systemdunitproperty.systemctl-show.v1",
+                "observed_at": "2026-11-19T13:56:17.926403758Z",
+                "scope": "systemd-system-manager",
+                "target_ref": "local-linux"
+              },
+              "status": "exists"
+            },
+            "item_ref": "item-1ae193976a92585c56acd15c3e539af4",
+            "outcome": "true",
+            "reason": "all_required_fields_equal",
+            "require_results": [
+              {
+                "field_results": [],
+                "observation_complete": true,
+                "operator": "and",
+                "outcome": "true",
+                "reason": "require_and_satisfied",
+                "require_ref": "/tests/ssh-service-is-active-test/require",
+                "require_results": [
+                  {
+                    "field_results": [
+                      {
+                        "datatype": "string",
+                        "evidence_refs": [],
+                        "expected_values": [
+                          {
+                            "datatype": "string",
+                            "status": "exists",
+                            "value": "active"
+                          }
+                        ],
+                        "field": "value",
+                        "observation_complete": true,
+                        "observed_values": [
+                          {
+                            "datatype": "string",
+                            "status": "exists",
+                            "value": "active"
+                          }
+                        ],
+                        "operation": "equals",
+                        "outcome": "true",
+                        "reason": "all_required_fields_equal",
+                        "require_ref": "/tests/ssh-service-is-active-test/require/and/0",
+                        "requirement_ref": "/tests/ssh-service-is-active-test/require/and/0/fields/value",
+                        "values_found": "one_or_more",
+                        "values_matching": "every"
+                      }
+                    ],
+                    "observation_complete": true,
+                    "outcome": "true",
+                    "reason": "fields_satisfied",
+                    "require_ref": "/tests/ssh-service-is-active-test/require/and/0",
+                    "require_results": []
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "reason": "all_required_fields_equal",
+        "require_refs": [
+          "/tests/ssh-service-is-active-test/require"
+        ],
+        "test_title": "ssh.service is active"
+      },
+      {
+        "evidence_refs": [],
+        "id": "ssh-service-is-enabled-test",
+        "invocation_ref": "assessment-cc1aa1f8c7475affa3c9f457e125c0bd",
+        "item_refs": [
+          "item-e8a2a5954a18e2ee04726dd93ce807f3"
+        ],
+        "item_summary": {
+          "actual_mismatches": 0,
+          "evaluated_items": 1,
+          "observed_mismatches": 0,
+          "returned_items": 1,
+          "truncated_evidence": false
+        },
+        "items_found": "one_or_more",
+        "items_observed": 1,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/ssh-service-is-enabled-test/object"
+        ],
+        "outcome": "true",
+        "per_item_results": [
+          {
+            "evidence_refs": [],
+            "item": {
+              "capability": "linux.systemdunitproperty",
+              "fields": {
+                "property": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "UnitFileState"
+                },
+                "unit": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "ssh.service"
+                },
+                "value": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "enabled"
+                }
+              },
+              "id": "item-e8a2a5954a18e2ee04726dd93ce807f3",
+              "provenance": {
+                "collector": "linux.systemdunitproperty.systemctl-show.v1",
+                "observed_at": "2026-11-19T13:56:17.92217771Z",
+                "scope": "systemd-system-manager",
+                "target_ref": "local-linux"
+              },
+              "status": "exists"
+            },
+            "item_ref": "item-e8a2a5954a18e2ee04726dd93ce807f3",
+            "outcome": "true",
+            "reason": "all_required_fields_equal",
+            "require_results": [
+              {
+                "field_results": [],
+                "observation_complete": true,
+                "operator": "and",
+                "outcome": "true",
+                "reason": "require_and_satisfied",
+                "require_ref": "/tests/ssh-service-is-enabled-test/require",
+                "require_results": [
+                  {
+                    "field_results": [
+                      {
+                        "datatype": "string",
+                        "evidence_refs": [],
+                        "expected_values": [
+                          {
+                            "datatype": "string",
+                            "status": "exists",
+                            "value": "enabled"
+                          }
+                        ],
+                        "field": "value",
+                        "observation_complete": true,
+                        "observed_values": [
+                          {
+                            "datatype": "string",
+                            "status": "exists",
+                            "value": "enabled"
+                          }
+                        ],
+                        "operation": "equals",
+                        "outcome": "true",
+                        "reason": "all_required_fields_equal",
+                        "require_ref": "/tests/ssh-service-is-enabled-test/require/and/0",
+                        "requirement_ref": "/tests/ssh-service-is-enabled-test/require/and/0/fields/value",
+                        "values_found": "one_or_more",
+                        "values_matching": "every"
+                      }
+                    ],
+                    "observation_complete": true,
+                    "outcome": "true",
+                    "reason": "fields_satisfied",
+                    "require_ref": "/tests/ssh-service-is-enabled-test/require/and/0",
+                    "require_results": []
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "reason": "all_required_fields_equal",
+        "require_refs": [
+          "/tests/ssh-service-is-enabled-test/require"
+        ],
+        "test_title": "ssh.service is enabled"
+      }
+    ],
+    "variables": []
+  }
+}

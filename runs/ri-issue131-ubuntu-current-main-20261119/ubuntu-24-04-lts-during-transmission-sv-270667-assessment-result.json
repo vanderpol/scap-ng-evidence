@@ -1,0 +1,101 @@
+{
+  "assessment_result": {
+    "assessment": {
+      "digest": "648db95ca0a85d76f76b74e0c5fe7290504b76b114c10aa34a088087b3493dd9",
+      "id": "ubuntu-24-04-lts-during-transmission-sv-270667-assessment",
+      "version": 1
+    },
+    "class": "compliance",
+    "dependent_assessments": [],
+    "diagnostics": [
+      {
+        "code": "collection_incomplete",
+        "message": "collection incomplete: acquisition not complete: unsupported"
+      }
+    ],
+    "evidence_complete": false,
+    "evidence_retention": {
+      "maximum_items": 256,
+      "scope": "per_test",
+      "source": "scanner_configuration"
+    },
+    "execution_id": "assessment-cbf7dceca4b17bac0601aacad26c28b3",
+    "expression_execution": {
+      "assessment": "ubuntu-24-04-lts-during-transmission-sv-270667-assessment",
+      "diagnostics": [],
+      "executed_tests": [
+        "etc-ssh-sshd-config-ciphers-dod-approved-ciphers-test"
+      ],
+      "invocation_ref": "assessment-cbf7dceca4b17bac0601aacad26c28b3",
+      "outcome": "unknown",
+      "trace": [
+        {
+          "assessment": "ubuntu-24-04-lts-during-transmission-sv-270667-assessment",
+          "kind": "test",
+          "outcome": "unknown",
+          "owner_invocation_ref": "assessment-cbf7dceca4b17bac0601aacad26c28b3",
+          "path": "/tests/etc-ssh-sshd-config-ciphers-dod-approved-ciphers-test",
+          "reused": false,
+          "test": "etc-ssh-sshd-config-ciphers-dod-approved-ciphers-test"
+        }
+      ]
+    },
+    "field_uses": [],
+    "logical_complete": false,
+    "mode": "automated",
+    "objects": [
+      {
+        "capability": "independent.textfilecontent",
+        "diagnostics": [
+          {
+            "code": "collection_incomplete",
+            "message": "collection incomplete: acquisition not complete: unsupported"
+          }
+        ],
+        "id": "assessment-cbf7dceca4b17bac0601aacad26c28b3/object/etc-ssh-sshd-config-ciphers-dod-approved-ciphers-test",
+        "item_refs": [],
+        "logical_complete": false,
+        "object_title": null,
+        "population_complete": false,
+        "source_execution_ref": "assessment-cbf7dceca4b17bac0601aacad26c28b3",
+        "status": "not_collected",
+        "stop_reason": "collection_incomplete"
+      }
+    ],
+    "outcome": "unknown",
+    "population_complete": false,
+    "purpose": "assessment",
+    "result_schema_version": "0.4.1",
+    "summary": "Assessment evidence was incomplete or inconclusive.",
+    "target_ref": "local-linux",
+    "tests": [
+      {
+        "evidence_refs": [],
+        "id": "etc-ssh-sshd-config-ciphers-dod-approved-ciphers-test",
+        "invocation_ref": "assessment-cbf7dceca4b17bac0601aacad26c28b3",
+        "item_refs": [],
+        "item_summary": {
+          "actual_mismatches": "unknown",
+          "evaluated_items": 0,
+          "observed_mismatches": 0,
+          "returned_items": 0,
+          "truncated_evidence": false
+        },
+        "items_found": "none",
+        "items_observed": 0,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/etc-ssh-sshd-config-ciphers-dod-approved-ciphers-test/object"
+        ],
+        "outcome": "unknown",
+        "per_item_results": [],
+        "reason": "collection incomplete: acquisition not complete: unsupported",
+        "require_refs": [
+          "/tests/etc-ssh-sshd-config-ciphers-dod-approved-ciphers-test/require"
+        ],
+        "test_title": "/etc/ssh/sshd_config:Ciphers == DoD-approved ciphers"
+      }
+    ],
+    "variables": []
+  }
+}

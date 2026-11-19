@@ -1,0 +1,154 @@
+{
+  "assessment_result": {
+    "assessment": {
+      "digest": "72925386f124621bd05e05a82434a0b31c5394fb5eb0ebcb483dbc9e43b87edf",
+      "id": "ubuntu-24-04-lts-must-have-ssh-installed-sv-270665-assessment",
+      "version": 1
+    },
+    "class": "compliance",
+    "dependent_assessments": [],
+    "diagnostics": [],
+    "evidence_complete": true,
+    "evidence_retention": {
+      "maximum_items": 256,
+      "scope": "per_test",
+      "source": "scanner_configuration"
+    },
+    "execution_id": "assessment-bb43da54f26274214aab176587eb9aa9",
+    "expression_execution": {
+      "assessment": "ubuntu-24-04-lts-must-have-ssh-installed-sv-270665-assessment",
+      "diagnostics": [],
+      "executed_tests": [
+        "package-ssh-is-installed-test"
+      ],
+      "invocation_ref": "assessment-bb43da54f26274214aab176587eb9aa9",
+      "outcome": "true",
+      "trace": [
+        {
+          "assessment": "ubuntu-24-04-lts-must-have-ssh-installed-sv-270665-assessment",
+          "kind": "test",
+          "outcome": "true",
+          "owner_invocation_ref": "assessment-bb43da54f26274214aab176587eb9aa9",
+          "path": "/tests/package-ssh-is-installed-test",
+          "reused": false,
+          "test": "package-ssh-is-installed-test"
+        }
+      ]
+    },
+    "field_uses": [],
+    "logical_complete": true,
+    "mode": "automated",
+    "objects": [
+      {
+        "capability": "linux.dpkginfo",
+        "diagnostics": [],
+        "id": "assessment-bb43da54f26274214aab176587eb9aa9/object/package-ssh-is-installed-test",
+        "item_refs": [
+          "item-6e92b177a91a0bcffcc38975d46916af"
+        ],
+        "logical_complete": true,
+        "object_title": null,
+        "population_complete": true,
+        "source_execution_ref": "assessment-bb43da54f26274214aab176587eb9aa9",
+        "status": "complete",
+        "stop_reason": null
+      }
+    ],
+    "outcome": "true",
+    "population_complete": true,
+    "purpose": "assessment",
+    "result_schema_version": "0.4.1",
+    "summary": "Assessment evaluated true with complete evidence.",
+    "target_ref": "local-linux",
+    "tests": [
+      {
+        "evidence_refs": [],
+        "id": "package-ssh-is-installed-test",
+        "invocation_ref": "assessment-bb43da54f26274214aab176587eb9aa9",
+        "item_refs": [
+          "item-6e92b177a91a0bcffcc38975d46916af"
+        ],
+        "item_summary": {
+          "actual_mismatches": 0,
+          "evaluated_items": 1,
+          "observed_mismatches": 0,
+          "returned_items": 1,
+          "truncated_evidence": false
+        },
+        "items_found": "one_or_more",
+        "items_observed": 1,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/package-ssh-is-installed-test/object"
+        ],
+        "outcome": "true",
+        "per_item_results": [
+          {
+            "evidence_refs": [],
+            "item": {
+              "capability": "linux.dpkginfo",
+              "fields": {
+                "arch": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "amd64"
+                },
+                "epoch": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "1"
+                },
+                "evr": {
+                  "datatype": "debian_evr",
+                  "status": "exists",
+                  "value": "1:9.6p1-3ubuntu13.20"
+                },
+                "name": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "openssh-server"
+                },
+                "release": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "3ubuntu13.20"
+                },
+                "version": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "9.6p1"
+                }
+              },
+              "id": "item-6e92b177a91a0bcffcc38975d46916af",
+              "provenance": {
+                "collector": "linux.dpkginfo.fixed-query.v1",
+                "observed_at": "2026-11-19T13:56:17.858316124Z",
+                "scope": "local-dpkg-database",
+                "target_ref": "local-linux"
+              },
+              "status": "exists"
+            },
+            "item_ref": "item-6e92b177a91a0bcffcc38975d46916af",
+            "outcome": "true",
+            "reason": "item_existence_satisfied",
+            "require_results": [
+              {
+                "field_results": [],
+                "observation_complete": true,
+                "outcome": "true",
+                "reason": "item_existence_satisfied",
+                "require_ref": "/tests/package-ssh-is-installed-test/require"
+              }
+            ]
+          }
+        ],
+        "reason": "item_existence_satisfied",
+        "require_refs": [
+          "/tests/package-ssh-is-installed-test/require"
+        ],
+        "test_title": "package ssh is installed"
+      }
+    ],
+    "variables": []
+  }
+}

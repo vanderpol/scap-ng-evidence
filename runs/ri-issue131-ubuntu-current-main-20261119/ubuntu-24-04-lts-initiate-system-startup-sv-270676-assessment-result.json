@@ -1,0 +1,165 @@
+{
+  "assessment_result": {
+    "assessment": {
+      "digest": "29fee5d6a9548fc2cbe02f3bbd0aaf5341059c438f73ee83637b89c10476fcc2",
+      "id": "ubuntu-24-04-lts-initiate-system-startup-sv-270676-assessment",
+      "version": 1
+    },
+    "class": "compliance",
+    "dependent_assessments": [],
+    "diagnostics": [
+      {
+        "code": "collection_incomplete",
+        "message": "collection incomplete: acquisition not complete: permission_denied"
+      },
+      {
+        "code": "collection_incomplete",
+        "message": "collection incomplete: acquisition not complete: unsupported"
+      }
+    ],
+    "evidence_complete": false,
+    "evidence_retention": {
+      "maximum_items": 256,
+      "scope": "per_test",
+      "source": "scanner_configuration"
+    },
+    "execution_id": "assessment-d77ca3615070e25930289a4531dbb20b",
+    "expression_execution": {
+      "assessment": "ubuntu-24-04-lts-initiate-system-startup-sv-270676-assessment",
+      "diagnostics": [],
+      "executed_tests": [
+        "all-linux-lines-in-boot-grub-grub-cfg-must-contain-audit-1-test",
+        "all-linux-lines-in-etc-default-grub-contain-audit-1-test"
+      ],
+      "invocation_ref": "assessment-d77ca3615070e25930289a4531dbb20b",
+      "outcome": "unknown",
+      "trace": [
+        {
+          "assessment": "ubuntu-24-04-lts-initiate-system-startup-sv-270676-assessment",
+          "kind": "test",
+          "outcome": "unknown",
+          "owner_invocation_ref": "assessment-d77ca3615070e25930289a4531dbb20b",
+          "path": "/tests/all-linux-lines-in-boot-grub-grub-cfg-must-contain-audit-1-test",
+          "reused": false,
+          "test": "all-linux-lines-in-boot-grub-grub-cfg-must-contain-audit-1-test"
+        },
+        {
+          "assessment": "ubuntu-24-04-lts-initiate-system-startup-sv-270676-assessment",
+          "kind": "test",
+          "outcome": "unknown",
+          "owner_invocation_ref": "assessment-d77ca3615070e25930289a4531dbb20b",
+          "path": "/tests/all-linux-lines-in-etc-default-grub-contain-audit-1-test",
+          "reused": false,
+          "test": "all-linux-lines-in-etc-default-grub-contain-audit-1-test"
+        },
+        {
+          "kind": "logical",
+          "outcome": "unknown",
+          "owner_invocation_ref": "assessment-d77ca3615070e25930289a4531dbb20b",
+          "path": "/evaluate",
+          "reason": "operator:and"
+        }
+      ]
+    },
+    "field_uses": [],
+    "logical_complete": false,
+    "mode": "automated",
+    "objects": [
+      {
+        "capability": "independent.textfilecontent",
+        "diagnostics": [
+          {
+            "code": "collection_incomplete",
+            "message": "collection incomplete: acquisition not complete: permission_denied"
+          }
+        ],
+        "id": "assessment-d77ca3615070e25930289a4531dbb20b/object/all-linux-lines-in-boot-grub-grub-cfg-must-contain-audit-1-test",
+        "item_refs": [],
+        "logical_complete": false,
+        "object_title": null,
+        "population_complete": false,
+        "source_execution_ref": "assessment-d77ca3615070e25930289a4531dbb20b",
+        "status": "error",
+        "stop_reason": "collection_incomplete"
+      },
+      {
+        "capability": "independent.textfilecontent",
+        "diagnostics": [
+          {
+            "code": "collection_incomplete",
+            "message": "collection incomplete: acquisition not complete: unsupported"
+          }
+        ],
+        "id": "assessment-d77ca3615070e25930289a4531dbb20b/object/all-linux-lines-in-etc-default-grub-contain-audit-1-test",
+        "item_refs": [],
+        "logical_complete": false,
+        "object_title": null,
+        "population_complete": false,
+        "source_execution_ref": "assessment-d77ca3615070e25930289a4531dbb20b",
+        "status": "not_collected",
+        "stop_reason": "collection_incomplete"
+      }
+    ],
+    "outcome": "unknown",
+    "population_complete": false,
+    "purpose": "assessment",
+    "result_schema_version": "0.4.1",
+    "summary": "Assessment evidence was incomplete or inconclusive.",
+    "target_ref": "local-linux",
+    "tests": [
+      {
+        "evidence_refs": [],
+        "id": "all-linux-lines-in-boot-grub-grub-cfg-must-contain-audit-1-test",
+        "invocation_ref": "assessment-d77ca3615070e25930289a4531dbb20b",
+        "item_refs": [],
+        "item_summary": {
+          "actual_mismatches": "unknown",
+          "evaluated_items": 0,
+          "observed_mismatches": 0,
+          "returned_items": 0,
+          "truncated_evidence": false
+        },
+        "items_found": "none",
+        "items_observed": 0,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/all-linux-lines-in-boot-grub-grub-cfg-must-contain-audit-1-test/object"
+        ],
+        "outcome": "unknown",
+        "per_item_results": [],
+        "reason": "collection incomplete: acquisition not complete: permission_denied",
+        "require_refs": [
+          "/tests/all-linux-lines-in-boot-grub-grub-cfg-must-contain-audit-1-test/require"
+        ],
+        "test_title": "All linux lines in /boot/grub/grub.cfg must contain 'audit=1'."
+      },
+      {
+        "evidence_refs": [],
+        "id": "all-linux-lines-in-etc-default-grub-contain-audit-1-test",
+        "invocation_ref": "assessment-d77ca3615070e25930289a4531dbb20b",
+        "item_refs": [],
+        "item_summary": {
+          "actual_mismatches": "unknown",
+          "evaluated_items": 0,
+          "observed_mismatches": 0,
+          "returned_items": 0,
+          "truncated_evidence": false
+        },
+        "items_found": "none",
+        "items_observed": 0,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/all-linux-lines-in-etc-default-grub-contain-audit-1-test/object"
+        ],
+        "outcome": "unknown",
+        "per_item_results": [],
+        "reason": "collection incomplete: acquisition not complete: unsupported",
+        "require_refs": [
+          "/tests/all-linux-lines-in-etc-default-grub-contain-audit-1-test/require"
+        ],
+        "test_title": "All linux lines in /etc/default/grub contain 'audit=1'."
+      }
+    ],
+    "variables": []
+  }
+}
