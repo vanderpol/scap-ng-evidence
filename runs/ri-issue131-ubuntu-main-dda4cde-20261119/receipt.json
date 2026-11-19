@@ -1,0 +1,55 @@
+{
+  "canonical_commit": "5ee55288b369da26f308f40813e545b78dff2753",
+  "execution": {
+    "exit_code": 0,
+    "filesystem_output_blocks": 1824,
+    "peak_rss_kib": 61604,
+    "queue": 8,
+    "target": "ubuntu-24.04-main-dda4cde",
+    "timeout": "120s",
+    "wall_seconds": 0.22,
+    "workers": 4
+  },
+  "format": "scap-ng-ri/ubuntu-native-benchmark-receipt/1",
+  "host": {
+    "architecture": "x86_64",
+    "authority": "unverified:non-root-process",
+    "cap_eff": "0",
+    "effective_uid": "redacted-non-root",
+    "kernel": "7.0.0-1017-aws",
+    "namespace_scope": "current process mount/user/pid/net/uts namespaces",
+    "os": "Ubuntu 24.04.5 LTS",
+    "sudo_noninteractive": "not_allowed"
+  },
+  "limitations": [
+    "Ubuntu execution is a diagnostic, not RHEL9 compliance qualification.",
+    "Non-root authority and current namespace visibility remain explicit.",
+    "No independent OVAL/OpenSCAP equivalence claim.",
+    "Raw evidence is retained locally; published bundle contains canonical Results, bounded reports and redacted provenance."
+  ],
+  "outcomes": {
+    "error": 0,
+    "fail": 4,
+    "not_applicable": 0,
+    "not_evaluated": 0,
+    "pass": 23,
+    "total": 33,
+    "unknown": 6
+  },
+  "package": {
+    "assessments": 34,
+    "path": "external:/tmp/ri-ubuntu-v72-current/package",
+    "rules": 33
+  },
+  "ri_commit": "dda4cde81a56f95d408d66611db075f82883da89",
+  "source_rule_transition": {
+    "after": "fail",
+    "before": "unknown",
+    "evidence": "complete shellcommand Item had exit_status=123 and permission-denied stderr; no stdout_line was observed",
+    "reason_after": "value_mismatch",
+    "reason_before": "missing_field_held",
+    "rule_id": "SV-270691"
+  },
+  "source_zip_sha256": "40229cd7a41e6ff4a8cfb675523f767292d1460edbc68fe9ba5258c530c8b4a7",
+  "tools_commit": "df2deb1a514cdd0babbccdf2d240fba4e9811d6d"
+}

@@ -1,0 +1,1752 @@
+SCAP-NG SCAN REPORT
+===================
+
+TARGET / SCAN
+-------------
+Hostname             redacted-host
+Target ID            ubuntu-24.04-main-dda4cde
+Operating system (observed) Ubuntu 24.04.5 LTS
+OS identity          ubuntu / 24.04
+Architecture         x86_64
+Kernel               7.0.0-1017-aws
+Collection authority unverified:non-root-process
+Collection scope     current process mount/user/pid/net/uts namespaces
+Evidence trust       restricted-process-observation
+Scan started         2026-11-19T17:32:50.683408776Z
+Scan completed       2026-11-19T17:32:50.905295555Z
+Total elapsed        0.22s
+Scan ID              run-69d55c6799e85d130ca9a009c9ff94b6
+
+BENCHMARK / APPLICABILITY
+--------------------------
+Benchmark            direct-slice
+Benchmark version    001.005.007
+Platform             Source Benchmark platform restriction (fixture-platform)
+Profile              default
+Source digest        c17a930dc680b4b4e8207b2541467ce23ce0eb692914ee970a2cb685c9cdb24c
+Qualification        CROSS-PLATFORM DIAGNOSTIC ONLY — COMPLIANCE SCORE UNAVAILABLE
+Qualification reason source CPE hash or Assessment mapping is not verified by package provenance
+
+EXECUTIVE SUMMARY
+------------------
+33 Rules: 23 pass, 4 fail, 6 unknown, 0 error, 0 not evaluated, 0 not applicable.
+Compliance score: unavailable (diagnostic only)
+Pass 23 | Fail 4 | Unknown 6 | Error 0 | Not applicable 0 | Not evaluated 0
+Shared Assessment executions: 34 (consuming Rules link to one execution)
+
+TIME / PERFORMANCE
+------------------
+Slowest Rules (measured intervals; concurrent durations are not additive)
+  <0.01s   PASS         ubuntu-24-04-lts-accept-management-pam-framework-sv-270673-rule — Ubuntu 24.04 LTS must accept Personal Identity Verification (PIV) credentials managed through the Privileged Access Management (PAM)  framework.
+  <0.01s   PASS         ubuntu-24-04-lts-accept-piv-credentials-sv-270672-rule — Ubuntu 24.04 LTS must accept Personal Identity Verification (PIV) credentials.
+  <0.01s   PASS         ubuntu-24-04-lts-allow-users-connection-types-sv-270674-rule — Ubuntu 24.04 LTS must allow users to directly initiate a session lock for all connection types.
+Slowest Assessments (each shared invocation counted once)
+  0.07s    TRUE         ubuntu-24-04-lts-have-package-installed-sv-270662-assessment — Ubuntu 24.04 LTS must have the "SSSD" package installed.
+  0.06s    TRUE         ubuntu-24-04-lts-have-package-installed-sv-270664-assessment — Ubuntu 24.04 LTS must have the "chrony" package installed.
+  0.05s    TRUE         ubuntu-24-04-lts-accept-pam-framework-sv-270673-assessment — Ubuntu 24.04 LTS must accept Personal Identity Verification (PIV) credentials managed through the Privileged Access Management (PAM)  framework.
+
+RULE RESULTS
+------------
+OUTCOME          SEVERITY DURATION     RULE ID                  TITLE
+---------------- -------- ------------ ------------------------ -----
+PASS             medium   <0.01s       ubuntu-24-04-lts-accept-management-pam-framework-sv-270673-rule Ubuntu 24.04 LTS must accept Personal Identity Verification (PIV) credentials managed through the Privileged Access Management (PAM)  framework.
+PASS             medium   <0.01s       ubuntu-24-04-lts-accept-piv-credentials-sv-270672-rule Ubuntu 24.04 LTS must accept Personal Identity Verification (PIV) credentials.
+PASS             medium   <0.01s       ubuntu-24-04-lts-allow-users-connection-types-sv-270674-rule Ubuntu 24.04 LTS must allow users to directly initiate a session lock for all connection types.
+UNKNOWN          medium   <0.01s       ubuntu-24-04-lts-configure-during-transmission-sv-270667-rule Ubuntu 24.04 LTS must configure the SSH daemon to use FIPS 140-3 approved ciphers to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.
+FAIL             medium   <0.01s       ubuntu-24-04-lts-configure-during-transmission-sv-270668-rule Ubuntu 24.04 LTS must configure the SSH daemon to use Message Authentication Codes (MACs) employing FIPS 140-3 approved cryptographic hashes to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.
+UNKNOWN          medium   <0.01s       ubuntu-24-04-lts-configure-file-owned-by-syslog-sv-270769-rule Ubuntu 24.04 LTS must configure /var/log/syslog file to be owned by syslog.
+UNKNOWN          medium   <0.01s       ubuntu-24-04-lts-configure-group-owned-by-adm-sv-270768-rule Ubuntu 24.04 LTS must configure the /var/log/syslog file to be group-owned by adm.
+FAIL             medium   <0.01s       ubuntu-24-04-lts-configure-or-less-permissive-sv-270767-rule Ubuntu 24.04 LTS must configure the /var/log directory to have mode "0755" or less permissive.
+PASS             medium   <0.01s       ubuntu-24-04-lts-configure-or-less-permissive-sv-270770-rule Ubuntu 24.04 LTS must configure /var/log/syslog file with mode "0640" or less permissive.
+PASS             medium   <0.01s       ubuntu-24-04-lts-configure-owned-by-root-sv-270766-rule Ubuntu 24.04 LTS must configure the /var/log directory to be owned by root.
+PASS             high     <0.01s       ubuntu-24-04-lts-disable-x86-delete-key-sequence-sv-270712-rule Ubuntu 24.04 LTS must disable the x86 Ctrl-Alt-Delete key sequence.
+FAIL             medium   <0.01s       ubuntu-24-04-lts-display-access-via-ssh-logon-sv-270691-rule Ubuntu 24.04 LTS must display the Standard Mandatory DOD Notice and Consent Banner before granting access to via an SSH logon.
+PASS             medium   <0.01s       ubuntu-24-04-lts-enable-and-firewall-ufw-sv-270655-rule Ubuntu 24.04 LTS must enable and run the Uncomplicated Firewall (ufw).
+PASS             medium   <0.01s       ubuntu-24-04-lts-have-auditd-package-installed-sv-270656-rule Ubuntu 24.04 LTS must have the "auditd" package installed.
+PASS             low      <0.01s       ubuntu-24-04-lts-have-chrony-package-installed-sv-270664-rule Ubuntu 24.04 LTS must have the "chrony" package installed.
+PASS             medium   <0.01s       ubuntu-24-04-lts-have-libpam-package-installed-sv-270661-rule Ubuntu 24.04 LTS must have the "libpam-pwquality" package installed.
+PASS             medium   <0.01s       ubuntu-24-04-lts-have-remote-access-methods-sv-270654-rule Ubuntu 24.04 LTS must have an application firewall installed in order to control remote access methods.
+PASS             medium   <0.01s       ubuntu-24-04-lts-have-sssd-package-installed-sv-270662-rule Ubuntu 24.04 LTS must have the "SSSD" package installed.
+UNKNOWN          medium   <0.01s       ubuntu-24-04-lts-library-0755-or-less-permissive-sv-270696-rule Ubuntu 24.04 LTS library files must have mode 0755 or less permissive.
+PASS             medium   <0.01s       ubuntu-24-04-lts-must-have-apparmor-installed-sv-270659-rule Ubuntu 24.04 LTS must have AppArmor installed.
+PASS             high     <0.01s       ubuntu-24-04-lts-must-have-ssh-installed-sv-270665-rule Ubuntu 24.04 LTS must have SSH installed.
+PASS             low      <0.01s       ubuntu-24-04-lts-not-have-ntp-package-installed-sv-270646-rule Ubuntu 24.04 LTS must not have the "ntp" package installed.
+PASS             low      <0.01s       ubuntu-24-04-lts-not-have-package-installed-sv-270645-rule Ubuntu 24.04 LTS must not have the "systemd-timesyncd" package installed.
+PASS             high     <0.01s       ubuntu-24-04-lts-not-have-package-installed-sv-270647-rule Ubuntu 24.04 LTS must not have the telnet package installed.
+PASS             high     <0.01s       ubuntu-24-04-lts-not-have-package-installed-sv-270648-rule Ubuntu 24.04 LTS must not have the rsh-server package installed.
+UNKNOWN          medium   <0.01s       ubuntu-24-04-lts-prevent-login-root-account-sv-270724-rule Ubuntu 24.04 LTS must prevent direct login to the root account.
+PASS             medium   <0.01s       ubuntu-24-04-lts-so-that-by-unauthorized-users-sv-270758-rule Ubuntu 24.04 LTS must be configured so that the "journalctl" command is not accessible by unauthorized users.
+PASS             medium   <0.01s       ubuntu-24-04-lts-so-that-is-group-owned-by-root-sv-270760-rule Ubuntu 24.04 LTS must be configured so that the "journalctl" command is group-owned by "root".
+PASS             medium   <0.01s       ubuntu-24-04-lts-so-that-is-owned-by-root-sv-270759-rule Ubuntu 24.04 LTS must be configured so that the "journalctl" command is owned by "root".
+UNKNOWN          medium   <0.01s       ubuntu-24-04-lts-ssh-server-exchange-algorithms-sv-270669-rule Ubuntu 24.04 LTS SSH server must be configured to use only FIPS 140-3 validated key exchange algorithms.
+PASS             medium   <0.01s       ubuntu-24-04-lts-use-apparmor-sv-270660-rule Ubuntu 24.04 LTS must be configured to use AppArmor.
+FAIL             medium   <0.01s       ubuntu-24-04-lts-use-file-all-security-functions-sv-270649-rule Ubuntu 24.04 LTS must use a file integrity tool to verify correct operation of all security functions.
+PASS             high     <0.01s       ubuntu-24-04-lts-use-ssh-transmitted-information-sv-270666-rule Ubuntu 24.04 LTS must use SSH to protect the confidentiality and integrity of transmitted information.
+
+FINDINGS AND EVIDENCE (FAILURE / UNKNOWN FIRST)
+-----------------------------------------------
+[FAIL] ubuntu-24-04-lts-configure-during-transmission-sv-270668-rule — Ubuntu 24.04 LTS must configure the SSH daemon to use Message Authentication Codes (MACs) employing FIPS 140-3 approved cryptographic hashes to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.904950921Z
+Rule completed     2026-11-19T17:32:50.904957955Z
+Assessment         ubuntu-24-04-lts-during-transmission-sv-270668-assessment — Ubuntu 24.04 LTS must configure the SSH daemon to use Message Authentication Codes (MACs) employing FIPS 140-3 approved cryptographic hashes to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.
+Why                Assessment evaluated false.
+Finding            Assessment evaluated false.
+Assessment result  FALSE (Assessment evaluated false.)
+Assessment duration <0.01s
+Assessment started  2026-11-19T17:32:50.726071795Z
+Assessment completed 2026-11-19T17:32:50.730888612Z
+
+EVALUATE TREE
+  /tests/etc-ssh-sshd-config-macs-use-cryptographic-hash-algorithms-test → Test etc-ssh-sshd-config-macs-use-cryptographic-hash-algorithms-test — FALSE
+
+EVALUATE → TEST
+  etc-ssh-sshd-config-macs-use-cryptographic-hash-algorithms-test — /etc/ssh/sshd_config: MACs use FIPS 140-3 validated cryptographic hash algorithms
+  Technical result   FALSE
+  Reason             item existence cardinality false
+  Items observed    0
+  Items retained    0
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-8c43c29c927e20930a7bdfde20bf3a11/object/etc-ssh-sshd-config-macs-use-cryptographic-hash-algorithms-test
+  Capability         independent.textfilecontent
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+[FAIL] ubuntu-24-04-lts-configure-or-less-permissive-sv-270767-rule — Ubuntu 24.04 LTS must configure the /var/log directory to have mode "0755" or less permissive.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.905060945Z
+Rule completed     2026-11-19T17:32:50.905066637Z
+Assessment         ubuntu-24-04-lts-0755-or-less-permissive-sv-270767-assessment — Ubuntu 24.04 LTS must configure the /var/log directory to have mode "0755" or less permissive.
+Why                The file "/var/log" (Item "item-6d7229bd03d33be1c00f5e8f7805e099") has field "group_write" with observed value true; the required equals comparison with expected value false evaluated FALSE.
+Finding            The file "/var/log" (Item "item-6d7229bd03d33be1c00f5e8f7805e099") has field "group_write" with observed value true; the required equals comparison with expected value false evaluated FALSE.
+Assessment result  FALSE (The file "/var/log" (Item "item-6d7229bd03d33be1c00f5e8f7805e099") has field "group_write" with observed value true; the required equals comparison with expected value false evaluated FALSE.)
+Assessment duration <0.01s
+Assessment started  2026-11-19T17:32:50.687145117Z
+Assessment completed 2026-11-19T17:32:50.6936921Z
+
+EVALUATE TREE
+  /tests/var-log-directory-has-mode-0755-or-less-permissive-test → Test var-log-directory-has-mode-0755-or-less-permissive-test — FALSE
+
+EVALUATE → TEST
+  var-log-directory-has-mode-0755-or-less-permissive-test — /var/log directory has mode 0755 or less permissive.
+  Technical result   FALSE
+  Reason             The file "/var/log" (Item "item-6d7229bd03d33be1c00f5e8f7805e099") has field "group write" with observed value true; the required equals comparison with expected value false evaluated FALSE.
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-950119e013963c7a212d340d82c88c1c/object/var-log-directory-has-mode-0755-or-less-permissive-test
+  Capability         unix.file
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/var-log-directory-has-mode-0755-or-less-permissive-test/require — FALSE
+  Decisive reason    require and cardinality false
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1 — DECISIVE EVIDENCE
+  Identity           item-6d7229bd03d33be1c00f5e8f7805e099
+  Capability         unix.file
+  Status             exists
+  directory            "/var/log" [string; exists]
+  full_path            "/var/log" [string; exists]
+  group_execute        true [boolean; exists]
+  group_read           true [boolean; exists]
+  group_write          true [boolean; exists]
+  name                 "log" [string; exists]
+  other_execute        true [boolean; exists]
+  other_read           true [boolean; exists]
+  other_write          false [boolean; exists]
+  owner_execute        true [boolean; exists]
+  owner_gid            102 [integer; exists]
+  owner_read           true [boolean; exists]
+  owner_uid            0 [integer; exists]
+  owner_write          true [boolean; exists]
+  setgid               false [boolean; exists]
+  setuid               false [boolean; exists]
+  size                 4096 [integer; exists]
+  sticky               false [boolean; exists]
+  type                 "directory" [string; exists]
+  Evidence provenance authority="scoped:filesystem-tree" collector="runtimecore.unix.file.tree.v1" observed_at="2026-11-19T17:32:50.689132692Z" scope="/var" target_ref="ubuntu-24.04-main-dda4cde"
+
+[FAIL] ubuntu-24-04-lts-display-access-via-ssh-logon-sv-270691-rule — Ubuntu 24.04 LTS must display the Standard Mandatory DOD Notice and Consent Banner before granting access to via an SSH logon.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.904976101Z
+Rule completed     2026-11-19T17:32:50.904985767Z
+Assessment         ubuntu-24-04-lts-display-via-ssh-logon-sv-270691-assessment — Ubuntu 24.04 LTS must display the Standard Mandatory DOD Notice and Consent Banner before granting access to via an SSH logon.
+Why                Assessment evaluated false.
+Finding            Assessment evaluated false.
+Assessment result  FALSE (Assessment evaluated false.)
+Assessment duration 0.02s
+Assessment started  2026-11-19T17:32:50.716820011Z
+Assessment completed 2026-11-19T17:32:50.737351983Z
+
+EVALUATE TREE
+  /tests/sshd-server-b-congiured-use-banner-file-etc-issue-net-test → Test sshd-server-b-congiured-use-banner-file-etc-issue-net-test — FALSE
+  /tests/ubuntu-display-standard-local-or-remote-connection-system-test → Test ubuntu-display-standard-local-or-remote-connection-system-test — TRUE
+  /evaluate → Test  — FALSE
+
+EVALUATE → TEST
+  sshd-server-b-congiured-use-banner-file-etc-issue-net-test — SSHD server must b congiured to use banner file /etc/issue.net
+  Technical result   FALSE
+  Reason             Item "item-bf05afc5a33d57cb91498d08b9fe43f2" has field "exit status" with observed value 123; the required equals comparison with expected value 0 evaluated FALSE.
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-22d84f600e19ce76de72e9c61b16fc02/object/sshd-server-b-congiured-use-banner-file-etc-issue-net-test
+  Capability         independent.shellcommand
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/sshd-server-b-congiured-use-banner-file-etc-issue-net-test/require — FALSE
+  Decisive reason    require and cardinality false
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1 — DECISIVE EVIDENCE
+  Identity           item-bf05afc5a33d57cb91498d08b9fe43f2
+  Capability         independent.shellcommand
+  Status             exists
+  command              "/usr/sbin/sshd -dd 2>&1 | awk '/filename/ {print $4}' | tr -d '\\r' | tr '\\n' ' ' | xargs grep -iH 'banner'" [string; exists]
+  exit_status          123 [integer; exists]
+  shell                "bash" [string; exists]
+  stderr_line          <absent> [; ]
+  Evidence provenance collector="linux.shellcommand.exec.v1" observed_at="2026-11-19T17:32:50.735820745Z" scope="authorized-local-process" target_ref="ubuntu-24.04-main-dda4cde"
+
+EVALUATE → TEST
+  ubuntu-display-standard-local-or-remote-connection-system-test — Ubuntu must display the Standard Mandatory DOD Notice and Consent Banner before granting any local or remote connection to the system.
+  Technical result   TRUE
+  Reason             All required observed fields matched their expected values.
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-22d84f600e19ce76de72e9c61b16fc02/object/ubuntu-display-standard-local-or-remote-connection-system-test
+  Capability         independent.textfilecontent
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/ubuntu-display-standard-local-or-remote-connection-system-test/require — TRUE
+  Decisive reason    require and satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-2a4d42b07e0ca8bbfe6f1d0a4f9562f7
+  Capability         independent.textfilecontent
+  Status             exists
+  directory            "/etc" [string; exists]
+  full_path            "/etc/issue.net" [string; exists]
+  instance             1 [integer; exists]
+  name                 "issue.net" [string; exists]
+  pattern              ".+" [string; exists]
+  text                 "You are accessing a U.S. Government (USG) Information System (IS) that is \nprovided for USG-authorized use only. By using this IS (which includes any \ndevice attached to this IS), you consent to the following conditions:\n-The USG routinely intercepts and monitors communications on this IS for \npurposes including, but not limited to, penetration testing, COMSEC monitoring, \nnetwork operations and defense, personnel misconduct (PM), law enforcement \n(LE), and counterintelligence (CI) investigations.\n-At any time, the USG may inspect and seize data stored on this IS.\n-Communications using, or data stored on, this IS are not private, are subject \nto routine monitoring, interception, and search, and may be disclosed or used \nfor any USG-authorized purpose.\n-This IS includes security measures (e.g., authentication and access controls) \nto protect USG interests--not for your personal benefit or privacy.\n-Notwithstanding the above, using this IS does not constitute consent to PM, LE \nor CI investigative searching or monitoring of the content of privileged \ncommunications, or work product, related to personal representation or services \nby attorneys, psychotherapists, or clergy, and their assistants. Such \ncommunications and work product are private and confidential. See User \nAgreement for details.\n" [string; exists]
+  Evidence provenance collector="linux.independent-textfilecontent.literal.v3" observed_at="2026-11-19T17:32:50.71991365Z" target_ref="ubuntu-24.04-main-dda4cde"
+
+[FAIL] ubuntu-24-04-lts-use-file-all-security-functions-sv-270649-rule — Ubuntu 24.04 LTS must use a file integrity tool to verify correct operation of all security functions.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.905227115Z
+Rule completed     2026-11-19T17:32:50.905231392Z
+Assessment         ubuntu-24-04-lts-use-file-functions-sv-270649-assessment — Ubuntu 24.04 LTS must use a file integrity tool to verify correct operation of all security functions.
+Why                Assessment evaluated false.
+Finding            Assessment evaluated false.
+Assessment result  FALSE (Assessment evaluated false.)
+Assessment duration 0.03s
+Assessment started  2026-11-19T17:32:50.876104213Z
+Assessment completed 2026-11-19T17:32:50.902649708Z
+
+EVALUATE TREE
+  /tests/package-aide-is-installed-test → Test package-aide-is-installed-test — FALSE
+
+EVALUATE → TEST
+  package-aide-is-installed-test — package aide is installed
+  Technical result   FALSE
+  Reason             item existence cardinality false
+  Items observed    0
+  Items retained    0
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-7832b36f16bbe0a170e252bebcfaec14/object/package-aide-is-installed-test
+  Capability         linux.dpkginfo
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+[UNKNOWN] ubuntu-24-04-lts-configure-during-transmission-sv-270667-rule — Ubuntu 24.04 LTS must configure the SSH daemon to use FIPS 140-3 approved ciphers to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.904930347Z
+Rule completed     2026-11-19T17:32:50.904941865Z
+Assessment         ubuntu-24-04-lts-during-transmission-sv-270667-assessment — Ubuntu 24.04 LTS must configure the SSH daemon to use FIPS 140-3 approved ciphers to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.
+Why                Assessment evidence was incomplete or inconclusive: collection incomplete: acquisition not complete: unsupported
+Finding            Assessment evidence was incomplete or inconclusive: collection incomplete: acquisition not complete: unsupported
+Assessment result  UNKNOWN (Assessment evidence was incomplete or inconclusive.)
+Assessment duration <0.01s
+Assessment started  2026-11-19T17:32:50.722811407Z
+Assessment completed 2026-11-19T17:32:50.726015344Z
+
+EVALUATE TREE
+  /tests/etc-ssh-sshd-config-ciphers-dod-approved-ciphers-test → Test etc-ssh-sshd-config-ciphers-dod-approved-ciphers-test — UNKNOWN
+
+EVALUATE → TEST
+  etc-ssh-sshd-config-ciphers-dod-approved-ciphers-test — /etc/ssh/sshd_config:Ciphers == DoD-approved ciphers
+  Technical result   UNKNOWN
+  Reason             collection incomplete: acquisition not complete: unsupported
+  Items observed    0
+  Items retained    0
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-05bce6f041bc944339ebec20c33ce158/object/etc-ssh-sshd-config-ciphers-dod-approved-ciphers-test
+  Capability         independent.textfilecontent
+  Status             not_collected
+  Logical complete   false
+  Population complete false
+  Collection note    collection_incomplete
+
+[UNKNOWN] ubuntu-24-04-lts-configure-file-owned-by-syslog-sv-270769-rule — Ubuntu 24.04 LTS must configure /var/log/syslog file to be owned by syslog.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.905039643Z
+Rule completed     2026-11-19T17:32:50.905046833Z
+Assessment         ubuntu-24-04-lts-file-owned-by-syslog-sv-270769-assessment — Ubuntu 24.04 LTS must configure /var/log/syslog file to be owned by syslog.
+Why                Assessment evidence was incomplete or inconclusive: Assessment execution diagnostic: variable_collected_field_type_unresolved
+Finding            Assessment evidence was incomplete or inconclusive: Assessment execution diagnostic: variable_collected_field_type_unresolved
+Assessment result  UNKNOWN (Assessment evidence was incomplete or inconclusive.)
+Assessment duration <0.01s
+Assessment started  2026-11-19T17:32:50.737422306Z
+Assessment completed 2026-11-19T17:32:50.745073245Z
+
+EVALUATE TREE
+  /tests/var-log-syslog-file-must-be-owned-by-syslog-test → Test var-log-syslog-file-must-be-owned-by-syslog-test — UNKNOWN
+
+EVALUATE → TEST
+  var-log-syslog-file-must-be-owned-by-syslog-test — /var/log/syslog file must be owned by syslog
+  Technical result   UNKNOWN
+  Reason             Assessment execution diagnostic: variable collected field type unresolved
+  Items observed    5
+  Items retained    0
+  Items satisfying  every
+  Evidence display  bounded preview; additional observed Items are not embedded here
+
+OBJECT / COLLECTION
+  Object             assessment-74735fade9e66a9b101aa6e2a9222a73/object/var-log-syslog-file-must-be-owned-by-syslog-test
+  Capability         unix.file
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+[UNKNOWN] ubuntu-24-04-lts-configure-group-owned-by-adm-sv-270768-rule — Ubuntu 24.04 LTS must configure the /var/log/syslog file to be group-owned by adm.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.905050172Z
+Rule completed     2026-11-19T17:32:50.905057757Z
+Assessment         ubuntu-24-04-lts-file-group-owned-by-adm-sv-270768-assessment — Ubuntu 24.04 LTS must configure the /var/log/syslog file to be group-owned by adm.
+Why                Assessment evidence was incomplete or inconclusive: Assessment execution diagnostic: variable_collected_field_type_unresolved
+Finding            Assessment evidence was incomplete or inconclusive: Assessment execution diagnostic: variable_collected_field_type_unresolved
+Assessment result  UNKNOWN (Assessment evidence was incomplete or inconclusive.)
+Assessment duration <0.01s
+Assessment started  2026-11-19T17:32:50.736779759Z
+Assessment completed 2026-11-19T17:32:50.740036496Z
+
+EVALUATE TREE
+  /tests/var-log-syslog-file-is-group-owned-by-adm-test → Test var-log-syslog-file-is-group-owned-by-adm-test — UNKNOWN
+
+EVALUATE → TEST
+  var-log-syslog-file-is-group-owned-by-adm-test — /var/log/syslog file is group-owned by adm
+  Technical result   UNKNOWN
+  Reason             Assessment execution diagnostic: variable collected field type unresolved
+  Items observed    1
+  Items retained    0
+  Items satisfying  every
+  Evidence display  bounded preview; additional observed Items are not embedded here
+
+OBJECT / COLLECTION
+  Object             assessment-e955d8b6c818416429a4466e94f99690/object/var-log-syslog-file-is-group-owned-by-adm-test
+  Capability         unix.file
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+[UNKNOWN] ubuntu-24-04-lts-library-0755-or-less-permissive-sv-270696-rule — Ubuntu 24.04 LTS library files must have mode 0755 or less permissive.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.904989931Z
+Rule completed     2026-11-19T17:32:50.904998604Z
+Assessment         ubuntu-24-04-lts-library-less-permissive-sv-270696-assessment — Ubuntu 24.04 LTS library files must have mode 0755 or less permissive.
+Why                Assessment evidence was incomplete or inconclusive: collection incomplete: acquisition not complete: incomplete
+Finding            Assessment evidence was incomplete or inconclusive: collection incomplete: acquisition not complete: incomplete
+Assessment result  UNKNOWN (Assessment evidence was incomplete or inconclusive.)
+Assessment duration 0.02s
+Assessment started  2026-11-19T17:32:50.784706787Z
+Assessment completed 2026-11-19T17:32:50.80885052Z
+
+EVALUATE TREE
+  /tests/system-library-files-have-permissive-gwrite-should-false-test → Test system-library-files-have-permissive-gwrite-should-false-test — UNKNOWN
+  /tests/system-library-files-have-permissive-owrite-should-false-test → Test system-library-files-have-permissive-owrite-should-false-test — UNKNOWN
+  /evaluate → Test  — UNKNOWN
+
+EVALUATE → TEST
+  system-library-files-have-permissive-gwrite-should-false-test — System Library files have mode 755 or less permissive (gwrite should be = false)
+  Technical result   UNKNOWN
+  Reason             collection incomplete: acquisition not complete: incomplete
+  Items observed    15
+  Items retained    0
+  Items satisfying  every
+  Evidence display  bounded preview; additional observed Items are not embedded here
+
+OBJECT / COLLECTION
+  Object             assessment-1b02b73703fd6254dfe73ab3c24ad933/object/system-library-files-have-permissive-gwrite-should-false-test
+  Capability         unix.file
+  Status             incomplete
+  Logical complete   true
+  Population complete false
+  Collection note    collection_incomplete
+
+EVALUATE → TEST
+  system-library-files-have-permissive-owrite-should-false-test — System Library files have mode 755 or less permissive (owrite should be = false)
+  Technical result   UNKNOWN
+  Reason             collection incomplete: acquisition not complete: incomplete
+  Items observed    15
+  Items retained    0
+  Items satisfying  every
+  Evidence display  bounded preview; additional observed Items are not embedded here
+
+OBJECT / COLLECTION
+  Object             assessment-1b02b73703fd6254dfe73ab3c24ad933/object/system-library-files-have-permissive-owrite-should-false-test
+  Capability         unix.file
+  Status             incomplete
+  Logical complete   true
+  Population complete false
+  Collection note    collection_incomplete
+
+[UNKNOWN] ubuntu-24-04-lts-prevent-login-root-account-sv-270724-rule — Ubuntu 24.04 LTS must prevent direct login to the root account.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.9050087Z
+Rule completed     2026-11-19T17:32:50.905014511Z
+Assessment         ubuntu-24-04-lts-prevent-root-account-sv-270724-assessment — Ubuntu 24.04 LTS must prevent direct login to the root account.
+Why                Assessment evidence was incomplete or inconclusive: collection incomplete: acquisition not complete: permission_denied
+Finding            Assessment evidence was incomplete or inconclusive: collection incomplete: acquisition not complete: permission_denied
+Assessment result  UNKNOWN (Assessment evidence was incomplete or inconclusive.)
+Assessment duration <0.01s
+Assessment started  2026-11-19T17:32:50.849191183Z
+Assessment completed 2026-11-19T17:32:50.850243288Z
+
+EVALUATE TREE
+  /tests/root-account-is-locked-test → Test root-account-is-locked-test — UNKNOWN
+
+EVALUATE → TEST
+  root-account-is-locked-test — root account is locked
+  Technical result   UNKNOWN
+  Reason             collection incomplete: acquisition not complete: permission denied
+  Items observed    0
+  Items retained    0
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-2bfc907fa2c509ac9e33207d408894de/object/root-account-is-locked-test
+  Capability         unix.shadow
+  Status             error
+  Logical complete   false
+  Population complete false
+  Collection note    collection_incomplete
+
+[UNKNOWN] ubuntu-24-04-lts-ssh-server-exchange-algorithms-sv-270669-rule — Ubuntu 24.04 LTS SSH server must be configured to use only FIPS 140-3 validated key exchange algorithms.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.904962049Z
+Rule completed     2026-11-19T17:32:50.904971112Z
+Assessment         ubuntu-24-04-lts-ssh-exchange-algorithms-sv-270669-assessment — Ubuntu 24.04 LTS SSH server must be configured to use only FIPS 140-3 validated key exchange algorithms.
+Why                Assessment evidence was incomplete or inconclusive: collection incomplete: acquisition not complete: unsupported
+Finding            Assessment evidence was incomplete or inconclusive: collection incomplete: acquisition not complete: unsupported
+Assessment result  UNKNOWN (Assessment evidence was incomplete or inconclusive.)
+Assessment duration <0.01s
+Assessment started  2026-11-19T17:32:50.859095407Z
+Assessment completed 2026-11-19T17:32:50.860310604Z
+
+EVALUATE TREE
+  /tests/sshd-config-kexalgorithms-uses-fips-validated-algorithms-test → Test sshd-config-kexalgorithms-uses-fips-validated-algorithms-test — UNKNOWN
+
+EVALUATE → TEST
+  sshd-config-kexalgorithms-uses-fips-validated-algorithms-test — sshd_config: KexAlgorithms uses FIPS-validated algorithms
+  Technical result   UNKNOWN
+  Reason             collection incomplete: acquisition not complete: unsupported
+  Items observed    0
+  Items retained    0
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-9fcdd133e8d6c3807d8ab0361ff4110f/object/sshd-config-kexalgorithms-uses-fips-validated-algorithms-test
+  Capability         independent.textfilecontent
+  Status             not_collected
+  Logical complete   false
+  Population complete false
+  Collection note    collection_incomplete
+
+[PASS] ubuntu-24-04-lts-accept-management-pam-framework-sv-270673-rule — Ubuntu 24.04 LTS must accept Personal Identity Verification (PIV) credentials managed through the Privileged Access Management (PAM)  framework.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.905017483Z
+Rule completed     2026-11-19T17:32:50.905021863Z
+Assessment         ubuntu-24-04-lts-accept-pam-framework-sv-270673-assessment — Ubuntu 24.04 LTS must accept Personal Identity Verification (PIV) credentials managed through the Privileged Access Management (PAM)  framework.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration 0.05s
+Assessment started  2026-11-19T17:32:50.687167808Z
+Assessment completed 2026-11-19T17:32:50.736763535Z
+
+EVALUATE TREE
+  /tests/package-libpam-pkcs11-is-installed-test → Test package-libpam-pkcs11-is-installed-test — TRUE
+
+EVALUATE → TEST
+  package-libpam-pkcs11-is-installed-test — package libpam-pkcs11 is installed
+  Technical result   TRUE
+  Reason             item existence satisfied
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-b00089c0e2eb0fde0652660ee8621dc0/object/package-libpam-pkcs11-is-installed-test
+  Capability         linux.dpkginfo
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/package-libpam-pkcs11-is-installed-test/require — TRUE
+  Decisive reason    item existence satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-6bced263d9deb37531de40c9209398bf
+  Capability         linux.dpkginfo
+  Status             exists
+  arch                 "amd64" [string; exists]
+  epoch                "0" [string; exists]
+  evr                  "0.6.12-2ubuntu0.24.04.1" [debian_evr; exists]
+  name                 "libpam-pkcs11" [string; exists]
+  release              "2ubuntu0.24.04.1" [string; exists]
+  version              "0.6.12" [string; exists]
+  Evidence provenance collector="linux.dpkginfo.fixed-query.v1" observed_at="2026-11-19T17:32:50.736028136Z" scope="local-dpkg-database" target_ref="ubuntu-24.04-main-dda4cde"
+
+[PASS] ubuntu-24-04-lts-accept-piv-credentials-sv-270672-rule — Ubuntu 24.04 LTS must accept Personal Identity Verification (PIV) credentials.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.905024711Z
+Rule completed     2026-11-19T17:32:50.905029011Z
+Assessment         ubuntu-24-04-lts-accept-piv-credentials-sv-270672-assessment — Ubuntu 24.04 LTS must accept Personal Identity Verification (PIV) credentials.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration 0.03s
+Assessment started  2026-11-19T17:32:50.688093171Z
+Assessment completed 2026-11-19T17:32:50.716801812Z
+
+EVALUATE TREE
+  /tests/package-opensc-pkcs11-is-installed-test → Test package-opensc-pkcs11-is-installed-test — TRUE
+
+EVALUATE → TEST
+  package-opensc-pkcs11-is-installed-test — package opensc-pkcs11 is installed
+  Technical result   TRUE
+  Reason             item existence satisfied
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-342488404baa3d82d860aad735e6bb5e/object/package-opensc-pkcs11-is-installed-test
+  Capability         linux.dpkginfo
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/package-opensc-pkcs11-is-installed-test/require — TRUE
+  Decisive reason    item existence satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-8b0fbae5622f5c402f920359d6688da8
+  Capability         linux.dpkginfo
+  Status             exists
+  arch                 "amd64" [string; exists]
+  epoch                "0" [string; exists]
+  evr                  "0.25.0~rc1-1ubuntu0.2+esm1" [debian_evr; exists]
+  name                 "opensc-pkcs11" [string; exists]
+  release              "1ubuntu0.2+esm1" [string; exists]
+  version              "0.25.0~rc1" [string; exists]
+  Evidence provenance collector="linux.dpkginfo.fixed-query.v1" observed_at="2026-11-19T17:32:50.715852053Z" scope="local-dpkg-database" target_ref="ubuntu-24.04-main-dda4cde"
+
+[PASS] ubuntu-24-04-lts-allow-users-connection-types-sv-270674-rule — Ubuntu 24.04 LTS must allow users to directly initiate a session lock for all connection types.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.905031375Z
+Rule completed     2026-11-19T17:32:50.90503623Z
+Assessment         ubuntu-24-04-lts-allow-connection-types-sv-270674-assessment — Ubuntu 24.04 LTS must allow users to directly initiate a session lock for all connection types.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration 0.05s
+Assessment started  2026-11-19T17:32:50.693716461Z
+Assessment completed 2026-11-19T17:32:50.748461031Z
+
+EVALUATE TREE
+  /tests/package-vlock-is-installed-test → Test package-vlock-is-installed-test — TRUE
+
+EVALUATE → TEST
+  package-vlock-is-installed-test — package vlock is installed
+  Technical result   TRUE
+  Reason             item existence satisfied
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-0b4d7aad29a505b4e5f34aee78127c88/object/package-vlock-is-installed-test
+  Capability         linux.dpkginfo
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/package-vlock-is-installed-test/require — TRUE
+  Decisive reason    item existence satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-9cf9c3b613dade9507fdae08acec63ab
+  Capability         linux.dpkginfo
+  Status             exists
+  arch                 "amd64" [string; exists]
+  epoch                "0" [string; exists]
+  evr                  "2.2.2-11" [debian_evr; exists]
+  name                 "vlock" [string; exists]
+  release              "11" [string; exists]
+  version              "2.2.2" [string; exists]
+  Evidence provenance collector="linux.dpkginfo.fixed-query.v1" observed_at="2026-11-19T17:32:50.74732898Z" scope="local-dpkg-database" target_ref="ubuntu-24.04-main-dda4cde"
+
+[PASS] ubuntu-24-04-lts-configure-or-less-permissive-sv-270770-rule — Ubuntu 24.04 LTS must configure /var/log/syslog file with mode "0640" or less permissive.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.905069957Z
+Rule completed     2026-11-19T17:32:50.905075872Z
+Assessment         ubuntu-24-04-lts-0640-or-less-permissive-sv-270770-assessment — Ubuntu 24.04 LTS must configure /var/log/syslog file with mode "0640" or less permissive.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration 0.01s
+Assessment started  2026-11-19T17:32:50.686666228Z
+Assessment completed 2026-11-19T17:32:50.699132698Z
+
+EVALUATE TREE
+  /tests/mode-of-var-log-syslog-file-is-0640-or-less-permissive-test → Test mode-of-var-log-syslog-file-is-0640-or-less-permissive-test — TRUE
+
+EVALUATE → TEST
+  mode-of-var-log-syslog-file-is-0640-or-less-permissive-test — Mode of /var/log/syslog file is 0640 or less permissive
+  Technical result   TRUE
+  Reason             All required observed fields matched their expected values.
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-6da54c0a4b989ee7d9ff364c795168df/object/mode-of-var-log-syslog-file-is-0640-or-less-permissive-test
+  Capability         unix.file
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/mode-of-var-log-syslog-file-is-0640-or-less-permissive-test/require — TRUE
+  Decisive reason    require and satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-0f462f39e230f990c73ee11c564007cd
+  Capability         unix.file
+  Status             exists
+  directory            "/var/log" [string; exists]
+  full_path            "/var/log/syslog" [string; exists]
+  group_execute        false [boolean; exists]
+  group_read           true [boolean; exists]
+  group_write          false [boolean; exists]
+  name                 "syslog" [string; exists]
+  other_execute        false [boolean; exists]
+  other_read           false [boolean; exists]
+  other_write          false [boolean; exists]
+  owner_execute        false [boolean; exists]
+  owner_gid            4 [integer; exists]
+  owner_read           true [boolean; exists]
+  owner_uid            102 [integer; exists]
+  owner_write          true [boolean; exists]
+  setgid               false [boolean; exists]
+  setuid               false [boolean; exists]
+  size                 117448538 [integer; exists]
+  sticky               false [boolean; exists]
+  type                 "regular" [string; exists]
+  Evidence provenance authority="authoritative:exact-object" collector="runtimecore.unix.file.exact.v1" observed_at="2026-11-19T17:32:50.690776764Z" scope="/var/log" target_ref="ubuntu-24.04-main-dda4cde"
+
+[PASS] ubuntu-24-04-lts-configure-owned-by-root-sv-270766-rule — Ubuntu 24.04 LTS must configure the /var/log directory to be owned by root.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.905079065Z
+Rule completed     2026-11-19T17:32:50.905083857Z
+Assessment         ubuntu-24-04-lts-directory-owned-by-root-sv-270766-assessment — Ubuntu 24.04 LTS must configure the /var/log directory to be owned by root.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration 0.02s
+Assessment started  2026-11-19T17:32:50.699156525Z
+Assessment completed 2026-11-19T17:32:50.714896373Z
+
+EVALUATE TREE
+  /tests/var-log-directory-is-owned-by-root-test → Test var-log-directory-is-owned-by-root-test — TRUE
+
+EVALUATE → TEST
+  var-log-directory-is-owned-by-root-test — /var/log directory is owned by root
+  Technical result   TRUE
+  Reason             All required observed fields matched their expected values.
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-dddc3b23df3c71a6adb51c3bcecf881a/object/var-log-directory-is-owned-by-root-test
+  Capability         unix.file
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/var-log-directory-is-owned-by-root-test/require — TRUE
+  Decisive reason    require and satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-6d7229bd03d33be1c00f5e8f7805e099
+  Capability         unix.file
+  Status             exists
+  directory            "/var/log" [string; exists]
+  full_path            "/var/log" [string; exists]
+  group_execute        true [boolean; exists]
+  group_read           true [boolean; exists]
+  group_write          true [boolean; exists]
+  name                 "log" [string; exists]
+  other_execute        true [boolean; exists]
+  other_read           true [boolean; exists]
+  other_write          false [boolean; exists]
+  owner_execute        true [boolean; exists]
+  owner_gid            102 [integer; exists]
+  owner_read           true [boolean; exists]
+  owner_uid            0 [integer; exists]
+  owner_write          true [boolean; exists]
+  setgid               false [boolean; exists]
+  setuid               false [boolean; exists]
+  size                 4096 [integer; exists]
+  sticky               false [boolean; exists]
+  type                 "directory" [string; exists]
+  Evidence provenance authority="scoped:filesystem-tree" collector="runtimecore.unix.file.tree.v1" observed_at="2026-11-19T17:32:50.713443276Z" scope="/var" target_ref="ubuntu-24.04-main-dda4cde"
+
+[PASS] ubuntu-24-04-lts-disable-x86-delete-key-sequence-sv-270712-rule — Ubuntu 24.04 LTS must disable the x86 Ctrl-Alt-Delete key sequence.
+Severity           high
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.905001272Z
+Rule completed     2026-11-19T17:32:50.9050061Z
+Assessment         ubuntu-24-04-lts-disable-key-sequence-sv-270712-assessment — Ubuntu 24.04 LTS must disable the x86 Ctrl-Alt-Delete key sequence.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration <0.01s
+Assessment started  2026-11-19T17:32:50.714917187Z
+Assessment completed 2026-11-19T17:32:50.722794126Z
+
+EVALUATE TREE
+  /tests/the-ctrl-alt-del-target-unit-is-masked-test → Test the-ctrl-alt-del-target-unit-is-masked-test — TRUE
+
+EVALUATE → TEST
+  the-ctrl-alt-del-target-unit-is-masked-test — The ctrl-alt-del.target unit is masked.
+  Technical result   TRUE
+  Reason             All required observed fields matched their expected values.
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-5b024c082d4454267385f1b06ec06be7/object/the-ctrl-alt-del-target-unit-is-masked-test
+  Capability         unix.symlink
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/the-ctrl-alt-del-target-unit-is-masked-test/require — TRUE
+  Decisive reason    require and satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-2b3e0a4015d66524b1d6ac3ca920a0a1
+  Capability         unix.symlink
+  Status             exists
+  canonical_path       "/dev/null" [string; exists]
+  full_path            "/etc/systemd/system/ctrl-alt-del.target" [string; exists]
+  Evidence provenance collector="linux.unix-symlink.lstat.v2" observed_at="2026-11-19T17:32:50.721998637Z" target_ref="ubuntu-24.04-main-dda4cde"
+
+[PASS] ubuntu-24-04-lts-enable-and-firewall-ufw-sv-270655-rule — Ubuntu 24.04 LTS must enable and run the Uncomplicated Firewall (ufw).
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.905086226Z
+Rule completed     2026-11-19T17:32:50.905091252Z
+Assessment         ubuntu-24-04-lts-enable-firewall-ufw-sv-270655-assessment — Ubuntu 24.04 LTS must enable and run the Uncomplicated Firewall (ufw).
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration 0.02s
+Assessment started  2026-11-19T17:32:50.730917887Z
+Assessment completed 2026-11-19T17:32:50.748174733Z
+
+EVALUATE TREE
+  /tests/ufw-service-is-active-test → Test ufw-service-is-active-test — TRUE
+
+EVALUATE → TEST
+  ufw-service-is-active-test — ufw.service is active
+  Technical result   TRUE
+  Reason             All required observed fields matched their expected values.
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-22d1fff5fb3248356cf744ada4cfaee7/object/ufw-service-is-active-test
+  Capability         linux.systemdunitproperty
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/ufw-service-is-active-test/require — TRUE
+  Decisive reason    require and satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-421fb45ae9a3c6f37c43e6ec4ff806b3
+  Capability         linux.systemdunitproperty
+  Status             exists
+  property             "ActiveState" [string; exists]
+  unit                 "ufw.service" [string; exists]
+  value                "active" [string; exists]
+  Evidence provenance collector="linux.systemdunitproperty.systemctl-show.v1" observed_at="2026-11-19T17:32:50.745637355Z" scope="systemd-system-manager" target_ref="ubuntu-24.04-main-dda4cde"
+
+[PASS] ubuntu-24-04-lts-have-auditd-package-installed-sv-270656-rule — Ubuntu 24.04 LTS must have the "auditd" package installed.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.905093379Z
+Rule completed     2026-11-19T17:32:50.905097436Z
+Assessment         ubuntu-24-04-lts-have-package-installed-sv-270656-assessment — Ubuntu 24.04 LTS must have the "auditd" package installed.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration 0.05s
+Assessment started  2026-11-19T17:32:50.748193224Z
+Assessment completed 2026-11-19T17:32:50.796786417Z
+
+EVALUATE TREE
+  /tests/package-auditd-is-installed-test → Test package-auditd-is-installed-test — TRUE
+
+EVALUATE → TEST
+  package-auditd-is-installed-test — package auditd is installed
+  Technical result   TRUE
+  Reason             item existence satisfied
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-044edb530854da17f452b9bf640e5f4e/object/package-auditd-is-installed-test
+  Capability         linux.dpkginfo
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/package-auditd-is-installed-test/require — TRUE
+  Decisive reason    item existence satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-080950168465c9a147fc3640de956c7f
+  Capability         linux.dpkginfo
+  Status             exists
+  arch                 "amd64" [string; exists]
+  epoch                "1" [string; exists]
+  evr                  "1:3.1.2-2.1ubuntu0.1" [debian_evr; exists]
+  name                 "auditd" [string; exists]
+  release              "2.1ubuntu0.1" [string; exists]
+  version              "3.1.2" [string; exists]
+  Evidence provenance collector="linux.dpkginfo.fixed-query.v1" observed_at="2026-11-19T17:32:50.795773067Z" scope="local-dpkg-database" target_ref="ubuntu-24.04-main-dda4cde"
+
+[PASS] ubuntu-24-04-lts-have-chrony-package-installed-sv-270664-rule — Ubuntu 24.04 LTS must have the "chrony" package installed.
+Severity           low
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.905099922Z
+Rule completed     2026-11-19T17:32:50.905104386Z
+Assessment         ubuntu-24-04-lts-have-package-installed-sv-270664-assessment — Ubuntu 24.04 LTS must have the "chrony" package installed.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration 0.06s
+Assessment started  2026-11-19T17:32:50.779610539Z
+Assessment completed 2026-11-19T17:32:50.841625353Z
+
+EVALUATE TREE
+  /tests/the-chrony-package-is-installed-test → Test the-chrony-package-is-installed-test — TRUE
+
+EVALUATE → TEST
+  the-chrony-package-is-installed-test — The chrony package is installed
+  Technical result   TRUE
+  Reason             item existence satisfied
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-02efe62536465d6fe1229d937a09cca5/object/the-chrony-package-is-installed-test
+  Capability         linux.dpkginfo
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/the-chrony-package-is-installed-test/require — TRUE
+  Decisive reason    item existence satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-aa241ec57f3d6e1c9034dfb2add9b78f
+  Capability         linux.dpkginfo
+  Status             exists
+  arch                 "amd64" [string; exists]
+  epoch                "0" [string; exists]
+  evr                  "4.5-1ubuntu4.2" [debian_evr; exists]
+  name                 "chrony" [string; exists]
+  release              "1ubuntu4.2" [string; exists]
+  version              "4.5" [string; exists]
+  Evidence provenance collector="linux.dpkginfo.fixed-query.v1" observed_at="2026-11-19T17:32:50.840913715Z" scope="local-dpkg-database" target_ref="ubuntu-24.04-main-dda4cde"
+
+[PASS] ubuntu-24-04-lts-have-libpam-package-installed-sv-270661-rule — Ubuntu 24.04 LTS must have the "libpam-pwquality" package installed.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.905106609Z
+Rule completed     2026-11-19T17:32:50.905110817Z
+Assessment         ubuntu-24-04-lts-have-package-installed-sv-270661-assessment — Ubuntu 24.04 LTS must have the "libpam-pwquality" package installed.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration 0.03s
+Assessment started  2026-11-19T17:32:50.74847426Z
+Assessment completed 2026-11-19T17:32:50.782864431Z
+
+EVALUATE TREE
+  /tests/package-libpam-pwquality-is-installed-test → Test package-libpam-pwquality-is-installed-test — TRUE
+
+EVALUATE → TEST
+  package-libpam-pwquality-is-installed-test — package libpam-pwquality is installed
+  Technical result   TRUE
+  Reason             item existence satisfied
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-10d080dcfa6af9528f73de4f92d72547/object/package-libpam-pwquality-is-installed-test
+  Capability         linux.dpkginfo
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/package-libpam-pwquality-is-installed-test/require — TRUE
+  Decisive reason    item existence satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-b3a5c4da2b32dd9589c0cd174c63583b
+  Capability         linux.dpkginfo
+  Status             exists
+  arch                 "amd64" [string; exists]
+  epoch                "0" [string; exists]
+  evr                  "1.4.5-3build1" [debian_evr; exists]
+  name                 "libpam-pwquality" [string; exists]
+  release              "3build1" [string; exists]
+  version              "1.4.5" [string; exists]
+  Evidence provenance collector="linux.dpkginfo.fixed-query.v1" observed_at="2026-11-19T17:32:50.780219316Z" scope="local-dpkg-database" target_ref="ubuntu-24.04-main-dda4cde"
+
+[PASS] ubuntu-24-04-lts-have-remote-access-methods-sv-270654-rule — Ubuntu 24.04 LTS must have an application firewall installed in order to control remote access methods.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.905113237Z
+Rule completed     2026-11-19T17:32:50.905160054Z
+Assessment         ubuntu-24-04-lts-have-access-methods-sv-270654-assessment — Ubuntu 24.04 LTS must have an application firewall installed in order to control remote access methods.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration 0.04s
+Assessment started  2026-11-19T17:32:50.740060405Z
+Assessment completed 2026-11-19T17:32:50.778376886Z
+
+EVALUATE TREE
+  /tests/package-ufw-is-installed-test → Test package-ufw-is-installed-test — TRUE
+
+EVALUATE → TEST
+  package-ufw-is-installed-test — package ufw is installed
+  Technical result   TRUE
+  Reason             item existence satisfied
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-cc8ceaa76a20dfbf37fcba0f3125e33f/object/package-ufw-is-installed-test
+  Capability         linux.dpkginfo
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/package-ufw-is-installed-test/require — TRUE
+  Decisive reason    item existence satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-f760f5b2d7837a3334775bc7517e2474
+  Capability         linux.dpkginfo
+  Status             exists
+  arch                 "all" [string; exists]
+  epoch                "0" [string; exists]
+  evr                  "0.36.2-6" [debian_evr; exists]
+  name                 "ufw" [string; exists]
+  release              "6" [string; exists]
+  version              "0.36.2" [string; exists]
+  Evidence provenance collector="linux.dpkginfo.fixed-query.v1" observed_at="2026-11-19T17:32:50.774393622Z" scope="local-dpkg-database" target_ref="ubuntu-24.04-main-dda4cde"
+
+[PASS] ubuntu-24-04-lts-have-sssd-package-installed-sv-270662-rule — Ubuntu 24.04 LTS must have the "SSSD" package installed.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.905163662Z
+Rule completed     2026-11-19T17:32:50.905171994Z
+Assessment         ubuntu-24-04-lts-have-package-installed-sv-270662-assessment — Ubuntu 24.04 LTS must have the "SSSD" package installed.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration 0.07s
+Assessment started  2026-11-19T17:32:50.778398041Z
+Assessment completed 2026-11-19T17:32:50.849155952Z
+
+EVALUATE TREE
+  /tests/package-ibnss-sss-is-installed-test → Test package-ibnss-sss-is-installed-test — TRUE
+  /tests/package-libpam-sss-is-installed-test → Test package-libpam-sss-is-installed-test — TRUE
+  /tests/package-sssd-is-installed-test → Test package-sssd-is-installed-test — TRUE
+  /evaluate → Test  — TRUE
+
+EVALUATE → TEST
+  package-ibnss-sss-is-installed-test — package ibnss-sss is installed
+  Technical result   TRUE
+  Reason             item existence satisfied
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-54f708e4505a635892f8cca5cfb849bb/object/package-ibnss-sss-is-installed-test
+  Capability         linux.dpkginfo
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/package-ibnss-sss-is-installed-test/require — TRUE
+  Decisive reason    item existence satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-1cb7b3bd9c175161809b5df6068cfb2e
+  Capability         linux.dpkginfo
+  Status             exists
+  arch                 "amd64" [string; exists]
+  epoch                "0" [string; exists]
+  evr                  "2.9.4-1.1ubuntu6.8" [debian_evr; exists]
+  name                 "libnss-sss" [string; exists]
+  release              "1.1ubuntu6.8" [string; exists]
+  version              "2.9.4" [string; exists]
+  Evidence provenance collector="linux.dpkginfo.fixed-query.v1" observed_at="2026-11-19T17:32:50.847710876Z" scope="local-dpkg-database" target_ref="ubuntu-24.04-main-dda4cde"
+
+EVALUATE → TEST
+  package-libpam-sss-is-installed-test — package libpam-sss is installed
+  Technical result   TRUE
+  Reason             item existence satisfied
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-54f708e4505a635892f8cca5cfb849bb/object/package-libpam-sss-is-installed-test
+  Capability         linux.dpkginfo
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/package-libpam-sss-is-installed-test/require — TRUE
+  Decisive reason    item existence satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-48bd899cd5a8dc1ee8064bc5124ec444
+  Capability         linux.dpkginfo
+  Status             exists
+  arch                 "amd64" [string; exists]
+  epoch                "0" [string; exists]
+  evr                  "2.9.4-1.1ubuntu6.8" [debian_evr; exists]
+  name                 "libpam-sss" [string; exists]
+  release              "1.1ubuntu6.8" [string; exists]
+  version              "2.9.4" [string; exists]
+  Evidence provenance collector="linux.dpkginfo.fixed-query.v1" observed_at="2026-11-19T17:32:50.838742743Z" scope="local-dpkg-database" target_ref="ubuntu-24.04-main-dda4cde"
+
+EVALUATE → TEST
+  package-sssd-is-installed-test — package SSSD is installed
+  Technical result   TRUE
+  Reason             item existence satisfied
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-54f708e4505a635892f8cca5cfb849bb/object/package-sssd-is-installed-test
+  Capability         linux.dpkginfo
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/package-sssd-is-installed-test/require — TRUE
+  Decisive reason    item existence satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-38a8a80d1d4d8c72b6e08b5a23792c83
+  Capability         linux.dpkginfo
+  Status             exists
+  arch                 "amd64" [string; exists]
+  epoch                "0" [string; exists]
+  evr                  "2.9.4-1.1ubuntu6.8" [debian_evr; exists]
+  name                 "sssd" [string; exists]
+  release              "1.1ubuntu6.8" [string; exists]
+  version              "2.9.4" [string; exists]
+  Evidence provenance collector="linux.dpkginfo.fixed-query.v1" observed_at="2026-11-19T17:32:50.817481905Z" scope="local-dpkg-database" target_ref="ubuntu-24.04-main-dda4cde"
+
+[PASS] ubuntu-24-04-lts-must-have-apparmor-installed-sv-270659-rule — Ubuntu 24.04 LTS must have AppArmor installed.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.905175259Z
+Rule completed     2026-11-19T17:32:50.905181293Z
+Assessment         ubuntu-24-04-lts-have-apparmor-installed-sv-270659-assessment — Ubuntu 24.04 LTS must have AppArmor installed.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration 0.03s
+Assessment started  2026-11-19T17:32:50.745094644Z
+Assessment completed 2026-11-19T17:32:50.779594193Z
+
+EVALUATE TREE
+  /tests/package-apparmor-is-installed-test → Test package-apparmor-is-installed-test — TRUE
+
+EVALUATE → TEST
+  package-apparmor-is-installed-test — package apparmor is installed
+  Technical result   TRUE
+  Reason             item existence satisfied
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-a690f8ff82431f96e8485422055356e0/object/package-apparmor-is-installed-test
+  Capability         linux.dpkginfo
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/package-apparmor-is-installed-test/require — TRUE
+  Decisive reason    item existence satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-4e3a14a1c05074518af560693e454809
+  Capability         linux.dpkginfo
+  Status             exists
+  arch                 "amd64" [string; exists]
+  epoch                "0" [string; exists]
+  evr                  "4.0.1really4.0.1-0ubuntu0.24.04.9" [debian_evr; exists]
+  name                 "apparmor" [string; exists]
+  release              "0ubuntu0.24.04.9" [string; exists]
+  version              "4.0.1really4.0.1" [string; exists]
+  Evidence provenance collector="linux.dpkginfo.fixed-query.v1" observed_at="2026-11-19T17:32:50.778557636Z" scope="local-dpkg-database" target_ref="ubuntu-24.04-main-dda4cde"
+
+[PASS] ubuntu-24-04-lts-must-have-ssh-installed-sv-270665-rule — Ubuntu 24.04 LTS must have SSH installed.
+Severity           high
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.905184203Z
+Rule completed     2026-11-19T17:32:50.905190508Z
+Assessment         ubuntu-24-04-lts-must-have-ssh-installed-sv-270665-assessment — Ubuntu 24.04 LTS must have SSH installed.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration 0.04s
+Assessment started  2026-11-19T17:32:50.796807365Z
+Assessment completed 2026-11-19T17:32:50.83466819Z
+
+EVALUATE TREE
+  /tests/package-ssh-is-installed-test → Test package-ssh-is-installed-test — TRUE
+
+EVALUATE → TEST
+  package-ssh-is-installed-test — package ssh is installed
+  Technical result   TRUE
+  Reason             item existence satisfied
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-ea5dd5f9817029b7eb31b7a4817c5521/object/package-ssh-is-installed-test
+  Capability         linux.dpkginfo
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/package-ssh-is-installed-test/require — TRUE
+  Decisive reason    item existence satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-23a92f505a7bdab5b02d0eb8573dd9da
+  Capability         linux.dpkginfo
+  Status             exists
+  arch                 "amd64" [string; exists]
+  epoch                "1" [string; exists]
+  evr                  "1:9.6p1-3ubuntu13.20" [debian_evr; exists]
+  name                 "openssh-server" [string; exists]
+  release              "3ubuntu13.20" [string; exists]
+  version              "9.6p1" [string; exists]
+  Evidence provenance collector="linux.dpkginfo.fixed-query.v1" observed_at="2026-11-19T17:32:50.833561136Z" scope="local-dpkg-database" target_ref="ubuntu-24.04-main-dda4cde"
+
+[PASS] ubuntu-24-04-lts-not-have-ntp-package-installed-sv-270646-rule — Ubuntu 24.04 LTS must not have the "ntp" package installed.
+Severity           low
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.904907005Z
+Rule completed     2026-11-19T17:32:50.904911345Z
+Assessment         ubuntu-24-04-lts-not-have-installed-sv-270646-assessment — Ubuntu 24.04 LTS must not have the "ntp" package installed.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration 0.04s
+Assessment started  2026-11-19T17:32:50.834703102Z
+Assessment completed 2026-11-19T17:32:50.876084852Z
+
+EVALUATE TREE
+  /tests/ntp-package-is-not-installed-test → Test ntp-package-is-not-installed-test — TRUE
+
+EVALUATE → TEST
+  ntp-package-is-not-installed-test — ntp package is not installed
+  Technical result   TRUE
+  Reason             item existence satisfied
+  Items observed    0
+  Items retained    0
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-ac1ece88cc3948f2c10ae85f0186657c/object/ntp-package-is-not-installed-test
+  Capability         linux.dpkginfo
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+[PASS] ubuntu-24-04-lts-not-have-package-installed-sv-270645-rule — Ubuntu 24.04 LTS must not have the "systemd-timesyncd" package installed.
+Severity           low
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.904897424Z
+Rule completed     2026-11-19T17:32:50.904903316Z
+Assessment         ubuntu-24-04-lts-not-have-installed-sv-270645-assessment — Ubuntu 24.04 LTS must not have the "systemd-timesyncd" package installed.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration 0.03s
+Assessment started  2026-11-19T17:32:50.808881829Z
+Assessment completed 2026-11-19T17:32:50.843430452Z
+
+EVALUATE TREE
+  /tests/systemd-timesyncd-package-is-not-installed-test → Test systemd-timesyncd-package-is-not-installed-test — TRUE
+
+EVALUATE → TEST
+  systemd-timesyncd-package-is-not-installed-test — systemd-timesyncd package is not installed
+  Technical result   TRUE
+  Reason             item existence satisfied
+  Items observed    0
+  Items retained    0
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-53201778f555688a13dfd5b279c0a20a/object/systemd-timesyncd-package-is-not-installed-test
+  Capability         linux.dpkginfo
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+[PASS] ubuntu-24-04-lts-not-have-package-installed-sv-270647-rule — Ubuntu 24.04 LTS must not have the telnet package installed.
+Severity           high
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.904913963Z
+Rule completed     2026-11-19T17:32:50.90491815Z
+Assessment         ubuntu-24-04-lts-not-have-installed-sv-270647-assessment — Ubuntu 24.04 LTS must not have the telnet package installed.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration 0.05s
+Assessment started  2026-11-19T17:32:50.841643173Z
+Assessment completed 2026-11-19T17:32:50.892186339Z
+
+EVALUATE TREE
+  /tests/telnetd-package-is-not-installed-test → Test telnetd-package-is-not-installed-test — TRUE
+
+EVALUATE → TEST
+  telnetd-package-is-not-installed-test — Telnetd package is not installed
+  Technical result   TRUE
+  Reason             item existence satisfied
+  Items observed    0
+  Items retained    0
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-74851a4944edfc884f464d0721f912fd/object/telnetd-package-is-not-installed-test
+  Capability         linux.dpkginfo
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+[PASS] ubuntu-24-04-lts-not-have-package-installed-sv-270648-rule — Ubuntu 24.04 LTS must not have the rsh-server package installed.
+Severity           high
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.904920627Z
+Rule completed     2026-11-19T17:32:50.904924854Z
+Assessment         ubuntu-24-04-lts-not-have-installed-sv-270648-assessment — Ubuntu 24.04 LTS must not have the rsh-server package installed.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration 0.04s
+Assessment started  2026-11-19T17:32:50.84344744Z
+Assessment completed 2026-11-19T17:32:50.8880708Z
+
+EVALUATE TREE
+  /tests/package-rsh-server-is-not-installed-test → Test package-rsh-server-is-not-installed-test — TRUE
+
+EVALUATE → TEST
+  package-rsh-server-is-not-installed-test — package rsh-server is not installed
+  Technical result   TRUE
+  Reason             item existence satisfied
+  Items observed    0
+  Items retained    0
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-f925ba206c8b6538528632b777dbc96e/object/package-rsh-server-is-not-installed-test
+  Capability         linux.dpkginfo
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+[PASS] ubuntu-24-04-lts-so-that-by-unauthorized-users-sv-270758-rule — Ubuntu 24.04 LTS must be configured so that the "journalctl" command is not accessible by unauthorized users.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.905193658Z
+Rule completed     2026-11-19T17:32:50.905199525Z
+Assessment         ubuntu-24-04-lts-so-that-users-sv-270758-assessment — Ubuntu 24.04 LTS must be configured so that the "journalctl" command is not accessible by unauthorized users.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration <0.01s
+Assessment started  2026-11-19T17:32:50.854733141Z
+Assessment completed 2026-11-19T17:32:50.859072166Z
+
+EVALUATE TREE
+  /tests/usr-bin-journalctl-command-has-mode-0740-or-less-permissive-test → Test usr-bin-journalctl-command-has-mode-0740-or-less-permissive-test — TRUE
+
+EVALUATE → TEST
+  usr-bin-journalctl-command-has-mode-0740-or-less-permissive-test — /usr/bin/journalctl command has mode 0740 or less permissive
+  Technical result   TRUE
+  Reason             All required observed fields matched their expected values.
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-eb6163d7c1db89be4c166adf9e057046/object/usr-bin-journalctl-command-has-mode-0740-or-less-permissive-test
+  Capability         unix.file
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/usr-bin-journalctl-command-has-mode-0740-or-less-permissive-test/require — TRUE
+  Decisive reason    require and satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-4a423dee257955864602832e474e1a21
+  Capability         unix.file
+  Status             exists
+  directory            "/usr/bin" [string; exists]
+  full_path            "/usr/bin/journalctl" [string; exists]
+  group_execute        false [boolean; exists]
+  group_read           true [boolean; exists]
+  group_write          false [boolean; exists]
+  name                 "journalctl" [string; exists]
+  other_execute        false [boolean; exists]
+  other_read           false [boolean; exists]
+  other_write          false [boolean; exists]
+  owner_execute        true [boolean; exists]
+  owner_gid            0 [integer; exists]
+  owner_read           true [boolean; exists]
+  owner_uid            0 [integer; exists]
+  owner_write          true [boolean; exists]
+  setgid               false [boolean; exists]
+  setuid               false [boolean; exists]
+  size                 80800 [integer; exists]
+  sticky               false [boolean; exists]
+  type                 "regular" [string; exists]
+  Evidence provenance authority="authoritative:exact-object" collector="runtimecore.unix.file.exact.v1" observed_at="2026-11-19T17:32:50.856774379Z" scope="/usr/bin" target_ref="ubuntu-24.04-main-dda4cde"
+
+[PASS] ubuntu-24-04-lts-so-that-is-group-owned-by-root-sv-270760-rule — Ubuntu 24.04 LTS must be configured so that the "journalctl" command is group-owned by "root".
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.905202278Z
+Rule completed     2026-11-19T17:32:50.905206948Z
+Assessment         ubuntu-24-04-lts-so-that-owned-by-root-sv-270760-assessment — Ubuntu 24.04 LTS must be configured so that the "journalctl" command is group-owned by "root".
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration <0.01s
+Assessment started  2026-11-19T17:32:50.852413979Z
+Assessment completed 2026-11-19T17:32:50.854712255Z
+
+EVALUATE TREE
+  /tests/usr-bin-journalctl-is-group-owned-by-root-test → Test usr-bin-journalctl-is-group-owned-by-root-test — TRUE
+
+EVALUATE → TEST
+  usr-bin-journalctl-is-group-owned-by-root-test — /usr/bin/journalctl is group-owned by root
+  Technical result   TRUE
+  Reason             All required observed fields matched their expected values.
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-ec279f3d8a5798a4bf9a3aadd2e8ebb3/object/usr-bin-journalctl-is-group-owned-by-root-test
+  Capability         unix.file
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/usr-bin-journalctl-is-group-owned-by-root-test/require — TRUE
+  Decisive reason    require and satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-4a423dee257955864602832e474e1a21
+  Capability         unix.file
+  Status             exists
+  directory            "/usr/bin" [string; exists]
+  full_path            "/usr/bin/journalctl" [string; exists]
+  group_execute        false [boolean; exists]
+  group_read           true [boolean; exists]
+  group_write          false [boolean; exists]
+  name                 "journalctl" [string; exists]
+  other_execute        false [boolean; exists]
+  other_read           false [boolean; exists]
+  other_write          false [boolean; exists]
+  owner_execute        true [boolean; exists]
+  owner_gid            0 [integer; exists]
+  owner_read           true [boolean; exists]
+  owner_uid            0 [integer; exists]
+  owner_write          true [boolean; exists]
+  setgid               false [boolean; exists]
+  setuid               false [boolean; exists]
+  size                 80800 [integer; exists]
+  sticky               false [boolean; exists]
+  type                 "regular" [string; exists]
+  Evidence provenance authority="authoritative:exact-object" collector="runtimecore.unix.file.exact.v1" observed_at="2026-11-19T17:32:50.853330777Z" scope="/usr/bin" target_ref="ubuntu-24.04-main-dda4cde"
+
+[PASS] ubuntu-24-04-lts-so-that-is-owned-by-root-sv-270759-rule — Ubuntu 24.04 LTS must be configured so that the "journalctl" command is owned by "root".
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.905209957Z
+Rule completed     2026-11-19T17:32:50.905214867Z
+Assessment         ubuntu-24-04-lts-so-that-is-owned-by-root-sv-270759-assessment — Ubuntu 24.04 LTS must be configured so that the "journalctl" command is owned by "root".
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration <0.01s
+Assessment started  2026-11-19T17:32:50.850266551Z
+Assessment completed 2026-11-19T17:32:50.852388485Z
+
+EVALUATE TREE
+  /tests/usr-bin-journalctl-command-is-owned-by-root-test → Test usr-bin-journalctl-command-is-owned-by-root-test — TRUE
+
+EVALUATE → TEST
+  usr-bin-journalctl-command-is-owned-by-root-test — /usr/bin/journalctl command is owned by root
+  Technical result   TRUE
+  Reason             All required observed fields matched their expected values.
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-3964c6865a2debbb30936eedc50c6731/object/usr-bin-journalctl-command-is-owned-by-root-test
+  Capability         unix.file
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/usr-bin-journalctl-command-is-owned-by-root-test/require — TRUE
+  Decisive reason    require and satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-4a423dee257955864602832e474e1a21
+  Capability         unix.file
+  Status             exists
+  directory            "/usr/bin" [string; exists]
+  full_path            "/usr/bin/journalctl" [string; exists]
+  group_execute        false [boolean; exists]
+  group_read           true [boolean; exists]
+  group_write          false [boolean; exists]
+  name                 "journalctl" [string; exists]
+  other_execute        false [boolean; exists]
+  other_read           false [boolean; exists]
+  other_write          false [boolean; exists]
+  owner_execute        true [boolean; exists]
+  owner_gid            0 [integer; exists]
+  owner_read           true [boolean; exists]
+  owner_uid            0 [integer; exists]
+  owner_write          true [boolean; exists]
+  setgid               false [boolean; exists]
+  setuid               false [boolean; exists]
+  size                 80800 [integer; exists]
+  sticky               false [boolean; exists]
+  type                 "regular" [string; exists]
+  Evidence provenance authority="authoritative:exact-object" collector="runtimecore.unix.file.exact.v1" observed_at="2026-11-19T17:32:50.851105867Z" scope="/usr/bin" target_ref="ubuntu-24.04-main-dda4cde"
+
+[PASS] ubuntu-24-04-lts-use-apparmor-sv-270660-rule — Ubuntu 24.04 LTS must be configured to use AppArmor.
+Severity           medium
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.905218127Z
+Rule completed     2026-11-19T17:32:50.905224761Z
+Assessment         ubuntu-24-04-lts-use-apparmor-sv-270660-assessment — Ubuntu 24.04 LTS must be configured to use AppArmor.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration 0.02s
+Assessment started  2026-11-19T17:32:50.860339895Z
+Assessment completed 2026-11-19T17:32:50.880741502Z
+
+EVALUATE TREE
+  /tests/apparmor-service-is-active-test → Test apparmor-service-is-active-test — TRUE
+  /tests/apparmor-service-is-enabled-test → Test apparmor-service-is-enabled-test — TRUE
+  /evaluate → Test  — TRUE
+
+EVALUATE → TEST
+  apparmor-service-is-active-test — apparmor.service is active
+  Technical result   TRUE
+  Reason             All required observed fields matched their expected values.
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-3c9e228ad2d43c803a0bf08bcf986776/object/apparmor-service-is-active-test
+  Capability         linux.systemdunitproperty
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/apparmor-service-is-active-test/require — TRUE
+  Decisive reason    require and satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-e213615723c0d56a6577a8b676c1d9e4
+  Capability         linux.systemdunitproperty
+  Status             exists
+  property             "ActiveState" [string; exists]
+  unit                 "apparmor.service" [string; exists]
+  value                "active" [string; exists]
+  Evidence provenance collector="linux.systemdunitproperty.systemctl-show.v1" observed_at="2026-11-19T17:32:50.878290403Z" scope="systemd-system-manager" target_ref="ubuntu-24.04-main-dda4cde"
+
+EVALUATE → TEST
+  apparmor-service-is-enabled-test — apparmor.service is enabled
+  Technical result   TRUE
+  Reason             All required observed fields matched their expected values.
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-3c9e228ad2d43c803a0bf08bcf986776/object/apparmor-service-is-enabled-test
+  Capability         linux.systemdunitproperty
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/apparmor-service-is-enabled-test/require — TRUE
+  Decisive reason    require and satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-31a1ff91ee465b0c2ec2de8376b8f78f
+  Capability         linux.systemdunitproperty
+  Status             exists
+  property             "UnitFileState" [string; exists]
+  unit                 "apparmor.service" [string; exists]
+  value                "enabled" [string; exists]
+  Evidence provenance collector="linux.systemdunitproperty.systemctl-show.v1" observed_at="2026-11-19T17:32:50.875134228Z" scope="systemd-system-manager" target_ref="ubuntu-24.04-main-dda4cde"
+
+[PASS] ubuntu-24-04-lts-use-ssh-transmitted-information-sv-270666-rule — Ubuntu 24.04 LTS must use SSH to protect the confidentiality and integrity of transmitted information.
+Severity           high
+Rule duration      <0.01s
+Rule started       2026-11-19T17:32:50.905234504Z
+Rule completed     2026-11-19T17:32:50.905240235Z
+Assessment         ubuntu-24-04-lts-use-ssh-information-sv-270666-assessment — Ubuntu 24.04 LTS must use SSH to protect the confidentiality and integrity of transmitted information.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration 0.02s
+Assessment started  2026-11-19T17:32:50.880856508Z
+Assessment completed 2026-11-19T17:32:50.89983808Z
+
+EVALUATE TREE
+  /tests/ssh-service-is-active-test → Test ssh-service-is-active-test — TRUE
+  /tests/ssh-service-is-enabled-test → Test ssh-service-is-enabled-test — TRUE
+  /evaluate → Test  — TRUE
+
+EVALUATE → TEST
+  ssh-service-is-active-test — ssh.service is active
+  Technical result   TRUE
+  Reason             All required observed fields matched their expected values.
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-d00fed4ebf7c4e0fe05ce0e2d069e1a5/object/ssh-service-is-active-test
+  Capability         linux.systemdunitproperty
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/ssh-service-is-active-test/require — TRUE
+  Decisive reason    require and satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-8a237152fe3407b7a79f7cd47193ca70
+  Capability         linux.systemdunitproperty
+  Status             exists
+  property             "ActiveState" [string; exists]
+  unit                 "ssh.service" [string; exists]
+  value                "active" [string; exists]
+  Evidence provenance collector="linux.systemdunitproperty.systemctl-show.v1" observed_at="2026-11-19T17:32:50.896952694Z" scope="systemd-system-manager" target_ref="ubuntu-24.04-main-dda4cde"
+
+EVALUATE → TEST
+  ssh-service-is-enabled-test — ssh.service is enabled
+  Technical result   TRUE
+  Reason             All required observed fields matched their expected values.
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-d00fed4ebf7c4e0fe05ce0e2d069e1a5/object/ssh-service-is-enabled-test
+  Capability         linux.systemdunitproperty
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/ssh-service-is-enabled-test/require — TRUE
+  Decisive reason    require and satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-97d8b440b91814123bb479cff66df936
+  Capability         linux.systemdunitproperty
+  Status             exists
+  property             "UnitFileState" [string; exists]
+  unit                 "ssh.service" [string; exists]
+  value                "enabled" [string; exists]
+  Evidence provenance collector="linux.systemdunitproperty.systemctl-show.v1" observed_at="2026-11-19T17:32:50.898833147Z" scope="systemd-system-manager" target_ref="ubuntu-24.04-main-dda4cde"
+
+PASSING RULES
+-------------
+  ubuntu-24-04-lts-accept-management-pam-framework-sv-270673-rule  <0.01s  Ubuntu 24.04 LTS must accept Personal Identity Verification (PIV) credentials managed through the Privileged Access Management (PAM)  framework.
+  ubuntu-24-04-lts-accept-piv-credentials-sv-270672-rule  <0.01s  Ubuntu 24.04 LTS must accept Personal Identity Verification (PIV) credentials.
+  ubuntu-24-04-lts-allow-users-connection-types-sv-270674-rule  <0.01s  Ubuntu 24.04 LTS must allow users to directly initiate a session lock for all connection types.
+  ubuntu-24-04-lts-configure-or-less-permissive-sv-270770-rule  <0.01s  Ubuntu 24.04 LTS must configure /var/log/syslog file with mode "0640" or less permissive.
+  ubuntu-24-04-lts-configure-owned-by-root-sv-270766-rule  <0.01s  Ubuntu 24.04 LTS must configure the /var/log directory to be owned by root.
+  ubuntu-24-04-lts-disable-x86-delete-key-sequence-sv-270712-rule  <0.01s  Ubuntu 24.04 LTS must disable the x86 Ctrl-Alt-Delete key sequence.
+  ubuntu-24-04-lts-enable-and-firewall-ufw-sv-270655-rule  <0.01s  Ubuntu 24.04 LTS must enable and run the Uncomplicated Firewall (ufw).
+  ubuntu-24-04-lts-have-auditd-package-installed-sv-270656-rule  <0.01s  Ubuntu 24.04 LTS must have the "auditd" package installed.
+  ubuntu-24-04-lts-have-chrony-package-installed-sv-270664-rule  <0.01s  Ubuntu 24.04 LTS must have the "chrony" package installed.
+  ubuntu-24-04-lts-have-libpam-package-installed-sv-270661-rule  <0.01s  Ubuntu 24.04 LTS must have the "libpam-pwquality" package installed.
+  ubuntu-24-04-lts-have-remote-access-methods-sv-270654-rule  <0.01s  Ubuntu 24.04 LTS must have an application firewall installed in order to control remote access methods.
+  ubuntu-24-04-lts-have-sssd-package-installed-sv-270662-rule  <0.01s  Ubuntu 24.04 LTS must have the "SSSD" package installed.
+  ubuntu-24-04-lts-must-have-apparmor-installed-sv-270659-rule  <0.01s  Ubuntu 24.04 LTS must have AppArmor installed.
+  ubuntu-24-04-lts-must-have-ssh-installed-sv-270665-rule  <0.01s  Ubuntu 24.04 LTS must have SSH installed.
+  ubuntu-24-04-lts-not-have-ntp-package-installed-sv-270646-rule  <0.01s  Ubuntu 24.04 LTS must not have the "ntp" package installed.
+  ubuntu-24-04-lts-not-have-package-installed-sv-270645-rule  <0.01s  Ubuntu 24.04 LTS must not have the "systemd-timesyncd" package installed.
+  ubuntu-24-04-lts-not-have-package-installed-sv-270647-rule  <0.01s  Ubuntu 24.04 LTS must not have the telnet package installed.
+  ubuntu-24-04-lts-not-have-package-installed-sv-270648-rule  <0.01s  Ubuntu 24.04 LTS must not have the rsh-server package installed.
+  ubuntu-24-04-lts-so-that-by-unauthorized-users-sv-270758-rule  <0.01s  Ubuntu 24.04 LTS must be configured so that the "journalctl" command is not accessible by unauthorized users.
+  ubuntu-24-04-lts-so-that-is-group-owned-by-root-sv-270760-rule  <0.01s  Ubuntu 24.04 LTS must be configured so that the "journalctl" command is group-owned by "root".
+  ubuntu-24-04-lts-so-that-is-owned-by-root-sv-270759-rule  <0.01s  Ubuntu 24.04 LTS must be configured so that the "journalctl" command is owned by "root".
+  ubuntu-24-04-lts-use-apparmor-sv-270660-rule  <0.01s  Ubuntu 24.04 LTS must be configured to use AppArmor.
+  ubuntu-24-04-lts-use-ssh-transmitted-information-sv-270666-rule  <0.01s  Ubuntu 24.04 LTS must use SSH to protect the confidentiality and integrity of transmitted information.
+
+HISTORY / BASELINE
+-------------------
+No comparable history available. Historical comparison is shown only for a verified compatible baseline.
+
+ENDNOTES
+---------
+This report is read-only and does not rerun evaluation. Technical Assessment/Test outcomes (TRUE/FALSE/UNKNOWN/ERROR) remain distinct from policy Rule dispositions (PASS/FAIL/etc.). Collected Items are bounded retained evidence; observed and retained counts remain separate. Per-Rule and per-Assessment timings are measured sidecar context until the upstream canonical timing contract is approved.
