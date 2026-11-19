@@ -1,0 +1,402 @@
+SCAP-NG SCAN REPORT
+===================
+
+TARGET / SCAN
+-------------
+Hostname             redacted-host
+Target ID            local-linux
+Operating system (observed) Ubuntu 24.04.5 LTS
+OS identity          ubuntu / 24.04
+Architecture         x86_64
+Kernel               7.0.0-1017-aws
+Collection authority unverified:non-root-process
+Collection scope     current process mount/user/pid/net/uts namespaces
+Evidence trust       restricted-process-observation
+Scan started         2026-11-19T13:59:16.688775158Z
+Scan completed       2026-11-19T13:59:16.736268539Z
+Total elapsed        0.05s
+Scan ID              run-ea6aa522c72ac0ce8e519e4ff50a387f
+
+BENCHMARK / APPLICABILITY
+--------------------------
+Benchmark            direct-slice
+Benchmark version    001.005.007
+Platform             Source Benchmark platform restriction (fixture-platform)
+Profile              cat-i-only-profile
+Source digest        d04485065ccf3809dbfeb61855a6f778159752b1a113deede4fbf7920cff8657
+Qualification        CROSS-PLATFORM DIAGNOSTIC ONLY — COMPLIANCE SCORE UNAVAILABLE
+Qualification reason OS identity and source applicability match, but acquisition authority/trust is not host-authoritative
+
+EXECUTIVE SUMMARY
+------------------
+20 Rules: 4 pass, 0 fail, 0 unknown, 0 error, 16 not evaluated, 0 not applicable.
+Compliance score: unavailable (diagnostic only)
+Pass 4 | Fail 0 | Unknown 0 | Error 0 | Not applicable 0 | Not evaluated 16
+Shared Assessment executions: 5 (consuming Rules link to one execution)
+
+TIME / PERFORMANCE
+------------------
+Slowest Rules (measured intervals; concurrent durations are not additive)
+  <0.01s   PASS         ubuntu-24-04-lts-must-have-ssh-installed-sv-270665-rule — Ubuntu 24.04 LTS must have SSH installed.
+  <0.01s   PASS         ubuntu-24-04-lts-not-have-package-installed-sv-270647-rule — Ubuntu 24.04 LTS must not have the telnet package installed.
+  <0.01s   PASS         ubuntu-24-04-lts-not-have-package-installed-sv-270648-rule — Ubuntu 24.04 LTS must not have the rsh-server package installed.
+Slowest Assessments (each shared invocation counted once)
+  0.02s    TRUE         ubuntu-24-04-lts-must-have-ssh-installed-sv-270665-assessment — Ubuntu 24.04 LTS must have SSH installed.
+  0.02s    TRUE         ubuntu-24-04-lts-not-have-installed-sv-270647-assessment — Ubuntu 24.04 LTS must not have the telnet package installed.
+  0.02s    TRUE         ubuntu-24-04-lts-not-have-installed-sv-270648-assessment — Ubuntu 24.04 LTS must not have the rsh-server package installed.
+
+RULE RESULTS
+------------
+OUTCOME          SEVERITY DURATION     RULE ID                  TITLE
+---------------- -------- ------------ ------------------------ -----
+NOT EVALUATED    medium   not recorded ubuntu-24-04-lts-configure-during-transmission-sv-270667-rule Ubuntu 24.04 LTS must configure the SSH daemon to use FIPS 140-3 approved ciphers to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.
+NOT EVALUATED    medium   not recorded ubuntu-24-04-lts-configure-during-transmission-sv-270668-rule Ubuntu 24.04 LTS must configure the SSH daemon to use Message Authentication Codes (MACs) employing FIPS 140-3 approved cryptographic hashes to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.
+NOT EVALUATED    medium   not recorded ubuntu-24-04-lts-configure-during-transmission-sv-270670-rule Ubuntu 24.04 LTS must configure the SSH client to use FIPS 140-3 approved ciphers to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.
+NOT EVALUATED    medium   not recorded ubuntu-24-04-lts-enable-and-firewall-ufw-sv-270655-rule Ubuntu 24.04 LTS must enable and run the Uncomplicated Firewall (ufw).
+NOT EVALUATED    low      not recorded ubuntu-24-04-lts-have-chrony-package-installed-sv-270664-rule Ubuntu 24.04 LTS must have the "chrony" package installed.
+NOT EVALUATED    medium   not recorded ubuntu-24-04-lts-have-remote-access-methods-sv-270654-rule Ubuntu 24.04 LTS must have an application firewall installed in order to control remote access methods.
+NOT EVALUATED    medium   not recorded ubuntu-24-04-lts-initiate-at-system-startup-sv-270676-rule Ubuntu 24.04 LTS must initiate session audits at system startup.
+PASS             high     <0.01s       ubuntu-24-04-lts-must-have-ssh-installed-sv-270665-rule Ubuntu 24.04 LTS must have SSH installed.
+NOT EVALUATED    low      not recorded ubuntu-24-04-lts-not-have-ntp-package-installed-sv-270646-rule Ubuntu 24.04 LTS must not have the "ntp" package installed.
+NOT EVALUATED    low      not recorded ubuntu-24-04-lts-not-have-package-installed-sv-270645-rule Ubuntu 24.04 LTS must not have the "systemd-timesyncd" package installed.
+PASS             high     <0.01s       ubuntu-24-04-lts-not-have-package-installed-sv-270647-rule Ubuntu 24.04 LTS must not have the telnet package installed.
+PASS             high     <0.01s       ubuntu-24-04-lts-not-have-package-installed-sv-270648-rule Ubuntu 24.04 LTS must not have the rsh-server package installed.
+NOT EVALUATED    medium   not recorded ubuntu-24-04-lts-notify-functions-are-discovered-sv-270652-rule Ubuntu 24.04 LTS must notify designated personnel if baseline configurations are changed in an unauthorized manner. The file integrity tool must notify the system administrator (SA) when changes to the baseline configuration or anomalies in the operation of any security functions are discovered.
+NOT EVALUATED    medium   not recorded ubuntu-24-04-lts-preserve-from-failure-events-sv-270653-rule Ubuntu 24.04 LTS must be configured to preserve log records from failure events.
+NOT EVALUATED    medium   not recorded ubuntu-24-04-lts-produce-in-near-real-time-sv-270657-rule Ubuntu 24.04 LTS must produce audit records and reports containing information to establish when, where, what type, the source, and the outcome for all DOD-defined auditable events and actions in near real time.
+NOT EVALUATED    medium   not recorded ubuntu-24-04-lts-ssh-client-hash-algorithms-sv-270671-rule Ubuntu 24.04 LTS SSH client must be configured to use only Message Authentication Codes (MACs) employing FIPS 140-3 validated cryptographic hash algorithms.
+NOT EVALUATED    medium   not recorded ubuntu-24-04-lts-ssh-server-exchange-algorithms-sv-270669-rule Ubuntu 24.04 LTS SSH server must be configured to use only FIPS 140-3 validated key exchange algorithms.
+NOT EVALUATED    medium   not recorded ubuntu-24-04-lts-use-apparmor-sv-270660-rule Ubuntu 24.04 LTS must be configured to use AppArmor.
+PASS             high     <0.01s       ubuntu-24-04-lts-use-ssh-transmitted-information-sv-270666-rule Ubuntu 24.04 LTS must use SSH to protect the confidentiality and integrity of transmitted information.
+NOT EVALUATED    medium   not recorded ubuntu-24-04-lts-use-sssd-services-sv-270663-rule Ubuntu 24.04 LTS must use the "SSSD" package for multifactor authentication services.
+
+FINDINGS AND EVIDENCE (FAILURE / UNKNOWN FIRST)
+-----------------------------------------------
+[NOT EVALUATED] ubuntu-24-04-lts-configure-during-transmission-sv-270667-rule — Ubuntu 24.04 LTS must configure the SSH daemon to use FIPS 140-3 approved ciphers to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.
+Severity           medium
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule disabled by selected profile.
+Finding            Rule disabled by selected profile.
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[NOT EVALUATED] ubuntu-24-04-lts-configure-during-transmission-sv-270668-rule — Ubuntu 24.04 LTS must configure the SSH daemon to use Message Authentication Codes (MACs) employing FIPS 140-3 approved cryptographic hashes to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.
+Severity           medium
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule disabled by selected profile.
+Finding            Rule disabled by selected profile.
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[NOT EVALUATED] ubuntu-24-04-lts-configure-during-transmission-sv-270670-rule — Ubuntu 24.04 LTS must configure the SSH client to use FIPS 140-3 approved ciphers to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.
+Severity           medium
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule disabled by selected profile.
+Finding            Rule disabled by selected profile.
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[NOT EVALUATED] ubuntu-24-04-lts-enable-and-firewall-ufw-sv-270655-rule — Ubuntu 24.04 LTS must enable and run the Uncomplicated Firewall (ufw).
+Severity           medium
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule disabled by selected profile.
+Finding            Rule disabled by selected profile.
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[NOT EVALUATED] ubuntu-24-04-lts-have-chrony-package-installed-sv-270664-rule — Ubuntu 24.04 LTS must have the "chrony" package installed.
+Severity           low
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule disabled by selected profile.
+Finding            Rule disabled by selected profile.
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[NOT EVALUATED] ubuntu-24-04-lts-have-remote-access-methods-sv-270654-rule — Ubuntu 24.04 LTS must have an application firewall installed in order to control remote access methods.
+Severity           medium
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule disabled by selected profile.
+Finding            Rule disabled by selected profile.
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[NOT EVALUATED] ubuntu-24-04-lts-initiate-at-system-startup-sv-270676-rule — Ubuntu 24.04 LTS must initiate session audits at system startup.
+Severity           medium
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule disabled by selected profile.
+Finding            Rule disabled by selected profile.
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[NOT EVALUATED] ubuntu-24-04-lts-not-have-ntp-package-installed-sv-270646-rule — Ubuntu 24.04 LTS must not have the "ntp" package installed.
+Severity           low
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule disabled by selected profile.
+Finding            Rule disabled by selected profile.
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[NOT EVALUATED] ubuntu-24-04-lts-not-have-package-installed-sv-270645-rule — Ubuntu 24.04 LTS must not have the "systemd-timesyncd" package installed.
+Severity           low
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule disabled by selected profile.
+Finding            Rule disabled by selected profile.
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[NOT EVALUATED] ubuntu-24-04-lts-notify-functions-are-discovered-sv-270652-rule — Ubuntu 24.04 LTS must notify designated personnel if baseline configurations are changed in an unauthorized manner. The file integrity tool must notify the system administrator (SA) when changes to the baseline configuration or anomalies in the operation of any security functions are discovered.
+Severity           medium
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule disabled by selected profile.
+Finding            Rule disabled by selected profile.
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[NOT EVALUATED] ubuntu-24-04-lts-preserve-from-failure-events-sv-270653-rule — Ubuntu 24.04 LTS must be configured to preserve log records from failure events.
+Severity           medium
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule disabled by selected profile.
+Finding            Rule disabled by selected profile.
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[NOT EVALUATED] ubuntu-24-04-lts-produce-in-near-real-time-sv-270657-rule — Ubuntu 24.04 LTS must produce audit records and reports containing information to establish when, where, what type, the source, and the outcome for all DOD-defined auditable events and actions in near real time.
+Severity           medium
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule disabled by selected profile.
+Finding            Rule disabled by selected profile.
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[NOT EVALUATED] ubuntu-24-04-lts-ssh-client-hash-algorithms-sv-270671-rule — Ubuntu 24.04 LTS SSH client must be configured to use only Message Authentication Codes (MACs) employing FIPS 140-3 validated cryptographic hash algorithms.
+Severity           medium
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule disabled by selected profile.
+Finding            Rule disabled by selected profile.
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[NOT EVALUATED] ubuntu-24-04-lts-ssh-server-exchange-algorithms-sv-270669-rule — Ubuntu 24.04 LTS SSH server must be configured to use only FIPS 140-3 validated key exchange algorithms.
+Severity           medium
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule disabled by selected profile.
+Finding            Rule disabled by selected profile.
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[NOT EVALUATED] ubuntu-24-04-lts-use-apparmor-sv-270660-rule — Ubuntu 24.04 LTS must be configured to use AppArmor.
+Severity           medium
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule disabled by selected profile.
+Finding            Rule disabled by selected profile.
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[NOT EVALUATED] ubuntu-24-04-lts-use-sssd-services-sv-270663-rule — Ubuntu 24.04 LTS must use the "SSSD" package for multifactor authentication services.
+Severity           medium
+Rule duration      not recorded
+Assessment         not executed — title unavailable
+Why                Rule disabled by selected profile.
+Finding            Rule disabled by selected profile.
+  No Assessment execution is linked; this outcome came from profile, applicability, manual input, or packaging state.
+
+[PASS] ubuntu-24-04-lts-must-have-ssh-installed-sv-270665-rule — Ubuntu 24.04 LTS must have SSH installed.
+Severity           high
+Rule duration      <0.01s
+Rule started       2026-11-19T13:59:16.736236411Z
+Rule completed     2026-11-19T13:59:16.736241291Z
+Assessment         ubuntu-24-04-lts-must-have-ssh-installed-sv-270665-assessment — Ubuntu 24.04 LTS must have SSH installed.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration 0.02s
+Assessment started  2026-11-19T13:59:16.695759298Z
+Assessment completed 2026-11-19T13:59:16.716384267Z
+
+EVALUATE TREE
+  /tests/package-ssh-is-installed-test → Test package-ssh-is-installed-test — TRUE
+
+EVALUATE → TEST
+  package-ssh-is-installed-test — package ssh is installed
+  Technical result   TRUE
+  Reason             item existence satisfied
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-b8dd0833e521e7004fe4b41a95663907/object/package-ssh-is-installed-test
+  Capability         linux.dpkginfo
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/package-ssh-is-installed-test/require — TRUE
+  Decisive reason    item existence satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-6e92b177a91a0bcffcc38975d46916af
+  Capability         linux.dpkginfo
+  Status             exists
+  arch                 "amd64" [string; exists]
+  epoch                "1" [string; exists]
+  evr                  "1:9.6p1-3ubuntu13.20" [debian_evr; exists]
+  name                 "openssh-server" [string; exists]
+  release              "3ubuntu13.20" [string; exists]
+  version              "9.6p1" [string; exists]
+  Evidence provenance collector="linux.dpkginfo.fixed-query.v1" observed_at="2026-11-19T13:59:16.715675316Z" scope="local-dpkg-database" target_ref="local-linux"
+
+[PASS] ubuntu-24-04-lts-not-have-package-installed-sv-270647-rule — Ubuntu 24.04 LTS must not have the telnet package installed.
+Severity           high
+Rule duration      <0.01s
+Rule started       2026-11-19T13:59:16.736206558Z
+Rule completed     2026-11-19T13:59:16.736211157Z
+Assessment         ubuntu-24-04-lts-not-have-installed-sv-270647-assessment — Ubuntu 24.04 LTS must not have the telnet package installed.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration 0.02s
+Assessment started  2026-11-19T13:59:16.695777392Z
+Assessment completed 2026-11-19T13:59:16.715338185Z
+
+EVALUATE TREE
+  /tests/telnetd-package-is-not-installed-test → Test telnetd-package-is-not-installed-test — TRUE
+
+EVALUATE → TEST
+  telnetd-package-is-not-installed-test — Telnetd package is not installed
+  Technical result   TRUE
+  Reason             item existence satisfied
+  Items observed    0
+  Items retained    0
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-7af7521bfa2f57e8d1911f209f4e01fb/object/telnetd-package-is-not-installed-test
+  Capability         linux.dpkginfo
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+[PASS] ubuntu-24-04-lts-not-have-package-installed-sv-270648-rule — Ubuntu 24.04 LTS must not have the rsh-server package installed.
+Severity           high
+Rule duration      <0.01s
+Rule started       2026-11-19T13:59:16.736214134Z
+Rule completed     2026-11-19T13:59:16.736218056Z
+Assessment         ubuntu-24-04-lts-not-have-installed-sv-270648-assessment — Ubuntu 24.04 LTS must not have the rsh-server package installed.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration 0.02s
+Assessment started  2026-11-19T13:59:16.715356504Z
+Assessment completed 2026-11-19T13:59:16.735916061Z
+
+EVALUATE TREE
+  /tests/package-rsh-server-is-not-installed-test → Test package-rsh-server-is-not-installed-test — TRUE
+
+EVALUATE → TEST
+  package-rsh-server-is-not-installed-test — package rsh-server is not installed
+  Technical result   TRUE
+  Reason             item existence satisfied
+  Items observed    0
+  Items retained    0
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-7cf3eaa3adc3c66e4c27dde7074d4e1e/object/package-rsh-server-is-not-installed-test
+  Capability         linux.dpkginfo
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+[PASS] ubuntu-24-04-lts-use-ssh-transmitted-information-sv-270666-rule — Ubuntu 24.04 LTS must use SSH to protect the confidentiality and integrity of transmitted information.
+Severity           high
+Rule duration      <0.01s
+Rule started       2026-11-19T13:59:16.736244401Z
+Rule completed     2026-11-19T13:59:16.736250113Z
+Assessment         ubuntu-24-04-lts-use-ssh-information-sv-270666-assessment — Ubuntu 24.04 LTS must use SSH to protect the confidentiality and integrity of transmitted information.
+Why                Assessment evaluated true.
+Finding            Assessment evaluated true.
+Assessment result  TRUE (Assessment evaluated true with complete evidence.)
+Assessment duration <0.01s
+Assessment started  2026-11-19T13:59:16.716399377Z
+Assessment completed 2026-11-19T13:59:16.725650562Z
+
+EVALUATE TREE
+  /tests/ssh-service-is-active-test → Test ssh-service-is-active-test — TRUE
+  /tests/ssh-service-is-enabled-test → Test ssh-service-is-enabled-test — TRUE
+  /evaluate → Test  — TRUE
+
+EVALUATE → TEST
+  ssh-service-is-active-test — ssh.service is active
+  Technical result   TRUE
+  Reason             All required observed fields matched their expected values.
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-a01329caaba49242a8c89686ea5b9fc9/object/ssh-service-is-active-test
+  Capability         linux.systemdunitproperty
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/ssh-service-is-active-test/require — TRUE
+  Decisive reason    require and satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-1ae193976a92585c56acd15c3e539af4
+  Capability         linux.systemdunitproperty
+  Status             exists
+  property             "ActiveState" [string; exists]
+  unit                 "ssh.service" [string; exists]
+  value                "active" [string; exists]
+  Evidence provenance collector="linux.systemdunitproperty.systemctl-show.v1" observed_at="2026-11-19T13:59:16.724002617Z" scope="systemd-system-manager" target_ref="local-linux"
+
+EVALUATE → TEST
+  ssh-service-is-enabled-test — ssh.service is enabled
+  Technical result   TRUE
+  Reason             All required observed fields matched their expected values.
+  Items observed    1
+  Items retained    1
+  Items satisfying  every
+
+OBJECT / COLLECTION
+  Object             assessment-a01329caaba49242a8c89686ea5b9fc9/object/ssh-service-is-enabled-test
+  Capability         linux.systemdunitproperty
+  Status             complete
+  Logical complete   true
+  Population complete true
+
+REQUIRE /tests/ssh-service-is-enabled-test/require — TRUE
+  Decisive reason    require and satisfied
+  Field                    Operation    Expected                     Observed                     Result
+  ------------------------ ------------ ---------------------------- ---------------------------- ------
+
+COLLECTED ITEM 1
+  Identity           item-e8a2a5954a18e2ee04726dd93ce807f3
+  Capability         linux.systemdunitproperty
+  Status             exists
+  property             "UnitFileState" [string; exists]
+  unit                 "ssh.service" [string; exists]
+  value                "enabled" [string; exists]
+  Evidence provenance collector="linux.systemdunitproperty.systemctl-show.v1" observed_at="2026-11-19T13:59:16.723753086Z" scope="systemd-system-manager" target_ref="local-linux"
+
+PASSING RULES
+-------------
+  ubuntu-24-04-lts-must-have-ssh-installed-sv-270665-rule  <0.01s  Ubuntu 24.04 LTS must have SSH installed.
+  ubuntu-24-04-lts-not-have-package-installed-sv-270647-rule  <0.01s  Ubuntu 24.04 LTS must not have the telnet package installed.
+  ubuntu-24-04-lts-not-have-package-installed-sv-270648-rule  <0.01s  Ubuntu 24.04 LTS must not have the rsh-server package installed.
+  ubuntu-24-04-lts-use-ssh-transmitted-information-sv-270666-rule  <0.01s  Ubuntu 24.04 LTS must use SSH to protect the confidentiality and integrity of transmitted information.
+
+HISTORY / BASELINE
+-------------------
+No comparable history available. Historical comparison is shown only for a verified compatible baseline.
+
+ENDNOTES
+---------
+This report is read-only and does not rerun evaluation. Technical Assessment/Test outcomes (TRUE/FALSE/UNKNOWN/ERROR) remain distinct from policy Rule dispositions (PASS/FAIL/etc.). Collected Items are bounded retained evidence; observed and retained counts remain separate. Per-Rule and per-Assessment timings are measured sidecar context until the upstream canonical timing contract is approved.

@@ -1,0 +1,43 @@
+{
+  "scan_result": {
+    "assessment_result_refs": [
+      "assessment-410c8bb6017f63c287d5139b52102635",
+      "assessment-b8dd0833e521e7004fe4b41a95663907",
+      "assessment-7af7521bfa2f57e8d1911f209f4e01fb",
+      "assessment-7cf3eaa3adc3c66e4c27dde7074d4e1e",
+      "assessment-a01329caaba49242a8c89686ea5b9fc9"
+    ],
+    "benchmark_results": [
+      {
+        "benchmark_id": "direct-slice",
+        "benchmark_result_ref": "run-ea6aa522c72ac0ce8e519e4ff50a387f",
+        "benchmark_version": "001.005.007",
+        "profile_id": "cat-i-only-profile",
+        "summary": {
+          "error": 0,
+          "fail": 0,
+          "not_applicable": 0,
+          "not_evaluated": 16,
+          "pass": 4,
+          "total": 20,
+          "unknown": 0
+        },
+        "tailoring_id": null,
+        "target_ref": "local-linux"
+      }
+    ],
+    "completed_at": "2026-11-19T13:59:16.736268539Z",
+    "result_schema_version": "0.4.1",
+    "run_id": "run-ea6aa522c72ac0ce8e519e4ff50a387f",
+    "scanner": {
+      "name": "scap-ng-ri",
+      "schema_family_sha256": "326f82668020a717f5d3443484330f313146978292befd75c063f55b2e4e5329"
+    },
+    "started_at": "2026-11-19T13:59:16.688775158Z",
+    "targets": [
+      {
+        "id": "local-linux"
+      }
+    ]
+  }
+}

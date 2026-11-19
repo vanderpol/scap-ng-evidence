@@ -1,0 +1,652 @@
+{
+  "benchmark_result": {
+    "benchmark": {
+      "id": "direct-slice",
+      "package_digest": "d04485065ccf3809dbfeb61855a6f778159752b1a113deede4fbf7920cff8657",
+      "version": "001.005.007"
+    },
+    "completed_at": "2026-11-19T13:59:16.736268539Z",
+    "effective_policy": {
+      "check_selectors": {},
+      "disabled_rules": [
+        "ubuntu-24-04-lts-configure-during-transmission-sv-270667-rule",
+        "ubuntu-24-04-lts-configure-during-transmission-sv-270668-rule",
+        "ubuntu-24-04-lts-configure-during-transmission-sv-270670-rule",
+        "ubuntu-24-04-lts-enable-and-firewall-ufw-sv-270655-rule",
+        "ubuntu-24-04-lts-have-chrony-package-installed-sv-270664-rule",
+        "ubuntu-24-04-lts-have-remote-access-methods-sv-270654-rule",
+        "ubuntu-24-04-lts-initiate-at-system-startup-sv-270676-rule",
+        "ubuntu-24-04-lts-not-have-ntp-package-installed-sv-270646-rule",
+        "ubuntu-24-04-lts-not-have-package-installed-sv-270645-rule",
+        "ubuntu-24-04-lts-notify-functions-are-discovered-sv-270652-rule",
+        "ubuntu-24-04-lts-preserve-from-failure-events-sv-270653-rule",
+        "ubuntu-24-04-lts-produce-in-near-real-time-sv-270657-rule",
+        "ubuntu-24-04-lts-ssh-client-hash-algorithms-sv-270671-rule",
+        "ubuntu-24-04-lts-ssh-server-exchange-algorithms-sv-270669-rule",
+        "ubuntu-24-04-lts-use-apparmor-sv-270660-rule",
+        "ubuntu-24-04-lts-use-sssd-services-sv-270663-rule"
+      ],
+      "organizational_inputs": {},
+      "parameters": {},
+      "profile": "cat-i-only-profile",
+      "selected_rules": [
+        "ubuntu-24-04-lts-not-have-package-installed-sv-270647-rule",
+        "ubuntu-24-04-lts-not-have-package-installed-sv-270648-rule",
+        "ubuntu-24-04-lts-must-have-ssh-installed-sv-270665-rule",
+        "ubuntu-24-04-lts-use-ssh-transmitted-information-sv-270666-rule"
+      ],
+      "tailoring": null
+    },
+    "result_schema_version": "0.4.1",
+    "rule_results": [
+      {
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-not-have-package-installed-sv-270645-rule/not-evaluated",
+            "message": "Rule disabled by selected profile.",
+            "outcome": "not_evaluated",
+            "target_instance": null
+          }
+        ],
+        "outcome": "not_evaluated",
+        "parameters": {},
+        "reason": "Rule disabled by selected profile.",
+        "rule_id": "ubuntu-24-04-lts-not-have-package-installed-sv-270645-rule",
+        "severity": "low",
+        "summary": "Rule disabled by selected profile.",
+        "title": "Ubuntu 24.04 LTS must not have the \"systemd-timesyncd\" package installed.",
+        "weight": 10
+      },
+      {
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-not-have-ntp-package-installed-sv-270646-rule/not-evaluated",
+            "message": "Rule disabled by selected profile.",
+            "outcome": "not_evaluated",
+            "target_instance": null
+          }
+        ],
+        "outcome": "not_evaluated",
+        "parameters": {},
+        "reason": "Rule disabled by selected profile.",
+        "rule_id": "ubuntu-24-04-lts-not-have-ntp-package-installed-sv-270646-rule",
+        "severity": "low",
+        "summary": "Rule disabled by selected profile.",
+        "title": "Ubuntu 24.04 LTS must not have the \"ntp\" package installed.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-410c8bb6017f63c287d5139b52102635",
+              "assessment_result_ref": "assessment-410c8bb6017f63c287d5139b52102635",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "c6ac733197c0f76877116007d1cc556c41f6c5820180e21ed8a7832bbc97a70f",
+          "id": "ubuntu-24-04-lts-not-have-installed-sv-270647-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-7af7521bfa2f57e8d1911f209f4e01fb",
+            "assessment_result_ref": "assessment-7af7521bfa2f57e8d1911f209f4e01fb",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-not-have-installed-sv-270647-assessment/ubuntu-24-04-lts-not-have-package-installed-sv-270647-rule",
+            "message": "Assessment evaluated true.",
+            "outcome": "pass",
+            "target_instance": "local-linux"
+          }
+        ],
+        "outcome": "pass",
+        "parameters": {},
+        "rule_id": "ubuntu-24-04-lts-not-have-package-installed-sv-270647-rule",
+        "severity": "high",
+        "summary": "Assessment evaluated true.",
+        "title": "Ubuntu 24.04 LTS must not have the telnet package installed.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-410c8bb6017f63c287d5139b52102635",
+              "assessment_result_ref": "assessment-410c8bb6017f63c287d5139b52102635",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "ade69722e17538b8da19dd6c89510fbc0fea04fd79074a3f670670c1bd465172",
+          "id": "ubuntu-24-04-lts-not-have-installed-sv-270648-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-7cf3eaa3adc3c66e4c27dde7074d4e1e",
+            "assessment_result_ref": "assessment-7cf3eaa3adc3c66e4c27dde7074d4e1e",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-not-have-installed-sv-270648-assessment/ubuntu-24-04-lts-not-have-package-installed-sv-270648-rule",
+            "message": "Assessment evaluated true.",
+            "outcome": "pass",
+            "target_instance": "local-linux"
+          }
+        ],
+        "outcome": "pass",
+        "parameters": {},
+        "rule_id": "ubuntu-24-04-lts-not-have-package-installed-sv-270648-rule",
+        "severity": "high",
+        "summary": "Assessment evaluated true.",
+        "title": "Ubuntu 24.04 LTS must not have the rsh-server package installed.",
+        "weight": 10
+      },
+      {
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-notify-functions-are-discovered-sv-270652-rule/not-evaluated",
+            "message": "Rule disabled by selected profile.",
+            "outcome": "not_evaluated",
+            "target_instance": null
+          }
+        ],
+        "outcome": "not_evaluated",
+        "parameters": {},
+        "reason": "Rule disabled by selected profile.",
+        "rule_id": "ubuntu-24-04-lts-notify-functions-are-discovered-sv-270652-rule",
+        "severity": "medium",
+        "summary": "Rule disabled by selected profile.",
+        "title": "Ubuntu 24.04 LTS must notify designated personnel if baseline configurations are changed in an unauthorized manner. The file integrity tool must notify the system administrator (SA) when changes to the baseline configuration or anomalies in the operation of any security functions are discovered.",
+        "weight": 10
+      },
+      {
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-preserve-from-failure-events-sv-270653-rule/not-evaluated",
+            "message": "Rule disabled by selected profile.",
+            "outcome": "not_evaluated",
+            "target_instance": null
+          }
+        ],
+        "outcome": "not_evaluated",
+        "parameters": {},
+        "reason": "Rule disabled by selected profile.",
+        "rule_id": "ubuntu-24-04-lts-preserve-from-failure-events-sv-270653-rule",
+        "severity": "medium",
+        "summary": "Rule disabled by selected profile.",
+        "title": "Ubuntu 24.04 LTS must be configured to preserve log records from failure events.",
+        "weight": 10
+      },
+      {
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-have-remote-access-methods-sv-270654-rule/not-evaluated",
+            "message": "Rule disabled by selected profile.",
+            "outcome": "not_evaluated",
+            "target_instance": null
+          }
+        ],
+        "outcome": "not_evaluated",
+        "parameters": {},
+        "reason": "Rule disabled by selected profile.",
+        "rule_id": "ubuntu-24-04-lts-have-remote-access-methods-sv-270654-rule",
+        "severity": "medium",
+        "summary": "Rule disabled by selected profile.",
+        "title": "Ubuntu 24.04 LTS must have an application firewall installed in order to control remote access methods.",
+        "weight": 10
+      },
+      {
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-enable-and-firewall-ufw-sv-270655-rule/not-evaluated",
+            "message": "Rule disabled by selected profile.",
+            "outcome": "not_evaluated",
+            "target_instance": null
+          }
+        ],
+        "outcome": "not_evaluated",
+        "parameters": {},
+        "reason": "Rule disabled by selected profile.",
+        "rule_id": "ubuntu-24-04-lts-enable-and-firewall-ufw-sv-270655-rule",
+        "severity": "medium",
+        "summary": "Rule disabled by selected profile.",
+        "title": "Ubuntu 24.04 LTS must enable and run the Uncomplicated Firewall (ufw).",
+        "weight": 10
+      },
+      {
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-produce-in-near-real-time-sv-270657-rule/not-evaluated",
+            "message": "Rule disabled by selected profile.",
+            "outcome": "not_evaluated",
+            "target_instance": null
+          }
+        ],
+        "outcome": "not_evaluated",
+        "parameters": {},
+        "reason": "Rule disabled by selected profile.",
+        "rule_id": "ubuntu-24-04-lts-produce-in-near-real-time-sv-270657-rule",
+        "severity": "medium",
+        "summary": "Rule disabled by selected profile.",
+        "title": "Ubuntu 24.04 LTS must produce audit records and reports containing information to establish when, where, what type, the source, and the outcome for all DOD-defined auditable events and actions in near real time.",
+        "weight": 10
+      },
+      {
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-use-apparmor-sv-270660-rule/not-evaluated",
+            "message": "Rule disabled by selected profile.",
+            "outcome": "not_evaluated",
+            "target_instance": null
+          }
+        ],
+        "outcome": "not_evaluated",
+        "parameters": {},
+        "reason": "Rule disabled by selected profile.",
+        "rule_id": "ubuntu-24-04-lts-use-apparmor-sv-270660-rule",
+        "severity": "medium",
+        "summary": "Rule disabled by selected profile.",
+        "title": "Ubuntu 24.04 LTS must be configured to use AppArmor.",
+        "weight": 10
+      },
+      {
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-use-sssd-services-sv-270663-rule/not-evaluated",
+            "message": "Rule disabled by selected profile.",
+            "outcome": "not_evaluated",
+            "target_instance": null
+          }
+        ],
+        "outcome": "not_evaluated",
+        "parameters": {},
+        "reason": "Rule disabled by selected profile.",
+        "rule_id": "ubuntu-24-04-lts-use-sssd-services-sv-270663-rule",
+        "severity": "medium",
+        "summary": "Rule disabled by selected profile.",
+        "title": "Ubuntu 24.04 LTS must use the \"SSSD\" package for multifactor authentication services.",
+        "weight": 10
+      },
+      {
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-have-chrony-package-installed-sv-270664-rule/not-evaluated",
+            "message": "Rule disabled by selected profile.",
+            "outcome": "not_evaluated",
+            "target_instance": null
+          }
+        ],
+        "outcome": "not_evaluated",
+        "parameters": {},
+        "reason": "Rule disabled by selected profile.",
+        "rule_id": "ubuntu-24-04-lts-have-chrony-package-installed-sv-270664-rule",
+        "severity": "low",
+        "summary": "Rule disabled by selected profile.",
+        "title": "Ubuntu 24.04 LTS must have the \"chrony\" package installed.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-410c8bb6017f63c287d5139b52102635",
+              "assessment_result_ref": "assessment-410c8bb6017f63c287d5139b52102635",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "72925386f124621bd05e05a82434a0b31c5394fb5eb0ebcb483dbc9e43b87edf",
+          "id": "ubuntu-24-04-lts-must-have-ssh-installed-sv-270665-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-b8dd0833e521e7004fe4b41a95663907",
+            "assessment_result_ref": "assessment-b8dd0833e521e7004fe4b41a95663907",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-must-have-ssh-installed-sv-270665-assessment/ubuntu-24-04-lts-must-have-ssh-installed-sv-270665-rule",
+            "message": "Assessment evaluated true.",
+            "outcome": "pass",
+            "target_instance": "local-linux"
+          }
+        ],
+        "outcome": "pass",
+        "parameters": {},
+        "rule_id": "ubuntu-24-04-lts-must-have-ssh-installed-sv-270665-rule",
+        "severity": "high",
+        "summary": "Assessment evaluated true.",
+        "title": "Ubuntu 24.04 LTS must have SSH installed.",
+        "weight": 10
+      },
+      {
+        "applicability": {
+          "conditions": [
+            {
+              "assessment_invocation_id": "assessment-410c8bb6017f63c287d5139b52102635",
+              "assessment_result_ref": "assessment-410c8bb6017f63c287d5139b52102635",
+              "id": "platform-cpe-o-canonical-ubuntu-linux-24-04-lts-condition",
+              "outcome": "applicable",
+              "reason": {
+                "message": "applicability Assessment evaluated true",
+                "source": {
+                  "id": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "idref": "cpe:/o:canonical:ubuntu_linux:24.04::~~lts~~~",
+                  "kind": "cpe_platform",
+                  "sha256": "7fca3bf5636bdc0d38bc714dc968ebe43c3b57b7a4b3b215115102e56c3b8913"
+                }
+              }
+            }
+          ],
+          "outcome": "applicable"
+        },
+        "assessment": {
+          "digest": "c1ebad716b21942da89d4ec4a8f1936e637c96d6fc825b82899733af7892a44e",
+          "id": "ubuntu-24-04-lts-use-ssh-information-sv-270666-assessment",
+          "mode": "automated",
+          "version": 1
+        },
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": "assessment-a01329caaba49242a8c89686ea5b9fc9",
+            "assessment_result_ref": "assessment-a01329caaba49242a8c89686ea5b9fc9",
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-use-ssh-information-sv-270666-assessment/ubuntu-24-04-lts-use-ssh-transmitted-information-sv-270666-rule",
+            "message": "Assessment evaluated true.",
+            "outcome": "pass",
+            "target_instance": "local-linux"
+          }
+        ],
+        "outcome": "pass",
+        "parameters": {},
+        "rule_id": "ubuntu-24-04-lts-use-ssh-transmitted-information-sv-270666-rule",
+        "severity": "high",
+        "summary": "Assessment evaluated true.",
+        "title": "Ubuntu 24.04 LTS must use SSH to protect the confidentiality and integrity of transmitted information.",
+        "weight": 10
+      },
+      {
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-configure-during-transmission-sv-270667-rule/not-evaluated",
+            "message": "Rule disabled by selected profile.",
+            "outcome": "not_evaluated",
+            "target_instance": null
+          }
+        ],
+        "outcome": "not_evaluated",
+        "parameters": {},
+        "reason": "Rule disabled by selected profile.",
+        "rule_id": "ubuntu-24-04-lts-configure-during-transmission-sv-270667-rule",
+        "severity": "medium",
+        "summary": "Rule disabled by selected profile.",
+        "title": "Ubuntu 24.04 LTS must configure the SSH daemon to use FIPS 140-3 approved ciphers to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.",
+        "weight": 10
+      },
+      {
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-configure-during-transmission-sv-270668-rule/not-evaluated",
+            "message": "Rule disabled by selected profile.",
+            "outcome": "not_evaluated",
+            "target_instance": null
+          }
+        ],
+        "outcome": "not_evaluated",
+        "parameters": {},
+        "reason": "Rule disabled by selected profile.",
+        "rule_id": "ubuntu-24-04-lts-configure-during-transmission-sv-270668-rule",
+        "severity": "medium",
+        "summary": "Rule disabled by selected profile.",
+        "title": "Ubuntu 24.04 LTS must configure the SSH daemon to use Message Authentication Codes (MACs) employing FIPS 140-3 approved cryptographic hashes to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.",
+        "weight": 10
+      },
+      {
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-ssh-server-exchange-algorithms-sv-270669-rule/not-evaluated",
+            "message": "Rule disabled by selected profile.",
+            "outcome": "not_evaluated",
+            "target_instance": null
+          }
+        ],
+        "outcome": "not_evaluated",
+        "parameters": {},
+        "reason": "Rule disabled by selected profile.",
+        "rule_id": "ubuntu-24-04-lts-ssh-server-exchange-algorithms-sv-270669-rule",
+        "severity": "medium",
+        "summary": "Rule disabled by selected profile.",
+        "title": "Ubuntu 24.04 LTS SSH server must be configured to use only FIPS 140-3 validated key exchange algorithms.",
+        "weight": 10
+      },
+      {
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-configure-during-transmission-sv-270670-rule/not-evaluated",
+            "message": "Rule disabled by selected profile.",
+            "outcome": "not_evaluated",
+            "target_instance": null
+          }
+        ],
+        "outcome": "not_evaluated",
+        "parameters": {},
+        "reason": "Rule disabled by selected profile.",
+        "rule_id": "ubuntu-24-04-lts-configure-during-transmission-sv-270670-rule",
+        "severity": "medium",
+        "summary": "Rule disabled by selected profile.",
+        "title": "Ubuntu 24.04 LTS must configure the SSH client to use FIPS 140-3 approved ciphers to prevent the unauthorized disclosure of information and/or detect changes to information during transmission.",
+        "weight": 10
+      },
+      {
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-ssh-client-hash-algorithms-sv-270671-rule/not-evaluated",
+            "message": "Rule disabled by selected profile.",
+            "outcome": "not_evaluated",
+            "target_instance": null
+          }
+        ],
+        "outcome": "not_evaluated",
+        "parameters": {},
+        "reason": "Rule disabled by selected profile.",
+        "rule_id": "ubuntu-24-04-lts-ssh-client-hash-algorithms-sv-270671-rule",
+        "severity": "medium",
+        "summary": "Rule disabled by selected profile.",
+        "title": "Ubuntu 24.04 LTS SSH client must be configured to use only Message Authentication Codes (MACs) employing FIPS 140-3 validated cryptographic hash algorithms.",
+        "weight": 10
+      },
+      {
+        "assessment": null,
+        "check_selector": null,
+        "findings": [],
+        "instances": [
+          {
+            "assessment_invocation_id": null,
+            "assessment_result_ref": null,
+            "check_instance": null,
+            "evidence_refs": [],
+            "id": "ubuntu-24-04-lts-initiate-at-system-startup-sv-270676-rule/not-evaluated",
+            "message": "Rule disabled by selected profile.",
+            "outcome": "not_evaluated",
+            "target_instance": null
+          }
+        ],
+        "outcome": "not_evaluated",
+        "parameters": {},
+        "reason": "Rule disabled by selected profile.",
+        "rule_id": "ubuntu-24-04-lts-initiate-at-system-startup-sv-270676-rule",
+        "severity": "medium",
+        "summary": "Rule disabled by selected profile.",
+        "title": "Ubuntu 24.04 LTS must initiate session audits at system startup.",
+        "weight": 10
+      }
+    ],
+    "run_id": "run-ea6aa522c72ac0ce8e519e4ff50a387f",
+    "started_at": "2026-11-19T13:59:16.688775158Z",
+    "summary": {
+      "error": 0,
+      "fail": 0,
+      "not_applicable": 0,
+      "not_evaluated": 16,
+      "pass": 4,
+      "total": 20,
+      "unknown": 0
+    },
+    "target_ref": "local-linux"
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "assessment_result": {
+    "assessment": {
+      "digest": "073b49b7c1b33e4a39e4a04d4929a91090eb89bfecc5c83d07d8ba6d1f70e672",
+      "id": "oval-mil-disa-stig-ubuntu2404os-def-1-assessment",
+      "version": 2
+    },
+    "class": "inventory",
+    "dependent_assessments": [],
+    "diagnostics": [],
+    "evidence_complete": true,
+    "evidence_retention": {
+      "maximum_items": 256,
+      "scope": "per_test",
+      "source": "scanner_configuration"
+    },
+    "execution_id": "assessment-410c8bb6017f63c287d5139b52102635",
+    "expression_execution": {
+      "assessment": "oval-mil-disa-stig-ubuntu2404os-def-1-assessment",
+      "diagnostics": [],
+      "executed_tests": [
+        "ubuntu-24-04-is-installed-test"
+      ],
+      "invocation_ref": "assessment-410c8bb6017f63c287d5139b52102635",
+      "outcome": "true",
+      "trace": [
+        {
+          "assessment": "oval-mil-disa-stig-ubuntu2404os-def-1-assessment",
+          "kind": "test",
+          "outcome": "true",
+          "owner_invocation_ref": "assessment-410c8bb6017f63c287d5139b52102635",
+          "path": "/tests/ubuntu-24-04-is-installed-test",
+          "reused": false,
+          "test": "ubuntu-24-04-is-installed-test"
+        }
+      ]
+    },
+    "field_uses": [],
+    "logical_complete": true,
+    "mode": "automated",
+    "objects": [
+      {
+        "capability": "independent.textfilecontent",
+        "diagnostics": [],
+        "id": "assessment-410c8bb6017f63c287d5139b52102635/object/ubuntu-24-04-is-installed-test",
+        "item_refs": [
+          "item-c7469f5a359b25f2656e1e97b1579bfe"
+        ],
+        "logical_complete": true,
+        "object_title": null,
+        "population_complete": true,
+        "source_execution_ref": "assessment-410c8bb6017f63c287d5139b52102635",
+        "status": "complete",
+        "stop_reason": null
+      }
+    ],
+    "outcome": "true",
+    "population_complete": true,
+    "purpose": "applicability",
+    "result_schema_version": "0.4.1",
+    "summary": "Assessment evaluated true with complete evidence.",
+    "target_ref": "local-linux",
+    "tests": [
+      {
+        "evidence_refs": [],
+        "id": "ubuntu-24-04-is-installed-test",
+        "invocation_ref": "assessment-410c8bb6017f63c287d5139b52102635",
+        "item_refs": [
+          "item-c7469f5a359b25f2656e1e97b1579bfe"
+        ],
+        "item_summary": {
+          "actual_mismatches": 0,
+          "evaluated_items": 1,
+          "observed_mismatches": 0,
+          "returned_items": 1,
+          "truncated_evidence": false
+        },
+        "items_found": "one_or_more",
+        "items_observed": 1,
+        "items_satisfying": "every",
+        "object_refs": [
+          "/tests/ubuntu-24-04-is-installed-test/object"
+        ],
+        "outcome": "true",
+        "per_item_results": [
+          {
+            "evidence_refs": [],
+            "item": {
+              "capability": "independent.textfilecontent",
+              "fields": {
+                "directory": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "/etc"
+                },
+                "full_path": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "/etc/lsb-release"
+                },
+                "instance": {
+                  "datatype": "integer",
+                  "status": "exists",
+                  "value": 1
+                },
+                "name": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "lsb-release"
+                },
+                "pattern": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "^.*Ubuntu.*\\nDISTRIB_RELEASE=(\\d{1,2}\\.\\d{1,2})$"
+                },
+                "subexpression": [
+                  {
+                    "datatype": "string",
+                    "status": "exists",
+                    "value": "24.04"
+                  }
+                ],
+                "text": {
+                  "datatype": "string",
+                  "status": "exists",
+                  "value": "DISTRIB_ID=Ubuntu\nDISTRIB_RELEASE=24.04"
+                }
+              },
+              "id": "item-c7469f5a359b25f2656e1e97b1579bfe",
+              "provenance": {
+                "collector": "linux.independent-textfilecontent.literal.v3",
+                "observed_at": "2026-11-19T13:59:16.694894174Z",
+                "target_ref": "local-linux"
+              },
+              "status": "exists"
+            },
+            "item_ref": "item-c7469f5a359b25f2656e1e97b1579bfe",
+            "outcome": "true",
+            "reason": "all_required_fields_equal",
+            "require_results": [
+              {
+                "field_results": [],
+                "observation_complete": true,
+                "operator": "and",
+                "outcome": "true",
+                "reason": "require_and_satisfied",
+                "require_ref": "/tests/ubuntu-24-04-is-installed-test/require",
+                "require_results": [
+                  {
+                    "field_results": [
+                      {
+                        "datatype": "string",
+                        "evidence_refs": [],
+                        "expected_values": [
+                          {
+                            "datatype": "string",
+                            "status": "exists",
+                            "value": "24.04"
+                          }
+                        ],
+                        "field": "subexpression",
+                        "observation_complete": true,
+                        "observed_values": [
+                          {
+                            "datatype": "string",
+                            "status": "exists",
+                            "value": "24.04"
+                          }
+                        ],
+                        "operation": "equals",
+                        "outcome": "true",
+                        "reason": "all_required_fields_equal",
+                        "require_ref": "/tests/ubuntu-24-04-is-installed-test/require/and/0",
+                        "requirement_ref": "/tests/ubuntu-24-04-is-installed-test/require/and/0/fields/subexpression",
+                        "values_found": "one_or_more",
+                        "values_matching": "every"
+                      }
+                    ],
+                    "observation_complete": true,
+                    "outcome": "true",
+                    "reason": "fields_satisfied",
+                    "require_ref": "/tests/ubuntu-24-04-is-installed-test/require/and/0",
+                    "require_results": []
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "reason": "all_required_fields_equal",
+        "require_refs": [
+          "/tests/ubuntu-24-04-is-installed-test/require"
+        ],
+        "test_title": "Ubuntu 24.04 is installed"
+      }
+    ],
+    "variables": []
+  }
+}
